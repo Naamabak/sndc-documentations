@@ -1,6 +1,6 @@
 # Documentation du SNDS
 
-Bienvenue sur ce dépôt hébergeant une documentation collaborative du Système National des Données de Santé.
+Bienvenue sur  ce dépôt hébergeant une documentation collaborative du Système National des Données de Santé.
 
 Ce travail est en phase de prototypage. Il est visible à l'adresse [documentation-snds.health-data-hub.fr](https://documentation-snds.health-data-hub.fr). 
 
