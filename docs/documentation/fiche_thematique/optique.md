@@ -10,7 +10,8 @@ Le libellé des codes LPP donne les caractéristiques de verres.
 - Unifocal ou multifocal
 - Sphériques ou sphéro-cylindriques ainsi que l'intensité de cette correction
 
-On trouve les codes LPP dans la variable TIP_PRS_IDE dans la table de prestation affinée des dispositifs médicaux : ER_TIP_F. 
+On trouve les codes LPP dans la variable TIP_PRS_IDE dans la table de prestation affinée des dispositifs médicaux : [ER_TIP_F](/tables/DCIR/ER_TIP_F.html). 
+
 Il faut donc effectuer une jointure entre la table prestation ER_PRS_F et ER_TIP_F pour avoir le détail par codes LPP
 
 ## Jointure entre la table prestation (ER\_PRS\_F) et la table affinée dispositifs médicaux (ER\_TIP\_F)
@@ -28,5 +29,6 @@ Cependant, on perd quelques informations que la table affinée aurait pu nous do
 Une dernière méthode est donnée par le programme mis à disposition par Mathis Haradji (DSS):
 https://gitlab.com/DREES_code/public/gu-snds/programmes-sas-gu-snds
 
+## Reférences
 
-
+A ajouter
