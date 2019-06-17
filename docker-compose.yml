@@ -1,0 +1,10 @@
+version: "3"
+services:
+  vuepress:
+    image: "node:12"
+    working_dir: /home/node/app
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "8080:8080"
+    command: bash -c "npm install ; yarn docs:dev"

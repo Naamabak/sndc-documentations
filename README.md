@@ -36,10 +36,15 @@ Ces données sont générées automatiquement depuis le [schema-snds](https://gi
 
 ## Installation en local
 
+Système UNIX (Linux, Mac)
 - `yarn install` : installer les modules npm 
 - `yarn docs:dev` : démarrer le serveur de développement 
 - Votre navigateur reproduira alors en temps réel vos modifications sur le texte, 
 à l'adresse [http://localhost:8080](http://localhost:8080)
+
+Pour Windows (et les autres systèmes), vous pouvez faire tourner le projet en local avec Docker
+- Installer Docker et Docker-Compose sur votre système
+- Lancer le service vuepress avec la commande `docker-compose up vuepress`
 
 ## Licence
 
