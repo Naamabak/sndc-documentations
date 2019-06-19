@@ -99,26 +99,7 @@ const sidebar = [
         title: 'Exo-4',
         path: '/exo-4/',
         children: [
-            ['/exo-4/snds-1', 'snds-1'],
-            ['/exo-4/snds-2', 'snds-2'],
-            ['/exo-4/snds-3', 'snds-3'],
-            ['/exo-4/snds-4', 'snds-4'],
-            ['/exo-4/snds-5', 'snds-5'],
-            ['/exo-4/snds-6', 'snds-6'],
-            ['/exo-4/snds-7', 'snds-7'],
-            ['/exo-4/snds-8', 'snds-8'],
-            ['/exo-4/snds-9', 'snds-9'],
-            ['/exo-4/snds-10', 'snds-10'],
-            ['/exo-4/snds-11', 'snds-11'],
-            ['/exo-4/snds-12', 'snds-12'],
-            ['/exo-4/snds-13', 'snds-13'],
-            ['/exo-4/snds-14', 'snds-14'],
-            ['/exo-4/snds-15', 'snds-15'],
-            ['/exo-4/snds-16', 'snds-16'],
-            ['/exo-4/snds-17', 'snds-17'],
-            ['/exo-4/snds-18', 'snds-18'],
-            ['/exo-4/snds-19', 'snds-19'],
-            ['/exo-4/snds-20', 'snds-20'],
+            ['/exo-4/snds-0', 'snds-0'],
         ]
     }
 ];
