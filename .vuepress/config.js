@@ -51,7 +51,9 @@ const sidebar = [
     },
     {
         title: 'Exo-2',
+        path: '/exo-2/',
         children: [
+            ['/exo-2/snds-0', 'snds-0'],
             ['/exo-2/snds-1', 'snds-1'],
             ['/exo-2/snds-2', 'snds-2'],
             ['/exo-2/snds-3', 'snds-3'],
@@ -76,7 +78,9 @@ const sidebar = [
     },
     {
         title: 'Exo-3',
+        path: '/exo-3/',
         children: [
+            ['/exo-3/snds-0', 'snds-0'],
             ['/exo-3/snds-1', 'snds-1'],
             ['/exo-3/snds-2', 'snds-2'],
             ['/exo-3/snds-3', 'snds-3'],
@@ -112,7 +116,7 @@ module.exports = {
     title: 'Documentation du SNDS',
     description: "Projet collaboratif pour documenter et faciliter l'utilisation du SNDS",
     themeConfig: {
-        repo: 'http://gitlab.com/healthdatahub/documentation-snds',
+        repo: 'http://gitlab.com/healthdatahub/formation/documentation-snds',
         docsDir: '.',
         editLinks: true,
         editLinkText: 'Éditer sur GitLab',
