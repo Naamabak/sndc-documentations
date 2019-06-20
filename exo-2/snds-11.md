@@ -15,7 +15,6 @@ A terme, le SNDS contiendra également :
 - un échantillon de données en provenance des organismes d’Assurance Maladie complémentaire.
 
 
-
 Il couvre l’ensemble des personnes ayant eu recours au système de soins français ou étant décédées sur le territoire et permet de disposer d’informations sur le recours aux soins et le montant des dépenses associées, les informations concernant les séjours hospitaliers, depuis 2006, ainsi que les causes de décès des individus sur la période 2013-2015.
 
 Les principales informations du SNDS sont :
@@ -32,3 +31,7 @@ Les principales informations du SNDS sont :
 	- Séjours hospitaliers
 	- Indemnités journalières (maladie, ATMP, maternité) et invalidité
 - Causes médicales de décès
+- les sources 
+
+
+
