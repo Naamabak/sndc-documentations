@@ -8,6 +8,7 @@ Le Système National des Données de Santé (SNDS) géré par la Caisse National
 - les données de l’Assurance Maladie (consommations de soins en ville et en établissement remontées dans le SNIIRAM),
 - les données hospitalières du PMSI issues de l’ATIH, 
 - les données sur les causes médicales de décès du CépiDC-Inserm.
+- Hello
 
 A terme, le SNDS contiendra également :
 
