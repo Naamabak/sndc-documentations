@@ -33,3 +33,5 @@ Les principales informations du SNDS sont :
 	- Séjours hospitaliers
 	- Indemnités journalières (maladie, ATMP, maternité) et invalidité
 - Causes médicales de décès
+
+Codes CIM-10 : I05 à I09
