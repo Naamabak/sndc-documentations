@@ -5,9 +5,9 @@
 
 Le Système National des Données de Santé (SNDS) géré par la Caisse Nationale d’Assurance Maladie (CNAM) a été instauré par l’article 193 de la loi de modernisation de notre système de santé en 2016. Il contient, actuellement :
 
-- les données de l’Assurance Maladie (consommations de soins en ville et en établissement remontées dans le SNIIRAM),
-- les données hospitalières du PMSI issues de l’ATIH, 
-- les données sur les causes médicales de décès du CépiDC-Inserm.
+- les données de **remboursements de soins de l’Assurance Maladie** (consommations de soins en ville et en établissement remontées dans le SNIIRAM) depuis **2006**,
+- les données **hospitalières du PMSI** issues de l’ATIH depuis **2006**,
+- les données sur les **causes médicales de décès du CépiDC-Inserm** sur les années **2013 à 2015**.
 
 A terme, le SNDS contiendra également :
 
