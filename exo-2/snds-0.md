@@ -21,7 +21,8 @@ Il couvre l’ensemble des personnes ayant eu recours au système de soins fran�
 Les principales informations du SNDS sont :
 
 - Informations sur le bénéficiaire (sexe, mois et année de naissance, rang de naissance, lieu de résidence, régime, couverture maladie universelle complémentaire, aide à la complémentaire santé) ;
-- Informations sur les professionnels de santé (spécialité, mode d’exercice, sexe, âge, département d’implantation)
+- Informations sur les professionnels de santé 
+- Information sur les établisements (FINESS juridique, FINESSS géographique)
 - Pathologies, notamment les affections de longue durée et les diagnostics des séjours hospitaliers ;
 - Dépenses et remboursements (prestations en soins de ville, en établissements de santé, et montants associés)
 	- Consommations de soins de ville (consultations, actes techniques…)
