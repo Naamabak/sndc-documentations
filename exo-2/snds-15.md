@@ -32,3 +32,9 @@ Les principales informations du SNDS sont :
 	- Séjours hospitaliers
 	- Indemnités journalières (maladie, ATMP, maternité) et invalidité
 - Causes médicales de décès
+
+
+| PRS_NAT_REF  | Lettre clé   | 
+|-------|-------|
+| 1111 | C | 
+| 1211 | V |
