@@ -13,7 +13,7 @@ A terme, le SNDS contiendra également :
 
 - les données relatives au handicap (en provenance des MDPH - données de la CNSA),
 - un échantillon de données en provenance des organismes d’Assurance Maladie complémentaire.
-
+- [DSS](https://solidarites-sante.gouv.fr/ministere/organisation/directions/article/dss-direction-de-la-securite-sociale)
 
 
 Il couvre l’ensemble des personnes ayant eu recours au système de soins français ou étant décédées sur le territoire et permet de disposer d’informations sur le recours aux soins et le montant des dépenses associées, les informations concernant les séjours hospitaliers, depuis 2006, ainsi que les causes de décès des individus sur la période 2013-2015.
