@@ -7,7 +7,7 @@ Cette documentation est en construction, via [ce dépôt GitLab](https://gitlab.
 
 ## Contributeurs 
 
-Cette documentation sous licence ouverte est maintenue par la DREES et l'INDS.
+Cette documentation sous licence ouverte est maintenue par la DREES et l'INDS et la Cnam.
 
 Elle résulte d'une mise en commun de documents et travaux par plusieurs organisations :
 - la Caisse nationale d'assurance maladie - [Cnam](https://www.ameli.fr/)
