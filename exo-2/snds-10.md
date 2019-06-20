@@ -13,6 +13,7 @@ A terme, le SNDS contiendra également :
 
 - les données relatives au handicap (en provenance des MDPH - données de la CNSA),
 - un échantillon de données en provenance des organismes d’Assurance Maladie complémentaire.
+- des données issues de l'AP-HP
 
 
 
