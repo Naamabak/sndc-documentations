@@ -20,6 +20,7 @@ const sidebar = [
             ['/fiches/cartographie_pathologies', 'Cartographie des pathologies'],
             '/fiches/glossaire',
             '/fiches/graph_reperage_sniiram',
+            '/fiches/montant_sdv_dcir',
         ]
     },
     {
