@@ -15,7 +15,7 @@ Attention, le reste à charge n'est pas calculable car, actuellement, aucune inf
 
 
 Quelques exemples : 
-1. ++Une consultation chez un médecin généraliste le 03/04/2018 - patient "classique"++ 
+1. <u>Une consultation chez un médecin généraliste le 03/04/2018 - patient "classique"<\u> 
 Le patient a payé 27€, le montant de base de remboursement est 25€. 
 Le patient n'a aucune exonération du ticket modérateur, il sera remboursé de 17,5€ (70%) par le régime obligatoire. Le dépassement d'honoraires est de 2€.
 
