@@ -3,8 +3,6 @@
 Personne 1: 
 - Proposer une issue de modification de mon fichier 
 - Correction sur la  forme, ajout d’une information…
-- n° ici https://demo.codimd.org/ySt8zO07RUG_PcPjXvC_fA?both
-
 
 Personne 2: 
 - Répondre à l’issue 
@@ -13,5 +11,6 @@ Personne 2:
 
 
 Personne 1: 
-- Relire la Merge-Request et l’accepter 
+- Relire la Merge-Request et l’approuver
+- Demander à un formateur de la merger
 - Résoudre l’issue
