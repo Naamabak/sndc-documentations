@@ -1,4 +1,4 @@
-# Données du SNDS
+# Données du SNDS, enjeux et long terme
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ![le SNDS](../images/logo/logoSNDS.jpg)
