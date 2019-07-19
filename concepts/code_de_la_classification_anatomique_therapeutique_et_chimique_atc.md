@@ -1,7 +1,7 @@
 # Code de la Classification Anatomique, Thérapeutique et Chimique (ATC) (ATC)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -9,6 +9,4 @@ La classifications ATC est une manière de classer les médicaments. Définie pa
 ( Classification ATC traduite en français par le CNHIM).
 
 ## Remarques
-
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
 

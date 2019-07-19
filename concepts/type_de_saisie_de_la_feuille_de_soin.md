@@ -1,7 +1,7 @@
 # Type de saisie de la feuille de soin 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Mode de saisie ou de transmission des prestations au sein des organismes de liqu
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestation](prestation.md), [Organisme de liquidation de la prestation](organisme_de_liquidation_de_la_prestation.md)
 

@@ -1,7 +1,7 @@
 # Accident du Travail (AT)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prise en charge à 100%
+Notion plus générale : Prise en charge à 100%
 
 ## Définitions
 
@@ -10,9 +10,7 @@ Les soins liés à l'accident du travail sont pris en charge à 100% et en tiers
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Bénéficiaire](beneficiaire.md), [Prestation](prestation.md), [Tiers-Payant](tiers_payant.md)
 

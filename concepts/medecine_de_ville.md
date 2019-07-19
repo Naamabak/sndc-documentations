@@ -1,7 +1,7 @@
 # Médecine de ville 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -13,9 +13,7 @@ C'est cette deuxième définition qui est utilisée pour définir l'ONDAM soins 
 
 Correspond à la valeur 1 du type d'enveloppe.
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestation](prestation.md)
 

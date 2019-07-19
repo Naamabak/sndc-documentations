@@ -1,7 +1,7 @@
 # Code Identifiant de Présentation (CIP)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -13,9 +13,7 @@ Le code CIP est l’identifiant qui correspond à l'autorisation de mise sur le 
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Codes Unité Communes de Dispensation](codes_unite_communes_de_dispensation.md)
 

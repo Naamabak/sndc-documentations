@@ -1,7 +1,7 @@
 # Sections Locales Mutualistes (SLM)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Régime/Organisme
+Notion plus générale : Régime/Organisme
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Mutuelle (Assurance Maladie Complémentaire) qui bénéficie d'une délégation 
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Régime général](regime_general.md)
 

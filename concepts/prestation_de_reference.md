@@ -1,7 +1,7 @@
 # Prestation de référence 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Acte médical de base (C, V, etc) par opposition au supplément tarifaires (comp
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Complément ou majoration d'actes](complement_ou_majoration_d_actes.md)
 

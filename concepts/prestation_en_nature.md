@@ -1,7 +1,7 @@
 # Prestation en nature (PN)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Prise en charge pécunière par l'Assurance Maladie des prestations. Cela corres
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestation](prestation.md)
 

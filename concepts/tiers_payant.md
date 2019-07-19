@@ -1,7 +1,7 @@
 # Tiers-Payant 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -11,6 +11,4 @@ Dans certains cas, la personne n'avance pas les frais et le professionnel de san
 ## Remarques
 
 Le tiers payant est systèmatique dans le cadre de la CMUC, des accidents du travail ou des maladies professionnelles.
-
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
 

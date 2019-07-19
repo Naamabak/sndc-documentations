@@ -1,7 +1,7 @@
 # Prescription 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -17,9 +17,7 @@ Les prestations prescrites peuvent être :
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestation](prestation.md), [Professionnel de santé](professionnel_de_sante.md)
 

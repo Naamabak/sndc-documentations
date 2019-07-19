@@ -1,7 +1,7 @@
 # Couverture Maladie Universelle Complémentaire (CMUC)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Régime/Organisme
+Notion plus générale : Régime/Organisme
 
 ## Définitions
 
@@ -13,9 +13,7 @@ Note: Les bénéficiaires de la CMUC choisissent d'être couverts soit par le r�
 
 Les données de remboursement complémentaires ne sont connues que pour 85% de bénéficiaires CMUC (ceux qui sont couverts par leur régime d'affiliation).
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Ticket Modérateur](ticket_moderateur.md), [Bénéficiaire](beneficiaire.md)
 

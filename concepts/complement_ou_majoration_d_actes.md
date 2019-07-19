@@ -1,7 +1,7 @@
 # Complément ou majoration d'actes 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -14,9 +14,7 @@ On distingue deux catégories qui ne sont liées qu'à la façon dont ces suppl�
 
 Correspond à la valeur 1 du type de remboursement
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Acte](acte.md)
 

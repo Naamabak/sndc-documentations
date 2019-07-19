@@ -2,7 +2,7 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 Synonmyes: Organisme de prise en charge de la prestation
-Famille de concept : Régime/Organisme
+Notion plus générale : Régime/Organisme
 
 ## Définitions
 
@@ -10,9 +10,7 @@ Organisme de l'Assurance maladie prenant en charge le remboursement de la presta
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestation](prestation.md), [Bénéficiaire](beneficiaire.md), [Organisme](organisme.md), [Organisme d'affiliation du bénéficiaire](organisme_d_affiliation_du_beneficiaire.md)
 

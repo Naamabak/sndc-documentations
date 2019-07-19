@@ -1,7 +1,7 @@
 # Professionnel de santé prescripteur 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Professionnel de santé
+Notion plus générale : Professionnel de santé
 
 ## Définitions
 
@@ -13,9 +13,7 @@ Depuis peu, certaines professions d'auxiliaires médicaux ont le droit d'effectu
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prescription](prescription.md), [Professionnel de santé](professionnel_de_sante.md), [Professionnel de santé exécutant](professionnel_de_sante_executant.md)
 

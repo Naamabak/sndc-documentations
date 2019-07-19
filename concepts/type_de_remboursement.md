@@ -1,7 +1,7 @@
 # Type de remboursement 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -12,9 +12,7 @@ Note : Pour les prestations qui ont ces compléments, il y a un risque de double
 
 Pour avoir un dénombrement juste, il faut filtrer sur la valuer 0 du type de remboursement.
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestation](prestation.md), [Type de remboursement](type_de_remboursement.md)
 

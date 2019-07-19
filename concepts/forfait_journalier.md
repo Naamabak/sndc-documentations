@@ -1,7 +1,7 @@
 # Forfait journalier 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Indicateurs relatifs aux dépenses
+Notion plus générale : Indicateurs relatifs aux dépenses
 
 ## Définitions
 
@@ -10,6 +10,4 @@ Il n'est généralement pas pris en charge par l'Assurance Maladie Obligatoire s
 Note : Le forfait journalier de sortie est celui spécifique pour la journée de sortie du patient.
 
 ## Remarques
-
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
 

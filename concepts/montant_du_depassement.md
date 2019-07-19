@@ -1,7 +1,7 @@
 # Montant du dépassement 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Indicateurs relatifs aux dépenses
+Notion plus générale : Indicateurs relatifs aux dépenses
 
 ## Définitions
 
@@ -11,9 +11,7 @@ On parle de montant de dépassement lorsque les prix pratiqués par les professi
 
 Attention car cet indicateur ne possède pas le même périmètre selon les environnements.
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestataire de Soins](prestataire_de_soins.md), [Acte](acte.md), [Montant de la dépense](montant_de_la_depense.md), [Base de remboursement](base_de_remboursement.md)
 

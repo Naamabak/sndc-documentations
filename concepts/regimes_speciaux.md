@@ -1,7 +1,7 @@
 # Régimes spéciaux 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Régime/Organisme
+Notion plus générale : Régime/Organisme
 
 ## Définitions
 
@@ -10,9 +10,7 @@ SNCF, CAMIEG (EDF), RATP, CANSSM (Mines),ENIM (Marins), CNMSS (Militaire), CRPCE
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Régime Obligatoire](regime_obligatoire.md)
 

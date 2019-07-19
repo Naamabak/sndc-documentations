@@ -1,7 +1,7 @@
 # Prestation en espèces (PE)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -14,9 +14,7 @@ Revenus de substitution versés aux assurés au titre de :
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestation](prestation.md)
 

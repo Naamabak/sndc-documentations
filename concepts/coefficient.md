@@ -1,7 +1,7 @@
 # Coefficient 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -12,9 +12,7 @@ La liste de ces actes à coefficients est décrite dans la NGAP.
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestation](prestation.md), [Acte](acte.md)
 

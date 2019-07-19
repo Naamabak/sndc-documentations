@@ -1,7 +1,7 @@
 # Patientèle 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Professionnel de santé
+Notion plus générale : Professionnel de santé
 
 ## Définitions
 
@@ -12,9 +12,7 @@ Ensemble des bénéficiaires ayant consommé au moins une prestation du professi
 Nombre dépendant de la période sélectionnée (trimestre, année..). Il peut être également associé à une ou plusieurs prestations.
 Il existe également la notion de patientèle de médecin traitant.
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Bénéficiaire](beneficiaire.md), [Prestation](prestation.md), [Consommant](consommant.md), [Médecin traitant](medecin_traitant.md)
 

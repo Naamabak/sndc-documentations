@@ -1,7 +1,7 @@
 # Identifiant anonyme du bénéficiaire 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Bénéficiaires
+Notion plus générale : Bénéficiaires
 
 ## Définitions
 
@@ -11,9 +11,7 @@ En revanche dans l'EGB, il existe un deuxième identifiant permanent.
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Bénéficiaire](beneficiaire.md)
 

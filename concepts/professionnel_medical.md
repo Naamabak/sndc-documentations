@@ -1,7 +1,7 @@
 # Professionnel médical 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Professionnel de santé
+Notion plus générale : Professionnel de santé
 
 ## Définitions
 
@@ -11,6 +11,4 @@ Famille de concept : Professionnel de santé
 - Pharmaciens.
 
 ## Remarques
-
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
 

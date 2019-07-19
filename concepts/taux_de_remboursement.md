@@ -1,7 +1,7 @@
 # Taux de remboursement 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Le taux de remboursement de la sécurité sociale est le taux sur lequel cet org
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Tarif de responsabilité](tarif_de_responsabilite.md), [Base de remboursement](base_de_remboursement.md)
 

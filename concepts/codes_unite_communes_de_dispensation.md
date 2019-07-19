@@ -1,7 +1,7 @@
 # Codes Unité Communes de Dispensation (UCD)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Il s’agit d’une codification établie par le Club Inter Pharmaceutique qui c
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Code Identifiant de Présentation](code_identifiant_de_presentation.md)
 

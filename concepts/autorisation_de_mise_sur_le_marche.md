@@ -1,7 +1,7 @@
 # Autorisation de mise sur le marché (AMM)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Pour qu'un médicament soit mis en vente au public, les laboratoires doivent obt
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Médicament](medicament.md)
 

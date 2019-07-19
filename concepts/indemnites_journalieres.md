@@ -2,7 +2,7 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 Synonmyes: Revenu de remplacement
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -10,9 +10,7 @@ Revenu de substitution (salaires) versé dans le cadre des risques Maladie, Mate
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Accident du Travail](accident_du_travail.md)
 

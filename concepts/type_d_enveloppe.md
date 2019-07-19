@@ -1,7 +1,7 @@
 # Type d'enveloppe 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prestations
+Notion plus générale : Prestations
 
 ## Définitions
 
@@ -11,9 +11,7 @@ Au delà des prestations couvertes par le régime obligatoire,  l'Assurance Mala
 
 Attention à filtrer sur la bonne valeur.
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Prestation](prestation.md), [Assuré](assure.md)
 

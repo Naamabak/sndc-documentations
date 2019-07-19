@@ -1,7 +1,7 @@
 # Statut juridique de l'établissement 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Etablissements et Structures
+Notion plus générale : Etablissements et Structures
 
 ## Définitions
 
@@ -14,9 +14,7 @@ Ensemble de dispositions contractuelles, légales ou réglementaires qui défini
 
 Attention, la variable intitulée statut juridique dans le SNIIRAM ne recoupe pas totalement le concept statut juridique définis ici.
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Etablissement](etablissement.md)
 

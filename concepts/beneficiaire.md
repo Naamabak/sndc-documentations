@@ -1,7 +1,7 @@
 # Bénéficiaire 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Bénéficiaires
+Notion plus générale : Bénéficiaires
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Toute personne bénéficiant d'une couverture d'Assurance Maladie Obligatoire, �
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Assuré](assure.md), [Ayant-droit](ayant_droit.md)
 

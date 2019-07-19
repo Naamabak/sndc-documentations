@@ -1,7 +1,7 @@
 # Ticket Modérateur (TM)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Indicateurs relatifs aux dépenses
+Notion plus générale : Indicateurs relatifs aux dépenses
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Fraction de la base de remboursement restant à charge de l'assuré. C'est la ba
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Taux de remboursement](taux_de_remboursement.md), [Ticket Modérateur](ticket_moderateur.md), [Base de remboursement](base_de_remboursement.md), [Régimes complémentaires](regimes_complementaires.md)
 

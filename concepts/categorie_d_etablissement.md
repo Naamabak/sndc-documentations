@@ -1,7 +1,7 @@
 # Catégorie d'établissement 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Etablissements et Structures
+Notion plus générale : Etablissements et Structures
 
 ## Définitions
 
@@ -13,6 +13,4 @@ Les catégories d'établissements sont elles-mêmes classifiées en grands agré
 - Etablissements de formation des personnels sanitaires et sociaux.
 
 ## Remarques
-
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
 

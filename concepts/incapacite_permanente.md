@@ -1,7 +1,7 @@
 # Incapacité Permanente (IP)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Prise en charge à 100%
+Notion plus générale : Prise en charge à 100%
 
 ## Définitions
 
@@ -10,9 +10,7 @@ L'incapacité permanente donne lieu au versement d'une prestation en espèce et 
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Incapacité Temporaire](incapacite_temporaire.md)
 

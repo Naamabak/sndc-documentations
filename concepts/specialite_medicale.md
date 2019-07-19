@@ -1,7 +1,7 @@
 # Spécialité médicale 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Famille de concept : Professionnel de santé
+Notion plus générale : Professionnel de santé
 
 ## Définitions
 
@@ -9,9 +9,7 @@ Spécialité exercée par le médecin (généraliste, cardiologue, etc).
 
 ## Remarques
 
-Ce concept ne correspond pas à la donnée présente dans le SNIIRAM.
-
-## Concepts rattachés
+## Notions liées
 
 [Professionnel de santé](professionnel_de_sante.md)
 
