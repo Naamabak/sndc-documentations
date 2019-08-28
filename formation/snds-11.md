@@ -32,3 +32,12 @@ Les principales informations du SNDS sont :
 	- Séjours hospitaliers
 	- Indemnités journalières (maladie, ATMP, maternité) et invalidité
 - Causes médicales de décès
+
+Le SNDS a pour finalité la mise disposition de ces données afin de favoriser les études, recherches ou évaluation présentant un caractère d’intérêt public et contribuant à l’une des finalités suivantes :
+
+- à l’information sur la santé ;
+- à la mise en œuvre des politiques de santé ;
+- à la connaissance des dépenses de santé ;
+- à l’information des professionnels et des établissements sur leurs activités ;
+- à l'innovation dans les domaines de la santé et de la prise en charge médico-sociale ;
+- à la surveillance, à la veille et à la sécurité sanitaire.
