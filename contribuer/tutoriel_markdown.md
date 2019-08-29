@@ -42,7 +42,7 @@ Pour ajouter un lien, mettre son texte entre crochets, suivi du lien entre paren
 Pour un lien vers une autre page, un fichier ou une image, utiliser des chemins relatifs.
 
 ```
-[lien vers images/logo/logoSNDS.jpg depuis introduction/snds.md](../files/images/logo/logoSNDS.jpg)
+[lien vers files/images/logo/logoSNDS.jpg depuis introduction/snds.md](../files/images/logo/logoSNDS.jpg)
 ```
 
 Ajouter un point d'exclamation `!` devant le lien pour afficher une image.
