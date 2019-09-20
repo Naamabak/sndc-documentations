@@ -11,9 +11,7 @@ Internet Explorer cause des erreurs de navigation sur ce site, et sur GitLab.
 Nous conseillons d'utiliser un autre navigateur, car Microsoft a arrêté le développement d'Internet Explorer depuis quelques années.
 :::
 
-## Exercices
-
-### Exercice 0 : Prérequis
+## Exercice 0 : Prérequis
 
 - Explorer le [glossaire](glossaire) et choisir 1 fiche sur laquelle travailler.
 
@@ -22,17 +20,17 @@ Nous conseillons d'utiliser un autre navigateur, car Microsoft a arrêté le dé
 - S'assurer que son identifiant a bien été transmis pour ajout comme `developer` sur le projet.
 
 
-### Exercice 1 : Proposer une modification (issue)
+## Exercice 1 : Proposer une modification (issue)
  
 1. Choisir **2** modifications simples à réaliser sur la fiche précédemment sélectionnée
    - simple, comme la correction d'une erreur, ou l'ajout d'une précision
-1. Aller sur le [projet gitlab de formation]((https://gitlab.com/healthdatahub/formation/documentation-snds)) 
+1. Aller sur le [projet gitlab de formation](https://gitlab.com/healthdatahub/formation/documentation-snds) 
 1. Ouvrir une issue demandant à réaliser les modifications
     - employer un titre clair, indiquant le nom de la fiche à modifier et l'objet de la modification
     - rappeler le nom du fichier, avec un lien vers la page correspondante
     - décrire précisément les modifications à apporter
 
-### Exercice 2 : Modifier un document (commit)
+## Exercice 2 : Modifier un document (commit)
 
 1. S'assigner sur une issue (la sienne c'est plus simple, sauf à se mettre d'accord avec un voisin) 
 1. Réaliser la 1ère modification de l'issue 
@@ -44,16 +42,18 @@ Nous conseillons d'utiliser un autre navigateur, car Microsoft a arrêté le dé
     - Mettre un lien vers l'issue dans la description
     - Mettre le statut `WIP:` pour signifier que le travail n'est pas fini
 
-### Exercice 3 : Ajouter un commit sur une branche existante (commit)
+## Exercice 3 : Ajouter un commit sur une branche existante 
 
 1. Revenir sur la branche précédente
 1  Ouvrir le fichier précédemment modifié en édition
 1. Réaliser la 2ème modification proposée dans l'issue, et l'enregistrer dans un nouveau commit (sur la même branche donc, la merge-request est alors mise à jour automatiquement))
-1. Aller voir la page de la merge-request, et parcourir les 2 onglets
+1. Aller voir la page de la merge-request
+    - aller voir la prévisualisation des modifications (attendre que ce soit prêt = 2ème flèche en vert)
+    - retirer le statut `WIP:`
 1. Choisir un binome et s'attribuer réciproquement les merge-request 
 
 
-### Exercice 4 : Relire une contribution (merge-request)
+## Exercice 4 : Relire une contribution (merge-request)
 
 1. Lire l'issue initiale
 1. Regarder les modifications apportées dans la merge-request
@@ -66,7 +66,7 @@ Nous conseillons d'utiliser un autre navigateur, car Microsoft a arrêté le dé
 1. Demander validation à un administrateur pour voir la modification apparaître en ligne 
 
 
-### Exercice 5 : Créer une nouvelle fiche de glossaire
+## Exercice 5 : Créer une nouvelle fiche de glossaire
 
 :::tip Note
 Pour cet exercice, voir aussi la [page de documentation dédiée](https://documentation-snds.health-data-hub.fr/contribuer/nouveau_fichier.html#nouvelle-page-du-site)
@@ -80,17 +80,18 @@ Créer un nouveau fichier dans le dossier `glossaire` pour répondre à cette is
 
 Procéder avec un commit, une branche et une merge-request; le tout avec des noms explicites.
 
-### Exercice 6 : Ajouter du contenu à la fiche précédente
+## Exercice 6 : Ajouter du contenu varié
 
-Rédiger du texte exposant plus en détail la notion.
+Revenir sur la fiche précédente.
 
-Ajouts supplémentaires, à réaliser dans des commits sucessifs : 
+Réaliser les ajouts suivant, dans des commits sucessifs : 
+- rédiger du texte exposant plus en détail la notion
 - ajouter un lien interne vers une autre page
 - ajouter un lien externe vers une ressource web
 - ajouter une image via un lien externe
 - ajouter un fichier dans le dossier `files` et insérer un lien dans la page vers ce fichier
 
-### Exercice 7 : Utiliser la fonction Web IDE
+## Exercice 7 : Utiliser le Web IDE
 
 La fonction Web IDE est un autre mode d'édition, qui permet d'éditer plusieurs fichiers simulanément. 
 
