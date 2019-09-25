@@ -31,6 +31,9 @@ Il faut donc effectuer une jointure entre la table prestation ER_PRS_F et ER_TIP
 | **2383933** | AUDIOPROTHESE, APPAREIL DE CLASSE B, > OU = 20 ANS | 0,0% | 0,0% |
 | **2341449** | AUDIOPROTHESE, BOITIER AVEC ACCESSOIRES, > OU = 20 ANS | 0,0% | 0,0% |
 | **2392079** | AUDIOPROTHESE, LUNETTES AUDITIVES, < 20 ANS | 0,0% | 0,0% |
+| **2316782** | AUDIOPROTHESE, APPAREIL DE CLASSE A, < 20 ANS | 0,0% | 0,0% |
+| **2325723** | AUDIOPROTHESE, APPAREIL DE CLASSE B, < 20 ANS | 0,0% | 0,0% |
+| **2355820** | AUDIOPROTHESE, APPAREIL DE CLASSE C, < 20 ANS | 0,0% | 0,0% |
 
 *Source : DCIR (Base école), extraction mars 2018*
 
