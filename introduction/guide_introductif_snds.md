@@ -34,7 +34,7 @@
 
 #### CépiDC : Les causes médicales de décès
 
-#### EGB : Un échantillon représentatif
+#### EGB : L'échantillon représentatif des personnes protégées
 
 ### Les datamarts BO : des bases thématiques avec des données agrégées
 
