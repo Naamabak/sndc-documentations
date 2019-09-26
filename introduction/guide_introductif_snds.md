@@ -28,7 +28,7 @@
 
 ### Les bases avec des données indivduelles
 
-#### DCIR : Les soins en ville
+#### DCIR : Les soins de ville
 
 #### PMSI : Les soins à l'hôpital
 
