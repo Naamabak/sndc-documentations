@@ -1,14 +1,14 @@
 # RTU - Recommandation temporaire d'utilisation
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-L’[ANSM](ANSM.md) peut encadrer des prescriptions non conformes à l’autorisation de mise sur le marché (AMM), sous réserve :
-- qu'il existe un besoin thérapeutique
-- et que le rapport bénéfice/risque du médicament soit présumé favorable, notamment à partir de données scientifiques publiées d’efficacité et de tolérance.
+Une recommandation temporaire d’’utilisation (RTU) est établie par l’[ANSM](ANSM.md) et à son initiative, en vue d’encadrer et de sécuriser une pratique de prescription hors [AMM](AMM.md) qui a cours sur le territoire national et qui est susceptible d’exposer les patients à des risques. 
 
-Elle élabore à cette fin des Recommandations Temporaires d’Utilisation (RTU).
-Les RTU ont une durée maximale de 3 ans renouvelable.
-Leur  objectif est  de sécuriser l’utilisation des médicaments grâce à la mise en place d’un suivi des patients organisé par les laboratoires concernés.
+Une RTU est établie par l’ANSM en l’absence de spécialité de même principe actif, de même dosage et de même forme pharmaceutique bénéficiant d’une AMM ou d’une [ATU](ATU.md) dans l’indication considérée. 
+La RTU repose sur l’évaluation par l’ANSM d’une présomption de rapport bénéfice/risque favorable. 
+La RTU est accordée pour une durée de 3 ans renouvelable.
 
 ## Références
 
-- [Page sur le sit de l'ANSM](https://www.ansm.sante.fr/Activites/Recommandations-Temporaires-d-Utilisation-RTU/Les-Recommandations-Temporaires-d-Utilisation-Principes-generaux/(offset)/0)
+- [Page sur le site du ministère de la santé](https://solidarites-sante.gouv.fr/soins-et-maladies/medicaments/professionnels-de-sante/autorisation-de-mise-sur-le-marche/article/recommandations-temporaires-d-utilisation-rtu)
+- [Page sur le site de l'ANSM](https://www.ansm.sante.fr/Activites/Recommandations-Temporaires-d-Utilisation-RTU/Les-Recommandations-Temporaires-d-Utilisation-Principes-generaux/(offset)/0)
+- [Page wikipedia](https://fr.wikipedia.org/wiki/Recommandation_temporaire_d%E2%80%99utilisation)
