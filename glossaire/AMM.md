@@ -1,7 +1,7 @@
 # AMM - Autorisation de mise sur le marché
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Pour être commercialisée, une spécialité pharmaceutique doit obtenir préalablement une Autorisation de mise sur le marché (AMM). 
+Pour être commercialisée, une spécialité pharmaceutique doit obtenir préalablement une autorisation de mise sur le marché (AMM). 
 L’AMM est demandée par un laboratoire pharmaceutique, pour sa spécialité, sur la base d’un dossier comportant des données de qualité pharmaceutique, d’efficacité et de sécurité, dans l’indication revendiquée.
 
 ## Références
