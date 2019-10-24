@@ -74,10 +74,10 @@ L'intérêt de cette base est donc avant tout de repérer les personnes résidan
 Différentes utilisations sont possibles. Elle permet notamment : 
 * de faire des études spécifiques sur le recours aux soins des résidents en EHPA, pour les soins extérieurs à l'établissement (hospitalisations, ou médicaments lorsqu'ils n'ont pas de PUI, par exemple)
 * d'identifier des personnes âgées à exclure pour ne pas biaiser les études du recours aux soins lorsqu'il s'agit de soins pris en charge par leurs établissements.
+
 ### Accès
 Les tables EHPAD ne sont accessibles qu’aux utilisateurs SNIIRAM des caisses nationales de régimes, de la CNSA et des ARS via les mêmes profils que pour accéder à DCIR.
 
-Elle permet, lorsque l’information existe, de repérer des bénéficiaires dont une partie des soins est nécessairement absente dans le SNDS.
 
 ::: tip Crédits
 Le contenu original de cette fiche a été rédigé par Claire-Lise DUBOST.
