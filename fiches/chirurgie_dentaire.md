@@ -22,7 +22,10 @@ Dans le DCIRS la condition porte  l'ensemble des codes sur la variable PSE_ACT_S
 ## Illustration au travers de l'indicateur SNS
 
 Critères :
-Numérateur : Bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités ci dessus 
-
+Au numérateur : Bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités ci dessus en ville .
+A une année de naissance donnée, les soins sont recherchés sur les 2 ans suivants .
+Exemple : pour les patients nés en 2010 on recherche les soins sur les années complètes 2016 et 2017.
+Au dénominateur :
+ On ne garde que ceux qui ont eu au moins une prestation en ville (Hors Actes et Consultations Externes) à leur 6 ans sur les deux années considérée. Celà permet d'éliminer tous les patients ayant eu une consommation à 5 ans. 
 
 
