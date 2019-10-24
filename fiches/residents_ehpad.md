@@ -22,7 +22,7 @@ Les résidents en EHPAD bénéficient d'un forfait de soins dont le périmètre 
 Ce forfait est lié au tarif choisi par l'EHPAD :
 * Le **tarif partiel** inclut :
     * la rémunération du médecin coordinateur, 
-    * la rémunaration des infirmiers et auxiliaires médicaux salariés, 
+    * la rémunération des infirmiers et auxiliaires médicaux salariés, 
     * la rémunération des aides-soignants et aides médico-psychologiques, 
     * la rémunération des infirmiers libéraux
 * Le **tarif global** inclut :
@@ -52,9 +52,9 @@ Il n’existe pas d’information pour identifier ces personnes dans les tables 
 
 La variable **BEN_EHP_TOP** ne constitue pas une indicatrice de la résidence en établissement. Elle renseigne sur les bénéficiaires de séjours hospitaliers à distance, dont le séjour est effectué en établissement (EHPAD, ou établissement médico-social).
 
-Seul l'accès aux données de la base Resid-Ehpad permet de repérer de manière fiable des résidents en EHPAD ou ESLD.
+Seul l'accès aux données de la base Resid-Ehpad permet de repérer de manière fiable des résidents en EHPAD ou USLD.
 ## La base de données RESID-EHPAD
-Resid-Ehpad est un outil de transmission des informations des établissements (EHPAD et ESLD) à leur organisme pivot. 
+Resid-Ehpad est un outil de transmission des informations des établissements (EHPAD et USLD) à leur organisme pivot. 
 
 La base constituée à partir de cet outil est montée en charge au cours des dernières années et a rejoint le SNIIRAM en 2015. 
 
@@ -69,7 +69,7 @@ Elle contient notamment :
 Elle ne contient pas d'informations individuelles sur les soins des résidents.
 
 ### Utilisation
-L'intérêt de cette base est donc avant tout de repérer les personnes résidant en EHPAD ou ESLD, et de connaître le type de prise en charge de ces établissements.
+L'intérêt de cette base est donc avant tout de repérer les personnes résidant en EHPAD ou USLD, et de connaître le type de prise en charge de ces établissements.
 
 Différentes utilisations sont possibles. Elle permet notamment : 
 * de faire des études spécifiques sur le recours aux soins des résidents en EHPA, pour les soins extérieurs à l'établissement (hospitalisations, ou médicaments lorsqu'ils n'ont pas de PUI, par exemple)
