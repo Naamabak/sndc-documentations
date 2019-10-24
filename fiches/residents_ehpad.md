@@ -3,7 +3,7 @@ Dans le SNDS, le recours aux soins des personnes âgées décroit fortement aux 
 Cette fiche présente les **spécificités de la prise en charge des soins des personnes âgées résidant en établissement**, qui permettent de comprendre ce résultat.
 
 ## Les établissements d'hébergement pour personnes âgées 
-Fin 2015, **728 000 personnes fréquentent ou vivent au sein d'un établissement d’hébergement pour personnes âgées** (EHPA), soit 10 % des personnes âgées de 75 ans ou plus et un tiers de celles âgées de 90 ans ou plus.  (DREES, 2017). 
+Fin 2015, **728 000 personnes fréquentent ou vivent au sein d'un établissement d’hébergement pour personnes âgées** (EHPA), soit 10 % des personnes âgées de 75 ans ou plus et un tiers de celles âgées de 90 ans ou plus.  ([DREES, 2017](https://drees.solidarites-sante.gouv.fr/IMG/pdf/er1015.pdf)). 
 
 
 Il existe différentes catégories d'établissements : 
@@ -21,9 +21,14 @@ Les résidents en EHPAD bénéficient d'un forfait de soins dont le périmètre 
 
 Ce forfait est lié au tarif choisi par l'EHPAD :
 * Le **tarif partiel** inclut :
-** la rémunération du médecin coordinateur, 
-** des infirmiers et auxiliaires médicaux salariés, des aides-soignants et aides médico-psychologiques, et des infirmiers libéraux
-* Le **tarif global** inclut la même prise en charge, ainsi que la rémunération des médecins généralistes libéraux, et des autres auxiliaires médicaux libéraux.
+    * la rémunération du médecin coordinateur, 
+    * la rémunaration des infirmiers et auxiliaires médicaux salariés, 
+    * la rémunération des aides-soignants et aides médico-psychologiques, 
+    * la rémunération des infirmiers libéraux
+* Le **tarif global** inclut :
+    * la rémunération des mêmes professionnels qu'en tarif partiel,
+    * la rémunération des médecins généralistes libéraux,
+    * la rémunération des autres auxiliaires médicaux libéraux.
 
 Par ailleurs, certains EHPAD ont une **pharmacie à usage intérieur** (PUI) qui permet de délivrer des médicaments et dispositifs médicaux.
 
@@ -58,7 +63,7 @@ Elle contient notamment :
 - les modalités tarifaires de l’établissement (global/partiel et PUI ou non), 
 - les mouvements des résidents au sein de chaque établissement, avec un chaînage possible sur l’identifiant du patient avec les autres données du SNDS. 
 
-::: Caution **Attention :** Ces informations sur les résidents ne remontent que pour les EHPAD gérés par les caisses pivots de RG et de la CAVIMAC, l’information n’est donc pas exhaustive.
+::: Caution **Attention :** Ces informations sur les résidents ne remontent que pour les EHPAD gérés par les caisses pivots du Régime Général et de la CAVIMAC, l’information n’est donc pas exhaustive.
 :::
 
 Elle ne contient pas d'informations individuelles sur les soins des résidents.
@@ -75,6 +80,6 @@ Les tables EHPAD ne sont accessibles qu’aux utilisateurs SNIIRAM des caisses n
 Elle permet, lorsque l’information existe, de repérer des bénéficiaires dont une partie des soins est nécessairement absente dans le SNDS.
 
 ::: tip Crédits
-Le contenu original de cette fiche provient du document 2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx) rédigé par Kristel JACQUIER, Claire-Lise DUBOST, Céline LEROY.
-Cette fiche s'appuie fortement sur la présentation partagée par la CNAM lors d'un comité utilisateurs partenaires intitulé « Referentiel_médicalisé_IR_IMB_R_présentationCNAM » et que l'on retrouve sur le portail BO.
+Le contenu original de cette fiche a été rédigé par Claire-Lise DUBOST.
+Cette fiche s'appuie notamment sur la présentation partagée par la CNAM lors d'un comité utilisateurs partenaires intitulé « RESIDEHPAD_Comite_PMSI_DCIR_19-06-2018.pdf » et que l'on retrouve sur le portail BO.
 :::
