@@ -1,4 +1,5 @@
 # Les publics précaires dans le SNDS
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 
 L'objectif de la fiche est de décrire comment repérer les publics précaires dans le SNDS.
 
