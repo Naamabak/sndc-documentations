@@ -70,7 +70,7 @@ proc sql;
 %connectora;
 create table TAB_CIP as select * from connection to oracle
 (select distinct a.*
- from 	IR_PHA_R a  where substr(a.PHA_ATC_C07,1,5)=’XXXXX’ /*A PARAMETRER*/
+from IR_PHA_R a  where substr(a.PHA_ATC_C07,1,5)=’XXXXX’ /*A PARAMETRER*/
 );
 disconnect from oracle;
 quit;
@@ -105,7 +105,7 @@ and a.REM_TYP_AFF = b.REM_TYP_AFF
 /*Choisir un lien sur CIP13 ou CIP7, mettre le 2e en commentaire*/
 and trim(d.PHA_CIP_C13) = trim(b.PHA_PRS_C13) (SI CIP SUR 13 caractères)
 and trim(d.PHA_PRS_IDE) = trim(b.PHA_PRS_IDE) (SI CIP SUR 7 caractères)
-and a.EXE_SOI_DTD between to_date('01012017','ddmmyyyy') and       to_date('31122017','ddmmyyyy')
+and a.EXE_SOI_DTD between to_date('01012017','ddmmyyyy') and to_date('31122017','ddmmyyyy')
 and substr(d.PHA_ATC_C07,1,5)=’XXXXX’ /*A PARAMETRER*/
 );
 disconnect from oracle;
@@ -120,5 +120,5 @@ quit;
 ## Références
 
 ::: tip Crédits
-Cette fiche provient d'un [document publiée](../files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
+Cette fiche provient d'un [document publié](../files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
 :::
