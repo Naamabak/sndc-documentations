@@ -1,5 +1,5 @@
 # Les résidents en EHPAD
-Dans le SNDS, le recours aux soins des personnes âgées décroit fortement avec l'âge. 
+Dans le SNDS, le recours aux soins des personnes âgées décroit fortement aux grands âges. 
 Cette fiche présente les **spécificités de la prise en charge des soins des personnes âgées résidant en établissement**, qui permettent de comprendre ce résultat.
 
 ## Les établissements d'hébergement pour personnes âgées 
@@ -20,7 +20,9 @@ Ces établissements offrent une prise en charge de certains soins de santé, mai
 Les résidents en EHPAD bénéficient d'un forfait de soins dont le périmètre varie. 
 
 Ce forfait est lié au tarif choisi par l'EHPAD :
-* Le **tarif partiel** inclut la rémunération du médecin coordinateur, des infirmiers et auxiliaires médicaux salariés, des aides-soignants et aides médico-psychologiques, et des infirmiers libéraux
+* Le **tarif partiel** inclut :
+** la rémunération du médecin coordinateur, 
+** des infirmiers et auxiliaires médicaux salariés, des aides-soignants et aides médico-psychologiques, et des infirmiers libéraux
 * Le **tarif global** inclut la même prise en charge, ainsi que la rémunération des médecins généralistes libéraux, et des autres auxiliaires médicaux libéraux.
 
 Par ailleurs, certains EHPAD ont une **pharmacie à usage intérieur** (PUI) qui permet de délivrer des médicaments et dispositifs médicaux.
@@ -36,7 +38,7 @@ Les résidents en EHPA apparaissent dans le champ du SNDS dès lors qu'ils bén�
 
 Néanmoins, seules les consommations en dehors des périmètres de prise en charge de l'établissement sont visibles dans le SNDS.  
 
-::: tip 
+::: caution **Attention : **
 Lorsqu'on travaille sur le recours aux soins des personnes âgées dans le SNDS, il faut donc avoir en tête que **seule une partie de leurs soins** apparaît lorsqu'ils sont résidents d'un établissement d'hébergement pour personnes âgées médicalisé (EHPAD et USLD).
 :::
 
@@ -45,6 +47,7 @@ Il n’existe pas d’information pour identifier ces personnes dans les tables 
 
 La variable **BEN_EHP_TOP** ne constitue pas une indicatrice de la résidence en établissement. Elle renseigne sur les bénéficiaires de séjours hospitaliers à distance, dont le séjour est effectué en établissement (EHPAD, ou établissement médico-social).
 
+Seul l'accès aux données de la base Resid-Ehpad permet de repérer de manière fiable des résidents en EHPAD ou ESLD.
 ## La base de données RESID-EHPAD
 Resid-Ehpad est un outil de transmission des informations des établissements (EHPAD et ESLD) à leur organisme pivot. 
 
@@ -55,7 +58,7 @@ Elle contient notamment :
 - les modalités tarifaires de l’établissement (global/partiel et PUI ou non), 
 - les mouvements des résidents au sein de chaque établissement, avec un chaînage possible sur l’identifiant du patient avec les autres données du SNDS. 
 
-::: Attention : Ces informations sur les résidents ne remontent que pour les EHPAD gérés par les caisses pivots de RG et de la CAVIMAC, l’information n’est donc pas exhaustive.
+::: Caution **Attention :** Ces informations sur les résidents ne remontent que pour les EHPAD gérés par les caisses pivots de RG et de la CAVIMAC, l’information n’est donc pas exhaustive.
 :::
 
 Elle ne contient pas d'informations individuelles sur les soins des résidents.
@@ -70,3 +73,8 @@ Différentes utilisations sont possibles. Elle permet notamment :
 Les tables EHPAD ne sont accessibles qu’aux utilisateurs SNIIRAM des caisses nationales de régimes, de la CNSA et des ARS via les mêmes profils que pour accéder à DCIR.
 
 Elle permet, lorsque l’information existe, de repérer des bénéficiaires dont une partie des soins est nécessairement absente dans le SNDS.
+
+::: tip Crédits
+Le contenu original de cette fiche provient du document 2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx) rédigé par Kristel JACQUIER, Claire-Lise DUBOST, Céline LEROY.
+Cette fiche s'appuie fortement sur la présentation partagée par la CNAM lors d'un comité utilisateurs partenaires intitulé « Referentiel_médicalisé_IR_IMB_R_présentationCNAM » et que l'on retrouve sur le portail BO.
+:::
