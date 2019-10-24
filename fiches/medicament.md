@@ -28,7 +28,7 @@ Dans l’exemple suivant, l’extraction se fera sur l’année 2017.
 **Il faut bien faire attention sur le lien entre le code CIP de la table TAB_MED et celui de ER_PHA_F (CIP sur 7 ou 13 caractères).**
 
 
-```{SAS}
+``` sql
 proc sql;
 %connectora;
 create table liste_patients as select * from connection to oracle
@@ -64,8 +64,8 @@ Il faudra le faire en plusieurs étapes (CIP07, CIP13).
 
 **Table(s) concernée(s) :** [ER_PRS_F](../tables/DCIR/ER_PRS_F.md), [ER_PHA_F](../tables/DCIR/ER_PHA_F.md), [IR_PHA_R](../tables/DCIR/IR_PHA_R.md)
 
-```{SAS}
 *  METHODE 1
+``` sql
 proc sql;
 %connectora;
 create table TAB_CIP as select * from connection to oracle
@@ -84,8 +84,10 @@ run;
 
 ---> Programme du point 2 avec nom de la variable COD_CIP
 ```
-```{SAS}
+
 *  METHODE 2
+
+``` sql
 proc sql;
 %connectora;
 create table liste_patients as select * from connection to oracle
