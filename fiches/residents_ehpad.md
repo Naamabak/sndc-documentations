@@ -1,5 +1,5 @@
 # Les résidents en EHPAD
-Dans le SNDS, le recours aux soins des personnes âgées décroit fortement aux grands âges. 
+Dans le SNDS, le recours aux soins des personnes âgées décroit fortement aux grands âges, en particulier pour certains soins. 
 Cette fiche présente les **spécificités de la prise en charge des soins des personnes âgées résidant en établissement**, qui permettent de comprendre ce résultat.
 
 ## Les établissements d'hébergement pour personnes âgées 
