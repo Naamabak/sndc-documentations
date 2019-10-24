@@ -1,4 +1,4 @@
-# Repérage des passages aux urgences avec ou sans hospitalisation
+# Passages aux urgences avec ou sans hospitalisation
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ## Repérer les urgences avec hospitalisation 
