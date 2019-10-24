@@ -1,7 +1,7 @@
 # Repérage des passages aux urgences avec ou sans hospitalisation
 
 
-## 1. Repérer les urgences avec hospitalisation 
+## Repérer les urgences avec hospitalisation 
 
 Suite à un passage aux urgences, certains patients sont transférés dans un service du même hôpital ou dans un autre hôpital.
 
@@ -35,10 +35,10 @@ Type d’autorisation de la première Unité Médicale (AUT_TYP_1_UM) dans la li
 | 13   | Surveillance continue pédiatrique     |
 | 13   | Soins intensifs en unité neurovasculaire     |
 
-## 2. Repérer les passages urgences sans hospitalisation 
+## Repérer les passages urgences sans hospitalisation 
 Certains passages aux urgences ne sont pas suivis d'une hospitalisation (pas d'hospitalisation du tout ou hospitalisation dans un établissement autre que celui du passage aux urgences).
 Cette section explique comment les repérer en distinguant le type d'hopital public ou privé.
-### 2.1. Passages aux urgences sans hospitalisation en hopital privé
+### Passages aux urgences sans hospitalisation en hopital privé
 On utilisera ici les tables et variables suivantes dans DCIR : 
 - Table des établissements ER_PRS_F 
     - Variable PRS_NAT_REF : code de la prestation de référence
@@ -59,7 +59,7 @@ PRS_NAT_REF = 2238 AND ETE_TYP_COD in  (4,5,6,7,8,9)
 La prestation 2238 correspond aux forfaits d'accueil et de traitements des urgences.
 On se restreint au secteur privé grâce aux variables prs_ppu_sec et ete_typ_cod.
 
-### 2.2. Passages aux urgences sans hospitalisation en hopital public
+### Passages aux urgences sans hospitalisation en hopital public
 On utilisera ici les tables  du PMSI.
 
 *Question à résoudre avant publication de la fiche : est-ce qu'on va trouver les memes gens dans les 2 algos ou patients différents ?? Il faudrait tester la requête avec les 4 tables d'un coup vs en 2 étapes.*
@@ -86,10 +86,10 @@ Attention: la variable ACT_COD n'est pas codée sur un format homogène selon le
 Cette variable peut contenir jusqu'à 5 caractères : la prestation étant saisie manuellement par l'établissement, on retrouve la prestation avec un nombre différent d'espace devant/derrière le mot ATU.
 
 
-# Annexe
+## Annexe
 
 
-## Table de valeur de la variable VALO
+### Table de valeur de la variable VALO
 | Code | Libellé |
 | -------- | -------- |
 | 0    | Facture non valorisée      |
@@ -98,10 +98,10 @@ Cette variable peut contenir jusqu'à 5 caractères : la prestation étant saisi
 | 3     | Prise en charge des patients détenus  |
 
 
-## Table de valeur de la variable ACT_COD
+### Table de valeur de la variable ACT_COD
 Voir Annexe de la [fiche sur les actes et consultations externes](https://documentation-snds.health-data-hub.fr/fiches/actes_consult_externes.html#annexe)
 
-# Références
+## Références
 ::: tip Crédits
 Cette fiche a été rédigée par Anne CUERQ (INDS) et s'appuie fortement sur la présentation partagée par la CNAM lors d'un comité utilisateurs "Mise à disposition de requêtes pour repérer les passages aux urgences : urgences avec ou sans hospitalisation et que l'on retrouve sur le portail BO" (comité utilisateurs Assurance Maladie du 1er décembre 2017).
 :::
