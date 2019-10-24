@@ -43,7 +43,7 @@ Les résidents en EHPA apparaissent dans le champ du SNDS dès lors qu'ils bén�
 
 Néanmoins, seules les consommations en dehors des périmètres de prise en charge de l'établissement sont visibles dans le SNDS.  
 
-::: caution **Attention : **
+::: caution **Attention :**
 Lorsqu'on travaille sur le recours aux soins des personnes âgées dans le SNDS, il faut donc avoir en tête que **seule une partie de leurs soins** apparaît lorsqu'ils sont résidents d'un établissement d'hébergement pour personnes âgées médicalisé (EHPAD et USLD).
 :::
 
