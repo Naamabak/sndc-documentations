@@ -11,7 +11,7 @@ On considère ici que les individus qui habitent sur un territoire défavorisé,
 Il existe plusieurs indices de défavorisation dont le Fdep disponible dans le SNDS. 
 
 ### La précarité liée aux droits 
-L'analyse portera sur le répèrage de différents publics:  les cmucistes ,le bénéficaires de l'ACS, de l'AME. 
+L'analyse de la précarité peut se faire par le repèrage de différents publics selon leurs droits: les [cmucistes](cmu_c.md), les bénéficaires de l'ACS, de l'[AME](aide_medicale_etat.md). 
 
 Voici les liens vers les fiches correspondantes:
 - [CMU Complémentaire](../fiches/cmu_c.md)
