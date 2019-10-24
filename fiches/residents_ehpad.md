@@ -39,9 +39,11 @@ Il existe donc quatre type de prise en charge possibles :
 * les EHPAD en *forfait global avec PUI*
 
 ## Quelles informations sur leurs soins dans le SNDS ?
-Les résidents en EHPA apparaissent dans le champ du SNDS dès lors qu'ils bénéficient de remboursements de soins par l'Assurance maladie, ou de soins hospitaliers.
+Les résidents en établissements apparaissent dans le champ du SNDS dès lors qu'ils bénéficient de remboursements de soins par l'Assurance maladie, ou de soins hospitaliers.
 
 Néanmoins, seules les consommations en dehors des périmètres de prise en charge de l'établissement sont visibles dans le SNDS.  
+
+Par exemple, on ne pourra repérer les médicaments délivrés à un bénéficiaire que s'il est dans un établissement sans PUI, et on ne pourra repérer ses consultations auprès d'un généraliste que s'il est dans un établissement à tarif partiel.
 
 ::: caution **Attention :**
 Lorsqu'on travaille sur le recours aux soins des personnes âgées dans le SNDS, il faut donc avoir en tête que **seule une partie de leurs soins** apparaît lorsqu'ils sont résidents d'un établissement d'hébergement pour personnes âgées médicalisé (EHPAD et USLD).
@@ -53,6 +55,7 @@ Il n’existe pas d’information pour identifier ces personnes dans les tables 
 La variable **BEN_EHP_TOP** ne constitue pas une indicatrice de la résidence en établissement. Elle renseigne sur les bénéficiaires de séjours hospitaliers à distance, dont le séjour est effectué en établissement (EHPAD, ou établissement médico-social).
 
 Seul l'accès aux données de la base Resid-Ehpad permet de repérer de manière fiable des résidents en EHPAD ou USLD.
+
 ## La base de données RESID-EHPAD
 Resid-Ehpad est un outil de transmission des informations des établissements (EHPAD et USLD) à leur organisme pivot. 
 
