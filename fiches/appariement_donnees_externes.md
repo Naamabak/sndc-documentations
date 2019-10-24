@@ -57,7 +57,7 @@ Un autre appariement direct pourrait consister à importer des données dans le 
 Un lien pourrait être réalisé entre ces données et celles du SNDS pour ensuite extraire les données des bénéficiaires correspondants. 
 Cet appariement est équivalent à une sélection sur critères.
 
-IMAGE 
+![schema 2](../files/Cnam/Fiche_Appariement/Appariement_Schéma_2.png)
 
 
 **NB : Attention, l'import/export de données ne doit pas concerner des données identifiantes.**
@@ -88,7 +88,7 @@ Le principe peut évidemment être réalisé avec davantage de groupes, selon le
 
 Un appariement sera alors considéré comme réussi si au moins 90% des patients initiaux seront retrouvés.
 
-IMAGE
+![schema 3](../files/Cnam/Fiche_Appariement/Appariement_Schéma_3.png)
 
 Un travail d'ajustement des formats de variables peut être à prévoir car les variables des fichiers sources ne sont pas toujours au même format que les données du SNDS.
 
@@ -102,5 +102,5 @@ La qualité des données initiale est donc primordiale pour un appariement proba
 ## Références
 
 ::: tip Crédits
-[Fiche publiée](../files/Cnam/2019-10_Cnam_Appariement_MPL-2.0.pdf) par la Cnam
+Cette fiche provient d'un [document publié](../files/Cnam/2019-10_Cnam_Appariement_MPL-2.0.pdf) par la Cnam en Octobre 2019.
 :::
