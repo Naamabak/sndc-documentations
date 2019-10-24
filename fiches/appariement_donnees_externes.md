@@ -44,7 +44,7 @@ Afin de faire ce lien, il faut donc impérativement que l'identifiant SNDS soit 
 La procédure passe par un cryptage irréversible des informations *Numéro de sécurité sociale-Date de Naissance-Sexe* pour transformer l'identifiant SNDS en clair en identifiant SNDS crypté (BEN_NIR_PSA). 
 Cette procédure se fait via l'outil SAFE et se décompose de la manière suivante :
 
-IMAGE![](https://)
+![schema 1](../files/Cnam/Fiche_Appariement/Appariement_Schéma_1.png)
 
 Le commanditaire fournit, en plus des informations de l'identifiant SNDS en clair, un numéro sujet (par exemple NS_000001 -> NS_999999) qui va persister au cryptage pour être associé à l'identifiant SNDS crypté final. 
 Les données du SNDS seront extraites sur ce dernier et livrées sur l'identifiant sujet.
