@@ -45,8 +45,8 @@ and a.ORG_CLE_NUM = b.ORG_CLE_NUM
 and a.DCT_ORD_NUM = b.DCT_ORD_NUM
 and a.PRS_ORD_NUM = b.PRS_ORD_NUM
 and a.REM_TYP_AFF = b.REM_TYP_AFF
-and trim(c.COD_MED) = trim(b.PHA_PRS_C13) (SI CIP SUR 13 caractères)
-and trim(c.COD_MED) = trim(b.PHA_PRS_IDE) (SI CIP SUR 7 caractères)
+and trim(c.COD_MED) = trim(b.PHA_PRS_C13) (SI CIP SUR 13 caracteres)
+and trim(c.COD_MED) = trim(b.PHA_PRS_IDE) (SI CIP SUR 7 caracteres)
 and a.EXE_SOI_DTD between to_date('01012017','ddmmyyyy') and to_date('31122017','ddmmyyyy')
 );
 disconnect from oracle;
@@ -70,7 +70,7 @@ proc sql;
 %connectora;
 create table TAB_CIP as select * from connection to oracle
 (select distinct a.*
-from IR_PHA_R a  where substr(a.PHA_ATC_C07,1,5)=’XXXXX’ /*A PARAMETRER*/
+from IR_PHA_R a  where substr(a.PHA_ATC_C07,1,5)='XXXXX' /*A PARAMETRER*/
 );
 disconnect from oracle;
 quit;
@@ -105,10 +105,10 @@ and a.DCT_ORD_NUM = b.DCT_ORD_NUM
 and a.PRS_ORD_NUM = b.PRS_ORD_NUM
 and a.REM_TYP_AFF = b.REM_TYP_AFF
 /*Choisir un lien sur CIP13 ou CIP7, mettre le 2e en commentaire*/
-and trim(d.PHA_CIP_C13) = trim(b.PHA_PRS_C13) (SI CIP SUR 13 caractères)
-and trim(d.PHA_PRS_IDE) = trim(b.PHA_PRS_IDE) (SI CIP SUR 7 caractères)
+and trim(d.PHA_CIP_C13) = trim(b.PHA_PRS_C13) (SI CIP SUR 13 caracteres)
+and trim(d.PHA_PRS_IDE) = trim(b.PHA_PRS_IDE) (SI CIP SUR 7 caracteres)
 and a.EXE_SOI_DTD between to_date('01012017','ddmmyyyy') and to_date('31122017','ddmmyyyy')
-and substr(d.PHA_ATC_C07,1,5)=’XXXXX’ /*A PARAMETRER*/
+and substr(d.PHA_ATC_C07,1,5)='XXXXX' /*A PARAMETRER*/
 );
 disconnect from oracle;
 quit;
