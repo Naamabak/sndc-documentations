@@ -62,7 +62,7 @@ La première consiste à sélectionner les médicaments concernés par le ciblag
 La deuxième méthode consiste à cibler directement sur la classe ATC. 
 Il faudra le faire en plusieurs étapes (CIP07, CIP13).  
 
-**Table(s) concernée(s) :** [ER_PRS_F](../tables/DCIR/ER_PRS_F.md), [ER_PHA_F](../tables/DCIR/ER_PHA_F.md), [IR_PHA_R](../tables/DCIR/IR_PHA_R.md)
+**Table(s) concernée(s) :** [ER_PRS_F](../tables/DCIR/ER_PRS_F.md), [ER_PHA_F](../tables/DCIR/ER_PHA_F.md), IR_PHA_R
 
 *  METHODE 1
 ``` sql
