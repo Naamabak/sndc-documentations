@@ -1,6 +1,6 @@
 # Les résidents en EHPAD
-Dans le SNDS, le recours aux soins des personnes âgées décroit fortement aux grands âges, en particulier pour certains soins. 
-Cette fiche présente les **spécificités de la prise en charge des soins des personnes âgées résidant en établissement**, qui permettent de comprendre ce résultat.
+
+Cette fiche présente les **spécificités de la prise en charge des soins des personnes âgées résidant en établissement** et les précautions à mettre en oeuvre lors de l'exploitation du SNDS.
 
 ## Les établissements d'hébergement pour personnes âgées 
 Fin 2015, **728 000 personnes fréquentent ou vivent au sein d'un établissement d’hébergement pour personnes âgées** (EHPA), soit 10 % des personnes âgées de 75 ans ou plus et un tiers de celles âgées de 90 ans ou plus.  ([DREES, 2017](https://drees.solidarites-sante.gouv.fr/IMG/pdf/er1015.pdf)). 
@@ -49,7 +49,7 @@ Par exemple, on ne pourra repérer les médicaments délivrés à un bénéficia
 Lorsqu'on travaille sur le recours aux soins des personnes âgées dans le SNDS, il faut donc avoir en tête que **seule une partie de leurs soins** apparaît lorsqu'ils sont résidents d'un établissement d'hébergement pour personnes âgées médicalisé (EHPAD et USLD).
 :::
 
-## Le repérage des résidents en EHPA dans le SNDS
+## Le repérage des résidents en établissement pour personnes âgées dans le SNDS
 Il n’existe pas d’information pour identifier ces personnes dans les tables du SNIIRAM, du PMSI et des causes médicales de décès.
 
 La variable **BEN_EHP_TOP** ne constitue pas une indicatrice de la résidence en établissement. Elle renseigne sur les bénéficiaires de séjours hospitaliers à distance, dont le séjour est effectué en établissement (EHPAD, ou établissement médico-social).
@@ -59,7 +59,10 @@ Seul l'accès aux données de la base Resid-Ehpad permet de repérer de manière
 ## La base de données RESID-EHPAD
 Resid-Ehpad est un outil de transmission des informations des établissements (EHPAD et USLD) à leur organisme pivot. 
 
-La base constituée à partir de cet outil est montée en charge au cours des dernières années et a rejoint le SNIIRAM en 2015. 
+La base constituée à partir de cet outil est montée en charge au cours des dernières années et a rejoint le SNIIRAM en 2015.  
+
+::: Danger  **Attention :** Depuis 2018, un décret prévoit l'évolution de RESID-EHPAD vers la base **RESID-ESMS**. Ce traitement de données, mis en oeuvre par la [CNAM](../glossaire/Cnam.md), permet d’identifier l’activité et la consommation de soins dans les établissements et services médico-sociaux accueillant des personnes âgées et handicapées. Le [décret](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036694217&categorieLien=id) ne prévoit un accès qu'à la CNAM et aux organismes gérant un régime de base de l'assurance maladie. Les informations présentées ci-dessous sur la base RESID-EHPAD ne seront plus valables à partir du 1er janvier 2020, date à la quelle le traitement Resid-Ehpad prend fin.
+:::
 
 ### Contenu
 Elle contient notamment :
