@@ -21,7 +21,7 @@ sur PSE_ACT_NAT (pour les chirurgiens-dentistes)  :
 Dans le DCIRS la condition porte  l'ensemble de ces codes sur la variable PSE_ACT_SPE
 
 En terme de codes prestations certains  sont spécifiques aux médecins (stomatologues) d'autres spécifiques aux chirurgiens dentistes d'autres communs aux deux.
-On peut aisni dinstinguer les types de soins spécifiques aux dentaires avec les regroupements des codes actes suivants :
+On peut aussi dinstinguer des types de soins  dentaires spécifiques avec les regroupements des codes actes suivants :
 
 ***SC les Soins Conservateurs :*** ils concernent les soins du type détartrage, traitement d'une carie, dévitalisation d'une dent,...
 *  1411	SCM/SPA	ACTES EN SCM (ET SPA POUR LA CRPCEN)
@@ -73,7 +73,20 @@ On peut aisni dinstinguer les types de soins spécifiques aux dentaires avec les
 *  1424	TO/ETO	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE CHIRURGIEN-DENTISTE (ET ETO POUR LA CRPCEN)
 *  1466	TOR	TRAITEMENT ORTHOPEDIE DENTO FACIALE CCAM
 
+***Autres actes Dentaires :*** Les autres actes de soins  dentaires concernent notamment les soins de chirurgie dentaire et la parodontologie....
+*  1431	D/OCC	ACTES EN D (ET OCC POUR LA CRPCEN)
+*  1321	ADC	ACTE DE CHIRURGIE CCAM
+*  1352	ATM	ACTES TECHNIQUES MEDICAUX  (hors IMAGERIE) CCAM
+*  1432	DC	ACTES EN DC
+*  1472	TDS	PARODONTOLOGIE
 
+***La prévention Bucco dentaire :*** L’orthodontie concerne les soins visant à corriger ou à prévenir les déformations et les malpositions dentaires grâce à des appareils dentaires....
+*  1422	ORT/EOS	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE MEDECIN (ET EOS POUR LA CRPCEN)
+*  1424	TO/ETO	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE CHIRURGIEN-DENTISTE (ET ETO POUR LA CRPCEN)
+*  1466	TOR	TRAITEMENT ORTHOPEDIE DENTO FACIALE CCAM
+
+
+A noter également que d'autres actes non spécifiques comme les consultations visites ou radios peuvent également être réalisés par les chirurgiens dentistes et les stomatologues
 
 ## Illustration au travers de l'indicateur SNS
 
