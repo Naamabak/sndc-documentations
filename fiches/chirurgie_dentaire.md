@@ -30,7 +30,7 @@ On peut aisni dinstinguer les types de soins spécifiques aux dentaires avec les
 *  1453	AXI	PROPHYLAXIE BUCCO DENTAIRE CCAM
 *  1470	END	ENDODONTIE
 
-***SPR Prothèses Dentaires :***ils concernent tous les soins en rapport avec l'implantologie dentaire (remplacement d'une ou plusieurs dents, mise en place deracines artificielles....
+***SPR Prothèses Dentaires :*** ils concernent tous les soins en rapport avec l'implantologie dentaire (remplacement d'une ou plusieurs dents, mise en place deracines artificielles....
 *  1423	SPR	ACTES DE PROTHESE DENTAIRE PRATIQUES PAR LE CHIRURGIEN-DENTISTE
 *  1425	ATD	COMPLEMENT AT 150% DENTAIRE
 *  1452	PAR	PROTHESE AMOVIBLE DEFINITIVE RESINE
@@ -68,7 +68,7 @@ On peut aisni dinstinguer les types de soins spécifiques aux dentaires avec les
 *  1461	ADP	ACTES DIVERS PROTHESE DENTAIRE CCAM
 *  1471	INO	INLAY-ONLAY
 
-***TO Orthodontie :***L’orthodontie concerne les soins visant à corriger ou à prévenir les déformations et les malpositions dentaires grâce à des appareils dentaires....
+***TO Orthodontie :*** L’orthodontie concerne les soins visant à corriger ou à prévenir les déformations et les malpositions dentaires grâce à des appareils dentaires....
 *  1422	ORT/EOS	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE MEDECIN (ET EOS POUR LA CRPCEN)
 *  1424	TO/ETO	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE CHIRURGIEN-DENTISTE (ET ETO POUR LA CRPCEN)
 *  1466	TOR	TRAITEMENT ORTHOPEDIE DENTO FACIALE CCAM
