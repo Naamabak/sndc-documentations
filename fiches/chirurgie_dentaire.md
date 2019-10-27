@@ -2,26 +2,28 @@
 ----
 
 ## Comment repérer les soins dentaires ?
-Par la spécialité de l'exécutant :
+On repère les soins dentaires par la spécialité de l'exécutant :
 
- Dans le DCIR les codes spécialités PS concernés se retrouvent sur 2 variables :
-sur PSE_SPE_COD  (pour les médecins) :
+ Dans le DCIR les codes spécialités Professionnels de Santé concernés se retrouvent sur 2 variables :
+sur la variable Spécialité médicale PS exécutant PSE_SPE_COD  (pour les médecins) :
 - 18 : Stomatologie
 - 36 : Chirurgie dentaire (spécialiste O.D.F.)
 - 44 : Chirurgie maxillo-faciale
 - 45 : Chirurgie maxillo-faciale et stomatologie
 
-sur PSE_ACT_NAT (pour les chirurgiens-dentistes)  :
+sur la variable Nature d'activité du PS exécutant PSE_ACT_NAT (pour les chirurgiens-dentistes)  :
 - 19 : Chirurgie Dentaire
 - 53 : Chirurgie Dentaire Chirurgie Orale
 - 54 : Chirurgie Dentaire Médecine bucco-dentaire
 
-Dans le DCIRS la condition porte  l'ensemble de ces codes sur la variable **PSE_ACT_SPE**
+Dans le DCIRS la condition porte  sur l'ensemble de ces codes sur la variable Spécialité ou nature d'activité du professionnel de santé exécutant **PSE_ACT_SPE**
 
-En terme de codes prestations certains  sont spécifiques aux médecins (stomatologues) d'autres spécifiques aux chirurgiens dentistes d'autres communs aux deux.
-On peut aussi dinstinguer des types de soins  dentaires avec les regroupements des codes actes suivants :
+En terme de codes prestations, certains  sont spécifiques aux médecins (stomatologues) d'autres spécifiques aux chirurgiens dentistes d'autres communs aux deux. A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues
+A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues
 
-***SC les Soins Conservateurs :*** ils concernent les soins du type détartrage, traitement d'une carie, dévitalisation d'une dent,...
+On peut aussi dinstinguer différents types de soins  dentaires avec les regroupements des codes actes suivants :
+
+***SC les Soins Conservateurs :*** ils concernent les soins du type détaSpécialité ou nature d'activité du professionnel de santé exécutant rtrage, traitement d'une carie, dévitalisation d'une dent,...
 *  1411	SCM/SPA	ACTES EN SCM (ET SPA POUR LA CRPCEN)
 *  1433	SC/SCA	ACTES EN SC (ET SCA POUR LA CRPCEN)
 *  1451	SDE	SOINS DENTAIRES
@@ -91,16 +93,16 @@ On peut aussi dinstinguer des types de soins  dentaires avec les regroupements d
 *  9191		TICKET MODERATEUR - PREVENTION BUCCO-DENTAIRE
 
 
-A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues
 
 ## Illustration au travers le calul de l'indicateur SNS
  La Stratégie Nationale de Santé 2018-2022 (SNS) a été adoptée officiellement par le Gouvernement fin décembre 2017.
 Le volet spécifique  à la politique de santé de l'enfant, de l'adolescent et du jeune est évalué notamment au travers de l'indicateur 
  relatif au recours au soins dentaires pour les enfants. Il s'agit de la proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire
-[liste des indicateur SNS](url). Les critères choisis pour la requête SNDS et ses étapes de cosntruction sont décrits ci-dessous :
+[liste des indicateur SNS](url). 
 
-La requête a été élaborée sur DCIRS.
-Pour une année donnée on recherche les  bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités listées  en ville .
+Les critères choisis pour la requête SNDS et ses étapes de cosntruction sont décrits ci-dessous. La requête a été élaborée sur le  DCIRS.
+
+Pour une année donnée on recherche les  bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités listées  en ville c'est à dire .
 A une année de naissance donnée, les soins sont recherchés sur les 2 ans suivants .
 Ainsi l'indicateur de l'année 2016 concerne les patients nés en 2010. on recherche leurs soins sur les années complètes 2016 et 2017.
 Au dénominateur :
