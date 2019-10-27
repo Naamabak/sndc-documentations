@@ -101,14 +101,14 @@ Le volet spécifique  à la politique de santé de l'enfant, de l'adolescent et 
 [liste des indicateur SNS](url). 
 
 Les critères retenus pour la requête SNDS et ses étapes de construction sont décrits ci-dessous. La requête a été élaborée sur le  DCIRS.
-L'indicateur se calcule année par par année pour une classe d'âge donnée. A une année de naissance donnée, les soins sont recherchés sur les 2 ans suivants .
+L'indicateur se calcule année par année pour une classe d'âge donnée. A une année de naissance donnée, les soins sont recherchés sur les 2 ans suivants .
 Ainsi l'indicateur de l'année 2016 concerne les enfants nés en 2010. on recherche leurs soins sur les années complètes 2016 et 2017.
 Au numérateur : 
-Pour une année donnée, on recherche les  bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités listées  hors Actes et Consultations Externes de l'hôpital public. 
+Pour une année donnée, on recherche les  bénéficiaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités listées  hors Actes et Consultations Externes de l'hôpital public. 
 
 Au dénominateur :
  On ne garde que ceux qui ont eu au moins une prestation en ville (Hors Actes et Consultations Externes) a minimum à leur 6 ans sur les deux années considérée.
- Celà permet d'éliminer tous les patients n'ayant pas eu un remboursement de soins au delà de leur 5 ans. 
+ Cela permet d'éliminer tous les patients n'ayant pas eu un remboursement de soins au delà de leur 5 ans. 
 
 Les corrections sur les codes communes sont appliquées de manière à ^pouvoir rétablir les départements corses et d'outre-mer.
 
