@@ -1,7 +1,5 @@
 # Le recours aux soins dentaires 
 ----
-**
-Illustration au travers de l'exemple sur l'indicateur de la Stratégie Nationale de Santé proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire**
 
 ## Comment repérer les soins dentaires ?
 Par la spécialité de l'exécutant :
@@ -81,7 +79,7 @@ On peut aussi dinstinguer des types de soins  dentaires spécifiques avec les re
 *  1432	DC	ACTES EN DC
 *  1472	TDS	PARODONTOLOGIE
 
-***La prévention Bucco dentaire :*** Ce dispositif consite à un examen de prévention pour les jeunes âgés de 6, 9, 12, 15, 18, 21 et 24 ans, et un examen pour les femmes enceintes à compter de leur 4e mois de grossesse jusqu'au 12e jour après leur accouchement
+***La prévention Bucco dentaire :*** Ce dispositif consite en un examen de prévention pour les jeunes âgés de 6, 9, 12, 15, 18, 21 et 24 ans, et un examen pour les femmes enceintes à compter de leur 4e mois de grossesse jusqu'au 12e jour après leur accouchement
 *  1434	BDC	PREVENTION BUCCO-DENTAIRE: CONSULTATION - MATER
 *  1435	BR2	PREVENTION BUCCO-DENTAIRE: RADIO DEUX CLICHES-MATER
 *  1436	BR4	PREVENTION BUCCO-DENTAIRE: RADIO QUATRE CLICHES-MATER
@@ -96,6 +94,12 @@ On peut aussi dinstinguer des types de soins  dentaires spécifiques avec les re
 A noter également que d'autres actes non spécifiques comme les consultations visites ou radios peuvent également être réalisés par les chirurgiens dentistes et les stomatologues
 
 ## Illustration au travers de l'indicateur SNS
+
+ Stratégie Nationale de Santé 2018-2022 (SNS) a été adoptée officiellement par le Gouvernement fin décembre 2017.
+Le volet spécifique  à la politique de santé de l'enfant, de l'adolescent et du jeune est évalué notamment au travers de l'indicateur 
+ relatif au recours au soins dentaires pour les enfants. Il s'agit de la proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire
+[liste des indicateur SNS](url)Celui-ci a été calculé au moyen d'une requête SNDS.
+Vous trovuerez ci dessous les étapes de cosntruction de la requête
 
 Critères :
 Au numérateur : Bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités ci dessus en ville .
