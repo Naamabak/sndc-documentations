@@ -106,4 +106,3 @@ Ainsi l'indicateur de l'année 2016 concerne les patients nés en 2010. on reche
 Au dénominateur :
  On ne garde que ceux qui ont eu au moins une prestation en ville (Hors Actes et Consultations Externes) à leur 6 ans sur les deux années considérée. Celà permet d'éliminer tous les patients ayant eu une consommation à 5 ans. 
 
-
