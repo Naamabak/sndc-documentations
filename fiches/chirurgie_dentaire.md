@@ -80,10 +80,16 @@ On peut aussi dinstinguer des types de soins  dentaires spécifiques avec les re
 *  1432	DC	ACTES EN DC
 *  1472	TDS	PARODONTOLOGIE
 
-***La prévention Bucco dentaire :*** L’orthodontie concerne les soins visant à corriger ou à prévenir les déformations et les malpositions dentaires grâce à des appareils dentaires....
-*  1422	ORT/EOS	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE MEDECIN (ET EOS POUR LA CRPCEN)
-*  1424	TO/ETO	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE CHIRURGIEN-DENTISTE (ET ETO POUR LA CRPCEN)
-*  1466	TOR	TRAITEMENT ORTHOPEDIE DENTO FACIALE CCAM
+***La prévention Bucco dentaire :*** Ce dispositif consite à un examen de prévention pour les jeunes âgés de 6, 9, 12, 15, 18, 21 et 24 ans, et un examen pour les femmes enceintes à compter de leur 4e mois de grossesse jusqu'au 12e jour après leur accouchement
+*  1434	BDC	PREVENTION BUCCO-DENTAIRE: CONSULTATION - MATER
+*  1435	BR2	PREVENTION BUCCO-DENTAIRE: RADIO DEUX CLICHES-MATER
+*  1436	BR4	PREVENTION BUCCO-DENTAIRE: RADIO QUATRE CLICHES-MATER
+*  9421	BDC	PREVENTION BUCCO-DENTAIRE: CONSULTATION
+*  9422	BR2	PREVENTION BUCCO-DENTAIRE: RADIO DEUX CLICHES
+*  9423	BR4	PREVENTION BUCCO-DENTAIRE: RADIO QUATRE CLICHES
+*  9424	RIN	PREVENTION BUCCO-DENTAIRE: RADIO EN IMAGERIE NUMERISEE
+*  9429	BD2	CAMPAGNE BUCCO DENTAIRE MOCALES
+*  9191		TICKET MODERATEUR - PREVENTION BUCCO-DENTAIRE
 
 
 A noter également que d'autres actes non spécifiques comme les consultations visites ou radios peuvent également être réalisés par les chirurgiens dentistes et les stomatologues
