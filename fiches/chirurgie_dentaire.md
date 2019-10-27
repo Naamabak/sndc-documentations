@@ -100,7 +100,7 @@ Le volet spécifique  à la politique de santé de l'enfant, de l'adolescent et 
  relatif au recours au soins dentaires pour les enfants. Il s'agit de la proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire
 [liste des indicateur SNS](url). 
 
-Les critères retenus pour la requête SNDS et ses étapes de cosntruction sont décrits ci-dessous. La requête a été élaborée sur le  DCIRS.
+Les critères retenus pour la requête SNDS et ses étapes de construction sont décrits ci-dessous. La requête a été élaborée sur le  DCIRS.
 L'indicateur se calcule année par par année pour une classe d'âge donnée. A une année de naissance donnée, les soins sont recherchés sur les 2 ans suivants .
 Ainsi l'indicateur de l'année 2016 concerne les enfants nés en 2010. on recherche leurs soins sur les années complètes 2016 et 2017.
 Au numérateur : 
