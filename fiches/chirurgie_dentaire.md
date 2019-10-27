@@ -21,7 +21,7 @@ Dans le DCIRS la condition porte  sur l'ensemble de ces codes sur la variable Sp
 En terme de codes prestations, certains  sont spécifiques aux médecins (stomatologues) d'autres spécifiques aux chirurgiens dentistes d'autres communs aux deux. A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues
 A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues
 
-On peut aussi dinstinguer différents types de soins  dentaires avec les regroupements des codes actes suivants :
+On peut aussi distinguer différents types de soins  dentaires avec les regroupements des codes actes suivants :
 
 ***SC les Soins Conservateurs :*** ils concernent les soins du type détartrage, traitement d'une carie, dévitalisation d'une dent,...
 *  1411	SCM/SPA	ACTES EN SCM (ET SPA POUR LA CRPCEN)
@@ -81,7 +81,7 @@ On peut aussi dinstinguer différents types de soins  dentaires avec les regroup
 *  1432	DC	ACTES EN DC
 *  1472	TDS	PARODONTOLOGIE
 
-***La prévention Bucco dentaire :*** Ce dispositif consite en un examen de prévention pour les jeunes âgés de 6, 9, 12, 15, 18, 21 et 24 ans, et un examen pour les femmes enceintes à compter de leur 4e mois de grossesse jusqu'au 12e jour après leur accouchement
+***La prévention Bucco dentaire :*** Ce dispositif consiste en un examen de prévention pour les jeunes âgés de 6, 9, 12, 15, 18, 21 et 24 ans, et un examen pour les femmes enceintes à compter de leur 4e mois de grossesse jusqu'au 12e jour après leur accouchement
 *  1434	BDC	PREVENTION BUCCO-DENTAIRE: CONSULTATION - MATER
 *  1435	BR2	PREVENTION BUCCO-DENTAIRE: RADIO DEUX CLICHES-MATER
 *  1436	BR4	PREVENTION BUCCO-DENTAIRE: RADIO QUATRE CLICHES-MATER
