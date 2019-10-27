@@ -23,7 +23,7 @@ A noter également que d'autres actes non spécifiques comme les consultations v
 
 On peut aussi dinstinguer différents types de soins  dentaires avec les regroupements des codes actes suivants :
 
-***SC les Soins Conservateurs :*** ils concernent les soins du type détaSpécialité ou nature d'activité du professionnel de santé exécutant rtrage, traitement d'une carie, dévitalisation d'une dent,...
+***SC les Soins Conservateurs :*** ils concernent les soins du type détartrage, traitement d'une carie, dévitalisation d'une dent,...
 *  1411	SCM/SPA	ACTES EN SCM (ET SPA POUR LA CRPCEN)
 *  1433	SC/SCA	ACTES EN SC (ET SCA POUR LA CRPCEN)
 *  1451	SDE	SOINS DENTAIRES
