@@ -18,7 +18,7 @@ sur PSE_ACT_NAT (pour les chirurgiens-dentistes)  :
 - 53 : Chirurgie Dentaire Chirurgie Orale
 - 54 : Chirurgie Dentaire Médecine bucco-dentaire
 
-Dans le DCIRS la condition porte  l'ensemble de ces codes sur la variable PSE_ACT_SPE
+Dans le DCIRS la condition porte  l'ensemble de ces codes sur la variable **PSE_ACT_SPE**
 
 En terme de codes prestations certains  sont spécifiques aux médecins (stomatologues) d'autres spécifiques aux chirurgiens dentistes d'autres communs aux deux.
 On peut aussi dinstinguer des types de soins  dentaires spécifiques avec les regroupements des codes actes suivants :
@@ -29,7 +29,7 @@ On peut aussi dinstinguer des types de soins  dentaires spécifiques avec les re
 *  1451	SDE	SOINS DENTAIRES
 *  1453	AXI	PROPHYLAXIE BUCCO DENTAIRE CCAM
 *  1470	END	ENDODONTIE
-
+`prs_nat in(1411,1433,1451,1453,1470)`
 ***SPR Prothèses Dentaires :*** ils concernent tous les soins en rapport avec l'implantologie dentaire (remplacement d'une ou plusieurs dents, mise en place deracines artificielles....
 *  1423	SPR	ACTES DE PROTHESE DENTAIRE PRATIQUES PAR LE CHIRURGIEN-DENTISTE
 *  1425	ATD	COMPLEMENT AT 150% DENTAIRE
