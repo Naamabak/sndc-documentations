@@ -72,7 +72,7 @@ On peut aussi dinstinguer des types de soins  dentaires spécifiques avec les re
 *  1424	TO/ETO	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE CHIRURGIEN-DENTISTE (ET ETO POUR LA CRPCEN)
 *  1466	TOR	TRAITEMENT ORTHOPEDIE DENTO FACIALE CCAM
 
-***Autres actes Dentaires :*** Les autres actes de soins  dentaires concernent notamment les soins de chirurgie dentaire et la parodontologie....
+***Autres actes Dentaires :*** Les autres actes de soins  dentaires concernent notamment les soins de chirurgie dentaire (extractiob de dent ) et la parodontologie....
 *  1431	D/OCC	ACTES EN D (ET OCC POUR LA CRPCEN)
 *  1321	ADC	ACTE DE CHIRURGIE CCAM
 *  1352	ATM	ACTES TECHNIQUES MEDICAUX  (hors IMAGERIE) CCAM
@@ -98,8 +98,7 @@ A noter également que d'autres actes non spécifiques comme les consultations v
  Stratégie Nationale de Santé 2018-2022 (SNS) a été adoptée officiellement par le Gouvernement fin décembre 2017.
 Le volet spécifique  à la politique de santé de l'enfant, de l'adolescent et du jeune est évalué notamment au travers de l'indicateur 
  relatif au recours au soins dentaires pour les enfants. Il s'agit de la proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire
-[liste des indicateur SNS](url)Celui-ci a été calculé au moyen d'une requête SNDS.
-Vous trovuerez ci dessous les étapes de cosntruction de la requête
+[liste des indicateur SNS](url). La requête SNDS et les étapes de cosntruction de la requête sont 
 
 Critères :
 Au numérateur : Bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités ci dessus en ville .
