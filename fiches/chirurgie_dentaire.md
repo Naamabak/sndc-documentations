@@ -93,17 +93,16 @@ On peut aussi dinstinguer des types de soins  dentaires spécifiques avec les re
 
 A noter également que d'autres actes non spécifiques comme les consultations visites ou radios peuvent également être réalisés par les chirurgiens dentistes et les stomatologues
 
-## Illustration au travers de l'indicateur SNS
-
- Stratégie Nationale de Santé 2018-2022 (SNS) a été adoptée officiellement par le Gouvernement fin décembre 2017.
+## Illustration au travers le calul de l'indicateur SNS
+ La Stratégie Nationale de Santé 2018-2022 (SNS) a été adoptée officiellement par le Gouvernement fin décembre 2017.
 Le volet spécifique  à la politique de santé de l'enfant, de l'adolescent et du jeune est évalué notamment au travers de l'indicateur 
  relatif au recours au soins dentaires pour les enfants. Il s'agit de la proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire
-[liste des indicateur SNS](url). Les critères de la requête SNDS et ses étapes de cosntruction sont décrites ci-dessous :
+[liste des indicateur SNS](url). Les critères choisis pour la requête SNDS et ses étapes de cosntruction sont décrits ci-dessous :
 
-Critères :
-Au numérateur : Bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités ci dessus en ville .
+La requête a été élaborée sur DCIRS.
+Pour une année donnée on recherche les  bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités listées  en ville .
 A une année de naissance donnée, les soins sont recherchés sur les 2 ans suivants .
-Exemple : pour les patients nés en 2010 on recherche les soins sur les années complètes 2016 et 2017.
+Ainsi l'indicateur de l'année 2016 concerne les patients nés en 2010. on recherche leurs soins sur les années complètes 2016 et 2017.
 Au dénominateur :
  On ne garde que ceux qui ont eu au moins une prestation en ville (Hors Actes et Consultations Externes) à leur 6 ans sur les deux années considérée. Celà permet d'éliminer tous les patients ayant eu une consommation à 5 ans. 
 
