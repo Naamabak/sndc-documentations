@@ -22,14 +22,14 @@ Dans le DCIRS la condition porte  l'ensemble de ces codes sur la variable PSE_AC
 
 En terme de codes prestations certains  sont spécifiques aux médecins (stomatologues) d'autres spécifiques aux chirurgiens dentistes d'autres communs aux deux.
 On peut aisni faire un focus sur  les regroupements des codes actes spécifiques suivants :
-***SC Soins conservateurs :*	**
+***SC Soins conservateurs :***
 *  1411	SCM/SPA	ACTES EN SCM (ET SPA POUR LA CRPCEN)
 *  1433	SC/SCA	ACTES EN SC (ET SCA POUR LA CRPCEN)
 *  1451	SDE	SOINS DENTAIRES
 *  1453	AXI	PROPHYLAXIE BUCCO DENTAIRE CCAM
 *  1470	END	ENDODONTIE
 
-***SPR Prothèses Dentaires :*	**
+SPR Prothèses Dentaires :
 *  1423	SPR	ACTES DE PROTHESE DENTAIRE PRATIQUES PAR LE CHIRURGIEN-DENTISTE
 *  1425	ATD	COMPLEMENT AT 150% DENTAIRE
 *  1452	PAR	PROTHESE AMOVIBLE DEFINITIVE RESINE
