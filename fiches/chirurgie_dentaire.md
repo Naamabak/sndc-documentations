@@ -98,7 +98,7 @@ A noter également que d'autres actes non spécifiques comme les consultations v
  Stratégie Nationale de Santé 2018-2022 (SNS) a été adoptée officiellement par le Gouvernement fin décembre 2017.
 Le volet spécifique  à la politique de santé de l'enfant, de l'adolescent et du jeune est évalué notamment au travers de l'indicateur 
  relatif au recours au soins dentaires pour les enfants. Il s'agit de la proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire
-[liste des indicateur SNS](url). La requête SNDS et les étapes de cosntruction de la requête sont 
+[liste des indicateur SNS](url). Les critères de la requête SNDS et ses étapes de cosntruction sont décrites ci-dessous :
 
 Critères :
 Au numérateur : Bénéficaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités ci dessus en ville .
