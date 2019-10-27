@@ -4,20 +4,25 @@
 Illustration au travers de l'exemple sur l'indicateur de la Stratégie Nationale de Santé proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire**
 
 ## Comment repérer les soins dentaires ?
+Par la spécialité de l'exécutant :
 
  Dans le DCIR les codes spécialités PS concernés se retrouvent sur 2 variables :
-sur PSE_SPE_COD :
+sur PSE_SPE_COD  (pour les médecins) :
 - 18 : Stomatologie
 - 36 : Chirurgie dentaire (spécialiste O.D.F.)
 - 44 : Chirurgie maxillo-faciale
 - 45 : Chirurgie maxillo-faciale et stomatologie
 
-sur PSE_ACT_NAT :
+sur PSE_ACT_NAT (pour les chirurgiens-dentistes)  :
 - 19 : Chirurgie Dentaire
 - 53 : Chirurgie Dentaire Chirurgie Orale
 - 54 : Chirurgie Dentaire Médecine bucco-dentaire
 
-Dans le DCIRS la condition porte  l'ensemble des codes sur la variable PSE_ACT_SPE
+Dans le DCIRS la condition porte  l'ensemble de ces codes sur la variable PSE_ACT_SPE
+
+En terme de codes prestations certains  sont spécifiques aux médecins (stomatologues) d'autres spécifiques aux chirurgiens dentistes d'autres communs aux deux.
+On peut aisni faire un focus sur  les regroupements des codes actes spécifiques suivants :
+Sélection 
 
 ## Illustration au travers de l'indicateur SNS
 
