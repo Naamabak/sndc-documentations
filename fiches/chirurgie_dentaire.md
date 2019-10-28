@@ -98,7 +98,7 @@ On peut aussi distinguer différents types de soins  dentaires avec les regroupe
  La Stratégie Nationale de Santé 2018-2022 (SNS) a été adoptée officiellement par le Gouvernement fin décembre 2017.
 Le volet spécifique  à la politique de santé de l'enfant, de l'adolescent et du jeune est évalué notamment au travers de l'indicateur 
  relatif au recours au soins dentaires pour les enfants. Il s'agit de la proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire
-[liste des indicateur SNS](url). 
+[liste des indicateur SNS](http://dataviz.drees.solidarites-sante.gouv.fr/suivi-sns/. 
 
 Les critères retenus pour la requête SNDS et ses étapes de construction sont décrits ci-dessous. La requête a été élaborée sur le  DCIRS.
 L'indicateur se calcule année par année pour une classe d'âge donnée. A une année de naissance donnée, les soins sont recherchés sur les 2 ans suivants .
