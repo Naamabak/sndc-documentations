@@ -15,7 +15,9 @@ Il existe principalement deux types d'appariements :
 Réaliser un appariement nécessite une autorisation préalable de la [CNIL](../glossaire/CNIL.md).
 :::
 
-#### Exemple 1 : 
+
+*Exemple 1 :* 
+
 Un chercheur souhaite obtenir des informations sur une typologie de patients pour lesquels il a leur NIR. 
 Il va entreprendre les démarches auprès de l'équipe DEMEX de la CNAM et va réaliser une demande de pseudonymisation de leurs données (en utilisant la procédure nécessaire) à partir des numéros de sécurité sociale, des codes sexe et des dates de naissance fournis. 
 Il aura en sa possession une correspondance entre ses données et un identifiant sujet (NS) des patients de son étude. 
@@ -24,7 +26,8 @@ L'équipe DEMEX de la CNAM récupérera l'identifiant crypté, présent dans le 
 ::: warning
 C'est un **appariement direct**.
 :::
-#### Exemple 2 : 
+
+*Exemple 2 :* 
 
 Un chercheur souhaite obtenir des informations sur 1000 patients d'une liste de 10 médecins sélectionnés (100 patients par médecin). 
 Il fournit une liste de variables communes pour tous les patients de son étude (par exemple : âge, sexe, prescription médicaments, dates de soin...). 
