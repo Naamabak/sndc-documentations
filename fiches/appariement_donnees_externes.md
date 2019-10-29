@@ -64,7 +64,7 @@ Cet appariement est équivalent à une sélection sur critères.
 L'import/export de données ne doit pas concerner des données identifiantes.
 :::
 
-## Les appariements probabilistes
+## Les appariements indirects, dits probabilistes
 
 L'appariement probabiliste consiste à sélectionner des patients en fonction d'informations définies sans avoir d'identifiant en clair. 
 Ces patients devront correspondre de manière probabiliste aux informations souhaitées pour que la correspondance soit la plus optimale possible.
