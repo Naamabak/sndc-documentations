@@ -3,7 +3,9 @@
 
 ## Définition
 
-Le principe d'un appariement consiste à associer des données externes au SNDS avec des données internes via des informations communes (informations sur les bénéficiaires, informations sur les Professionnels de Santé...). Il existe deux types d'appariements :
+Un appariement consiste à associer des données externes au SNDS, via des informations communes sur les bénéficiaires, les [professionnels de santé](../glossaire/PS.md), ou autres. 
+
+Il existe principalement deux types d'appariements :
 
 - Les appariements directs, dits déterministes
 
