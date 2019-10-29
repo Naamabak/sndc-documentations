@@ -7,7 +7,7 @@ Le principe d'un appariement consiste à associer des données externes au SNDS 
 
 - Les appariements directs (déterministes)
 
-- Les appariements indirects (probabilistes)
+- Les appariements indirects, dits probabilistes
 
 ::: danger Attention
 Réaliser un appariement nécessite une autorisation préalable de la [CNIL](../glossaire/CNIL.md).
