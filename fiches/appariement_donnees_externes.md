@@ -9,7 +9,9 @@ Le principe d'un appariement consiste à associer des données externes au SNDS 
 
 - Les appariements indirects (probabilistes)
 
-**Ces appariements nécessitent une autorisation de la CNIL au préalable.**
+::: danger Attention
+Réaliser un appariement nécessite une autorisation préalable de la [CNIL](../glossaire/CNIL.md).
+:::
 
 #### Exemple 1 : 
 Un chercheur souhaite obtenir des informations sur une typologie de patients pour lesquels il a leur NIR. 
