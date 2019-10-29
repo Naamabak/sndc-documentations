@@ -15,13 +15,13 @@ L'AE est responsable de toute action faite par un utilisateur du SNDS sur les do
 
 Note : Conformément au référentiel de sécurité SNDS, il est obligatoire de renseigner une date de fin de droits pour chaque compte SNDS, cohérente avec les missions des collaborateurs. 
 
-- Demander les modifications de droits associés aux comptes des utilisateurs de son organisme
+- Demander les modifications de droits associés aux comptes des utilisateurs de son organisme.
 - Demander la clôture des comptes des utilisateurs ayant quitté l’organisme ou dont les missions ne justifient plus un accès au SNDS.
 - Procéder régulièrement à des revues d’habilitations.
 
 L'AE peut déléguer ses pouvoirs à une ou deux Autorités d’Enregistrement Déléguées (AEd) du SNDS.
 
-Pour effectuer les opérations afférentes à un compte SNDS, l’AE (ou AEd) dispose d’une application internet nommée AUCAS à laquelle elle peut accéder grâce à une carte sécurisée (à l’exception des AE des organismes locaux des régimes qui effectuent les demandes via bordereau papier).
+Pour effectuer les opérations afférentes à un compte SNDS, l’AE (ou AEd) dispose d’une application internet nommée AUCAS à laquelle elle peut accéder grâce à une carte sécurisée (à l’exception des AE des organismes locaux des régimes qui effectuent les demandes via un bordereau papier).
 
 Le gestionnaire de sécurité à Evreux traitera la demande après vérification des pré-requis de formations pour l’utilisateur.
 
