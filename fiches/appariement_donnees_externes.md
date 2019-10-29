@@ -1,4 +1,4 @@
-# Appariement des données du SNDS
+# Appariement de données au SNDS
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ## Définition
