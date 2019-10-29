@@ -60,7 +60,9 @@ Cet appariement est équivalent à une sélection sur critères.
 ![schema 2](../files/Cnam/Fiche_Appariement/Appariement_Schema_2.png)
 
 
-**NB : Attention, l'import/export de données ne doit pas concerner des données identifiantes.**
+::: warning Attention
+L'import/export de données ne doit pas concerner des données identifiantes.
+:::
 
 ## Les appariements probabilistes
 
