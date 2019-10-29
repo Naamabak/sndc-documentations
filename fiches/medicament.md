@@ -1,31 +1,49 @@
 # Cibler selon les médicaments
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-## Définition
+## Identification des médicaments
 
-Un médicament est répertorié par un code CIP sur 7 ou 13 caractères. 
-Chaque médicament est répertorié par classe. Cette classe s’appelle classe ATC. 
-Elle possède différentes formes (ATC3, ATC5, ATC7) correspondant à une catégorie de médicament plus ou moins affinée permettant de regrouper les médicaments correspondant aux organes (ou systèmes d'organes) cibles, et aux propriétés thérapeutiques, pharmacologiques et chimiques des différents produits.
-Le CIP 13 commence toujours par 3400. 
-Lorsqu’un CIP 7 existait, il était alors transformé en CIP 13 de la manière suivante :
+### Code CIP
+
+Le médicament sont identifiés selon des codes CIP, ou [Code Identifiant de Présentation](https://solidarites-sante.gouv.fr/soins-et-maladies/medicaments/glossaire/article/code-cip).
+
+Un code CIP est un code numérique, historiquement sur 7 caractères et maintenant sur 13.  
+
+#### Construction des codes CIP 13
+
+Un CIP 13 commence toujours par le préfixe `3400` en France. 
+
+Lorsqu’un médicament disposait d'un code CIP 7, le code CIP 13 correspondant est construit de la manière suivante :
 
 ![schema 1](../files/Cnam/Ciblage_medicaments/Medicaments_schema1.png)
 
-Le calendrier de  mise en place du CIP13 est le suivant :
+#### Calendrier de mise en plce du CIP 13 
+
+Le calendrier de mise en place du CIP 13 est le suivant :
 
 ![schema 2](../files/Cnam/Ciblage_medicaments/Medicaments_schema2.png)
 
-Le code CIP13 peut donc être présent dans les bases dès 2007, alors que le CIP7 est présent au moins jusque 2014. 
+Le code CIP13 peut donc être présent dans les bases dès 2007, tandis que le CIP7 est présent au moins jusque 2014. 
 Une période de transition, où les 2 codes se chevauchent existe donc.
+
+### Classe ATC
+
+Les médicaments sont regroupés en **classes ATC**, en fonction des organes (ou systèmes d'organes) cibles, et de leurs propriétés thérapeutiques, pharmacologiques ou chimiques.
+
+Il existe plusieurs niveaux de classes ATC (ATC3, ATC5, ATC7), correspondant à des catégories de médicaments plus ou moins affinées.
+
 
 ## Cibler des patients sur un code CIP
 
 **Principe :** Sortir une liste de patients qui ont consommé un médicament précis.  
 
 **Table(s) concernée(s) :** [ER_PRS_F](../tables/DCIR/ER_PRS_F.md), [ER_PHA_F](../tables/DCIR/ER_PHA_F.md), table contenant le(s) code(s) CIP concernés par l’extraction (appelée TAB_MED ici, contenant le code CIP13 sous sa forme standard ou le CIP07 sous la forme 000000XXXXXXX dans une variable nommée COD_MED, table située sous ORAUSER). 
+
 Dans l’exemple suivant, l’extraction se fera sur l’année 2017.
 
-**Il faut bien faire attention sur le lien entre le code CIP de la table TAB_MED et celui de ER_PHA_F (CIP sur 7 ou 13 caractères).**
+::: warning Attention
+Bien faire attention au lien entre le code CIP de la table TAB_MED et celui de ER_PHA_F (CIP sur 7 ou 13 caractères)
+:::
 
 
 ``` sql
@@ -57,9 +75,11 @@ quit;
 ## Cibler des patients sur une classe ATC
 
 **Principe :** Sortir une liste de patients qui ont consommé au moins un médicament d’une classe ATC5 précise. 
+
 Il existe deux méthodes pour obtenir le résultat attendu. 
-La première consiste à sélectionner les médicaments concernés par le ciblage directement dans IR_PHA_R, mettre ces médicaments (via les codes CIP) dans une table puis utiliser la technique du point 1. 
-La deuxième méthode consiste à cibler directement sur la classe ATC. 
+1. Sélectionner les médicaments concernés par le ciblage directement dans IR_PHA_R, mettre ces médicaments (via les codes CIP) dans une table puis utiliser le ciblage précédent selon le code CIP. 
+2. Cibler directement sur la classe ATC. 
+
 Il faudra le faire en plusieurs étapes (CIP07, CIP13).  
 
 **Table(s) concernée(s) :** [ER_PRS_F](../tables/DCIR/ER_PRS_F.md), [ER_PHA_F](../tables/DCIR/ER_PHA_F.md), IR_PHA_R
