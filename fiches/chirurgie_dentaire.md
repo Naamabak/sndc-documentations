@@ -2,7 +2,8 @@
 ----
 
 ## Comment repérer les soins dentaires ?
-On repère les soins dentaires par la spécialité de l'exécutant :
+
+### On repère les soins dentaires par la spécialité de l'exécutant :
 
  Dans le DCIR les codes spécialités Professionnels de Santé concernés se retrouvent sur 2 variables :
 sur la variable Spécialité médicale PS exécutant PSE_SPE_COD  (pour les médecins) :
@@ -21,7 +22,7 @@ Dans le DCIRS la condition porte  sur l'ensemble de ces codes sur la variable Sp
 En terme de codes prestations, certains  sont spécifiques aux médecins (stomatologues) d'autres spécifiques aux chirurgiens dentistes d'autres communs aux deux. A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues
 A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues
 
-On peut aussi distinguer différents types de soins  dentaires avec les regroupements des codes actes suivants :
+### On peut aussi distinguer différents types de soins  dentaires avec les regroupements des codes actes suivants :
 
 ***SC les Soins Conservateurs :*** ils concernent les soins du type détartrage, traitement d'une carie, dévitalisation d'une dent,...
 *  1411	SCM/SPA	ACTES EN SCM (ET SPA POUR LA CRPCEN)
@@ -94,21 +95,46 @@ On peut aussi distinguer différents types de soins  dentaires avec les regroupe
 
 
 
-## Illustration au travers le calul de l'indicateur SNS
+## Illustration au travers le calcul de l'indicateur SNS
  La Stratégie Nationale de Santé 2018-2022 (SNS) a été adoptée officiellement par le Gouvernement fin décembre 2017.
+ 
 Le volet spécifique  à la politique de santé de l'enfant, de l'adolescent et du jeune est évalué notamment au travers de l'indicateur 
  relatif au recours au soins dentaires pour les enfants. Il s'agit de la proportion d’enfants de 6 ans ayant consulté au moins une fois un chirurgien-dentiste au cours de l’année suivant leur 6ème anniversaire
 [liste des indicateur SNS](http://dataviz.drees.solidarites-sante.gouv.fr/suivi-sns/). 
 
-Les critères retenus pour la requête SNDS et ses étapes de construction sont décrits ci-dessous. La requête a été élaborée sur le  DCIRS.
+Les critères retenus pour la requête SNDS et ses étapes de construction sont décrits ci-dessous. La requête a été élaborée sur le DCIRS.
 L'indicateur se calcule année par année pour une classe d'âge donnée. A une année de naissance donnée, les soins sont recherchés sur les 2 ans suivants .
 Ainsi l'indicateur de l'année 2016 concerne les enfants nés en 2010. on recherche leurs soins sur les années complètes 2016 et 2017.
-Au numérateur : 
+* Au numérateur : 
 Pour une année donnée, on recherche les  bénéficiaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités listées  hors Actes et Consultations Externes de l'hôpital public. 
 
-Au dénominateur :
+## Code SQL 
+```sql
+
+/* rechercher */
+
+proc sql;
+drop table blabla bla bla  ;
+%connectora;
+
+
+```
+
+* Au dénominateur :
  On ne garde que ceux qui ont eu au moins une prestation en ville (Hors Actes et Consultations Externes) a minimum à leur 6 ans sur les deux années considérée.
  Cela permet d'éliminer tous les patients n'ayant pas eu un remboursement de soins au delà de leur 5 ans. 
 
-Les corrections sur les codes communes sont appliquées de manière à ^pouvoir rétablir les départements corses et d'outre-mer.
+## Code SQL 
+```sql
+
+/* rechercher */
+
+proc sql;
+drop table blablabla ;
+%connectora;
+
+
+```
+
+Les corrections sur les codes communes sont appliquées de manière à pouvoir rétablir les départements corses et d'outre-mer.
 
