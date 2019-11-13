@@ -615,7 +615,15 @@ Le coût total du séjour correspond au montant pris en charge par l’assurance
 Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_HADaa_nnC`). 
 
 
-Auteurs: 
+## Références
+
+::: tip
+
+Crédits  
+
+Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad (DREES) et Kristel Jacquier (DSS)
+:::
+
 
 *Sources :*  
 - Code de la sécurité sociale : articles L174-4, L.322-2 et L.322-3, L325-1, D 325-1, D 325-6, L 861-3, R 174-5, R 174-5-1 et R 174-5-2
