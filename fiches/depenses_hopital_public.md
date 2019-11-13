@@ -1,3 +1,5 @@
+# Les dépenses des établissements de santé publics dans le PMSI
+
 Cette fiche explique comment retrouver les dépenses des établissements publics dans le PMSI.  
 
 Les explications sont déclinées par spécialité hospitalière : 
@@ -19,11 +21,11 @@ En complément, des informations sur les dépenses dans le privé se trouvent da
 
 
 
-#### Les tables à considérer pour étudier l'activité en hôpital public 
+## Les tables à considérer pour étudier l'activité en hôpital public 
 
-##### En MCO
+### En MCO
 
-###### Valorisation des séjours
+#### Valorisation des séjours
 
 Pour connaitre le montant de la dépense de l'assurance maladie, on utilise la table de valorisation des séjours `t_mcoANNEE.valo` sous ORAVUE.  
 La variable de montant est `MNT_TOT_AM`.  
@@ -94,7 +96,7 @@ qui prend les valeurs suivantes :
 
 A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, ou est manquante.
 
-###### Valorisation des actes et consultations externes
+#### Valorisation des actes et consultations externes
 
 Les dépenses d'actes et consultations externes (ACE) des établissements publics et ESPIC se trouvent dans la table de valorisation des ACE 
 sous `t_mcoANNEE.valoace`.   
@@ -112,7 +114,7 @@ Les filtres à appliquer sur les ACE sont les suivants :
 - Exclusion des ACE réalisées en dehors de la période d'étude (en utilisant les variable `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des ACE non valorisées (en utilisant la variable `VALO`)
 
-###### Dépenses en SUS 
+#### Dépenses en SUS 
 
 L'information sur la pharmacie de la liste en sus, les dispositifs médicaux implantables, les médicaments soumis à autorisation temporaire d'utilisation (ATU)
 et les médicaments thrombolytiques se trouve dans les tables suivantes. 
@@ -139,9 +141,9 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 - Codes DMI erronés (à vide ou indéterminés)
 - DMI posés hors période d’appartenance à la liste en sus
 
-#### En SSR
+## En SSR
 
-###### Valorisation des séjours
+#### Valorisation des séjours
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `t_ssrANNEE.valo` sous ORAVUE.  
 Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `t_ssrANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des GMT mais des TJP.  
@@ -159,7 +161,8 @@ Les filtres sur les séjours sont les suivants :
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des séjours non valorisés (variable `VALO` dans `t_ssrANNEE.valo` ou `FAC_SEJ_AM` dans `t_ssrANNEE.stc`)  
   
-###### Valorisation des actes et consultations externes
+
+#### Valorisation des actes et consultations externes
 
 Les actes et consultations externes en SSR se trouvent dans la table `t_ssrANNEE.cstc`.  
 Tout comme en MCO, on peut obtenir des détails sur la nature de l'ACE (ATU, FFM, Dialyse, SE, FTN, NGAP, CCAM, DM Externe) à l'aide de la variable `ACT_COD` de la table `t_mcoANNEE.fbstc`.  
@@ -174,7 +177,7 @@ Les filtres à appliquer sur les ACE sont les suivants :
 - Exclusion des ACE réalisées en dehors de la période d'étude (en utilisant les variable `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des ACE non valorisées
 
-###### Dépenses en SUS 
+#### Dépenses en SUS 
 
 Les informations sur les médicaments en sus et les médicaments soumis à autorisation temporaire d'utilisation (ATU) se trouvent dans les tables :
 - `t_ssrANNEE.med`: médicaments en sus
@@ -192,9 +195,9 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 - Molécules administrées hors période d’appartenance à la liste en sus
   
 
-#### En HAD
+## En HAD
 
-###### Valorisation des séjours
+#### Valorisation des séjours
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `t_hadANNEE.valo` sous ORAVUE.  
 Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `t_hadANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des GHT mais des TJP.   
@@ -211,11 +214,11 @@ Les filtres sur les séjours sont les suivants :
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des séjours non valorisés (variable `VALO` dans `t_hadANNEE.valo` ou `FAC_SEJ_AM` dans `t_hadANNEE.stc`)  
 
-###### Valorisation des actes et consultations externes
+#### Valorisation des actes et consultations externes
 
 Il n'y a pas d'ACE en HAD. 
 
-###### Dépenses en SUS 
+#### Dépenses en SUS 
 
 L'information sur la dépense que représente la pharmacie de la liste en sus, les médicaments ATU et les médicaments coûteux hors liste en sus et
 hors ATU est contenue dans:
@@ -235,9 +238,9 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 - Molécules administrées hors période d’appartenance à la liste en sus
   
 
-#### En PSY
+## En PSY
 
-###### Valorisation de la prise en charge à temps complet, partiel ou en ambulatoire
+#### Valorisation de la prise en charge à temps complet, partiel ou en ambulatoire
 
 En psychiatrie, le nom des tables commence par RIP pour "recueil d'information en psychiatrie".  
 La prise en charge peut s'effectuer à temps complet, partiel ou en ambulatoire.  
@@ -249,7 +252,7 @@ Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de c
 La clef de chaînage est le couple (`RIP_NUM`, `ETA_NUM_EPMSI`) où `RIP_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
 Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` (cf. fiche Identifiant des bénéficiaires pour plus d'informations).
 
-###### Dépenses en SUS 
+#### Dépenses en SUS 
 
 À notre connaissance, il n'y a pas de remontée d'information sur les dépenses en SUS ni de table dédiée dans le recueil d'information médicalisé. 
 
