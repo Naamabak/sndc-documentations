@@ -20,6 +20,11 @@ Pour plus d'informations sur le calcul de ce reste à charge dans le public, se 
 En complément, des informations sur les dépenses dans le privé se trouvent dans la fiche thématique intitulée "les dépenses des établissement de santé privés (à partir du DCIRs)".
 
 
+::: warning Disclaimer
+L’information sur ces dépenses n’est pas exhaustive et doit être traitée avec précaution. 
+:::
+
+
 
 ## Les tables à considérer pour étudier l'activité en hôpital public 
 
@@ -257,11 +262,11 @@ Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` (cf.
 À notre connaissance, il n'y a pas de remontée d'information sur les dépenses en SUS ni de table dédiée dans le recueil d'information médicalisé. 
 
 
-**L’information sur ces séjours n’est pas exhaustive et doit être traitée avec précaution**. 
+## Références
 
-
-Auteurs: Raphaële Adjerad, Noémie Courtejoie, Kristel Jacquier
-
+::: tip Crédits
+Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad (DREES) et Kristel Jacquier (DSS)
+:::
 
 *Sources* 
 - Supports de formation de la CNAM sur le DCIRS et le PMSI
