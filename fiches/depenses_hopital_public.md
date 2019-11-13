@@ -1,4 +1,4 @@
-# Les dépenses des établissements de santé publics dans le PMSI
+# Dépenses des établissements de santé publics dans le PMSI
 
 Cette fiche explique comment retrouver les dépenses des établissements publics dans le PMSI.  
 
