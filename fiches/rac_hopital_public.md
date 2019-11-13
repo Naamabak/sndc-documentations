@@ -18,7 +18,7 @@ L'ensemble des dépenses associées à un séjour en établissement public compr
 
 Pour plus d'informations sur le montant pris en charge par l'AMO dans le public, se référer à la fiche sur "les dépenses des établissements de santé publics dans le PMSI".
 
-::: warning  
+::: warning Disclaimer
 Nous partageons l’information que nous sommes parvenus à recueillir sur le calcul du reste à charge.  
 Celle-ci n’est pas exhaustive et doit être traitée avec précaution.  
 :::
@@ -617,9 +617,7 @@ Il est ensuite possible de calculer un reste à charge après AMO **par bénéfi
 
 ## Références
 
-::: tip
-
-Crédits  
+::: tip Crédits
 
 Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad (DREES) et Kristel Jacquier (DSS)
 :::
