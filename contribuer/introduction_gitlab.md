@@ -98,7 +98,7 @@ Une page s'ouvre alors pour configurer cette merge-request.
 
 ### 4- Prévisualisation d'une merge-request
 
-Lorsqu'une merge-request est ouverte, un "`pipeline`" est démarré pour effectuer des tests sur les liens hypertexte, et construire une prévisualisation du site. 
+Lorsqu'une merge-request est ouverte, un "`pipeline`" est démarré pour effectuer des tests sur les liens hypertextes, et construire une prévisualisation du site. 
 Ces 2 étapes sont symbolisées par des icones rondes.
 
 Lorsque la prévisualisation est construite, la deuxième icône passe au vert. 
