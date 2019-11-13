@@ -1,4 +1,4 @@
-# Le reste à charge après AMO en établissements publics
+# Reste à charge après AMO en établissements publics
 
 Cette fiche explique comment calculer le montant du reste à charge pour un séjour en établissement de santé public à partir du PMSI.
 
