@@ -155,7 +155,7 @@ Les personnes exonérées sont les suivantes:
 Nous commençons par décrire le cas général avant d'entrer dans le détail pour les PMSI MCO, SSR et HAD.  
 
 Les principales règles de calcul du RAC figurent dans le tableau ci-dessous.    
-![](../blob/master/files/DREES/2019-11_tableau_RAC_MCO.png)  
+![](../files/DREES/2019-11_tableau_RAC_MCO.png)  
 
 FJU : forfait journalier unitaire (par journée d’hospitalisation)  
 nb_jour : nombre de jours de présence  
