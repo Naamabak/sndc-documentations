@@ -108,19 +108,8 @@ Ainsi l'indicateur de l'année 2016 concerne les enfants nés en 2010. on recher
 * Au numérateur : 
 Pour une année donnée, on recherche les  bénéficiaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités listées  hors Actes et Consultations Externes de l'hôpital public. 
 
-## Code SQL 
-```sql
 
-/* rechercher */
-
-proc sql;
-drop table blabla bla bla  ;
-%connectora;
-
-
-```
-
-* Au dénominateur :
+Au dénominateur :
  On ne garde que ceux qui ont eu au moins une prestation en ville (Hors Actes et Consultations Externes) a minimum à leur 6 ans sur les deux années considérée.
  Cela permet d'éliminer tous les patients n'ayant pas eu un remboursement de soins au delà de leur 5 ans. 
 
@@ -129,10 +118,37 @@ drop table blabla bla bla  ;
 
 /* rechercher */
 
-proc sql;
-drop table blablabla ;
-%connectora;
+PROC SQL;
 
+%connectora;
+create table pop_protegee&an as
+select * from connection to oracle 
+
+(
+SELECT distinct t1.ben_idt_ano, 
+T1.ben_res_dpt ,t1.BEN_RES_COM, /* Dépt et Commune de résidence au moment des soins (Obligation pour pouvoir corriger)**/
+t2.ben_nai_ann,t2.ben_nai_moi, /* Année et mois de naissance du référentiel **/
+/* TOP_DENT on tope ceux qui ont eu une prestation PS sépcialité dentiste à l'âge de 6 ans au moment des soins */
+max (case when t1.PSE_ACT_SPE in (19,53,54,18,36,44,45) AND t1.BEN_AMA_COD=6 then 1 else 0 end) AS TOP_DENT,
+/* Date de début et de fin de ceux qui ont eu une prestation PS sépcialité dentiste à l'âge de 6 an */
+min(case when t1.PSE_ACT_SPE in (19,53,54,18,36,44,45) AND t1.BEN_AMA_COD=6 then exe_soi_dtd  end) AS dat_min,
+max (case when t1.PSE_ACT_SPE in (19,53,54,18,36,44,45) AND t1.BEN_AMA_COD=6 then exe_soi_dtd end) AS dat_max,
+max(t1.BEN_AMA_COD) AS age
+            FROM NS_PRS_F t1 LEFT JOIN IR_IBA_R t2 ON(t1.ben_idt_ano=t2.ben_idt_ano)
+      WHERE 
+        /* Les dates de soins vont du 1er Janv de l'annnéée N au 31 déc de l'année N+1 */
+        t1.exe_soi_amd  between TO_CHAR(&datedeb) AND TO_CHAR(&datefin)
+		/* A voir Pour l'instant On élimine FIDES */
+ 		AND  (ETE_IND_TAA is null OR ETE_IND_TAA  > 1 OR
+               (ETE_IND_TAA= 0  AND (ETE_CAT_COD not  in (101,355,131,106,122,365,128,129) OR MDT_COD not  in (0,3,7,10) )
+                )
+        )
+AND (t2.ben_nai_ann=&AN_NAI ) /* On garde que ceux de l'année de naissance étudiée. En cas de non présence dans le référentiel il est éliminé*/
+GROUP BY t1.ben_idt_ano, T1.ben_res_dpt,t1.BEN_RES_COM, t2.ben_nai_ann,t2.ben_nai_moi
+HAVING min(t1.BEN_AMA_COD)=6 /* On ne garde que ceux qui ont eu une prestation à leur 6 ans sur l'année étudiée i.e ça élimine les 5 ans */
+);
+disconnect from oracle;
+quit;
 
 ```
 
