@@ -109,7 +109,7 @@ Ainsi l'indicateur de l'année 2016 concerne les enfants nés en 2010. on recher
 Pour une année donnée, on recherche les  bénéficiaires ayant eu un remboursement à 6 ans au moment des soins pour une des spécialités listées  hors Actes et Consultations Externes de l'hôpital public. 
 
 
-Au dénominateur :
+* Au dénominateur :
  On ne garde que ceux qui ont eu au moins une prestation en ville (Hors Actes et Consultations Externes) a minimum à leur 6 ans sur les deux années considérée.
  Cela permet d'éliminer tous les patients n'ayant pas eu un remboursement de soins au delà de leur 5 ans. 
 
