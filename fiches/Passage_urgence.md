@@ -12,19 +12,23 @@ les établissements ne peuvent facturer un ATU
 
 ## Repérer les urgences avec hospitalisation 
 
-Suite à un passage aux urgences, certains patients sont transférés dans un service du même hôpital ou dans un autre hôpital.
+- Suite à un passage aux urgences, certains patients sont transférés dans un service du même hôpital ou dans un autre hôpital.
 
 Pour pouvoir repérer cette info, l’ATIH (source ??) propose une méthodologie précise ( mettre le le lien)
 
-*Attention, selon les années, le codage des passages aux urgences n’étant pas optimal, voir inexistant dans certains hôpitaux, cela peut conduire à des sous-estimations importante (chiffres ??).*
 
 Mode d’entrée (ENT_MOD) = ‘8’ (domicile)
 ET 
 Provenance (ENT_PRV) = ‘5’ (avec passage dans la structure d’accueil des urgences de l’établissement)
 
+*Attention, le codage des passages aux urgences est très établissement dépendant, en théorie les établissements doivent coder comme cela mais dans la réalité, il y a des distorsions plus ou moins importante suivant les régions*
 
-UHCD ?
+- Une autre méthode consiste à regarder les unités médicales. En effet, les établissements autorisés à accueillir les urgences disposent une unité d'hospitalisation 
+courte durée (UHCD). 
 
+L'UHCD correspond au code UM 7 (AUT_TYP_UM='07')
+
+Selon la première méthode on a xx séjours  
  
 
 ## Repérer les passages urgences sans hospitalisation 
