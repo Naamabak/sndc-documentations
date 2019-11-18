@@ -2,7 +2,7 @@
 
 Référentiel des professionnels de santé
 
-- Clé primaire : `PFS_PFS_NUM`
+- Clé primaire : `PFS_PFS_NUM` documentée sur cette page sur le [Numéro du Professionnel de Santé](https://documentation-snds.health-data-hub.fr/fiches/numero_professionel_sante.html)
 
 ## Modèle de données
 
