@@ -49,6 +49,11 @@ disconnect from oracle;
 quit;
 
 ```
+## Identification des bénéficiaires de l'AME dans le PMSI 
+
+Dans le PMSI, le code petit régime n'est pas toujours bien renseigné. L'idéal est donc d'identifier les bénéficiaires à partir de la valorisation du séjour
+dans la table valo la variable VALO prend la modalité 3 (si le séjour est en AME)
+
 
 ## Références
 
