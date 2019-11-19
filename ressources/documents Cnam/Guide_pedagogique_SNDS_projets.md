@@ -263,3 +263,45 @@ Pour les données SNDS des systèmes-fils, ces CGU sont également signées lors
 
 **- L’utilisateur doit utiliser les données du SNDS dans un cadre sécurisé** qui respecte le référentiel de sécurité, dans le portail ou dans un système fils.
 
+
+## Quels sont les rôles de l’Autorité d’Enregistrement ?
+
+
+Dans le cas des **accès aux données du SNDS sur projet, l’habilitation temporaire est délivrée par la Cnam**, représentée par le directeur de la Stratégie, des Etudes et des Statiques. 
+
+**La Cnam délivre un compte pour les utilisateurs demandant une extraction de données du SNDS ou un accès à une partie du SNDS (EGB), sous réserve qu’ils aient suivi les formations obligatoires adéquates.** 
+
+**Ces comptes sont ouverts pour les seuls utilisateurs inscrits dans la convention passée entre la Cnam et le responsable du projet.** 
+Un compte est ouvert par projet.
+
+Cet accès se formalise :
+
+
+*  pour les **utilisateurs d’extractions de données**, par un numéro de profil de connexion au portail (117) donnant accès à un espace projet permettant d’accéder aux données du projet ;
+
+*  pour les **utilisateurs ayant un accès ponctuel à l’EGB**, cet accès se formalise par un numéro de profil de connexion au portail (38, 39, 40, 53 ou 104) donnant accès à l’EGB
+
+
+**L’AE procède, en temps voulu, à la clôture des comptes des utilisateurs** (la date de fin de droit correspondant à la fin du projet, établi par la convention passée entre la Cnam et le responsable du traitement).
+
+
+## Quels sont les différents parcours de formation ?
+
+
+Dans le cadre d’un accès non permanent aux données du SNDS, pour être habilité à consulter une extraction de données du SNDS sur le portail, **le futur utilisateur doit obligatoirement suivre le module** de formation “**Données d’extraction DCIR pour les accès sur projet**” (réf. Institut 4.10 REQ-256-AM). 
+Cette formation est accessible dès lors que le CEREES, au cours de la procédure standard de demande, a formulé un avis favorable ou favorable avec recommandation sur l’autorisation d’accès à une extraction de données du SNDS.
+
+Dans le cas d’un accès ponctuel à l’EGB (Echantillon des bénéficiaires), en procédure standard ou simplifiée autorisée par l’Institut National des Données de Santé, **le futur utilisateur doit obligatoirement suivre le module** de formation “**Architecture et données du SNIIRAM/SNDS**” (réf. Institut 4.10 REQ-054-AM), puis la formation « **EGB** » (réf. Institut 4.10 REQ-086-AM) pour accéder à ces données.
+
+En complément, une formation sur les données du PMSI accessibles dans le SNDS « **initiation au PMSI à travers le SNDS** » (réf. Institut 4.10 REQ-254-AM) peut être suivie.
+
+**Parcours de formation pour les utilisateurs ayant un accès sur projet aux SNDS**
+
+
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche6.png)
+
+
+Les formations se déroulent en partenariat avec l’Institut 4.10, sur les sites de Paris, Lyon et Tours.
+
+Pour choisir les formations et connaitre les modalités d’inscription, l’utilisateur peut consulter le fichier «Formations SNIIRAM/SNDS – Planning et descriptif - version Jour Mois Année » situé sur l’accueil du portail SNDS, ou consulter le planning directement [le site de l’Institut 4.10.](https://catalogue-quatredix.valsoftware.cloud/CATALOGUE/default.aspx) 
+
