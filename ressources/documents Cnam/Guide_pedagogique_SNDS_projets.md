@@ -111,7 +111,7 @@ Le SNDS assure la mise à disposition des données selon la nature des données 
 
 
 
-**La procédure d’accès standard sur projet à une extraction de données du SNDS est la suivante : **
+**La procédure d’accès standard sur projet à une extraction de données du SNDS est la suivante :**
 
 
 1. Déposer une demande auprès de l’Institut National des Données de Santé (INDS), qui assure le secrétariat unique de dépôt des recherches et **évalue l'intérêt public du projet** (au cas par cas) dans les délais impartis par la loi (7 jours) ;
@@ -156,4 +156,71 @@ L’INDS devra sous 15 jours soit notifier l’approbation, soit l’informer de
 *	soit passer par un bureau d’études ou un organisme de recherche indépendant : l’INDS vérifie que le bureau d’études choisi a fait un engagement de conformité au référentiel sur la transparence des bureaux d’études,
 
 *   soit démontrer que les modalités techniques d’accès ne permettent en aucun cas d’utiliser le SNDS pour des finalités interdites identifiées dans la loi par un audit préalable du responsable de traitement.  
+
+
+
+## Quelle est la sécurité au sein du SNDS ?
+
+
+Le SNDS étant principalement constitué de données personnelles de santé, les traitements de données qui en sont issues doivent être strictement encadrés afin de protéger les libertés et droits fondamentaux des personnes. 
+A ce titre, ces traitements sont soumis aux dispositions :
+
+
+*  de la Loi Informatique et Libertés ;
+
+*  du règlement européen sur la protection des données (à compter du 25 mai 2018) ;
+
+*  du code de la santé publique.
+
+
+La Commission Nationale de l'Informatique et des Libertés (CNIL) est chargée de surveiller l’application de ces textes. 
+En cas de méconnaissance de leurs dispositions, les responsables de traitement peuvent faire l’objet de sanctions administratives importantes.
+
+Conformément à la loi n° 2016-41 du 26 janvier 2016 de modernisation de notre système de santé, les accès aux données du SNDS doivent s’effectuer dans « des conditions assurant la confidentialité et l'intégrité des données et la traçabilité des accès et des autres traitements ». 
+**Un référentiel précise ces conditions en édictant les règles de sécurité que tout système utilisant des données du SNDS se doit de mettre en place. 
+Les modalités d’application de ce référentiel sont indiquées dans l’arrêté du 22 mars 2017.**
+
+
+En premier lieu, la sécurité des données est garantie par l’obligation pour chaque gestionnaire de système de réaliser une analyse de risque. 
+C’est cette analyse qui permet au gestionnaire de s’assurer que les données sont correctement protégées par des mesures de sécurité adéquates.
+
+
+Le référentiel s’appuie notamment sur les mesures techniques et organisationnelles suivantes pour garantir la sécurité des traitements, en imposant :
+
+
+*  **la pseudonymisation** : pour chaque individu, l’ensemble des informations permettant de facilement l’identifier (NIR, …) doit être remplacé par un pseudonyme, c’est-à-dire par un code alphanumérique irréversible ne permettant pas le rattachement à son identité ; La pseudonymisation systématique des données constitue une des mesures fondamentales du dispositif dans le but de conserver la confidentialité des données manipulées.
+
+**La pseudonymisation des identifiants des patients ne rend pas les données du SNDS anonymes strictement ; le croisement de certaines variables, appelées « identifiants potentiels », peut permettre de ré-identifier les patients.** 
+**Ce sont les données suivantes :**
+
+1.  **Commune de résidence du bénéficiaire**
+2.  **Année et mois de naissance**
+3.  **Date de soins en jour, mois, année (et dérivés : date d’entrée, date de prescription …)**
+4.  **Date de décès en jour, mois, année**
+5.  **Commune de décès**
+
+
+Ainsi, des **profils d’accès aux données ont été mis en place** afin de n’autoriser l’accès qu’à un seul identifiant potentiel à la fois **selon les autorisations décrites dans le décret**.
+
+
+*  **l’authentification** : elle permet d’une part de contrôler les accès et d’autre part d’imputer les actions effectuées sur le système à une personne désignée. Une authentification forte sur le portail SNDS sera donc mise en place dès mars 2019 à travers la concaténation d’au moins deux facteurs d’authentification ; 
+
+
+*  **la traçabilité** : l’ensemble des événements relatifs à la sécurité du système doit être tracé. Cette traçabilité (entrées, sorties, utilisateurs….) permet de contrôler l’utilisation de données et de disposer de preuves pouvant être instruites en justice ;
+
+
+*  **le contrôle** : il permet de s’assurer d’une utilisation des données conforme à la loi et au référentiel. Effectué a posteriori par le biais d’audits, de la revue annuelle des habilitations et de contrôles de la CNIL a posteriori, il est notamment rendu possible par l’utilisation conjointe de la traçabilité et de l’authentification. En cas de non-respect des conditions d’utilisation des données, des sanctions adéquates peuvent être prononcées, notamment la suspension de l’accès aux données pour tout l’organisme.
+
+
+*  **la sensibilisation et la formation des utilisateurs**  avec la mise en place d’un dispositif de formation aux données, certains modules rendus obligatoires, notamment ceux présentant le référentiel de sécurité du SNDS ainsi que ceux permettant l’accès aux données individuelles bénéficiaires (Cf fiche 6 : Quels sont les différents parcours de formation ?).
+
+
+*  **Les Conditions Générales d’Utilisation** (CGU) qui formalisent l’engagement individuel au respect des conditions d’accès aux données doivent être signées en ligne dès la première utilisation du portail SNDS (Cf. fiche 4 : Quelles sont les conditions d’ouverture d’un compte ?).
+
+
+
+**Hors portail d’accès aux données du SNDS, des systèmes fils autorisés et homologués au référentiel de sécurité peuvent accueillir des données du SNDS.**
+
+En plus de ces règles spécifiques, les traitements de données du SNDS sont soumis à l’ensemble des référentiels généraux applicables aux systèmes d’information du Ministère des Affaires sociales et de la santé, à savoir : la Politique Générale de Sécurité des Systèmes d’Information en Santé (PGSSI-S), la Politique de Sécurité des Systèmes d’Information pour les ministères chargés des affaires sociales (PSSI MCAS), et le Référentiel Général de Sécurité (RGS).
+
 
