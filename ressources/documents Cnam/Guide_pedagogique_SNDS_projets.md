@@ -224,3 +224,42 @@ Ainsi, des **profils d’accès aux données ont été mis en place** afin de n�
 En plus de ces règles spécifiques, les traitements de données du SNDS sont soumis à l’ensemble des référentiels généraux applicables aux systèmes d’information du Ministère des Affaires sociales et de la santé, à savoir : la Politique Générale de Sécurité des Systèmes d’Information en Santé (PGSSI-S), la Politique de Sécurité des Systèmes d’Information pour les ministères chargés des affaires sociales (PSSI MCAS), et le Référentiel Général de Sécurité (RGS).
 
 
+
+## Quelles sont les conditions d’ouverture d’un compte ?
+
+
+**- Pour obtenir l’ouverture d’un compte SNDS, l’utilisateur doit avoir suivi les formations pré-requises** préalablement à l’attribution de droits d’accès aux données du SNDS :
+
+
+*  Le module « **Données d’extraction DCIR pour les accès sur projet** » pour les utilisateurs d’extractions de données sur projet, ou la formation « **Architecture et données du SNIIRAM/SNDS** » pour les utilisateurs de l’EGB sur projet. C’est un prérequis **obligatoire** pour être habilité à accéder aux données du SNDS sur le portail SNDS. Cette formation est ouverte dès lors que le CEREES a formulé un avis favorable ou favorable avec recommandation sur le projet. 
+
+
+*  Le module «**EGB**», produit de restitutions de données de consommation individuelles bénéficiaires échantillonnées. C’est également une formation **obligatoire** pour accéder aux données du SNDS, dès lors que le CEREES a formulé un avis favorable ou favorable avec recommandation ou que l’INDS en a autorisé l’accès simplifié ;
+
+
+**- L’utilisateur doit ensuite effectuer une demande d’ouverture de compte SNDS par l’intermédiaire de l’Autorité d’Enregistrement (AE)** : la création de compte ne s’effectue pas automatiquement après avoir participé à la formation. 
+L’utilisateur doit être habilité nominativement par l’AE qui est le directeur de la Stratégie, des Etudes et des Statistiques de la Cnam. 
+L’AE vérifie que cet utilisateur est désigné dans la convention passée entre le responsable du traitement du projet et la Cnam.
+
+
+**- L’utilisateur doit signer les Conditions Générales d’Utilisation** (CGU) du SNDS, à la première connexion au portail d’accès aux données, qui formalisent : 
+
+
+*  l’engagement individuel de l’utilisateur au respect des conditions d’accès aux données :
+- le respect des finalités d’utilisation autorisées et interdites du SNDS,
+- l’absence d’action visant la ré-identification,
+- l’obligation de ne diffuser que des données anonymes,
+- l’engagement du respect du référentiel de sécurité.
+
+*  les conditions d’utilisation du portail et des services associés :
+
+L’utilisateur a interdiction d’exporter du portail SNDS des données non anonymes du SNDS, sauf cas particulier d’exports de données dans un système-fils (SNDS élargi) respectant le même référentiel de sécurité : Il ne doit pas être possible, à partir des données, de déduire ou revenir à une information personnelle sur un individu.
+
+L’utilisateur est informé que ses actions font l’objet de traces qui seront exploitées pour détecter tout comportement considéré comme anormal (dont non-respect des engagements pris).
+
+Pour les données SNDS des systèmes-fils, ces CGU sont également signées lors de la convention passée avec la Cnam et annexée à celle-ci.
+
+
+
+**- L’utilisateur doit utiliser les données du SNDS dans un cadre sécurisé** qui respecte le référentiel de sécurité, dans le portail ou dans un système fils.
+
