@@ -305,3 +305,30 @@ Les formations se déroulent en partenariat avec l’Institut 4.10, sur les site
 
 Pour choisir les formations et connaitre les modalités d’inscription, l’utilisateur peut consulter le fichier «Formations SNIIRAM/SNDS – Planning et descriptif - version Jour Mois Année » situé sur l’accueil du portail SNDS, ou consulter le planning directement [le site de l’Institut 4.10.](https://catalogue-quatredix.valsoftware.cloud/CATALOGUE/default.aspx) 
 
+
+
+## Quelles sont les modalités de connexion sur le portail ?
+
+*  Une fois habilité par l’AE, l’utilisateur dispose d’un compte identifiant qui est transmis par messagerie et une calculette qui lui est adressée par courrier. 
+Ces éléments sont personnels et ne doivent pas être utilisés par un tiers.
+
+
+*  Les droits d’un utilisateur sur les données du SNDS se traduisent par un numéro de profil de connexion au portail, tels qu’ils sont demandés par l’AE. 
+**Ce numéro de profil de connexion au portail est le n°117 pour les personnes ayant un accès sur projet à une extraction de données DCIR, et le n°38, 39, 40, 53 ou 104 pour un accès sur projet à l’EGB**. 
+Il permet d’accéder :
+
+
+* [ ]  aux données de l’extraction dans un espace projet accessible via SAS/Guide, ou à l’EGB,
+* [ ]  à l’ensemble de la documentation SNDS,
+* [ ]  au dictionnaire de données SNDS,
+* [ ]  aux forums dédiés à chacun des produits du SNDS, et en particulier au forum DCIR.
+
+
+*  L’adresse URL du portail est la suivante : https://portail.sniiram.ameli.fr. 
+Les données d’extraction ainsi que le produit EGB se situent dans l’onglet `STATISTIQUES` du portail SNDS où les tables autorisées sont accessibles et interrogeables par SAS guide.
+
+
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche7.png)
+
+
+*  Le guide d’utilisation du portail et la procédure d’installation de certains modules (certificats, citrix) sont disponibles sur l’accueil du portail.
