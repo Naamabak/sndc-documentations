@@ -57,7 +57,8 @@ Géré par la CNAM, le SNDS permet de chaîner :
 *  les données relatives au handicap (en provenance des MDPH - données de la CNSA),
 *  un échantillon de données en provenance des organismes complémentaires.
 
-Les deux premières catégories de données sont déjà disponibles et constituent la première version du SNDS. Les causes médicales de décès alimentent le SNDS depuis le deuxième semestre 2017. 
+Les deux premières catégories de données sont déjà disponibles et constituent la première version du SNDS. 
+Les causes médicales de décès alimentent le SNDS depuis le deuxième semestre 2017. 
 Le SNDS a pour finalité la mise disposition de ces données afin de favoriser les études, recherches ou évaluation présentant un caractère d’intérêt public et contribuant à l’une des finalités suivantes :
 
 *  l’information sur la santé ainsi que sur l’offre de soins, la prise en charge médico-sociale et leur qualité, 
@@ -520,9 +521,9 @@ L’accès **sur projet** à des données de santé potentiellement ré-idenfian
 Le projet doit suivre une finalité de recherche, d’étude et d’évaluation d’intérêt public dans le domaine de la santé : 
 
 
-- pour accéder à une partie du SNDS (EGB)  sans croisement d’identifiants potentiels , après avis favorables  de l’**INDS** (Institut National des Données de Santé) dans le cadre d’une procédure d’accès simplifiée.
+- pour accéder à une partie du SNDS (EGB)  sans croisement d’identifiants potentiels, après avis favorables de l’**INDS** (Institut National des Données de Santé) dans le cadre d’une procédure d’accès simplifiée.
 
-- pour accéder à des extractions de données du SNDS (données DCIR chainées aux données PMSI et CépiDC)  après avis favorable ou favorable avec recommandation du **CEREES** (Comité d’Expertise pour les Recherches, les Etudes et les Evaluations), et sur autorisation de la **CNIL**.
+- pour accéder à des extractions de données du SNDS (données DCIR chainées aux données PMSI et CépiDC) après avis favorable ou favorable avec recommandation du **CEREES** (Comité d’Expertise pour les Recherches, les Etudes et les Evaluations), et sur autorisation de la **CNIL**.
 
 
 ![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche11.png)
@@ -592,7 +593,7 @@ Pour cela il utilise la procédure d’importation des données du portail.
 * **Recommandations dans le cas d’un appariement indirect** : 
 
 Le porteur de projet transmet à la Cnam le Numéro de Sujet du projet et le plus possible de variables d’appariement, notamment sur les caractéristiques des patients (Sexe, Année et mois de naissance, Date de décès, Département ou Commune de résidence, etc…). 
-Il est préconisé de fournir un nombre important de séjours ou de soins par patient (actes CCAM, établissement avec  hospitalisation,…), de privilégier les variables très discriminantes telles que Date de décès, Codes CIM10 très spécifiques, Diagnostics associé, relié et/ou principal, et de minimiser les valeurs manquantes et le nombre d’erreur de saisie. 
+Il est préconisé de fournir un nombre important de séjours ou de soins par patient (actes CCAM, établissement avec hospitalisation,…), de privilégier les variables très discriminantes telles que Date de décès, Codes CIM10 très spécifiques, Diagnostics associé, relié et/ou principal, et de minimiser les valeurs manquantes et le nombre d’erreur de saisie. 
 Compléter avec un dictionnaire de variables est un plus pour réaliser l’appariement.
 
 
