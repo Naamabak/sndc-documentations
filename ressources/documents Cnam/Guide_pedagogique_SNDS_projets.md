@@ -399,7 +399,7 @@ Le DPD doit veiller à la **traçabilité** des traitements réalisés par la te
 
 Ce dernier doit comporter a minima les informations suivantes, sur l’utilisation des données individuelles bénéficiaires, professionnels de santé ou établissements ainsi que les identifiants potentiels utilisés et pourra faire l’objet d’un contrôle par la CNIL :
 
-![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche9.png)
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche9.png)
 
 
 ## Quel accompagnement autour du SNDS ? 
@@ -409,7 +409,7 @@ La CNAM propose le dispositif d’accompagnement suivant en se connectant sur le
 L’ensemble des profils permet d’interroger la documentation.
 
 
-![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche10.png)
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche10.png)
 
 
 ### Le Support
@@ -477,15 +477,15 @@ Un modèle de mail est proposé sur la page d’accueil du portail dans la rubri
 
 *  Et **divers documents d’actualité forte** (par exemple évolutions dues à la mise en œuvre du référentiel sécurité, nouvelle version de SAS,…)
 
-![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche10_2.png)
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche10_2.png)
 
 
 3.	En cliquant sur l’onglet `TABLEAUX ET REQUETES`, vous accédez à une **arborescence de documentations insérées dans Business Object**.
 
-![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche10_3.png)
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche10_3.png)
 
 
-![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche10_4.png)
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche10_4.png)
 
 
 **La documentation est détaillée dans l’arborescence :**
@@ -525,7 +525,7 @@ Le projet doit suivre une finalité de recherche, d’étude et d’évaluation 
 - pour accéder à des extractions de données du SNDS (données DCIR chainées aux données PMSI et CépiDC)  après avis favorable ou favorable avec recommandation du **CEREES** (Comité d’Expertise pour les Recherches, les Etudes et les Evaluations), et sur autorisation de la **CNIL**.
 
 
-![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche11.png)
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche11.png)
 
 
 Le porteur de projet dépose un dossier dématérialisé sur la plateforme de dépôt de l’Inds qui a 7 jours pour rendre un avis sur l’intérêt public du projet. Le dossier est constitué des éléments suivants : 
