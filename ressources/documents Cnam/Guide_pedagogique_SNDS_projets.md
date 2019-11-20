@@ -388,3 +388,212 @@ Par ailleurs, pour éviter les imports des mêmes tables par de nombreux utilisa
 #### Le processus d’export de fichiers
 
 ![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche8_3.png)
+
+
+
+## Comment le Délégué à la Protection des Données doit-il remplir le document décrivant les caractéristiques des traitements portant sur des données individuelles ?
+
+
+Conformément à l’arrêté du 6 avril 2017, un document-type est porté en modèle afin que le **Délégué à la Protection des Données** (DPD), présent dans chaque organisme, puisse **tenir un registre précisant les caractéristiques des traitements portant sur des données individuelles du SNDS**.
+Le DPD doit veiller à la **traçabilité** des traitements réalisés par la tenue de ces registres (enregistrement des utilisateurs, des projets).
+
+Ce dernier doit comporter a minima les informations suivantes, sur l’utilisation des données individuelles bénéficiaires, professionnels de santé ou établissements ainsi que les identifiants potentiels utilisés et pourra faire l’objet d’un contrôle par la CNIL :
+
+![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche9.png)
+
+
+## Quel accompagnement autour du SNDS ? 
+
+
+La CNAM propose le dispositif d’accompagnement suivant en se connectant sur le portail SNDS et en se référant aux différents onglets et espaces. 
+L’ensemble des profils permet d’interroger la documentation.
+
+
+![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche10.png)
+
+
+### Le Support
+
+Pour exploiter les données du SNDS, le support aux utilisateurs est différent selon qu’il s’agit d’une aide fonctionnelle ou technique.
+
+::: warning
+1.	**S’il s’agit d’un besoin d’aide fonctionnelle** (sur la donnée, le contenu des bases, l’explication d’une méthode, d’une requête)
+
+:::
+
+::: tip
+L’onglet `FORUM` propose des **forums sur chaque produit du SNDS** (DCIR-PMSI, EGB, datamarts AMOS, DAMIR…) ; ils permettent aux utilisateurs de trouver des réponses à leurs interrogations, d’échanger sur **un sujet d’ordre fonctionnel avec la communauté des utilisateurs.** 
+
+Des experts-métiers y répondent également. 
+Ces forums sont accessibles en se connectant sur le portail du SNDS, quel que soit le profil.
+
+:::
+
+
+::: warning
+
+2.	**Si la question de l’utilisateur porte sur un problème technique d’accès aux données, ou une suspicion d’anomalie des données**
+
+:::
+
+
+::: tip
+
+Le [`Portail du Support National`](https://portail.sniiram.ramage/vpn/index.html) pour le régime général de l’assurance maladie ou **le mail** support-national@assurance-maladie.fr pour les partenaires et organismes des autres régimes d’assurance maladie permet de déposer **un Ticket de support**.
+L’objet du message doit impérativement comporter les mots « *Création de demande – SNIIRAM/SNDS – Suivi du nom du produit* » car un automate traite dans un premier temps les messages reçus. 
+Il est indispensable de préciser dans le corps du message son identifiant, son organisme, région et profil de connexion, le produit SNDS exploité. 
+Un modèle de mail est proposé sur la page d’accueil du portail dans la rubrique « Pour votre Information ».
+
+:::
+
+
+::: warning
+
+3.	Par ailleurs pour toutes questions **sur les formations ou la procédure d’obtention d’une habilitation**, vous pouvez écrire sur la boite aux lettres générique : 
+**snds.cnam@assurance-maladie.fr**
+
+:::
+
+
+
+### La Documentation du portail
+
+
+1.	L’onglet `DICTIONNAIRE` **vous permet d’ouvrir le Dictionnaire des données du SNDS en version WEB et d’interroger les informations et définition sur la donnée par produit, table ou variable.**
+
+
+2.	Vous retrouverez toute la **‘documentation essentielle’ sur la page d’accueil du portail**, dans la rubrique `POUR VOTRE INFORMATION`, entre autres : 
+
+
+*  **Le catalogue offre de service d’accompagnement** qui résume tout l’accompagnement proposé autour des produits du SNIIRAM/SNDS : formations et comités utilisateurs, selon le profil des utilisateurs et les objectifs suivis.
+
+*  **Le planning des formations**
+
+*  **Le récapitulatif des anomalies recensées** sur les produits de restitution du SNIIRAM/SNDS et leur statut de résolution.
+
+*  **Les titres des principales actualités** (communiqués) des 2 derniers mois sont positionnés pour une 1ère information rapide.
+
+*  **Les bonnes pratiques SAS et BO**.
+
+*  Et **divers documents d’actualité forte** (par exemple évolutions dues à la mise en œuvre du référentiel sécurité, nouvelle version de SAS,…)
+
+![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche10_2.png)
+
+
+3.	En cliquant sur l’onglet `TABLEAUX ET REQUETES`, vous accédez à une **arborescence de documentations insérées dans Business Object**.
+
+![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche10_3.png)
+
+
+![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche10_4.png)
+
+
+**La documentation est détaillée dans l’arborescence :**
+Dossiers publics / SNIIRAM / _Documentation SNIIRAM
+
+
+| Dans ces dossiers | Vous trouverez | 
+|----|----|
+|Actualités SNIIRAM-SNDS |	Tous les communiqués généraux d’information sur le SNIIRAM (nouveau produit, alerte sur une anomalie, …) |
+Cartographie |	La méthodologie, la description des tables disponibles sur ORAVUE |
+DCIR - DCIR simplifié |	Toute la documentation relative aux applications DCIR et DCIR simplifié : les informations, la liste des variables par table, les supports de formation et des comités utilisateurs, le niveau de chargement, les profils pour accéder à DCIR-DCIRS, la liste des données sensibles et médicales dans DCIR-DCIRS et une bibliothèque de requêtes. Vous y trouverez également la FAQ DCIR-PMSI*. |
+Documentation |	Toute la documentation générale du SNIIRAM-SNDS : la liste et objectifs des produits de restitution, le Kwikly ‘K’atalgue des données du SNDS, les diaporamas des différents comités utilisateurs et amphis SNDS, la FAQ des datamarts BO*, les règles de gestion de la statistique mensuelle, la nomenclature des variables SNIIRAM, les profils pour accéder au portail/produits, les textes officiels  SNIIRAM-SNDS, les mises en œuvre du référentiel sécurité… |
+EGB	| Toute la documentation relative à l’EGB et aux tables simplifiées de l’EGB : les informations spécifiques, la liste des variables par table, la documentation pour les tables du PMSI et BGNA intégrées, le niveau de chargement, les profils pour accéder à l’EGB, la liste des données sensibles et médicales dans l’EGB. Vous y trouverez également la FAQ EGB*. |
+Formation |	Le planning des formations SNIIRAM / SNDS et les supports de cours et exercices des formations SNIIRAM / SNDS |
+Manuels utilisateurs |	les manuels utilisateurs de tous les produits SNIIRAM / SNDS en dehors de DCIR, DCIR simplifié, EGB et PMSI (par exemple dénombrement des bénéficiaires et PS, tables EHPAD, les Causes médicales de décès tout récemment…) |
+Offre de service |	Le fichier informant du niveau de chargement des produits agrégés bénéficiaires accessibles via BO WebI. |
+PMSI |	Toute la documentation relative aux tables du PMSI : liste des variables, liste des profils pour y accéder, liste des données médicales et sensibles dans le PMSI…. |
+	
+*Les foires aux questions permettent de récapituler les demandes d’assistance
+
+
+### La documentation collaborative du Health Data Hub 
+
+Le [site public collaboratif du Health Data Hub](https://documentation-snds.health-data-hub.fr) met à disposition des utilisateurs de la documentation alimentée par des contributeurs qui utilisent la technologie du GitHub. 
+  
+
+## Comment signer une convention d’extraction des données SNDS avec la Cnam ?
+
+
+L’accès **sur projet** à des données de santé potentiellement ré-idenfiantes est possible pour les demandeurs publics et privés, en environnement maîtrisé, respectant le référentiel de sécurité. 
+
+Le projet doit suivre une finalité de recherche, d’étude et d’évaluation d’intérêt public dans le domaine de la santé : 
+
+
+- pour accéder à une partie du SNDS (EGB)  sans croisement d’identifiants potentiels , après avis favorables  de l’**INDS** (Institut National des Données de Santé) dans le cadre d’une procédure d’accès simplifiée.
+
+- pour accéder à des extractions de données du SNDS (données DCIR chainées aux données PMSI et CépiDC)  après avis favorable ou favorable avec recommandation du **CEREES** (Comité d’Expertise pour les Recherches, les Etudes et les Evaluations), et sur autorisation de la **CNIL**.
+
+
+![schema](../../files/Cnam/Images_guide_acces_permanents/SchemaFiche11.png)
+
+
+Le porteur de projet dépose un dossier dématérialisé sur la plateforme de dépôt de l’Inds qui a 7 jours pour rendre un avis sur l’intérêt public du projet. Le dossier est constitué des éléments suivants : 
+
+
+* **le protocole scientifique** il doit être précis sur la méthodologie de l’étude et doit mentionner clairement les données nécessaires et leur circuit. Il doit justifier notamment l’utilité des identifiants potentiels et des causes de décès. Par défaut, l’extraction des données ne concerne que les données DCIR, PMSI et leurs référentiels, ou EGB le cas échéant.
+* **la grille-résumé CEREES**
+* **les déclarations publiques d’intérêt** des Responsable de traitement et Responsable de mise en œuvre
+* **la demande d’autorisation CNIL** pré-remplie signée par le Responsable de traitement. 
+ 
+
+Le CEREES émet un avis dans un délai de 1 mois sur la méthodologie retenue, sur la nécessité du recours à des données à caractère personnel, sur la pertinence de celles-ci par rapport à la finalité du traitement et, s'il y a lieu, sur la qualité scientifique du projet.
+Une fois l’accord CNIL obtenu, après 2 mois renouvelable une fois (une absence de réponse vaut autorisation) la Cnam prend contact avec le responsable de traitement et recueille les éléments nécessaires à la rédaction de la **convention**.
+La convention de mise à disposition des données est à valider et à signer entre le responsable de traitement (Commanditaire) et la CNAM (Directeur Général ou son délégué) et éventuellement le responsable de mise en œuvre du traitement. 
+
+
+
+La convention précise :
+* le périmètre des données transmises en adéquation avec l’autorisation CNIL
+* les modalités de ciblage et/ou d’appariement des patients (direct/indirect)
+* les modalités de mise à disposition des données (espace projet / EGB dans le portail ou système fils)
+* les conditions de sécurité de transmission des données
+* le cadre d’utilisation et de conservation conformément à l’autorisation de la CNIL et les engagements pris par le destinataire : propriété des données, publication des données (obligation de transparence)
+* La liste des utilisateurs accédant aux données sur le portail SNDS (annexe 2)
+
+
+
+## Quelles sont les étapes dans l’extraction des données du SNDS ?
+
+
+Dès lors que le projet a reçu un accord de la CNIL, l’INDS qui assure un rôle de facilitateur dans les échanges entre tous les interlocuteurs, transmet à la Cnam le protocole scientifique, son résumé et l’avis CEREES.
+
+La CNAM prend contact avec le responsable de traitement de l’extraction et recueille les éléments nécessaires à la rédaction de la convention. 
+
+En parallèle de l’élaboration de la convention, la Cellule DEMEX de la CNAM met en œuvre le ciblage des patients pour réaliser l’extraction des données du SNDS et la mettre à disposition du responsable de traitement.
+
+
+* **Les différents types d’extraction de données que peut réaliser la Cnam**
+	
+* [ ] Appariement **direct** – sur l’identifiant bénéficiaire – avec des cohortes disposant du NIR 
+* [ ] Appariement **indirect** – sur diverses variables – avec  des cohortes  ne disposant pas du NIR
+* [ ] **Cohorte** pseudonyme sur critères d’inclusion - les critères d’inclusion doivent être formalisés dans un cahier des charges type 
+
+* **Procédure de pseudonymisation des NIR dans le cas d’un appariement direct**  : 
+
+
+Lorsqu’il y a un appariement direct entre les NIR du SNDS et les NIR dont dispose le porteur de projet, il faut procéder à une pseudonymisation avant extraction : 
+
+Le porteur de projet transmet les composantes à pseudonymiser (NIR des assurés (13C), date de naissance (AAAAMMJJ), sexe (1C) et NIR du bénéficiaire (13C)) au CRIP (Centre Informatique) via une application sécurisée SAFE ; chaque NIR est associé à un Numéro de Sujet (nombre aléatoire associé au nom du projet).
+
+Un traitement de pseudonymisation sur le NIR du porteur du projet se déclenche de façon automatique, jusqu’à sa transformation en NIR pseudonymisé correspondant à celui du SNDS : l’extraction des données du DCIR, PMSI et causes de décès peut alors être effectuée par la cellule DEMEX.
+
+Cette dernière restitue les données de consommation mais ne fournit pas les NIR pseudonymisés : c’est le Numéro de Sujet affecté au NIR qui est affecté. 
+Le porteur de projet a une autorisation de la CNIL pour disposer à la fois du numéro de sujet et du fichier de ses NIR dans une table de correspondance.
+
+Le porteur de projet et les signataires de la convention peuvent accéder aux données d’extractions du SNDS dans un espace projet dédié sur le portail SNDS. 
+Les données peuvent également être livrées (transfert sécurisé) par la cellule DEMEX dans une bulle sécurisée (système fils propre au porteur de projet respectant les mêmes conditions de sécurité que le portail).
+
+Le porteur de projet peut de façon autonome ajouter des données externes à son extraction SNDS, uniquement si elles ont été listées au préalable dans le protocole scientifique. 
+Pour cela il utilise la procédure d’importation des données du portail.
+
+
+
+* **Recommandations dans le cas d’un appariement indirect** : 
+
+Le porteur de projet transmet à la Cnam le Numéro de Sujet du projet et le plus possible de variables d’appariement, notamment sur les caractéristiques des patients (Sexe, Année et mois de naissance, Date de décès, Département ou Commune de résidence, etc…). 
+Il est préconisé de fournir un nombre important de séjours ou de soins par patient (actes CCAM, établissement avec  hospitalisation,…), de privilégier les variables très discriminantes telles que Date de décès, Codes CIM10 très spécifiques, Diagnostics associé, relié et/ou principal, et de minimiser les valeurs manquantes et le nombre d’erreur de saisie. 
+Compléter avec un dictionnaire de variables est un plus pour réaliser l’appariement.
+
+
+
