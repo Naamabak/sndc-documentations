@@ -332,3 +332,59 @@ Les données d’extraction ainsi que le produit EGB se situent dans l’onglet 
 
 
 *  Le guide d’utilisation du portail et la procédure d’installation de certains modules (certificats, citrix) sont disponibles sur l’accueil du portail.
+  
+
+
+## Quelles données du SNDS peuvent être exportées et importées ?
+
+
+**Le référentiel de sécurité du SNDS impose l’interdiction de :**
+
+
+* Exporter des données individuelles bénéficiaires et Professionnel de Santé non anonymes du portail SNDS
+
+→ Le Référentiel Sécurité impose de ne pas de sortir de données tant que l’on n’a pas la certitude qu’elles sont anonymes c’est à dire qu’il ne doit pas être possible à partir de ces données de déduire une information personnelle sur un individu, bénéficiaire ou professionnel de santé.
+
+
+::: tip
+
+**Quelques bonnes pratiques** :
+
+1. ne pas restituer de petits effectifs,
+2. une information de santé sur un individu ne doit pas pouvoir être déduite à partir d'autres attributs, en particulier les données médicales (ALD, CIM10, GHS …)
+3. **ne pas sortir les identifiants potentiels** (le croisement des identifiants potentiels peut permettre de ré-identifier un individu) 
+4. **ne pas sortir d’identifiants de personnes bénéficiaires ou professionnels de santé**. Pour ces derniers, l’export n’est pas autorisé même avec un identifiant Professionnel de Santé crypté.
+
+
+:::
+
+
+
+* Importer dans le portail SNDS des données potentiellement identifiantes
+
+→ L’import de données dans le portail SNIIRAM/SNDS n’est autorisé que pour des données anonymes.
+
+→ En cas de besoin d’import de données non anonymes (par exemple ajout de données d’une cohorte), une autorisation CNIL est nécessaire.
+
+**Une exigence de traçabilité de ces actions d’import / export de données permet d’identifier et d’agir contre les comportements frauduleux.**
+
+Aussi, l’utilisateur doit-il changer ses habitudes de travail et traiter les données de détail dans le portail SNDS, puis exporter du portail des données agrégées.
+Par ailleurs, pour éviter les imports des mêmes tables par de nombreux utilisateurs, une mise à disposition de tables dans RFCOMMUN est possible (si vous souhaitez mutualiser des tables utiles à tous les utilisateurs, contacter par mail : snds.cnam@assurance-maladie.fr)
+
+
+**Une solution d’import/export est proposée sur le portail** dans la rubrique `TELECHARGEMENT DES FICHIERS DANS LE REPERTOIRE DOWNLOAD` de l’onglet `STATISTIQUE` du portail SNDS avec création d’un encart dédié; 
+
+
+### Le processus d’import/export de fichiers du portail SNDS  
+
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche8_1.png)
+
+
+#### Le processus d’import de fichiers
+
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche8_2.png)
+
+
+#### Le processus d’export de fichiers
+
+![schema](../../files/Cnam/Images_guide_acces_projets/SchemaFiche8_3.png)
