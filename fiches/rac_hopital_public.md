@@ -180,13 +180,19 @@ TR : taux de remboursement (%)
 
 *ATTENTION > dans ce tableau, n’est pas représenté le cas (a priori très rare) où le forfait journalier des 30 premiers jours est supérieur au ticket modérateur ((100 – TR) x TJP x durée < FJU x durée). Dans ce cas-là, le patient ne s’acquitte pas du ticket modérateur mais du forfait journalier.*
 
-**[A CREUSER]** : Est-ce que la règle d’exonération du TM au-delà de 30 jours s’applique uniquement en cas d’hospitalisation complète ? 
 
-
-*Note >* Le tableau ci-dessus couvre le cas général, à partir de l'exemple du MCO, mais n'est pas exhaustif.  Nous reviendrons sur les particularités par PMSI dans le reste de la fiche.  
+*Note >*  
+Le tableau ci-dessus couvre le cas général, à partir de l'exemple du MCO, mais n'est pas exhaustif.  Nous reviendrons sur les particularités par PMSI dans le reste de la fiche.
 En voici les principales différences :  
-- Il n'y a pas de forfait journalier en HAD (on est donc systématiquement dans le cas de figure avec exonération de TM)
+- Il n'y a pas de forfait journalier en HAD (on est donc systématiquement dans le cas de figure avec exonération de FJ)
+- En MCO, on appelle "hospitalisation partielle" un séjour de moins de 24 heures sans nuitée. Si un même patient revient plusieurs fois à la journée, il y aura autant de séjours que de journées d'hospitalisation.  
+En SSR, on appelle hospitalisation partielle un séjour sans nuitée, sans limite de durée totale. 
+Il faudra donc distinguer les séjours en hospitalisation complète et partielle. 
+À noter qu'il n'y a qu'un type d'hospitalisation (complète / partielle) par séjour. Tout changement de type d'hospitalisation donnera lieu à un nouveau séjour. 
+- Lors de séjours en hospitalisation partielle en SSR, il n'y a pas de FJ facturé. Le temps passé à l'hôpital est indiqué par le nombre de jours de présence.    
 - Lors de séjours en hospitalisation complète en SSR, le patient peut bénéficier de permissions. Ainsi, pour connaître le temps passé à l'hôpital, il ne faut pas compter la durée de séjour (*i.e.* le nombre de jours entre le début et la fin du séjour), mais le nombre de jours de présence.    
+
+**[A CREUSER]** : Est-ce que la règle d’exonération du TM au-delà de 30 jours s’applique uniquement en cas d’hospitalisation complète ? 
 
 
 ### Catégories de séjours pour le calcul du reste à charge (RAC)
