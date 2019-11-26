@@ -45,7 +45,7 @@ Néanmoins, seules les consommations en dehors des périmètres de prise en char
 
 Par exemple, on ne pourra repérer les médicaments délivrés à un bénéficiaire que s'il est dans un établissement sans PUI, et on ne pourra repérer ses consultations auprès d'un généraliste que s'il est dans un établissement à tarif partiel.
 
-::: caution **Attention :**
+::: warning **Attention :**
 Lorsqu'on travaille sur le recours aux soins des personnes âgées dans le SNDS, il faut donc avoir en tête que **seule une partie de leurs soins** apparaît lorsqu'ils sont résidents d'un établissement d'hébergement pour personnes âgées médicalisé (EHPAD et USLD).
 :::
 
@@ -61,22 +61,17 @@ Resid-Ehpad est un outil de transmission des informations des établissements (E
 
 La base constituée à partir de cet outil est montée en charge au cours des dernières années et a rejoint le SNIIRAM en 2015.  
 
-<div class="panel panel-danger">
-**Attention**
-{: .panel-heading}
-<div class="panel-body">
-
+::: danger
+**Atention :**
 Depuis 2018, un décret prévoit l'évolution de RESID-EHPAD vers la base **RESID-ESMS**. Ce traitement de données, mis en oeuvre par la [CNAM](../glossaire/Cnam.md), permet d’identifier l’activité et la consommation de soins dans les établissements et services médico-sociaux accueillant des personnes âgées et handicapées. Le [décret](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036694217&categorieLien=id) ne prévoit un accès qu'à la CNAM et aux organismes gérant un régime de base de l'assurance maladie. Les informations présentées ci-dessous sur la base RESID-EHPAD ne seront plus valables à partir du 1er janvier 2020, date à la quelle le traitement Resid-Ehpad prend fin.
-
-</div>
-</div>
+:::
 
 ### Contenu
 Elle contient notamment :
 - les modalités tarifaires de l’établissement (global/partiel et PUI ou non), 
 - les mouvements des résidents au sein de chaque établissement, avec un chaînage possible sur l’identifiant du patient avec les autres données du SNDS. 
 
-::: caution **Attention :** Ces informations sur les résidents ne remontent que pour les EHPAD gérés par les caisses pivots du Régime Général et de la CAVIMAC, l’information n’est donc pas exhaustive.
+::: warning **Attention :** Ces informations sur les résidents ne remontent que pour les EHPAD gérés par les caisses pivots du Régime Général et de la CAVIMAC, l’information n’est donc pas exhaustive.
 :::
 
 Elle ne contient pas d'informations individuelles sur les soins des résidents.
