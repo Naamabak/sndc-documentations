@@ -6,6 +6,7 @@ Les actes et consultations externes (ACE) sont réalisés par les praticiens exe
 Ils comprennent non seulement les actes et consultations réalisées dans le cadre de l’**activité externe de l’établissement de santé** mais également l’ensemble des **prestations hospitalières sans hospitalisation**.   
 
 Cette activité est de même nature que celle réalisée par les praticiens libéraux en cabinet de ville. 
+
 Elle ne concerne que les **hôpitaux publics** et les **établissements de santé privés d’intérêt collectif** (ESPIC), puisque dans les établissements de santé privés lucratifs, l’activité externe relève du champ libéral. On retrouve donc cette dernière dans le DCIR (SNIIRAM).
 
 Plus concrètement, les prestations réalisées dans ce cadre sont principalement :
