@@ -141,7 +141,9 @@ ELSE IF (regime='03A' and substr(ben_res_dpt,1,2)='97')
 Lorsque le code INSEE est obtenu à partir des variables `BEN_RES_DPT` et `BEN_RES_COM` il est possible d'obtenir le code 
 INSEE actuel pour la Corse (commençant par 2A ou 2B) pour tous les bénéficiaires. Pour obtenir le nouveau code INSEE 
 (l’ancien code INSEE était valable avant 1976) il faut utiliser le fichier des événements sur les communes de l'INSEE, 
-disponible à cette (page)[https://www.insee.fr/fr/information/3720946] pour l'année 2019. Il faudra ainsi fusionner la 
+disponible à cette (page)[https://www.insee.fr/fr/information/3720946] pour l'année 2019.  
+
+Il faudra ainsi fusionner la 
 variable code INSEE avec la variable `com_av`.  
 Le code 
 INSEE actuel pour la Corse est donné par la variable `com_ap`.
