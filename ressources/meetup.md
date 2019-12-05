@@ -126,7 +126,7 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 [pptx](../files/presentations/meetup-snds4/2019.11.28_CEPIDC_MPL-2.0.pptx),
 [pdf](../files/presentations/meetup-snds4/2019.11.28_CEPIDC_MPL-2.0.pdf)
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=_0rrgW1kMQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_0rrgW1kMQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Le service santé de la Cnil 
 
