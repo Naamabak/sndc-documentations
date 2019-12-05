@@ -132,7 +132,7 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 
 - Titre : Le service santé de la Cnil : ressources, méthodes et points de vigilance
 - Présenté par : Hélène Guimiot-Breaud (Cheffe du service de la santé de la Cnil)
-- Support de présentation : A venir... 
+- Support de présentation : À venir
 
 ### Appariement SNDS 
 - Titre : Histoire d’un appariement SNDS 
