@@ -123,22 +123,22 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 - Titre : Comment les données du CépiDc sont-elles collectées et quelles sont leurs possibles utilisations ?
 - Présenté par : Grégoire Rey, directeur du CépiDc (CépiDc-Inserm)
 - Support de présentation :
-[pptx](XX),
-[pdf](XX)
+[pptx](../files/presentations/meetup-snds4/2019.11.28_CEPIDC_MPL-2.0.pptx),
+[pdf](../files/presentations/meetup-snds4/2019.11.28_CEPIDC_MPL-2.0.pdf)
 
-<iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=_0rrgW1kMQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Le service santé de la Cnil 
 
 - Titre : Le service santé de la Cnil : ressources, méthodes et points de vigilance
 - Présenté par : Hélène Guimiot-Breaud (Cheffe du service de la santé de la Cnil)
-- Support de présentation : 
+- Support de présentation : A venir... 
 
 ### Appariement SNDS 
 - Titre : Histoire d’un appariement SNDS 
 - Présenté par :  Nicolas Glatt (directeur général et co-fondateur de Clinityx)
 - Support de présentation :
-[pdf](XX)
+[pdf](../files/presentations/meetup-snds4/2019.11.28_CLYNTIX_France-Tavi_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    
