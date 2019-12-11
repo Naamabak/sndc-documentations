@@ -37,7 +37,7 @@ Cette notion de liquidation à un moment donné n’est pas exhaustive par rappo
 
 
 ### Organisme d’affiliation du bénéficiaire
-**Organisme du lieu de résidence du bénéficiaire**, il s’agit des remboursements qui incomberont à cet organisme, même si pour des raisons de subsistance la liquidation a été faite ailleurs (Dans le cas des SLM « infogérées », l’organisme d’affiliation du bénéficiaire est bien celui de la SLM d’affiliation = lieu de résidence du bénéficiaire (et pas de la caisse « fictive » de liquidation)).
+**Organisme du lieu de résidence du bénéficiaire**, il s’agit des remboursements qui incomberont à cet organisme, même si pour des raisons de subsistance la liquidation a été faite ailleurs.
 
 Cette notion est exhaustive en termes de dépense de l’organisme in fine.
 
