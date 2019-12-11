@@ -25,7 +25,7 @@ Les variables ORG_CLE_NEW (Code de l'organisme de liquidation) et ORG_AFF_BEN (C
 
 Exemple de cas de subsistance : 
 * pour les caisses des DOM (hors Guadeloupe) qui liquident les remboursements des bénéficiaires salariés de la MSA, 
-•	pour les prestations de cures thermales liquidées sur le lieu d’implantation de l’établissement pour n’importe quelle affiliation du bénéficiaire,
+* pour les prestations de cures thermales liquidées sur le lieu d’implantation de l’établissement pour n’importe quelle affiliation du bénéficiaire,
 •	et pour les SLM infogérées pour lesquelles des caisses avec un numéro de liquidation « fictif » liquident pour les bénéficiaires de ces SLM, en France entière.
 
  
