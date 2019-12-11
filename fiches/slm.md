@@ -1,4 +1,4 @@
-# Notions autour des Sections Locales Mutualistes
+# Sections Locales Mutualistes
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 
