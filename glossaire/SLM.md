@@ -7,4 +7,4 @@ Exemples de SLM : Mutuelle Générale de l’Education Nationale (MGEN), La Mutu
 
 ## Références
 La Cnam a publié en décembre 2019 une fiche sur la thématique des SLM :
-https://documentation-snds.health-data-hub.fr/fiches/slm.html
+- (Fiche détaillée sur les SLM)[../fiches/slm.md]
