@@ -1,5 +1,8 @@
 # T_SSRaa_nnB
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnB
+
 Description du Séjour
 
 - Clé primaire : `ETA_NUM, RHA_NUM, RHS_NUM`
@@ -103,3 +106,5 @@ Description du Séjour
 |ASS_DGN_4|chaîne de caractères|Diagnostic associé n° 4|||
 |CAR_RSP_RED|nombre réel|Rééducation cardio-respiratoire|||
 |ACT_TYP|chaîne de caractères|Type d’activité|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

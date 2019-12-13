@@ -1,5 +1,8 @@
 # T_HADaa_nnGRE
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnGRE
+
 Table des GHT (groupage établissement)
 
 
@@ -22,3 +25,5 @@ Table des GHT (groupage établissement)
 |SEQ_SEJ|chaîne de caractères|Numéro de la séquence dans le séjour|||
 |ETA_NUM_JUR|chaîne de caractères|N° FINESS de l’établissement (code géographique)|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (code géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

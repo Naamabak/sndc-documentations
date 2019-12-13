@@ -1,5 +1,8 @@
 # T_MCOaa_nnVALOACE
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnVALOACE
+
 Valorisation des actes et consultations externes
 
 
@@ -50,3 +53,5 @@ Valorisation des actes et consultations externes
 |SEJ_FAC_AM|chaîne de caractères|Variable "Séjour facturable à l'assurance maladie" du RAFAEL-A|||
 |SEQ_NUM|chaîne de caractères|n°  de facture séquentiel|||
 |valo|chaîne de caractères|Type de valorisation du séjour|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # KI_ECD_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# KI_ECD_R
+
 Table de lensemble des causes de décès
 
 
@@ -19,3 +22,5 @@ Table de lensemble des causes de décès
 |ECD_CIM_COD|chaîne de caractères|Code de la cause|||
 |BEN_DCD_DTE|date|Date de décès du bénéficiaire|||
 |BEN_DCD_AME|chaîne de caractères|Année et mois de décès du bénéficiaire|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_HADaa_nnMON
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnMON
+
 Fichier de déclaration agrégée d'activité (FICHSUP) sur les Molécules onéreuses
 
 
@@ -17,3 +20,5 @@ Fichier de déclaration agrégée d'activité (FICHSUP) sur les Molécules onér
 |UCD_NBR_ETH|nombre réel|Nombre d'UCD dispensées au titre des essais thérapeutiques|||
 |UCD_UCD_COD|chaîne de caractères|Code UCD|||
 |ACH_PRI_DER|nombre réel|Dernier prix d'achat|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

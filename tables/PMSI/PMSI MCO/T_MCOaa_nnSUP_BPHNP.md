@@ -1,5 +1,8 @@
 # T_MCOaa_nnSUP_BPHNP
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnSUP_BPHNP
+
 Fich sup BP HN etb producteur
 
 
@@ -22,3 +25,5 @@ Fich sup BP HN etb producteur
 |FIC_TYP|chaîne de caractères|Type de fichier|||
 |MNT_BHN_ETB_EXDG|nombre réel|Montant total de BHN facturés à l'encontre d'un établissement de santé ex-DG (en centimes d'euro)|||
 |ANN_MOI|chaîne de caractères|Année+Mois|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

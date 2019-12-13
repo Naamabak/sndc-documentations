@@ -1,5 +1,8 @@
 # T_SSRaa_nnE
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnE
+
 Etablissement
 
 - Clé primaire : `ETA_NUM`
@@ -15,3 +18,5 @@ Etablissement
 |STA_ETA|chaîne de caractères|Statut de l'établissement|||
 |VAL_ETA|chaîne de caractères|Validation des données|||
 |ETB_EXE_FIN|chaîne de caractères|N°FINESS sans clé|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

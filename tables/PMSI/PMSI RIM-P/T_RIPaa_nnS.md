@@ -1,5 +1,8 @@
 # T_RIPaa_nnS
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnS
+
 Synthèse du Séjour de Résumé par séquence anonymisé
 
 
@@ -25,3 +28,5 @@ Synthèse du Séjour de Résumé par séquence anonymisé
 |TYP_GEN_RSA|chaîne de caractères|Type de génération automatique du RPSA|||
 |SEJ_NBJ_PARTL|nombre réel|Nombre de journées et demies journées en hospitalisation partielle|||
 |SEJ_NBJ_CPLT|nombre réel|Nombre de journées de présence en hospitalisation complète|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

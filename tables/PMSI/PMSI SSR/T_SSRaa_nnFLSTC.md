@@ -1,5 +1,8 @@
 # T_SSRaa_nnFLSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnFLSTC
+
 ACE actes de biologie (issus de la NABM)
 
 
@@ -19,3 +22,5 @@ ACE actes de biologie (issus de la NABM)
 |ACT_NBR|nombre réel|Quantité acte|||
 |NABM_COD|chaîne de caractères|Code acte NABM|||
 |ETA_NUM_GEO|chaîne de caractères|FINESS géographique|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

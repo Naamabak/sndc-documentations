@@ -1,5 +1,8 @@
 # NS_DTR_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_DTR_F
+
 Table simplifiée des données de codage de transport
 
 
@@ -38,3 +41,5 @@ Table simplifiée des données de codage de transport
 |TRS_ACT_PRU|nombre réel|Prix unitaire du code affiné du transport|||
 |TRS_TRS_MTF|nombre réel|Motif du transport|||
 |TRS_ACT_QSN|nombre réel|Nombre de Km facturés ou de forfaits ou de majorations ou de suppléments|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

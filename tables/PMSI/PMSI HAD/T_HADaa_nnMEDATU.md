@@ -1,5 +1,8 @@
 # T_HADaa_nnMEDATU
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnMEDATU
+
 Fich comp médicament soumis à autorisation temporaire d'utilisation
 
 
@@ -25,3 +28,5 @@ Fich comp médicament soumis à autorisation temporaire d'utilisation
 |TOP_UCD_AUTO|chaîne de caractères|Top transcodage UCD13 auto|||
 |UCD_UCD_COD|chaîne de caractères|Code UCD|||
 |UCD_COD|chaîne de caractères|Code UCD|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

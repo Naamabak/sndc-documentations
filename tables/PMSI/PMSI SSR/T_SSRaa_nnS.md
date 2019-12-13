@@ -1,5 +1,8 @@
 # T_SSRaa_nnS
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnS
+
 synthese
 
 
@@ -27,3 +30,5 @@ synthese
 |DUMMY|chaîne de caractères|DUMMY|||
 |NBR_CMC|nombre réel|Nombre de CMC (nc)|||
 |NBR_GHJ|nombre réel|Nombre de GHJ (ng)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_HADaa_nnC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnC
+
 Table des NIR foinisé deux fois et date entrè/sortie complètes
 
 - Clé primaire : `ETA_NUM_EPMSI, RHAD_NUM`
@@ -49,3 +52,5 @@ Table des NIR foinisé deux fois et date entrè/sortie complètes
 |SOR_MOI|chaîne de caractères|Mois de sortie|||
 |ENT_AM|date|Date d'entrée|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (code géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

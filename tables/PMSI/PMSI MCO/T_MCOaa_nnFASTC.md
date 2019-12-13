@@ -1,5 +1,8 @@
 # T_MCOaa_nnFASTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFASTC
+
 ACE Entete facture
 
 - Clé primaire : `ETA_NUM, SEQ_NUM`
@@ -50,3 +53,5 @@ ACE Entete facture
 |SEX_RET|chaîne de caractères|Code retour contrôle « sexe »|||
 |NIR_RET|chaîne de caractères|Code retour contrôle « n° sécurité sociale »|||
 |COD_PEC|chaîne de caractères|Code de prise en charge|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

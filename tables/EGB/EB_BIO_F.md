@@ -1,5 +1,8 @@
 # EB_BIO_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_BIO_F
+
 Table des données de codage de biologie
 
 
@@ -21,3 +24,5 @@ Table des données de codage de biologie
 |BIO_ACT_QSN|nombre réel|Quantité d'actes de biologie|||
 |BIO_ORD_NUM|nombre réel|Numéro d'ordre de l'acte affiné de biologie|||
 |FLX_EMT_TYP|nombre réel|Type d'émetteur|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

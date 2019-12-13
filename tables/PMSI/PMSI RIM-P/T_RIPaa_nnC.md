@@ -1,5 +1,8 @@
 # T_RIPaa_nnC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnC
+
 chainage
 
 - Clé primaire : `ETA_NUM_EPMSI, RIP_NUM`
@@ -41,3 +44,5 @@ chainage
 |SOR_MOI|chaîne de caractères|Mois de sortie|||
 |SOR_AM|date|Date de sortie au format année + mois|||
 |SOR_ANN|chaîne de caractères|Année de sortie|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

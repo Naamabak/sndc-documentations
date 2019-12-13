@@ -1,5 +1,8 @@
 # NS_BIO_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_BIO_F
+
 Table simplifiée des données de codage de biologie
 
 
@@ -36,3 +39,5 @@ Table simplifiée des données de codage de biologie
 |BIO_SEQ_NUM|nombre réel|Numéro séquentiel|||
 |BIO_PRS_IDE|nombre réel|Code NABM de l'acte de biologie|||
 |BIO_ACT_QSN|nombre réel|Quantité d'actes de biologie|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

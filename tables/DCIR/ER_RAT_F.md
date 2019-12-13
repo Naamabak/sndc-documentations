@@ -1,5 +1,8 @@
 # ER_RAT_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# ER_RAT_F
+
 Table des données des rentes d'accident du travail
 
 
@@ -21,3 +24,5 @@ Table des données des rentes d'accident du travail
 |ORG_CLE_NUM|chaîne de caractères|organisme de liquidation des prestations (avant fusion des caisses)|||
 |PRS_ORD_NUM|nombre réel|Numéro d'ordre de la prestation dans le décompte|||
 |REM_TYP_AFF|nombre réel|type de remboursement affiné|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

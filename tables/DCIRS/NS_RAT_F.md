@@ -1,5 +1,8 @@
 # NS_RAT_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_RAT_F
+
 Table simplifiée des données des rentes d'accident du travail
 
 
@@ -38,3 +41,5 @@ Table simplifiée des données des rentes d'accident du travail
 |ATT_NAT|nombre réel|Nature de l'accident du travail|||
 |RAT_IPP_TAU|nombre réel|Taux de l'incapacité permanente (IPP)|||
 |RAT_IPP_DTE|date|Date d'effet du taux de l'incapacité permanente (IPP)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

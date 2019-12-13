@@ -1,5 +1,8 @@
 # T_MCOaa_nnFHSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFHSTC
+
 ACE medicament en sus
 
 
@@ -24,3 +27,5 @@ ACE medicament en sus
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
 |UCD_COD|chaîne de caractères|Code UCD|||
 |UCD_UCD_COD|chaîne de caractères|Code UCD (0 à gauche)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

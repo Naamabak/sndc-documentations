@@ -1,5 +1,8 @@
 # T_RIPaa_nnRSA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnRSA
+
 Résumé par séquence
 
 
@@ -53,3 +56,5 @@ Résumé par séquence
 |SEJ_LEG|chaîne de caractères|Mode légal de séjour|||
 |SCO_DEP_REL|chaîne de caractères|Score pour la dépendance pour la relation (AVQ)|||
 |NAT_PEC|chaîne de caractères|Nature de prise en charge|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

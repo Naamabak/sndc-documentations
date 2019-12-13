@@ -1,5 +1,8 @@
 # IR_IMB_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# IR_IMB_R
+
 Référentiel médicalisé des bénéficiaires (ALD)
 
 
@@ -20,3 +23,5 @@ Référentiel médicalisé des bénéficiaires (ALD)
 |MED_MTF_COD|chaîne de caractères|Motif médical ou pathologie (code CIM10)|||
 |MED_NCL_IDT|chaîne de caractères|Nomenclature médicale|||
 |UPD_DTE|date|Date de la dernière sélection des bénéficiaires de l'EGB|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

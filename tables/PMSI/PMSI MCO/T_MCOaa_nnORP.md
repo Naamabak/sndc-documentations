@@ -1,5 +1,8 @@
 # T_MCOaa_nnORP
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnORP
+
 Fich comp maladie orpheline
 
 
@@ -13,3 +16,5 @@ Fich comp maladie orpheline
 |ORP_COD|chaîne de caractères|Code ORPHA|||
 |MOI|chaîne de caractères|N° période (mois)|||
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

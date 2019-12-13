@@ -1,5 +1,8 @@
 # T_SSRaa_nnFC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnFC
+
 OQN Honoraire
 
 
@@ -32,3 +35,5 @@ OQN Honoraire
 |SOIN_MOI|chaîne de caractères|Mois de soins|||
 |EXE_SPE|chaîne de caractères|Spécilité exécutant|||
 |ACT_DEL|nombre réel|Délai de l'acte|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

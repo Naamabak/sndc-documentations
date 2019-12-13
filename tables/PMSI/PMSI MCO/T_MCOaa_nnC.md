@@ -1,5 +1,8 @@
 # T_MCOaa_nnC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnC
+
 NIR patient et Dates de soin
 
 - Clé primaire : `ETA_NUM, RSA_NUM`
@@ -48,3 +51,5 @@ NIR patient et Dates de soin
 |VID_HOSP_FOR|chaîne de caractères|N° format VID-HOSP|||
 |ENT_AM|date|Date d'entrée au format année + mois|||
 |SOR_AM|date|Date de sortie au format année + mois|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

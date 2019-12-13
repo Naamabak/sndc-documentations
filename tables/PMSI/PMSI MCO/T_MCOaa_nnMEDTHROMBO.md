@@ -1,5 +1,8 @@
 # T_MCOaa_nnMEDTHROMBO
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnMEDTHROMBO
+
 Fich comp Méd. thrombolytiques pour le traitement des AVC ischémiques
 
 
@@ -23,3 +26,5 @@ Fich comp Méd. thrombolytiques pour le traitement des AVC ischémiques
 |TOP_UCD_AUTO|chaîne de caractères|Top transcodage UCD13 auto|||
 |UCD_UCD_COD|chaîne de caractères|Code UCD|||
 |UCD_COD|chaîne de caractères|Code UCD|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

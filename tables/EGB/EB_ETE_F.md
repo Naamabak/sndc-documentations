@@ -1,5 +1,8 @@
 # EB_ETE_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_ETE_F
+
 Table des données des établissements
 
 
@@ -32,3 +35,5 @@ Table des données des établissements
 |FLX_EMT_ORD|nombre réel|numéro de séquence du flux|||
 |MFT_COD|nombre réel|Code du mode de fixation des tarifs|||
 |PRS_PPU_SEC|nombre réel|Code privé - public de la Prestations|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

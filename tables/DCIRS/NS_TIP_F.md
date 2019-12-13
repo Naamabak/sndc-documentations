@@ -1,5 +1,8 @@
 # NS_TIP_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_TIP_F
+
 Table simplifiée des données de codage de la Liste des Produits et Prestations
 
 
@@ -44,3 +47,5 @@ Table simplifiée des données de codage de la Liste des Produits et Prestations
 |TIP_PUB_PRX|nombre réel|Prix unitaire public|||
 |TIP_SIR_NUM|chaîne de caractères|N° SIRET Fabriquant-Importateur|||
 |TIP_ACT_QSN|nombre réel|Quantité d'actes LPP|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

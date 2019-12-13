@@ -1,5 +1,8 @@
 # EB_TIP_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_TIP_F
+
 Table des données de codage de la Liste des Produits et Prestations
 
 
@@ -29,3 +32,5 @@ Table des données de codage de la Liste des Produits et Prestations
 |PRS_ORD_NUM|nombre réel|Numéro d'ordre de la prestation dans le décompte|||
 |FLX_EMT_ORD|nombre réel|numéro de séquence du flux|||
 |TIP_PUB_PRX|nombre réel|Prix unitaire public|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

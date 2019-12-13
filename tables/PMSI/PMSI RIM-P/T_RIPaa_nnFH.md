@@ -1,5 +1,8 @@
 # T_RIPaa_nnFH
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnFH
+
 medicament
 
 
@@ -23,3 +26,5 @@ medicament
 |QUA_COD|nombre réel|Quantité|||
 |FAC_TOT|nombre réel|Montant total facturé TTC|||
 |UCD_UCD_COD|chaîne de caractères|Code UCD (0 à gauche)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_MCOaa_nnFH
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFH
+
 OQN medicament en sus
 
 
@@ -28,3 +31,5 @@ OQN medicament en sus
 |MNT_IND|nombre réel|Montant écart indemnisable|||
 |PRI_UNI_FAC|nombre réel|Prix unitaire facturé|||
 |COD_UCP_CIP|chaîne de caractères|Code UCD ou CIP|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

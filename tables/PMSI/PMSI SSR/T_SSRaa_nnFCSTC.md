@@ -1,5 +1,8 @@
 # T_SSRaa_nnFCSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnFCSTC
+
 ACE Honoraire
 
 
@@ -32,3 +35,5 @@ ACE Honoraire
 |ETA_NUM_GEO|chaîne de caractères|FINESS géographique|||
 |TYP_UNI_FON_C|chaîne de caractères|Type d’unité fonctionnelle de consultations|||
 |COEF_SSR|nombre réel|Coefficient SSR (1)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

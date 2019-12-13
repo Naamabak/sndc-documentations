@@ -1,5 +1,8 @@
 # EB_HMV_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_HMV_F
+
 table des mouvements des bénéficiaires de l'EGB
 
 
@@ -16,3 +19,5 @@ table des mouvements des bénéficiaires de l'EGB
 |BEN_NIR_IDT|chaîne de caractères|NIR anonyme du bénéficiaire dans l'échantillon|||
 |MAJ_SYS_DTE|date|Date de mise à jour des données du bénéficiaire dans le référentiel|||
 |CAI_RTT_COD|chaîne de caractères|caisse de rattachement au RNIAM|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

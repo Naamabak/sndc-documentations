@@ -1,5 +1,8 @@
 # IR_ETM_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# IR_ETM_R
+
 Table historique des exonérations du ticket modérateur liées à la personne
 
 
@@ -15,3 +18,5 @@ Table historique des exonérations du ticket modérateur liées à la personne
 |BEN_EXO_DTD|date|Date de début d’exonération|||
 |BEN_EXO_DTF|date|Date de fin d’exonération|||
 |IND_RNM_BEN|chaîne de caractères|Top RNIAM|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

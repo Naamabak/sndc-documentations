@@ -1,5 +1,8 @@
 # T_MCOaa_nnMED
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnMED
+
 Fich comp medicament en sus
 
 
@@ -24,3 +27,5 @@ Fich comp medicament en sus
 |UCD_UCD_COD|chaîne de caractères|Code UCD|||
 |COD_LES|chaîne de caractères|Code indication des spécialités pharmaceutiques inscrites sur la liste en sus|||
 |UCD_COD|chaîne de caractères|Code UCD|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

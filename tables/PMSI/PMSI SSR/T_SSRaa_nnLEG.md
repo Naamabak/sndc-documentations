@@ -1,5 +1,8 @@
 # T_SSRaa_nnLEG
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnLEG
+
 Erreurs détectées par la fonction groupage
 
 
@@ -13,3 +16,5 @@ Erreurs détectées par la fonction groupage
 |RHA_NUM|chaîne de caractères|N° Séquentiel du séjour|||
 |RHS_NUM|chaîne de caractères|Numéro séquentiel du RHS|||
 |COD_ERR|chaîne de caractères|Code erreur|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

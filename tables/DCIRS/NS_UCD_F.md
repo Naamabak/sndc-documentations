@@ -1,5 +1,8 @@
 # NS_UCD_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_UCD_F
+
 Table simplifiée des données de codage des Unités Communes de Dispensation
 
 
@@ -46,3 +49,5 @@ Table simplifiée des données de codage des Unités Communes de Dispensation
 |UCD_TOP_UCD|nombre réel|Top UCD|||
 |UCD_TTF_MNT|nombre réel|Montant total TTC facturé|||
 |UCD_DLV_NBR|nombre réel|Nombre d'unités délivrées|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

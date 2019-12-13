@@ -1,5 +1,8 @@
 # ER_TRS_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# ER_TRS_F
+
 Table des données détaillées de transport
 
 
@@ -32,3 +35,5 @@ Table des données détaillées de transport
 |TRS_DTD_AME|chaîne de caractères|Année et mois de départ du transport (format AAAAMM)|||
 |TRS_DTD_DTE|date|Date de départ du transport|||
 |TRS_DTF_AME|chaîne de caractères|Année et mois d'arrivée du transport (format AAAAMM)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

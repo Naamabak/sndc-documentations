@@ -1,5 +1,8 @@
 # EB_TRS_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_TRS_F
+
 Table des données détaillées de transport
 
 
@@ -27,3 +30,5 @@ Table des données détaillées de transport
 |TRS_DEP_CDP|chaîne de caractères|Code postal du lieu de départ du transport|||
 |TRS_ARR_CDP|chaîne de caractères|Code postal du lieu d'arrivée du transport|||
 |TRS_DTD_DTE|date|Date de départ du transport|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

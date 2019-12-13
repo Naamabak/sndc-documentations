@@ -1,5 +1,8 @@
 # NS_INV_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_INV_F
+
 Table simplifiée des données de codage des invalidités
 
 
@@ -37,3 +40,5 @@ Table simplifiée des données de codage des invalidités
 |INV_PEN_CAT|nombre réel|Catégorie de la pension d'invalidité|||
 |INV_PEN_ETA|nombre réel|Etat de la pension d'invalidité|||
 |INV_ATR_DTD|date|Date d'attribution de la pension d'invalidité|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

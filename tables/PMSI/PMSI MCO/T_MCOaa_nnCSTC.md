@@ -1,5 +1,8 @@
 # T_MCOaa_nnCSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnCSTC
+
 ACE NIR/date
 
 - Clé primaire : `ETA_NUM, SEQ_NUM`
@@ -51,3 +54,5 @@ ACE NIR/date
 |PAYS_ASS_PAT|chaîne de caractères|Pays d’assurance social|||
 |ENT_AM|date|Date d'entrée au format année + mois|||
 |SOR_AM|date|Date de sortie au format année + mois|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

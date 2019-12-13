@@ -1,5 +1,8 @@
 # T_HADaa_nnA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnA
+
 Table des actes
 
 
@@ -21,3 +24,5 @@ Table des actes
 |SSEQ_NUM|chaîne de caractères|N° de la sous-séquence|||
 |VAL_DAT_SSEQ|chaîne de caractères|Dates de validité de l'acte compatibles avec les dates de la sousséquence|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (code géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

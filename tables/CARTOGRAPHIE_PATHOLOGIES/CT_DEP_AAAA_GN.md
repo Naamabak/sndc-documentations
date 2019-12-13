@@ -1,5 +1,8 @@
 # CT_DEP_AAAA_GN
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# CT_DEP_AAAA_GN
+
 Table dépenses de la cartographie des pathologies pour l'année AAAA et l'algorithme N
 
 
@@ -85,3 +88,5 @@ Table dépenses de la cartographie des pathologies pour l'année AAAA et l'algor
 |TOT_DEP_BSE|nombre réel|Total des dépenses remboursables|||
 |version|chaîne de caractères|Version de la cartographie|||
 |BEN_DCD_AME|chaîne de caractères|Année et mois de décès du bénéficiaire|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

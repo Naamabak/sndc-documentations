@@ -1,5 +1,8 @@
 # ER_CAM_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# ER_CAM_F
+
 Table des données de codage de la Classification Commune des Actes Médicaux
 
 
@@ -42,3 +45,5 @@ Table des données de codage de la Classification Commune des Actes Médicaux
 |CAM_MPU_MNT|nombre réel|Montant Minoration due à association sur PU de l' Acte|||
 |CAM_MM1_MNT|nombre réel|Montant Majoration Modificateur1|||
 |CAM_MI2_MNT|nombre réel|Montant Minoration due à association sur Modificateur2|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

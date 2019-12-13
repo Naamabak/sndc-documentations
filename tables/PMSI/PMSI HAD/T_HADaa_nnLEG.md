@@ -1,5 +1,8 @@
 # T_HADaa_nnLEG
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnLEG
+
 Fichier donnant toutes les erreurs détectées par la fonction groupage (LEG)
 
 
@@ -15,3 +18,5 @@ Fichier donnant toutes les erreurs détectées par la fonction groupage (LEG)
 |ETA_NUM_ePMSI|chaîne de caractères|N° FINESS e-PMSI|||
 |SEQ_NUM|chaîne de caractères|Numéro de la séquence dans le séjour|||
 |MOI|chaîne de caractères|Mois période|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

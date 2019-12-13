@@ -1,5 +1,8 @@
 # ER_DCT_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# ER_DCT_F
+
 Table des données de décompte
 
 
@@ -30,3 +33,5 @@ Table des données de décompte
 |ORG_CLE_NUM|chaîne de caractères|organisme de liquidation des prestations (avant fusion des caisses)|||
 |PRS_ORD_NUM|nombre réel|N° ordre prestation dans décompte                 8|||
 |REM_TYP_AFF|nombre réel|Type de remboursement affiné                                 9|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

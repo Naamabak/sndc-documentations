@@ -1,5 +1,8 @@
 # T_MCOaa_nnFA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFA
+
 OQN Entete facture
 
 
@@ -39,3 +42,5 @@ OQN Entete facture
 |SOR_ANN|chaîne de caractères|Année de sortie|||
 |SOR_MOI|chaîne de caractères|Mois de sortie|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

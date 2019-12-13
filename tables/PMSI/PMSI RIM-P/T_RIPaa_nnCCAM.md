@@ -1,5 +1,8 @@
 # T_RIPaa_nnCCAM
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnCCAM
+
 Actes CCAM
 
 
@@ -19,3 +22,5 @@ Actes CCAM
 |ACV_ACT|chaîne de caractères|Code de l'activité|||
 |DOC_ACT|chaîne de caractères|Extension documentaire|||
 |NBR_EXE_ACT|nombre réel|Nombre de réalisations|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

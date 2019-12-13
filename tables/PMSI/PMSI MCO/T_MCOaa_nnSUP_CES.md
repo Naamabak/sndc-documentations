@@ -1,5 +1,8 @@
 # T_MCOaa_nnSUP_CES
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnSUP_CES
+
 Fich sup ACE Consultations externes Spécifiques
 
 
@@ -25,3 +28,5 @@ Fich sup ACE Consultations externes Spécifiques
 |P_CONS_SUP_120|nombre réel|La durée des consultations supérieure à 120 minutes|||
 |CL_ASS_SOC|chaîne de caractères|Assistante sociale|||
 |MOI|chaîne de caractères|Période|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

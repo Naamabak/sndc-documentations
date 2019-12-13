@@ -1,5 +1,8 @@
 # MA_REM_FT
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# MA_REM_FT
+
 
 ## Modèle de données
 
@@ -82,3 +85,5 @@
 |ATT_NAT|nombre réel|Nature de l'accident du travail|||
 |PSP_ACT_NAT|nombre réel|Nature d'activite du professionnel de santé prescripteur|||
 |PRS_PPU_SEC|nombre réel|Code privé - public de la Prestations|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

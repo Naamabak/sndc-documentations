@@ -1,5 +1,8 @@
 # T_HADaa_nnFM
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnFM
+
 Table FM : Table des RSFA des actes CCAM des établissements ex-OQN
 
 
@@ -45,3 +48,5 @@ Table FM : Table des RSFA des actes CCAM des établissements ex-OQN
 |RHAD_NUM|chaîne de caractères|Numéro séquentiel d'entrée (idem RAPSS)|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (site géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

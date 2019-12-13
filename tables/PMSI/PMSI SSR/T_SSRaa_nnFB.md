@@ -1,5 +1,8 @@
 # T_SSRaa_nnFB
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnFB
+
 OQN Prestation
 
 
@@ -35,3 +38,5 @@ OQN Prestation
 |SOIN_ANN|chaîne de caractères|Année de soins|||
 |SOIN_MOI|chaîne de caractères|Mois de soins|||
 |ACT_DEL|nombre réel|Délai de l'acte|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

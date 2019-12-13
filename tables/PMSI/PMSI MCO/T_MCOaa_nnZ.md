@@ -1,5 +1,8 @@
 # T_MCOaa_nnZ
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnZ
+
 Fich comp radiothérapie
 
 
@@ -13,3 +16,5 @@ Fich comp radiothérapie
 |NBR_SUP|nombre réel|Nombre de suppléments (Nb actes menant dans le GHS)|||
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
 |RSS_NUM|chaîne de caractères|Numéro de version du format du RSA|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

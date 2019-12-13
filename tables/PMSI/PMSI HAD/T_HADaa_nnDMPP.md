@@ -1,5 +1,8 @@
 # T_HADaa_nnDMPP
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnDMPP
+
 Table des diagnostics liés au MPP (mode de prise en charge principal)
 
 
@@ -14,3 +17,5 @@ Table des diagnostics liés au MPP (mode de prise en charge principal)
 |SEQ_NUM|chaîne de caractères|N° de la séquence dans le séjour|||
 |SSEQ_NUM|chaîne de caractères|N° de la sous-séquence|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (code géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

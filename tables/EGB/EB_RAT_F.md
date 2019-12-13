@@ -1,5 +1,8 @@
 # EB_RAT_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_RAT_F
+
 Table des données des rentes d'accident du travail
 
 
@@ -22,3 +25,5 @@ Table des données des rentes d'accident du travail
 |ATT_NAT|nombre réel|Nature de l'accident du travail|||
 |RAT_IPP_DTE|date|Date d'effet du taux de l'incapacité permanente (IPP)|||
 |FLX_EMT_TYP|nombre réel|Type d'émetteur|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

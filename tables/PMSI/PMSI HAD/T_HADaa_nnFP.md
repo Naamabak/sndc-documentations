@@ -1,5 +1,8 @@
 # T_HADaa_nnFP
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnFP
+
 Table FP : Table des RSFA des LPP/DMI en sus des établissements ex-OQN
 
 
@@ -24,3 +27,5 @@ Table FP : Table des RSFA des LPP/DMI en sus des établissements ex-OQN
 |TOT_MNT_ECA|nombre réel|Montant total de l'écart indemnisable|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (site géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

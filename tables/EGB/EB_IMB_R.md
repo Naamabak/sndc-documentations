@@ -1,5 +1,8 @@
 # EB_IMB_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_IMB_R
+
 Table des données médicalisées des bénéficiaires de l'EGB
 
 
@@ -19,3 +22,5 @@ Table des données médicalisées des bénéficiaires de l'EGB
 |BEN_NIR_IDT|chaîne de caractères|NIR anonyme du bénéficiaire dans l'échantillon|||
 |MED_NCL_IDT|chaîne de caractères|Nomenclature médicale|||
 |IMB_SDR_LOP|chaîne de caractères|Localisation - paragraphe syndrome|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

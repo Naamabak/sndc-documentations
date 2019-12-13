@@ -1,5 +1,8 @@
 # IR_MTT_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# IR_MTT_R
+
 Table historique des médecins traitants
 
 
@@ -17,3 +20,5 @@ Table historique des médecins traitants
 |MTT_MTF_COD|chaîne de caractères|Motif de résiliation du contrat avce le médecin traitant|||
 |MTT_ORI_COD|chaîne de caractères|Origine de la saisie ou de la mise à jour de la déclaration de médecin traitant|||
 |MTT_PFS_NUM|chaîne de caractères|Numéro du médecin traitant|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

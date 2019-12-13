@@ -1,5 +1,8 @@
 # T_MCOaa_nnDMIP
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnDMIP
+
 Fich comp dmi en sus
 
 
@@ -20,3 +23,5 @@ Fich comp dmi en sus
 |PRS_TYP|chaîne de caractères|Type de prestation|||
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
 |TIP_PRS_IDE|nombre réel|Code LPP (format numérique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_RIPaa_nnISOCONT
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnISOCONT
+
 Fich Comp : Isolement et contention
 
 
@@ -22,3 +25,5 @@ Fich Comp : Isolement et contention
 |MES_REP_TPS|nombre réel|Identifiant de la mesure|||
 |MES_INDIC|chaîne de caractères|Indicateur de mesure |||
 |MES_DUREE|nombre réel|Durée de la mesure|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

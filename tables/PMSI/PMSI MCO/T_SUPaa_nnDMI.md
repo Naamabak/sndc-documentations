@@ -1,5 +1,8 @@
 # T_SUPaa_nnDMI
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SUPaa_nnDMI
+
 Dispositifs médicaux implantables (extension de fichier .dmi)
 
 
@@ -13,3 +16,5 @@ Dispositifs médicaux implantables (extension de fichier .dmi)
 |FIC_TYP|nombre réel|Type de fichier|||
 |LPP_COD|chaîne de caractères|Code LPP (attention blanc devant)|||
 |ANN_MOI|date|Mois et année|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

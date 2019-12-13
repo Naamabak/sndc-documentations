@@ -1,5 +1,8 @@
 # IR_MAT_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# IR_MAT_R
+
 Table historique de la maternité
 
 
@@ -14,3 +17,5 @@ Table historique de la maternité
 |BEN_GRS_DTE|date|Date présumée de grossesse|||
 |BEN_DRA_AME|chaîne de caractères|Année et mois de l’accouchement|||
 |IND_RNM_BEN|chaîne de caractères|Top RNIAM|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

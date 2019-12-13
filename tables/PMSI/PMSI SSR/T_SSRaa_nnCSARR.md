@@ -1,5 +1,8 @@
 # T_SSRaa_nnCSARR
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnCSARR
+
 actes du Catalogue spécifique des actes de rééducation et réadaptation
 
 
@@ -24,3 +27,5 @@ actes du Catalogue spécifique des actes de rééducation et réadaptation
 |NBR_PAT_INTERV|nombre réel|Nombre réel de patients|||
 |NBR_INTERV|nombre réel|Nombre d'intervenants|||
 |EXT_DOC|chaîne de caractères|Extension documentaire|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

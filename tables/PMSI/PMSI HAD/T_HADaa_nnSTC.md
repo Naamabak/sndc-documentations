@@ -1,5 +1,8 @@
 # T_HADaa_nnSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnSTC
+
 Prise en charge par l'AM de chaque séjour, pour les établissements valorisés STC
 
 
@@ -101,3 +104,5 @@ Prise en charge par l'AM de chaque séjour, pour les établissements valorisés 
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (code géographique)|||
 |RNG_NAI_CTL|chaîne de caractères|Code retour contrôle « Rang de naissance »|||
 |RNG_BEN_CTL|chaîne de caractères|Code retour contrôle « Rang du bénéficiaire »|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

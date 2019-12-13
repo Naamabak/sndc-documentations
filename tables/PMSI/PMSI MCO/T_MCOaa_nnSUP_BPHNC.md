@@ -1,5 +1,8 @@
 # T_MCOaa_nnSUP_BPHNC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnSUP_BPHNC
+
 Fich sup BP HN etb demandeur
 
 
@@ -18,3 +21,5 @@ Fich sup BP HN etb demandeur
 |FIC_TYP|chaîne de caractères|Type de fichier|||
 |MNT_BHN_ETB_EXDG|nombre réel|Montant total de BHN payés à un établissement de santé - ex-DG ou ex-OQN - (en centimes d'euro)|||
 |ANN_MOI|chaîne de caractères|Année+Mois|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->
