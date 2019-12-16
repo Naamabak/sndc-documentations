@@ -10,7 +10,7 @@ Elle permet aux assurés à qui elle est attribuée de bénéficier d'une mutuel
 
 Maintenant on parle de Complémentaire santé solidaire [CSS](https://www.service-public.fr/particuliers/vosdroits/F10027).
 
-Lorsque qu'on a pas la CMUc mais de faibles revenus, on peut avoir l'[Aide à la complémentaire santé](../glossaire/acs.md)
+Lorsque qu'on a pas la CMUc mais de faibles revenus, on peut avoir l'[Aide à la complémentaire santé](../glossaire/ACS.md).
 
 Les dépenses de santé des "cmucistes" sont prises en charge à hauteur de 100 % des tarifs de la sécurité sociale. 
 Aucun dépassement d'honoraires ne peut être facturé sauf en cas d'exigence particulière de la part du bénéficiaire.
