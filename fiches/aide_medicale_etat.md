@@ -26,7 +26,7 @@ On peut aussi utiliser la variable `BEN_CMU_CAT` (catégorie d’organisme compl
 L'AME n'est pas applicable à Mayotte.
 :::
 
-## Code SQL 
+# Code SQL 
 ```sql
 
 /* rechercher des béneficiaire de l'AME;*/
@@ -49,6 +49,40 @@ disconnect from oracle;
 quit;
 
 ```
+## AME et PMSI 
+
+Dans le PMSI, on peut cibler les AME à partir de la table VALO  dont la modalité est égale à 3 si le séjour concerne un patient AME. 
+On peut également le faire à partir de la variable `NON_SEJ_FAC_AM`, la modalité 1 correspond aux AME.
+De manière globale, ces séjours ne sont pas valorisés directement par l'assurance maladie obligatoire (AMO) car ils sont payés sur des fonds complémentaires (fond AME).
+
+
+```sql
+
+```
+
+## AME et NIR 
+
+Un matricule provisoire est également donné aux bénéficiaires de l’AME, leur code `BEN_CDI_NIR` vaut donc 04. 
+Dans ce cas, aucun NIR ne leur est attribué car les bénéficiaires de l’AME ne sont pas des assurés sociaux, le régime général avance leurs frais de santé pour le compte de l’Etat et se les fait rembourser ensuite par l’Etat. *
+
+::: Attention 
+Il existe également des bénéficiaires de l’AME qui disposent d’un NIR (`BEN_CDI_NIR` = 00), il s’agit généralement de personnes considérées comme des étrangers qui ont été en situation régulière en France pendant une certaine période et qui sont ensuite en situation irrégulière. *
+Lorsqu’un ouvrant droit provisoire obtient son NIR (assuré social étranger venant travailler en France), il change de numéro d’immatriculation, son matricule provisoire commençant par 7 ou 8 est remplacé par son NIR commençant par 1 ou 2. 
+:::
+
+Conséquence : Les bénéficaires de l'AME dont le `BEN_CDI_NIR` = 00 peuvent être suivis les autres malheureusement peuvent difficilement faire l’objet d’un suivi dans le temps.
+Dans la cartographies des pathologies, ont ne trouve que ces derniers.
+
+ATTENTION : le filtre sur les codes retour exclus de fait les AME qui du fait de leur NIR provisoire ne peuvent avoir des codes retour à 0 (NIR_RET = '0' and NAI_RET = '0' and SEX_RET = '0' and SEJ_RET = '0' and FHO_RET = '0'  and PMS_RET = '0' and DAT_RET = '0')
+Leur NIR_RET est souvent ='2'. 
+On ne peut compter les individus en AME (car souvent même NIR fictif) mais uniquement l'activité. 
+
+
+## AME est remboursement 
+
+Les AME sont remboursés sur un fond spécifique qui n'est pas celui de l'assurance maladie obligatoire (FOND AME). On peut les retrouver à partir des variables ARO (autre que régime obligatoire )
+La variable `ARO_REM_TYP` prend la modalite 7 pour les bénéficaires de l'AME.
+
 
 ## Références
 
