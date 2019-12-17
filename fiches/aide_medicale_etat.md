@@ -26,7 +26,7 @@ On peut aussi utiliser la variable `BEN_CMU_CAT` (catégorie d’organisme compl
 L'AME n'est pas applicable à Mayotte.
 :::
 
-# Code SQL 
+### Code SQL 
 ```sql
 
 /* rechercher des béneficiaire de l'AME;*/
