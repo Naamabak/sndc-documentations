@@ -1,5 +1,8 @@
 # T_SSRaa_nnFA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnFA
+
 OQN Entete facture
 
 
@@ -38,3 +41,5 @@ OQN Entete facture
 |CTR_TYP|chaîne de caractères|Type de contrat souscrit auprès d'un organisme|||
 |FAC_ETL|chaîne de caractères|Etat de liquidation de la facture|||
 |GES_COD|chaîne de caractères|Code gestion|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

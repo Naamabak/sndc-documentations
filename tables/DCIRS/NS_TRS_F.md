@@ -1,5 +1,8 @@
 # NS_TRS_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_TRS_F
+
 Table simplifiée des données détaillées de transport
 
 
@@ -42,3 +45,5 @@ Table simplifiée des données détaillées de transport
 |TRS_TRP_HRA|nombre réel|Heure d'arrivée du transport|||
 |TRS_DTF_DTE|date|Date d'arrivée du transport|||
 |TRS_DTF_AMF|chaîne de caractères|Date d'arrivée (année et mois) du transport|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

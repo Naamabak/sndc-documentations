@@ -1,5 +1,8 @@
 # T_HADaa_nnFH
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnFH
+
 Table FH : Table des RSFA des Médicaments en sus des établissements ex-OQN
 
 
@@ -25,3 +28,5 @@ Table FH : Table des RSFA des Médicaments en sus des établissements ex-OQN
 |UCD_UCD_COD|chaîne de caractères|Code UCD sur 13 caractère avec 000 à gauche|||
 |COD_LES|chaîne de caractères|Code indication des spécialités pharmaceutiques inscrites sur la liste en sus|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (site géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

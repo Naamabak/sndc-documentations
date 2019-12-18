@@ -1,5 +1,8 @@
 # ER_PRS_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# ER_PRS_F
+
 Table des prestations
 
 - Clé primaire : `DCT_ORD_NUM, FLX_DIS_DTD, FLX_EMT_NUM, FLX_EMT_ORD, FLX_EMT_TYP, FLX_TRT_DTD, ORG_CLE_NUM, PRS_ORD_NUM, REM_TYP_AFF`
@@ -135,3 +138,5 @@ Table des prestations
 |PRS_DIS_PRE|chaîne de caractères|Dispositif de prévention|||
 |CPL_REM_TAU|nombre réel|Taux de remboursement des compléments d'actes|||
 |PRS_QTT_MAJ|nombre réel|Quantité de majorations|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

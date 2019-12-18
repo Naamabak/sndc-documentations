@@ -1,5 +1,8 @@
 # T_SUPaa_nnBPHN
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SUPaa_nnBPHN
+
 B et P hors nomenclature (extension de fichier .bphn)
 
 
@@ -23,3 +26,5 @@ B et P hors nomenclature (extension de fichier .bphn)
 |NBR_FAC_INC_DEM|nombre réel|Nombre facturé autre ou demandeur inconnu|||
 |NBR_FAC_PHE|nombre réel|Nombre facturé pour patients hospitalisés au sein de l’établissement|||
 |NBR_SEC_LIB|nombre réel|Nombre réalisé émanant du secteur libéral|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_RIPaa_nnSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnSTC
+
 Prise en charge patient pour etb DG
 
 
@@ -100,3 +103,5 @@ Prise en charge patient pour etb DG
 |VALID_FAC_RAC|chaîne de caractères|Statut FT patient|||
 |PAYS_ASS_PAT|chaîne de caractères|Pays d’assurance social|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (site géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

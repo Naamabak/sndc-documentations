@@ -1,5 +1,8 @@
 # T_SSRaa_nnGME
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnGME
+
 GME
 
 
@@ -16,3 +19,5 @@ GME
 |RHS_NUM|chaîne de caractères|N° séquentiel du RHS|||
 |RET_COD|chaîne de caractères|code retour *|||
 |GME|chaîne de caractères|GME|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

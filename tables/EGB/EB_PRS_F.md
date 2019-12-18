@@ -1,5 +1,8 @@
 # EB_PRS_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_PRS_F
+
 Table des prestations
 
 
@@ -129,3 +132,5 @@ Table des prestations
 |FLX_EMT_ORD|nombre réel|numéro de séquence du flux|||
 |PSP_ACT_NAT|nombre réel|Nature d'activite du professionnel de santé prescripteur|||
 |CPL_FTA_COD|nombre réel|Code de forçage du taux pour les compléments d'actes|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

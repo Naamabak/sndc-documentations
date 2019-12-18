@@ -1,5 +1,8 @@
 # T_SSRaa_nnGHJ
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnGHJ
+
 table des Groupes de Morbidité Dominante
 
 
@@ -12,3 +15,5 @@ table des Groupes de Morbidité Dominante
 |RHA_VER|chaîne de caractères|N° version du format du RHA|||
 |NBR_JOU|nombre réel|Nombre de jours|||
 |RHA_NUM|chaîne de caractères|N° Séquentiel du séjour|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

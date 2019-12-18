@@ -1,5 +1,8 @@
 # T_RIPaa_nnFI
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnFI
+
 interruption de sejour
 
 
@@ -20,3 +23,5 @@ interruption de sejour
 |SEJ_DUR|nombre réel|Durée (Date de fin de séjour-date de début de séjour)|||
 |SEJ_FIN|chaîne de caractères|Nature d'interruption ou de fin de séjour|||
 |ETB_NUM|chaîne de caractères|Etablissement de transfert ou de retour ou lieu d'exécution de l'acte|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

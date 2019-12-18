@@ -1,5 +1,8 @@
 # IR_ACS_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# IR_ACS_R
+
 Table historique des affiliations à l'aide à la complémentaire santé
 
 
@@ -15,3 +18,5 @@ Table historique des affiliations à l'aide à la complémentaire santé
 |FAM_DRT_DSD|date|Date de début de verrouillage des droits|||
 |FAM_DRT_DSF|date|Date de fin de verrouillage des droits|||
 |IND_RNM_BEN|chaîne de caractères|Top RNIAM|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

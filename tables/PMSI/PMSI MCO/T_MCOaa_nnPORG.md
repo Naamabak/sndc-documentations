@@ -1,5 +1,8 @@
 # T_MCOaa_nnPORG
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnPORG
+
 Fich comp prélévement d'organe
 
 
@@ -17,3 +20,5 @@ Fich comp prélévement d'organe
 |PO_COD|chaîne de caractères|Code PO|||
 |PRS_TYP|chaîne de caractères|Type de prestation|||
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

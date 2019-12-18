@@ -1,5 +1,8 @@
 # T_MCOaa_nnDIALP
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnDIALP
+
 Fich comp dialyse péritonéale en sus
 
 
@@ -16,3 +19,5 @@ Fich comp dialyse péritonéale en sus
 |PRS_TYP|chaîne de caractères|Type de prestation|||
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
 |FAC_SEM_NBR|chaîne de caractères|Nombre de semaine facturées|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

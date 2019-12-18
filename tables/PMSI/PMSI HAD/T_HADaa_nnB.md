@@ -1,5 +1,8 @@
 # T_HADaa_nnB
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnB
+
 Table des Résumés Anonyme Par Sous-Séquence (RAPSS)
 
 - Clé primaire : `ETA_NUM_EPMSI, RHAD_NUM`
@@ -78,3 +81,5 @@ Table des Résumés Anonyme Par Sous-Séquence (RAPSS)
 |DGN_PAL7|chaîne de caractères|Diagnostic associé 7|||
 |DGN_PAL2|chaîne de caractères|Diagnostic associé 2|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (code géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_RIPaa_nnFA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnFA
+
 debut facture
 
 
@@ -40,3 +43,5 @@ debut facture
 |BEN_CMU|chaîne de caractères|Patient bénéficiaire de la CMU|||
 |ORG_CPL_NUM|chaîne de caractères|N° d’organisme complémentaire|||
 |NUM_DAT_AT|chaîne de caractères|Numéro accident du travail ou date d’accident de droit commun|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

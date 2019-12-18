@@ -1,5 +1,8 @@
 # EB_INV_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_INV_F
+
 Table des données de codage des invalidités
 
 
@@ -21,3 +24,5 @@ Table des données de codage des invalidités
 |PRS_ORD_NUM|nombre réel|Numéro d'ordre de la prestation dans le décompte|||
 |FLX_EMT_ORD|nombre réel|numéro de séquence du flux|||
 |FLX_EMT_TYP|nombre réel|Type d'émetteur|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

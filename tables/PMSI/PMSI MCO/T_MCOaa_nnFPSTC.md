@@ -1,5 +1,8 @@
 # T_MCOaa_nnFPSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFPSTC
+
 ACE DMI en sus
 
 
@@ -24,3 +27,5 @@ ACE DMI en sus
 |TIP_PRS_IDE|nombre réel|Code référence LPP (format numérique)|||
 |TOT_MNT_ECA|nombre réel|Montant total de l'écart indemnisable|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

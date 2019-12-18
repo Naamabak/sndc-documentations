@@ -1,5 +1,8 @@
 # DA_PRA_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# DA_PRA_R
+
 Référentiel des professionnels de santé
 
 - Clé primaire : `PFS_PFS_NUM`
@@ -59,3 +62,5 @@ Référentiel des professionnels de santé
 |PFS_FIN_NUM|chaîne de caractères|NUMERO FINESS|||
 |PFS_MAJ_DAT|chaîne de caractères|Mois de dernière mise à jour durant l'exercice|||
 |PFS_SCN_COD|chaîne de caractères|Code association du P.S.|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_SSRaa_nnA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnA
+
 Acte CCAM
 
 
@@ -13,3 +16,5 @@ Acte CCAM
 |CDC_ACT|chaîne de caractères|Code de l'acte CCAM|||
 |RHS_NUM|chaîne de caractères|Numéro séquentiel du RHS|||
 |RHA_NUM|chaîne de caractères|N° Séquentiel du séjour|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_MCOaa_nnFMSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFMSTC
+
 ACE actes CCAM
 
 
@@ -49,3 +52,5 @@ ACE actes CCAM
 |NIAS_RET|chaîne de caractères|Code retour contrôle « n° d’identification administratif de séjour »|||
 |SEX_RET|chaîne de caractères|Code retour contrôle « sexe »|||
 |NIR_RET|chaîne de caractères|Code retour contrôle « n° sécurité sociale »|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

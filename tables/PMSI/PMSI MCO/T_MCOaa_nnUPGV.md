@@ -1,5 +1,8 @@
 # T_MCOaa_nnUPGV
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnUPGV
+
 Types d'autorisations d'unités médicales à portée globale valides
 
 
@@ -11,3 +14,5 @@ Types d'autorisations d'unités médicales à portée globale valides
 |ETA_NUM|chaîne de caractères|Numéro FINESS|||
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
 |RSS_NUM|chaîne de caractères|Numéro de version du format du RSA|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

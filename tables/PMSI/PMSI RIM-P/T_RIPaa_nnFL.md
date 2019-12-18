@@ -1,5 +1,8 @@
 # T_RIPaa_nnFL
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnFL
+
 actes de Biologie
 
 
@@ -18,3 +21,5 @@ actes de Biologie
 |DEL_DAT_ENT|nombre réel|délai par rapport à la date d'entrée|||
 |ACT_NBR|nombre réel|Quantité acte|||
 |NABM_COD|chaîne de caractères|Code acte|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

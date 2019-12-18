@@ -1,5 +1,8 @@
 # ER_BIO_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# ER_BIO_F
+
 Table des données de codage de biologie
 
 
@@ -21,3 +24,5 @@ Table des données de codage de biologie
 |PRS_ORD_NUM|nombre réel|Numéro d'ordre de la prestation dans le décompte|||
 |REM_TYP_AFF|nombre réel|type de remboursement affiné|||
 |ARO_THE_TAU|nombre réel|Taux théorique de remboursement (autre que régime obligatoire)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_SSRaa_nnC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnC
+
 NIR patient et Dates de soin
 
 - Clé primaire : `ETA_NUM, RHA_NUM`
@@ -38,3 +41,5 @@ NIR patient et Dates de soin
 |SOR_MOI|chaîne de caractères|Mois de sortie|||
 |SOR_AM|date|Date de sortie au format année + mois|||
 |SOR_ANN|chaîne de caractères|Année de sortie|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

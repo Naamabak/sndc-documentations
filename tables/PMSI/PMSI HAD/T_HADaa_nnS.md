@@ -1,5 +1,8 @@
 # T_HADaa_nnS
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnS
+
 Synthèses des Résumés Anonyme Par Sous-Séquence
 
 
@@ -23,3 +26,5 @@ Synthèses des Résumés Anonyme Par Sous-Séquence
 |SOR_MOD|chaîne de caractères|Mode de sortie|||
 |SOR_DES|chaîne de caractères|Destination|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (code géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

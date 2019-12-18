@@ -1,5 +1,8 @@
 # T_MCOaa_nnFB
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFB
+
 OQN Prestation
 
 
@@ -34,3 +37,5 @@ OQN Prestation
 |SOR_MOI|chaîne de caractères|Mois de fin de séjour|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
 |TYP_FPI|chaîne de caractères|Type de prestation intermédiaire|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

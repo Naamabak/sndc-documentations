@@ -1,5 +1,8 @@
 # T_MCOaa_nnSUP_USMP
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnSUP_USMP
+
 Fich sup Médicaments dispensés en USMP (Unité Sanitaire en Milieu Pénitentiaire)
 
 
@@ -12,3 +15,5 @@ Fich sup Médicaments dispensés en USMP (Unité Sanitaire en Milieu Pénitentia
 |FIC_TYP|chaîne de caractères|Type de fichier|||
 |UCD_COD_7_13|chaîne de caractères|Code UCD (7 ou 13)|||
 |ANN_MOI|chaîne de caractères|Année+Mois|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

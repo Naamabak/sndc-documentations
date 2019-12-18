@@ -1,5 +1,8 @@
 # EB_CAM_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_CAM_F
+
 Table des données de codage de la Classification Commune des Actes Médicaux
 
 
@@ -30,3 +33,5 @@ Table des données de codage de la Classification Commune des Actes Médicaux
 |PRS_ORD_NUM|nombre réel|Numéro d'ordre de la prestation dans le décompte|||
 |CAM_ACT_PRU|nombre réel|Prix unitaire CCAM de l'acte médical|||
 |FLX_EMT_ORD|nombre réel|numéro de séquence du flux|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

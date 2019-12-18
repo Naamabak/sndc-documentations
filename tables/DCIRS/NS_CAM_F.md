@@ -1,5 +1,8 @@
 # NS_CAM_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_CAM_F
+
 Table simplifiée des données de codage de la Classification Commune des Actes Médicaux
 
 
@@ -46,3 +49,5 @@ Table simplifiée des données de codage de la Classification Commune des Actes 
 |CAM_REM_BSE|nombre réel|Base de remboursement de la CCAM|||
 |CAM_GRI_TAR|chaîne de caractères|Grille tarifaire|||
 |CAM_ACT_QSN|nombre réel|Quantité d'actes CCAM|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

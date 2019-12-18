@@ -1,5 +1,8 @@
 # IR_BEN_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# IR_BEN_R
+
 Référentiel des bénéficiaires du SNIIRAM-SNDS
 
 - Clé primaire : `BEN_NIR_PSA, BEN_RNG_GEM`
@@ -29,3 +32,5 @@ Référentiel des bénéficiaires du SNIIRAM-SNDS
 |ORG_CLE_NEW|chaîne de caractères|Code de l'organisme de liquidation|||
 |BEN_DTE_INS|date|Date d'insertion dans le référentiel|||
 |BEN_DTE_MAJ|date|Date de mise à jour|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

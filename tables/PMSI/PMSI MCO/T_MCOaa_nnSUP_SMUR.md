@@ -1,5 +1,8 @@
 # T_MCOaa_nnSUP_SMUR
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnSUP_SMUR
+
 Fich sup SMUR
 
 
@@ -14,3 +17,5 @@ Fich sup SMUR
 |ANN_MOI|chaîne de caractères|Année+Mois|||
 |FIC_TYP|chaîne de caractères|Type de fichier|||
 |NBR_TIIH|nombre réel|Nombre TIIH (transfert infirmier inter-hospitalier)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

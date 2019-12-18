@@ -1,5 +1,8 @@
 # EB_UCD_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_UCD_F
+
 Table des données de codage des Unités Communes de Dispensation
 
 
@@ -32,3 +35,5 @@ Table des données de codage des Unités Communes de Dispensation
 |FLX_EMT_ORD|nombre réel|numéro de séquence du flux|||
 |UCD_MAR_MNT|nombre réel|Montant UCD TTC de la marge de rétrocession|||
 |UCD_LGN_NUM|nombre réel|Numéro de ligne UCD|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

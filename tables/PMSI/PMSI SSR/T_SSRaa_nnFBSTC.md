@@ -1,5 +1,8 @@
 # T_SSRaa_nnFBSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnFBSTC
+
 ACE Prestation
 
 - Clé primaire : `ETA_NUM, SEQ_NUM`
@@ -33,3 +36,5 @@ ACE Prestation
 |ETA_NUM_GEO|chaîne de caractères|FINESS géographique|||
 |FJ_COD_PEC|chaîne de caractères|Code de prise en charge FJ|||
 |COEF_SSR|nombre réel|Coefficient MCO (1)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

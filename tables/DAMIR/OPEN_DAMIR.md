@@ -1,5 +1,8 @@
 # OPEN_DAMIR
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# OPEN_DAMIR
+
 OPEN DAMIR (Dépenses de l'Assurance Maladie Inter-Régimes)
 
 
@@ -62,3 +65,5 @@ OPEN DAMIR (Dépenses de l'Assurance Maladie Inter-Régimes)
 |FLX_ANN_MOI|chaîne de caractères|Année et Mois de traitement|||
 |ATT_NAT|nombre réel|Nature de l'accident du travail|||
 |PRS_PPU_SEC|nombre réel|Code privé - public de la Prestations|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

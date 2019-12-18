@@ -1,5 +1,8 @@
 # T_MCOaa_nnVALO
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnVALO
+
 Valorisation des séjours
 
 
@@ -166,3 +169,5 @@ mnt_mon, mnt_dmi, mnt_med_atu, mnt_ghs, mnt_exinf, mnt_ghs50, mnt_exh, mnt_supph
 |MNT_9611_AM|nombre réel|Valorisation AM actes menant dans le GHS 9611|||
 |NB_9612|nombre réel|Nombre d’actes menant dans le GHS 9612|||
 |MNT_GHSMIN_AM|nombre réel|Valorisation AM des séjours avec minoration forfaitaire liste en sus|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

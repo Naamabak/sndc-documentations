@@ -1,5 +1,8 @@
 # ER_ANO_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# ER_ANO_F
+
 Table des anomalies
 
 
@@ -24,3 +27,5 @@ Table des anomalies
 |ORG_CLE_NUM|chaîne de caractères|organisme de liquidation des prestations (avant fusion des caisses)|||
 |PRS_ORD_NUM|nombre réel|Numéro d'ordre de la prestation dans le décompte|||
 |REM_TYP_AFF|nombre réel|Type de remboursement affiné                                 9|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

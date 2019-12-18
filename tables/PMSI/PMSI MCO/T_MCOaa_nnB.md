@@ -1,5 +1,8 @@
 # T_MCOaa_nnB
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnB
+
 Description du Séjour
 
 - Clé primaire : `ETA_NUM, RSA_NUM`
@@ -102,3 +105,5 @@ Description du Séjour
 |NBR_SUP_SRA|nombre réel|Nombre de suppléments pour SRA (réanimation)|||
 |COD_IGS|chaîne de caractères|IGS 2|||
 |ANN_IVG_PREC|chaîne de caractères|Année de l’IVG précédente|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_MCOaa_nnSUP_LACT
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnSUP_LACT
+
 Fich sup lactarium
 
 
@@ -24,3 +27,5 @@ Fich sup lactarium
 |QTE_LLY_PRD_GR|nombre réel|Quantité de lait lyophilisé produit (en grammes)|||
 |QTE_LLY_CON_GR|nombre réel|Quantité de lait lyophilisé consommé (en grammes)|||
 |QTE_LFC_PRD_LIT|nombre réel|Quantité de lait frais ou congelé produit (en litres)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

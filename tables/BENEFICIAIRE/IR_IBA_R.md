@@ -1,5 +1,8 @@
 # IR_IBA_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# IR_IBA_R
+
 Référentiel des bénéficiaires de DCIRS
 
 - Clé primaire : `BEN_IDT_ANO`
@@ -25,3 +28,5 @@ Référentiel des bénéficiaires de DCIRS
 |ORG_CLE_NEW|chaîne de caractères|Code de l'organisme de liquidation|||
 |BEN_DTE_INS|date|Date d'insertion dans le référentiel|||
 |BEN_DTE_MAJ|date|Date de mise à jour|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

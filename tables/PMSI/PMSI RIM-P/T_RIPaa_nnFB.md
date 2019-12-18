@@ -1,5 +1,8 @@
 # T_RIPaa_nnFB
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnFB
+
 prestation hospitalière
 
 - Clé primaire : `ETA_NUM_EPMSI, RIP_NUM`
@@ -37,3 +40,5 @@ prestation hospitalière
 |NOE_MNR|nombre réel|Montant remboursé NOEMIE Retour|||
 |NOE_OPE|chaîne de caractères|Nature opération récupération NOEMIE Retour|||
 |ETE_GHS_NUM|nombre réel|N° GHS (format num)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

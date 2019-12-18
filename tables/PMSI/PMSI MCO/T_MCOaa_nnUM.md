@@ -1,5 +1,8 @@
 # T_MCOaa_nnUM
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnUM
+
 Unité médicale
 
 
@@ -33,3 +36,5 @@ Unité médicale
 |IND_SRC|chaîne de caractères|Indicateur de SRC|||
 |ETA_NUM_GEO1|chaîne de caractères|Premier numéro FINESS géographique|||
 |PAR_NBR_SEJ|nombre réel|Durée séjour partielle|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

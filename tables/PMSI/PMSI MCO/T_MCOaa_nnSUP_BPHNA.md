@@ -1,5 +1,8 @@
 # T_MCOaa_nnSUP_BPHNA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnSUP_BPHNA
+
 Fich sup BP HN nb
 
 
@@ -15,3 +18,5 @@ Fich sup BP HN nb
 |FIC_TYP|chaîne de caractères|Type de fichier|||
 |ANN_MOI|chaîne de caractères|Année+Mois|||
 |NBR_ACT_PAT_HOS|nombre réel|Dont nombre d'actes réalisés pour patients hospitalisés|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

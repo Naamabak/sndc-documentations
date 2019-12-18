@@ -1,5 +1,8 @@
 # KI_CCI_R
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# KI_CCI_R
+
 Table des circonstances et de la cause initiale de décès
 
 
@@ -56,3 +59,5 @@ Table des circonstances et de la cause initiale de décès
 |TOT_ACC_NBR|nombre réel|Nombre total daccouchements|||
 |PER_PFS_COD|nombre réel|Activité professionnelle du père|||
 |PER_PFG_LIB|chaîne de caractères|Profession du père exercée pendant la grossesse|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

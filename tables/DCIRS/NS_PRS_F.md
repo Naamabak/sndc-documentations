@@ -1,5 +1,8 @@
 # NS_PRS_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_PRS_F
+
 Table des prestations
 
 - Clé primaire : `CLE_DCI_JNT`
@@ -109,3 +112,5 @@ Table des prestations
 |SLM_AFF_COD|chaîne de caractères|Code de la SLM|||
 |TOT_REM_BSE|nombre réel|Base totale de remboursement de l'acte (base et compléments-majo hors PAF)|||
 |TOT_REM_MNT|nombre réel|Montant total remboursé pour l'acte (base et compléments-majo et participations de l'assuré)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

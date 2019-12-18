@@ -1,5 +1,8 @@
 # T_HADaa_nnFB
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnFB
+
 Table FB : Table des RSFA facture des établissements ex-OQN
 
 
@@ -36,3 +39,5 @@ Table FB : Table des RSFA facture des établissements ex-OQN
 |SOR_MOI|chaîne de caractères|Mois de la date de fin de séjour|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (site géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

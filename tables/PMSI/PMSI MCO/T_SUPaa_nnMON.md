@@ -1,5 +1,8 @@
 # T_SUPaa_nnMON
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SUPaa_nnMON
+
 Molécules onéreuses (extension de fichier .mon)
 
 
@@ -15,3 +18,5 @@ Molécules onéreuses (extension de fichier .mon)
 |MOY_PRI|nombre réel|Prix moyen|||
 |FIC_TYP|nombre réel|Type de fichier|||
 |ANN_MOI|date|Mois et année|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

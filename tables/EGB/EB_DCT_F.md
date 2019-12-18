@@ -1,5 +1,8 @@
 # EB_DCT_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_DCT_F
+
 Table des données de décompte
 
 
@@ -29,3 +32,5 @@ Table des données de décompte
 |FLX_EMT_NUM|nombre réel|numéro d'émetteur du flux|||
 |DCT_INT_VER|chaîne de caractères|Type de Version interface Tiers|||
 |FLX_EMT_ORD|nombre réel|numéro de séquence du flux|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

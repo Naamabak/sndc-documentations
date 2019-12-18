@@ -1,5 +1,8 @@
 # EB_PHA_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_PHA_F
+
 Table des données de codage de pharmacie
 
 
@@ -31,3 +34,5 @@ Table des données de codage de pharmacie
 |FLX_EMT_NUM|nombre réel|numéro d'émetteur du flux|||
 |PRS_ORD_NUM|nombre réel|Numéro d'ordre de la prestation dans le décompte|||
 |FLX_EMT_ORD|nombre réel|numéro de séquence du flux|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

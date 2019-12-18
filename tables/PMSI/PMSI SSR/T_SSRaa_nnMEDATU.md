@@ -1,5 +1,8 @@
 # T_SSRaa_nnMEDATU
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnMEDATU
+
 Med à autorisation temporaire d'utilisation
 
 
@@ -21,3 +24,5 @@ Med à autorisation temporaire d'utilisation
 |DAT_DELAI|nombre réel|Délai entre la date d’entrée du séjour et la date de dispensation|||
 |TOP_UCD_AUTO|chaîne de caractères|Top transcodage UCD13 auto|||
 |UCD_COD|chaîne de caractères|Code UCD|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

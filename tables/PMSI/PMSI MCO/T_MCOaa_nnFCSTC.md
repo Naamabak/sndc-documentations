@@ -1,5 +1,8 @@
 # T_MCOaa_nnFCSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFCSTC
+
 ACE Honoraire
 
 
@@ -39,3 +42,5 @@ ACE Honoraire
 |NOE_MNR|nombre réel|Montant remboursé NOEMIE Retour|||
 |NOE_OPE|nombre réel|Nature opération récupération NOEMIE Retour|||
 |NIR_RET|chaîne de caractères|Code retour contrôle « n° sécurité sociale »|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

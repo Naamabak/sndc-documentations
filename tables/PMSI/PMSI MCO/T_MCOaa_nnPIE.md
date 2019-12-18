@@ -1,5 +1,8 @@
 # T_MCOaa_nnPIE
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnPIE
+
 Fich comp prestation inter établissement
 
 
@@ -19,3 +22,5 @@ Fich comp prestation inter établissement
 |PRS_TYP|chaîne de caractères|Type de prestation|||
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
 |SUP_PAY_NBR|nombre réel|Nombre de suppléments payés|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

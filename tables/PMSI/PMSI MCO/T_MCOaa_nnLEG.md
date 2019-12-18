@@ -1,5 +1,8 @@
 # T_MCOaa_nnLEG
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnLEG
+
 Fichier donnant toutes les erreurs détectées par la fonction groupage
 
 
@@ -12,3 +15,5 @@ Fichier donnant toutes les erreurs détectées par la fonction groupage
 |COD_ERR|chaîne de caractères|Code retour|||
 |MOI|chaîne de caractères|Mois période|||
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

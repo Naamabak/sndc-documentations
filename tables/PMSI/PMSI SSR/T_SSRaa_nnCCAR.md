@@ -1,5 +1,8 @@
 # T_SSRaa_nnCCAR
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnCCAR
+
 classification acte de réadaptation
 
 
@@ -22,3 +25,5 @@ classification acte de réadaptation
 |MODUL_LIEU_COD|chaîne de caractères|Code modulateur de lieu|||
 |RHA_VER|chaîne de caractères|N° version du format du RHA|||
 |RHA_NUM|chaîne de caractères|N° Séquentiel du séjour|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

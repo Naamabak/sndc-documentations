@@ -1,5 +1,8 @@
 # T_HADaa_nnE
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnE
+
 Table des Etablissements
 
 - Clé primaire : `ETA_NUM`
@@ -15,3 +18,5 @@ Table des Etablissements
 |SOC_RAI|chaîne de caractères|Raison sociale|||
 |STA_ETA|chaîne de caractères|Statut de l'établissement|||
 |VAL_ETA|chaîne de caractères|Validation des données|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

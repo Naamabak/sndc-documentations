@@ -1,5 +1,8 @@
 # T_MCOaa_nnFLSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFLSTC
+
 ACE biologie NABM
 
 
@@ -19,3 +22,5 @@ ACE biologie NABM
 |RSF_TYP|chaîne de caractères|Type de format RSF (1 : ancien, 2 : nouveau)|||
 |SEQ_NUM|chaîne de caractères|N° séquentiel|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

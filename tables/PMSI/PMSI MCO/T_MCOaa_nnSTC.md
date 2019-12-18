@@ -1,5 +1,8 @@
 # T_MCOaa_nnSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnSTC
+
 Prise en charge
 
 
@@ -106,3 +109,5 @@ Prise en charge
 |RNG_NAI_CTL|chaîne de caractères|Code retour contrôle « Rang de naissance »|||
 |HOS_NN_MAM|chaîne de caractères|Hospitalisation d'un nouveau-né auprès de la mère|||
 |RNG_BEN_CTL|chaîne de caractères|Code retour contrôle « Rang du bénéficiaire »|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

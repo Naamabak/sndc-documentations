@@ -1,5 +1,8 @@
 # T_HADaa_nnMED
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnMED
+
 Table Molécules onéreuses (fichier COMP)
 
 
@@ -25,3 +28,5 @@ Table Molécules onéreuses (fichier COMP)
 |UCD_UCD_COD|chaîne de caractères|Code UCD|||
 |COD_LES|chaîne de caractères|Code indication des spécialités pharmaceutiques inscrites sur la liste en sus|||
 |UCD_COD|chaîne de caractères|Code UCD|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

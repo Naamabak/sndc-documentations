@@ -1,5 +1,8 @@
 # T_SSRaa_nnFI
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnFI
+
 OQN Interruption séjour
 
 
@@ -17,3 +20,5 @@ OQN Interruption séjour
 |SEJ_FIN|chaîne de caractères|Nature d'intervention ou de fin de séjour|||
 |ETB_NUM|chaîne de caractères|Etablissement|||
 |ACT_DEL|nombre réel|Délai de l'acte|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

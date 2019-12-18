@@ -1,5 +1,8 @@
 # EB_INB_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_INB_F
+
 référentiel des bénéficiaires de l'EGB
 
 
@@ -23,3 +26,5 @@ référentiel des bénéficiaires de l'EGB
 |INS_DTE|date|Date d'insertion|||
 |CAI_RTT_COD|chaîne de caractères|caisse de rattachement au RNIAM|||
 |BEN_NAI_ANM|chaîne de caractères|Année et mois de naissance du bénéficiaire|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

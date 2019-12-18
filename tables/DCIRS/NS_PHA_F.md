@@ -1,5 +1,8 @@
 # NS_PHA_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# NS_PHA_F
+
 Table simplifiée des données de codage de pharmacie
 
 
@@ -46,3 +49,5 @@ Table simplifiée des données de codage de pharmacie
 |PHA_SUB_MTF|nombre réel|Motif de substitution du médicament|||
 |PHA_ACT_QSC|nombre réel|Nombre de conditionnements (boite, etc.)|||
 |PHA_DEC_QSD|nombre réel|Nombre d'unités délivrées (comprimés, etc.) si déconditionnement|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

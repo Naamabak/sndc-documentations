@@ -1,5 +1,8 @@
 # T_MCOaa_nnFC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFC
+
 OQN Honoraire
 
 
@@ -31,3 +34,5 @@ OQN Honoraire
 |SOR_ANN|chaîne de caractères|Année de l'acte|||
 |SOR_MOI|chaîne de caractères|Mois de l'acte|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

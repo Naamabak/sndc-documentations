@@ -1,5 +1,8 @@
 # T_SUPaa_nnALD
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SUPaa_nnALD
+
 Alternatives à la dialyse (extension de fichier .ald)
 
 
@@ -13,3 +16,5 @@ Alternatives à la dialyse (extension de fichier .ald)
 |PRS_COD|chaîne de caractères|Code Prestation|||
 |FIC_TYP|nombre réel|Type de fichier|||
 |ANN_MOI|date|Mois et année|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

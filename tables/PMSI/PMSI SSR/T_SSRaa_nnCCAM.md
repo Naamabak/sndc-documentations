@@ -1,5 +1,8 @@
 # T_SSRaa_nnCCAM
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnCCAM
+
 Acte CCAM
 
 
@@ -19,3 +22,5 @@ Acte CCAM
 |CCAM_EXT_DOC|chaîne de caractères|Extension documentaire|||
 |CCAM_NBR_REA|nombre réel|Nombre de réalisation|||
 |CCAM_VAL_DAT|chaîne de caractères|Date de validité de l'acte compatible avec  la semaine|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

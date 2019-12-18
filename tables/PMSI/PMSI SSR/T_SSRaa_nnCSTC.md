@@ -1,5 +1,8 @@
 # T_SSRaa_nnCSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SSRaa_nnCSTC
+
 ACE NIR/date
 
 - Clé primaire : `ETA_NUM, SEQ_NUM`
@@ -49,3 +52,5 @@ ACE NIR/date
 |VALID_FAC_AMC|chaîne de caractères|Statut FT AMC|||
 |VALID_FAC_RAC|chaîne de caractères|Statut FT patient|||
 |PAYS_ASS_PAT|chaîne de caractères|Pays d’assurance social|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

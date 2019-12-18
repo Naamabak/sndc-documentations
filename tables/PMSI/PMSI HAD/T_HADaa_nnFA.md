@@ -1,5 +1,8 @@
 # T_HADaa_nnFA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnFA
+
 TableFA : Table des RSFA début de facture des établissements ex-OQN
 
 
@@ -41,3 +44,5 @@ TableFA : Table des RSFA début de facture des établissements ex-OQN
 |RNG_BEN|chaîne de caractères|Rang de bénéficiaire|||
 |RNG_NAI|chaîne de caractères|Rang de naissance|||
 |ETA_NUM_TWO|chaîne de caractères|Numéro FINESS de l’établissement (site géographique)|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

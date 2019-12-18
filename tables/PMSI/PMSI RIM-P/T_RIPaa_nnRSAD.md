@@ -1,5 +1,8 @@
 # T_RIPaa_nnRSAD
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnRSAD
+
 Diagnostic associé à la séquence
 
 
@@ -14,3 +17,5 @@ Diagnostic associé à la séquence
 |RIP_NUM|chaîne de caractères|N° séquentiel de séjour|||
 |SEQ_SEQ_NUM|chaîne de caractères|N° séquentiel de séquence au sein du séjour|||
 |ASS_DGN|chaîne de caractères|Diagnostics et facteurs associés|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

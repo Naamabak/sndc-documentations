@@ -1,5 +1,8 @@
 # T_MCOaa_nnFBSTC
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFBSTC
+
 ACE Prestation
 
 - Clé primaire : `ETA_NUM, SEQ_NUM`
@@ -33,3 +36,5 @@ ACE Prestation
 |SOR_MOI|chaîne de caractères|Mois des soins|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
 |TYP_FPI|chaîne de caractères|Type de prestation intermédiaire|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

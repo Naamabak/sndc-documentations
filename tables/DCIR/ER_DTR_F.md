@@ -1,5 +1,8 @@
 # ER_DTR_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# ER_DTR_F
+
 affinage des actes de transport 
 
 
@@ -22,3 +25,5 @@ affinage des actes de transport
 |ORG_CLE_NUM|chaîne de caractères|Ancien concept de l'organisme de liquidation (avant fusion, jusqu’au jour J de la fusion)          7|||
 |PRS_ORD_NUM|nombre réel|N° ordre prestation dans décompte                 8|||
 |REM_TYP_AFF|nombre réel|Type de remboursement affiné                                 9|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

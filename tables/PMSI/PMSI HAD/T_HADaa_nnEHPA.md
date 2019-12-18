@@ -1,5 +1,8 @@
 # T_HADaa_nnEHPA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnEHPA
+
 Table des conventions HAD-EHPA
 
 
@@ -18,3 +21,5 @@ Table des conventions HAD-EHPA
 |ETA_TYP_ESMS|chaîne de caractères|Type d'établissement|||
 |MOIS|chaîne de caractères|N° période (mois)|||
 |ETA_NUM_EHPA|chaîne de caractères|N° FINESS ESMS|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

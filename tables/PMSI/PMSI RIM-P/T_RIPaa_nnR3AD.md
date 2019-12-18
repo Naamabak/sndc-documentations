@@ -1,5 +1,8 @@
 # T_RIPaa_nnR3AD
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_RIPaa_nnR3AD
+
 Diagnostic associé à l'acte
 
 - Clé primaire : `ETA_NUM_EPMSI, ORD_NUM, SEJ_IDT`
@@ -14,3 +17,5 @@ Diagnostic associé à l'acte
 |IPP_IRR_CRY|chaîne de caractères|Cryptage irreversible de l'IPP|||
 |ORD_NUM|chaîne de caractères|N° d'ordre|||
 |ASS_DGN|chaîne de caractères|Diagnostics et facteurs associés|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

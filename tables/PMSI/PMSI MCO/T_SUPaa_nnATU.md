@@ -1,5 +1,8 @@
 # T_SUPaa_nnATU
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_SUPaa_nnATU
+
 Passage aux urgences (extension de fichier .atu)
 
 
@@ -14,3 +17,5 @@ Passage aux urgences (extension de fichier .atu)
 |NBR_HOS|nombre réel|Nombres d'hospitalisations|||
 |ANN_MOI|date|Mois et année|||
 |AUT_TYP|chaîne de caractères|Type d'autorisation|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

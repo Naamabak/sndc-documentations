@@ -1,5 +1,8 @@
 # T_MCOaa_nnFI
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFI
+
 OQN Interruption séjour
 
 
@@ -17,3 +20,5 @@ OQN Interruption séjour
 |SOR_ANN|chaîne de caractères|Année de fin de séjour|||
 |SOR_MOI|chaîne de caractères|Mois de fin de séjour|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

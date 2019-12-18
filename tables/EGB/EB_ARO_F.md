@@ -1,5 +1,8 @@
 # EB_ARO_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# EB_ARO_F
+
 Table des données de remboursements complémentaires
 
 
@@ -34,3 +37,5 @@ Table des données de remboursements complémentaires
 |ARO_REM_PRU|nombre réel|Prix unitaire de l'acte (autre que régime obligatoire)|||
 |ARO_REM_TAU|nombre réel|Taux réel de remboursement (autre que régime obligatoire)|||
 |ARO_FTA_COD|nombre réel|Code forçage du taux (hors parcours de soins) autre que régime obligatoire|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

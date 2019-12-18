@@ -1,5 +1,8 @@
 # ER_ARO_F
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# ER_ARO_F
+
 Table des données de remboursements complémentaires
 
 
@@ -33,3 +36,5 @@ Table des données de remboursements complémentaires
 |ORG_CLE_NUM|chaîne de caractères|organisme de liquidation des prestations (avant fusion des caisses)|||
 |PRS_ORD_NUM|nombre réel|Numéro d'ordre de la prestation dans le décompte|||
 |REM_TYP_AFF|nombre réel|type de remboursement affiné|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

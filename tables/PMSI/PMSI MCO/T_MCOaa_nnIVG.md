@@ -1,5 +1,8 @@
 # T_MCOaa_nnIVG
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnIVG
+
 Fich comp IVG
 
 
@@ -18,3 +21,5 @@ Fich comp IVG
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
 |SOR_ANN|chaîne de caractères|Année du séjour|||
 |SOR_MOI|chaîne de caractères|Mois du séjour|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

@@ -1,5 +1,8 @@
 # T_MCOaa_nnFL
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnFL
+
 OQN biologie NABM
 
 
@@ -18,3 +21,5 @@ OQN biologie NABM
 |RSA_NUM|chaîne de caractères|N° séquentiel (le même que pour les RSA)|||
 |RSF_TYP|chaîne de caractères|Type de format RSF (1 : ancien, 2 : nouveau)|||
 |TYP_ART|chaîne de caractères|Type d'enregistrement|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

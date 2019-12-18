@@ -1,5 +1,8 @@
 # T_MCOaa_nnSUP_PPCO
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnSUP_PPCO
+
 Fich sup Primo prescription de chimiothérapie orale
 
 
@@ -30,3 +33,5 @@ Fich sup Primo prescription de chimiothérapie orale
 |NBR_CONS_PHARMA|nombre réel|·   Dont Nombre de consultations avec participation d'un pharmacien|||
 |NBR_CONS_000_030|nombre réel|Nombre de consultations d'une durée inférieure à 30 minutes|||
 |ANN_MOI|chaîne de caractères|Année+Mois|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

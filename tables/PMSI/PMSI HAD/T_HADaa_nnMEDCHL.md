@@ -1,5 +1,8 @@
 # T_HADaa_nnMEDCHL
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_HADaa_nnMEDCHL
+
 Fich comp Médicament coûteux hors liste en sus et hors ATU
 
 
@@ -24,3 +27,5 @@ Fich comp Médicament coûteux hors liste en sus et hors ATU
 |SSEQ_NUM|chaîne de caractères|Numéro de sous-séquence|||
 |TOP_UCD_AUTO|chaîne de caractères|Top transcodage UCD13 auto|||
 |UCD_UCD_COD|chaîne de caractères|Code UCD|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

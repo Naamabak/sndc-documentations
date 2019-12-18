@@ -1,5 +1,8 @@
 # T_MCOaa_nnA
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnA
+
 Acte CCAM
 
 
@@ -23,3 +26,5 @@ Variable de type Caractère de 2005 à 2013, puis de type numérique à partir d
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
 |RSS_NUM|chaîne de caractères|Numéro de version du format du RSA|||
 |RUM_SEQ|chaîne de caractères|N° séquentiel du RUM ayant fourni le DP|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->

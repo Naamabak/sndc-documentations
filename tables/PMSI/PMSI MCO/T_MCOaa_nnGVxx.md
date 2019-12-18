@@ -1,5 +1,8 @@
 # T_MCOaa_nnGVxx
 
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
+# T_MCOaa_nnGVxx
+
 Table de passage en version de GHM
 
 
@@ -13,3 +16,5 @@ Table de passage en version de GHM
 |GHS_NUM|chaîne de caractères|Regroupage en GHS (utilisé pour la valorisation)|||
 |GHS_THEO|chaîne de caractères|Regroupage en GHS (GHS correspond au GHM)|||
 |RSA_NUM|chaîne de caractères|N° d'index du RSA|||
+
+<!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->
