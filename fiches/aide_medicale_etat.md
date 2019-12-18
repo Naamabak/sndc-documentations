@@ -22,11 +22,7 @@ Il faut donc que l'individu ait au moins une prestation, ce qui est souvent le c
 
 On peut aussi utiliser la variable `BEN_CMU_CAT` (catégorie d’organisme complémentaire) dont la modalité 5 correspond à l’AME.
 
-::: warning Attention
-L'AME n'est pas applicable à Mayotte.
-:::
 
-### Code SQL 
 ```sql
 
 /* rechercher des béneficiaire de l'AME;*/
@@ -51,12 +47,33 @@ quit;
 ```
 ## AME et PMSI 
 
-Dans le PMSI, on peut cibler les AME à partir de la table VALO  dont la modalité est égale à 3 si le séjour concerne un patient AME. 
+Dans le PMSI, on peut cibler les AME à partir de la table VALO dont la variable VALO à une modalité égale à 3 si le séjour concerne un patient AME. 
 On peut également le faire à partir de la variable `NON_SEJ_FAC_AM`, la modalité 1 correspond aux AME.
 De manière globale, ces séjours ne sont pas valorisés directement par l'assurance maladie obligatoire (AMO) car ils sont payés sur des fonds complémentaires (fond AME).
 
 
 ```sql
+proc sql;
+create table AME_consult as select 
+count(act_nbr) as nb_acte,
+CASE WHEN EXE_SPE in ('01','22','23') then "med"
+	WHEN EXE_SPE in ('07','70','77','79') then "GYN"
+	WHEN EXE_SPE in ('05') then "dermato"
+	WHEN EXE_SPE in ('08') then "Gastro"
+	WHEN EXE_SPE in ('11') then "ORL" 
+	WHEN EXE_SPE in ('13') then "pneumo"
+	WHEN EXE_SPE in ('35') then "nephro"
+	WHEN EXE_SPE in ('15') then "oph"
+	WHEN EXE_SPE in ('33','75','17') then "psy"
+	WHEN EXE_SPE in ('03','47','48') then "cardio"
+	WHEN EXE_SPE in ('12') then "pediatre"
+	WHEN EXE_SPE in ('18','36','44','45','19','53','54') then "dentiste" end as spe
+from ORAVUE.T_MCO18FCSTC t1 inner join ORAVUE.T_MCO18CSTC t2 on (t1.ETA_NUM=t2.ETA_NUM AND T1.SEQ_NUM=t2.SEQ_NUM)
+				inner join ORAVUE.T_MCO18VALOACE T3 on (t1.ETA_NUM=t3.ETA_NUM AND T1.SEQ_NUM=t3.SEQ_NUM)
+where NON_SEJ_FAC_AM='1'
+AND EXE_SPE in ('01','22','23','15','33','75','17','79','05','08','11','13','07','70','77','35','75','17','03','47','48','12','18','36','44','45','19','53','54')
+	GROUP BY 2;
+	quit;
 
 ```
 
@@ -65,16 +82,18 @@ De manière globale, ces séjours ne sont pas valorisés directement par l'assur
 Un matricule provisoire est également donné aux bénéficiaires de l’AME, leur code `BEN_CDI_NIR` vaut donc 04. 
 Dans ce cas, aucun NIR ne leur est attribué car les bénéficiaires de l’AME ne sont pas des assurés sociaux, le régime général avance leurs frais de santé pour le compte de l’Etat et se les fait rembourser ensuite par l’Etat. *
 
-::: Attention 
 Il existe également des bénéficiaires de l’AME qui disposent d’un NIR (`BEN_CDI_NIR` = 00), il s’agit généralement de personnes considérées comme des étrangers qui ont été en situation régulière en France pendant une certaine période et qui sont ensuite en situation irrégulière. *
 Lorsqu’un ouvrant droit provisoire obtient son NIR (assuré social étranger venant travailler en France), il change de numéro d’immatriculation, son matricule provisoire commençant par 7 ou 8 est remplacé par son NIR commençant par 1 ou 2. 
-:::
+
 
 Conséquence : Les bénéficaires de l'AME dont le `BEN_CDI_NIR` = 00 peuvent être suivis les autres malheureusement peuvent difficilement faire l’objet d’un suivi dans le temps.
 Dans la cartographies des pathologies, ont ne trouve que ces derniers.
 
-ATTENTION : le filtre sur les codes retour exclus de fait les AME qui du fait de leur NIR provisoire ne peuvent avoir des codes retour à 0 (NIR_RET = '0' and NAI_RET = '0' and SEX_RET = '0' and SEJ_RET = '0' and FHO_RET = '0'  and PMS_RET = '0' and DAT_RET = '0')
+::: warning Attention
+le filtre sur les codes retour exclus de fait les AME qui en raison de leur NIR provisoire ne peuvent avoir des codes retour à 0 (NIR_RET = '0' and NAI_RET = '0' and SEX_RET = '0' and SEJ_RET = '0' and FHO_RET = '0'  and PMS_RET = '0' and DAT_RET = '0')
 Leur NIR_RET est souvent ='2'. 
+:::
+
 On ne peut compter les individus en AME (car souvent même NIR fictif) mais uniquement l'activité. 
 
 
