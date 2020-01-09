@@ -11,11 +11,12 @@ Les explications sont déclinées par spécialité hospitalière :
 Pour plus de détail sur ces spécialités, se reporter à la [documentation de l'ATIH](https://www.atih.sante.fr/domaines-d-activites/information-medicale), ou au 
 [panorama Etablissements de santé de la DREES](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
 
-L'ensemble des dépenses associées à un séjour en établissement public comprend :
+L'ensemble des dépenses associées à un séjour (ou à une consultation) en établissement public comprend :
 - le montant appelé "AMO", qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
-- le reste à charge après AMO (payé par le patient et / ou son organisme complémentaire)
+- le reste à charge après AMO (RAC AMO), payé par le patient et / ou son organisme complémentaire
 
-Pour plus d'informations sur le calcul de ce reste à charge dans le public, se référer à la fiche sur "le reste à charge après AMO en établissement public".
+Dans la présente fiche, nous détaillons comment extraire le montant AMO associé aux séjours et consultations en établissement publics à partir du PMSI. 
+Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
 
 En complément, des informations sur les dépenses dans le privé se trouvent dans la fiche thématique intitulée "les dépenses des établissement de santé privés (à partir du DCIRS)".
 
@@ -219,16 +220,15 @@ sont détaillées dans la [fiche sur les médicaments de la liste en sus](https:
 En psychiatrie, le nom des tables commence par **RIP** pour **"recueil d'information en psychiatrie"**.  
 La prise en charge peut s'effectuer à temps complet, partiel ou en ambulatoire.  
 Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `T_RIPaaSTC`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des TJP.     
-La table de chainage patients se nomme `T_RIPaaC`.  
 Des informations complémentaires sur les séjours (notamment le nombre de jours en hospitalisation partielle / complète) peuvent être extraites de la table `T_RIPaaS` de description du sejour.    
 Des informations sur les prises en charge ambulatoires se trouvent dans la table `T_RIPaaR3A`.  
-La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) permet de joindre les tables mentionnées ci-dessus.    
+La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) permet de joindre les tables mentionnées ci-dessus. 
 La clef de chaînage est le couple (`RIP_NUM`, `ETA_NUM_EPMSI`) où `RIP_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
 Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).
 
 #### Dépenses en SUS 
 
-À notre connaissance, il n'y a pas de remontée d'information sur les dépenses en SUS ni de table dédiée dans le recueil d'information médicalisé. 
+À notre connaissance, il n'y a pas de remontée d'information sur les dépenses en sus ni de table dédiée dans le recueil d'information médicalisé. 
 
 
 ## Références
