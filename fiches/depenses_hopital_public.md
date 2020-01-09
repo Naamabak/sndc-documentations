@@ -3,17 +3,17 @@
 Cette fiche explique comment retrouver les dépenses des établissements publics dans le PMSI.  
 
 Les explications sont déclinées par spécialité hospitalière : 
-- [MCO](https://documentation-snds.health-data-hub.fr/glossaire/MCO.html) : médecine chirurgie obstétrique et odontologie
-- [SSR](https://documentation-snds.health-data-hub.fr/glossaire/MCO.html) : soins de suite et de réadaptation
-- [HAD](https://documentation-snds.health-data-hub.fr/glossaire/MCO.html) : hospitalisation à domicile
-- [PSY](https://documentation-snds.health-data-hub.fr/glossaire/RIM-P.html) : psychiatrie   
+- [MCO](../glossaire/MCO.html) : médecine chirurgie obstétrique et odontologie
+- [SSR](../glossaire/SSR.html) : soins de suite et de réadaptation
+- [HAD](../glossaire/HAD.html) : hospitalisation à domicile
+- [PSY](../glossaire/RIM-P.html) : psychiatrie   
 
 Pour plus de détail sur ces spécialités, se reporter à la [documentation de l'ATIH](https://www.atih.sante.fr/domaines-d-activites/information-medicale), ou au 
 [panorama Etablissements de santé de la DREES](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
 
 L'ensemble des dépenses associées à un séjour (ou à une consultation) en établissement public comprend :
-- le montant appelé "AMO", qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
-- le reste à charge après AMO (RAC AMO), payé par le patient et / ou son organisme complémentaire
+- le **montant appelé "AMO"**, qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
+- le **reste à charge après AMO** (RAC AMO), payé par le patient et / ou son organisme complémentaire
 
 Pour plus d'informations sur le calcul du RAC AMO associé à un séjour dans le public, se référer à la fiche sur "le reste à charge après AMO en établissement public".  
 En complément, des informations sur les dépenses en établissements de santé privés se trouvent dans la fiche thématique intitulée "les dépenses des établissement de santé privés (à partir du DCIRS)".
@@ -115,7 +115,7 @@ Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC A
 Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_externes.md) des établissements publics et établissements de santé privés d'intérêt collectif (ESPIC) se trouvent dans la table de valorisation des ACE 
 sous `T_MCOaaVALOACE`.   
 Cette table contient une ligne par ACE (valorisé ou non).  
-On peut obtenir des détails sur la nature de l'ACE (accueil et traitement des urgences, actes d'analyse, dialyse, forfaits petit matériel, etc.) à l'aide de la variable `ACT_COD` de la table `T_MCOaaFBSTC` dont la nomenclature figure en [annexe de la fiche sur les ACE](https://documentation-snds.health-data-hub.fr/fiches/actes_consult_externes.html#annexe).  
+On peut obtenir des détails sur la nature de l'ACE (accueil et traitement des urgences, actes d'analyse, dialyse, forfaits petit matériel, etc.) à l'aide de la variable `ACT_COD` de la table `T_MCOaaFBSTC` dont la nomenclature figure en [annexe de la fiche sur les ACE](../fiches/actes_consult_externes.html#annexe).  
 Le montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car il n'existe pas de dépassements à en ACE.  
 La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie (part légale et participations supplémentaires (détenus, SU, etc.)).    
 Le montant du reste à charge (RAC AMO) peut-être calculé comme la différence entre `MNT_BR` et `MNT_REMB`. 
@@ -131,12 +131,12 @@ Les filtres à appliquer sur les ACE sont les suivants :
 
 #### Dépenses en SUS 
 
-Les informations sur les dépenses associées aux médicaments facturés en sus du [GHS](https://documentation-snds.health-data-hub.fr/glossaire/GHS.html) 
+Les informations sur les dépenses associées aux médicaments facturés en sus du [GHS](../glossaire/GHS.html) 
 (pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU)
-et médicaments thrombolytiques) sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).
+et médicaments thrombolytiques) sont détaillées dans la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).
 Y figurent également des informations sur les médicaments de la liste en sus facturés dans le cadre des ACE. 
 
-Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](https://documentation-snds.health-data-hub.fr/glossaire/GHS.html) lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.
+Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](../glossaire/GHS.html) lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.
 Pour l'étude des dépenses associées à ces dispositifs, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
 - Nombre DMI = 0 et prix d’achat ≥ 0
 - Nombre DMI < 0 ou prix d’achat < 0
@@ -153,7 +153,7 @@ Par définition, il n'y a pas de reste à charge pour les dépenses en sus qui s
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE.  
 Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des TJP.   
-La table `T_SSRaaB` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le [GME](https://documentation-snds.health-data-hub.fr/glossaire/gme.html) (variable `GR_GME`).
+La table `T_SSRaaB` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le [GME](../glossaire/gme.html) (variable `GR_GME`).
 
 La table de chaînage patients se nomme `T_SSRaaC` (toujours sous ORAVUE). On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).   
 Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM`,`RHA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RHA_NUM` le numéro séquentiel du séjour.  
@@ -186,8 +186,8 @@ Les filtres à appliquer sur les ACE sont les suivants :
 
 #### Dépenses en SUS 
 
-Les informations sur les dépenses associées aux médicaments facturés en sus du [GMT](https://documentation-snds.health-data-hub.fr/glossaire/gmt.html) (pharmacie de la liste en sus et médicaments soumis à autorisation temporaire d'utilisation (ATU)) 
-sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).  
+Les informations sur les dépenses associées aux médicaments facturés en sus du [GMT](../glossaire/gmt.html) (pharmacie de la liste en sus et médicaments soumis à autorisation temporaire d'utilisation (ATU)) 
+sont détaillées dans la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).  
 Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie.
 
 ## En HAD
@@ -195,7 +195,7 @@ Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont ent
 #### Valorisation des séjours
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_HADaaVALO` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](https://documentation-snds.health-data-hub.fr/glossaire/GHT.html) mais des TJP.   
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](../glossaire/GHT.html) mais des TJP.   
 La table de chaînage patients se nomme `T_HADaaC`. On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).  
 Des informations sur le [GHPC](../glossaire/GHPC.md) se trouvent dans la table `T_HAD_aaGRP` (variable `PAP_GRP_GHPC`).  
 
@@ -217,9 +217,9 @@ Il n'y a pas d'ACE en HAD.
 
 #### Dépenses en SUS 
 
-Les informations sur les dépenses associées aux médicaments facturés en sus du [GHT](https://documentation-snds.health-data-hub.fr/glossaire/GHT.html) 
+Les informations sur les dépenses associées aux médicaments facturés en sus du [GHT](../glossaire/GHT.html) 
 (pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU) et médicaments coûteux hors liste en sus et hors ATU) 
-sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).  
+sont détaillées dans la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).  
 Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie.
 
 ## En PSY
