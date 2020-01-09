@@ -114,7 +114,7 @@ Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_
 sous `t_mcoANNEE.valoace`.   
 Cette table contient une ligne par ACE (valorisé ou non).  
 On peut obtenir des détails sur la nature de l'ACE (ATU, FFM, Dialyse, SE, FTN, NGAP, CCAM, DM Externe) à l'aide de la variable `ACT_COD` de la table `t_mcoANNEE.fbstc`.  
-La montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car comme évoqué précédemment, il n'existe pas de dépassements à l'hôpital public.  
+La montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car cil n'existe pas de dépassements à en ACE.  
 La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie.  
 
 La table patients correspondante est `t_mcoANNEE.cstc`, on peut les chaîner toujours via le couple (`RSA_NUM`,`ETA_NUM`). La table
