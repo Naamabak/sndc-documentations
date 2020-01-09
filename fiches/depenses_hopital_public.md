@@ -20,7 +20,9 @@ Pour plus d'informations sur le calcul de ce reste à charge dans le public, se 
 En complément, des informations sur les dépenses dans le privé se trouvent dans la fiche thématique intitulée "les dépenses des établissement de santé privés (à partir du DCIRs)".
 
 
-::: warning Disclaimer
+::: tip ATTENTION 
+
+
 L’information sur ces dépenses n’est pas exhaustive et doit être traitée avec précaution. 
 :::
 
