@@ -15,10 +15,8 @@ L'ensemble des dépenses associées à un séjour (ou à une consultation) en é
 - le montant appelé "AMO", qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
 - le reste à charge après AMO (RAC AMO), payé par le patient et / ou son organisme complémentaire
 
-Dans la présente fiche, nous détaillons comment extraire le montant AMO associé aux séjours et consultations en établissement publics à partir du PMSI. 
-Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
-
-En complément, des informations sur les dépenses dans le privé se trouvent dans la fiche thématique intitulée "les dépenses des établissement de santé privés (à partir du DCIRS)".
+Pour plus d'informations sur le calcul du RAC AMO associé à un séjour dans le public, se référer à la fiche sur "le reste à charge après AMO en établissement public".  
+En complément, des informations sur les dépenses en établissements de santé privés se trouvent dans la fiche thématique intitulée "les dépenses des établissement de santé privés (à partir du DCIRS)".
 
 
 ::: tip ATTENTION 
@@ -110,6 +108,10 @@ qui prend les valeurs suivantes :
 
 A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, ou est manquante.
 
+Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en MCO. 
+Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
+
+
 #### Valorisation des actes et consultations externes
 
 Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_externes.md) des établissements publics et établissements de santé privés d'intérêt collectif (ESPIC) se trouvent dans la table de valorisation des ACE 
@@ -126,6 +128,8 @@ Les filtres à appliquer sur les ACE sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM`)
 - Exclusion des ACE réalisées en dehors de la période d'étude (en utilisant les variable `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des ACE non valorisées (en utilisant la variable `VALO`)
+
+[AJOUTER DISTINCTION MONTANT AM ET RAC]
 
 #### Dépenses en SUS 
 
@@ -163,7 +167,10 @@ Les filtres sur les séjours sont les suivants :
 - Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des séjours non valorisés (variable `VALO` dans `T_SSRaaVALO` ou `FAC_SEJ_AM` dans `T_SSRaaSTC`)  
-  
+
+Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en SSR. 
+Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
+
 
 #### Valorisation des actes et consultations externes
 
@@ -177,6 +184,8 @@ Les filtres à appliquer sur les ACE sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM`)
 - Exclusion des ACE réalisées en dehors de la période d'étude (en utilisant les variable `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des ACE non valorisées
+
+[AJOUTER DISTINCTION RAC - MONTANT AM]
 
 #### Dépenses en SUS 
 
@@ -202,6 +211,10 @@ Les filtres sur les séjours sont les suivants :
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des séjours non valorisés (variable `VALO` dans `t_HADaaVALO` ou `FAC_SEJ_AM` dans `T_HADaaSTC`)  
 
+Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en HAD. 
+Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
+
+
 #### Valorisation des actes et consultations externes
 
 Il n'y a pas d'ACE en HAD. 
@@ -225,6 +238,10 @@ Des informations sur les prises en charge ambulatoires se trouvent dans la table
 La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) permet de joindre les tables mentionnées ci-dessus. 
 La clef de chaînage est le couple (`RIP_NUM`, `ETA_NUM_EPMSI`) où `RIP_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
 Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).
+
+Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en psychiatrie. 
+Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour.
+
 
 #### Dépenses en SUS 
 
