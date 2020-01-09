@@ -103,7 +103,7 @@ qui prend les valeurs suivantes :
   * 1 : si le séjour est valorisé 
   * 2 : dans le cas d’un séjour non valorisé avec prélèvement d’organes. Dans ce cas, seuls les prélèvements d’organe sont valorisés pour le séjour. 
   * 3 : si le séjour est en AME (aide médicale d'Etat)
-  * 4 : si le séjour est en Soins urgents (SU)
+  * 4 : si le séjour est en soins urgents (SU)
   * 5 : si le patient est un détenu  
 
 A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, ou est manquante.
@@ -118,18 +118,18 @@ Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_
 sous `T_MCOaaVALOACE`.   
 Cette table contient une ligne par ACE (valorisé ou non).  
 On peut obtenir des détails sur la nature de l'ACE (accueil et traitement des urgences, actes d'analyse, dialyse, forfaits petit matériel, etc.) à l'aide de la variable `ACT_COD` de la table `T_MCOaaFBSTC` dont la nomenclature figure en [annexe de la fiche sur les ACE](https://documentation-snds.health-data-hub.fr/fiches/actes_consult_externes.html#annexe).  
-La montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car il n'existe pas de dépassements à en ACE.  
-La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie ainsi que les participations supplémentaires (détenus, SU, etc.).  
+Le montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car il n'existe pas de dépassements à en ACE.  
+La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie (part légale et participations supplémentaires (détenus, SU, etc.)).    
+Le montant du reste à charge (RAC AMO) peut-être calculé comme la différence entre `MNT_BR` et `MNT_REMB`. 
 
-La table patients correspondante est `T_MCOaaCSTC`, on peut les chaîner toujours via le couple (`RSA_NUM`,`ETA_NUM`). La table
-patients contient également l'identifiant bénéficiaire `NIR_ANO_17`.
+La table patients correspondant aux ACE est `T_MCOaaCSTC`. Elle contient notamment l'identifiant bénéficiaire `NIR_ANO_17`.
+Le chaînage entre toutes les tables mentionnées ci-dessus s'effectue via le couple (`ETA_NUM`, `SEQ_NUM`).  
 
 Les filtres à appliquer sur les ACE sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM`)
 - Exclusion des ACE réalisées en dehors de la période d'étude (en utilisant les variable `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des ACE non valorisées (en utilisant la variable `VALO`)
 
-[AJOUTER DISTINCTION MONTANT AM ET RAC]
 
 #### Dépenses en SUS 
 
@@ -147,19 +147,18 @@ Pour l'étude des dépenses associées à ces dispositifs, l'[ATIH](https://www.
 
 On peut ensuite déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre de dispositifs posés.  
 
+Par définition, il n'y a pas de reste à charge pour les dépenses en sus qui sont entièrement prises en charge par l'assurance maladie.
 
 ## En SSR
 
 #### Valorisation des séjours
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des TJP.  
-La table de chaînage patients se nomme `T_SSRaaC`.  
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des TJP.   
 La table `T_SSRaaB` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le GME (variable `GR_GME`).
 
-Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`T_SSRaaC` toujours sous ORAVUE).  
-La clef de chaînage est le couple (`RHA_NUM`, `ETA_NUM`) où `RHA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
+La table de chaînage patients se nomme `T_SSRaaC` (toujours sous ORAVUE). On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).   
+Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM`,`RHA_NUM`) où `RHA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
 
 Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
@@ -176,21 +175,22 @@ Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC A
 
 Les actes et consultations externes en SSR se trouvent dans la table `T_SSRaaCSTC`.  
 Tout comme en MCO, on peut obtenir des détails sur la nature de l'ACE à l'aide de la variable `ACT_COD` de la table `T_SSRaaFBSTC`.  
-Les deux tables peuvent se joindre par la clef (`ETA_NUM`, `SEQ_NUM`).
+Les deux tables peuvent se joindre par la clef de chaînage (`ETA_NUM`, `SEQ_NUM`).
 On peut utiliser la table de facturation `T_SSRaaFASTC` pour calculer le montant total des dépenses (somme de `PH_MNT`, le montant total facturé pour PH, et de `HON_MNT`, le total honoraire facturé),
 ainsi que le montant remboursé par l'AMO (somme de `PH_AMO_MNR`, le total remboursable AMO prestation hospitalieres, et de `HON_AM_MNR`, le total honoraire remboursable AM).  
+Le montant du reste à charge (RAC AMO) peut-être calculé comme la différence entre le montant total des dépenses et le montant remboursé par l'AMO. 
 
 Les filtres à appliquer sur les ACE sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM`)
 - Exclusion des ACE réalisées en dehors de la période d'étude (en utilisant les variable `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des ACE non valorisées
 
-[AJOUTER DISTINCTION RAC - MONTANT AM]
 
 #### Dépenses en SUS 
 
 Les informations sur les dépenses associées aux médicaments facturés en sus du GMT (pharmacie de la liste en sus et médicaments soumis à autorisation temporaire d'utilisation (ATU)) 
-sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).
+sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).  
+Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie.
 
 ## En HAD
 
@@ -198,12 +198,10 @@ sont détaillées dans la [fiche sur les médicaments de la liste en sus](https:
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_HADaaVALO` sous ORAVUE.  
 Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](https://documentation-snds.health-data-hub.fr/glossaire/GHT.html) mais des TJP.   
-La table de chainage patients se nomme `T_HADaaC`.  
-Des informations sur le [GHPC](../glossaire/GHPC.md) se trouvent dans la table `T_HAD_aaGRP` (variable `PAP_GRP_GHPC`).
+La table de chaînage patients se nomme `T_HADaaC`. On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).  
+Des informations sur le [GHPC](../glossaire/GHPC.md) se trouvent dans la table `T_HAD_aaGRP` (variable `PAP_GRP_GHPC`).  
 
-Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_hadrANNEE.c` toujours sous ORAVUE).  
-La clef de chaînage est le couple (`RHAD_NUM`, `ETA_NUM_EPMSI`) où `RHAD_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).
+Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM_EPMSI`, `RHAD_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement et `RHAD_NUM` le numéro séquentiel du séjour.  
 
 Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM_EPMSI`)
@@ -223,8 +221,8 @@ Il n'y a pas d'ACE en HAD.
 
 Les informations sur les dépenses associées aux médicaments facturés en sus du [GHT](https://documentation-snds.health-data-hub.fr/glossaire/GHT.html) 
 (pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU) et médicaments coûteux hors liste en sus et hors ATU) 
-sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).
-
+sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).  
+Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie.
 
 ## En PSY
 
