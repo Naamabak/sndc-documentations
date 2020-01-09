@@ -95,7 +95,7 @@ AND TYP_GEN_RSA = '0'
 
 En complément, des filtres peuvent être appliqués sur les dates d'entrée et de sortie pour se 
 concentrer sur les séjours ayant eu lieu à une période donnée.   
-Les variables à utiliser sont `EXE_SOI_DTD` et `EXE_SOI_DTF` dans la table de chaînage `t_mcoANNEE.c` sous ORAVUE.
+Les variables à utiliser sont `EXE_SOI_DTD` et `EXE_SOI_DTF` dans la table de chaînage patients `t_mcoANNEE.c` sous ORAVUE.
   
 Enfin, pour étudier les dépenses, il faut exclure les séjours non valorisés à partir de la variable `VALO` de la table `t_mcoANNEE.valo` de valorisation du séjour, 
 qui prend les valeurs suivantes :
