@@ -5,7 +5,7 @@ Cette fiche explique comment calculer le montant du reste à charge pour un séj
 Les explications sont déclinées par spécialité hospitalière :
 
 * [MCO](../glossaire/MCO.md) : médecine chirurgie obstétrique et odontologie
-* [SSR](https://documentation-snds.health-data-hub.fr/glossaire/MCO.html) : soins de suite et de réadaptation
+* [SSR](../glossaire/MCO.md) : soins de suite et de réadaptation
 * [HAD](https://documentation-snds.health-data-hub.fr/glossaire/MCO.html) : hospitalisation à domicile
 
 Nous ne traitons pas ici le calcul du reste à charge en psychiatrie pour lequel nous ne disposons pas de suffisamment d'information.  
