@@ -49,7 +49,7 @@ Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fi
 L'information concernant les établissements se trouve dans la table `t_mcoANNEE.e`. On peut joindre cette table aux précédentes 
 avec `ETA_NUM`. 
 
-Sur la partie séjour, les filtres à poser à partir des variables de la table `t_mcoANNEE.b` sous ORAVUE sont les suivants : 
+Afin de calculer les dépenses en établissements pour les **séjours**, il convient de considérer la table des séjours, i.e. la table `t_mcoANNEE.b` sous ORAVUE. Pour calculer les dépenses, il faut appliquer les filtres suivants : 
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
 - Exclusion des séjours en erreur (en utilisant la variable `GRG_GHM`)
 - Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
