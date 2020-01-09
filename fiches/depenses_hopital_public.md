@@ -216,7 +216,7 @@ Des informations sur le GHPC se trouvent dans la table `t_hadANNEE.grp` (variabl
 
 Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_hadrANNEE.c` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RHAD_NUM`, `ETA_NUM_EPMSI`) où `RHAD_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` (cf. fiche Identifiant des bénéficiaires pour plus d'informations).
+Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche Identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).
 
 Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM_EPMSI`)
