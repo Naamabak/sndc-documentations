@@ -104,7 +104,7 @@ qui prend les valeurs suivantes :
   * 0 : si le séjour n’est pas valorisé 
   * 1 : si le séjour est valorisé 
   * 2 : dans le cas d’un séjour non valorisé avec prélèvement d’organes. Dans ce cas, seuls les prélèvements d’organe sont valorisés pour le séjour. 
-  * 3 : si le séjour est en AME (Aide Médicale d'Etat)
+  * 3 : si le séjour est en AME (aide médicale d'Etat)
   * 4 : si le séjour est en Soins urgents (SU)
   * 5 : si le patient est un détenu  
 
@@ -112,14 +112,14 @@ A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, o
 
 #### Valorisation des actes et consultations externes
 
-Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_externes.md) des établissements publics et Etablissements de Santé Privés d'Intérêt Collectif (ESPIC) se trouvent dans la table de valorisation des ACE 
-sous `t_mcoANNEE.valoace`.   
+Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_externes.md) des établissements publics et établissements de santé privés d'intérêt collectif (ESPIC) se trouvent dans la table de valorisation des ACE 
+sous `T_MCOaaVALOACE`.   
 Cette table contient une ligne par ACE (valorisé ou non).  
 On peut obtenir des détails sur la nature de l'ACE (accueil et traitement des urgences, actes d'analyse, dialyse, forfaits petit matériel, etc.) à l'aide de la variable `ACT_COD` de la table `T_MCOaaFBSTC` dont la nomenclature figure en [annexe de la fiche sur les ACE](https://documentation-snds.health-data-hub.fr/fiches/actes_consult_externes.html#annexe).  
 La montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car il n'existe pas de dépassements à en ACE.  
 La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie ainsi que les participations supplémentaires (détenus, SU, etc.).  
 
-La table patients correspondante est `t_mcoANNEE.cstc`, on peut les chaîner toujours via le couple (`RSA_NUM`,`ETA_NUM`). La table
+La table patients correspondante est `T_MCOaaCSTC`, on peut les chaîner toujours via le couple (`RSA_NUM`,`ETA_NUM`). La table
 patients contient également l'identifiant bénéficiaire `NIR_ANO_17`.
 
 Les filtres à appliquer sur les ACE sont les suivants :
@@ -169,7 +169,7 @@ Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fi
 
 Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
-- Exclusion des séjours en erreur (en utilisant la variable `GRG_GME`)
+- Exclusion des séjours en erreur (en utilisant la variable `GRG_GME`, dont le code commence par 90 en cas d'erreur)
 - Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des séjours non valorisés (variable `VALO` dans `t_ssrANNEE.valo` ou `FAC_SEJ_AM` dans `t_ssrANNEE.stc`)  
@@ -221,7 +221,7 @@ Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fi
 
 Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM_EPMSI`)
-- Exclusion des séjours en erreur (en utilisant la variable `PAP_GRP_GHPC`)
+- Exclusion des séjours en erreur (en utilisant la variable `PAP_GRP_GHPC`, dont le code commence par 99 en cas d'erreur)
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des séjours non valorisés (variable `VALO` dans `t_HADaaVALO` ou `FAC_SEJ_AM` dans `T_HADaaSTC`)  
 
