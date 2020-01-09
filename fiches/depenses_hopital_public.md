@@ -35,14 +35,14 @@ L’information sur ces dépenses n’est pas exhaustive et doit être traitée 
 
 #### Valorisation des séjours
 
-Pour connaitre le montant de la dépense de l'assurance maladie, on utilise la table de valorisation des séjours `t_mcoANNEE.valo` sous ORAVUE.  
+Pour connaitre le montant de la dépense de l'assurance maladie, on utilise la table de valorisation des séjours `T_MCOaaVALO` sous ORAVUE.  
 La variable de montant est `MNT_TOT_AM`.  
 Il s'agit du montant présenté à l'assurance maladie.  
-Il est conseillé de considérer `MNT_TOT_AM` de la table ``t_mcoANNEE.`valo` corrigée par l'ATIH et non la variable
-`TOT_MNT_AM` de la table de prise en charge `t_mcoANNEE.stc` qui est l'information brute fournie par les établissements.  
+Il est conseillé de considérer `MNT_TOT_AM` de la table `T_MCOaaVALO` corrigée par l'ATIH et non la variable
+`TOT_MNT_AM` de la table de prise en charge `T_MCOaaSTC` qui est l'information brute fournie par les établissements.  
 Pour un même séjour, ces deux montants ne sont pas calculés selon la même base de remboursement : `MNT_TOT_AM` est calculée sur la base des Tarifs Nationaux de Prestations, i.e. les [Groupes Homogènes de Séjours](../glossaire/GHS.md) pour MCO, tandis que `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation (TJP).
 
-Pour joindre les deux tables `T_MCOaaVALO` et `T_MCOaaSTC`, il faut passer par la table de chaînage patients (`t_MCOaaC` toujours sous ORAVUE).  
+Pour joindre les deux tables `T_MCOaaVALO` et `T_MCOaaSTC`, il faut passer par la table de chaînage patients (`T_MCOaaC` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RSA_NUM`, `ETA_NUM`) où `RSA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
 Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
 
@@ -97,9 +97,9 @@ AND TYP_GEN_RSA = '0'
 
 En complément, des filtres peuvent être appliqués sur les dates d'entrée et de sortie pour se 
 concentrer sur les séjours ayant eu lieu à une période donnée.   
-Les variables à utiliser sont `EXE_SOI_DTD` et `EXE_SOI_DTF` dans la table de chaînage patients `t_mcoANNEE.c` sous ORAVUE.
+Les variables à utiliser sont `EXE_SOI_DTD` et `EXE_SOI_DTF` dans la table de chaînage patients `T_MCOaaC` sous ORAVUE.
   
-Enfin, pour étudier les dépenses, il faut exclure les séjours non valorisés à partir de la variable `VALO` de la table `t_mcoANNEE.valo` de valorisation du séjour, 
+Enfin, pour étudier les dépenses, il faut exclure les séjours non valorisés à partir de la variable `VALO` de la table `T_MCOaaVALO` de valorisation du séjour, 
 qui prend les valeurs suivantes :
   * 0 : si le séjour n’est pas valorisé 
   * 1 : si le séjour est valorisé 
@@ -133,17 +133,16 @@ L'information sur la pharmacie de la liste en sus, les dispositifs médicaux imp
 et les médicaments thrombolytiques se trouve dans les tables suivantes. 
 
 Pour l'hôpital public en MCO: 
-- `t_mcoANNEE.med` : contient les médicaments en sus
-- `t_mcoANNEE.medatu` : contient les médicaments soumis à autorisation temporaire d’utilisation
-- `t_mcoANNEE.medthrombo` : contient les médicaments thrombolytiques pour le traitement de l’AVC ischémique
-- `t_mcoANNEE.dmip` : contient les dispositifs médicaux implantables  
+- `T_MCOaaMED` : contient les médicaments en sus
+- `T_MCOaaMEDATU` : contient les médicaments soumis à autorisation temporaire d’utilisation
+- `T_MCOaaMEDTHROMBO` : contient les médicaments thrombolytiques pour le traitement de l’AVC ischémique
+- `T_MCOaaDMIP` : contient les dispositifs médicaux implantables  
 
-Pour les ACE en MCO, l'information se trouve dans la table `FHSTC` : médicaments en sus.
+Pour les ACE en MCO, l'information se trouve dans la table `T_MCOaaFHSTC` : médicaments en sus.
 
 On peut déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre administré ou posé (pour les médicaments et dispositifs respectivement).  
 
-Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggère d'appliquer les critères d'exclusion suivants :     
-(https://www.scansante.fr/applications/synthese-dmi-mo-sus)  
+Pour l'étude des médicaments et dispositifs de la liste en SUS, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
 - Nombre UCD = 0 et prix d’achat > 0
 - Nombre UCD = 0 et prix d’achat = 0
 - Nombre UCD < 0 ou prix d’achat < 0
@@ -158,12 +157,12 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 
 #### Valorisation des séjours
 
-À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `t_ssrANNEE.valo` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `t_ssrANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des TJP.  
-La table de chaînage patients se nomme `t_ssrANNEE.c`.  
-La table `t_ssrANNEE.b` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le GME (variable `GR_GME`).
+À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE.  
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des TJP.  
+La table de chaînage patients se nomme `T_SSRaaC`.  
+La table `T_SSRaaB` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le GME (variable `GR_GME`).
 
-Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_ssrANNEE.c` toujours sous ORAVUE).  
+Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`T_SSRaaC` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RHA_NUM`, `ETA_NUM`) où `RHA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
 Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
 
@@ -172,13 +171,13 @@ Les filtres sur les séjours sont les suivants :
 - Exclusion des séjours en erreur (en utilisant la variable `GRG_GME`, dont le code commence par 90 en cas d'erreur)
 - Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
-- Exclusion des séjours non valorisés (variable `VALO` dans `t_ssrANNEE.valo` ou `FAC_SEJ_AM` dans `t_ssrANNEE.stc`)  
+- Exclusion des séjours non valorisés (variable `VALO` dans `T_SSRaaVALO` ou `FAC_SEJ_AM` dans `T_SSRaaSTC`)  
   
 
 #### Valorisation des actes et consultations externes
 
 Les actes et consultations externes en SSR se trouvent dans la table `T_SSRaaCSTC`.  
-Tout comme en MCO, on peut obtenir des détails sur la nature de l'ACE (ATU, FFM, Dialyse, SE, FTN, NGAP, CCAM, DM Externe) à l'aide de la variable `ACT_COD` de la table `t_mcoANNEE.fbstc`.  
+Tout comme en MCO, on peut obtenir des détails sur la nature de l'ACE à l'aide de la variable `ACT_COD` de la table `T_SSRaaFBSTC`.  
 Les deux tables peuvent se joindre par la clef (`ETA_NUM`, `SEQ_NUM`).
 On peut utiliser la table de facturation `T_SSRaaFASTC` pour calculer le montant total des dépenses (somme de `PH_MNT`, le montant total facturé pour PH, et de `HON_MNT`, le total honoraire facturé),
 ainsi que le montant remboursé par l'AMO (somme de `PH_AMO_MNR`, le total remboursable AMO prestation hospitalieres, et de `HON_AM_MNR`, le total honoraire remboursable AM).  
@@ -191,8 +190,8 @@ Les filtres à appliquer sur les ACE sont les suivants :
 #### Dépenses en SUS 
 
 Les informations sur les médicaments en sus et les médicaments soumis à autorisation temporaire d'utilisation (ATU) se trouvent dans les tables :
-- `t_ssrANNEE.med`: médicaments en sus
-- `t_ssrANNEE.medatu`: médicaments soumis à autorisation temporaire d’utilisation
+- `T_SSRaaMED`: médicaments en sus
+- `T_SSRaaMEDATU`: médicaments soumis à autorisation temporaire d’utilisation
 
 On peut déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre administré.  
 
@@ -211,8 +210,8 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 #### Valorisation des séjours
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_HADaaVALO` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `t_hadANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des GHT mais des TJP.   
-La table de chainage patients se nomme `t_hadANNEE.c`.  
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](https://documentation-snds.health-data-hub.fr/glossaire/GHT.html) mais des TJP.   
+La table de chainage patients se nomme `T_HADaaC`.  
 Des informations sur le [GHPC](../glossaire/GHPC.md) se trouvent dans la table `T_HAD_aaGRP` (variable `PAP_GRP_GHPC`).
 
 Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_hadrANNEE.c` toujours sous ORAVUE).  
@@ -233,14 +232,13 @@ Il n'y a pas d'ACE en HAD.
 
 L'information sur la dépense que représente la pharmacie de la liste en sus, les médicaments ATU et les médicaments coûteux hors liste en sus et
 hors ATU est contenue dans:
-- `t_hadANNEE.med` : médicaments en sus
-- `t_hadANNEE.medatu` : médicaments soumis à autorisation temporaire d’utilisation
-- `t_hadANNEE.medhcl` : médicaments coûteux hors liste en SUS et hors ATU
+- `T_HADaaMED` : médicaments en sus
+- `T_HADaaMEDATU` : médicaments soumis à autorisation temporaire d’utilisation
+- `T_HADaaMEDHCL` : médicaments coûteux hors liste en SUS et hors ATU
 
 On peut déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre administré.  
 
-Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggère d'appliquer les critères d'exclusion suivants : 
-(https://www.scansante.fr/applications/synthese-dmi-mo-sus)  
+Pour l'étude des médicaments et dispositifs de la liste en SUS, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants : 
 - Nombre UCD = 0 et prix d’achat > 0
 - Nombre UCD = 0 et prix d’achat = 0
 - Nombre UCD < 0 ou prix d’achat < 0
@@ -258,7 +256,7 @@ La prise en charge peut s'effectuer à temps complet, partiel ou en ambulatoire.
 Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `T_RIPaaSTC`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des TJP.     
 La table de chainage patients se nomme `T_RIPaaC`.  
 Des informations complémentaires sur les séjours (notamment le nombre de jours en hospitalisation partielle / complète) peuvent être extraites de la table `T_RIPaaS` de description du sejour.    
-Des informations sur les prises en charge ambulatoires se trouvent dans la table `t_ripANNEE.r3a`.  
+Des informations sur les prises en charge ambulatoires se trouvent dans la table `T_RIPaaR3A`.  
 La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) permet de joindre les tables mentionnées ci-dessus.    
 La clef de chaînage est le couple (`RIP_NUM`, `ETA_NUM_EPMSI`) où `RIP_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
 Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).
