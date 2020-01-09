@@ -254,7 +254,7 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 
 En psychiatrie, le nom des tables commence par **RIP** pour **"recueil d'information en psychiatrie"**.  
 La prise en charge peut s'effectuer à temps complet, partiel ou en ambulatoire.  
-À notre connaissance, quelque soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `t_ripANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des TJP.     
+Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `t_ripANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des TJP.     
 La table de chainage patients se nomme `t_ripANNEE.c`.  
 Des informations complémentaires sur les séjours (notamment le nombre de jours en hospitalisation partielle / complète) peuvent être extraites de la table `t_ripANNEE.s` de description du sejour.    
 Tandis que des informations sur les prises en charge ambulatoires se trouvent dans la table `t_ripANNEE.r3a`.  
