@@ -157,7 +157,7 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 #### Valorisation des séjours
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `t_ssrANNEE.valo` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `t_ssrANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des GMT mais des TJP.  
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `t_ssrANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des TJP.  
 La table de chaînage patients se nomme `t_ssrANNEE.c`.  
 La table `t_ssrANNEE.b` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le GME (variable `GR_GME`).
 
