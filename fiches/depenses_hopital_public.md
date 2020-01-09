@@ -260,7 +260,7 @@ Des informations complémentaires sur les séjours (notamment le nombre de jours
 Des informations sur les prises en charge ambulatoires se trouvent dans la table `t_ripANNEE.r3a`.  
 Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_ripANNEE.c` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RIP_NUM`, `ETA_NUM_EPMSI`) où `RIP_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` (cf. fiche Identifiant des bénéficiaires pour plus d'informations).
+Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche Identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).
 
 #### Dépenses en SUS 
 
