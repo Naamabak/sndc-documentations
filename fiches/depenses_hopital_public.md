@@ -196,7 +196,7 @@ Les informations sur les médicaments en sus et les médicaments soumis à autor
 On peut déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre administré.  
 
 Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggère d'appliquer les critères d'exclusion suivants :   
-(https://www.scansante.fr/applications/synthese-dmi-mo-sus)  
+[site ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus)  
 - Nombre UCD = 0 et prix d’achat > 0
 - Nombre UCD = 0 et prix d’achat = 0
 - Nombre UCD < 0 ou prix d’achat < 0
