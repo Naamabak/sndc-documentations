@@ -37,7 +37,7 @@ L’information sur ces dépenses n’est pas exhaustive et doit être traitée 
 
 Pour connaitre le montant de la dépense de l'assurance maladie, on utilise la table de valorisation des séjours `t_mcoANNEE.valo` sous ORAVUE.  
 La variable de montant est `MNT_TOT_AM`.  
-Il s'agit du montant présenté à l'assurance maladie puisqu'il n'y a pas de dépassement à l'hôpital public.  
+Il s'agit du montant présenté à l'assurance maladie.  
 Il est conseillé de considérer `MNT_TOT_AM` de la table valo corrigée par l'ATIH et non la variable
 `TOT_MNT_AM` de la table de prise en charge `t_mcoANNEE.stc` qui est l'information brute des établissements.  
 Pour un même séjour, ces deux montants ne sont pas calculés selon la même base de remboursement : `MNT_TOT_AM` est calculée sur la base des GHS, tandis que `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation (TJP) 
