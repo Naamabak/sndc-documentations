@@ -72,7 +72,9 @@ Il existe également des cas où le forfait journalier (FJ) n'est pas applicable
 
 #### Le ticket modérateur
 
-Dans le cas général, l'assurance maladie rembourse 80 % du montant de la base de remboursement des frais d'hospitalisation. Les 20 % restant sont à la charge du patient. Le taux de remboursement varie généralement entre 80 et 100 % en fonction du profil du patient, du type d'acte et de la nature de l'assurance.   
+Dans le cas général, l'assurance maladie rembourse 80 % du montant de la base de remboursement des frais d'hospitalisation, calculée à partir des **tarifs nationaux de prestations*. La part à la charge du patient représente, elle, 20 % du montant de la base de remboursement, calculée à partir des **tarifs journaliers de prestations**. 
+
+Le taux de remboursement varie généralement entre 80 et 100 % du montant de la base de remboursement calculée à partir des tarifs nationaux de prestations en fonction du profil du patient, du type d'acte et de la nature de l'assurance.   
 
 La base de remboursement qui sert à calculer le montant du ticket modérateur est celle de l'établissement.
 
