@@ -40,15 +40,13 @@ Il est conseillé de considérer `MNT_TOT_AM` de la table `T_MCOaaVALO` corrigé
 `TOT_MNT_AM` de la table de prise en charge `T_MCOaaSTC` qui est l'information brute fournie par les établissements.  
 Pour un même séjour, ces deux montants ne sont pas calculés selon la même base de remboursement : `MNT_TOT_AM` est calculée sur la base des tarifs nationaux de prestations, *i.e.* les [groupes homogènes de séjours](../glossaire/GHS.md) en MCO, tandis que `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation (TJP).
 
-Pour joindre les deux tables `T_MCOaaVALO` et `T_MCOaaSTC`, il faut passer par la table de chaînage patients (`T_MCOaaC` toujours sous ORAVUE).  
-La clef de chaînage est le couple (`RSA_NUM`, `ETA_NUM`) où `RSA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
+La table de chaînage patients (`T_MCOaaC` toujours sous ORAVUE) est la seule à contenir l'identifiant du bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).  
+La table des séjours (`T_MCOaaB` sous ORAVUE) apporte des informations supplémentaires sur le séjour (mode d'entrée et de sortie, numéro du GHM, etc.).  
+Pour joindre les différentes tables mentionnées, la clef de chaînage est le couple (`ETA_NUM`, `RSA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RSA_NUM` le numéro séquentiel du séjour.  
 
-L'information concernant les établissements se trouve dans la table `T_MCOaaE`. On peut joindre cette table aux précédentes 
-avec `ETA_NUM`. 
+L'information concernant les établissements se trouve dans la table `T_MCOaaE`. On peut joindre cette table aux précédentes avec `ETA_NUM` uniquement. 
 
-Afin de calculer les dépenses en établissements pour les **séjours**, il convient de considérer la table des séjours, *i.e.* la table `T_MCOaaB` sous ORAVUE. 
-Pour calculer les dépenses, il faut appliquer les filtres suivants : 
+Avant de calculer les dépenses, il faut appliquer les filtres suivants (à partir de la table `T_MCOaaB`): 
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM`)
 - Exclusion des séjours en erreur (en utilisant la variable `GRG_GHM`)
 - Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
@@ -158,7 +156,7 @@ Avant 2017, nous ne disposons que de la table de facturation transmise par les �
 La table `T_SSRaaB` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le [GME](https://documentation-snds.health-data-hub.fr/glossaire/gme.html) (variable `GR_GME`).
 
 La table de chaînage patients se nomme `T_SSRaaC` (toujours sous ORAVUE). On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).   
-Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM`,`RHA_NUM`) où `RHA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
+Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM`,`RHA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RHA_NUM` le numéro séquentiel du séjour.  
 
 Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
@@ -233,9 +231,9 @@ La prise en charge peut s'effectuer à temps complet, partiel ou en ambulatoire.
 Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `T_RIPaaSTC`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des TJP.     
 Des informations complémentaires sur les séjours (notamment le nombre de jours en hospitalisation partielle / complète) peuvent être extraites de la table `T_RIPaaS` de description du sejour.    
 Des informations sur les prises en charge ambulatoires se trouvent dans la table `T_RIPaaR3A`.  
-La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) permet de joindre les tables mentionnées ci-dessus. 
-La clef de chaînage est le couple (`RIP_NUM`, `ETA_NUM_EPMSI`) où `RIP_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).
+La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) contient notamment l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).  
+La clef de chaînage entre les tables mentionnées ci-dessus est le couple (`ETA_NUM_EPMSI`, `RIP_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement et `RIP_NUM` est le numéro séquentiel du séjour.  
+Dans la table patients, 
 
 Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en psychiatrie. 
 Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour.
