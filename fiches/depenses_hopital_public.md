@@ -36,11 +36,10 @@ L’information sur ces dépenses n’est pas exhaustive et doit être traitée 
 #### Valorisation des séjours
 
 Pour connaitre le montant de la dépense de l'assurance maladie, on utilise la table de valorisation des séjours `T_MCOaaVALO` sous ORAVUE.  
-La variable de montant est `MNT_TOT_AM`.  
-Il s'agit du montant présenté à l'assurance maladie.  
+La variable de montant est `MNT_TOT_AM` : il s'agit du montant présenté à l'assurance maladie.  
 Il est conseillé de considérer `MNT_TOT_AM` de la table `T_MCOaaVALO` corrigée par l'ATIH et non la variable
 `TOT_MNT_AM` de la table de prise en charge `T_MCOaaSTC` qui est l'information brute fournie par les établissements.  
-Pour un même séjour, ces deux montants ne sont pas calculés selon la même base de remboursement : `MNT_TOT_AM` est calculée sur la base des Tarifs Nationaux de Prestations, i.e. les [Groupes Homogènes de Séjours](../glossaire/GHS.md) pour MCO, tandis que `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation (TJP).
+Pour un même séjour, ces deux montants ne sont pas calculés selon la même base de remboursement : `MNT_TOT_AM` est calculée sur la base des tarifs nationaux de prestations, *i.e.* les [Groupes Homogènes de Séjours](../glossaire/GHS.md) en MCO, tandis que `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation (TJP).
 
 Pour joindre les deux tables `T_MCOaaVALO` et `T_MCOaaSTC`, il faut passer par la table de chaînage patients (`T_MCOaaC` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RSA_NUM`, `ETA_NUM`) où `RSA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
