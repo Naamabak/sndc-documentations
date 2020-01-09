@@ -46,14 +46,14 @@ Dans ce cas-là, on compte le jour d'entrée et le jour de sortie, soit deux jou
 
 Le montant du forfait hospitalier est fixé par arrêté ministériel.
 
-Depuis le 1er janvier 2018, il est de :
+Depuis le [1er janvier 2018](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036251896&categorieLien=id), il est de :
 - 20 €  par jour en hôpital ou en clinique (18 € avant 2018)
 - 15 € par jour dans le service psychiatrique d'un établissement de santé (13,5 € avant 2018)
 
-Le forfait hospitalier **n'est pas remboursé par l'Assurance Maladie**. 
+Le forfait hospitalier **n'est pas remboursé par l'assurance maladie**. 
 Il peut éventuellement être pris en charge par les organismes complémentaires en santé.
 
-Il existe des motifs d'exonération pour le forfait journalier : 
+Il existe des [motifs d'exonération](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-hospitalier) pour le forfait journalier : 
 - femme enceinte hospitalisée pendant les quatre derniers mois de grossesse, ou pour l'accouchement ou pendant les 12 jours après l'accouchement
 - bénéficiaire de la couverture maladie universelle (CMU) complémentaire ou de l'aide médicale d'Etat
 - bénéficiaire de l'aide au paiement d'une complémentaire santé (ACS), couvert par un des contrats de complémentaire santé sélectionnés au titre de l'ACS
@@ -72,15 +72,14 @@ Il existe également des cas où le forfait journalier (FJ) n'est pas applicable
 
 #### Le ticket modérateur
 
-Dans le cas général, l'assurance maladie rembourse 80 % du montant de la base de remboursement des frais d'hospitalisation, calculée à partir des **tarifs nationaux de prestations*. La part à la charge du patient représente, elle, 20 % du montant de la base de remboursement, calculée à partir des **tarifs journaliers de prestations**. 
+Dans le cas général, l'assurance maladie rembourse 80 % du montant de la base de remboursement des frais d'hospitalisation, calculée à partir des **tarifs nationaux de prestations**.  
+La part à la charge du patient représente, elle, 20 % du montant de la base de remboursement, calculée à partir des **tarifs journaliers de prestations** : c'est le ticket modérateur.  
+Le taux de remboursement varie généralement entre 80 et 100 % du montant de la base de remboursement calculée à partir des tarifs nationaux de prestations en fonction du profil du patient, du type d'acte et de la nature de l'assurance.
 
-Le taux de remboursement varie généralement entre 80 et 100 % du montant de la base de remboursement calculée à partir des tarifs nationaux de prestations en fonction du profil du patient, du type d'acte et de la nature de l'assurance.   
-
-
-En effet, dans le secteur public, on distingue deux bases de remboursement :  
+Dans le secteur public, on distingue deux bases de remboursement :  
 - **La base de remboursement de l'assurance maladie (AM)**  
-Depuis la mise en place de la T2A, chaque séjour se voit attribuer un tarif unique déterminant le montant de remboursement par l'AM.  
-On parle de groupe homogène de séjour (GHS) en MCO, de groupe homogène de tarif (GHT) en HAD et de groupe médico-économique (GMT) en SSR.    
+Depuis la mise en place de la T2A, chaque séjour se voit attribuer un tarif déterminant le montant de remboursement par l'AM.  
+On parle de groupe homogène de séjour ([GHS](../glossaire/GHS.html) en MCO, de groupe homogène de tarif ([GHT](../glossaire/GHT.html)) en HAD et le groupe médico-économique ([GMT](../glossaire/GMT.html)) en SSR.    
 
 - **La base de remboursement de l'établissement**  
 Elle est calculée à partir du tarif journalier de prestation propre à chaque catégorie tarifaire (TJP), multiplié par la durée de séjour (cette durée ne pouvant dépasser 30 jours). 
@@ -90,7 +89,7 @@ La base de remboursement calculée par l'établissement est généralement plus 
 
 *Point réglementaire :*  
 Lors de la mise en œuvre de la T2A dans les établissements de santé, un dispositif transitoire a été mis en place permettant aux hôpitaux publics et aux établissements privés à but non lucratif de continuer à calculer le ticket modérateur sur la base des tarifs journaliers de prestations (TJP), initialement définis à partir du coût de revient prévisionnel des différentes catégories de soins de chaque établissement et non sur les tarifs nationaux de prestations (GHS, GHT, GMT).   
-L'article 26 du PLFSS de 2020 vise à mettre fin à cette situation transitoire, qui à terme aurait conduit à opérer d’importants transferts de recettes entre secteurs, entre établissements, et entre assurance maladie obligatoire et complémentaire :  
+L'[article 26 du PLFSS de 2020](http://www.assemblee-nationale.fr/15/projets/pl2296.asp) vise à mettre fin à cette situation transitoire, qui à terme aurait conduit à opérer d’importants transferts de recettes entre secteurs, entre établissements, et entre assurance maladie obligatoire et complémentaire :  
 - D’une part, en pérennisant le système du calcul du ticket modérateur sur la base des tarifs journaliers de prestations pour les établissements concernés ;
 - D’autre part en le rationalisant en introduisant une nomenclature simplifiée et nationale des TJP, afin de s’assurer que ceux-ci reflètent davantage le coût effectif du service.
 
@@ -104,7 +103,7 @@ Le forfait journalier hospitalier ne se cumule pas avec le ticket modérateur.
 - Le forfait dû pour le jour de sortie est toujours facturé en complément sauf en cas de décès ou de transfert. 
 - Pour le séjour d'un assuré de droit commun de plus de 30 jours, le TM n'est facturé que pour les 30 premiers jours. Au-delà, le patient ne paie que le FJ.  
 
-Cette durée de 30 jours se cumule entre séjours contigus. 
+Cette durée de 30 jours se cumule entre séjours contigus, y compris entre différentes spécialités hospitalières.   
 
 *Exemple :* si un patient reste 10 jours en MCO puis 25 jours en SSR, il sera exonéra de ticket modérateur 30 jours après son admission à l'hôpital. Ainsi, il ne paiera plus que le forfait journalier à partir du 21ème jour d'hospitalisation en SSR.
 
@@ -112,15 +111,16 @@ Cette durée de 30 jours se cumule entre séjours contigus.
 
 #### La participation forfaitaire des assurés pour les actes lourds 
 
-Un ticket modérateur forfaitaire sur les actes lourds a été instauré par la Loi de Financement de la Sécurité Sociale pour 2006 et le Décret N° 2006-707 du 19 juin 2006 paru au JO du 20 juin 2006.  
+Un ticket modérateur forfaitaire sur les actes lourds a été instauré par la [Loi de Financement de la Sécurité Sociale pour 2006](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000815414) 
+et le [Décret N° 2006-707 du 19 juin 2006](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000792524) paru au JO du 20 juin 2006.  
 Cette mesure prévoit que les patients, jusqu’ici exonérés en raison de la valeur des actes réalisés, acquittent une participation minimale sur les actes médicaux dont le montant est supérieur ou égal à 120 euros ou sur les actes affectés d’un coefficient supérieur ou égal à 60 euros.  
 Il s'agit de la "participation assuré".
 
-Le ticket modérateur est ainsi remplacé par cette participation forfaitaire.   
+Le ticket modérateur est dans ce cas remplacé par cette participation forfaitaire.   
 Sa valeur dépend de l'année dans laquelle on se situe, elle est fixée par décret.  
-Elle est passée de 18 à 24 euros au 1er janvier 2019.
+Elle est passée de 18 à 24 euros au [1er janvier 2019](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037864770&categorieLien=id).
 
-Les cas particuliers sont les suivants:
+Les cas particuliers sont les [suivants](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros) :
 - Lorsque plusieurs actes sont effectués par le même praticien au cours d'une même consultation, leurs tarifs et/ou leurs coefficients peuvent se cumuler. 
 La participation forfaitaire s'appliquera dès lors que le tarif résultant de ce cumul est supérieur ou égal à 120 euros ou que le coefficient résultant de ce cumul est supérieur ou égal à 60.
 - Lorsque plusieurs actes d'un tarif supérieur ou égal à 120 euros, ou ayant un coefficient supérieur ou égal à 60, sont effectués par le même praticien au
@@ -128,7 +128,7 @@ cours d'une même consultation, la participation forfaitaire  ne s'applique qu'u
 - En cas d'hospitalisation (à l'hôpital ou en clinique), lorsque un ou plusieurs actes d'un tarif supérieur ou égal à 120 euros, ou ayant un coefficient supérieur ou 
 égal à 60, sont effectués pendant le séjour, la participation forfaitaire ne s'applique qu'une seule fois par séjour, pour l'ensemble des frais d'hospitalisation.
 
-*Dans les données* : dès lors qu'il y a un acte coûteux, il y a exonération du ticket modérateur qui est remplacé par une participation forfaitaire et l'établissement reçoit 100% du tarif national de prestation.  
+*Dans les données* : dès lors qu'il y a un acte coûteux, il y a exonération du ticket modérateur qui est remplacé par une participation forfaitaire et l'établissement reçoit 100 % du tarif national de prestation de la part de l'assurance maladie.    
 Le patient s'acquitte de la participation forfaitaire et du forfait journalier (sauf cas particuliers avec exonération).  
 
 
@@ -143,7 +143,7 @@ Il s'agit notamment :
 - des frais de transport entre les deux établissements ou, en cas d'hospitalisation à domicile, entre l'établissement et le domicile
 - des frais d'hospitalisation à partir du 31e jour d'hospitalisation consécutif.
 
-Les personnes exonérées sont les suivantes: 
+Les personnes exonérées sont [les suivantes](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros): 
 - les personnes titulaires d'une pension d'invalidité ou d'une pension de vieillesse substituée à une pension d'invalidité
 - les personnes titulaires d'une pension de réversion, atteintes d'une invalidité permanente et qui remplissent les conditions d'ouverture de droit à une pension d'invalidité
 - les personnes titulaires d'une pension d'invalidité et âgées de plus de 60 ans qui continuent d'exercer une activité professionnelle et ont refusé la transformation de leur pension d'invalidité en pension vieillesse
@@ -167,6 +167,7 @@ Nous commençons par décrire le cas général avant d'entrer dans le détail po
 Les principales règles de calcul du RAC figurent dans le tableau ci-dessous.    
 ![](../files/DREES/2019-11_tableau_RAC_MCO.png)  
 
+Voici la signification des sigles utilisés dans le schéma :  
 FJU : forfait journalier unitaire (par journée d’hospitalisation)  
 nb_jour : nombre de jours de présence  
 PF : participation forfaitaire  
@@ -176,7 +177,7 @@ TR : taux de remboursement (%)
 
 ( * ) facturation du FJU pour le jour de sortie si le mode de sortie est autre que transfert ou décès, 0 sinon  
 ( ** ) « durée + 1 » si le mode de sortie est autre que transfert ou décès, « durée » sinon  
-( *** ) en cas d’hospitalisation à temps partielle ou de séjour en ambulatoire, on ne parle plus de durée mais de nombre de jours de présence  
+( *** ) en cas d’hospitalisation à temps partiel ou de séjour en ambulatoire, on ne parle plus de durée mais de nombre de jours de présence  
 
 *ATTENTION > dans ce tableau, n’est pas représenté le cas (a priori très rare) où le forfait journalier des 30 premiers jours est supérieur au ticket modérateur ((100 – TR) x TJP x durée < FJU x durée). Dans ce cas-là, le patient ne s’acquitte pas du ticket modérateur mais du forfait journalier.*
 
@@ -186,9 +187,9 @@ Le tableau ci-dessus couvre le cas général, à partir de l'exemple du MCO, mai
 En voici les principales différences :  
 - Il n'y a pas de forfait journalier en HAD (on est donc systématiquement dans le cas de figure avec exonération de FJ)
 - En MCO, on appelle "hospitalisation partielle" un séjour de moins de 24 heures sans nuitée. Si un même patient revient plusieurs fois à la journée, il y aura autant de séjours que de journées d'hospitalisation.  
-En SSR, on appelle hospitalisation partielle un séjour sans nuitée, sans limite de durée totale. 
-Il faudra donc distinguer les séjours en hospitalisation complète et partielle. 
-À noter qu'il n'y a qu'un type d'hospitalisation (complète / partielle) par séjour. Tout changement de type d'hospitalisation donnera lieu à un nouveau séjour. 
+- En SSR, on appelle hospitalisation partielle un séjour sans nuitée, sans limite de durée totale. 
+  Il faudra donc distinguer les séjours en hospitalisation complète et partielle. 
+  À noter qu'il n'y a qu'un type d'hospitalisation (complète / partielle) par séjour. Tout changement de type d'hospitalisation donnera lieu à un nouveau séjour. 
 - Lors de séjours en hospitalisation partielle en SSR, il n'y a pas de FJ facturé. Le temps passé à l'hôpital est indiqué par le nombre de jours de présence.    
 - Lors de séjours en hospitalisation complète en SSR, le patient peut bénéficier de permissions. Ainsi, pour connaître le temps passé à l'hôpital, il ne faut pas compter la durée de séjour (*i.e.* le nombre de jours entre le début et la fin du séjour), mais le nombre de jours de présence.    
 
@@ -216,31 +217,24 @@ Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir
 
 #### Les tables et variables mobilisées
 
-Pour joindre les tables mentionnées ci-dessous, il faut passer par la **table de chaînage patients** (`T_MCOaaC`).  
-La clef de chaînage est le couple (`RSA_NUM`, `ETA_NUM`) où `RSA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.   
-Dans la table de chaînage patients, on trouve l'identifiant du bénéficiaire `NIR_ANO_17` (*cf.* fiche Identifiant des bénéficiaires pour plus d'informations).
+Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depense_hopital_public.md).
 
-Dans la table `T_MCOaaC`, nous considérons également les variables :
+La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ETA_NUM`, `RSA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RSA_NUM` est le numéro séquentiel du séjour. 
+
+Dans la **table de chaînage patients** `T_MCOaaC`, nous considérons les variables :
+- `NIR_ANO_17` : identifiant du bénéficiaire 
 - `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent les dates d'entrée et de sortie à l'hôpital respectivement  
 
 Dans la table `T_MCOaaVALO`, qui est la **table de valorisation des séjours** (données retraitées par l'ATIH), nous considérons les variables:
 
 - `MNT_18` : montant de la participation forfaitaire de 18 euros (en 2016) pour les actes exonérants
 À noter qu’il s’agit d’une variable renseignée par l’établissement (elle n’est pas recalculée).
-
 - `MNT_FJ2` : montant du forfait journalier (FJ). 
 La variable a été corrigée par l’ATIH qui a notamment forcé à zéro le FJ dans le cas où il n’est pas applicable 
 (*cf.* manuel d'utilisation du logiciel VisualValoSej)
-
-- `MNT_GHS_AM` : Valorisation AM GHS : valorisation du **Groupe Homogène de Séjour**. 
-Les Groupes Homogènes de Séjour sont définis à partir des **Groupes Homogènes de Malades**.
-La notion de GHM repose sur une notion de valorisation moyenne avec des écarts en termes de durée de séjours
-(suppléments journaliers au delà d'une borne) et des écarts en termes de lourdeur de la prise en charge engendrée par le passage en unité spécialisée (réanimation, soins intensifs, surveillance continue, etc).
-Cela engendre des suppléments journaliers en sus du GHS.  
-
-- `MNT_TOT_AM` : coût pour l’Assurance Maladie Obligatoire (sur la base du GHS) + suppléments éventuels.  
-On a : `MNT_TOT_AM = MNT_GHS_AM` dans plus de 80% des cas.  
-Ce montant ne tient cependant pas compte du paiement des médicaments et dispositifs médicaux de la liste en sus.  Pour retrouver ces montants, se référer à la fiche sur "les dépenses des établissements de santé publics dans le PMSI".  
+- `MNT_GHS_AM` : valorisation AM du [GHS](../glossaire/GHS.html)  
+- `MNT_TOT_AM` : coût pour l’assurance maladie obligatoire (GHS + suppléments journaliers en sus du GHS)
+  Ce montant ne tient cependant pas compte du paiement des médicaments et dispositifs médicaux de la liste en sus.  Pour retrouver ces montants, se référer à la fiche sur "les dépenses des établissements de santé publics dans le PMSI".  
 
 - `TAUX2` : taux de remboursement du séjour 
 - `VALO` : valorisation du séjour, prenant les valeurs suivantes :
@@ -252,8 +246,8 @@ Ce montant ne tient cependant pas compte du paiement des médicaments et disposi
   * 5 : si le patient est un détenu
 
 Dans la table `T_MCOaaSTC`, qui est la **table de prise en charge des séjours dans le public** (données brutes renseignées par l'établissement) :
-- `REM_BAS_MNT` : coût du séjour calculé par l'établissement (sert de base de remboursement pour le TM) 
-- `TOT_MNT_AM` : coût du séjour facturé à l'AM selon les règles de calcul de l'établissement (différent du montant remboursé par l'AM qui sera calculé sur la base du GHS) 
+- `REM_BAS_MNT` : coût du séjour calculé par l'établissement (sert de base de remboursement pour le ticket modérateur) 
+- `TOT_MNT_AM` : coût du séjour facturé à l'AM selon les règles de calcul de l'établissement (différent du montant remboursé par l'AM qui sera calculé sur la base du GHS, *cf.* [fiche sur les dépenses de santé](../fiches/depense_hopital_public.md)) 
 - `FAC_MNT_TM` : montant à facturer au titre du ticket modérateur (TM)
 - `FAC_MNT_FJ` : montant à facturer au titre du forfait journalier (FJ)
 - `NAT_ASS` : nature d’assurance, qui prend les valeurs suivantes (d'après la norme B2) : 
@@ -301,21 +295,8 @@ Dans la table `T_MCOaaB`, qui est la **table de description du séjour**, nous c
 
 #### Filtres à ajouter
 
-Les filtres à poser à partir des variables de la table `T_MCOaaB` sous ORAVUE sont les suivants : 
-- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
-- Exclusion des séjours en erreur (en utilisant la variable `GRG_GHM`)
-- Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
-- Exclusion des prestations pour lesquelles un résumé de séjour n'a pas été généré: la dialyse, l'activité externe des médecins salariés ou 
-des FFM, ATU, SE (attention cependant, la variable `TYP_GEN_RSA` n'est disponible qu'à partir de 2015)
-
-En complément, des filtres peuvent être appliqués sur les dates d'entrée et de sortie pour se 
-concentrer sur les séjours ayant eu lieu à une période donnée.   
-Les variables à utiliser sont `EXE_SOI_DTD` et `EXE_SOI_DTF` dans la table de chaînage `T_MCOaaC` sous ORAVUE.
-  
-Enfin, pour étudier les dépenses, il faut exclure les séjours non valorisés à partir de la variable `VALO` de la table `T_MCOaaVALO` de valorisation du séjour, 
-A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0 (séjour non valorisé), ou est manquante.
-
-Pour plus de détails sur les filtres à appliquer, se référer à la fiche sur les dépenses à l'hôpital public.
+Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
+charge lors de séjours en établissments publics sont détaillées dans la [fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)) .
 
 
 #### Méthodologie d'exploitation du PMSI MCO pour le calcul du reste à charge
