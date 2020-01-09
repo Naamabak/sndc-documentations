@@ -284,5 +284,5 @@ Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad 
 [Guide méthodo ATIH MCO](https://www.atih.sante.fr/mco/documentation#Guides%20m%C3%A9thodologiques)  
 https://www.atih.sante.fr/ssr/documentation#Guides%20m%C3%A9thodologiques  
 https://www.atih.sante.fr/had/documentation#Guides%20m%C3%A9thodologiques  
-https://www.atih.sante.fr/psy/documentation#Guides%20m%C3%A9thodologiques  
+[Guide méthodo ATIH PSY](https://www.atih.sante.fr/psy/documentation#Guides%20m%C3%A9thodologiques)  
 
