@@ -155,7 +155,7 @@ Par définition, il n'y a pas de reste à charge pour les dépenses en sus qui s
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE.  
 Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des TJP.   
-La table `T_SSRaaB` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le GME (variable `GR_GME`).
+La table `T_SSRaaB` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le [GME](https://documentation-snds.health-data-hub.fr/glossaire/gme.html) (variable `GR_GME`).
 
 La table de chaînage patients se nomme `T_SSRaaC` (toujours sous ORAVUE). On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).   
 Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM`,`RHA_NUM`) où `RHA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
@@ -188,7 +188,7 @@ Les filtres à appliquer sur les ACE sont les suivants :
 
 #### Dépenses en SUS 
 
-Les informations sur les dépenses associées aux médicaments facturés en sus du GMT (pharmacie de la liste en sus et médicaments soumis à autorisation temporaire d'utilisation (ATU)) 
+Les informations sur les dépenses associées aux médicaments facturés en sus du [GMT](https://documentation-snds.health-data-hub.fr/glossaire/gmt.html) (pharmacie de la liste en sus et médicaments soumis à autorisation temporaire d'utilisation (ATU)) 
 sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).  
 Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie.
 
