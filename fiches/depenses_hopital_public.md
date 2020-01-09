@@ -3,21 +3,21 @@
 Cette fiche explique comment retrouver les dépenses des établissements publics dans le PMSI.  
 
 Les explications sont déclinées par spécialité hospitalière : 
-- MCO : médecine chirurgie obstétrique et odontologie
-- SSR : soins de suite et de réadaptation
-- HAD : hospitalisation à domicile 
-- PSY :  psychiatrie   
+- [MCO](https://documentation-snds.health-data-hub.fr/glossaire/MCO.html) : médecine chirurgie obstétrique et odontologie
+- [SSR](https://documentation-snds.health-data-hub.fr/glossaire/MCO.html) : soins de suite et de réadaptation
+- [HAD](https://documentation-snds.health-data-hub.fr/glossaire/MCO.html) : hospitalisation à domicile
+- [PSY](https://documentation-snds.health-data-hub.fr/glossaire/RIM-P.html) : psychiatrie   
 
-Pour plus de détail sur ces spécialités, se reporter à la documentation de l'ATIH sur le sujet, ou au 
-[Panorama Etablissements de santé de la DREES](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
+Pour plus de détail sur ces spécialités, se reporter à la [documentation de l'ATIH](https://www.atih.sante.fr/domaines-d-activites/information-medicale), ou au 
+[panorama Etablissements de santé de la DREES](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
 
 L'ensemble des dépenses associées à un séjour en établissement public comprend :
-- le montant pris en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires (Soins urgents, Détenus, CMU-C, etc.)
+- le montant appelé "AMO", qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
 - le reste à charge après AMO (payé par le patient et / ou son organisme complémentaire)
 
 Pour plus d'informations sur le calcul de ce reste à charge dans le public, se référer à la fiche sur "le reste à charge après AMO en établissement public".
 
-En complément, des informations sur les dépenses dans le privé se trouvent dans la fiche thématique intitulée "les dépenses des établissement de santé privés (à partir du DCIRs)".
+En complément, des informations sur les dépenses dans le privé se trouvent dans la fiche thématique intitulée "les dépenses des établissement de santé privés (à partir du DCIRS)".
 
 
 ::: tip ATTENTION 
@@ -42,27 +42,27 @@ Il est conseillé de considérer `MNT_TOT_AM` de la table ``t_mcoANNEE.`valo` co
 `TOT_MNT_AM` de la table de prise en charge `t_mcoANNEE.stc` qui est l'information brute fournie par les établissements.  
 Pour un même séjour, ces deux montants ne sont pas calculés selon la même base de remboursement : `MNT_TOT_AM` est calculée sur la base des Tarifs Nationaux de Prestations, i.e. les [Groupes Homogènes de Séjours](../glossaire/GHS.md) pour MCO, tandis que `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation (TJP).
 
-Pour joindre les deux tables `t_mcoANNEE.valo` et `t_mcoANNEE.stc`, il faut passer par la table de chaînage patients (`t_mcoANNEE.c` toujours sous ORAVUE).  
+Pour joindre les deux tables `T_MCOaaVALO` et `T_MCOaaSTC`, il faut passer par la table de chaînage patients (`t_MCOaaC` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RSA_NUM`, `ETA_NUM`) où `RSA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
 Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
 
-L'information concernant les établissements se trouve dans la table `t_mcoANNEE.e`. On peut joindre cette table aux précédentes 
+L'information concernant les établissements se trouve dans la table `T_MCOaaE`. On peut joindre cette table aux précédentes 
 avec `ETA_NUM`. 
 
-Afin de calculer les dépenses en établissements pour les **séjours**, il convient de considérer la table des séjours, i.e. la table `t_mcoANNEE.b` sous ORAVUE. Pour calculer les dépenses, il faut appliquer les filtres suivants : 
-- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
+Afin de calculer les dépenses en établissements pour les **séjours**, il convient de considérer la table des séjours, *i.e.* la table `T_MCOaaB` sous ORAVUE. 
+Pour calculer les dépenses, il faut appliquer les filtres suivants : 
+- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM`)
 - Exclusion des séjours en erreur (en utilisant la variable `GRG_GHM`)
 - Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
-- Exclusion des prestations pour lesquelles un résumé de séjour n'a pas été généré: la dialyse, l'activité externe des médecins salariés ou 
-des FFM, ATU, SE (attention cependant, la variable `TYP_GEN_RSA` n'est disponible qu'à partir de 2015)
+- Exclusion des prestations pour lesquelles un résumé de séjour n'a pas été généré à l'aide de la variable `TYP_GEN_RSA` (qui n'est disponible qu'à partir de 2015)
 
 Le code SAS correspondant est le suivant :
 
 ```
 WHERE 
 ETA_NUM not in (   
-# AP HP 
-'600100093','600100101','620100016','640790150','640797098','750100018','750806226', 
+                 # APHP 
+                   '600100093','600100101','620100016','640790150','640797098','750100018','750806226', 
                    '750100356','750802845','750801524','750100067','750100075','750100042','750805228',
                    '750018939','750018988','750100091','750100083','750100109','750833345','750019069',
                    '750803306','750019028','750100125','750801441','750019119','750100166','750100141',
@@ -75,14 +75,16 @@ ETA_NUM not in (
                    '930100037','930018684','930812334','930811294','930100045','930011408','930811237',
                    '930100011','940018021','940100027','940100019','940170087','940005739','940100076',
                    '940100035','940802291','940100043','940019144','940005788','940100050','940802317',
-                   '940100068','940005838','950100024','950100016','130808231','130809775','130782931',
+                   '940100068','940005838','950100024','950100016',
+                 # APHM                   
+                   '130808231','130809775','130782931',
                    '130806003','130783293','130804305','130790330','130804297','130783236','130796873',
                    '130808520','130799695','130802085','130808256','130806052','130808538','130802101',
                    '130796550','130014558','130784234','130035884','130784259','130796279','130792856',
                    '130017239','130792534','130793698','130792898','130808546','130789175','130780521',
-                   '130033996','130018229',
-# HCM
-'90787460','690007422','690007539','690784186','690787429',
+                   '130033996','130018229', 
+                 # HCL                   
+                   '90787460','690007422','690007539','690784186','690787429',
                    '690783063','690007364','690787452','690007406','690787486','690784210','690799416',
                    '690784137','690007281','690799366','690784202','690023072','690787577','690784194',
                    '690007380','690784129','690029194','690806054','690029210','690787767','690784178',
