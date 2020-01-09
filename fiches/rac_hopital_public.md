@@ -38,7 +38,7 @@ Nous allons détailler ces différentes composantes et leurs règles d'imputatio
 
 #### Le forfait journalier et le forfait journalier de sortie 
 
-Le forfait hospitalier représente la participation financière du patient aux frais d'hébergement et d'entretien entraînés par son hospitalisation. 
+Le **forfait journalier hospitalier** représente la participation financière du patient aux frais d'hébergement et d'entretien entraînés par son hospitalisation. 
 
 Il est dû pour chaque journée d'hospitalisation, pour tout séjour supérieur à 24 heures dans un établissement hospitalier public ou privé, y compris le jour de sortie.  
 Il est également dû en cas de séjour inférieur à 24 heures, si celui-ci est à cheval sur 2 journées calendaires.  
