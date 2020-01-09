@@ -128,29 +128,20 @@ Les filtres à appliquer sur les ACE sont les suivants :
 
 #### Dépenses en SUS 
 
-L'information sur la pharmacie de la liste en sus, les dispositifs médicaux implantables, les médicaments soumis à autorisation temporaire d'utilisation (ATU)
-et les médicaments thrombolytiques se trouve dans les tables suivantes. 
+Les informations sur les dépenses associées aux médicaments facturés en sus du GHS (pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU)
+et médicaments thrombolytiques sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).
+Y figurent également des informations sur les médicaments de la liste en sus facturés dans le cadre des ACE. 
 
-Pour l'hôpital public en MCO: 
-- `T_MCOaaMED` : contient les médicaments en sus
-- `T_MCOaaMEDATU` : contient les médicaments soumis à autorisation temporaire d’utilisation
-- `T_MCOaaMEDTHROMBO` : contient les médicaments thrombolytiques pour le traitement de l’AVC ischémique
-- `T_MCOaaDMIP` : contient les dispositifs médicaux implantables  
+Les informations sur les dispositifs médicaux implantables à l'hôpital public en MCO figurent dans la table `T_MCOaaDMIP`.
 
-Pour les ACE en MCO, l'information se trouve dans la table `T_MCOaaFHSTC` : médicaments en sus.
-
-On peut déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre administré ou posé (pour les médicaments et dispositifs respectivement).  
-
-Pour l'étude des médicaments et dispositifs de la liste en SUS, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
-- Nombre UCD = 0 et prix d’achat > 0
-- Nombre UCD = 0 et prix d’achat = 0
-- Nombre UCD < 0 ou prix d’achat < 0
-- Codes UCD erronés (à vide ou indéterminés)
-- Molécules administrées hors période d’appartenance à la liste en sus
+Pour l'étude des dispositifs de la liste en SUS, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
 - Nombre DMI = 0 et prix d’achat ≥ 0
 - Nombre DMI < 0 ou prix d’achat < 0
 - Codes DMI erronés (à vide ou indéterminés)
 - DMI posés hors période d’appartenance à la liste en sus
+
+On peut déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre posé.  
+
 
 ## En SSR
 
