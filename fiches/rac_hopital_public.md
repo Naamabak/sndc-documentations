@@ -6,7 +6,7 @@ Les explications sont déclinées par spécialité hospitalière :
 
 * [MCO](../glossaire/MCO.md) : médecine chirurgie obstétrique et odontologie
 * [SSR](../glossaire/MCO.md) : soins de suite et de réadaptation
-* [HAD](https://documentation-snds.health-data-hub.fr/glossaire/MCO.html) : hospitalisation à domicile
+* [HAD](../glossaire/HAD.md) : hospitalisation à domicile
 
 Nous ne traitons pas ici le calcul du reste à charge en psychiatrie pour lequel nous ne disposons pas de suffisamment d'information.  
 Toute contribution est la bienvenue.  
