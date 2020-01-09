@@ -65,7 +65,7 @@ Il existe des motifs d'exonération pour le forfait journalier :
 - titulaire d'une pension militaire
 - victime d'un acte de terrorisme et bénéficiaire d'une prise en charge intégrale pour les soins en rapport avec cet évènement si possesseur d'une attestation en cours de validité.
 
-Il existe également des cas où le FJ n'est pas applicable :  
+Il existe également des cas où le forfait journalier (FJ) n'est pas applicable :  
 - Séances sauf radiothérapie
 - Explorations nocturnes et apparentées (GHM 23K02Z), IVG (GHM 14Z08Z)
 - Radiothérapie des nouveau-nés, prélèvements d'organe, forfaits innovation 
