@@ -125,7 +125,7 @@ PROC SQL;
           t1.PRS_ORD_NUM = t2.PRS_ORD_NUM AND 
           t1.REM_TYP_AFF = t2.REM_TYP_AFF)
   )
-  WHERE t1.prs_nat_ref in ( **3541** , **3547** )
+  WHERE t1.prs_nat_ref in ( **3541** , **3547**, **3549** )
         AND t1.dpn_qlf <> 71
   ;
 QUIT;
@@ -137,7 +137,9 @@ QUIT;
 [https://www.ameli.fr/fileadmin/user_upload/documents/Points_de_repere_n_47___Le_marche_de_l_audioprothese_en_2015.pdf](https://www.ameli.fr/fileadmin/user_upload/documents/Points_de_repere_n_47___Le_marche_de_l_audioprothese_en_2015.pdf)
 
 ::: tip Crédits
+
 Le contenu original de cette fiche provient du document
 [2019-03-22_DREES_Audioprothèses_MLP-2.0.docx](../files/DREES/2019-03-22_DREES_Audioproth%C3%A8ses_MPL-2.0.docx) rédigé par Kristel JACQUIER.
 Il a été complété par Raphaële ADJERAD
+
 :::
