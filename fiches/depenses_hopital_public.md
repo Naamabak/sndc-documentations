@@ -115,7 +115,7 @@ A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, o
 Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_externes.md) des établissements publics et Etablissements de Santé Privés d'Intérêt Collectif (ESPIC) se trouvent dans la table de valorisation des ACE 
 sous `t_mcoANNEE.valoace`.   
 Cette table contient une ligne par ACE (valorisé ou non).  
-On peut obtenir des détails sur la nature de l'ACE (ATU, FFM, Dialyse, SE, FTN, NGAP, CCAM, DM Externe) à l'aide de la variable `ACT_COD` de la table `t_mcoANNEE.fbstc`.  
+On peut obtenir des détails sur la nature de l'ACE (accueil et traitement des urgences, actes d'analyse, dialyse, forfaits petit matériel, etc.) à l'aide de la variable `ACT_COD` de la table `T_MCOaaFBSTC` dont la nomenclature figure en [annexe de la fiche sur les ACE](https://documentation-snds.health-data-hub.fr/fiches/actes_consult_externes.html#annexe).  
 La montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car il n'existe pas de dépassements à en ACE.  
 La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie ainsi que les participations supplémentaires (détenus, SU, etc.).  
 
@@ -123,7 +123,7 @@ La table patients correspondante est `t_mcoANNEE.cstc`, on peut les chaîner tou
 patients contient également l'identifiant bénéficiaire `NIR_ANO_17`.
 
 Les filtres à appliquer sur les ACE sont les suivants :
-- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
+- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM`)
 - Exclusion des ACE réalisées en dehors de la période d'étude (en utilisant les variable `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des ACE non valorisées (en utilisant la variable `VALO`)
 
@@ -177,15 +177,14 @@ Les filtres sur les séjours sont les suivants :
 
 #### Valorisation des actes et consultations externes
 
-Les actes et consultations externes en SSR se trouvent dans la table `t_ssrANNEE.cstc`.  
+Les actes et consultations externes en SSR se trouvent dans la table `T_SSRaaCSTC`.  
 Tout comme en MCO, on peut obtenir des détails sur la nature de l'ACE (ATU, FFM, Dialyse, SE, FTN, NGAP, CCAM, DM Externe) à l'aide de la variable `ACT_COD` de la table `t_mcoANNEE.fbstc`.  
 Les deux tables peuvent se joindre par la clef (`ETA_NUM`, `SEQ_NUM`).
-On peut utiliser la table de facturation `t_ssrANNEE.fastc` pour calculer le montant total des dépenses (somme de `PH_MNT` et `HON_MNT`),
-ainsi que le montant remboursé par l'AM (somme de `PH_AMO_MNR`, `HON_AM_MNR`).  
-Avec `PH_MNT`, le montant total facturé pour PH; `HON_MNT`, le total honoraire facturé; `PH_AMO_MNR`, le total remboursable AMO prestation hospitalieres; `HON_AM_MNR`, le total honoraire remboursable AM.  
+On peut utiliser la table de facturation `T_SSRaaFASTC` pour calculer le montant total des dépenses (somme de `PH_MNT`, le montant total facturé pour PH, et de `HON_MNT`, le total honoraire facturé),
+ainsi que le montant remboursé par l'AMO (somme de `PH_AMO_MNR`, le total remboursable AMO prestation hospitalieres, et de `HON_AM_MNR`, le total honoraire remboursable AM).  
 
 Les filtres à appliquer sur les ACE sont les suivants :
-- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
+- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM`)
 - Exclusion des ACE réalisées en dehors de la période d'étude (en utilisant les variable `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des ACE non valorisées
 
@@ -221,10 +220,10 @@ La clef de chaînage est le couple (`RHAD_NUM`, `ETA_NUM_EPMSI`) où `RHAD_NUM` 
 Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).
 
 Les filtres sur les séjours sont les suivants :
-- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM_EPMSI`)
+- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM_EPMSI`)
 - Exclusion des séjours en erreur (en utilisant la variable `PAP_GRP_GHPC`)
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
-- Exclusion des séjours non valorisés (variable `VALO` dans `t_hadANNEE.valo` ou `FAC_SEJ_AM` dans `t_hadANNEE.stc`)  
+- Exclusion des séjours non valorisés (variable `VALO` dans `t_HADaaVALO` ou `FAC_SEJ_AM` dans `T_HADaaSTC`)  
 
 #### Valorisation des actes et consultations externes
 
@@ -256,11 +255,11 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 
 En psychiatrie, le nom des tables commence par **RIP** pour **"recueil d'information en psychiatrie"**.  
 La prise en charge peut s'effectuer à temps complet, partiel ou en ambulatoire.  
-Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `t_ripANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des TJP.     
-La table de chainage patients se nomme `t_ripANNEE.c`.  
-Des informations complémentaires sur les séjours (notamment le nombre de jours en hospitalisation partielle / complète) peuvent être extraites de la table `t_ripANNEE.s` de description du sejour.    
+Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `T_RIPaaSTC`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des TJP.     
+La table de chainage patients se nomme `T_RIPaaC`.  
+Des informations complémentaires sur les séjours (notamment le nombre de jours en hospitalisation partielle / complète) peuvent être extraites de la table `T_RIPaaS` de description du sejour.    
 Des informations sur les prises en charge ambulatoires se trouvent dans la table `t_ripANNEE.r3a`.  
-Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_ripANNEE.c` toujours sous ORAVUE).  
+La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) permet de joindre les tables mentionnées ci-dessus.    
 La clef de chaînage est le couple (`RIP_NUM`, `ETA_NUM_EPMSI`) où `RIP_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
 Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).
 
