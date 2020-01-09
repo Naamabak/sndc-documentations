@@ -12,7 +12,7 @@ Pour plus de détail sur ces spécialités, se reporter à la documentation de l
 [Panorama Etablissements de santé](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
 
 L'ensemble des dépenses associées à un séjour en établissement public comprend :
-- le montant pris en charge par l'assurance maladie obligatoire (AMO)
+- le montant pris en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires (Soins urgents, Détenus, CMU-C, etc.)
 - le reste à charge après AMO (payé par le patient et / ou son organisme complémentaire)
 
 Pour plus d'informations sur le calcul de ce reste à charge dans le public, se référer à la fiche sur "le reste à charge après AMO en établissement public".
