@@ -9,7 +9,6 @@ Les explications sont déclinées par spécialité hospitalière :
 * [HAD](../glossaire/HAD.md) : hospitalisation à domicile
 
 Nous ne traitons pas ici le calcul du reste à charge en psychiatrie pour lequel nous ne disposons pas de suffisamment d'information.  
-Toute contribution est la bienvenue.  
 
 L'ensemble des dépenses associées à un séjour en établissement public comprend :
 
