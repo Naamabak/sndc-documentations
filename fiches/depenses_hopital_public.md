@@ -46,7 +46,7 @@ Pour joindre les différentes tables mentionnées, la clef de chaînage est le c
 
 L'information concernant les établissements se trouve dans la table `T_MCOaaE`. On peut joindre cette table aux précédentes avec `ETA_NUM` uniquement. 
 
-Avant de calculer les dépenses, il faut appliquer les filtres suivants (à partir de la table `T_MCOaaB`): 
+Avant de calculer les dépenses, il faut appliquer les filtres suivants (à partir de la table `T_MCOaaB`) : 
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM`)
 - Exclusion des séjours en erreur (en utilisant la variable `GRG_GHM`)
 - Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
@@ -173,7 +173,7 @@ Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC A
 
 Les actes et consultations externes en SSR se trouvent dans la table `T_SSRaaCSTC`.  
 Tout comme en MCO, on peut obtenir des détails sur la nature de l'ACE à l'aide de la variable `ACT_COD` de la table `T_SSRaaFBSTC`.  
-Les deux tables peuvent se joindre par la clef de chaînage (`ETA_NUM`, `SEQ_NUM`).
+Les deux tables peuvent se joindre par la clef de chaînage (`ETA_NUM`, `SEQ_NUM`).  
 On peut utiliser la table de facturation `T_SSRaaFASTC` pour calculer le montant total des dépenses (somme de `PH_MNT`, le montant total facturé pour PH, et de `HON_MNT`, le total honoraire facturé),
 ainsi que le montant remboursé par l'AMO (somme de `PH_AMO_MNR`, le total remboursable AMO prestation hospitalieres, et de `HON_AM_MNR`, le total honoraire remboursable AM).  
 Le montant du reste à charge (RAC AMO) peut-être calculé comme la différence entre le montant total des dépenses et le montant remboursé par l'AMO. 
@@ -233,7 +233,6 @@ Des informations complémentaires sur les séjours (notamment le nombre de jours
 Des informations sur les prises en charge ambulatoires se trouvent dans la table `T_RIPaaR3A`.  
 La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) contient notamment l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).  
 La clef de chaînage entre les tables mentionnées ci-dessus est le couple (`ETA_NUM_EPMSI`, `RIP_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement et `RIP_NUM` est le numéro séquentiel du séjour.  
-Dans la table patients, 
 
 Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en psychiatrie. 
 Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour.
