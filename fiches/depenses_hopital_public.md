@@ -44,7 +44,7 @@ Pour un même séjour, ces deux montants ne sont pas calculés selon la même ba
 
 Pour joindre les deux tables `t_mcoANNEE.valo` et `t_mcoANNEE.stc`, il faut passer par la table de chaînage patients (`t_mcoANNEE.c` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RSA_NUM`, `ETA_NUM`) où `RSA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` (cf. fiche Identifiant des bénéficiaires pour plus d'informations).
+Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche Identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
 
 L'information concernant les établissements se trouve dans la table `t_mcoANNEE.e`. On peut joindre cette table aux précédentes 
 avec `ETA_NUM`. 
