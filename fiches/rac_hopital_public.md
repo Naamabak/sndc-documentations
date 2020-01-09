@@ -76,7 +76,6 @@ Dans le cas général, l'assurance maladie rembourse 80 % du montant de la base 
 
 Le taux de remboursement varie généralement entre 80 et 100 % du montant de la base de remboursement calculée à partir des tarifs nationaux de prestations en fonction du profil du patient, du type d'acte et de la nature de l'assurance.   
 
-La base de remboursement qui sert à calculer le montant du ticket modérateur est celle de l'établissement.
 
 En effet, dans le secteur public, on distingue deux bases de remboursement :  
 - **La base de remboursement de l'assurance maladie (AM)**  
