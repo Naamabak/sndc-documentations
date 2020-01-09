@@ -210,7 +210,7 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 #### Valorisation des séjours
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `t_hadANNEE.valo` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `t_hadANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des GHT mais des TJP.   
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `t_hadANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des GHT mais des TJP.   
 La table de chainage patients se nomme `t_hadANNEE.c`.  
 Des informations sur le GHPC se trouvent dans la table `t_hadANNEE.grp` (variable `PAP_GRP_GHPC`).
 
