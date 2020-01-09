@@ -44,7 +44,7 @@ Pour un même séjour, ces deux montants ne sont pas calculés selon la même ba
 
 Pour joindre les deux tables `t_mcoANNEE.valo` et `t_mcoANNEE.stc`, il faut passer par la table de chaînage patients (`t_mcoANNEE.c` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RSA_NUM`, `ETA_NUM`) où `RSA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche Identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
+Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
 
 L'information concernant les établissements se trouve dans la table `t_mcoANNEE.e`. On peut joindre cette table aux précédentes 
 avec `ETA_NUM`. 
@@ -163,7 +163,7 @@ La table `t_ssrANNEE.b` de description du sejour permet d'extraire des informati
 
 Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_ssrANNEE.c` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RHA_NUM`, `ETA_NUM`) où `RHA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche Identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
+Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
 
 Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
@@ -209,14 +209,14 @@ Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggèr
 
 #### Valorisation des séjours
 
-À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `t_hadANNEE.valo` sous ORAVUE.  
+À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_HADaaVALO` sous ORAVUE.  
 Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `t_hadANNEE.stc`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des GHT mais des TJP.   
 La table de chainage patients se nomme `t_hadANNEE.c`.  
-Des informations sur le GHPC se trouvent dans la table `t_hadANNEE.grp` (variable `PAP_GRP_GHPC`).
+Des informations sur le [GHPC](../glossaire/GHPC.md) se trouvent dans la table `T_HAD_aaGRP` (variable `PAP_GRP_GHPC`).
 
 Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_hadrANNEE.c` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RHAD_NUM`, `ETA_NUM_EPMSI`) où `RHAD_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche Identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).
+Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).
 
 Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM_EPMSI`)
@@ -260,7 +260,7 @@ Des informations complémentaires sur les séjours (notamment le nombre de jours
 Des informations sur les prises en charge ambulatoires se trouvent dans la table `t_ripANNEE.r3a`.  
 Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_ripANNEE.c` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RIP_NUM`, `ETA_NUM_EPMSI`) où `RIP_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche Identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).
+Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).
 
 #### Dépenses en SUS 
 
