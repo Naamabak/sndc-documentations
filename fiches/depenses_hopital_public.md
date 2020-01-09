@@ -110,7 +110,7 @@ A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, o
 
 #### Valorisation des actes et consultations externes
 
-Les dépenses d'actes et consultations externes (ACE) des établissements publics et ESPIC se trouvent dans la table de valorisation des ACE 
+Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_externes.md) des établissements publics et Etablissements de Santé Privés d'Intérêt Collectif (ESPIC) se trouvent dans la table de valorisation des ACE 
 sous `t_mcoANNEE.valoace`.   
 Cette table contient une ligne par ACE (valorisé ou non).  
 On peut obtenir des détails sur la nature de l'ACE (ATU, FFM, Dialyse, SE, FTN, NGAP, CCAM, DM Externe) à l'aide de la variable `ACT_COD` de la table `t_mcoANNEE.fbstc`.  
