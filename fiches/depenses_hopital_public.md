@@ -9,7 +9,7 @@ Les explications sont déclinées par spécialité hospitalière :
 - PSY :  psychiatrie   
 
 Pour plus de détail sur ces spécialités, se reporter à la documentation de l'ATIH sur le sujet, ou au Panorama des établissements de santé de la DREES 
-(https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019) 
+[Panorama Etablissements de santé](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
 
 L'ensemble des dépenses associées à un séjour en établissement public comprennent :
 - le montant pris en charge par l'assurance maladie obligatoire (AMO)
