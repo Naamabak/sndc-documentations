@@ -128,19 +128,19 @@ Les filtres à appliquer sur les ACE sont les suivants :
 
 #### Dépenses en SUS 
 
-Les informations sur les dépenses associées aux médicaments facturés en sus du GHS (pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU)
-et médicaments thrombolytiques sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).
+Les informations sur les dépenses associées aux médicaments facturés en sus du [GHS](https://documentation-snds.health-data-hub.fr/glossaire/GHS.html) 
+(pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU)
+et médicaments thrombolytiques) sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).
 Y figurent également des informations sur les médicaments de la liste en sus facturés dans le cadre des ACE. 
 
-Les informations sur les dispositifs médicaux implantables à l'hôpital public en MCO figurent dans la table `T_MCOaaDMIP`.
-
-Pour l'étude des dispositifs de la liste en SUS, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
+Les informations sur les dispositifs médicaux implantables facturés en sus du GHS lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.
+Pour l'étude des dépenses associées à ces dispositifs, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
 - Nombre DMI = 0 et prix d’achat ≥ 0
 - Nombre DMI < 0 ou prix d’achat < 0
 - Codes DMI erronés (à vide ou indéterminés)
 - DMI posés hors période d’appartenance à la liste en sus
 
-On peut déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre posé.  
+On peut ensuite déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre de dispositifs posés.  
 
 
 ## En SSR
@@ -179,21 +179,8 @@ Les filtres à appliquer sur les ACE sont les suivants :
 
 #### Dépenses en SUS 
 
-Les informations sur les médicaments en sus et les médicaments soumis à autorisation temporaire d'utilisation (ATU) se trouvent dans les tables :
-- `T_SSRaaMED`: médicaments en sus
-- `T_SSRaaMEDATU`: médicaments soumis à autorisation temporaire d’utilisation
-
-On peut déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre administré.  
-
-Pour l'étude des médicaments et dispositifs de la liste en SUS, l'ATIH suggère d'appliquer les critères d'exclusion suivants :   
-[site ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus)  
-- Nombre UCD = 0 et prix d’achat > 0
-- Nombre UCD = 0 et prix d’achat = 0
-- Nombre UCD < 0 ou prix d’achat < 0
-- Nombre UCD >=100
-- Codes UCD erronés (à vide ou indéterminés)
-- Molécules administrées hors période d’appartenance à la liste en sus
-  
+Les informations sur les dépenses associées aux médicaments facturés en sus du GMT (pharmacie de la liste en sus et médicaments soumis à autorisation temporaire d'utilisation (ATU)) 
+sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).
 
 ## En HAD
 
@@ -220,22 +207,10 @@ Il n'y a pas d'ACE en HAD.
 
 #### Dépenses en SUS 
 
-L'information sur la dépense que représente la pharmacie de la liste en sus, les médicaments ATU et les médicaments coûteux hors liste en sus et
-hors ATU est contenue dans:
-- `T_HADaaMED` : médicaments en sus
-- `T_HADaaMEDATU` : médicaments soumis à autorisation temporaire d’utilisation
-- `T_HADaaMEDHCL` : médicaments coûteux hors liste en SUS et hors ATU
+Les informations sur les dépenses associées aux médicaments facturés en sus du [GHT](https://documentation-snds.health-data-hub.fr/glossaire/GHT.html) 
+(pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU) et médicaments coûteux hors liste en sus et hors ATU) 
+sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).
 
-On peut déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre administré.  
-
-Pour l'étude des médicaments et dispositifs de la liste en SUS, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants : 
-- Nombre UCD = 0 et prix d’achat > 0
-- Nombre UCD = 0 et prix d’achat = 0
-- Nombre UCD < 0 ou prix d’achat < 0
-- Nombre UCD >=100
-- Codes UCD erronés (à vide ou indéterminés)
-- Molécules administrées hors période d’appartenance à la liste en sus
-  
 
 ## En PSY
 
