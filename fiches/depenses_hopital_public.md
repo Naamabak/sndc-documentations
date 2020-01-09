@@ -163,7 +163,7 @@ La table `t_ssrANNEE.b` de description du sejour permet d'extraire des informati
 
 Pour joindre les tables mentionnées ci-dessus, il faut passer par la table de chaînage patients (`t_ssrANNEE.c` toujours sous ORAVUE).  
 La clef de chaînage est le couple (`RHA_NUM`, `ETA_NUM`) où `RHA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.  
-Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` (cf. fiche Identifiant des bénéficiaires pour plus d'informations).
+Dans la table patients, on trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche Identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).
 
 Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
