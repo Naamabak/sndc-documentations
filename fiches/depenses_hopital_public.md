@@ -133,7 +133,7 @@ Les informations sur les dépenses associées aux médicaments facturés en sus 
 et médicaments thrombolytiques) sont détaillées dans la [fiche sur les médicaments de la liste en sus](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html).
 Y figurent également des informations sur les médicaments de la liste en sus facturés dans le cadre des ACE. 
 
-Les informations sur les dispositifs médicaux implantables facturés en sus du GHS lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.
+Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](https://documentation-snds.health-data-hub.fr/glossaire/GHS.html) lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.
 Pour l'étude des dépenses associées à ces dispositifs, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
 - Nombre DMI = 0 et prix d’achat ≥ 0
 - Nombre DMI < 0 ou prix d’achat < 0
