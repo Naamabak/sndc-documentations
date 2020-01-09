@@ -178,7 +178,6 @@ Les filtres sur les séjours sont les suivants :
 Les actes et consultations externes en SSR se trouvent dans la table `t_ssrANNEE.cstc`.  
 Tout comme en MCO, on peut obtenir des détails sur la nature de l'ACE (ATU, FFM, Dialyse, SE, FTN, NGAP, CCAM, DM Externe) à l'aide de la variable `ACT_COD` de la table `t_mcoANNEE.fbstc`.  
 Les deux tables peuvent se joindre par la clef (`ETA_NUM`, `SEQ_NUM`).
-Pour plus d'informations, se référer à la fiche sur les ACE.  
 On peut utiliser la table de facturation `t_ssrANNEE.fastc` pour calculer le montant total des dépenses (somme de `PH_MNT` et `HON_MNT`),
 ainsi que le montant remboursé par l'AM (somme de `PH_AMO_MNR`, `HON_AM_MNR`).  
 Avec `PH_MNT`, le montant total facturé pour PH; `HON_MNT`, le total honoraire facturé; `PH_AMO_MNR`, le total remboursable AMO prestation hospitalieres; `HON_AM_MNR`, le total honoraire remboursable AM.  
