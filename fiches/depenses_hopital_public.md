@@ -8,8 +8,8 @@ Les explications sont déclinées par spécialité hospitalière :
 - HAD : hospitalisation à domicile 
 - PSY :  psychiatrie   
 
-Pour plus de détail sur ces spécialités, se reporter à la documentation de l'ATIH sur le sujet, ou au Panorama des établissements de santé de la DREES 
-[Panorama Etablissements de santé](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
+Pour plus de détail sur ces spécialités, se reporter à la documentation de l'ATIH sur le sujet, ou au 
+[Panorama Etablissements de santé de la DREES](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
 
 L'ensemble des dépenses associées à un séjour en établissement public comprend :
 - le montant pris en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires (Soins urgents, Détenus, CMU-C, etc.)
@@ -114,7 +114,7 @@ Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_
 sous `t_mcoANNEE.valoace`.   
 Cette table contient une ligne par ACE (valorisé ou non).  
 On peut obtenir des détails sur la nature de l'ACE (ATU, FFM, Dialyse, SE, FTN, NGAP, CCAM, DM Externe) à l'aide de la variable `ACT_COD` de la table `t_mcoANNEE.fbstc`.  
-La montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car cil n'existe pas de dépassements à en ACE.  
+La montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car il n'existe pas de dépassements à en ACE.  
 La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie ainsi que les participations supplémentaires (détenus, SU, etc.).  
 
 La table patients correspondante est `t_mcoANNEE.cstc`, on peut les chaîner toujours via le couple (`RSA_NUM`,`ETA_NUM`). La table
@@ -278,11 +278,10 @@ Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad 
 - Documentation de l'ATIH
   * Manuel d'utilisation du logiciel VivualValoSej (PMSI MCO)
   * Manuel d'utilisation du logiciel VivualValoSSR (PMSI SSR)
-  * Méthodes d'analyse des dépenses liées aux molécules onéreuses et dispositifs implantables (PMSI MCO, SSR et HAD)  
-(https://www.scansante.fr/applications/synthese-dmi-mo-sus)
+  * [Méthodes d'analyse des dépenses liées aux molécules onéreuses et dispositifs implantables](https://www.scansante.fr/applications/synthese-dmi-mo-sus) (PMSI MCO, SSR et HAD)
   * Guides méthodologiques  
 [Guide méthodo ATIH MCO](https://www.atih.sante.fr/mco/documentation#Guides%20m%C3%A9thodologiques)  
-https://www.atih.sante.fr/ssr/documentation#Guides%20m%C3%A9thodologiques  
-https://www.atih.sante.fr/had/documentation#Guides%20m%C3%A9thodologiques  
+[Guide méthodo ATIH SSR](https://www.atih.sante.fr/ssr/documentation#Guides%20m%C3%A9thodologiques)  
+[Guide méthodo ATIH HAD](https://www.atih.sante.fr/had/documentation#Guides%20m%C3%A9thodologiques)  
 [Guide méthodo ATIH PSY](https://www.atih.sante.fr/psy/documentation#Guides%20m%C3%A9thodologiques)  
 
