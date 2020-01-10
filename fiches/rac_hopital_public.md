@@ -369,10 +369,10 @@ On utilise les variables suivantes :
 - `TAUX_C`: taux de remboursement du séjour (corrigé)
 - `FJ_C`: montant du forfait journalier pour l'ensemble du séjour (corrigé)
 - `FJ_C2`: montant du forfait journalier effectivement facturé (dont le calcul est présenté ci-dessus)
-- `FAC_18E`: montant à facturer au titre de la participation forfaitaire de 18€ (table `T_MCOAAstc`)
-- `FAC_MNT_TM`: montant à facturer au titre du ticket modérateur (table `T_MCOAAstc`)
-- `FJ_COD_PEC`: code de prise en charge du forfait journalier (table `T_MCOAAstc`)
-- `VALO` : valorisation du séjour (table `T_MCOAAstc`)
+- `FAC_18E`: montant à facturer au titre de la participation forfaitaire de 18€ (table `T_MCOaaSTC`)
+- `FAC_MNT_TM`: montant à facturer au titre du ticket modérateur (table `T_MCOaaSTC`)
+- `FJ_COD_PEC`: code de prise en charge du forfait journalier (table `T_MCOaaSTC`)
+- `VALO` : valorisation du séjour (table `T_MCOaaSTC`)
 
 
 Calcul de la variable `rac` dans les différents cas de figure :
