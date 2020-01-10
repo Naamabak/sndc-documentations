@@ -21,8 +21,9 @@ En complément, des informations sur les dépenses en établissements de santé 
 
 ::: tip ATTENTION 
 
-
-L’information sur ces dépenses n’est pas exhaustive et doit être traitée avec précaution. 
+Les informations de la présente fiche sur les dépenses des établissements de santé publics 
+sont le fruit d'un travail de documentation et de l'observation des données du PMSI. 
+Elles doivent être traitées avec précaution. 
 
 :::
 
@@ -153,7 +154,8 @@ Par définition, il n'y a pas de reste à charge pour les dépenses en sus qui s
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE.  
 Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des TJP.   
-La table `T_SSRaaB` de description du sejour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), ainsi que sur le [GME](../glossaire/gme.html) (variable `GR_GME`).
+La table `T_SSRaaB` de description du séjour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), 
+ainsi que sur le [GME](../glossaire/gme.html) (variable `GR_GME`).
 
 La table de chaînage patients se nomme `T_SSRaaC` (toujours sous ORAVUE). On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).   
 Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM`,`RHA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RHA_NUM` le numéro séquentiel du séjour.  
