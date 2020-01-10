@@ -8,14 +8,14 @@ du DCIR (cliniques privées) respectivement.
 
 D'après le [code de la santé publique (article L.5211-1)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006072665&idArticle=LEGIARTI000006690281), on entend par dispositif médical implantable : 
 "tout instrument, appareil, équipement, matière, produit, [...] destiné par le fabricant à être 
-utilisé chez l’homme à des fins médicales" et conçu "pour être implantés en totalité ou en 
-partie dans le corps humain ou placés dans un orifice naturel". 
+utilisé chez l’homme à des fins médicales [...] et conçu pour être implanté en totalité ou en 
+partie dans le corps humain ou placé dans un orifice naturel". 
 
-En principe, dans le cadre de la tarification à l’activité, les hôpitaux reçoivent pour 
-chaque séjour d’un patient, un paiement forfaitaire global de l’assurance maladie qui 
-comprend notamment l'intégralite des coûts associés à ce séjour.   
+Dans le cadre de la [T2A](../glossaire/T2A.html), les hôpitaux reçoivent 
+un paiement forfaitaire global de l’assurance maladie pour chaque séjour d’un patient. 
+En principe, le paiement comprend l'intégralite des coûts associés à ce séjour.   
 Dans certains cas, la prise en charge du patient nécessite la prescription de médicaments
-ou dispositifs médicaux implantables innovants et coûteux qui, sous certaines conditions, sont intégralement remboursés par 
+ou dispositifs médicaux implantables innovants et coûteux qui sont, sous certaines conditions, intégralement remboursés par 
 l'assurance maladie obligatoire (*cf.* [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html)). 
 
 La liste initiale qui définit les dispositifs médicaux implantables pris en charge en sus des prestations d’hospitalisation en MCO 
