@@ -222,11 +222,10 @@ Pour plus d'informations sur les tables et variables utilisées, se référer à
 La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ETA_NUM`, `RSA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RSA_NUM` est le numéro séquentiel du séjour. 
 
 Dans la **table de chaînage patients** `T_MCOaaC`, nous considérons les variables :
-- `NIR_ANO_17` : identifiant du bénéficiaire 
+- `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.html))
 - `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent les dates d'entrée et de sortie à l'hôpital respectivement  
 
 Dans la table `T_MCOaaVALO`, qui est la **table de valorisation des séjours** (données retraitées par l'ATIH), nous considérons les variables:
-
 - `MNT_18` : montant de la participation forfaitaire de 18 euros (en 2016) pour les actes exonérants
 À noter qu’il s’agit d’une variable renseignée par l’établissement (elle n’est pas recalculée).
 - `MNT_FJ2` : montant du forfait journalier (FJ). 
@@ -296,7 +295,7 @@ Dans la table `T_MCOaaB`, qui est la **table de description du séjour**, nous c
 #### Filtres à ajouter
 
 Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
-charge lors de séjours en établissments publics sont détaillées dans la [fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)) .
+charge lors de séjours en établissments publics sont détaillées dans la [fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)).
 
 
 #### Méthodologie d'exploitation du PMSI MCO pour le calcul du reste à charge
@@ -307,7 +306,8 @@ Deux variables renseignent le taux de remboursement :
 - Variable `REM_TAU` (table `T_MCOaaSTC`) fournie par l'établissement
 - Variable `TAUX2` (table `T_MCOAaaVALO`), qui est la version de `REM_TAU` corrigée par l'ATIH
 
-Dans les cas où la variable `TAUX2` est manquante, il est possible de le reconstruire comme indiqué dans la documentation de l'ATIH à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
+Dans les cas où la variable `TAUX2` est manquante, il est possible de le reconstruire comme indiqué dans [la documentation de l'ATIH](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is) 
+-  à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
 La variable `tx_ATIH` peut être calculée comme suit :  
   - Si `EXO_TM` est dans [0,2] et `NAT_ASS` est dans [10,13] alors `tx_ATIH` prend la valeur de 80%
   - Si `EXO_TM` est dans [0,2] et `NAT_ASS` n'est pas dans [10,13] alors `tx_ATIH` prend la valeur de 100%
@@ -345,19 +345,19 @@ On peut également créer une variable corrigée appelée `FJ_C2` qui prend la v
 - `FJ_C2` = `FJ_C` - 29*18 (= valeur du FJ au-delà du 30ème jour d'hospitalisation + FJ du jour de sortie) si séjour sans exonération de TM ni de FJ, de plus de 30 jours, avec transfert ou décès 
 - `FJ_C2` = `FJ_C` sinon (=valeur du FJ pour l'ensemble du séjour)
 
-*ATTENTION > en cas de séjours contigüs, la limite des 30 jours s'applique à la durée d'hospitalisation cumulée. Pour plus de rigueur, il faudrait chaîner les séjours pour calculer la durée de séjour, non pas pas PMSI, mais depuis l'entrée à l'hôpital.*
+*ATTENTION > en cas de séjours contigüs, la limite des 30 jours s'applique à la durée d'hospitalisation cumulée. Pour plus de rigueur, il faudrait chaîner les séjours pour calculer la durée de séjour, non pas par PMSI, mais depuis l'entrée à l'hôpital.*
 
 ##### Nettoyage de la participation forfaitaire
 
-Il existe deux façons de renseigner la facturation ou non de la participation forfaitaire (qui était encore de 18 € en 2016) :
+Il existe deux façons de renseigner la facturation ou non de la participation forfaitaire (qui était de 18 € en 2016) :
 - Variable `FAC_18E` (table `T_MCOaaSTC`), renseignée par l'établissement
-- Variable `MNT_18` (table `T_MCOaaVALO`), censée être strictement identique à `FAC_18E` mais multipliée par 18 
+- Variable `MNT_18` (table `T_MCOaaVALO`), qui est normalement égale à `FAC_18E`*18 
 
 *Suggestion :* 
 - Privilégier `FAC_18E` qui a moins de valeurs manquantes.
 - Dans les cas où la participation forfaitaire s'applique, remplacer les taux de remboursement de 80 ou 90% (0.2% des cas) par 100% (on considère que les taux <100% sont des erreurs)
 On attribue donc la valeur de 100% au taux de remboursement corrigé (`TAUX_C`).
-- Penser à remplacer les valeurs manquantes, s'il y en a, pas des 0.
+- Penser à remplacer les valeurs manquantes, s'il y en a, par des 0.
 
 ##### Autres valeurs manquantes 
 
@@ -368,7 +368,7 @@ Pour faciliter le calcul du RAC, penser à remplacer d'éventuelles valeurs manq
 On utilise les variables suivantes :  
 - `TAUX_C`: taux de remboursement du séjour (corrigé)
 - `FJ_C`: montant du forfait journalier pour l'ensemble du séjour (corrigé)
-- `FJ_C2`: montant du forfait journalier facturé (en fonction de la durée de séjour, de l'imputation du FJ sur le TM)
+- `FJ_C2`: montant du forfait journalier effectivement facturé (dont le calcul est présenté ci-dessus)
 - `FAC_18E`: montant à facturer au titre de la participation forfaitaire de 18€ (table `T_MCOAAstc`)
 - `FAC_MNT_TM`: montant à facturer au titre du ticket modérateur (table `T_MCOAAstc`)
 - `FJ_COD_PEC`: code de prise en charge du forfait journalier (table `T_MCOAAstc`)
@@ -376,10 +376,10 @@ On utilise les variables suivantes :
 
 
 Calcul de la variable `rac` dans les différents cas de figure :
-1. `rac` = 0 si `VALO` %in% c(3,4,5) (bénéficiaires de l'AME, SU et détenus)  
+1. `rac` = 0 si `VALO` IN (3,4,5) (bénéficiaires de l'AME, SU et détenus)  
 2. `rac` = 0 si `FJ_COD_PEC`==R & `TAUX_C`==100 (exonération de TM et de FJ)
-3. `rac` = `FAC_18`*18  + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas de FJ)
-4. `rac` = `FAC_MNT_TM` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas de TM)
+3. `rac` = `FAC_18`*18  + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas d'exonération de FJ)
+4. `rac` = `FAC_MNT_TM` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas d'exonération de TM)
 5. `rac` = `FAC_MNT_TM`+`FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` > `FJ_C` (aucune exonération, TM>FJ)
 6. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` < `FJ_C` (aucune exonération, FJ>TM)
 
@@ -393,14 +393,17 @@ Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir
 
 #### Les tables et variables mobilisées
 
-Pour joindre les tables mentionnées ci-dessous, il faut passer par la **table de chaînage patients** (`T_SSRaaC`).  
-La clef de chaînage est le couple (`RHA_NUM`, `ETA_NUM`) où `RHA_NUM` est le numéro séquentiel du séjour et `ETA_NUM` le numéro FINESS de l'établissement.   
-Dans la table de chaînage patients, on trouve l'identifiant du bénéficiaire `NIR_ANO_17` (*cf.* fiche Identifiant des bénéficiaires pour plus d'informations).
+Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depense_hopital_public.md).
 
-Dans la table `T_SSRaaC`, nous considérons également les variables :
-- `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent les dates d'entrée et de sortie à l'hôpital respectivement 
+La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ETA_NUM`, `RHA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement 
+et `RHA_NUM` le numéro séquentiel du séjour. 
 
-Avant 2017, la table `T_SSRaaValo` de valorisation des séjours (données retraitées par l'ATIH) n'était pas disponible. Pour 2016, nous ne disposons que des données de facturation "brutes" transmises par l'établissement.  
+Dans la **table de chaînage patients** `T_SSRaaC`, nous considérons les variables :
+- `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.html))
+- `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent les dates d'entrée et de sortie à l'hôpital respectivement  
+
+La table `T_SSRaaVALO` de valorisation des séjours (données retraitées par l'ATIH) n'existait pas avant 2017. Il faut privilégier son utilisation si elle est disponible.   
+Pour 2016, nous ne disposons que des données de facturation "brutes" transmises par l'établissement de la table `T_SSRaaSTC`.  
 
 Dans la table `T_SSRaaSTC`, qui est la **table de prise en charge des séjours dans le public** (données brutes renseignées par l'établissement), on s'intéresse aux variables suivantes :  
 - `REM_BAS_MNT` : coût du séjour calculé par l'établissement (sert de base de remboursement pour le TM) 
@@ -416,8 +419,8 @@ Dans la table `T_SSRaaSTC`, qui est la **table de prise en charge des séjours d
 Dans la table `T_SSRaaS`, qui est la **table de synthèse du séjour**, nous considérons les variables :
 - `ENT_MOD` : mode d'entrée dans le champ PMSI SSR
 - `SOR_MOD` : mode de sortie du champ PMSI SSR (mêmes modalités que décrites pour le MCO) 
-- `PRE_JOU_NBR` : nombre de jours de presence
-- `SEJ_NBJ` : duree (totale) du sejour
+- `PRE_JOU_NBR` : nombre de jours de présence
+- `SEJ_NBJ` : durée (totale) du sejour
 
 Dans la table `T_SSRaaB`, qui est la **table de description du séjour**, nous considérons les variables :
 - `HOS_TYP_UM` : type d'hospitalisation UM, qui permet de séparer les hospitalisations complètes et partielles, sachant qu'il y a un unique mode d'hospitatalisation par séjour. 
@@ -430,23 +433,18 @@ Cette variable prend les valeurs suivantes :
 
 #### Filtres à ajouter
 
-Les filtres sur les séjours en SSR sont les suivants :
-- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
-- Exclusion des séjours en erreur (en utilisant la variable `GRG_GME`)
-- Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
-- Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
-- Exclusion des séjours non valorisés (variable `FAC_SEJ_AM` dans `T_SSRaaSTC`)  
+Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
+charge lors de séjours en SSR en établissments publics sont détaillées dans la 
+[fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)).
 
-Pour plus de détails sur les filtres à appliquer, se référer à la fiche sur les dépenses à l'hôpital public.
-
-
-#### Méthodologie d'exploitation du PMSI SSR pour le calcul du reste à charge
+### Méthodologie d'exploitation du PMSI SSR pour le calcul du reste à charge
 
 ##### Nettoyage des taux de remboursement
 
 Le taux de remboursement est indiqué par la variable `REM_TAU` (table `T_SSRaaSTC`) fournie par l'établissement (sans avoir été corrigée par l'ATIH).  
 
-Il est possible de reconstruire ce taux comme indiqué dans la documentation de l'ATIH à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
+Il est possible de reconstruire ce taux comme indiqué dans la [documentation de l'ATIH]((https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwj2rJaj-OTlAhU2D2MBHWvqAHMQFjAAegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F9797%2F2100&usg=AOvVaw3JFAfMc9byZDL3-VO5C0Yj)) 
+à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
 La variable `tx_ATIH` peut être calculée comme suit :  
   - Si `EXO_TM` est dans [0,2] et `NAT_ASS` est dans [10,13] alors `tx_ATIH` prend la valeur de 80%
   - Si `EXO_TM` est dans [0,2] et `NAT_ASS` n'est pas dans [10,13] alors `tx_ATIH` prend la valeur de 100%
@@ -491,7 +489,6 @@ On peut également créer une variable corrigée appelée `FJ_C2` qui prend la v
 
 Pour faciliter le calcul du RAC, penser à remplacer d'éventuelles valeurs manquantes de `FAC_18E` et `FAC_MNT_TM` par des 0.
 
-
 ##### Calcul du RAC
 
 On utilise les variables suivantes :  
@@ -519,14 +516,17 @@ Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir
 
 #### Les tables et variables mobilisées
 
-Pour joindre les tables mentionnées ci-dessous, il faut passer par la **table de chaînage patients** (`T_HADaaC`).  
-La clef de chaînage est le couple (`RHAD_NUM`, `ETA_NUM_EPMSI`) où `RHA_NUM` est le numéro séquentiel du séjour et `ETA_NUM_EPMSI` le numéro FINESS de l'établissement.   
-Dans la table de chaînage patients, on trouve l'identifiant du bénéficiaire `NIR_ANO_17` (*cf.* fiche Identifiant des bénéficiaires pour plus d'informations).
+Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depense_hopital_public.md).
 
-Dans la table `T_HADaaC`, nous considérons également les variables :
-- `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent respectivement le début et la fin de la prise en charge à domicile
+La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ETA_NUM_EPMSI`, `RHAD_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement 
+et `RHAD_NUM` le numéro séquentiel du séjour. 
 
-Avant 2017, la table `T_HADaaValo` de valorisation des séjours (données retraitées par l'ATIH) n'était pas disponible. Pour 2016, nous ne disposons que des données de facturation "brutes" transmises par l'établissement.  
+Dans la **table de chaînage patients** `T_HADaaC`, nous considérons les variables :
+- `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.html))
+- `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent respectivement les dates de début et de fin de la prise en charge à domicile 
+
+La table `T_HADaaVALO` de valorisation des séjours (données retraitées par l'ATIH) n'existait pas avant 2017. Il faut privilégier son utilisation si elle est disponible.   
+Pour 2016, nous ne disposons que des données de facturation "brutes" transmises par l'établissement de la table `T_HADaaSTC`.  
 
 Dans la table `T_HADaaSTC`, qui est la **table de prise en charge des séjours dans le public** (données brutes renseignées par l'établissement), on s'intéresse aux variables suivantes :  
 - `REM_BAS_MNT` : coût du séjour calculé par l'établissement (sert de base de remboursement pour le TM) 
@@ -542,19 +542,14 @@ Dans la table `T_HADaaS`, qui est la table de synthèse des résumés anonymes p
 - `SEJ_NBJ` : nombre de journées dans le séjour
 
 Dans la table `T_HADaaGRP`, qui est la table de groupage, nous considérons les variables :
-- `GHT_NUM` : groupe homogène de tarif 
+- `GHT_NUM` : groupe homogène de tarif ([GHT](../glossaire/GHT.md))
 - `PAP_GRP_GHPC` : groupe homogène de prise en charge
 
 #### Filtres à ajouter
 
-Les filtres sur les séjours en HAD sont les suivants :
-- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM_EPMSI`)
-- Exclusion des séjours en erreur (en utilisant la variable `PAP_GRP_GHPC`)
-- Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
-- Exclusion des séjours non valorisés (variable `FAC_SEJ_AM` dans `T_HADaaSTC`) 
-
-Pour plus de détails sur les filtres à appliquer, se référer à la fiche sur les dépenses à l'hôpital public.
-
+Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
+charge lors de séjours en HAD en établissments publics sont détaillées dans la 
+[fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)).
 
 #### Méthodologie d'exploitation du PMSI HAD pour le calcul du reste à charge
 
@@ -562,7 +557,8 @@ Pour plus de détails sur les filtres à appliquer, se référer à la fiche sur
 
 Le taux de remboursement est indiqué par la variable `REM_TAU` (table `T_HADaaSTC`) fournie par l'établissement (sans avoir été corrigée par l'ATIH).  
 
-Il est possible de reconstruire ce taux comme indiqué dans la documentation de l'ATIH à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
+Il est possible de reconstruire ce taux comme indiqué dans la [documentation de l'ATIH](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is)  
+à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
 La variable `tx_ATIH` peut être calculée comme suit :  
   - Si `EXO_TM` est dans [0,2] et `NAT_ASS` est dans [10,13] alors `tx_ATIH` prend la valeur de 80%
   - Si `EXO_TM` est dans [0,2] et `NAT_ASS` n'est pas dans [10,13] alors `tx_ATIH` prend la valeur de 100%
@@ -612,13 +608,10 @@ Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad 
 
 *Sources :*  
 - Code de la sécurité sociale : articles L174-4, L.322-2 et L.322-3, L325-1, D 325-1, D 325-6, L 861-3, R 174-5, R 174-5-1 et R 174-5-2
-- Fiche du Ministère de la santé sur la facturation du forfait journalier hospitalier (https://solidarites-sante.gouv.fr/professionnels/gerer-un-etablissement-de-sante-medico-social/financement/regles-de-facturation/article/la-facturation-les-regles)
-- Fiche du Ministère de la santé sur les tarifs de prestation (https://solidarites-sante.gouv.fr/IMG/pdf/tarifs_de_prestations-3.pdf)
-- Fiche du Ministère de la santé sur la facturation du ticket modérateur forfaitaire  
-(https://solidarites-sante.gouv.fr/IMG/pdf/ticket_moderateur_forfaitaire_de_18eur.pdf)
-- Projet de loi de financement de la sécurité sociale pour 2020 (http://www.assemblee-nationale.fr/15/projets/pl2296.asp)
-- ATIH - Manuel d'utilisation du logiciel VisualValoSej (PMSI MCO)
-(https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is)
-- ATIH - Manuel d'utilisation du logiciel VisualValo SSR
-(https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwj2rJaj-OTlAhU2D2MBHWvqAHMQFjAAegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F9797%2F2100&usg=AOvVaw3JFAfMc9byZDL3-VO5C0Yj)
+- [Fiche du Ministère de la santé sur la facturation du forfait journalier hospitalier](https://solidarites-sante.gouv.fr/professionnels/gerer-un-etablissement-de-sante-medico-social/financement/regles-de-facturation/article/la-facturation-les-regles)
+- [Fiche du Ministère de la santé sur les tarifs de prestation](https://solidarites-sante.gouv.fr/IMG/pdf/tarifs_de_prestations-3.pdf)
+- [Fiche du Ministère de la santé sur la facturation du ticket modérateur forfaitaire](https://solidarites-sante.gouv.fr/IMG/pdf/ticket_moderateur_forfaitaire_de_18eur.pdf)
+- [Projet de loi de financement de la sécurité sociale pour 2020](http://www.assemblee-nationale.fr/15/projets/pl2296.asp)
+- [ATIH - Manuel d'utilisation du logiciel VisualValoSej (PMSI MCO)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is) 
+- [ATIH - Manuel d'utilisation du logiciel VisualValo SSR](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwj2rJaj-OTlAhU2D2MBHWvqAHMQFjAAegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F9797%2F2100&usg=AOvVaw3JFAfMc9byZDL3-VO5C0Yj)
 - Supports de formation de la CNAM sur le DCIRS et le PMSI
