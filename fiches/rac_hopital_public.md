@@ -25,13 +25,14 @@ Celle-ci n’est pas exhaustive et doit être traitée avec précaution.
 
 ## Composantes et modalités de calcul du reste à charge 
 
-Généralement, le reste à charge hospitalier est composé :
+Généralement, le reste à charge (RAC) hospitalier est composé :
 - d'un **ticket modérateur** ou d'une **participation forfaitaire**
 - d'un **forfait hospitalier**
 
 Avec d'éventuelles exonérations en fonction du profil des patients, du type d’actes et de séjours, de la durée de séjour, etc.  
+En complément, d'éventuels dépassements d'honoraires peuvent s'appliquer aux séjours hospitaliers, dans le cadre de l'activité libérale des praticiens hospitaliers.
 
-Nous allons détailler ces différentes composantes et leurs règles d'imputation, afin de calculer le reste à charge du patient après AMO. 
+Nous allons détailler les différentes composantes du RAC et leurs règles d'imputation, afin de calculer le reste à charge du patient après AMO. 
 
 
 ### Les différents composants du reste à charge
@@ -158,7 +159,8 @@ Les personnes exonérées sont [les suivantes](https://www.ameli.fr/assure/rembo
 - les personnes prises en charge au titre d'une affection de longue durée exonérante, pour les actes, soins et traitements en rapport avec cette affection et qui sont mentionnés sur le protocole de soins
 - les personnes prises en charge au titre du diagnostic et du traitement de la stérilité, pour les actes, soins et traitements nécessaires, y compris l'insémination artificielle.
 
-
+#### L'activité libérale des praticiens hospitaliers
+[à compléter]  
 
 ### Résumé des règles de calcul de la participation du patient 
 
@@ -183,7 +185,8 @@ TR : taux de remboursement (%)
 
 
 *Note >*  
-Le tableau ci-dessus couvre le cas général, à partir de l'exemple du MCO, mais n'est pas exhaustif.  Nous reviendrons sur les particularités par PMSI dans le reste de la fiche.
+Le tableau ci-dessus couvre le cas général, à partir de l'exemple du MCO, mais n'est pas exhaustif.  
+Nous reviendrons sur les particularités par PMSI dans le reste de la fiche.
 En voici les principales différences :  
 - Il n'y a pas de forfait journalier en HAD (on est donc systématiquement dans le cas de figure avec exonération de FJ)
 - En MCO, on appelle "hospitalisation partielle" un séjour de moins de 24 heures sans nuitée. Si un même patient revient plusieurs fois à la journée, il y aura autant de séjours que de journées d'hospitalisation.  
@@ -192,6 +195,9 @@ En voici les principales différences :
   À noter qu'il n'y a qu'un type d'hospitalisation (complète / partielle) par séjour. Tout changement de type d'hospitalisation donnera lieu à un nouveau séjour. 
 - Lors de séjours en hospitalisation partielle en SSR, il n'y a pas de FJ facturé. Le temps passé à l'hôpital est indiqué par le nombre de jours de présence.    
 - Lors de séjours en hospitalisation complète en SSR, le patient peut bénéficier de permissions. Ainsi, pour connaître le temps passé à l'hôpital, il ne faut pas compter la durée de séjour (*i.e.* le nombre de jours entre le début et la fin du séjour), mais le nombre de jours de présence.    
+
+Enfin, dans ce tableau ne figurent pas les éventuels dépassements d'honoraires qui 
+peuvent avoir lieu au cours de séjours hospitaliers dans le cadre de l'activité libérale des praticiens hospitaliers.    
 
 **[A CREUSER]** : Est-ce que la règle d’exonération du TM au-delà de 30 jours s’applique uniquement en cas d’hospitalisation complète ? 
 
@@ -203,10 +209,21 @@ En voici les principales différences :
 - Les **séjours exonérés du ticket modérateur et du forfait journalier** sont identifiés à partir du motif d’exonération du FJ et éventuellement de la nature du séjour (AME, SU, détenu). 
 - En complément, le **type d'hospitalisation** (complète / partielle / ambulatoire) et la **durée de séjour** permettent de multiplier les cas au sein de chaque catégorie de séjour.
 
-## En pratique : calcul des restes à charge hospitaliers à partir du SNDS
+## En pratique : calcul des restes à charge hospitaliers à partir du PMSI
 
-Les données nous permettent de retracer le reste à charge (RAC) facturable mais pas le RAC effectivement facturé par l'établissement.  
-L'ATIH conseille en effet de calculer le RAC facturable.
+Dans cette partie, nous proposons une méthodologie pour calculer les restes à charge (RAC) 
+lors de séjours hospitaliers en établissements publics à partir du PMSI.  
+Il s'agit du RAC facturable, d'après les règles de calcul du RAC décrites en première partie. 
+
+Le reste à charge lors des ACE a été traité dans la fiche sur les [dépenses de santé en établissements de santé publics](../fiches/depense_hopital_public.md).
+
+**Limites :**  
+Le calcul du RAC présenté ci-dessous ne tient pas compte des éventuels dépassements 
+d'honoraires qui peuvent avoir lieu lors des séjours. Dans ces cas-là, les honoraires 
+du praticien hospitalier sont directement facturés au patient (en plus des frais associés au séjour) 
+et n'apparaissent pas dans le PMSI mais dans le DCIRS.  
+
+
 
 ### MCO
 
