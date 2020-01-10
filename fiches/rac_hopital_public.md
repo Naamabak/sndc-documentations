@@ -199,11 +199,8 @@ En voici les principales différences :
 ### Catégories de séjours pour le calcul du reste à charge (RAC)
 
 - Les **séjours avec un ticket modérateur** (TM) sont identifiés à partir du motif d’exonération du TM, du taux de remboursement et éventuellement de la nature du séjour (AME, SU, détenu). 
-
 - Les **séjours avec acte coûteux** sont identifiés à partir du motif d’exonération du TM, du taux de remboursement et de la facturation ou non de la participation forfaitaire.
-
 - Les **séjours exonérés du ticket modérateur et du forfait journalier** sont identifiés à partir du motif d’exonération du FJ et éventuellement de la nature du séjour (AME, SU, détenu). 
-
 - En complément, le **type d'hospitalisation** (complète / partielle / ambulatoire) et la **durée de séjour** permettent de multiplier les cas au sein de chaque catégorie de séjour.
 
 ## En pratique : calcul des restes à charge hospitaliers à partir du SNDS
