@@ -12,7 +12,7 @@ Nous ne traitons pas ici le calcul du reste à charge en psychiatrie pour lequel
 
 L'ensemble des dépenses associées à un séjour en établissement public comprend :
 
-* le **montant appelé "AMO"**, qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires prises en charge par le public (CMU-C, Aide Médicale d'Etat, soins urgents, détenus, etc.)
+* le montant, que nous noterons pour simplifier, **"montant AMO"**, et qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) ainsi que les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
 * le **reste à charge après AMO** (payé par le patient et / ou son organisme complémentaire)
 
 Pour plus d'informations sur ce montant AMO, se référer à la fiche sur "les dépenses des établissements de santé publics dans le PMSI".
