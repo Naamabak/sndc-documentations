@@ -209,11 +209,12 @@ peuvent avoir lieu au cours de séjours hospitaliers dans le cadre de l'activit�
 - Les **séjours exonérés du ticket modérateur et du forfait journalier** sont identifiés à partir du motif d’exonération du FJ et éventuellement de la nature du séjour (AME, SU, détenu). 
 - En complément, le **type d'hospitalisation** (complète / partielle / ambulatoire) et la **durée de séjour** permettent de multiplier les cas au sein de chaque catégorie de séjour.
 
-## En pratique : calcul des restes à charge hospitaliers à partir du PMSI
+## En pratique : calcul des restes à charge hospitaliers à partir du PMSI MCO
 
-Dans cette partie, nous proposons une méthodologie pour calculer les restes à charge (RAC) 
-lors de séjours hospitaliers en établissements publics à partir du PMSI.  
-Il s'agit du RAC facturable, calculé à partir des règles décrites en première partie. 
+Dans cette partie, et les suivantes, nous appliquons les règles décrites en première partie 
+et proposons une méthodologie pour calculer les restes à charge (RAC) lors de séjours hospitaliers 
+en établissements publics à partir du PMSI.  
+Cette méthodologie est déclinée par discipline hospitalière.  
 
 Le reste à charge lors des [ACE](../fiches/actes_consult_externes.html#que-regroupent-les-actes-et-consultations-externes) 
 a été traité dans la fiche sur les [dépenses de santé en établissements de santé publics](../fiches/depense_hopital_public.md).
@@ -225,12 +226,9 @@ du praticien hospitalier sont directement facturés au patient (en plus des frai
 et n'apparaissent pas dans le PMSI mais dans le DCIRS.  
 
 
-
-### MCO
-
 Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir des données du PMSI MCO de 2016.  
 
-#### Les tables et variables mobilisées
+### Les tables et variables mobilisées
 
 Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depense_hopital_public.md).
 
@@ -307,15 +305,15 @@ Dans la table `T_MCOaaB`, qui est la **table de description du séjour**, nous c
 - `TYP_GEN_RSA` : type de génération automatique du résumé de sortie anonyme
 
 
-#### Filtres à ajouter
+### Filtres à ajouter
 
 Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
 charge lors de séjours en établissments publics sont détaillées dans la [fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)).
 
 
-#### Méthodologie d'exploitation du PMSI MCO pour le calcul du reste à charge
+### Méthodologie d'exploitation du PMSI MCO pour le calcul du reste à charge
 
-##### Nettoyage des taux de remboursement
+#### Nettoyage des taux de remboursement
 
 Deux variables renseignent le taux de remboursement :
 - Variable `REM_TAU` (table `T_MCOaaSTC`) fournie par l'établissement
@@ -339,7 +337,7 @@ Nous suggérons la création de la variable corrigée `TAUX_C` comme suit :
 3. Si `TAUX2` manquant ou nul (hors prélèvement d’organe) : `TAUX_C` est égal à `tx_ATIH`
 4. Si `TAUX2` et `tx_ATIH` sont manquant, supprimer la ligne
 
-##### Nettoyage du forfait journalier
+#### Nettoyage du forfait journalier
 
 Deux variables renseignent le montant du forfait journalier :
 - Variable `FAC_MNT_FJ` (table `T_MCOaaSTC`)
@@ -362,7 +360,7 @@ On peut également créer une variable corrigée appelée `FJ_C2` qui prend la v
 
 *ATTENTION > en cas de séjours contigüs, la limite des 30 jours s'applique à la durée d'hospitalisation cumulée. Pour plus de rigueur, il faudrait chaîner les séjours pour calculer la durée de séjour, non pas par PMSI, mais depuis l'entrée à l'hôpital.*
 
-##### Nettoyage de la participation forfaitaire
+#### Nettoyage de la participation forfaitaire
 
 Il existe deux façons de renseigner la facturation ou non de la participation forfaitaire (qui était de 18 € en 2016) :
 - Variable `FAC_18E` (table `T_MCOaaSTC`), renseignée par l'établissement
@@ -374,11 +372,11 @@ Il existe deux façons de renseigner la facturation ou non de la participation f
 On attribue donc la valeur de 100% au taux de remboursement corrigé (`TAUX_C`).
 - Penser à remplacer les valeurs manquantes, s'il y en a, par des 0.
 
-##### Autres valeurs manquantes 
+#### Autres valeurs manquantes 
 
 Pour faciliter le calcul du RAC, penser à remplacer d'éventuelles valeurs manquantes de `FAC_MNT_TM` par des 0.
 
-##### Calcul du RAC
+#### Calcul du RAC
 
 On utilise les variables suivantes :  
 - `TAUX_C`: taux de remboursement du séjour (corrigé)
@@ -402,11 +400,11 @@ Le coût total du séjour correspond au montant pris en charge par l’assurance
 
 Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_MCOaaC`).
 
-### SSR
+## En pratique : calcul des restes à charge hospitaliers à partir du PMSI SSR
 
 Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir des données du PMSI SSR de 2016.  
 
-#### Les tables et variables mobilisées
+### Les tables et variables mobilisées
 
 Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depense_hopital_public.md).
 
@@ -446,7 +444,7 @@ Cette variable prend les valeurs suivantes :
   * code 4 : hospitalisation partielle de séances  
 - `GRG_GME` : groupe médico-économique attribué au séjour
 
-#### Filtres à ajouter
+### Filtres à ajouter
 
 Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
 charge lors de séjours en SSR en établissments publics sont détaillées dans la 
@@ -454,7 +452,7 @@ charge lors de séjours en SSR en établissments publics sont détaillées dans 
 
 ### Méthodologie d'exploitation du PMSI SSR pour le calcul du reste à charge
 
-##### Nettoyage des taux de remboursement
+#### Nettoyage des taux de remboursement
 
 Le taux de remboursement est indiqué par la variable `REM_TAU` (table `T_SSRaaSTC`) fournie par l'établissement (sans avoir été corrigée par l'ATIH).  
 
@@ -477,7 +475,7 @@ Nous suggérons la création de la variable corrigée `TAUX_C` comme suit :
 
 On peut également attribuer un taux de remboursement corrigé (`TAUX_C`) de 100% dans les cas où la participation forfaitaire s'applique.  
 
-##### Nettoyage du forfait journalier
+#### Nettoyage du forfait journalier
 
 Le montant du forfait journalier est renseigné par la variable `FAC_MNT_FJ` (table `T_SSRaaSTC`).  
 
@@ -500,11 +498,11 @@ On peut également créer une variable corrigée appelée `FJ_C2` qui prend la v
 *ATTENTION > en cas de séjours contigüs, la limite des 30 jours s'applique à la durée d'hospitalisation cumulée. Pour plus de rigueur, il faudrait chaîner les séjours pour calculer la durée de séjour, non pas pas PMSI, mais depuis l'entrée à l'hôpital.*  
 
 
-##### Autres valeurs manquantes 
+#### Autres valeurs manquantes 
 
 Pour faciliter le calcul du RAC, penser à remplacer d'éventuelles valeurs manquantes de `FAC_18E` et `FAC_MNT_TM` par des 0.
 
-##### Calcul du RAC
+#### Calcul du RAC
 
 On utilise les variables suivantes :  
 - `TAUX_C`: taux de remboursement du séjour (corrigé)
@@ -525,11 +523,11 @@ Le coût total du séjour correspond au montant pris en charge par l’assurance
 
 Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_SSRaaC`).
 
-### HAD
+## En pratique : calcul des restes à charge hospitaliers à partir du PMSI SSR
 
 Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir des données du PMSI HAD de 2016.  
 
-#### Les tables et variables mobilisées
+### Les tables et variables mobilisées
 
 Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depense_hopital_public.md).
 
@@ -560,15 +558,15 @@ Dans la table `T_HADaaGRP`, qui est la table de groupage, nous considérons les 
 - `GHT_NUM` : groupe homogène de tarif ([GHT](../glossaire/GHT.md))
 - `PAP_GRP_GHPC` : groupe homogène de prise en charge
 
-#### Filtres à ajouter
+### Filtres à ajouter
 
 Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
 charge lors de séjours en HAD en établissments publics sont détaillées dans la 
 [fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)).
 
-#### Méthodologie d'exploitation du PMSI HAD pour le calcul du reste à charge
+### Méthodologie d'exploitation du PMSI HAD pour le calcul du reste à charge
 
-##### Nettoyage des taux de remboursement
+#### Nettoyage des taux de remboursement
 
 Le taux de remboursement est indiqué par la variable `REM_TAU` (table `T_HADaaSTC`) fournie par l'établissement (sans avoir été corrigée par l'ATIH).  
 
@@ -591,11 +589,11 @@ Tout comme en SSR, nous suggérons la création de la variable corrigée `TAUX_C
 
 On peut également attribuer un taux de remboursement corrigé (`TAUX_C`) de 100% dans les cas où la participation forfaitaire s'applique.  
 
-##### Autres valeurs manquantes 
+#### Autres valeurs manquantes 
 
 Pour faciliter le calcul du RAC, penser à remplacer d'éventuelles valeurs manquantes de `FAC_18E` et `FAC_MNT_TM` par des 0.
 
-##### Calcul du RAC
+#### Calcul du RAC
 
 Par définition, il n'y a pas de forfait journalier en hospitalisation *à domicile*, ce qui simplifie le calcul du reste à charge.  
 
