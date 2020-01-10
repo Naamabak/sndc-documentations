@@ -1,6 +1,8 @@
 # Dépenses des établissements de santé publics dans le PMSI
 
-Cette fiche explique comment retrouver les dépenses des établissements publics dans le PMSI.  
+Cette fiche explique comment retrouver les dépenses des établissements publics dans le PMSI. 
+
+Nous y traitons les dépenses associées aux séjours hospitaliers ainsi qu'aux actes et consultations externes ([ACE](../fiches/actes_consult_externes.md)).
 
 Les explications sont déclinées par spécialité hospitalière : 
 - [MCO](../glossaire/MCO.html) : médecine chirurgie obstétrique et odontologie
@@ -9,31 +11,39 @@ Les explications sont déclinées par spécialité hospitalière :
 - [PSY](../glossaire/RIM-P.html) : psychiatrie   
 
 Pour plus de détail sur ces spécialités, se reporter à la [documentation de l'ATIH](https://www.atih.sante.fr/domaines-d-activites/information-medicale), ou au 
-[panorama Etablissements de santé de la DREES](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
+[panorama Etablissements de santé de la DREES](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019).
 
-L'ensemble des dépenses associées à un séjour (ou à une consultation) en établissement public comprend :
-- le montant, que nous noterons pour simplifier, **"montant AMO"**, et qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) ainsi que les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
+L'ensemble des dépenses associées aux séjours ou ACE en établissement public comprend :
+- le montant, que nous noterons pour simplifier, **"montant AMO"**, et qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) ainsi que les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.).  
+  Nous intégrons à ce montant d'éventuelles dépenses en sus (pour molécules onéreuses notamment) intégralement prises en charge par l'AMO.
 - le **reste à charge après AMO** (RAC AMO), payé par le patient et / ou son organisme complémentaire
 
-Pour plus d'informations sur le calcul du RAC AMO associé à un séjour dans le public, se référer à la fiche sur "le reste à charge après AMO en établissement public".  
-En complément, des informations sur les dépenses en établissements de santé privés se trouvent dans la fiche thématique intitulée "les dépenses des établissement de santé privés (à partir du DCIRS)".
+Dans cette fiche, nous expliquons comment extraire à partir du PMSI :
+- le montant AMO d'un séjour en établissement public  
+- l'ensemble des dépenses associées aux ACE, en séparant montant AMO et RAC AMO
+
+Pour obtenir l'ensemble des dépenses associées à un séjour en établissement public, il faut ajouter au montant AMO décrit dans la présente fiche, le montant du RAC AMO du séjour.   
+Une fiche est en cours de rédaction sur le calcul du reste à charge après AMO en établissement public.
+
+En complément, des informations sur les dépenses en établissements de santé privés se trouvent dans la fiche thématique en cours de rédaction intitulée "les dépenses des établissement de santé privés (à partir du DCIRS)".
 
 
 ::: tip ATTENTION 
 
 Les informations de la présente fiche sur les dépenses des établissements de santé publics 
-sont le fruit d'un travail de documentation et de l'observation des données du PMSI. 
+sont le fruit d'un travail de documentation et de l'observation des données du PMSI.   
 Elles doivent être traitées avec précaution. 
 
 :::
 
 
+## Valorisation des séjours à l'hôpital public 
 
-## Les tables à considérer pour étudier l'activité en hôpital public 
+Nous présentons ici les tables et variables à mobiliser afin de calculer le montant AMO
+associé aux séjours dans chaque discipline hospitalière.
+
 
 ### En MCO
-
-#### Valorisation des séjours
 
 Pour connaitre le montant de la dépense de l'assurance maladie, on utilise la table de valorisation des séjours `T_MCOaaVALO` sous ORAVUE.  
 La variable de montant est `MNT_TOT_AM` : il s'agit du montant présenté à l'assurance maladie.  
@@ -107,11 +117,69 @@ qui prend les valeurs suivantes :
 
 A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, ou est manquante.
 
-Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en MCO.  
-Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
+
+### En SSR 
+
+À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE.  
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des tarifs journaliers de prestation.   
+La table `T_SSRaaB` de description du séjour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), 
+ainsi que sur le [GME](../glossaire/gme.html) (variable `GR_GME`).
+
+La table de chaînage patients se nomme `T_SSRaaC` (toujours sous ORAVUE). On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).   
+Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM`,`RHA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RHA_NUM` le numéro séquentiel du séjour.  
+
+Les filtres sur les séjours sont les suivants :
+- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
+- Exclusion des séjours en erreur (en utilisant la variable `GRG_GME`, dont le code commence par 90 en cas d'erreur)
+- Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
+- Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
+- Exclusion des séjours non valorisés (variable `VALO` dans `T_SSRaaVALO` ou `FAC_SEJ_AM` dans `T_SSRaaSTC`)  
+
+### En HAD 
+
+À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_HADaaVALO` sous ORAVUE.  
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](../glossaire/GHT.html) mais des tarifs journaliers de prestation.   
+La table de chaînage patients se nomme `T_HADaaC`. On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).  
+Des informations sur le [GHPC](../glossaire/GHPC.md) se trouvent dans la table `T_HAD_aaGRP` (variable `PAP_GRP_GHPC`).  
+
+Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM_EPMSI`, `RHAD_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement et `RHAD_NUM` le numéro séquentiel du séjour.  
+
+Les filtres sur les séjours sont les suivants :
+- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM_EPMSI`)
+- Exclusion des séjours en erreur (en utilisant la variable `PAP_GRP_GHPC`, dont le code commence par 99 en cas d'erreur)
+- Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
+- Exclusion des séjours non valorisés (variable `VALO` dans `t_HADaaVALO` ou `FAC_SEJ_AM` dans `T_HADaaSTC`)  
+
+Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en HAD.  
+Pour obtenir le montant total des dépenses, il faut ajouter au montant remboursé par l'AMO, le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".  
+
+### En PSY
+
+En psychiatrie, le nom des tables commence par **RIP** pour **"recueil d'information en psychiatrie"**.  
+La prise en charge peut s'effectuer à temps complet, partiel ou en ambulatoire.  
+Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `T_RIPaaSTC`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation.     
+Des informations complémentaires sur les séjours (notamment le nombre de jours en hospitalisation partielle / complète) peuvent être extraites de la table `T_RIPaaS` de description du sejour.    
+Des informations sur les prises en charge ambulatoires se trouvent dans la table `T_RIPaaR3A`.  
+La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) contient notamment l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).  
+La clef de chaînage entre les tables mentionnées ci-dessus est le couple (`ETA_NUM_EPMSI`, `RIP_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement et `RIP_NUM` est le numéro séquentiel du séjour.  
 
 
-#### Valorisation des actes et consultations externes
+### Dépenses en sus 
+
+Par ailleurs, certains médicaments peuvent être facturés en sus du tarif du séjour ([GHS](../glossaire/gmt.html) en MCO, 
+[GHT](../glossaire/GHT.html) en HAD et [GMT](../glossaire/gmt.html) en SSR) et en sus des ACE (en MCO).  
+Les informations sur les dépenses associées à ces médicaments sont détaillées dans 
+la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).  
+En MCO, certains dispositifs médicaux implantables peuvent également être facturés en sus du [GHS](../glossaire/gmt.html). 
+Les dépenses associées à ces dispositifs sont détaillées dans la [fiche sur les dispositifs médicaux implantables en sus](../fiches/dispositifs_medicaux_implantables_en_sus.html).  
+Par définition, il n'y a pas de reste à charge pour les dépenses en sus qui sont entièrement prises en charge par l'assurance maladie obligatoire.  
+
+À notre connaissance, il n'y a pas de remontée d'information sur les dépenses en sus ni de table dédiée dans le recueil d'information médicalisé. 
+
+
+## Valorisation des actes et consultations externes
+
+### En MCO
 
 Les dépenses d'[actes et consultations externes (ACE)](../fiches/actes_consult_externes.md) des établissements publics et établissements de santé privés d'intérêt collectif (ESPIC) se trouvent dans la table de valorisation des ACE 
 sous `T_MCOaaVALOACE`.   
@@ -130,49 +198,7 @@ Les filtres à appliquer sur les ACE sont les suivants :
 - Exclusion des ACE non valorisées (en utilisant la variable `VALO`)
 
 
-#### Dépenses en SUS 
-
-Les informations sur les dépenses associées aux médicaments facturés en sus du [GHS](../glossaire/GHS.html) 
-(pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU)
-et médicaments thrombolytiques) sont détaillées dans la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).
-Y figurent également des informations sur les médicaments de la liste en sus facturés dans le cadre des ACE. 
-
-Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](../glossaire/GHS.html) 
-lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.  
-Pour l'étude des dépenses associées à ces dispositifs, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
-- Nombre DMI = 0 et prix d’achat ≥ 0
-- Nombre DMI < 0 ou prix d’achat < 0
-- Codes DMI erronés (à vide ou indéterminés)
-- DMI posés hors période d’appartenance à la liste en sus
-
-On peut ensuite déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre de dispositifs posés.  
-
-Par définition, il n'y a pas de reste à charge pour les dépenses en sus qui sont entièrement prises en charge par l'assurance maladie obligatoire.
-
 ## En SSR
-
-#### Valorisation des séjours
-
-À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des tarifs journaliers de prestation.   
-La table `T_SSRaaB` de description du séjour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), 
-ainsi que sur le [GME](../glossaire/gme.html) (variable `GR_GME`).
-
-La table de chaînage patients se nomme `T_SSRaaC` (toujours sous ORAVUE). On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).   
-Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM`,`RHA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RHA_NUM` le numéro séquentiel du séjour.  
-
-Les filtres sur les séjours sont les suivants :
-- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017) (en utilisant la variable `ETA_NUM`)
-- Exclusion des séjours en erreur (en utilisant la variable `GRG_GME`, dont le code commence par 90 en cas d'erreur)
-- Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
-- Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
-- Exclusion des séjours non valorisés (variable `VALO` dans `T_SSRaaVALO` ou `FAC_SEJ_AM` dans `T_SSRaaSTC`)  
-
-Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en SSR.  
-Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
-
-
-#### Valorisation des actes et consultations externes
 
 Les actes et consultations externes en SSR se trouvent dans la table `T_SSRaaCSTC`.  
 Tout comme en MCO, on peut obtenir des détails sur la nature de l'ACE à l'aide de la variable `ACT_COD` de la table `T_SSRaaFBSTC`.  
@@ -187,62 +213,9 @@ Les filtres à appliquer sur les ACE sont les suivants :
 - Exclusion des ACE non valorisées
 
 
-#### Dépenses en SUS 
+## En HAD et PSY
 
-Les informations sur les dépenses associées aux médicaments facturés en sus du [GMT](../glossaire/gmt.html) (pharmacie de la liste en sus et médicaments soumis à autorisation temporaire d'utilisation (ATU)) 
-sont détaillées dans la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).  
-Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie obligatoire.
-
-## En HAD
-
-#### Valorisation des séjours
-
-À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_HADaaVALO` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](../glossaire/GHT.html) mais des tarifs journaliers de prestation.   
-La table de chaînage patients se nomme `T_HADaaC`. On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).  
-Des informations sur le [GHPC](../glossaire/GHPC.md) se trouvent dans la table `T_HAD_aaGRP` (variable `PAP_GRP_GHPC`).  
-
-Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM_EPMSI`, `RHAD_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement et `RHAD_NUM` le numéro séquentiel du séjour.  
-
-Les filtres sur les séjours sont les suivants :
-- Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM_EPMSI`)
-- Exclusion des séjours en erreur (en utilisant la variable `PAP_GRP_GHPC`, dont le code commence par 99 en cas d'erreur)
-- Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
-- Exclusion des séjours non valorisés (variable `VALO` dans `t_HADaaVALO` ou `FAC_SEJ_AM` dans `T_HADaaSTC`)  
-
-Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en HAD.  
-Pour obtenir le montant total des dépenses, il faut ajouter au montant remboursé par l'AMO, le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".  
-
-#### Valorisation des actes et consultations externes
-
-Il n'y a pas d'ACE en HAD. 
-
-#### Dépenses en SUS 
-
-Les informations sur les dépenses associées aux médicaments facturés en sus du [GHT](../glossaire/GHT.html) 
-(pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU) et médicaments coûteux hors liste en sus et hors ATU) 
-sont détaillées dans la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).  
-Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie obligatoire.
-
-## En PSY
-
-#### Valorisation de la prise en charge à temps complet, partiel ou en ambulatoire
-
-En psychiatrie, le nom des tables commence par **RIP** pour **"recueil d'information en psychiatrie"**.  
-La prise en charge peut s'effectuer à temps complet, partiel ou en ambulatoire.  
-Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `T_RIPaaSTC`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation.     
-Des informations complémentaires sur les séjours (notamment le nombre de jours en hospitalisation partielle / complète) peuvent être extraites de la table `T_RIPaaS` de description du sejour.    
-Des informations sur les prises en charge ambulatoires se trouvent dans la table `T_RIPaaR3A`.  
-La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) contient notamment l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).  
-La clef de chaînage entre les tables mentionnées ci-dessus est le couple (`ETA_NUM_EPMSI`, `RIP_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement et `RIP_NUM` est le numéro séquentiel du séjour.  
-
-Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en psychiatrie.  
-Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour.
-
-
-#### Dépenses en SUS 
-
-À notre connaissance, il n'y a pas de remontée d'information sur les dépenses en sus ni de table dédiée dans le recueil d'information médicalisé. 
+Il n'y a pas d'ACE en HAD ni en PSY. 
 
 
 ## Références
