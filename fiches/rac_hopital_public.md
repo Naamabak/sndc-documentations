@@ -213,9 +213,10 @@ peuvent avoir lieu au cours de séjours hospitaliers dans le cadre de l'activit�
 
 Dans cette partie, nous proposons une méthodologie pour calculer les restes à charge (RAC) 
 lors de séjours hospitaliers en établissements publics à partir du PMSI.  
-Il s'agit du RAC facturable, d'après les règles de calcul du RAC décrites en première partie. 
+Il s'agit du RAC facturable, calculé à partir des règles décrites en première partie. 
 
-Le reste à charge lors des ACE a été traité dans la fiche sur les [dépenses de santé en établissements de santé publics](../fiches/depense_hopital_public.md).
+Le reste à charge lors des [ACE](../fiches/actes_consult_externes.html#que-regroupent-les-actes-et-consultations-externes) 
+a été traité dans la fiche sur les [dépenses de santé en établissements de santé publics](../fiches/depense_hopital_public.md).
 
 **Limites :**  
 Le calcul du RAC présenté ci-dessous ne tient pas compte des éventuels dépassements 
