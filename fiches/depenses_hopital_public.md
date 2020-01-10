@@ -12,7 +12,7 @@ Pour plus de détail sur ces spécialités, se reporter à la [documentation de 
 [panorama Etablissements de santé de la DREES](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019)
 
 L'ensemble des dépenses associées à un séjour (ou à une consultation) en établissement public comprend :
-- le **montant appelé "AMO"**, qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) et les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
+- le montant, que nous noterons pour simplifier, **"montant AMO"**, et qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) ainsi que les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
 - le **reste à charge après AMO** (RAC AMO), payé par le patient et / ou son organisme complémentaire
 
 Pour plus d'informations sur le calcul du RAC AMO associé à un séjour dans le public, se référer à la fiche sur "le reste à charge après AMO en établissement public".  
