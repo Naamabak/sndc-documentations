@@ -120,14 +120,24 @@ Le patient s'acquitte de la participation forfaitaire et du forfait journalier (
 
 #### La prise en charge à 100 %
 
-[Certains actes et certains frais ne rentrent pas dans le champ d'application de la participation forfaitaire](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros) 
-et sont pris en charge à 100 %.  
+[Certains actes et certains frais](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros) 
+ne rentrent pas dans le champ d'application de la participation forfaitaire et sont pris en charge à 100 %.  
 Ils font donc l'objet d'une exonération de ticket modérateur et de participation forfaitaire.
 
-De plus, [certaines personnes bénéficient d'une prise en charge à 100 % en raison de leur situation ou de leur état de santé]((https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros)), et sont donc exonérées de la participation forfaitaire.
+De plus, [certaines personnes](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros) 
+bénéficient d'une prise en charge à 100 % en raison de leur situation ou de leur état de santé. 
+Elles sont donc exonérées de la participation forfaitaire.
 
 #### L'activité libérale des praticiens hospitaliers
-[à compléter]  
+
+Les praticiens statutaires exerçant à temps plein sont autorisés à exercer une activité 
+libérale dans l'établissement public de santé où ils sont nommés (*cf.* [fiche sur l’activité libérale des praticiens statutaires](https://solidarites-sante.gouv.fr/IMG/pdf/activite_liberale_des_praticiens_statutaires_exercant_a_temps_plein-3.pdf)).  
+Un patient peut choisir d’être soigné ou hospitalisé dans le cadre de l’activité d’un praticien statutaire exerçant à temps plein. 
+Ce dernier doit l’informer des tarifs et des éventuels dépassements. 
+L’activité libérale peut concerner les consultations externes, les actes médico-techniques et les soins en hospitalisation.  
+Les praticiens exerçant une activité libérale peuvent percevoir leurs honoraires soit directement, soit par l’intermédiaire de l’administration de l’hôpital. 
+Le praticien doit établir une feuille de soins et y porter la cotation des actes réalisés et l’intégralité des honoraires demandés. 
+Ainsi, cette information remonte bien à l'assurance maladie. 
 
 ### Résumé des règles de calcul de la participation du patient 
 
