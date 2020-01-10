@@ -42,7 +42,7 @@ Il est conseillé de considérer `MNT_TOT_AM` de la table `T_MCOaaVALO` corrigé
 Pour un même séjour, ces deux montants ne sont pas calculés selon la même base de remboursement : `MNT_TOT_AM` est calculée sur la base des tarifs nationaux de prestations, *i.e.* les [groupes homogènes de séjours](../glossaire/GHS.md) en MCO, tandis que `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation (TJP).
 
 La table de chaînage patients (`T_MCOaaC` toujours sous ORAVUE) est la seule à contenir l'identifiant du bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).  
-La table des séjours (`T_MCOaaB` sous ORAVUE) apporte des informations supplémentaires sur le séjour (mode d'entrée et de sortie, numéro du GHM, etc.).  
+La table des séjours (`T_MCOaaB` sous ORAVUE) apporte des informations supplémentaires sur le séjour (mode d'entrée et de sortie, numéro du [GHM](../glossaire/GHM.html), etc.).  
 Pour joindre les différentes tables mentionnées, la clef de chaînage est le couple (`ETA_NUM`, `RSA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RSA_NUM` le numéro séquentiel du séjour.  
 
 L'information concernant les établissements se trouve dans la table `T_MCOaaE`. On peut joindre cette table aux précédentes avec `ETA_NUM` uniquement. 
@@ -107,7 +107,7 @@ qui prend les valeurs suivantes :
 
 A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, ou est manquante.
 
-Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en MCO. 
+Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en MCO.  
 Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
 
 
@@ -121,7 +121,7 @@ Le montant des dépenses est donné par la variable `MNT_BR`, la base de rembour
 La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie (part légale et participations supplémentaires (détenus, SU, etc.)).    
 Le montant du reste à charge (RAC AMO) peut-être calculé comme la différence entre `MNT_BR` et `MNT_REMB`. 
 
-La table patients correspondant aux ACE est `T_MCOaaCSTC`. Elle contient notamment l'identifiant bénéficiaire `NIR_ANO_17`.
+La table patients correspondant aux ACE est `T_MCOaaCSTC`. Elle contient notamment l'identifiant bénéficiaire `NIR_ANO_17`.  
 Le chaînage entre toutes les tables mentionnées ci-dessus s'effectue via le couple (`ETA_NUM`, `SEQ_NUM`).  
 
 Les filtres à appliquer sur les ACE sont les suivants :
@@ -137,7 +137,8 @@ Les informations sur les dépenses associées aux médicaments facturés en sus 
 et médicaments thrombolytiques) sont détaillées dans la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).
 Y figurent également des informations sur les médicaments de la liste en sus facturés dans le cadre des ACE. 
 
-Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](../glossaire/GHS.html) lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.
+Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](../glossaire/GHS.html) 
+lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.  
 Pour l'étude des dépenses associées à ces dispositifs, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
 - Nombre DMI = 0 et prix d’achat ≥ 0
 - Nombre DMI < 0 ou prix d’achat < 0
@@ -146,14 +147,14 @@ Pour l'étude des dépenses associées à ces dispositifs, l'[ATIH](https://www.
 
 On peut ensuite déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre de dispositifs posés.  
 
-Par définition, il n'y a pas de reste à charge pour les dépenses en sus qui sont entièrement prises en charge par l'assurance maladie.
+Par définition, il n'y a pas de reste à charge pour les dépenses en sus qui sont entièrement prises en charge par l'assurance maladie obligatoire.
 
 ## En SSR
 
 #### Valorisation des séjours
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des TJP.   
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des tarifs journaliers de prestation.   
 La table `T_SSRaaB` de description du séjour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), 
 ainsi que sur le [GME](../glossaire/gme.html) (variable `GR_GME`).
 
@@ -167,7 +168,7 @@ Les filtres sur les séjours sont les suivants :
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des séjours non valorisés (variable `VALO` dans `T_SSRaaVALO` ou `FAC_SEJ_AM` dans `T_SSRaaSTC`)  
 
-Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en SSR. 
+Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en SSR.  
 Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
 
 
@@ -175,9 +176,9 @@ Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC A
 
 Les actes et consultations externes en SSR se trouvent dans la table `T_SSRaaCSTC`.  
 Tout comme en MCO, on peut obtenir des détails sur la nature de l'ACE à l'aide de la variable `ACT_COD` de la table `T_SSRaaFBSTC`.  
-Les deux tables peuvent se joindre par la clef de chaînage (`ETA_NUM`, `SEQ_NUM`).  
-On peut utiliser la table de facturation `T_SSRaaFASTC` pour calculer le montant total des dépenses (somme de `PH_MNT`, le montant total facturé pour PH, et de `HON_MNT`, le total honoraire facturé),
-ainsi que le montant remboursé par l'AMO (somme de `PH_AMO_MNR`, le total remboursable AMO prestation hospitalieres, et de `HON_AM_MNR`, le total honoraire remboursable AM).  
+Les deux tables peuvent se joindre par la clef de chaînage (`ETA_NUM`, `SEQ_NUM`).
+On peut utiliser la table de facturation `T_SSRaaFASTC` pour calculer le montant total des dépenses (somme de `PH_MNT`, le montant total facturé pour les prestations hospitalières (PH), et de `HON_MNT`, le total des honoraires facturés), 
+ainsi que le montant remboursé par l'AMO (somme de `PH_AMO_MNR`, le total remboursable AMO prestation hospitalieres, et de `HON_AM_MNR`, le total honoraire remboursable AMO).  
 Le montant du reste à charge (RAC AMO) peut-être calculé comme la différence entre le montant total des dépenses et le montant remboursé par l'AMO. 
 
 Les filtres à appliquer sur les ACE sont les suivants :
@@ -190,14 +191,14 @@ Les filtres à appliquer sur les ACE sont les suivants :
 
 Les informations sur les dépenses associées aux médicaments facturés en sus du [GMT](../glossaire/gmt.html) (pharmacie de la liste en sus et médicaments soumis à autorisation temporaire d'utilisation (ATU)) 
 sont détaillées dans la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).  
-Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie.
+Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie obligatoire.
 
 ## En HAD
 
 #### Valorisation des séjours
 
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_HADaaVALO` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](../glossaire/GHT.html) mais des TJP.   
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](../glossaire/GHT.html) mais des tarifs journaliers de prestation.   
 La table de chaînage patients se nomme `T_HADaaC`. On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires pour plus d'informations](../fiches/fiche_beneficiaire.md)).  
 Des informations sur le [GHPC](../glossaire/GHPC.md) se trouvent dans la table `T_HAD_aaGRP` (variable `PAP_GRP_GHPC`).  
 
@@ -209,9 +210,8 @@ Les filtres sur les séjours sont les suivants :
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
 - Exclusion des séjours non valorisés (variable `VALO` dans `t_HADaaVALO` ou `FAC_SEJ_AM` dans `T_HADaaSTC`)  
 
-Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en HAD. 
-Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".
-
+Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en HAD.  
+Pour obtenir le montant total des dépenses, il faut ajouter au montant remboursé par l'AMO, le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".  
 
 #### Valorisation des actes et consultations externes
 
@@ -222,7 +222,7 @@ Il n'y a pas d'ACE en HAD.
 Les informations sur les dépenses associées aux médicaments facturés en sus du [GHT](../glossaire/GHT.html) 
 (pharmacie de la liste en sus, médicaments soumis à autorisation temporaire d'utilisation (ATU) et médicaments coûteux hors liste en sus et hors ATU) 
 sont détaillées dans la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).  
-Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie.
+Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont entièrement prises en charge par l'assurance maladie obligatoire.
 
 ## En PSY
 
@@ -230,13 +230,13 @@ Par définition, il n'y a pas de reste à charge pour ces dépenses qui sont ent
 
 En psychiatrie, le nom des tables commence par **RIP** pour **"recueil d'information en psychiatrie"**.  
 La prise en charge peut s'effectuer à temps complet, partiel ou en ambulatoire.  
-Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `T_RIPaaSTC`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des TJP.     
+Quel que soit le mode de prise en charge, le montant des dépenses se trouve dans la table de facturation transmise par les établissements `T_RIPaaSTC`, dans laquelle la variable `TOT_MNT_AM` est calculée sur la base des tarifs journaliers de prestation.     
 Des informations complémentaires sur les séjours (notamment le nombre de jours en hospitalisation partielle / complète) peuvent être extraites de la table `T_RIPaaS` de description du sejour.    
 Des informations sur les prises en charge ambulatoires se trouvent dans la table `T_RIPaaR3A`.  
 La table de chaînage patients (`T_RIPaaC` toujours sous ORAVUE) contient notamment l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](..fiches/fiche_beneficiaire.md) pour plus d'informations).  
 La clef de chaînage entre les tables mentionnées ci-dessus est le couple (`ETA_NUM_EPMSI`, `RIP_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement et `RIP_NUM` est le numéro séquentiel du séjour.  
 
-Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en psychiatrie. 
+Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en psychiatrie.  
 Pour obtenir le montant total des dépenses, il faut ajouter le montant du RAC AMO du séjour.
 
 
