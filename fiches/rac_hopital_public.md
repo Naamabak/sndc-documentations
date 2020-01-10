@@ -54,22 +54,8 @@ Depuis le [1er janvier 2018](https://www.legifrance.gouv.fr/affichTexte.do?cidTe
 Le forfait hospitalier **n'est pas remboursé par l'assurance maladie**. 
 Il peut éventuellement être pris en charge par les organismes complémentaires en santé.
 
-Il existe des [motifs d'exonération](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-hospitalier) pour le forfait journalier : 
-- femme enceinte hospitalisée pendant les quatre derniers mois de grossesse, ou pour l'accouchement ou pendant les 12 jours après l'accouchement
-- bénéficiaire de la couverture maladie universelle (CMU) complémentaire ou de l'aide médicale d'Etat
-- bénéficiaire de l'aide au paiement d'une complémentaire santé (ACS), couvert par un des contrats de complémentaire santé sélectionnés au titre de l'ACS
-- assuré dont l'enfant est hospitalisé dans les 30 jours suivant sa naissance
-- hospitalisation due à un accident du travail ou à une maladie professionnelle (lorsque l'hospitalisation est imputable à l'accident du travail ou à la maladie professionnelle)
-- hospitalisation à domicile
-- assuré dont l'enfant handicapé de moins de 20 ans est hébergé dans un établissement d'éducation spéciale ou professionnelle
-- bénéficiaire du régime d'Alsace-Moselle
-- titulaire d'une pension militaire
-- victime d'un acte de terrorisme et bénéficiaire d'une prise en charge intégrale pour les soins en rapport avec cet évènement si possesseur d'une attestation en cours de validité.
-
-Il existe également des cas où le forfait journalier (FJ) n'est pas applicable :  
-- Séances sauf radiothérapie
-- Explorations nocturnes et apparentées (GHM 23K02Z), IVG (GHM 14Z08Z)
-- Radiothérapie des nouveau-nés, prélèvements d'organe, forfaits innovation 
+Il existe des [motifs d'exonération](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-hospitalier) 
+pour le forfait journalier, ainsi que des [cas où il n'est pas applicable](https://solidarites-sante.gouv.fr/IMG/pdf/Forfait_journalier_hospitalier.pdf).
 
 #### Le ticket modérateur
 
@@ -97,7 +83,7 @@ L'[article 26 du PLFSS de 2020](http://www.assemblee-nationale.fr/15/projets/pl2
 Cette réforme entrera progressivement en vigueur à partir de 2021.
 
 
-#### Imputabilité du FJ et du TM : cas particuliers 
+#### Imputabilité du forfait journalier et du ticket modérateur : cas particuliers 
 
 Le forfait journalier hospitalier ne se cumule pas avec le ticket modérateur.
 - Le reste à charge d’un assuré de droit commun est égal **au montant le plus élevé** entre le ticket modérateur et le forfait journalier hospitalier.   
@@ -132,32 +118,13 @@ cours d'une même consultation, la participation forfaitaire  ne s'applique qu'u
 *Dans les données* : dès lors qu'il y a un acte coûteux, il y a exonération du ticket modérateur qui est remplacé par une participation forfaitaire et l'établissement reçoit 100 % du tarif national de prestation de la part de l'assurance maladie.    
 Le patient s'acquitte de la participation forfaitaire et du forfait journalier (sauf cas particuliers avec exonération).  
 
+#### La prise en charge à 100 %
 
-#### Les actes pris en charge à 100 %
-
-Certains actes et certains frais ne rentrent pas dans le champ d'application de la participation forfaitaire et sont pris en charge à 100 %.  
+[Certains actes et certains frais ne rentrent pas dans le champ d'application de la participation forfaitaire](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros) 
+et sont pris en charge à 100 %.  
 Ils font donc l'objet d'une exonération de ticket modérateur et de participation forfaitaire.
 
-Il s'agit notamment :
-- des actes de radiodiagnostic, d'imagerie par résonance magnétique, de scanographie, de scintigraphie ou de tomographie à émission de positons, d'un tarif supérieur ou égal à 120 euros, ou ayant un coefficient supérieur ou égal à 60
-- des frais de transport d'urgence, en cas d'hospitalisation au cours de laquelle est effectué un acte au tarif supérieur ou égal à 120 euros, ou ayant un coefficient supérieur ou égal à 60, ainsi que les frais de transport en cas d'hospitalisation consécutive et en lien direct avec la première hospitalisation au cours de laquelle a été effectuée un acte au tarif supérieur ou égal à 120 euros, ou ayant un coefficient supérieur ou égal à 60
-- des frais de transport entre les deux établissements ou, en cas d'hospitalisation à domicile, entre l'établissement et le domicile
-- des frais d'hospitalisation à partir du 31e jour d'hospitalisation consécutif.
-
-Les personnes exonérées sont [les suivantes](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros): 
-- les personnes titulaires d'une pension d'invalidité ou d'une pension de vieillesse substituée à une pension d'invalidité
-- les personnes titulaires d'une pension de réversion, atteintes d'une invalidité permanente et qui remplissent les conditions d'ouverture de droit à une pension d'invalidité
-- les personnes titulaires d'une pension d'invalidité et âgées de plus de 60 ans qui continuent d'exercer une activité professionnelle et ont refusé la transformation de leur pension d'invalidité en pension vieillesse
-- les personnes titulaires d'une pension militaire (malades ou blessés de guerre)
-- les personnes titulaires d'une allocation de solidarité aux personnes âgées
-- les personnes titulaires d'une rente accident du travail - maladie professionnelle d'un taux égal ou supérieur à 66,66 % et leurs ayants droit
-- les personnes prises en charge au titre d'un accident du travail ou d'une maladie professionnelle, pour les actes, soins et traitements en rapport avec l'accident du travail ou la maladie professionnelle
-- les femmes enceintes à partir du sixième mois de grossesse jusqu'à 12 jours après leur accouchement
-- les nouveau-nés, pour les frais d'hospitalisation ou les soins en établissement de santé pendant les 30 jours qui suivent leur naissance
-- les personnes hospitalisées, pour les frais d'hospitalisation à partir du 31e jour d'hospitalisation consécutif ;
-- les enfants et adolescents mineurs victimes de sévices sexuels, pour les actes, soins et traitements consécutifs aux sévices sexuels dont ils ont été victimes
-- les personnes prises en charge au titre d'une affection de longue durée exonérante, pour les actes, soins et traitements en rapport avec cette affection et qui sont mentionnés sur le protocole de soins
-- les personnes prises en charge au titre du diagnostic et du traitement de la stérilité, pour les actes, soins et traitements nécessaires, y compris l'insémination artificielle.
+De plus, [certaines personnes bénéficient d'une prise en charge à 100 % en raison de leur situation ou de leur état de santé]((https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros)), et sont donc exonérées de la participation forfaitaire.
 
 #### L'activité libérale des praticiens hospitaliers
 [à compléter]  
