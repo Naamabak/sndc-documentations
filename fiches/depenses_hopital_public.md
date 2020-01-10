@@ -254,12 +254,11 @@ Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad 
 *Sources* 
 - Supports de formation de la CNAM sur le DCIRS et le PMSI
 - Documentation de l'ATIH
-  * Manuel d'utilisation du logiciel VivualValoSej (PMSI MCO)
-  * Manuel d'utilisation du logiciel VivualValoSSR (PMSI SSR)
+  * [ATIH - Manuel d'utilisation du logiciel VisualValoSej (PMSI MCO)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is) 
+  * [ATIH - Manuel d'utilisation du logiciel VisualValo SSR](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwj2rJaj-OTlAhU2D2MBHWvqAHMQFjAAegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F9797%2F2100&usg=AOvVaw3JFAfMc9byZDL3-VO5C0Yj)
   * [Méthodes d'analyse des dépenses liées aux molécules onéreuses et dispositifs implantables](https://www.scansante.fr/applications/synthese-dmi-mo-sus) (PMSI MCO, SSR et HAD)
   * Guides méthodologiques  
 [Guide méthodo ATIH MCO](https://www.atih.sante.fr/mco/documentation#Guides%20m%C3%A9thodologiques)  
 [Guide méthodo ATIH SSR](https://www.atih.sante.fr/ssr/documentation#Guides%20m%C3%A9thodologiques)  
 [Guide méthodo ATIH HAD](https://www.atih.sante.fr/had/documentation#Guides%20m%C3%A9thodologiques)  
 [Guide méthodo ATIH PSY](https://www.atih.sante.fr/psy/documentation#Guides%20m%C3%A9thodologiques)  
-
