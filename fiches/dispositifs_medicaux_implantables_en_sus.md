@@ -2,7 +2,13 @@
 
 ## Présentation 
 
- Dans le cadre de la tarification à l’activité, une liste de produits et prestations pris en charge en sus des prestations d’hospitalisation en MCO, a été définie, le cas échéant ponctuellement modifiée :
+D'après le [code de la santé publique (article L.5211-1)](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006072665&idArticle=LEGIARTI000006690281), on entend par dispositif médical implantable : 
+"tout instrument, appareil, équipement, matière, produit, [...] destiné par le fabricant à être 
+utilisé chez l’homme à des fins médicales" et conçu "pour être implantés en totalité ou en 
+partie dans le corps humain ou placés dans un orifice naturel". 
+
+
+Dans le cadre de la tarification à l’activité, une liste de dispositifs médicaux implantables pris en charge en sus des prestations d’hospitalisation en MCO, a été définie et ponctuellement modifiée :
  
 La liste initiale a été publiée au journal officiel de la république française le 10 mai 2005 : « Arrêté du 2 mars 2005 pris en application de l'article L. 162-22-7 du code de la sécurité sociale et fixant la liste des produits et prestations mentionnés à l’article L. 165-1 du code de la sécurité sociale pris en charge en sus des prestations d'hospitalisation ». La liste figure en annexe I et II, l’annexe II étant réservée aux seuls établissements ex-OQN (d et e de l'article L. 162-22-6 du code de la sécurité sociale). Cette liste est ensuite mise à jour (inscription comme radiation) par des arrêtés modificatifs dont le titre a la forme suivante : « Arrêté du xx xxxxx xxxx pris en application de l'article L. 162-22-7 du code de la sécurité sociale modifiant l’arrêté du 2 mars 2005 fixant la liste des produits et prestations mentionnés à l’article L. 165-1 du code de la sécurité sociale pris en charge en sus des prestations d'hospitalisation ». Cette liste constitue un extrait du Titre III de la liste des produits et prestations (LPP).
  
