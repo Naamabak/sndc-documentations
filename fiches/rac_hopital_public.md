@@ -55,7 +55,7 @@ Le forfait hospitalier **n'est pas remboursé par l'assurance maladie**.
 Il peut éventuellement être pris en charge par les organismes complémentaires en santé.
 
 Il existe des [motifs d'exonération](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-hospitalier) 
-pour le forfait journalier, ainsi que des [cas où il n'est pas applicable](https://solidarites-sante.gouv.fr/IMG/pdf/Forfait_journalier_hospitalier.pdf).
+pour le forfait journalier, ainsi que des [cas où il n'est pas applicable.](https://solidarites-sante.gouv.fr/IMG/pdf/Forfait_journalier_hospitalier.pdf)
 
 #### Le ticket modérateur
 
@@ -500,7 +500,7 @@ Le coût total du séjour correspond au montant pris en charge par l’assurance
 
 Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_SSRaaC`).
 
-## En pratique : calcul des restes à charge hospitaliers à partir du PMSI SSR
+## En pratique : calcul des restes à charge hospitaliers à partir du PMSI HAD
 
 Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir des données du PMSI HAD de 2016.  
 
