@@ -40,7 +40,7 @@ Pour l'étude des dépenses associées à ces dispositifs, l'[ATIH](https://www.
 On peut ensuite déduire le montant des dépenses à partir du prix d'achat multiplié par le nombre de dispositifs posés.  
 
 Pour vérifier l'appartenance à la liste en sus : 
-- on récupère le mois et l’année de pose du DMI (ou, par dafaut, le mois et l’année de sortie du RSA)
+- on récupère le mois et l’année de pose du DMI (ou, par défaut, le mois et l’année de sortie du résumé de sortie anonyme [RSA](../glossaire/RSA.md))
 - à l'aide de la liste (actualisée) des produits et prestations pris en charge en sus, 
   on vérifie que le DMI appartient bien à la liste en sus durant cette période
 - pour les données de l’année N, on ne conserve que les dispositifs dont l’année de pose est égale à N, N-1 ou N-2
