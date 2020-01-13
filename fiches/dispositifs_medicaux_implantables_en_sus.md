@@ -1,8 +1,8 @@
 # Les dispositifs médicaux implantables pris en charge en sus du GHS en MCO
 
 Dans une première partie, nous présentons les dispositifs médicaux implantables (DMI) facturés en sus des [GHS](../glossaire/GHS.html).  
-Dans les deuxième et troisième parties, nous expliquons comment extraire les dépenses associées à ces dispositifs à partir du PMSI (hôpitaux publics) et 
-du DCIR (cliniques privées) respectivement.
+Dans une seconde partie, nous expliquons comment extraire les dépenses associées à ces dispositifs à partir du PMSI.  
+Nous ne traitons ici que le cas des hôpitaux publics.
 
 ## Présentation 
 
@@ -16,18 +16,18 @@ un paiement forfaitaire global de l’assurance maladie pour chaque séjour d’
 En principe, le paiement comprend l'intégralite des coûts associés à ce séjour.   
 Dans certains cas, la prise en charge du patient nécessite la prescription de médicaments
 ou dispositifs médicaux implantables innovants et coûteux qui sont, sous certaines conditions, intégralement remboursés par 
-l'assurance maladie obligatoire (*cf.* [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html)). 
+l'assurance maladie obligatoire en sus du GHS (*cf.* [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html)). 
 
 La liste initiale qui définit les dispositifs médicaux implantables pris en charge en sus des prestations d’hospitalisation en MCO 
 a été publiée au [journal officiel le 10 mai 2005](https://www.legifrance.gouv.fr/eli/arrete/2005/3/2/SANS0520786A/jo), 
 puis ponctuellement modifiée (inscriptions, radiations, modifications de tarifs ou de libellés, etc.).  
 
 La liste (actualisée) des produits et prestations pris en charge en sus des prestations d’hospitalisation en MCO est téléchargeable sur le site de l'[ATIH](https://www.atih.sante.fr/dispositifs-medicaux-pris-en-charge-en-sus).  
- 
+
+L'ATIH restitue également des statistiques sur la consommation annuelle des dispositifs médicaux implantables en sus au niveau national.  
+Ces synthèses, déclinées par année et par DM, sont disponibles au lien suivant : [https://www.scansante.fr/applications/synthese-dmi-mo-sus](https://www.scansante.fr/applications/synthese-dmi-mo-sus).  
 
 ## Les dépenses associées aux DMI dans le PMSI 
-
-Dans cette partie nous traitons le cas des établissements de santé publics.
 
 Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](../glossaire/GHS.html) 
 lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.  
@@ -45,9 +45,8 @@ Pour vérifier l'appartenance à la liste en sus :
   on vérifie que le DMI appartient bien à la liste en sus durant cette période
 - pour les données de l’année N, on ne conserve que les dispositifs dont l’année de pose est égale à N, N-1 ou N-2
 
+## Références
 
-
-
-
-
-Dans cette partie nous traitons le cas des établissements de santé privés.
+::: tip Crédits
+Cette fiche a été rédigée par Noémie Courtejoie (DREES).
+:::
