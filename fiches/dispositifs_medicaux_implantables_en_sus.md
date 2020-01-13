@@ -49,6 +49,5 @@ Pour vérifier l'appartenance à la liste en sus :
 
 
 
-## Les dépenses associées aux DMI dans le DCIRS 
 
 Dans cette partie nous traitons le cas des établissements de santé privés.
