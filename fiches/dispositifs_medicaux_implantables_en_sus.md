@@ -12,7 +12,7 @@ utilisé chez l’homme à des fins médicales [...] et conçu pour être implan
 partie dans le corps humain ou placé dans un orifice naturel". 
 
 Dans le cadre de la [T2A](../glossaire/T2A.html), les hôpitaux reçoivent 
-un paiement forfaitaire global de l’assurance maladie pour chaque séjour d’un patient. 
+un paiement forfaitaire global de l’assurance maladie pour chaque séjour d’un patient.  
 En principe, le paiement comprend l'intégralite des coûts associés à ce séjour.   
 Dans certains cas, la prise en charge du patient nécessite la prescription de médicaments
 ou dispositifs médicaux implantables innovants et coûteux qui sont, sous certaines conditions, intégralement remboursés par 
