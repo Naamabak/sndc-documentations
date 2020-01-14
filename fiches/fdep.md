@@ -33,9 +33,8 @@ Le programme de la Cnam fait appel à un fichier de correction du code de la com
 
 
 ## Références
-- [*Les inégalités sociales de santé*, Thierry LANG (Université de Toulouse III) et Valérie ULRICH (DREES), Actes du séminaire de recherchede la DREES 2015-2016](https://drees.solidarites-sante.gouv.fr/IMG/pdf/ouvrage_actes_seminaire_iss_pour_bat_cabinet_-_web.pdf)
-- [*Indicateurs de suivi de l'évolution des inégalités sociales de santé dans les systèmes d'information en santé*, Rapport du Haut Conseil de la Santé Publique, 2013](https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspr20130619_indicateurinegalitesocialesante.pdf)
-- [*Note méthodologique*, Walid Ghosn, CépiDc-Inserm, 2018](https://cepidc.inserm.fr/sites/default/files/2019-02/Note_indices_socioeco.pdf)
-
-
+- *Les inégalités sociales de santé*, Thierry LANG (Université de Toulouse III) et Valérie ULRICH (DREES), Actes du séminaire de recherchede la DREES 2015-2016, [disponible en ligne](https://drees.solidarites-sante.gouv.fr/IMG/pdf/ouvrage_actes_seminaire_iss_pour_bat_cabinet_-_web.pdf).
+- *Indicateurs de suivi de l'évolution des inégalités sociales de santé dans les systèmes d'information en santé*, Rapport du Haut Conseil de la Santé Publique, 2013, [disponible en ligne](https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspr20130619_indicateurinegalitesocialesante.pdf).
+- *Note méthodologique*, Walid Ghosn, CépiDc-Inserm, 2018, [disponible en ligne](https://cepidc.inserm.fr/sites/default/files/2019-02/Note_indices_socioeco.pdf).
+- *Outils élaborés dans la cadre du programme « Inégalités sociales de santé »*, Gorza M et  Eilstein D., 2013-2015, [disponible en ligne](https://www.santepubliquefrance.fr/docs/outils-elabores-dans-la-cadre-du-programme-inegalites-sociales-de-sante-2013-2015-fiches-variables-socioeconomiques-fiches-indices-de).
 
