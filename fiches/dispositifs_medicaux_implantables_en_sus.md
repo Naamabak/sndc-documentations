@@ -1,7 +1,7 @@
-# Les dispositifs médicaux implantables pris en charge en sus du GHS en MCO
+# Dispositifs médicaux implantables en sus du GHS 
 
-Dans une première partie, nous présentons les dispositifs médicaux implantables (DMI) facturés en sus des [GHS](../glossaire/GHS.md).  
-Dans une seconde partie, nous expliquons comment extraire les dépenses associées à ces dispositifs à partir du PMSI.  
+Dans une première partie, nous présentons les dispositifs médicaux implantables (DMI) facturés en sus des [GHS](../glossaire/GHS.md) en MCO.  
+Dans une seconde partie, nous expliquons comment extraire les dépenses associées à ces dispositifs à partir du PMSI MCO.  
 Nous ne traitons ici que le cas des hôpitaux publics.
 
 ## Présentation 
@@ -27,7 +27,7 @@ La liste (actualisée) des produits et prestations pris en charge en sus des pre
 L'ATIH restitue également des statistiques sur la consommation annuelle des dispositifs médicaux implantables en sus au niveau national.  
 Ces synthèses, déclinées par année et par DM, sont disponibles au lien suivant : [https://www.scansante.fr/applications/synthese-dmi-mo-sus](https://www.scansante.fr/applications/synthese-dmi-mo-sus).  
 
-## Les dépenses associées aux DMI dans le PMSI 
+## Dépenses associées aux DMI dans le PMSI MCO
 
 Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](../glossaire/GHS.md) 
 lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.  
