@@ -1,6 +1,8 @@
 # Reste à charge après AMO en établissements de santé publics
 
-Cette fiche explique comment calculer le montant du reste à charge pour un séjour en établissement de santé public à partir du PMSI.
+Cette fiche explique comment calculer le montant du reste à charge après Assurance maladie obligatoire (AMO) pour un séjour en établissement de santé public à partir du PMSI.
+
+[**À ajouter**] : définition du RAC AMO + schéma explicatif
 
 Les explications sont déclinées par spécialité hospitalière :
 
@@ -15,7 +17,7 @@ L'ensemble des dépenses associées à un séjour en établissement public compr
 * le montant, que nous noterons pour simplifier, **"montant AMO"**, et qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) ainsi que les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
 * le **reste à charge après AMO** (payé par le patient et / ou son organisme complémentaire)
 
-Pour plus d'informations sur ce montant AMO, se référer à la fiche sur "les dépenses des établissements de santé publics dans le PMSI".
+Pour plus d'informations sur ce montant AMO, se référer à la fiche sur [les dépenses des établissements de santé publics dans le PMSI](../fiches/depenses_hopital_public.md).
 
 ::: warning ATTENTION
 Nous partageons l’information que nous sommes parvenus à recueillir sur le calcul du reste à charge.  
@@ -25,19 +27,21 @@ Celle-ci n’est pas exhaustive et doit être traitée avec précaution.
 
 ## Composantes et modalités de calcul du reste à charge 
 
-Généralement, le reste à charge (RAC) hospitalier est composé :
-- d'un **ticket modérateur** ou d'une **participation forfaitaire**
-- d'un **forfait hospitalier**
+Le reste à charge (RAC) hospitalier peut être composé des éléments suivants : 
+- un **forfait journalier hospitalier**
+- un **ticket modérateur** 
+- une **participation forfaitaire**
+- d'éventuels **dépassements d'honoraires** dans le cadre de l'activité libérale des praticiens hospitaliers
 
-Avec d'éventuelles exonérations en fonction du profil des patients, du type d’actes et de séjours, de la durée de séjour, etc.  
-En complément, d'éventuels dépassements d'honoraires peuvent s'appliquer aux séjours hospitaliers, dans le cadre de l'activité libérale des praticiens hospitaliers.
+La facturation de ces différentes composantes aux patients dépend de plusieurs paramètres, 
+notamment du type d’actes et de séjours, de la durée de séjour et du profil des patients. 
 
-Nous allons détailler les différentes composantes du RAC et leurs règles d'imputation, afin de calculer le reste à charge du patient après AMO. 
+Nous allons d'abord présenter les différentes composantes du RAC AMO, puis expliquer leurs règles d'imputation, afin de calculer le RAC AMO dans les différents cas de figure.  
 
 
 ### Les différents composants du reste à charge
 
-#### Le forfait journalier et le forfait journalier de sortie 
+#### Le forfait journalier hospitalier
 
 Le **forfait journalier hospitalier** représente la participation financière du patient aux frais d'hébergement et d'entretien entraînés par son hospitalisation. 
 
@@ -51,11 +55,8 @@ Depuis le [1er janvier 2018](https://www.legifrance.gouv.fr/affichTexte.do?cidTe
 - 20 €  par jour en hôpital ou en clinique (18 € avant 2018)
 - 15 € par jour dans le service psychiatrique d'un établissement de santé (13,5 € avant 2018)
 
-Le forfait hospitalier **n'est pas remboursé par l'assurance maladie**. 
+Le forfait journalier hospitalier **n'est pas remboursé par l'assurance maladie**. 
 Il peut éventuellement être pris en charge par les organismes complémentaires en santé.
-
-Il existe des [motifs d'exonération](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-hospitalier) 
-pour le forfait journalier, ainsi que des [cas où il n'est pas applicable.](https://solidarites-sante.gouv.fr/IMG/pdf/Forfait_journalier_hospitalier.pdf)
 
 #### Le ticket modérateur
 
@@ -76,32 +77,18 @@ La base de remboursement calculée par l'établissement est généralement plus 
 
 *Point réglementaire :*  
 Lors de la mise en œuvre de la T2A dans les établissements de santé, un dispositif transitoire a été mis en place permettant aux hôpitaux publics et aux établissements privés à but non lucratif de continuer à calculer le ticket modérateur sur la base des tarifs journaliers de prestations (TJP), initialement définis à partir du coût de revient prévisionnel des différentes catégories de soins de chaque établissement et non sur les tarifs nationaux de prestations (GHS, GHT, GMT).   
-L'[article 26 du PLFSS de 2020](http://www.assemblee-nationale.fr/15/projets/pl2296.asp) vise à mettre fin à cette situation transitoire, qui à terme aurait conduit à opérer d’importants transferts de recettes entre secteurs, entre établissements, et entre assurance maladie obligatoire et complémentaire :  
-- D’une part, en pérennisant le système du calcul du ticket modérateur sur la base des tarifs journaliers de prestations pour les établissements concernés ;
-- D’autre part en le rationalisant en introduisant une nomenclature simplifiée et nationale des TJP, afin de s’assurer que ceux-ci reflètent davantage le coût effectif du service.
+L'[article 26 du PLFSS de 2020](http://www.assemblee-nationale.fr/15/projets/pl2296.asp) vise à mettre fin à cette situation transitoire :  
+- en pérennisant le système du calcul du ticket modérateur sur la base des tarifs journaliers de prestations pour les établissements concernés
+- en rationalisant ce système de calcul par l'introduction d'une nomenclature simplifiée et nationale des tarifs de prestations, afin de s’assurer que ceux-ci reflètent davantage le coût effectif du service
 
 Cette réforme entrera progressivement en vigueur à partir de 2021.
-
-
-#### Imputabilité du forfait journalier et du ticket modérateur : cas particuliers 
-
-Le forfait journalier hospitalier ne se cumule pas avec le ticket modérateur.
-- Le reste à charge d’un assuré de droit commun est égal **au montant le plus élevé** entre le ticket modérateur et le forfait journalier hospitalier.   
-- Le forfait dû pour le jour de sortie est toujours facturé en complément sauf en cas de décès ou de transfert. 
-- Pour le séjour d'un assuré de droit commun de plus de 30 jours, le TM n'est facturé que pour les 30 premiers jours. Au-delà, le patient ne paie que le FJ.  
-
-Cette durée de 30 jours se cumule entre séjours contigus, y compris entre différentes spécialités hospitalières.   
-
-*Exemple :* si un patient reste 10 jours en MCO puis 25 jours en SSR, il sera exonéra de ticket modérateur 30 jours après son admission à l'hôpital. Ainsi, il ne paiera plus que le forfait journalier à partir du 21ème jour d'hospitalisation en SSR.
-
 
 
 #### La participation forfaitaire des assurés pour les actes lourds 
 
 Un ticket modérateur forfaitaire sur les actes lourds a été instauré par la [Loi de Financement de la Sécurité Sociale pour 2006](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000815414) 
-et le [Décret N° 2006-707 du 19 juin 2006](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000792524) paru au JO du 20 juin 2006.  
+et le [Décret N° 2006-707 du 19 juin 2006](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000792524) paru au JO du 20 juin 2006. 
 Cette mesure prévoit que les patients, jusqu’ici exonérés en raison de la valeur des actes réalisés, acquittent une participation minimale sur les actes médicaux dont le montant est supérieur ou égal à 120 euros ou sur les actes affectés d’un coefficient supérieur ou égal à 60 euros.  
-Il s'agit de la "participation assuré".
 
 Le ticket modérateur est dans ce cas remplacé par cette participation forfaitaire.   
 Sa valeur dépend de l'année dans laquelle on se situe, elle est fixée par décret.  
@@ -118,16 +105,6 @@ cours d'une même consultation, la participation forfaitaire  ne s'applique qu'u
 *Dans les données* : dès lors qu'il y a un acte coûteux, il y a exonération du ticket modérateur qui est remplacé par une participation forfaitaire et l'établissement reçoit 100 % du tarif national de prestation de la part de l'assurance maladie.    
 Le patient s'acquitte de la participation forfaitaire et du forfait journalier (sauf cas particuliers avec exonération).  
 
-#### La prise en charge à 100 %
-
-[Certains actes et certains frais](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros) 
-ne rentrent pas dans le champ d'application de la participation forfaitaire et sont pris en charge à 100 %.  
-Ils font donc l'objet d'une exonération de ticket modérateur et de participation forfaitaire.
-
-De plus, [certaines personnes](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros) 
-bénéficient d'une prise en charge à 100 % en raison de leur situation ou de leur état de santé. 
-Elles sont donc exonérées de la participation forfaitaire.
-
 #### L'activité libérale des praticiens hospitaliers
 
 Les praticiens statutaires exerçant à temps plein sont autorisés à exercer une activité 
@@ -139,14 +116,49 @@ Les praticiens exerçant une activité libérale peuvent percevoir leurs honorai
 Le praticien doit établir une feuille de soins et y porter la cotation des actes réalisés et l’intégralité des honoraires demandés. 
 Ainsi, cette information remonte bien à l'assurance maladie. 
 
-### Résumé des règles de calcul de la participation du patient 
 
-Nous commençons par décrire le cas général avant d'entrer dans le détail pour les PMSI MCO, SSR et HAD.  
 
-Les principales règles de calcul du RAC figurent dans le tableau ci-dessous.    
+
+
+### La participation du patient aux frais hospitaliers 
+
+#### Exonération du forfait hospitalier journalier
+
+Il existe des [motifs d'exonération](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-hospitalier) 
+pour le forfait journalier, ainsi que des [cas où il n'est pas applicable.](https://solidarites-sante.gouv.fr/IMG/pdf/Forfait_journalier_hospitalier.pdf)
+
+
+#### Exonération du ticket modérateur et de la participation forfaitaire
+
+[Certains actes et certains frais](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros) 
+sont pris en charge à 100 %.  
+De plus, [certaines personnes](https://www.ameli.fr/assure/remboursements/reste-charge/forfait-24-euros) 
+bénéficient d'une prise en charge à 100 % en raison de leur situation ou de leur état de santé.  
+En cas de prise en charge à 100 %, il y a exonération du ticket modérateur et de la participation forfaitaire. 
+
+
+#### Imputabilité du forfait journalier et du ticket modérateur 
+
+Le forfait journalier hospitalier ne se cumule pas avec le ticket modérateur.  
+Le reste à charge d’un assuré de droit commun est égal **au montant le plus élevé** entre le ticket modérateur et le forfait journalier hospitalier.   
+Néanmoins, le forfait dû pour le jour de sortie est toujours facturé en complément sauf en cas de décès ou de transfert. 
+
+Pour le séjour d'un assuré de droit commun de plus de 30 jours, le ticket modérateur n'est facturé que pour les 30 premiers jours.  
+Au-delà, le patient ne paie que le forfait journalier.  
+Cette durée de 30 jours se cumule entre séjours contigus, y compris entre différentes spécialités hospitalières.   
+
+*Exemple :* si un patient reste 10 jours en MCO puis 25 jours en SSR, il sera exonéra de ticket modérateur 30 jours après son admission à l'hôpital.  
+Ainsi, il paiera le ticket modérateur pour le séjour en MCO et pour les 20 1er jours en SSR. À partir du 21ème jour d'hospitalisation en SSR, et jusqu'à la fin de son séjour, 
+il paiera le forfait journalier hospitalier.
+
+
+#### Règles de calcul du reste-à-charge après AMO 
+
+Les principales règles de calcul du RAC AMO sont résumées dans le tableau ci-dessous.  
+
 ![](../files/DREES/2019-11_tableau_RAC_MCO.png)  
 
-Voici la signification des sigles utilisés dans le schéma :  
+Voici la signification des sigles utilisés dans le tableau :  
 FJU : forfait journalier unitaire (par journée d’hospitalisation)  
 nb_jour : nombre de jours de présence  
 PF : participation forfaitaire  
@@ -158,10 +170,10 @@ TR : taux de remboursement (%)
 ( ** ) « durée + 1 » si le mode de sortie est autre que transfert ou décès, « durée » sinon  
 ( *** ) en cas d’hospitalisation à temps partiel ou de séjour en ambulatoire, on ne parle plus de durée mais de nombre de jours de présence  
 
-*ATTENTION > dans ce tableau, n’est pas représenté le cas (a priori très rare) où le forfait journalier des 30 premiers jours est supérieur au ticket modérateur ((100 – TR) x TJP x durée < FJU x durée). Dans ce cas-là, le patient ne s’acquitte pas du ticket modérateur mais du forfait journalier.*
+Dans ce tableau, ne figurent pas :
+- le cas (a priori très rare) où le forfait journalier des 30 premiers jours est supérieur au ticket modérateur ((100 – TR) x TJP x durée < FJU x durée). Dans ce cas-là, le patient ne s’acquitte pas du ticket modérateur mais du forfait journalier.  
+- les éventuels dépassements d'honoraires qui peuvent avoir lieu au cours de séjours hospitaliers dans le cadre de l'activité libérale des praticiens hospitaliers    
 
-
-*Note >*  
 Le tableau ci-dessus couvre le cas général, à partir de l'exemple du MCO, mais n'est pas exhaustif.  
 Nous reviendrons sur les particularités par PMSI dans le reste de la fiche.
 En voici les principales différences :  
@@ -173,18 +185,9 @@ En voici les principales différences :
 - Lors de séjours en hospitalisation partielle en SSR, il n'y a pas de FJ facturé. Le temps passé à l'hôpital est indiqué par le nombre de jours de présence.    
 - Lors de séjours en hospitalisation complète en SSR, le patient peut bénéficier de permissions. Ainsi, pour connaître le temps passé à l'hôpital, il ne faut pas compter la durée de séjour (*i.e.* le nombre de jours entre le début et la fin du séjour), mais le nombre de jours de présence.    
 
-Enfin, dans ce tableau ne figurent pas les éventuels dépassements d'honoraires qui 
-peuvent avoir lieu au cours de séjours hospitaliers dans le cadre de l'activité libérale des praticiens hospitaliers.    
 
 **[A CREUSER]** : Est-ce que la règle d’exonération du TM au-delà de 30 jours s’applique uniquement en cas d’hospitalisation complète ? 
 
-
-### Catégories de séjours pour le calcul du reste à charge (RAC)
-
-- Les **séjours avec un ticket modérateur** (TM) sont identifiés à partir du motif d’exonération du TM, du taux de remboursement et éventuellement de la nature du séjour (AME, SU, détenu). 
-- Les **séjours avec acte coûteux** sont identifiés à partir du motif d’exonération du TM, du taux de remboursement et de la facturation ou non de la participation forfaitaire.
-- Les **séjours exonérés du ticket modérateur et du forfait journalier** sont identifiés à partir du motif d’exonération du FJ et éventuellement de la nature du séjour (AME, SU, détenu). 
-- En complément, le **type d'hospitalisation** (complète / partielle / ambulatoire) et la **durée de séjour** permettent de multiplier les cas au sein de chaque catégorie de séjour.
 
 ## En pratique : calcul des restes à charge hospitaliers à partir du PMSI MCO
 
@@ -194,7 +197,7 @@ en établissements publics à partir du PMSI.
 Cette méthodologie est déclinée par discipline hospitalière.  
 
 Le reste à charge lors des [ACE](../fiches/actes_consult_externes.html#que-regroupent-les-actes-et-consultations-externes) 
-a été traité dans la fiche sur les [dépenses de santé en établissements de santé publics](../fiches/depense_hopital_public.md).
+a été traité dans la fiche sur les [dépenses de santé en établissements de santé publics](../fiches/depenses_hopital_public.md).
 
 **Limites :**  
 Le calcul du RAC présenté ci-dessous ne tient pas compte des éventuels dépassements 
@@ -207,7 +210,7 @@ Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir
 
 ### Les tables et variables mobilisées
 
-Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depense_hopital_public.md).
+Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depenses_hopital_public.md).
 
 La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ETA_NUM`, `RSA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RSA_NUM` est le numéro séquentiel du séjour. 
 
@@ -236,7 +239,7 @@ La variable a été corrigée par l’ATIH qui a notamment forcé à zéro le FJ
 
 Dans la table `T_MCOaaSTC`, qui est la **table de prise en charge des séjours dans le public** (données brutes renseignées par l'établissement) :
 - `REM_BAS_MNT` : coût du séjour calculé par l'établissement (sert de base de remboursement pour le ticket modérateur) 
-- `TOT_MNT_AM` : coût du séjour facturé à l'AM selon les règles de calcul de l'établissement (différent du montant remboursé par l'AM qui sera calculé sur la base du GHS, *cf.* [fiche sur les dépenses de santé](../fiches/depense_hopital_public.md)) 
+- `TOT_MNT_AM` : coût du séjour facturé à l'AM selon les règles de calcul de l'établissement (différent du montant remboursé par l'AM qui sera calculé sur la base du GHS, *cf.* [fiche sur les dépenses de santé](../fiches/depenses_hopital_public.md)) 
 - `FAC_MNT_TM` : montant à facturer au titre du ticket modérateur (TM)
 - `FAC_MNT_FJ` : montant à facturer au titre du forfait journalier (FJ)
 - `NAT_ASS` : nature d’assurance, qui prend les valeurs suivantes (d'après la norme B2) : 
@@ -285,7 +288,7 @@ Dans la table `T_MCOaaB`, qui est la **table de description du séjour**, nous c
 ### Filtres à ajouter
 
 Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
-charge lors de séjours en établissments publics sont détaillées dans la [fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)).
+charge lors de séjours en établissements publics sont détaillées dans la [fiche sur les dépenses à l'hôpital public](../fiches/depenses_hopital_public.md)).
 
 
 ### Méthodologie d'exploitation du PMSI MCO pour le calcul du reste à charge
@@ -364,14 +367,17 @@ On utilise les variables suivantes :
 - `FJ_COD_PEC`: code de prise en charge du forfait journalier (table `T_MCOaaSTC`)
 - `VALO` : valorisation du séjour (table `T_MCOaaSTC`)
 
+En MCO, on distingue 6 cas de figure pour le calcul du RAC AMO.  
 
-Calcul de la variable `rac` dans les différents cas de figure :
+::: warning 
+Calcul de la variable `rac` dans les différents cas de figure :  
 1. `rac` = 0 si `VALO` IN (3,4,5) (bénéficiaires de l'AME, SU et détenus)  
 2. `rac` = 0 si `FJ_COD_PEC`==R & `TAUX_C`==100 (exonération de TM et de FJ)
 3. `rac` = `FAC_18`*18  + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas d'exonération de FJ)
 4. `rac` = `FAC_MNT_TM` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas d'exonération de TM)
 5. `rac` = `FAC_MNT_TM`+`FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` > `FJ_C` (aucune exonération, TM>FJ)
 6. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` < `FJ_C` (aucune exonération, FJ>TM)
+:::
 
 Le coût total du séjour correspond au montant pris en charge par l’assurance maladie (variable `MNT_TOT_AM` de la table `T_MCOaaVALO`) auquel on ajoute le reste à charge. 
 
@@ -383,7 +389,7 @@ Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir
 
 ### Les tables et variables mobilisées
 
-Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depense_hopital_public.md).
+Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depenses_hopital_public.md).
 
 La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ETA_NUM`, `RHA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement 
 et `RHA_NUM` le numéro séquentiel du séjour. 
@@ -424,8 +430,8 @@ Cette variable prend les valeurs suivantes :
 ### Filtres à ajouter
 
 Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
-charge lors de séjours en SSR en établissments publics sont détaillées dans la 
-[fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)).
+charge lors de séjours en SSR en établissements publics sont détaillées dans la 
+[fiche sur les dépenses à l'hôpital public](../fiches/depenses_hopital_public.md).
 
 ### Méthodologie d'exploitation du PMSI SSR pour le calcul du reste à charge
 
@@ -489,12 +495,16 @@ On utilise les variables suivantes :
 - `FAC_MNT_TM`: montant à facturer au titre du ticket modérateur (table `T_SSRaaSTC`)
 - `FJ_COD_PEC`: code de prise en charge du forfait journalier (table `T_SSRaaSTC`)
 
-Calcul de la variable `rac` dans les différents cas de figure :
+
+En SSR, on distingue 5 cas de figure pour le calcul du RAC AMO.  
+::: warning 
+Calcul de la variable `rac` dans les différents cas de figure :  
 1. `rac` = 0 si `FJ_COD_PEC`==R & `TAUX_C`==100 (exonération de TM et de FJ)
 2. `rac` = `FAC_18`*18 + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas de FJ)
 3. `rac` = `FAC_MNT_TM` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas de TM)
 4. `rac` = `FAC_MNT_TM`+`FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` > `FJ_C` (aucune exonération, TM>FJ)
 5. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` < `FJ_C` (aucune exonération, FJ>TM)
+:::
 
 Le coût total du séjour correspond au montant pris en charge par l’assurance maladie (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge. 
 
@@ -506,7 +516,7 @@ Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir
 
 ### Les tables et variables mobilisées
 
-Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depense_hopital_public.md).
+Pour plus d'informations sur les tables et variables utilisées, se référer à la [fiche sur les dépenses](../fiches/depenses_hopital_public.md).
 
 La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ETA_NUM_EPMSI`, `RHAD_NUM`) où `ETA_NUM_EPMSI` est le numéro FINESS de l'établissement 
 et `RHAD_NUM` le numéro séquentiel du séjour. 
@@ -538,8 +548,8 @@ Dans la table `T_HADaaGRP`, qui est la table de groupage, nous considérons les 
 ### Filtres à ajouter
 
 Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
-charge lors de séjours en HAD en établissments publics sont détaillées dans la 
-[fiche sur les dépenses à l'hôpital public](../fiches/depense_hopital_public.md)).
+charge lors de séjours en HAD en établissements publics sont détaillées dans la 
+[fiche sur les dépenses à l'hôpital public](../fiches/depenses_hopital_public.md).
 
 ### Méthodologie d'exploitation du PMSI HAD pour le calcul du reste à charge
 
@@ -579,9 +589,12 @@ On utilise les variables suivantes :
 - `FAC_18E`: montant à facturer au titre de la participation forfaitaire de 18 € (table `T_HADaaSTC`)
 - `FAC_MNT_TM`: montant à facturer au titre du ticket modérateur (table `T_HADaaSTC`)
 
-Calcul de la variable `rac` dans les différents cas de figure :
+En HAD, on distingue deux cas de figure pour le calcul du RAC AMO.  
+::: warning 
+Calcul de la variable `rac` dans les différents cas de figure :  
 1. `rac` = `FAC_18`*18 si `TAUX_C`==100 (pas de TM, éventuellement PF si `FAC_18` == 1)
 2. `rac` = `FAC_MNT_TM` si `TAUX_C`!=100 (pas d'exonération de TM)
+:::
 
 Le coût total du séjour correspond au montant pris en charge par l’assurance maladie (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge du séjour.
 
