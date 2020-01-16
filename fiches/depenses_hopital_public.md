@@ -123,7 +123,7 @@ A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, o
 À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE.  
 Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des tarifs journaliers de prestation.   
 La table `T_SSRaaB` de description du séjour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), 
-ainsi que sur le [GME](../glossaire/gme.md) (variable `GR_GME`).
+ainsi que sur le [GME](../glossaire/GME.md) (variable `GR_GME`).
 
 La table de chaînage patients se nomme `T_SSRaaC` (toujours sous ORAVUE). On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md) pour plus d'informations).   
 Pour joindre les tables mentionnées ci-dessus, la clef de chaînage est le couple (`ETA_NUM`,`RHA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RHA_NUM` le numéro séquentiel du séjour.  
@@ -166,11 +166,11 @@ La clef de chaînage entre les tables mentionnées ci-dessus est le couple (`ETA
 
 ### Dépenses en sus 
 
-Par ailleurs, certains médicaments peuvent être facturés en sus du tarif du séjour ([GHS](../glossaire/gmt.md) en MCO, 
-[GHT](../glossaire/GHT.md) en HAD et [GMT](../glossaire/gmt.md) en SSR) et en sus des ACE (en MCO).  
+Par ailleurs, certains médicaments peuvent être facturés en sus du tarif du séjour ([GHS](../glossaire/GMT.md) en MCO, 
+[GHT](../glossaire/GHT.md) en HAD et [GMT](../glossaire/GMT.md) en SSR) et en sus des ACE (en MCO).  
 Les informations sur les dépenses associées à ces médicaments sont détaillées dans 
 la [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.md).  
-En MCO, certains dispositifs médicaux implantables peuvent également être facturés en sus du [GHS](../glossaire/gmt.md). 
+En MCO, certains dispositifs médicaux implantables peuvent également être facturés en sus du [GHS](../glossaire/GMT.md). 
 Les dépenses associées à ces dispositifs sont détaillées dans la [fiche sur les dispositifs médicaux implantables en sus](../fiches/dispositifs_medicaux_implantables_en_sus.md).  
 Par définition, il n'y a pas de reste à charge pour les dépenses en sus qui sont entièrement prises en charge par l'assurance maladie obligatoire.  
 
