@@ -1,6 +1,6 @@
 # Les dispositifs médicaux implantables pris en charge en sus du GHS en MCO
 
-Dans une première partie, nous présentons les dispositifs médicaux implantables (DMI) facturés en sus des [GHS](../glossaire/GHS.html).  
+Dans une première partie, nous présentons les dispositifs médicaux implantables (DMI) facturés en sus des [GHS](../glossaire/GHS.md).  
 Dans une seconde partie, nous expliquons comment extraire les dépenses associées à ces dispositifs à partir du PMSI.  
 Nous ne traitons ici que le cas des hôpitaux publics.
 
@@ -11,12 +11,12 @@ D'après le [code de la santé publique (article L.5211-1)](https://www.legifran
 utilisé chez l’homme à des fins médicales [...] et conçu pour être implanté en totalité ou en 
 partie dans le corps humain ou placé dans un orifice naturel". 
 
-Dans le cadre de la [T2A](../glossaire/T2A.html), les hôpitaux reçoivent 
+Dans le cadre de la [T2A](../glossaire/T2A.md), les hôpitaux reçoivent 
 un paiement forfaitaire global de l’assurance maladie pour chaque séjour d’un patient.  
 En principe, le paiement comprend l'intégralite des coûts associés à ce séjour.   
 Dans certains cas, la prise en charge du patient nécessite la prescription de médicaments
 ou dispositifs médicaux implantables innovants et coûteux qui sont, sous certaines conditions, intégralement remboursés par 
-l'assurance maladie obligatoire en sus du GHS (*cf.* [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html)). 
+l'assurance maladie obligatoire en sus du GHS (*cf.* [fiche sur les médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.md)). 
 
 La liste initiale qui définit les dispositifs médicaux implantables pris en charge en sus des prestations d’hospitalisation en MCO 
 a été publiée au [journal officiel le 10 mai 2005](https://www.legifrance.gouv.fr/eli/arrete/2005/3/2/SANS0520786A/jo), 
@@ -29,7 +29,7 @@ Ces synthèses, déclinées par année et par DM, sont disponibles au lien suiva
 
 ## Les dépenses associées aux DMI dans le PMSI 
 
-Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](../glossaire/GHS.html) 
+Les informations sur les dispositifs médicaux implantables (DMI) facturés en sus du [GHS](../glossaire/GHS.md) 
 lors de séjours en MCO à l'hôpital public figurent dans la table `T_MCOaaDMIP`.  
 Pour l'étude des dépenses associées à ces dispositifs, l'[ATIH](https://www.scansante.fr/applications/synthese-dmi-mo-sus) suggère d'appliquer les critères d'exclusion suivants :  
 - Nombre DMI = 0 et prix d’achat ≥ 0
