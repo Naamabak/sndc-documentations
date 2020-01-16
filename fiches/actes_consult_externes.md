@@ -1,4 +1,5 @@
-# Les actes et consultations externes
+# Actes et consultations externes
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ## Que regroupent les actes et consultations externes ?
 
