@@ -162,9 +162,14 @@ Pour le séjour d'un assuré de droit commun de plus de 30 jours, le ticket mod�
 Au-delà, le patient ne paie que le forfait journalier.  
 Cette durée de 30 jours se cumule entre séjours contigus, y compris entre différentes spécialités hospitalières.   
 
-*Exemple :* si un patient reste 10 jours en MCO puis 25 jours en SSR, il sera exonéra de ticket modérateur 30 jours après son admission à l'hôpital.  
-Ainsi, il paiera le ticket modérateur pour le séjour en MCO et pour les 20 1er jours en SSR. À partir du 21ème jour d'hospitalisation en SSR, et jusqu'à la fin de son séjour, 
-il paiera le forfait journalier hospitalier.
+*Exemples :*  
+Nous prenons plusieurs cas de figure pour un bénéficiaire qui n'est pas exonéré de ticket modérateur ni de forfait journalier.   
+- S'il reste 10 jours en MCO puis rentre chez lui, il paiera son ticket modérateur (20% de la base de remboursement de l'établissement) + le forfait journalier du jour de sortie.   
+  Si malheureusement il décède, il ne paiera que le ticket modérateur (et pas le forfait journalier du jour de sortie).  
+- S'il reste 10 jours en MCO puis 25 jours en SSR avant de rentrer chez lui, il sera exonéra de ticket modérateur 30 jours après son admission à l'hôpital.  
+Ainsi, il paiera le ticket modérateur pour le séjour en MCO et pour les 20 1er jours en SSR.  
+À partir du 21ème jour d'hospitalisation en SSR, et jusqu'à la fin de son séjour, 
+il paiera le forfait journalier hospitalier, y compris pour le jour de sortie.
 
 
 #### Règles de calcul du reste-à-charge après AMO 
@@ -182,7 +187,7 @@ Les principales règles de calcul du RAC AMO sont résumées dans le tableau ci-
   
 
 ( * ) facturation du FJU pour le jour de sortie si le mode de sortie est autre que transfert ou décès, 0 sinon  
-( ** ) « durée + 1 » si le mode de sortie est autre que transfert ou décès, « durée » sinon  
+( ** ) « durée + 1 » si le mode de sortie est autre que transfert ou décès (car facturation du jour de sortie), « durée » sinon  
 ( *** ) en cas d’hospitalisation à temps partiel ou de séjour en ambulatoire, on ne parle plus de durée mais de nombre de jours de présence  
 
 Dans ce tableau, ne figurent pas :
@@ -241,8 +246,7 @@ La variable a été corrigée par l’ATIH qui a notamment forcé à zéro le FJ
 (*cf.* manuel d'utilisation du logiciel VisualValoSej)
 - `MNT_GHS_AM` : valorisation AM du [GHS](../glossaire/GHS.html)
 - `MNT_TOT_AM` : coût pour l’assurance maladie obligatoire (GHS + suppléments journaliers en sus du GHS)  
-  Ce montant ne tient cependant pas compte du paiement des médicaments et dispositifs médicaux de la liste en sus.  Pour retrouver ces montants, se référer à la fiche sur "les dépenses des établissements de santé publics dans le PMSI".  
-
+  Ce montant ne tient cependant pas compte du paiement des médicaments et dispositifs médicaux de la liste en sus.  Pour retrouver ces montants, se référer à la fiche sur "les dépenses des établissements de santé publics dans le PMSI".
 - `TAUX2` : taux de remboursement du séjour 
 - `VALO` : valorisation du séjour, prenant les valeurs suivantes :
   * 0 : si le séjour n’est pas valorisé 
