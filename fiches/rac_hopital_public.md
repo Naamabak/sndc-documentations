@@ -203,7 +203,7 @@ a été traité dans la fiche sur les [dépenses de santé en établissements de
 Le calcul du RAC présenté ci-dessous ne tient pas compte des éventuels dépassements 
 d'honoraires qui peuvent avoir lieu lors des séjours. Dans ces cas-là, les honoraires 
 du praticien hospitalier sont directement facturés au patient (en plus des frais associés au séjour) 
-et n'apparaissent pas dans le PMSI mais dans le DCIRS.  
+et n'apparaissent pas dans le PMSI mais dans le DCIR(S).  
 
 
 Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir des données du PMSI MCO de 2016.  
