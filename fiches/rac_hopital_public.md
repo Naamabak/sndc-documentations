@@ -2,8 +2,6 @@
 
 Cette fiche explique comment calculer le montant du reste à charge après Assurance maladie obligatoire (AMO) pour un séjour en établissement de santé public à partir du PMSI.
 
-[**À ajouter**] : définition du RAC AMO + schéma explicatif
-
 Les explications sont déclinées par spécialité hospitalière :
 
 * [MCO](../glossaire/MCO.md) : médecine chirurgie obstétrique et odontologie
@@ -12,12 +10,29 @@ Les explications sont déclinées par spécialité hospitalière :
 
 Nous ne traitons pas ici le calcul du reste à charge en psychiatrie pour lequel nous ne disposons pas de suffisamment d'information.  
 
+**Définitions :**  
+
+Le schéma ci-dessous résume les notions importantes :  
+[](../files/DREES/2020_01_schema_rac_amo_hospit.png)
+<img src="../files/DREES/2020_01_schema_rac_amo_hospit.png"  width="388" height="271">
+
+*Signification des abréviations présentes sur le schéma :*  
+**AMO** : assurance maladie obligatoire; **BRSS** : base de remboursement de la sécurité sociale;   
+**FJ** : forfait hospitalier journalier; **PF** : participation forfaitaire (pour actes lourds / coûteux);  
+**RAC** : reste-à-charge; **TM** : ticket modérateur   
+
+
+
 L'ensemble des dépenses associées à un séjour en établissement public comprend :
 
 * le montant, que nous noterons pour simplifier, **"montant AMO"**, et qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) ainsi que les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
 * le **reste à charge après AMO** (payé par le patient et / ou son organisme complémentaire)
 
-Pour plus d'informations sur ce montant AMO, se référer à la fiche sur [les dépenses des établissements de santé publics dans le PMSI](../fiches/depenses_hopital_public.md).
+Le RAC opposable est la différence entre le tarif de convention (Montant BRSS) et le remboursement de la Sécurité sociale (montant AMO).
+
+Pour plus d'informations sur le montant AMO, se référer à la fiche sur [les dépenses des établissements de santé publics dans le PMSI](../fiches/depenses_hopital_public.md).
+
+
 
 ::: warning ATTENTION
 Nous partageons l’information que nous sommes parvenus à recueillir sur le calcul du reste à charge.  
@@ -158,12 +173,12 @@ Les principales règles de calcul du RAC AMO sont résumées dans le tableau ci-
 
 ![](../files/DREES/2019-11_tableau_RAC_MCO.png)  
 
-Voici la signification des sigles utilisés dans le tableau :  
-FJU : forfait journalier unitaire (par journée d’hospitalisation)  
-nb_jour : nombre de jours de présence  
-PF : participation forfaitaire  
-TNP : tarif national de prestation (*i.e.* GHS en MCO, GMT en SSR et GHT en HAD)  
-TR : taux de remboursement (%)  
+*Signification des sigles utilisés dans le tableau :*  
+**FJU** : forfait journalier unitaire (par journée d’hospitalisation)  
+**nb_jour** : nombre de jours de présence  
+**PF** : participation forfaitaire  
+**TNP** : tarif national de prestation (*i.e.* GHS en MCO, GMT en SSR et GHT en HAD)  
+**TR** : taux de remboursement (%)  
   
 
 ( * ) facturation du FJU pour le jour de sortie si le mode de sortie est autre que transfert ou décès, 0 sinon  
@@ -218,14 +233,14 @@ Dans la **table de chaînage patients** `T_MCOaaC`, nous considérons les variab
 - `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.html))
 - `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent les dates d'entrée et de sortie à l'hôpital respectivement  
 
-Dans la table `T_MCOaaVALO`, qui est la **table de valorisation des séjours** (données retraitées par l'ATIH), nous considérons les variables:
-- `MNT_18` : montant de la participation forfaitaire de 18 euros (en 2016) pour les actes exonérants
+Dans la table `T_MCOaaVALO`, qui est la **table de valorisation des séjours** (données retraitées par l'ATIH), nous considérons les variables :  
+- `MNT_18` : montant de la participation forfaitaire de 18 euros (en 2016) pour les actes exonérants.  
 À noter qu’il s’agit d’une variable renseignée par l’établissement (elle n’est pas recalculée).
-- `MNT_FJ2` : montant du forfait journalier (FJ). 
+- `MNT_FJ2` : montant du forfait journalier (FJ).  
 La variable a été corrigée par l’ATIH qui a notamment forcé à zéro le FJ dans le cas où il n’est pas applicable 
 (*cf.* manuel d'utilisation du logiciel VisualValoSej)
-- `MNT_GHS_AM` : valorisation AM du [GHS](../glossaire/GHS.html)  
-- `MNT_TOT_AM` : coût pour l’assurance maladie obligatoire (GHS + suppléments journaliers en sus du GHS)
+- `MNT_GHS_AM` : valorisation AM du [GHS](../glossaire/GHS.html)
+- `MNT_TOT_AM` : coût pour l’assurance maladie obligatoire (GHS + suppléments journaliers en sus du GHS)  
   Ce montant ne tient cependant pas compte du paiement des médicaments et dispositifs médicaux de la liste en sus.  Pour retrouver ces montants, se référer à la fiche sur "les dépenses des établissements de santé publics dans le PMSI".  
 
 - `TAUX2` : taux de remboursement du séjour 
