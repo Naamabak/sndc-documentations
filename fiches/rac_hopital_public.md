@@ -42,14 +42,21 @@ Celle-ci n’est pas exhaustive et doit être traitée avec précaution.
 
 ## Composantes et modalités de calcul du reste à charge 
 
-Le reste à charge (RAC) hospitalier peut être composé des éléments suivants : 
-- un **forfait journalier hospitalier**
-- un **ticket modérateur** 
-- une **participation forfaitaire**
-- d'éventuels **dépassements d'honoraires** dans le cadre de l'activité libérale des praticiens hospitaliers
+Le reste à charge (RAC) hospitalier correspond à la participation du patient à l'hébergement et aux frais de soins : 
+- La participation à l’hébergement consiste en un **forfait journalier hospitalier**.  
+  Le patient peut s’acquitter en outre de frais liés aux prestations pour exigences particulières, 
+  non pris en charge par l’assurance maladie (*e.g.* mise à disposition d’une chambre particulière).
 
-La facturation de ces différentes composantes aux patients dépend de plusieurs paramètres, 
-notamment du type d’actes et de séjours, de la durée de séjour et du profil des patients. 
+- La participation aux prestations de soins peut prendre la forme : soit d’un **ticket modérateur** (TM), soit d’une **participation forfaitaire**.  
+  D'éventuels **dépassements d'honoraires** peuvent s'y ajouter dans le cadre de l'activité libérale des praticiens hospitaliers.
+
+Lorsque le patient doit s’acquitter d’un TM, la participation à l’hébergement 
+n’est pas ajoutée au TM mais elle s’impute sur ce dernier.
+
+La facturation au patient des différentes composantes du RAC aux patients dépend de plusieurs paramètres, 
+notamment du type d’actes et de séjours, de la durée de séjour, du profil des patients. 
+Le montant de la participation aux soins dépend également de la catégorie juridique 
+de l’établissement de santé et de son mode de financement.
 
 Nous allons d'abord présenter les différentes composantes du RAC AMO, puis expliquer leurs règles d'imputation, afin de calculer le RAC AMO dans les différents cas de figure.  
 
@@ -176,7 +183,7 @@ il paiera le forfait journalier hospitalier, y compris pour le jour de sortie.
 
 Les principales règles de calcul du RAC AMO sont résumées dans le tableau ci-dessous.  
 
-![](../files/DREES/2019-11_tableau_RAC_MCO.png)  
+![](../files/DREES/2020-01_tableau_RAC.png)  
 
 *Signification des sigles utilisés dans le tableau :*  
 **FJU** : forfait journalier unitaire (par journée d’hospitalisation)  
@@ -204,10 +211,6 @@ En voici les principales différences :
   À noter qu'il n'y a qu'un type d'hospitalisation (complète / partielle) par séjour. Tout changement de type d'hospitalisation donnera lieu à un nouveau séjour. 
 - Lors de séjours en hospitalisation partielle en SSR, il n'y a pas de FJ facturé. Le temps passé à l'hôpital est indiqué par le nombre de jours de présence.    
 - Lors de séjours en hospitalisation complète en SSR, le patient peut bénéficier de permissions. Ainsi, pour connaître le temps passé à l'hôpital, il ne faut pas compter la durée de séjour (*i.e.* le nombre de jours entre le début et la fin du séjour), mais le nombre de jours de présence.    
-
-
-**[A CREUSER]** : Est-ce que la règle d’exonération du TM au-delà de 30 jours s’applique uniquement en cas d’hospitalisation complète ? 
-
 
 ## En pratique : calcul des restes à charge hospitaliers à partir du PMSI MCO
 
@@ -327,8 +330,8 @@ La variable `tx_ATIH` peut être calculée comme suit :
   - Si `EXO_TM` ou `NAT_ASS` est manquant `tx_ATIH` est manquant
   - Dans les autres cas `tx_ATIH` prend la valeur de 100%
 L'ATIH suggère aussi de supprimer les lignes pour lesquelles `tx_ATIH` ne peut être calculé du fait de valeurs manquantes pour `EXO_TM` ou `NAT_ASS`.
-*Suggestion :* 
 
+*Suggestion :*  
 Nous suggérons la création de la variable corrigée `TAUX_C` comme suit :
 
 1. `TAUX_C` est égal à `TAUX2` (sauf si manquant ou nul hors prélèvement d’organe)
