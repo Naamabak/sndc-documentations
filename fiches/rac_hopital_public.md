@@ -183,7 +183,7 @@ il paiera le forfait journalier hospitalier, y compris pour le jour de sortie.
 
 Les principales règles de calcul du RAC AMO sont résumées dans le tableau ci-dessous.  
 
-![](../files/DREES/2020-01_tableau_RAC.png)  
+![](https://gitlab.com/healthdatahub/documentation-snds/blob/master/files/DREES/2020-01_tableau_RAC.png)  
 
 *Signification des sigles utilisés dans le tableau :*  
 **FJU** : forfait journalier unitaire (par journée d’hospitalisation)  
