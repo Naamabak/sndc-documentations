@@ -197,9 +197,8 @@ Les principales règles de calcul du RAC AMO sont résumées dans le tableau ci-
 ( ** ) « durée + 1 » si le mode de sortie est autre que transfert ou décès (car facturation du jour de sortie), « durée » sinon  
 ( *** ) en cas d’hospitalisation à temps partiel ou de séjour en ambulatoire, on ne parle plus de durée mais de nombre de jours de présence  
 
-Dans ce tableau, ne figurent pas :
-- le cas (a priori très rare) où le forfait journalier des 30 premiers jours est supérieur au ticket modérateur ((100 – TR) x TJP x durée < FJU x durée). Dans ce cas-là, le patient ne s’acquitte pas du ticket modérateur mais du forfait journalier.  
-- les éventuels dépassements d'honoraires qui peuvent avoir lieu au cours de séjours hospitaliers dans le cadre de l'activité libérale des praticiens hospitaliers    
+Dans ce tableau, ne figurent pas les éventuels dépassements d'honoraires qui peuvent 
+avoir lieu au cours de séjours hospitaliers dans le cadre de l'activité libérale des praticiens hospitaliers.   
 
 Le tableau ci-dessus couvre le cas général, à partir de l'exemple du MCO, mais n'est pas exhaustif.  
 Nous reviendrons sur les particularités par PMSI dans le reste de la fiche.
@@ -625,12 +624,6 @@ Il est ensuite possible de calculer un reste à charge après AMO **par bénéfi
 
 ## Références
 
-::: tip Crédits
-
-Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad (DREES) et Kristel Jacquier (DSS)
-:::
-
-
 *Sources :*  
 - Code de la sécurité sociale : articles L174-4, L.322-2 et L.322-3, L325-1, D 325-1, D 325-6, L 861-3, R 174-5, R 174-5-1 et R 174-5-2
 - [Fiche du Ministère de la santé sur la facturation du forfait journalier hospitalier](https://solidarites-sante.gouv.fr/professionnels/gerer-un-etablissement-de-sante-medico-social/financement/regles-de-facturation/article/la-facturation-les-regles)
@@ -640,3 +633,11 @@ Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad 
 - [ATIH - Manuel d'utilisation du logiciel VisualValoSej (PMSI MCO)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is) 
 - [ATIH - Manuel d'utilisation du logiciel VisualValo SSR](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwj2rJaj-OTlAhU2D2MBHWvqAHMQFjAAegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F9797%2F2100&usg=AOvVaw3JFAfMc9byZDL3-VO5C0Yj)
 - Supports de formation de la CNAM sur le DCIRS et le PMSI
+
+
+::: tip Crédits
+
+Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad (DREES) et Kristel Jacquier (DSS)
+:::
+
+
