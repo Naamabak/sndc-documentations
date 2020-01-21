@@ -1,3 +1,3 @@
 # Fiches thématiques
 
-Cette section contient des fiches thématiques détaillés.
+Cette section contient des fiches thématiques détaillées.
