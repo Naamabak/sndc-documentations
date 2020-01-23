@@ -2,7 +2,7 @@
 
 ## Les datamarts étudiés
 
-![schema 1](../files/Cnam/images_datamart/Image01.png)
+![schema 1](../../files/Cnam/images_datamart/Image01.png)
 
 
 **Univers AMOS/EXE-PRS** :  historique depuis 2013
@@ -37,7 +37,7 @@ Activité de pharmacie dispensée à l’hôpital codée en Unité Commune de Di
 
 ## Notions fondamentales : prestations agrégées
 
-![schema 2](../files/Cnam/images_datamart/Image02.png)
+![schema 2](../../files/Cnam/images_datamart/Image02.png)
 
 
 Deux types de prestations agrégées : 
@@ -48,12 +48,12 @@ Lorsqu’on s’intéresse à la prestation de référence en terme de montant, 
 **La nature de prestation correspond au le détail de chaque code-actes**, l’acte de base lui-même et éventuelles majorations d’acte liés à l’acte.
 
 
-![schema 3](../files/Cnam/images_datamart/Image03.png)
+![schema 3](../../files/Cnam/images_datamart/Image03.png)
 
 
 ## Notions fondamentales : prestations affinées
 
-![schema 4](../files/Cnam/images_datamart/Image04.png)
+![schema 4](../../files/Cnam/images_datamart/Image04.png)
 
 Certaines prestations de référence, codées en NGAP, dites agrégées, peuvent également être présentes dans une nomenclature plus détaillée.
 
@@ -98,7 +98,7 @@ Les prestations légales Assurance Maladie (0, 1) : acte et complément N/F/U
 Les remboursements supplémentaires (2 à 13) : Alsace Moselle, CMU, ACS, AME …
 
 
-![schema 5](../files/Cnam/images_datamart/Image05.png)
+![schema 5](../../files/Cnam/images_datamart/Image05.png)
 
 
 ## Notions fondamentales : Prestations légales et parts supplémentaires
@@ -110,18 +110,18 @@ Les remboursements supplémentaires (2 à 13) : Alsace Moselle, CMU, ACS, AME �
 *  Les parts supplémentaires : remboursements supplémentaires liée à  des situations particulières des bénéficiaires : bénéficiaire d’un dispositif de prévention, du régime local Alsace Moselle, de la CMU complémentaire, de l’Aide à la Complémentaire Santé (ACS), de l’ Aide Médicale d’Etat  …= prise en charge du ticket modérateur voire d’un forfait de dépassement (optique, dentaire).
 
 
-![schema 6](../files/Cnam/images_datamart/Image06.png)
+![schema 6](../../files/Cnam/images_datamart/Image06.png)
 
 
 
 ## Notions fondamentales : Type de remboursement (suite)
 
-![schema 7](../files/Cnam/images_datamart/Image07.png)
+![schema 7](../../files/Cnam/images_datamart/Image07.png)
 
 
 ## Comprendre la gestion des indicateurs dans l'entrepôt SNIIRAM
 
-![schema 8](../files/Cnam/images_datamart/Image08.png)
+![schema 8](../../files/Cnam/images_datamart/Image08.png)
 
 
 
