@@ -1,4 +1,4 @@
-const execSync = require('child_process').execSync;
+const {spawn} = require('child_process');
 const fs = require('fs');
 const schemas_path = "./tables/.schemas";
 
@@ -17,10 +17,10 @@ function generateSchemas(path, files, dir) {
             generateSchemas(path + '/' + dir, subFiles, filename);
         } else {
             //generate new schemas in table format using template "template_schemas.hbs" & .json file
-            execSync('table-schema-to-markdown ' + path  + '/' + dir.replace(/\s/g, '\\ ') + '/' + filename +
-                ' --template=.vuepress/template_schema.hbs --fields-format=table >>' + path  + '/'
-                + dir.replace(/\s/g, '\\ ') + '/' + filename.replace(/\.[^/.]+$/, "") + '.md');
-                console.log(dir.replace(/\s/g, '\\ ') + '/' + filename.replace(/\.[^/.]+$/, "") + '.md has been generated successfully')
+            path2src = path + '/' + dir.replace(/\s/g, '\\ ') + '/' + filename;
+            path2dest = '>> ' + path  + '/' + dir.replace(/\s/g, '\\ ') + '/' + filename.replace(/\.[^/.]+$/, "") + '.md';
+            spawn( 'table-schema-to-markdown', [path2src, '--template=.vuepress/template_schema.hbs', path2dest] );
+            console.log(dir.replace(/\s/g, '\\ ') + '/' + filename.replace(/\.[^/.]+$/, "") + '.md has been generated successfully')
         }
     });
 }
@@ -45,6 +45,6 @@ function searchAndGenerateSchemas(path) {
 }
 
 //delete the current generated schemas if exist
-execSync("find tables/.schemas -type f -name '*.md' -delete");
+spawn('find' ,['tables/.schemas', '-type f', "-name '*.md'", '-delete']);
 //generate new schemas using the distant .json files
 searchAndGenerateSchemas(schemas_path);
