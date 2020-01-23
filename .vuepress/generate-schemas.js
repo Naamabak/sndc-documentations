@@ -1,4 +1,5 @@
-const {spawn} = require('child_process');
+const exec = require('child_process').exec;
+const execSync = require('child_process').execSync;
 const fs = require('fs');
 const schemas_path = "./tables/.schemas";
 
@@ -19,7 +20,7 @@ function generateSchemas(path, files, dir) {
             //generate new schemas in table format using template "template_schemas.hbs" & .json file
             path2src = path + '/' + dir.replace(/\s/g, '\\ ') + '/' + filename;
             path2dest = '>> ' + path  + '/' + dir.replace(/\s/g, '\\ ') + '/' + filename.replace(/\.[^/.]+$/, "") + '.md';
-            spawn( 'table-schema-to-markdown', [path2src, '--template=.vuepress/template_schema.hbs', path2dest] );
+            exec( 'table-schema-to-markdown '+ path2src +' --template=.vuepress/template_schema.hbs '+ path2dest );
             console.log(dir.replace(/\s/g, '\\ ') + '/' + filename.replace(/\.[^/.]+$/, "") + '.md has been generated successfully')
         }
     });
@@ -45,6 +46,6 @@ function searchAndGenerateSchemas(path) {
 }
 
 //delete the current generated schemas if exist
-spawn('find' ,['tables/.schemas', '-type f', "-name '*.md'", '-delete']);
+execSync("find tables/.schemas -type f -name '*.md' -delete");
 //generate new schemas using the distant .json files
 searchAndGenerateSchemas(schemas_path);
