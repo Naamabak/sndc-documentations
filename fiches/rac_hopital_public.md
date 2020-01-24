@@ -91,7 +91,7 @@ Le taux de remboursement varie généralement entre 80 et 100 % du montant de la
 Dans le secteur public, on distingue deux bases de remboursement :  
 - **La base de remboursement de l'assurance maladie (AM)**  
 Depuis la mise en place de la T2A, chaque séjour se voit attribuer un tarif déterminant le montant de remboursement par l'AM.  
-On parle de groupe homogène de séjour ([GHS](../glossaire/GHS.html) en MCO, de groupe homogène de tarif ([GHT](../glossaire/GHT.html)) en HAD et le groupe médico-économique ([GMT](../glossaire/GMT.html)) en SSR.    
+On parle de groupe homogène de séjour ([GHS](../glossaire/GHS.md) en MCO, de groupe homogène de tarif ([GHT](../glossaire/GHT.md)) en HAD et le groupe médico-économique ([GMT](../glossaire/GMT.md)) en SSR.    
 
 - **La base de remboursement de l'établissement**  
 Elle est calculée à partir du tarif journalier de prestation propre à chaque catégorie tarifaire (TJP), multiplié par la durée de séjour (cette durée ne pouvant dépasser 30 jours). 
@@ -220,7 +220,7 @@ et proposons une méthodologie pour calculer les restes à charge (RAC) lors de 
 en établissements publics à partir du PMSI.  
 Cette méthodologie est déclinée par discipline hospitalière.  
 
-Le reste à charge lors des [ACE](../fiches/actes_consult_externes.html#que-regroupent-les-actes-et-consultations-externes) 
+Le reste à charge lors des [ACE](../fiches/actes_consult_externes.md) 
 a été traité dans la fiche sur les [dépenses de santé en établissements de santé publics](../fiches/depenses_hopital_public.md).
 
 **Limites :**  
@@ -239,7 +239,7 @@ Pour plus d'informations sur les tables et variables utilisées, se référer à
 La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ETA_NUM`, `RSA_NUM`) où `ETA_NUM` est le numéro FINESS de l'établissement et `RSA_NUM` est le numéro séquentiel du séjour. 
 
 Dans la **table de chaînage patients** `T_MCOaaC`, nous considérons les variables :
-- `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.html))
+- `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md))
 - `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent les dates d'entrée et de sortie à l'hôpital respectivement  
 
 Dans la table `T_MCOaaVALO`, qui est la **table de valorisation des séjours** (données retraitées par l'ATIH), nous considérons les variables :  
@@ -248,7 +248,7 @@ Dans la table `T_MCOaaVALO`, qui est la **table de valorisation des séjours** (
 - `MNT_FJ2` : montant du forfait journalier (FJ).  
 La variable a été corrigée par l’ATIH qui a notamment forcé à zéro le FJ dans le cas où il n’est pas applicable 
 (*cf.* manuel d'utilisation du logiciel VisualValoSej)
-- `MNT_GHS_AM` : valorisation AM du [GHS](../glossaire/GHS.html)
+- `MNT_GHS_AM` : valorisation AM du [GHS](../glossaire/GHS.md)
 - `MNT_TOT_AM` : coût pour l’assurance maladie obligatoire (GHS + suppléments journaliers en sus du GHS)  
   Ce montant ne tient cependant pas compte du paiement des médicaments et dispositifs médicaux de la liste en sus.  Pour retrouver ces montants, se référer à la fiche sur "les dépenses des établissements de santé publics dans le PMSI".
 - `TAUX2` : taux de remboursement du séjour 
@@ -425,7 +425,7 @@ Le coût total du séjour correspond au montant pris en charge par l’AMO (vari
   Le RAC AMO (part légale + supplément) peut donc être fixé à 0.  
   Les bénéficiaires de l'AME, des soins urgents, ainsi que les détenus peuvent être identifiés à partir de la variable `VALO` dans 
   la table `T_MCOaaVALO` (3 : AME , 4 : SU, 5 : détenus).
-  Les bénéficiaires de la CMU-C peuvent être identifiés comme décrit dans la fiche sur la [CMU-C](../fiches/cmu_c.html#description-des-tables-et-variables-d-interet).
+  Les bénéficiaires de la CMU-C peuvent être identifiés comme décrit dans la fiche sur la [CMU-C](../fiches/cmu_c.md).
   
 
 ## En pratique : calcul des restes à charge hospitaliers à partir du PMSI SSR
@@ -440,7 +440,7 @@ La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ET
 et `RHA_NUM` le numéro séquentiel du séjour. 
 
 Dans la **table de chaînage patients** `T_SSRaaC`, nous considérons les variables :
-- `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.html))
+- `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md))
 - `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent les dates d'entrée et de sortie à l'hôpital respectivement  
 
 La table `T_SSRaaVALO` de valorisation des séjours (données retraitées par l'ATIH) n'existait pas avant 2017. Il faut privilégier son utilisation si elle est disponible.   
@@ -585,7 +585,7 @@ La clef de chaînage entre les tables mentionnées ci-dessous est le couple (`ET
 et `RHAD_NUM` le numéro séquentiel du séjour. 
 
 Dans la **table de chaînage patients** `T_HADaaC`, nous considérons les variables :
-- `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.html))
+- `NIR_ANO_17` : identifiant du bénéficiaire ([fiche identifiant des bénéficiaires](../fiches/fiche_beneficiaire.md))
 - `EXE_SOI_DTD` et `EXE_SOI_DTF` qui indiquent respectivement les dates de début et de fin de la prise en charge à domicile 
 
 La table `T_HADaaVALO` de valorisation des séjours (données retraitées par l'ATIH) n'existait pas avant 2017. Il faut privilégier son utilisation si elle est disponible.   
