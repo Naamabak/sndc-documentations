@@ -373,9 +373,19 @@ Il existe deux façons de renseigner la facturation ou non de la participation f
 On attribue donc la valeur de 100% au taux de remboursement corrigé (`TAUX_C`).
 - Penser à remplacer les valeurs manquantes, s'il y en a, par des 0.
 
-#### Autres valeurs manquantes 
+#### Nettoyage du ticket modérateur
 
 Pour faciliter le calcul du RAC, penser à remplacer d'éventuelles valeurs manquantes de `FAC_MNT_TM` par des 0.
+
+Pour le séjour d'un assuré de droit commun de plus de 30 jours, le ticket modérateur n'est facturé que pour les 30 premiers jours.  
+Notre observation des données suggère qu'en cas de séjours longs, la variable `FAC_MNT_TM` n'est pas plafonnée à 30 jours, 
+mais correspond à 20 % de la base de remboursement de l'établissement (TJP) sur la durée totale du séjour.  
+
+*Suggestion pour le séjour d'un assuré de droit commun de plus de 30 jours :* 
+- Nous pensons que `FAC_MNT_TM` = 20 % * TJP * `duree_sej`
+- Nous recalculons un ticket modérateur corrigé plafonné à 30 jours :   
+  `TM_C` = 20 % * TJP * 30 = `FAC_MNT_TM` * 30 / `duree_sej`
+
 
 #### Calcul du RAC
 
@@ -384,7 +394,7 @@ On utilise les variables suivantes :
 - `FJ_C`: montant du forfait journalier pour l'ensemble du séjour (corrigé)
 - `FJ_C2`: montant du forfait journalier effectivement facturé (dont le calcul est présenté ci-dessus)
 - `FAC_18E`: montant à facturer au titre de la participation forfaitaire de 18€ (table `T_MCOaaSTC`)
-- `FAC_MNT_TM`: montant à facturer au titre du ticket modérateur (table `T_MCOaaSTC`)
+- `TM_C` : montant à facturer au titre du ticket modérateur (version corrigé de `FAC_MNT_TM` de la table `T_MCOaaSTC`)
 - `FJ_COD_PEC`: code de prise en charge du forfait journalier (table `T_MCOaaSTC`)
 - `VALO` : valorisation du séjour (table `T_MCOaaSTC`)
 
