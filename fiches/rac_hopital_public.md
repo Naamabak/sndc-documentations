@@ -14,7 +14,7 @@ Nous ne traitons pas ici le calcul du reste à charge en psychiatrie pour lequel
 
 Le schéma ci-dessous résume les notions importantes :  
 [](../files/DREES/2020_01_schema_rac_amo_hospit.png)
-<img src="../files/DREES/2020_01_schema_rac_amo_hospit.png"  width="388" height="271">
+<img src="../files/DREES/2020_01_schema_rac_amo_hospit.png"  width="430" height="300">
 
 *Signification des abréviations présentes sur le schéma :*  
 **AMO** : assurance maladie obligatoire; **BRSS** : base de remboursement de la sécurité sociale;   
