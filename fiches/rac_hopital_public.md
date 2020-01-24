@@ -415,7 +415,7 @@ Calcul de la variable `rac` dans les différents cas de figure :
 6. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` < `FJ_C` (aucune exonération, FJ>TM)
 :::
 
-Le coût total du séjour correspond au montant pris en charge par l’AMO (variable `MNT_TOT_AM` de la table `T_MCOaaVALO`) auquel on ajoute le reste à charge. 
+Le coût total du séjour correspond au montant remboursé par l’AMO (variable `MNT_TOT_AM` de la table `T_MCOaaVALO`) auquel on ajoute le reste à charge. 
 
 *Pour aller plus loin >*  
 - Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_MCOaaC`).
@@ -565,7 +565,7 @@ Calcul de la variable `rac` dans les différents cas de figure :
 5. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` < `FJ_C` (aucune exonération, FJ>TM)
 :::
 
-Le coût total du séjour correspond au montant pris en charge par l’AMO (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge. 
+Le coût total du séjour correspond au montant remboursé par l’AMO (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge. 
 
 *Pour aller plus loin >*  
 - Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_SSRaaC`).
@@ -671,7 +671,7 @@ Calcul de la variable `rac` dans les différents cas de figure :
 2. `rac` = `TM_C` si `TAUX_C`!=100 (pas d'exonération de TM)
 :::
 
-Le coût total du séjour correspond au montant pris en charge par l’AMO (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge du séjour.
+Le coût total du séjour correspond au montant remboursé par l’AMO (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge du séjour.
 
 *Pour aller plus loin >*  
 - Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_HADaaC`).
