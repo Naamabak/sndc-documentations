@@ -25,13 +25,16 @@ Le schéma ci-dessous résume les notions importantes :
 
 L'ensemble des dépenses associées à un séjour en établissement public comprend :
 
-* le montant, que nous noterons pour simplifier, **"montant AMO"**, et qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO) ainsi que les parts supplémentaires prises en charge par le public (CMU-C, AME, soins urgents, détenus, etc.)
-* le **reste à charge après AMO** (payé par le patient et / ou son organisme complémentaire)
+* le **montant AMO** qui est la part légale prise en charge par l'assurance maladie obligatoire (AMO)  
+  (*cf.* fiche sur [les dépenses des établissements de santé publics dans le PMSI](../fiches/depenses_hopital_public.md) 
+  pour plus d'informations sur le montant AMO).
+* le **reste à charge après AMO** payé par le patient et / ou son organisme complémentaire, lui même composé :
+  * du **RAC opposable**, qui est la différence entre le tarif de convention (Montant BRSS) et le remboursement de la Sécurité sociale (montant AMO)
+  * d'éventuels **dépassements** d'honoraires
 
-Le RAC opposable est la différence entre le tarif de convention (Montant BRSS) et le remboursement de la Sécurité sociale (montant AMO).
-
-Pour plus d'informations sur le montant AMO, se référer à la fiche sur [les dépenses des établissements de santé publics dans le PMSI](../fiches/depenses_hopital_public.md).
-
+Le RAC AMO ainsi défini ne tient pas compte des parts supplémentaires prises en charge par le public 
+et qui couvrent l'intégralité du RAC opposable à l'hôpital pour les bénéficiaires de la CMU-C, de l'AME, des soins urgents, 
+ainsi que pour les détenus.  
 
 
 ::: warning ATTENTION
@@ -42,13 +45,12 @@ Celle-ci n’est pas exhaustive et doit être traitée avec précaution.
 
 ## Composantes et modalités de calcul du reste à charge 
 
-Le reste à charge (RAC) hospitalier correspond à la participation du patient à l'hébergement et aux frais de soins : 
+À l'hôpital, le reste à charge (RAC) après AMO correspond à la participation du patient à l'hébergement et aux frais de soins : 
 - La participation à l’hébergement consiste en un **forfait journalier hospitalier**.  
   Le patient peut s’acquitter en outre de frais liés aux prestations pour exigences particulières, 
   non pris en charge par l’assurance maladie (*e.g.* mise à disposition d’une chambre particulière).
-
 - La participation aux prestations de soins peut prendre la forme : soit d’un **ticket modérateur** (TM), soit d’une **participation forfaitaire**.  
-  D'éventuels **dépassements d'honoraires** peuvent s'y ajouter dans le cadre de l'activité libérale des praticiens hospitaliers.
+  D'éventuels **dépassements d'honoraires** peuvent s'y ajouter dans le cadre de l'activité libérale des praticiens hospitaliers. 
 
 Lorsque le patient doit s’acquitter d’un TM, la participation à l’hébergement 
 n’est pas ajoutée au TM mais elle s’impute sur ce dernier.
@@ -381,10 +383,13 @@ Pour le séjour d'un assuré de droit commun de plus de 30 jours, le ticket mod�
 Notre observation des données suggère qu'en cas de séjours longs, la variable `FAC_MNT_TM` n'est pas plafonnée à 30 jours, 
 mais correspond à 20 % de la base de remboursement de l'établissement (TJP) sur la durée totale du séjour.  
 
-*Suggestion pour le séjour d'un assuré de droit commun de plus de 30 jours :* 
-- Nous pensons que `FAC_MNT_TM` = 20 % * TJP * `duree_sej`
-- Nous recalculons un ticket modérateur corrigé plafonné à 30 jours :   
-  `TM_C` = 20 % * TJP * 30 = `FAC_MNT_TM` * 30 / `duree_sej`
+*Suggestion :*  
+Nous suggérons la création de la variable corrigée `TM_C` comme suit :  
+1. Pour le séjour d'un assuré de droit commun de plus de 30 jours :
+    - Nous pensons que `FAC_MNT_TM` = 20 % * TJP * `duree_sej`
+    - Nous recalculons un ticket modérateur corrigé plafonné à 30 jours :   
+      `TM_C` = 20 % * TJP * 30 = `FAC_MNT_TM` * 30 / `duree_sej`
+2. Dans tous les autres cas : `TM_C` = `FAC_MNT_TM`
 
 
 #### Calcul du RAC
@@ -405,9 +410,9 @@ Calcul de la variable `rac` dans les différents cas de figure :
 1. `rac` = 0 si `VALO` IN (3,4,5) (bénéficiaires de l'AME, SU et détenus)  
 2. `rac` = 0 si `FJ_COD_PEC`==R & `TAUX_C`==100 (exonération de TM et de FJ)
 3. `rac` = `FAC_18`*18  + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas d'exonération de FJ)
-4. `rac` = `FAC_MNT_TM` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas d'exonération de TM)
-5. `rac` = `FAC_MNT_TM`+`FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` > `FJ_C` (aucune exonération, TM>FJ)
-6. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` < `FJ_C` (aucune exonération, FJ>TM)
+4. `rac` = `TM_C` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas d'exonération de TM)
+5. `rac` = `TM_C`+`FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` > `FJ_C` (aucune exonération, TM>FJ)
+6. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` < `FJ_C` (aucune exonération, FJ>TM)
 :::
 
 Le coût total du séjour correspond au montant pris en charge par l’assurance maladie (variable `MNT_TOT_AM` de la table `T_MCOaaVALO`) auquel on ajoute le reste à charge. 
@@ -480,8 +485,7 @@ La variable `tx_ATIH` peut être calculée comme suit :
   - Dans les autres cas `tx_ATIH` prend la valeur de 100%
 L'ATIH suggère aussi de supprimer les lignes pour lesquelles `tx_ATIH` ne peut être calculé du fait de valeurs manquantes pour `EXO_TM` ou `NAT_ASS`.
 
-*Suggestion :* 
-
+*Suggestion :*  
 Nous suggérons la création de la variable corrigée `TAUX_C` comme suit :
 1. `TAUX_C` est égal à `tx_ATIH` (sauf si manquant) 
 2. Si `tx_ATIH` manquant et `REM_TAU` non nul ni manquant : `TAUX_C` est égal à `REM_TAU`
@@ -494,7 +498,9 @@ On peut également attribuer un taux de remboursement corrigé (`TAUX_C`) de 100
 Le montant du forfait journalier est renseigné par la variable `FAC_MNT_FJ` (table `T_SSRaaSTC`).  
 
 *Suggestion :* 
-Il est également possible de recalculer le montant du forfait journalier à partir du nombre de jours de présence (variable `PRE_JOU_NBR`), du type d'hospitalisation (`HOS_TYP_UM`), du code d'exonération du forfait journalier (`FJ_COD_PEC`), des frais d'hébergement par journée d’hospitalisation (18€ en 2016) et du mode de sortie (`SOR_MOD`), comme suit : 
+Il est également possible de recalculer le montant du forfait journalier à partir du nombre de jours de présence (variable `PRE_JOU_NBR`), 
+du type d'hospitalisation (`HOS_TYP_UM`), du code d'exonération du forfait journalier (`FJ_COD_PEC`), 
+des frais d'hébergement par journée d’hospitalisation (18€ en 2016) et du mode de sortie (`SOR_MOD`), comme suit : 
 - `FJ_C`= 0 en cas de séjour en ambulatoire (entrée / sortie le même jour)
 - `FJ_C`= 0 en cas de séjour en hospitalisation partielle
 - `FJ_C`= 0 en cas d'exonération du forfait journalier (*i.e.* si `FJ_COD_PEC`="R" et si les conditions d'exonération listées dans la partie intitulée "Le forfait journalier et le forfait journalier de sortie" sont remplies)
@@ -512,8 +518,21 @@ On peut également créer une variable corrigée appelée `FJ_C2` qui prend la v
 *ATTENTION > en cas de séjours contigüs, la limite des 30 jours s'applique à la durée d'hospitalisation cumulée. Pour plus de rigueur, il faudrait chaîner les séjours pour calculer la durée de séjour, non pas pas PMSI, mais depuis l'entrée à l'hôpital.*  
 
 
-#### Autres valeurs manquantes 
+#### Nettoyage du ticket modérateur
 
+Tout comme en MCO, nous suggérons de recalculer le montant du ticket modérateur pour tenir compte 
+de son plafonnement à 30 jours en cas de séjours longs d'un assuré de droit commun.  
+Contrairement au MCO, on n'utilise pas la durée du séjour mais le nombre de jours de présence (`PRE_JOU_NBR`).  
+
+*Suggestion :*  
+Nous suggérons la création de la variable corrigée `TM_C` comme suit :  
+1. Pour le séjour d'un assuré de droit commun de plus de 30 jours :
+    - Nous pensons que `FAC_MNT_TM` = 20 % * TJP * `PRE_JOU_NBR`
+    - Nous recalculons un ticket modérateur corrigé plafonné à 30 jours :   
+      `TM_C` = 20 % * TJP * 30 = `FAC_MNT_TM` * 30 / `PRE_JOU_NBR`
+2. Dans tous les autres cas : `TM_C` = `FAC_MNT_TM`
+
+#### Autres valeurs manquantes 
 Pour faciliter le calcul du RAC, penser à remplacer d'éventuelles valeurs manquantes de `FAC_18E` et `FAC_MNT_TM` par des 0.
 
 #### Calcul du RAC
@@ -523,7 +542,7 @@ On utilise les variables suivantes :
 - `FJ_C`: montant du forfait journalier pour l'ensemble du séjour (corrigé)
 - `FJ_C2`: montant du forfait journalier facturé (en fonction de la durée de séjour, de l'imputation du FJ sur le TM)
 - `FAC_18E`: montant à facturer au titre de la participation forfaitaire de 18 € (table `T_SSRaaSTC`)
-- `FAC_MNT_TM`: montant à facturer au titre du ticket modérateur (table `T_SSRaaSTC`)
+- `TM_C` : montant à facturer au titre du ticket modérateur (version corrigé de `FAC_MNT_TM` de la table `T_SSRaaSTC`)
 - `FJ_COD_PEC`: code de prise en charge du forfait journalier (table `T_SSRaaSTC`)
 
 
@@ -532,9 +551,9 @@ En SSR, on distingue 5 cas de figure pour le calcul du RAC AMO.
 Calcul de la variable `rac` dans les différents cas de figure :  
 1. `rac` = 0 si `FJ_COD_PEC`==R & `TAUX_C`==100 (exonération de TM et de FJ)
 2. `rac` = `FAC_18`*18 + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas de FJ)
-3. `rac` = `FAC_MNT_TM` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas de TM)
-4. `rac` = `FAC_MNT_TM`+`FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` > `FJ_C` (aucune exonération, TM>FJ)
-5. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `FAC_MNT_TM` < `FJ_C` (aucune exonération, FJ>TM)
+3. `rac` = `TM_C` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas de TM)
+4. `rac` = `TM_C`+`FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` > `FJ_C` (aucune exonération, TM>FJ)
+5. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` < `FJ_C` (aucune exonération, FJ>TM)
 :::
 
 Le coût total du séjour correspond au montant pris en charge par l’assurance maladie (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge. 
@@ -598,14 +617,26 @@ La variable `tx_ATIH` peut être calculée comme suit :
   - Dans les autres cas `tx_ATIH` prend la valeur de 100%
 L'ATIH suggère aussi de supprimer les lignes pour lesquelles `tx_ATIH` ne peut être calculé du fait de valeurs manquantes pour `EXO_TM` ou `NAT_ASS`.
 
-*Suggestion :* 
-
+*Suggestion :*  
 Tout comme en SSR, nous suggérons la création de la variable corrigée `TAUX_C` comme suit :
 1. `TAUX_C` est égal à `tx_ATIH` (sauf si manquant) 
 2. Si `tx_ATIH` manquant et `REM_TAU` non nul ni manquant : `TAUX_C` est égal à `REM_TAU`
 3. Si `REM_TAU` nul ou manquant, supprimer la ligne
 
 On peut également attribuer un taux de remboursement corrigé (`TAUX_C`) de 100% dans les cas où la participation forfaitaire s'applique.  
+
+#### Nettoyage du ticket modérateur
+
+Tout comme en MCO, nous suggérons de recalculer le montant du ticket modérateur pour tenir compte 
+de son plafonnement à 30 jours en cas de séjours longs d'un assuré de droit commun.  
+
+*Suggestion :*  
+Nous suggérons la création de la variable corrigée `TM_C` comme suit :  
+1. Pour le séjour d'un assuré de droit commun de plus de 30 jours :
+    - Nous pensons que `FAC_MNT_TM` = 20 % * TJP * `SEJ_NBJ`
+    - Nous recalculons un ticket modérateur corrigé plafonné à 30 jours :   
+      `TM_C` = 20 % * TJP * 30 = `FAC_MNT_TM` * 30 / `SEJ_NBJ`
+2. Dans tous les autres cas : `TM_C` = `FAC_MNT_TM`
 
 #### Autres valeurs manquantes 
 
@@ -618,13 +649,13 @@ Par définition, il n'y a pas de forfait journalier en hospitalisation *à domic
 On utilise les variables suivantes :  
 - `TAUX_C`: taux de remboursement du séjour (corrigé)
 - `FAC_18E`: montant à facturer au titre de la participation forfaitaire de 18 € (table `T_HADaaSTC`)
-- `FAC_MNT_TM`: montant à facturer au titre du ticket modérateur (table `T_HADaaSTC`)
+- `TM_C` : montant à facturer au titre du ticket modérateur (version corrigé de `FAC_MNT_TM` de la table `T_HADaaSTC`)
 
 En HAD, on distingue deux cas de figure pour le calcul du RAC AMO.  
 ::: warning 
 Calcul de la variable `rac` dans les différents cas de figure :  
 1. `rac` = `FAC_18`*18 si `TAUX_C`==100 (pas de TM, éventuellement PF si `FAC_18` == 1)
-2. `rac` = `FAC_MNT_TM` si `TAUX_C`!=100 (pas d'exonération de TM)
+2. `rac` = `TM_C` si `TAUX_C`!=100 (pas d'exonération de TM)
 :::
 
 Le coût total du séjour correspond au montant pris en charge par l’assurance maladie (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge du séjour.
