@@ -230,7 +230,7 @@ du praticien hospitalier sont directement facturés au patient (en plus des frai
 et n'apparaissent pas dans le PMSI mais dans le DCIR(S).  
 
 
-Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir des données du PMSI MCO de 2016.  
+Nous décrivons ci-dessous les modalités de calcul du reste à charge opposable à partir des données du PMSI MCO de 2016.  
 
 ### Les tables et variables mobilisées
 
@@ -361,7 +361,7 @@ On peut également créer une variable corrigée appelée `FJ_C2` qui prend la v
 - `FJ_C2` = `FJ_C` - 29*18 (= valeur du FJ au-delà du 30ème jour d'hospitalisation + FJ du jour de sortie) si séjour sans exonération de TM ni de FJ, de plus de 30 jours, avec transfert ou décès 
 - `FJ_C2` = `FJ_C` sinon (=valeur du FJ pour l'ensemble du séjour)
 
-*ATTENTION > en cas de séjours contigüs, la limite des 30 jours s'applique à la durée d'hospitalisation cumulée. Pour plus de rigueur, il faudrait chaîner les séjours pour calculer la durée de séjour, non pas par PMSI, mais depuis l'entrée à l'hôpital.*
+*ATTENTION > en cas de séjours contigus, la limite des 30 jours s'applique à la durée d'hospitalisation cumulée. Pour plus de rigueur, il faudrait chaîner les séjours pour calculer la durée de séjour, non pas par PMSI, mais depuis l'entrée à l'hôpital.*
 
 #### Nettoyage de la participation forfaitaire
 
@@ -415,13 +415,22 @@ Calcul de la variable `rac` dans les différents cas de figure :
 6. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` < `FJ_C` (aucune exonération, FJ>TM)
 :::
 
-Le coût total du séjour correspond au montant pris en charge par l’assurance maladie (variable `MNT_TOT_AM` de la table `T_MCOaaVALO`) auquel on ajoute le reste à charge. 
+Le coût total du séjour correspond au montant pris en charge par l’AMO (variable `MNT_TOT_AM` de la table `T_MCOaaVALO`) auquel on ajoute le reste à charge. 
 
-Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_MCOaaC`).
+*Pour aller plus loin >*  
+- Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_MCOaaC`).
+- Il est possible d'aller chercher les parts supplémentaires prises en charge par le public pour les 
+  bénéficiaires de la CMU-C, de l'AME, des soins urgents, ainsi que pour les détenus. 
+  À l'hôpital, les parts supplémentaires assurent la prise en charge du RAC opposable dans son intégralité pour ces populations.  
+  Le RAC AMO (part légale + supplément) peut donc être fixé à 0.  
+  Les bénéficiaires de l'AME, des soins urgents, ainsi que les détenus peuvent être identifiés à partir de la variable `VALO` dans 
+  la table `T_MCOaaVALO` (3 : AME , 4 : SU, 5 : détenus).
+  Les bénéficiaires de la CMU-C peuvent être identifiés comme décrit dans la fiche sur la [CMU-C](../fiches/cmu_c.html#description-des-tables-et-variables-d-interet).
+  
 
 ## En pratique : calcul des restes à charge hospitaliers à partir du PMSI SSR
 
-Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir des données du PMSI SSR de 2016.  
+Nous décrivons ci-dessous les modalités de calcul du reste à charge opposable à partir des données du PMSI SSR de 2016.  
 
 ### Les tables et variables mobilisées
 
@@ -515,7 +524,7 @@ On peut également créer une variable corrigée appelée `FJ_C2` qui prend la v
 - `FJ_C2` = `FJ_C` - 29*18 (= valeur du FJ au-delà du 30ème jour de présence + FJ du jour de sortie) si séjour sans exonération de TM ni de FJ, avec plus de 30 jours de présence, avec transfert ou décès 
 - `FJ_C2` = `FJ_C` sinon (=valeur du FJ pour l'ensemble du séjour)
 
-*ATTENTION > en cas de séjours contigüs, la limite des 30 jours s'applique à la durée d'hospitalisation cumulée. Pour plus de rigueur, il faudrait chaîner les séjours pour calculer la durée de séjour, non pas pas PMSI, mais depuis l'entrée à l'hôpital.*  
+*ATTENTION > en cas de séjours contigus, la limite des 30 jours s'applique à la durée d'hospitalisation cumulée. Pour plus de rigueur, il faudrait chaîner les séjours pour calculer la durée de séjour, non pas pas PMSI, mais depuis l'entrée à l'hôpital.*  
 
 
 #### Nettoyage du ticket modérateur
@@ -556,13 +565,17 @@ Calcul de la variable `rac` dans les différents cas de figure :
 5. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` < `FJ_C` (aucune exonération, FJ>TM)
 :::
 
-Le coût total du séjour correspond au montant pris en charge par l’assurance maladie (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge. 
+Le coût total du séjour correspond au montant pris en charge par l’AMO (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge. 
 
-Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_SSRaaC`).
-
+*Pour aller plus loin >*  
+- Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_SSRaaC`).
+- Il est possible d'aller chercher les parts supplémentaires prises en charge par le public pour les 
+  (CMU-C, AME, SU et détenus) comme décrit dans la partie sur le MCO. Il faut cette fois utiliser la variable `VALO` de 
+  la table `T_SSRaaVALO` (3 : AME , 4 : SU, 5 : détenus).
+  
 ## En pratique : calcul des restes à charge hospitaliers à partir du PMSI HAD
 
-Nous décrivons ci-dessous les modalités de calcul du reste à charge à partir des données du PMSI HAD de 2016.  
+Nous décrivons ci-dessous les modalités de calcul du reste à charge opposable à partir des données du PMSI HAD de 2016.  
 
 ### Les tables et variables mobilisées
 
@@ -658,10 +671,13 @@ Calcul de la variable `rac` dans les différents cas de figure :
 2. `rac` = `TM_C` si `TAUX_C`!=100 (pas d'exonération de TM)
 :::
 
-Le coût total du séjour correspond au montant pris en charge par l’assurance maladie (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge du séjour.
+Le coût total du séjour correspond au montant pris en charge par l’AMO (*cf.* fiche sur les dépenses à l'hôpital public) auquel on ajoute le reste à charge du séjour.
 
-Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_HADaaC`). 
-
+*Pour aller plus loin >*  
+- Il est ensuite possible de calculer un reste à charge après AMO **par bénéficiaire** en agrégeant les RAC pour les différents séjours d'un même bénéficiaire (en utilisant le `NIR_ANO_17` de la table `T_HADaaC`).
+- Il est possible d'aller chercher les parts supplémentaires prises en charge par le public pour les 
+  (CMU-C, AME, SU et détenus) comme décrit dans la partie sur le MCO. Il faut cette fois utiliser la variable `VALO` de 
+  la table `T_HADaaVALO` (3 : AME , 4 : SU, 5 : détenus).
 
 ## Références
 
