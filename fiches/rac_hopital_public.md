@@ -173,7 +173,7 @@ Cette durée de 30 jours se cumule entre séjours contigus, y compris entre diff
 
 *Exemples :*  
 Nous prenons plusieurs cas de figure pour un bénéficiaire qui n'est pas exonéré de ticket modérateur ni de forfait journalier.   
-- S'il reste 10 jours en MCO puis rentre chez lui, il paiera son ticket modérateur (20% de la base de remboursement de l'établissement) + le forfait journalier du jour de sortie.   
+- S'il reste 10 jours en MCO puis rentre chez lui, il paiera son ticket modérateur (20 % de la base de remboursement de l'établissement) + le forfait journalier du jour de sortie.   
   Si malheureusement il décède, il ne paiera que le ticket modérateur (et pas le forfait journalier du jour de sortie).  
 - S'il reste 10 jours en MCO puis 25 jours en SSR avant de rentrer chez lui, il sera exonéra de ticket modérateur 30 jours après son admission à l'hôpital.  
 Ainsi, il paiera le ticket modérateur pour le séjour en MCO et pour les 20 1er jours en SSR.  
@@ -311,7 +311,6 @@ Dans la table `T_MCOaaB`, qui est la **table de description du séjour**, nous c
 ### Filtres à ajouter
 
 Les filtres à poser pour extraire les informations sur les dépenses et le reste à 
-charge lors de séjours en établissements publics sont détaillées dans la [fiche sur les dépenses à l'hôpital public](../fiches/depenses_hopital_public.md)).
 
 
 ### Méthodologie d'exploitation du PMSI MCO pour le calcul du reste à charge
@@ -322,23 +321,29 @@ Deux variables renseignent le taux de remboursement :
 - Variable `REM_TAU` (table `T_MCOaaSTC`) fournie par l'établissement
 - Variable `TAUX2` (table `T_MCOAaaVALO`), qui est la version de `REM_TAU` corrigée par l'ATIH
 
-Dans les cas où la variable `TAUX2` est manquante, il est possible de le reconstruire comme indiqué dans [la documentation de l'ATIH](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is) 
--  à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
+Dans les cas où la variable `TAUX2` est manquante, il est possible de le reconstruire comme indiqué dans [la documentation de l'ATIH](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is),
+à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
 La variable `tx_ATIH` peut être calculée comme suit :  
-  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` est dans [10,13] alors `tx_ATIH` prend la valeur de 80%
-  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` n'est pas dans [10,13] alors `tx_ATIH` prend la valeur de 100%
-  - Si `EXO_TM` est dans [9] et `NAT_ASS` est dans [10] alors `tx_ATIH` prend la valeur de 90%
+  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` est dans [10,13] alors `tx_ATIH` prend la valeur de 80 %
+  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` n'est pas dans [10,13] alors `tx_ATIH` prend la valeur de 100 %
+  - Si `EXO_TM` est dans [9] et `NAT_ASS` est dans [10] alors `tx_ATIH` prend la valeur de 90 %
   - Si `EXO_TM` ou `NAT_ASS` est manquant `tx_ATIH` est manquant
-  - Dans les autres cas `tx_ATIH` prend la valeur de 100%
+  - Dans les autres cas `tx_ATIH` prend la valeur de 100 %
 L'ATIH suggère aussi de supprimer les lignes pour lesquelles `tx_ATIH` ne peut être calculé du fait de valeurs manquantes pour `EXO_TM` ou `NAT_ASS`.
 
 *Suggestion :*  
-Nous suggérons la création de la variable corrigée `TAUX_C` comme suit :
-
+Dans le cas général, nous suggérons la création de la variable corrigée `TAUX_C` comme suit :
 1. `TAUX_C` est égal à `TAUX2` (sauf si manquant ou nul hors prélèvement d’organe)
 2. Si prélèvement d’organe, attribuer à `TAUX_C` la valeur de 0 % (code VALO=2)  
 3. Si `TAUX2` manquant ou nul (hors prélèvement d’organe) : `TAUX_C` est égal à `tx_ATIH`
-4. Si `TAUX2` et `tx_ATIH` sont manquant, supprimer la ligne
+4. Si `TAUX2` et `tx_ATIH` sont manquants, supprimer la ligne
+
+Dans le cas particulier des bénéficiaires de l'AME, de SU ou des détenus (`VALO` IN (3,4,5)),
+`TAUX2`et `REM_TAU` présentent toutes deux beaucoup de valeurs nulles ou manquantes, mais 
+`REM_TAU` semble tout de même mieux renseignée.  
+Pour ces populations, les étapes 1. et 4. deviennent :   
+1. `TAUX_C` est égal à `REM_TAU` (sauf si manquant ou nul hors prélèvement d’organe)
+4. Si `TAUX2` et `tx_ATIH` sont manquants, forcer le taux de remboursement à 100 %
 
 #### Nettoyage du forfait journalier
 
@@ -371,8 +376,8 @@ Il existe deux façons de renseigner la facturation ou non de la participation f
 
 *Suggestion :* 
 - Privilégier `FAC_18E` qui a moins de valeurs manquantes.
-- Dans les cas où la participation forfaitaire s'applique, remplacer les taux de remboursement de 80 ou 90% (0.2% des cas) par 100% (on considère que les taux <100% sont des erreurs)
-On attribue donc la valeur de 100% au taux de remboursement corrigé (`TAUX_C`).
+- Dans les cas où la participation forfaitaire s'applique, remplacer les taux de remboursement de 80 ou 90 % (0.2 % des cas) par 100 % (on considère que les taux <100 % sont des erreurs)
+On attribue donc la valeur de 100 % au taux de remboursement corrigé (`TAUX_C`).
 - Penser à remplacer les valeurs manquantes, s'il y en a, par des 0.
 
 #### Nettoyage du ticket modérateur
@@ -403,16 +408,15 @@ On utilise les variables suivantes :
 - `FJ_COD_PEC`: code de prise en charge du forfait journalier (table `T_MCOaaSTC`)
 - `VALO` : valorisation du séjour (table `T_MCOaaSTC`)
 
-En MCO, on distingue 6 cas de figure pour le calcul du RAC AMO.  
+En MCO, on distingue 5 cas de figure pour le calcul du RAC AMO.  
 
 ::: warning 
 Calcul de la variable `rac` dans les différents cas de figure :  
-1. `rac` = 0 si `VALO` IN (3,4,5) (bénéficiaires de l'AME, SU et détenus)  
-2. `rac` = 0 si `FJ_COD_PEC`==R & `TAUX_C`==100 (exonération de TM et de FJ)
-3. `rac` = `FAC_18`*18  + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas d'exonération de FJ)
-4. `rac` = `TM_C` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas d'exonération de TM)
-5. `rac` = `TM_C`+`FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` > `FJ_C` (aucune exonération, TM>FJ)
-6. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` < `FJ_C` (aucune exonération, FJ>TM)
+1. `rac` = 0 si `FJ_COD_PEC`==R & `TAUX_C`==100 (exonération de TM et de FJ)
+2. `rac` = `FAC_18`*18  + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas d'exonération de FJ)
+3. `rac` = `TM_C` si `FJ_COD_PEC`==R & `TAUX_C`!=100 (exonération de FJ mais pas d'exonération de TM)
+4. `rac` = `TM_C`+`FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` > `FJ_C` (aucune exonération, TM>FJ)
+5. `rac` = `FJ_C` si `FJ_COD_PEC`!=R & `TAUX_C`!=100 & `TM_C` < `FJ_C` (aucune exonération, FJ>TM)
 :::
 
 Le coût total du séjour correspond au montant remboursé par l’AMO (variable `MNT_TOT_AM` de la table `T_MCOaaVALO`) auquel on ajoute le reste à charge. 
@@ -422,7 +426,7 @@ Le coût total du séjour correspond au montant remboursé par l’AMO (variable
 - Il est possible d'aller chercher les parts supplémentaires prises en charge par le public pour les 
   bénéficiaires de la CMU-C, de l'AME, des soins urgents, ainsi que pour les détenus. 
   À l'hôpital, les parts supplémentaires assurent la prise en charge du RAC opposable dans son intégralité pour ces populations.  
-  Le RAC AMO (part légale + supplément) peut donc être fixé à 0.  
+  Le RAC AMO (parts légale + supplémentaires) peut donc être fixé à 0.  
   Les bénéficiaires de l'AME, des soins urgents, ainsi que les détenus peuvent être identifiés à partir de la variable `VALO` dans 
   la table `T_MCOaaVALO` (3 : AME , 4 : SU, 5 : détenus).
   Les bénéficiaires de la CMU-C peuvent être identifiés comme décrit dans la fiche sur la [CMU-C](../fiches/cmu_c.md).
@@ -484,14 +488,14 @@ charge lors de séjours en SSR en établissements publics sont détaillées dans
 
 Le taux de remboursement est indiqué par la variable `REM_TAU` (table `T_SSRaaSTC`) fournie par l'établissement (sans avoir été corrigée par l'ATIH).  
 
-Il est possible de reconstruire ce taux comme indiqué dans la [documentation de l'ATIH]((https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwj2rJaj-OTlAhU2D2MBHWvqAHMQFjAAegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F9797%2F2100&usg=AOvVaw3JFAfMc9byZDL3-VO5C0Yj)) 
+Il est possible de reconstruire ce taux comme indiqué dans la [documentation de l'ATIH](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwj2rJaj-OTlAhU2D2MBHWvqAHMQFjAAegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F9797%2F2100&usg=AOvVaw3JFAfMc9byZDL3-VO5C0Yj), 
 à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
 La variable `tx_ATIH` peut être calculée comme suit :  
-  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` est dans [10,13] alors `tx_ATIH` prend la valeur de 80%
-  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` n'est pas dans [10,13] alors `tx_ATIH` prend la valeur de 100%
-  - Si `EXO_TM` est dans [9] et `NAT_ASS` est dans [10] alors `tx_ATIH` prend la valeur de 90%
+  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` est dans [10,13] alors `tx_ATIH` prend la valeur de 80 %
+  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` n'est pas dans [10,13] alors `tx_ATIH` prend la valeur de 100 %
+  - Si `EXO_TM` est dans [9] et `NAT_ASS` est dans [10] alors `tx_ATIH` prend la valeur de 90 %
   - Si `EXO_TM` ou `NAT_ASS` est manquant `tx_ATIH` est manquant
-  - Dans les autres cas `tx_ATIH` prend la valeur de 100%
+  - Dans les autres cas `tx_ATIH` prend la valeur de 100 %
 L'ATIH suggère aussi de supprimer les lignes pour lesquelles `tx_ATIH` ne peut être calculé du fait de valeurs manquantes pour `EXO_TM` ou `NAT_ASS`.
 
 *Suggestion :*  
@@ -500,7 +504,7 @@ Nous suggérons la création de la variable corrigée `TAUX_C` comme suit :
 2. Si `tx_ATIH` manquant et `REM_TAU` non nul ni manquant : `TAUX_C` est égal à `REM_TAU`
 3. Si `REM_TAU` nul ou manquant, supprimer la ligne
 
-On peut également attribuer un taux de remboursement corrigé (`TAUX_C`) de 100% dans les cas où la participation forfaitaire s'applique.  
+On peut également attribuer un taux de remboursement corrigé (`TAUX_C`) de 100 % dans les cas où la participation forfaitaire s'applique.  
 
 #### Nettoyage du forfait journalier
 
@@ -620,14 +624,14 @@ charge lors de séjours en HAD en établissements publics sont détaillées dans
 
 Le taux de remboursement est indiqué par la variable `REM_TAU` (table `T_HADaaSTC`) fournie par l'établissement (sans avoir été corrigée par l'ATIH).  
 
-Il est possible de reconstruire ce taux comme indiqué dans la [documentation de l'ATIH](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is)  
+Il est possible de reconstruire ce taux comme indiqué dans la [documentation de l'ATIH](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwiRm-798-TlAhUPFRQKHQHkBi8QFjACegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F8758%2F1745&usg=AOvVaw3nx5ugXpZiyo3SBrv_M4is), 
 à partir du code d'exonération du TM (`EXO_TM`) et de la nature de l'assurance (`NAT_ASS`).  
 La variable `tx_ATIH` peut être calculée comme suit :  
-  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` est dans [10,13] alors `tx_ATIH` prend la valeur de 80%
-  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` n'est pas dans [10,13] alors `tx_ATIH` prend la valeur de 100%
-  - Si `EXO_TM` est dans [9] et `NAT_ASS` est dans [10] alors `tx_ATIH` prend la valeur de 90%
+  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` est dans [10,13] alors `tx_ATIH` prend la valeur de 80 %
+  - Si `EXO_TM` est dans [0,2] et `NAT_ASS` n'est pas dans [10,13] alors `tx_ATIH` prend la valeur de 100 %
+  - Si `EXO_TM` est dans [9] et `NAT_ASS` est dans [10] alors `tx_ATIH` prend la valeur de 90 %
   - Si `EXO_TM` ou `NAT_ASS` est manquant `tx_ATIH` est manquant
-  - Dans les autres cas `tx_ATIH` prend la valeur de 100%
+  - Dans les autres cas `tx_ATIH` prend la valeur de 100 %
 L'ATIH suggère aussi de supprimer les lignes pour lesquelles `tx_ATIH` ne peut être calculé du fait de valeurs manquantes pour `EXO_TM` ou `NAT_ASS`.
 
 *Suggestion :*  
@@ -636,7 +640,7 @@ Tout comme en SSR, nous suggérons la création de la variable corrigée `TAUX_C
 2. Si `tx_ATIH` manquant et `REM_TAU` non nul ni manquant : `TAUX_C` est égal à `REM_TAU`
 3. Si `REM_TAU` nul ou manquant, supprimer la ligne
 
-On peut également attribuer un taux de remboursement corrigé (`TAUX_C`) de 100% dans les cas où la participation forfaitaire s'applique.  
+On peut également attribuer un taux de remboursement corrigé (`TAUX_C`) de 100 % dans les cas où la participation forfaitaire s'applique.  
 
 #### Nettoyage du ticket modérateur
 
