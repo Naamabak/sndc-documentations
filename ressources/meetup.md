@@ -1,3 +1,7 @@
+---
+sidebarDepth: 3
+---
+
 # Meetup SNDS
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
