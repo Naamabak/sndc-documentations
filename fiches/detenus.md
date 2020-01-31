@@ -184,7 +184,7 @@ group by 2
 quit;
 
 ```
-Au niveau des R3A, on ne peut récupérer que les détenus qui ont une hospitalisation compléte ou partielle (seuls ces dernier ont un NIR_ANO_17 et nous permettent de chainer le NIR_ANO_17 avec l'IPP_IRR_CRY présent dans la table `T_RIPAAC`  
+Au niveau des R3A, on ne peut récupérer que les détenus qui ont une hospitalisation compléte ou partielle (seuls ces dernier ont un NIR_ANO_17 et nous permettent de chainer le NIR_ANO_17 avec l'IPP_IRR_CRY présent dans la table `T_RIPAAC`).
 
 ```sql
 /* recuperation des NIR_ANO_17 des detenus et de l'IPP */ 
