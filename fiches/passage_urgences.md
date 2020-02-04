@@ -17,3 +17,36 @@ Chaque RSFA est un ensemble d'enregistrements :
 - "L" Codage affiné des actes de biologie.
 
 Parmi ces enregistrements, seuls le début de facture est systématiquement produit. Les autres le sont ou non selon les soins dispensés. Dans la table "B", on identifie les passages aux urgences grâce à la variable code d’acte ACT\_COD qui décrit les prestations associées à la facturation. Pour les passages aux urgences non suivis d’une hospitalisation en MCO ou en unité d’hospitalisation de courte durée (UHCD), ACT_COD prend la valeur "ATU".
+
+Le code ci-dessous extrait les passages aux urgences non suivis d'hospitalisation dans les établissements ex-OQN en 2017 :
+```sas
+DATA atu_exoqn ;
+    SET spdmseb.t_mco17fb ; * Table RSFA B pour les établissements ex-OQN ;
+    indic = compress(eta_num !! rsa_num) ; * Identifiant passage ;
+    IF rem_bas IN (., 0) THEN DELETE ;
+    IF upcase(act_cod) = "ATU" then output ;
+RUN ;
+```
+Dans les autres tables figurent des informations sur les soins prodigués autour de chaque passage aux urgences. Par exemple, dans la table "C", qui correspond aux honoraires, il est possible d’identifier des prestations de biologie ou d’imagerie réalisés lors d’un passage aux urgences. Les codes d’actes "B", "KB", "PB", "TB" et "KMB" correspondent tous à des prestations de biologie. Si une observation de la table "C" avec le même identifiant qu’un passage aux urgences est associée à un de ces codes, un acte de biologie aura été pratiqué lors du passage. 
+
+Le code ci-dessous extrait les honoraires correspondant à des actes de biologie puis les associe aux passages aux urgences identifiés en amont (des filtres supplémentaires pourraient être appliqués) :
+```sas
+DATA bio_exoqn ;
+    SET spdmseb.t_mco17fc ; * Table RSFA C pour les établissements ex-OQN ;
+    indic = compress(eta_num !! rsa_num) ; * Identifiant passage ;
+    bio = 1 ;
+    IF rem_bas IN (., 0) THEN DELETE ;
+    IF scan(act_cod, 1) IN ('B', 'KB', 'PB', 'TB', 'KMB') THEN output ;
+    KEEP indic bio ;
+RUN ;
+
+PROC SORT DATA = atu_exoqn ; nodupkey ; BY indic; RUN ;
+PROC SORT DATA = bio_exoqn ; nodupkey ; BY indic; RUN ;
+DATA urg_oqn ;
+    MERGE atu_exoqn (IN = a) bio_exoqn (IN = b) ;
+    BY indic ;
+    IF a ;
+RUN ;
+```
+
+Les tables des RSFA sont différentes pour les établissements ex-DG et les établissements ex-OQN. Ainsi il faut rechercher séparément les passages aux urgences pour chacune de ces deux catégories d’établissements.
