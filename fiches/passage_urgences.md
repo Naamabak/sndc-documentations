@@ -63,20 +63,47 @@ De la même manière que précédemment, on peut récupérer par exemple dans la
 
 ## Hospitalisation à l’issue du passage aux urgences
 
-Il est possible d’identifier les passages aux urgences qui ont été suivis d’une hospitalisation en MCO ou en UHCD dans le même établissement à l’aide des tables de résumés de sortie. Les variables mode d'entrée `ent_mod` et provenance `ent_prv` ont pour valeur 8 et 5 respectivement lorsque le patient vient de la structure d’accueil des urgences de la même entité géographique. Dans la table des unités médicales, la variable `aut_typ1_um` permet de repérer les hospitalisations de courte durée.
+Il est possible d’identifier les passages aux urgences qui ont été suivis d’une hospitalisation en MCO ou en UHCD dans le même établissement à l’aide des tables de résumés de sortie. Les variables mode d'entrée `ent_mod` et provenance `ent_prv` ont pour valeur 8 et 5 respectivement lorsque le patient vient de la structure d’accueil des urgences de la même entité géographique.
 ```sas
 DATA hospit;
-    SET spdmseb.T_MCO17b; * Table des RSS;
-    indic = COMPRESS(eta_num !! rsa_num);
+    SET spdmseb.t_mco17b; * Table des RSS;
+    indic = COMPRESS(eta_num !! rsa_num); * Identifiant séjour;
     pass_urg = 0;
-    IF ent_mod = "8" and ent_prv = '5' THEN pass_urg = 1;
+    IF ent_mod = "8" and ent_prv = "5" THEN pass_urg = 1;
     IF pass_urg = 1 THEN output;
     KEEP indic pass_urg nbr_rum; * nbr_rum correspond au nombre de résumés d'unités médicales pour le séjour;
-run;
+RUN;
 ```
 
-Les variables `dgn_pal` `grg_ghm`
+Les variables `dgn_pal` et `grg_ghm` notamment permettent de récupérer des informations médicales sur le séjour hospitalier (diagnostic principal et groupe homogène de malade), souvent en lien avec le motif de recours aux urgences du patient.
 
+Les passages en UHCD se repèrent dans la table des résumés d'unité médicale (RUM), à l'aide de la variable `aut_typ1_um`. Le code suivant repère ces passages et crée une table qui recense les hospitalisations suivant un passage aux urgences, avec des indicatrice indiquant si le patient a été hospitalisé seulement en UHCD, en UHCD puis dans une autre unité de MCO, ou directement dans une autre unité de MCO.
+
+```sas
+DATA uhcd;
+    SET spdmseb.t_mco17um; * Table des RUM;
+    indic = COMPRESS(eta_num !! rsa_num);
+    uhcd = 0;
+    IF substr(aut_typ1um, 1, 2) = "07" THEN uhcd = 1; * Le code autorisation de l'UM est "07A" pour les UHCD générales et "07B" pour les UHCD pédiatriques;
+    IF uhcd = 1 THEN output;
+    KEEP indic uhcd;
+RUN;
+
+PROC SORT DATA = hospit nodupkey; BY indic; RUN;
+PROC SORT DATA = uhcd nodupkey; BY indic; RUN;
+
+DATA hospit_uhcd;
+    MERGE hospit uhcd; 
+    BY indic;
+    uhcd_hospit = 0; uhcd_seul = 0; hospit_seule = 0;
+    
+    IF uhcd = 1 and nbr_rum > 1 THEN uhcd_hospit=1;
+    IF uhcd = 1 and uhcd_hospit ne 1 THEN uhcd_seul = 1;
+    IF uhcd ne 1 and pass_urg = 1 then hospit_seule = 1;
+RUN;
+```
+
+Tous ces passages aux urgences (suivis d'hospitalisation) peuvent être reliés à leur bénéficiaire à l'aide de la table `t_mco17c`.
 
 
 
