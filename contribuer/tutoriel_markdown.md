@@ -52,7 +52,7 @@ Résultat :
 2. élément 2
 
 
-### Ligne horizontale
+### Lignes horizontales
 ```
 ----
 ```
@@ -99,19 +99,17 @@ PROC SQL;
 QUIT;
 ```
 
-
-
 ### Liens hypertextes
-Pour ajouter un lien, mettre son texte entre crochets, suivi du lien entre parenthèses.
+Pour ajouter un lien, mettre le texte à afficher entre crochets puis le lien entre parenthèses. Exemples avec des liens externes et internes :
 
-#### Lien externe
+#### Liens externes
 Utiliser l'URL du site pour une page web hors documentation, par exemple vers le site de la Drees :
 ```
 [texte du lien](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/)
 ```
 Résultat : [texte du lien](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/)
 
-#### Lien interne
+#### Liens internes
 Utiliser les chemins **relatifs** pour une page, un fichier ou image de la documentation.
 
 Rappel : `../` remonte d'un cran dans l'arborescence, `../..` de deux crans etc.
@@ -121,12 +119,14 @@ Rappel : `../` remonte d'un cran dans l'arborescence, `../..` de deux crans etc.
 ```
 Résultat : [texte du lien](../glossaire/GHM.md)
 
-::: warning Lien vers tables Les pages de description des tables sont générées à partir du schéma de la base et leur chemin relatif n'est pas toujours simple à trouver.
+::: warning Lien vers tables
+Les pages de description des tables sont générées à partir du schéma de la base et leur chemin relatif n'est pas toujours simple à trouver.
 Le plus simple est d'utiliser les **permaliens** "/tables/" + nom de la table
 ```
 [Lien vers la page de la table ER_PRS_F](/tables/ER_PRS_F)
 ```
-Résultat : [Lien vers la page de la table ER_PRS_F](/tables/ER_PRS_F) :::
+Résultat : [Lien vers la page de la table ER_PRS_F](/tables/ER_PRS_F)
+:::
 
 #### Inclure une image
 Pour afficher l'image qui est la cible du lien, ajouter un **point d'exclamation** devant le lien.
@@ -162,5 +162,40 @@ Résultat :
 | cellule 1 | cellule 2 | cellule 3 |
 | cellule 4 | cellule 5 | cellule 6 |
 | cellule 7 | cellule 8 | cellule 9 |
+
+### Les blocs
+````
+::: tip Titre
+Texte
+:::
+
+::: warning Titre
+Texte
+:::
+
+::: danger Titre
+Texte
+:::
+
+::: details Titre
+Texte
+:::
+````
+
+::: tip Titre
+Texte
+:::
+
+::: warning Titre
+Texte
+:::
+
+::: danger Titre
+Texte
+:::
+
+::: details Titre
+Texte
+:::
 
 
