@@ -120,7 +120,7 @@ Rappel : `../` remonte d'un cran dans l'arborescence, `../..` de deux crans etc.
 Résultat : [texte du lien](../glossaire/GHM.md)
 
 ::: warning Lien vers tables
-Les pages de description des tables sont générées à partir du schéma de la base et leur chemin relatif n'est pas toujours simple à trouver.
+Les chemins des pages de description des tables ne sont pas faciles à trouver.
 Le plus simple est d'utiliser les **permaliens** "/tables/" + nom de la table
 ```
 [Lien vers la page de la table ER_PRS_F](/tables/ER_PRS_F)
@@ -129,7 +129,7 @@ Résultat : [Lien vers la page de la table ER_PRS_F](/tables/ER_PRS_F)
 :::
 
 #### Inclure une image
-Pour afficher l'image qui est la cible du lien, ajouter un **point d'exclamation** devant le lien.
+Pour afficher une image, ajouter un **point d'exclamation** devant son chemin ou son URL.
 
 ```
 ![texte alternatif de l'image](../files/images/logo/logoSNDS.jpg)
@@ -143,9 +143,7 @@ Pour préciser les dimensions de l'image, il faut utiliser des balises html.
 Résultat : <img src="../files/images/logo/logoSNDS.jpg" width="100px"/>
 
 ### Tableaux
-
-Pour écrire des tableaux, le plus simple est d'utiliser un outil comme ce
-[Markdown tables generator](https://www.tablesgenerator.com/markdown_tables#) puis de copier-coller le code.
+Pour écrire des tableaux, le plus simple est d'utiliser un outil comme [Markdown tables generator](https://www.tablesgenerator.com/markdown_tables#) puis de copier-coller le code.
 
 Les `|` indiquent les colonnes et les `-` la délimitation entre la ligne des noms de colonnes et le reste du tableau.
 ```
@@ -181,6 +179,7 @@ Texte
 Texte
 :::
 ````
+Résultat :
 
 ::: tip Titre
 Texte
