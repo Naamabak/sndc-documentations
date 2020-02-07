@@ -5,7 +5,7 @@ La documentation est rédigée en texte brut, avec des balises **Markdown** pour
 
 Un tutoriel interactif en anglais est disponible sur le site [commonmark.org](https://commonmark.org/help/).
 
-### Titres
+## Titres
  
 Les titres sont balisés par un ou plusieurs dièses `#` en début de ligne.
 
@@ -15,7 +15,7 @@ Les titres sont balisés par un ou plusieurs dièses `#` en début de ligne.
 ### Titre de troisième niveau
 ```
 
-### *Italique*, **Gras**
+## *Italique*, **Gras**
 
 Encadrer du texte par *une étoile* `*` pour le mettre en italique, 
 par *deux étoiles* `**` pour le mettre en gras.
@@ -25,15 +25,15 @@ par *deux étoiles* `**` pour le mettre en gras.
 **gras**
 ```
 
-### Retours à la ligne, changements de paragraphe
+## Retours à la ligne, changements de paragraphe
 
 *Attention : Les retour à la ligne simples sont ignorés.*
 
 Ajouter 2 espaces en fin de ligne pour un simple retour à la ligne.  
 Sauter une ligne pour changer de paragraphe.
 
-### Listes
-#### Listes à puces
+## Listes
+### Listes à puces
 ```
 * élément 1
 * élément 2
@@ -42,7 +42,7 @@ Résultat :
 * élément 1
 * élément 2
 
-#### Listes numérotées
+### Listes numérotées
 ```
 1. élément 1
 2. élément 2
@@ -52,7 +52,7 @@ Résultat :
 2. élément 2
 
 
-### Lignes horizontales
+## Lignes horizontales
 ```
 ----
 ```
@@ -61,7 +61,7 @@ Résultat :
 ----
 
 
-### Introduire du code
+## Introduire du code
 Pour introduire du code au **sein d'un paragraphe**, il faut encadrer ledit code par des **accents graves** (*backquotes*) `` ` ``.
 ```
 `PRS_NAT_REF`
@@ -99,17 +99,17 @@ PROC SQL;
 QUIT;
 ```
 
-### Liens hypertextes
+## Liens hypertextes
 Pour ajouter un lien, mettre le texte à afficher entre crochets puis le lien entre parenthèses. Exemples avec des liens externes et internes :
 
-#### Liens externes
+### Liens externes
 Utiliser l'URL du site pour une page web hors documentation, par exemple vers le site de la Drees :
 ```
 [texte du lien](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/)
 ```
 Résultat : [texte du lien](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/)
 
-#### Liens internes
+### Liens internes
 Utiliser les chemins **relatifs** pour une page, un fichier ou image de la documentation.
 
 Rappel : `../` remonte d'un cran dans l'arborescence, `../..` de deux crans etc.
@@ -128,7 +128,7 @@ Le plus simple est d'utiliser les **permaliens** "/tables/" + nom de la table
 Résultat : [Lien vers la page de la table ER_PRS_F](/tables/ER_PRS_F)
 :::
 
-#### Inclure une image
+### Inclure une image
 Pour afficher une image, ajouter un **point d'exclamation** devant son chemin ou son URL.
 
 ```
@@ -142,7 +142,7 @@ Pour préciser les dimensions de l'image, il faut utiliser des balises html.
 ```
 Résultat : <img src="../files/images/logo/logoSNDS.jpg" width="100px"/>
 
-### Tableaux
+## Tableaux
 Pour écrire des tableaux, le plus simple est de copier-coller les cellules du tableau dans GitLab depuis un outil de tableur tel qu'Excel. 
 
 Il est aussi possible d'utiliser des outils dédiés comme [Markdown tables generator](https://www.tablesgenerator.com/markdown_tables#) pour générer la table.
@@ -163,7 +163,7 @@ Résultat :
 | cellule 4 | cellule 5 | cellule 6 |
 | cellule 7 | cellule 8 | cellule 9 |
 
-### Les blocs
+## Les blocs
 ````
 ::: tip Titre
 Texte
