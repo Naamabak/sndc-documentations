@@ -143,7 +143,9 @@ Pour préciser les dimensions de l'image, il faut utiliser des balises html.
 Résultat : <img src="../files/images/logo/logoSNDS.jpg" width="100px"/>
 
 ### Tableaux
-Pour écrire des tableaux, le plus simple est d'utiliser un outil comme [Markdown tables generator](https://www.tablesgenerator.com/markdown_tables#) puis de copier-coller le code.
+Pour écrire des tableaux, le plus simple est de copier-coller les cellules du tableau dans GitLab depuis un outil de tableur tel qu'Excel. 
+
+Il est aussi possible d'utiliser des outils dédiés comme [Markdown tables generator](https://www.tablesgenerator.com/markdown_tables#) pour générer la table.
 
 Les `|` indiquent les colonnes et les `-` la délimitation entre la ligne des noms de colonnes et le reste du tableau.
 ```
