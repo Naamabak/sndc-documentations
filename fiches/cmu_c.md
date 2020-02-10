@@ -75,7 +75,7 @@ QUIT;
 
 ## Recommandations et précautions
 
-L’étude de la CMU-C nécessite d’exclure les personnes pouvant bénéficier de l’allocation de solidarité aux personnes âgées (Aspa). Les personnes âgées de 60 ans et plus doivent donc être exclues des analyses.
+Pour l’utilisation de la CMU-C comme indicateur de la précarité, il est nécessaire d’exclure les personnes âgées de 60 ans et plus dans les analyses. En effet, l’Allocation de solidarité aux personnes âgées (ASPA, ex : minmum vieillesse) se substitue généralement à la CMU-C à partir de 60 ans. 
 
 Il ne faut pas essayer de retrouver les cmucistes en fonction de la base de remboursement. 
 Avec la condition `abs(PRS_PAI_MNT) = abs(BSE_REM_BSE)` on peut en effet retrouver des prestations qui sont sans lien avec la CMU-C : les paires gratuites en optique, le dépistage, une exonération au titre d'une ALD, ainsi que tout autre motif d'exonération prioritaire par rapport à la CMU-C.
