@@ -32,7 +32,7 @@ L'ensemble des dépenses associées à un séjour en établissement public compr
   * du **RAC opposable**, qui est la différence entre le tarif de convention (Montant BRSS) et le remboursement de la Sécurité sociale (montant AMO)
   * d'éventuels **dépassements** d'honoraires
 
-Le calcul du RAC AMO présenté ici exclut les parts supplémentaires prises en charge par le public (Sécurité sociale, Etat, ou organismes assurant les remboursements au titre de la CMUC)
+Le montat AMO ici défini exclut les parts supplémentaires prises en charge par le public (Sécurité sociale, Etat, ou organismes assurant les remboursements au titre de la CMU-C)
 et qui couvrent l'intégralité du RAC opposable à l'hôpital pour les bénéficiaires de la CMU-C, de l'AME, des soins urgents, 
 ainsi que pour les détenus.  
 
@@ -84,20 +84,20 @@ Il peut éventuellement être pris en charge par les organismes complémentaires
 
 #### Le ticket modérateur
 
-Dans le cas général, l'assurance maladie rembourse 80 % du montant de la base de remboursement des frais d'hospitalisation, calculée à partir des **tarifs nationaux de prestations**.  
-La part à la charge du patient représente, elle, 20 % du montant de la base de remboursement, calculée à partir des **tarifs journaliers de prestations** : c'est le ticket modérateur.  
-Le taux de remboursement varie généralement entre 80 et 100 % du montant de la base de remboursement calculée à partir des tarifs nationaux de prestations en fonction du profil du patient, du type d'acte et de la nature de l'assurance.
+Pour les personnes hospitalisées à l'hôpital public, l'assurance maladie rembourse généralement 80 % des prestations de soins : c'est le **montant AMO**; et 
+le patient (ou son organisme complémentaire) participe à hauteur de 20 % des prestations de soins : c'est le **ticket modérateur**.  
+Le taux de remboursement peut varier entre 80 et 100 % en fonction du profil du patient, du type d'acte et de la nature de l'assurance.  
 
-Dans le secteur public, on distingue deux bases de remboursement :  
-- **La base de remboursement de l'assurance maladie (AM)**  
-Depuis la mise en place de la T2A, chaque séjour se voit attribuer un tarif déterminant le montant de remboursement par l'AM.  
-On parle de groupe homogène de séjour ([GHS](../glossaire/GHS.md) en MCO, de groupe homogène de tarif ([GHT](../glossaire/GHT.md)) en HAD et le groupe médico-économique ([GMT](../glossaire/GMT.md)) en SSR.    
 
-- **La base de remboursement de l'établissement**  
-Elle est calculée à partir du tarif journalier de prestation propre à chaque catégorie tarifaire (TJP), multiplié par la durée de séjour (cette durée ne pouvant dépasser 30 jours). 
+Attention, dans le secteur public, il existe deux manières distinctes de calculer le montant des prestations de soins :
+- Pour le calcul du **montant AMO**, le montant des prestations de soins est calculé à partir des **tarifs nationaux de prestations** attribués à chaque séjour 
+  depuis la mise en place de la T2A : il s'agit des groupes homogènes de séjour ([GHS](../glossaire/GHS.md) en MCO, des groupes homogènes de tarifs ([GHT](../glossaire/GHT.md)) en HAD et 
+  des groupes médico-économiques ([GMT](../glossaire/GMT.md)) en SSR.    
+
+- Pour le calcul du **ticket modérateur**, le montant des prestations de soins est calculé à partir du tarif journalier de prestation propre à chaque catégorie tarifaire (TJP), multiplié par la durée de séjour (cette durée ne pouvant dépasser 30 jours). 
 Le TJP est défini à l’échelle d’un établissement par arrêté de l’agence régionale de santé (ARS) et doit être représentatif du coût réel du séjour. 
 Il repose sur une estimation des charges d'exploitations et de l'activité prévisionnelles de l'établissement, en fonction des soins effectués. Les charges prises en compte sont : les dépenses de personnel, les dépenses médicales, les dépenses hôtelières, les frais de gestion et autres charges d’exploitation qui ne sont pas couvertes par des ressources propres. 
-La base de remboursement calculée par l'établissement est généralement plus élevée que celle de l'assurance maladie.
+La montant des prestations de soins calculée par l'établissement est généralement plus élevé que celui de l'assurance maladie.
 
 *Point réglementaire :*  
 Lors de la mise en œuvre de la T2A dans les établissements de santé, un dispositif transitoire a été mis en place permettant aux hôpitaux publics et aux établissements privés à but non lucratif de continuer à calculer le ticket modérateur sur la base des tarifs journaliers de prestations (TJP), initialement définis à partir du coût de revient prévisionnel des différentes catégories de soins de chaque établissement et non sur les tarifs nationaux de prestations (GHS, GHT, GMT).   
