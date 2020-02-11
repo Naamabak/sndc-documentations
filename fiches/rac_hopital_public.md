@@ -8,11 +8,11 @@ Les explications sont déclinées par spécialité hospitalière :
 * [SSR](../glossaire/MCO.md) : soins de suite et de réadaptation
 * [HAD](../glossaire/HAD.md) : hospitalisation à domicile
 
-Nous ne traitons pas ici le calcul du reste à charge en psychiatrie pour lequel nous ne disposons pas de suffisamment d'information.  
+Nous ne traitons pas ici le calcul du reste à charge en psychiatrie.  
 
 **Définitions :**  
 
-Le schéma ci-dessous résume les notions importantes :  
+Le schéma ci-dessous résume les notions importantes pour une dépense présentée au remboursement:  
 [](../files/DREES/2020_01_schema_rac_amo_hospit.png)
 <img src="../files/DREES/2020_01_schema_rac_amo_hospit.png"  width="430" height="300">
 
@@ -32,7 +32,7 @@ L'ensemble des dépenses associées à un séjour en établissement public compr
   * du **RAC opposable**, qui est la différence entre le tarif de convention (Montant BRSS) et le remboursement de la Sécurité sociale (montant AMO)
   * d'éventuels **dépassements** d'honoraires
 
-Le RAC AMO ainsi défini ne tient pas compte des parts supplémentaires prises en charge par le public 
+Le calcul du RAC AMO présenté ici exclut les parts supplémentaires prises en charge par le public (Sécurité sociale, Etat, ou organismes assurant les remboursements au titre de la CMUC)
 et qui couvrent l'intégralité du RAC opposable à l'hôpital pour les bénéficiaires de la CMU-C, de l'AME, des soins urgents, 
 ainsi que pour les détenus.  
 
@@ -45,7 +45,7 @@ Celle-ci n’est pas exhaustive et doit être traitée avec précaution.
 
 ## Composantes et modalités de calcul du reste à charge 
 
-À l'hôpital, le reste à charge (RAC) après AMO correspond à la participation du patient à l'hébergement et aux frais de soins : 
+À l'hôpital, le reste à charge (RAC) après AMO correspond à la participation due par le patient à l'hébergement et aux frais de soins : 
 - La participation à l’hébergement consiste en un **forfait journalier hospitalier**.  
   Le patient peut s’acquitter en outre de frais liés aux prestations pour exigences particulières, 
   non pris en charge par l’assurance maladie (*e.g.* mise à disposition d’une chambre particulière).
@@ -55,7 +55,7 @@ Celle-ci n’est pas exhaustive et doit être traitée avec précaution.
 Lorsque le patient doit s’acquitter d’un TM, la participation à l’hébergement 
 n’est pas ajoutée au TM mais elle s’impute sur ce dernier.
 
-La facturation au patient des différentes composantes du RAC aux patients dépend de plusieurs paramètres, 
+La facturation aux patients des différentes composantes du RAC dépend de plusieurs paramètres, 
 notamment du type d’actes et de séjours, de la durée de séjour, du profil des patients. 
 Le montant de la participation aux soins dépend également de la catégorie juridique 
 de l’établissement de santé et de son mode de financement.
@@ -69,7 +69,7 @@ Nous allons d'abord présenter les différentes composantes du RAC AMO, puis exp
 
 Le **forfait journalier hospitalier** représente la participation financière du patient aux frais d'hébergement et d'entretien entraînés par son hospitalisation. 
 
-Il est dû pour chaque journée d'hospitalisation, pour tout séjour supérieur à 24 heures dans un établissement hospitalier public ou privé, y compris le jour de sortie.  
+Il est dû pour chaque journée d'hospitalisation, pour tout séjour supérieur à 24 heures dans un établissement hospitalier public ou privé, y compris le jour de sortie, sauf en cas de décès ou transfert.  
 Il est également dû en cas de séjour inférieur à 24 heures, si celui-ci est à cheval sur 2 journées calendaires.  
 Dans ce cas-là, on compte le jour d'entrée et le jour de sortie, soit deux jours (règle de "présence à minuit" même si la présence réelle est inférieure à 24 heures).
 
@@ -132,7 +132,7 @@ Le patient s'acquitte de la participation forfaitaire et du forfait journalier (
 #### L'activité libérale des praticiens hospitaliers
 
 Les praticiens statutaires exerçant à temps plein sont autorisés à exercer une activité 
-libérale dans l'établissement public de santé où ils sont nommés (*cf.* [fiche sur l’activité libérale des praticiens statutaires](https://solidarites-sante.gouv.fr/IMG/pdf/activite_liberale_des_praticiens_statutaires_exercant_a_temps_plein-3.pdf)).  
+libérale dans l'établissement public de santé où ils sont nommés sous certaines conditions (*cf.* [fiche sur l’activité libérale des praticiens statutaires](https://solidarites-sante.gouv.fr/IMG/pdf/activite_liberale_des_praticiens_statutaires_exercant_a_temps_plein-3.pdf)).  
 Un patient peut choisir d’être soigné ou hospitalisé dans le cadre de l’activité d’un praticien statutaire exerçant à temps plein. 
 Ce dernier doit l’informer des tarifs et des éventuels dépassements. 
 L’activité libérale peut concerner les consultations externes, les actes médico-techniques et les soins en hospitalisation.  
