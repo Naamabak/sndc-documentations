@@ -12,7 +12,7 @@ Nous ne traitons pas ici le calcul du reste à charge en psychiatrie.
 
 **Définitions :**  
 
-Le schéma ci-dessous résume les notions importantes pour une dépense présentée au remboursement:  
+Le schéma ci-dessous résume les notions importantes pour une dépense présentée au remboursement :  
 [](../files/DREES/2020_01_schema_rac_amo_hospit.png)
 <img src="../files/DREES/2020_01_schema_rac_amo_hospit.png"  width="430" height="300">
 
