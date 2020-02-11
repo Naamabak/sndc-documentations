@@ -97,7 +97,7 @@ Attention, dans le secteur public, il existe deux manières distinctes de calcul
 - Pour le calcul du **ticket modérateur**, le montant des prestations de soins est calculé à partir du tarif journalier de prestation propre à chaque catégorie tarifaire (TJP), multiplié par la durée de séjour (cette durée ne pouvant dépasser 30 jours). 
 Le TJP est défini à l’échelle d’un établissement par arrêté de l’agence régionale de santé (ARS) et doit être représentatif du coût réel du séjour. 
 Il repose sur une estimation des charges d'exploitations et de l'activité prévisionnelles de l'établissement, en fonction des soins effectués. Les charges prises en compte sont : les dépenses de personnel, les dépenses médicales, les dépenses hôtelières, les frais de gestion et autres charges d’exploitation qui ne sont pas couvertes par des ressources propres. 
-La montant des prestations de soins calculée par l'établissement est généralement plus élevé que celui de l'assurance maladie.
+Le montant des prestations de soins calculée par l'établissement est généralement plus élevé que celui de l'assurance maladie.
 
 *Point réglementaire :*  
 Lors de la mise en œuvre de la T2A dans les établissements de santé, un dispositif transitoire a été mis en place permettant aux hôpitaux publics et aux établissements privés à but non lucratif de continuer à calculer le ticket modérateur sur la base des tarifs journaliers de prestations (TJP), initialement définis à partir du coût de revient prévisionnel des différentes catégories de soins de chaque établissement et non sur les tarifs nationaux de prestations (GHS, GHT, GMT).   
