@@ -45,7 +45,7 @@ La section **Tables** est générée automatiquement à partir du [schema formal
 Merci de citer ce site si vous l'utilisez dans vos travaux.
 
 ::: tip Citation au format recommandé par l'APA
-Documentation collaborative du SNDS. (n.d.). Retrieved from https://documentation-snds.health-data-hub.fr/
+Documentation collaborative du SNDS. (n.d.). Retrieved from https://gitlab.com/healthdatahub/documentation-snds
 :::
 
 ## Licence
