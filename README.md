@@ -36,16 +36,12 @@ La documentation est organisée en 5 sections :
 
 Chacune de ces sections correspond à un dossier sur [GitLab](https://gitlab.com/healthdatahub/documentation-snds), avec un [dossier supplémentaire](https://gitlab.com/healthdatahub/documentation-snds/files) pour les fichiers et images.
 
-::: tip Note
-La section **Tables** est générée automatiquement à partir du [schema formalisé du SNDS](https://gitlab.com/healthdatahub/schema-snds), qui alimente également le [dictionnaire interactif](https://drees.shinyapps.io/dico-snds/).
-:::
-
 ## Citation
 
 Merci de citer ce site si vous l'utilisez dans vos travaux.
 
 ::: tip Citation au format recommandé par l'APA
-Documentation collaborative du SNDS. (n.d.). Retrieved from https://gitlab.com/healthdatahub/documentation-snds
+> Documentation collaborative du SNDS. (n.d.). Retrieved from https://gitlab.com/healthdatahub/documentation-snds 
 :::
 
 ## Licence
