@@ -28,11 +28,11 @@ Elle résulte d'une mise en commun de documents et travaux par plusieurs organis
 
 La documentation est organisée en 5 sections :
 - [Introduction](introduction/README.md) est un guide introductif au SNDS ;
-- [Fiche thématiques](fiches/README.md) contient des fiches thématiques détaillés ;
+- [Fiches thématiques](fiches/README.md) contient des fiches thématiques détaillées ;
 - [Glossaire](glossaire/README.md) contient des fiches explicitant des concepts importants, utilisées comme références ailleurs ;
 - [Ressources](ressources/README.md) liste de nombreuses ressources externes ou à télécharger ;
 - [Tables](tables/README.md) est un dictionnaire des tables et variables ;
-- [Contribuer](contribuer/README.md) est un guide de contribution à cette documentation.
+- [Contribuer](contribuer/README.md) est un guide de contributions à cette documentation.
 
 Chacune de ces sections correspond à un dossier sur [GitLab](https://gitlab.com/healthdatahub/documentation-snds), avec un [dossier supplémentaire](https://gitlab.com/healthdatahub/documentation-snds/files) pour les fichiers et images.
 
