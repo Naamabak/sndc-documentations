@@ -8,11 +8,24 @@ def add_licence_to_file(file_path: str) -> None:
         content = f.read()
     if licence in content:
         return
-    print(f'Licence manquante {file_path}')
+
+    if content.startswith('# '):
+        add_licence_to_simple_file(content, file_path)
+    else:
+        print(f'fichier à traiter à la main {file_path}')
+
+
+def add_licence_to_simple_file(content, file_path):
+    print(f'Ajout de la licence manquante dans le fichier {file_path}')
+    lines = content.split('\n')
+    lines.insert(1, licence)
+    content = '\n'.join(lines)
+    with open(file_path, 'w') as f:
+        f.write(content)
 
 
 top_dirs = ['contribuer', 'fiches', 'files', 'glossaire', 'introduction', 'ressources',
-            # os.path.join('tables', '.sources')
+            os.path.join('tables', '.sources')
             ]
 
 for top in top_dirs:
