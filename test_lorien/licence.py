@@ -24,21 +24,6 @@ def get_files(folder: str, ext: str, ignore: str) -> list:
     return files
 
 
-def clean_up_string(string: str) -> str:
-    """Remove '\n' at the end of lines.
-
-    :param string: string to modify.
-    :return: string without \n.
-    """
-
-    chars = ['\n']
-
-    for char in chars:
-        clean_string = string.replace(char, '')
-
-    return clean_string
-
-
 def clean_up_files(files: list) -> dict:
     """Open all the files found at paths listed in files.
 
@@ -55,8 +40,7 @@ def clean_up_files(files: list) -> dict:
 
     for file_path in files:
         with open(file_path) as file:
-            lines_list = [
-                clean_up_string(line) for line in file.readlines()
+            lines_list = [line for line in file.readlines()
             ]
         clean_files[file_path] = lines_list
 
@@ -90,15 +74,10 @@ def fix_licence(licence: str, position: int, files: dict) -> dict:
     """
 
     for file in files.values():
-        index = file.index(licence) if licence in file else False
-        if index:
-            if index != position:
-                file.remove(licence)
-                file.insert(position - 1, licence)
-        else:
-            file.insert(position - 1, licence)
+        index = file.index(licence) if licence in file else \
+            file.insert(position - 1, licence + '\n')
 
-        return files
+    return files
 
 
 def write_files(files: dict):
@@ -110,7 +89,7 @@ def write_files(files: dict):
     for file_path, file_contents in files.items():
         f = open(file_path, 'w')
         for line in file_contents:
-            f.write(f'{line}\n')
+            f.write(line)
         f.close()
 
 
