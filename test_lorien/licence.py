@@ -110,7 +110,7 @@ def write_files(files: dict):
     for file_path, file_contents in files.items():
         f = open(file_path, 'w')
         for line in file_contents:
-            f.write(f'{line} \n')
+            f.write(f'{line}\n')
         f.close()
 
 
