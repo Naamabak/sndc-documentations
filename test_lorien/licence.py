@@ -95,8 +95,8 @@ def fix_licence(licence: str, position: int, files: dict) -> dict:
             if index != position:
                 file.remove(licence)
                 file.insert(position - 1, licence)
-            else:
-                file.insert(position - 1, licence)
+        else:
+            file.insert(position - 1, licence)
 
         return files
 
@@ -110,7 +110,7 @@ def write_files(files: dict):
     for file_path, file_contents in files.items():
         f = open(file_path, 'w')
         for line in file_contents:
-            f.write(f'{line} \n')
+            f.write(f'{line}\n')
         f.close()
 
 
