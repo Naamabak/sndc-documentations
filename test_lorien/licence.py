@@ -17,7 +17,7 @@ def get_files(folder: str, ext: str, ignore: str) -> list:
         full_paths = [
             os.path.join(dirpath, filename) for filename in filenames
             if filename.endswith(ext)
-            and ignore not in filename
+               and ignore not in filename
         ]
         files.extend(full_paths)
 
@@ -41,7 +41,7 @@ def clean_up_files(files: list) -> dict:
     for file_path in files:
         with open(file_path) as file:
             lines_list = [line for line in file.readlines()
-            ]
+                          ]
         clean_files[file_path] = lines_list
 
     return clean_files
@@ -73,9 +73,12 @@ def fix_licence(licence: str, position: int, files: dict) -> dict:
     :return: modified files with fixed licence.
     """
 
-    for file in files.values():
-        index = file.index(licence) if licence in file else \
-            file.insert(position - 1, licence + '\n')
+    for file_path, file_lines in files.items():
+        print(file_path)
+        if licence in file_lines:
+            file_lines.index(licence)
+        else:
+            file_lines.insert(position - 1, licence + '\n')
 
     return files
 
@@ -94,13 +97,12 @@ def write_files(files: dict):
 
 
 def main(
-    licence: str = '<!-- SPDX-License-Identifier: MPL-2.0 -->',
-    ignore: str = 'meetup',
-    folder: str = os.path.dirname(os.path.abspath('__file__')),
-    ext: str = '.md',
-    position: int = 2,
+        licence: str = '<!-- SPDX-License-Identifier: MPL-2.0 -->\n',
+        ignore: str = 'meetup',
+        folder: str = '..',
+        ext: str = '.md',
+        position: int = 2,
 ):
-
     file_paths = get_files(folder, ext, ignore)
     clean_files = clean_up_files(file_paths)
     fixed_files = fix_licence(licence, position, clean_files)
