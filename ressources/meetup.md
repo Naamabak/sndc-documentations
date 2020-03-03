@@ -160,4 +160,4 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 - Titre : Le réseau ReDSiam : des algorithmes pour identifier des pathologies dans le SNDS
 - Présenté par :  Emeline Heyndrickx de l’unité Cohortes épidémiologiques en population (UMS 11 - Inserm)
 - Support de présentation :
-[pdf](../files/presentations/meetup-snds5/Meet-up_SNDS_ReDSiam_20.02.2020.pdf)   
+[pdf](../files/presentations/meetup-snds5/20200220_meetupsnds_redsiam.pdf)   
