@@ -148,16 +148,16 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 - Titre : Les coulisses du PMSI
 - Présenté par : Marlène BERNARD, ingénieur statisticien, Sandra STEUNOU, chef de service adjoint, Pauline RENAUD, chef de service (ATIH)
 - Support de présentation :
-[pptx](../files/presentations/meetup-snds5/Présentation_ATIH_PMSI_MeetUp_20200220.pptx)
+[pptx](../files/presentations/meetup-snds5/20200220_meetupsnds5_pmsiatih.pptx)
 
 ### Algorithme de tapage du diabète 
 - Titre : Développement d’un algorithme de typage du diabète à partir de données de la cohorte Constances et son application dans le SNDS
 - Présenté par : Sonsoles Fuentes, doctorant (Santé Publique France)
 - Support de présentation : 
-[pptx](../files/presentations/meetup-snds5/20200220_Meetup_HDH_SPF_algo-typ-diab.pptx)
+[pptx](../files/presentations/meetup-snds5/20200220_meetupsnds5_spf_typdiab.pptx)
 
 ### ReDSiam, des algorithmes disponibles 
 - Titre : Le réseau ReDSiam : des algorithmes pour identifier des pathologies dans le SNDS
 - Présenté par :  Emeline Heyndrickx de l’unité Cohortes épidémiologiques en population (UMS 11 - Inserm)
 - Support de présentation :
-[pdf](../files/presentations/meetup-snds5/20200220_meetupsnds_redsiam.pdf)   
+[pdf](../files/presentations/meetup-snds5/20200220_meetupsnds5_redsiam.pdf)
