@@ -11,7 +11,7 @@ Initialement codé sous 7 caractères (`PHA_PRS_IDE`), **il est nécessaire d’
 En effet, depuis le 1er octobre 2014, le codage CIP sur 13 caractères des médicaments allopathiques a débuté et il existe désormais des médicaments nouvellement mis sur le marché qui n’ont pas de CIP7. 
 
 ::: warning Attention
-Toutefois, pour les années 2006 et 2007, les codes CIP13 sont presque tous manquants et il faut utiliser le code CIP7 (information datant de mars 2018).
+Toutefois, pour les années 2006 et 2007, les codes CIP13 sont presque tous manquants et il faut utiliser le code CIP7.
 :::
 
 ::: tip Crédits
