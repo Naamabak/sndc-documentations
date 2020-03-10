@@ -9,7 +9,7 @@ Le PMSI contient des tables de facturation des séjours privés mais il n’est 
 remboursés par l’assurance maladie.
 C'est pourquoi nous présentons dans cette fiche l'analyse les dépenses des établissements privés dans le DCIR ou le DCIRS.
 
-En complément, des informations sur les dépenses en établissements de santé privés se trouvent dans la fiche sur 
+En complément, des informations sur les dépenses en établissements de santé publics se trouvent dans la fiche sur 
 les [dépenses des établissements de santé publics dans le PMSI](depenses_hopital_public.md).
 
 
