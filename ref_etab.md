@@ -11,7 +11,7 @@ Les établissements de Mayotte ont un nunéro Finess qui commence par 98.
 
 ## Définitions et concepts 
 
-### Les entités juridiques
+### Les entités juridiques : Finess juridique
 	
 Une entité juridique correspond à la notion de personne morale. Une entité juridique détient des droits (autorisations, agréments, conventions…) 
 lui permettant d'exercer ses activités dans des établissements. A chaque entité juridique est associé un statut juridique classifié en grands agrégats 
@@ -25,48 +25,68 @@ qui sont :
     * Organisme privé à caractère commercial
 * Personne morale de droit étranger
 
-### Les établissements 
+### Les établissements : Finess établissement (ou Finess géographique)
 
 Un établissement correspond à une implantation géographique. Il est obligatoirement relié à une entité juridique. 
 Chaque établissement est rattaché à une catégorie d'établissement (centre de santé, centre hospitalier, etc) 
 qui caractérise le cadre réglementaire dans lequel s'exerce l'activité de l'établissement.
 
 Les catégories d'établissements sont classifiées en grands agrégats qui sont :
--Etablissements relevant de la loi hospitalière.
--Autres établissements de soins et de prévention.
--Autres établissements à caractère sanitaire.
--Etablissements et services sociaux d'accueil, hébergement, assistance, réadaptation.
--Etablissements et services sociaux d'aide à la famille.
--Etablissements de formation des personnels sanitaires et sociaux.
+* Etablissements relevant de la loi hospitalière.
+* Autres établissements de soins et de prévention.
+* Autres établissements à caractère sanitaire.
+* Etablissements et services sociaux d'accueil, hébergement, assistance, réadaptation.
+* Etablissements et services sociaux d'aide à la famille.
+* Etablissements de formation des personnels sanitaires et sociaux.
 
 A chaque établissement sont associées les activités exercées. 
 Particularités :
--Plusieurs activités dépendant de budgets distincts au sein d'un même établissement, font l'objet d'immatriculations : 
+* Plusieurs activités dépendant de budgets distincts au sein d'un même établissement, font l'objet d'immatriculations : 
 autant d'établissements dans le même lieu que de budgets distincts.
--Une entité juridique gérant sur un même lieu un « Centre Hébergement et Réinsertion sociale » et une « Maisons-Relais » aura, dans FINESS, 
+* Une entité juridique gérant sur un même lieu un « Centre Hébergement et Réinsertion sociale » et une « Maisons-Relais » aura, dans FINESS, 
 deux établissements à la même adresse correspondant à chacune des deux catégories d'établissements.
 
+## En pratique, dans le SNDS
 
-## En pratique
+### Le numéro FINESS dans les prestations
 
-Dans la table centrale du DCIR, la table prestation (ER_PRS_F), lorsqu’une prestation est associée à un établissement, 
+Dans la table centrale du DCIR des prestations (ER_PRS_F), lorsqu’une prestation est associée à un établissement, 
 la variable ETB_PRE_FIN est non vide (FINESS de l’établissement prescripteur). La variable contient un code à 8 chiffres, 
-il s'agit du FINESS sans clefde l’établissement prescripteur .Pour obtenir des informations sur l’établissement, 
-on utilise le numéro FINESS à 8 chiffres comme clé de jointure afin de joindre la table prestation à un référentiel d’établissement. 
-La présente fiche porte sur le choix de ce référentiel entre la table établissement du SNDS BE_IDE_R et la table produit par atlasanté DATASANTE_T_FINESS.
+il s'agit du FINESS de l'établissement rpescripteur, sans clef. Pour obtenir des informations sur l’établissement, 
+on utilise le numéro FINESS à 8 chiffres comme clé de jointure afin de joindre la table ER_PRS_F à un référentiel d’établissement. 
+
+### Le numéro FINESS dans le PMSI
+
+Dans le PMSI, on retrouve deux types de numéro Finess :
+* le FINESS PMSI :
+* le FINESS établissement (ou Finess géographique) : 
+
+## Les référentiels disponibles pour les établissements
+
+La présente fiche porte sur le choix de ce référentiel entre la table établissement du SNDS BE_IDE_R et la table produite par atlasanté DATASANTE_T_FINESS.
 
 ### La table BE_IDE_R de la bibliothèque ORAVUE
 
-Le SNDS met à disposition un référentiel d’établissement, la table BE_IDE_R de la bibliothèque ORAVUE. Elle contient notamment les variables suivantes :
+Le SNDS met à disposition un référentiel d’établissement, la table BE_IDE_R de la bibliothèque ORAVUE, qui contient une ligne  
+pour chaque FINESS juridique et une ligne pour chaque FINESS géographique.  
+Ainsi un Finess juridique avec 4 sites sera représenté sur 5 lignes : 1 pour le Finess juridique et 4 pour chacun des Finess géographiques.
+Elle contient notamment les variables suivantes :  
 
 |ide_psh_cat (alphanumérique)|	Catégorie d’établissement (code à 3 chiffres). On peut joindre cette variable avec ETB_CAT_COD dans IR_CET_V. |
-|ide_psh_stj|	Statut Juridique de l'établissement juridique (nomenclature IR_SJE_V)|
-|ide_eta_nom|	nom de l’établissement|
-|ide_eta_nu8|	finess à 8 fiches pour la jointure avec la table prestation (etb_pre_fin = ide_eta_nu8)|
-|ide_eta_num|	finess à 9 chiffres|
-|ide_ges_num|	finess à 9 chiffres|
+|ide_psh_stj|	Statut Juridique de l'entité juridique (nomenclature IR_SJE_V)|
+|ide_eta_nom|	Raison sociale de l’établissement|
+|ide_eta_nu8|	Finess sans clef (8 caractères)|
+|ide_eta_num|	Finess (9 caractères)|
+|ide_ges_num|	Finess (9 caractères)|
 
-Les variables IDE_ETA_NU8 et IDE_ETA_NUM ne sont jamais à vide dans BE_IDE_R. IDE_GES_NUM peut être soit à vide, soit renseigné, soit constitué de 9 zéro. Par défaut ETB_PRE_FIN est le FINESS géographique de l’établissement . On observe que quand dans les cas où IDE_GES_NUM est vide ou constitué de 9 zéros, IDE_ETA_NUM est le FINESS juridique . 
+Les variables IDE_ETA_NU8 et IDE_ETA_NUM correspondent au même numéro FINESS, avec ou sans clef. Ces variables correspondent soit à un Finess juridique,  
+soit à un Finess géographique ; elles sont toujours renseignées dans BE_IDE_R. 
+
+Si la variable IDE_GES_NUM est correctement renseignée (différente de vide et de '000000000'), alors la valeur correspond à un Finess juridique,  
+et les variables IDE_ETA_NU8/IDE_ETA_NUM correspondent à un Finess géographique de cette enttié juridique.
+Si la variable IDE_GES_NUM est vide, les variables IDE_ETA_NU8/IDE_ETA_NUM correspondent à un Finess juridique.
+
+Par défaut ETB_PRE_FIN est le FINESS géographique de l’établissement . On observe que quand dans les cas où IDE_GES_NUM est vide ou constitué de 9 zéros, IDE_ETA_NUM est le FINESS juridique . 
 On applique donc la règle suivante pour constituer le finess juridique :
 IF ide_ges_num NE '000000000' THEN finess_juridique=ide_ges_num;
 IF ide_ges_num='000000000' THEN finess_juridique=ide_eta_num;
