@@ -57,9 +57,15 @@ on utilise le numéro FINESS à 8 chiffres comme clé de jointure afin de joindr
 
 ### Le numéro FINESS dans le PMSI
 
-Dans le PMSI, on retrouve deux types de numéro Finess :
-* le FINESS PMSI :
-* le FINESS établissement (ou Finess géographique) : 
+Dans les tables du PMSI, on retrouve systématiquement 2 types de numéro Finess :
+* le FINESS PMSI (utilisé par l'établissement de santé pour la transmission de ses données) : il s'agit du Finess juridique pour les établissements 
+publics (type CH, CHU) et du Finess géographique pour les établissements privés (lucratifs ou non lucratifs). Cependant pour les établissements 
+psychiatriques privés (type association, fondation) qui peuvent avoir un grand nombre de Finess géographiques, des transmissions cumulées sous un seul 
+Finess PMSI sont pour l'instant tolérées ;
+* le FINESS établissement (ou Finess géographique) : depuis 2013, il est contrôlé à partir d'ARHGOS pour que seuls les Finess géographiques détenant 
+les autorisations appropriées soient acceptés (exemple : un Finess géographique avec uniquement des autorisations de MCO ne peut pas être retrouvé dans 
+les tables SSR). 
+
 
 ## Les référentiels disponibles pour les établissements
 
