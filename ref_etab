@@ -5,31 +5,33 @@
 Une entité juridique correspond à la notion de personne morale. Une entité juridique détient des droits (autorisations, agréments, conventions…) 
 lui permettant d'exercer ses activités dans des établissements. A chaque entité juridique est associé un statut juridique classifiés en grands agrégats 
 qui sont :
-•	Organismes et établissements publics
-o	Etat et collectivités territoriales
-o	Etablissement public
-•	Organismes privés
-o	Organisme privé à but non lucratif
-o	Organisme privé à caractère commercial
-•	Personne morale de droit étranger
+
+- Organismes et établissements publics
+Etat et collectivités territoriales
+Etablissement public
+- Organismes privés
+Organisme privé à but non lucratif
+Organisme privé à caractère commercial
+- Personne morale de droit étranger
+
 	### Les établissements 
 Un établissement correspond à une implantation géographique. Il est obligatoirement relié à une entité juridique. 
 Chaque établissement est rattaché à une catégorie d'établissement (centre de santé, centre hospitalier, etc) 
 qui caractérise le cadre réglementaire dans lequel s'exerce l'activité de l'établissement.
 
 Les catégories d'établissements sont classifiées en grands agrégats qui sont :
-•	Etablissements relevant de la loi hospitalière.
-•	Autres établissements de soins et de prévention.
-•	Autres établissements à caractère sanitaire.
-•	Etablissements et services sociaux d'accueil, hébergement, assistance, réadaptation.
-•	Etablissements et services sociaux d'aide à la famille.
-•	Etablissements de formation des personnels sanitaires et sociaux.
+-Etablissements relevant de la loi hospitalière.
+-Autres établissements de soins et de prévention.
+-Autres établissements à caractère sanitaire.
+-Etablissements et services sociaux d'accueil, hébergement, assistance, réadaptation.
+-Etablissements et services sociaux d'aide à la famille.
+-Etablissements de formation des personnels sanitaires et sociaux.
 
 A chaque établissement sont associées les activités exercées. 
 Particularités :
-•	Plusieurs activités dépendant de budgets distincts au sein d'un même établissement, font l'objet d'immatriculations : 
+-Plusieurs activités dépendant de budgets distincts au sein d'un même établissement, font l'objet d'immatriculations : 
 autant d'établissements dans le même lieu que de budgets distincts.
-•	Une entité juridique gérant sur un même lieu un « Centre Hébergement et Réinsertion sociale » et une « Maisons-Relais » aura, dans FINESS, 
+-Une entité juridique gérant sur un même lieu un « Centre Hébergement et Réinsertion sociale » et une « Maisons-Relais » aura, dans FINESS, 
 deux établissements à la même adresse correspondant à chacune des deux catégories d'établissements.
 	3. Les numéros FINESS
 A chaque établissement et à chaque entité juridique est attribué un numéro FINESS (Fichier National des Etablissements Sanitaires et Sociaux)
