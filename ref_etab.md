@@ -2,27 +2,31 @@
 
 Tous les établissements sanitaires et sociaux sont enregistrés dans le répertoire Finess (fichier national des établissements sanitaires et sociaux).
 
-##Construction du numéro Finess
+## Construction du numéro Finess
+
 Un numéro Finess est composé de 9 caractères.  
 Les 2 premiers caractères correspondent au département d'implantation de l'établissement.
 Pour les DOM-TOM, les 2 premiers caractères sont 97 et le 4e caractère les distingue : 1-Guadeloupe, 2-Martinique, 3-Guyane, 4-Réunion, 5-St Pierre et Miquelon.  
 Les établissements de Mayotte ont un nunéro Finess qui commence par 98.  
 
 ## Définitions et concepts 
-	### Les entités juridiques
+
+### Les entités juridiques
+	
 Une entité juridique correspond à la notion de personne morale. Une entité juridique détient des droits (autorisations, agréments, conventions…) 
 lui permettant d'exercer ses activités dans des établissements. A chaque entité juridique est associé un statut juridique classifié en grands agrégats 
 qui sont :
 
-- Organismes et établissements publics
-Etat et collectivités territoriales
-Etablissement public
-- Organismes privés
-Organisme privé à but non lucratif
-Organisme privé à caractère commercial
-- Personne morale de droit étranger
+* Organismes et établissements publics
+    * Etat et collectivités territoriales
+    * Etablissement public
+* Organismes privés
+    * Organisme privé à but non lucratif
+    * Organisme privé à caractère commercial
+* Personne morale de droit étranger
 
-	### Les établissements 
+### Les établissements 
+
 Un établissement correspond à une implantation géographique. Il est obligatoirement relié à une entité juridique. 
 Chaque établissement est rattaché à une catégorie d'établissement (centre de santé, centre hospitalier, etc) 
 qui caractérise le cadre réglementaire dans lequel s'exerce l'activité de l'établissement.
