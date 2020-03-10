@@ -1,9 +1,17 @@
 # Le numéro FINESS dans le DCIR
 
+Tous les établissements sanitaires et sociaux sont enregistrés dans le répertoire Finess (fichier national des établissements sanitaires et sociaux).
+
+## Construction du numéro Finess
+Un numéro Finess est composé de 9 caractères.  
+Les 2 premiers caractères correspondent au département d'implantation de l'établissement.
+Pour les DOM-TOM, les 2 premiers caractères sont 97 et le 4e caractère les distingue : 1-Guadeloupe, 2-Martinique, 3-Guyane, 4-Réunion, 5-St Pierre et Miquelon.  
+Les établissements de Mayotte ont un nunéro Finess qui commence par 98.  
+
 ## Définitions et concepts 
 	### Les entités juridiques
 Une entité juridique correspond à la notion de personne morale. Une entité juridique détient des droits (autorisations, agréments, conventions…) 
-lui permettant d'exercer ses activités dans des établissements. A chaque entité juridique est associé un statut juridique classifiés en grands agrégats 
+lui permettant d'exercer ses activités dans des établissements. A chaque entité juridique est associé un statut juridique classifié en grands agrégats 
 qui sont :
 
 - Organismes et établissements publics
@@ -33,13 +41,7 @@ Particularités :
 autant d'établissements dans le même lieu que de budgets distincts.
 -Une entité juridique gérant sur un même lieu un « Centre Hébergement et Réinsertion sociale » et une « Maisons-Relais » aura, dans FINESS, 
 deux établissements à la même adresse correspondant à chacune des deux catégories d'établissements.
-	3. Les numéros FINESS
-A chaque établissement et à chaque entité juridique est attribué un numéro FINESS (Fichier National des Etablissements Sanitaires et Sociaux)
-à 9 caractères dont les 2 premiers correspondent au numéro du département d'implantation.
 
-Pour tous les départements d'outre-mer, les deux premiers caractères sont 97 et le quatrième caractère, dans ce cas précise le département 1 Guadeloupe, 
-2 Martinique, 3 Guyane et 4 Réunion. Pour Saint Pierre et Miquelon les deux premiers caractères sont 97 et le quatrième caractère est le 5. Pour Mayotte,
-les deux premiers caractères sont 98
 
 ## En pratique
 
