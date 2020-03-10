@@ -32,7 +32,7 @@ Ces synthèses, déclinées par année et par DM, sont disponibles au lien suiva
 
 On peut retrouver dans le PMSI les DMI implantés depuis 2006 dans les hopitaux privés et depuis 2008 dans les hopitaux publics.
 Ceci peut permettre d'identifier une population d'intérêt : le DMI constitue alors un critère de sélection de cette population d'étude.
-Par exemple, on cherche les sujets ayant reçu la pose d'un stent en 2016 : on recherchera les assurés ayant eu un séjour en 2016 avec facturation d'un DMI du chapitre de la LPP : ENDOPROTHESES CORONAIRES DITES "STE
+Par exemple, on cherche les sujets ayant reçu la pose d'un stent en 2016 : on recherchera les assurés ayant eu un séjour en 2016 avec facturation d'un DMI du chapitre de la LPP : ENDOPROTHESES CORONAIRES DITES "STENTS"
 et la facturation dans le même séjour d'un acte correspondant à la pose d'un stent 
 (par exemple acte de code CCAM 'DDAF006 : Dilatation intraluminale d'un vaisseau coronaire avec pose d'endoprothèse, par voie artérielle transcutanée')
 
