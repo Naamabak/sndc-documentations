@@ -1,11 +1,10 @@
-
 # La Complémentaire Santé Solidaire
 
 A partir du 1er novembre 2019, l'[ACS](acs.md) et la [CMU-C](cmu_c.md) ont fusionné pour former la Complémentaire Santé Solidaire.
 On distingue la C2S et la C2SP selon que les bénéficiaires participent ou non au paiement de sa complémentaire.
 Cette participation financière s'élève à maximum 1 euro par jour et par personne.
 
-## La C2S dans le DCIR
+## La C2S dans le SNDS
 
 A partir de l'entrée en vigueur de la C2S, on retrouve les bénéficiaires à l'aide du `BEN_CMU_TOP` dans la table prestation `ER_PRS_F`. 
 Le top CMU-C indique si une prestation est exonérée au titre de la CMU-C. 
