@@ -1,4 +1,4 @@
-# Le numéro FINESS dans le DCIR
+# Le numéro FINESS dans le SNDS
 
 Tous les établissements sanitaires et sociaux sont enregistrés dans le répertoire Finess (fichier national des établissements sanitaires et sociaux).
 
@@ -67,36 +67,41 @@ La présente fiche porte sur le choix de ce référentiel entre la table établi
 
 ### La table BE_IDE_R de la bibliothèque ORAVUE
 
-Le SNDS met à disposition un référentiel d’établissement, la table BE_IDE_R de la bibliothèque ORAVUE, qui contient une ligne  
-pour chaque FINESS juridique et une ligne pour chaque FINESS géographique.  
+Le SNDS met à disposition un référentiel d’établissement, la table BE_IDE_R de la bibliothèque ORAVUE, qui contient une ligne pour chaque FINESS 
+juridique et une ligne pour chaque FINESS géographique.  
 Ainsi un Finess juridique avec 4 sites sera représenté sur 5 lignes : 1 pour le Finess juridique et 4 pour chacun des Finess géographiques.
-Elle contient notamment les variables suivantes :  
+Cette table contient notamment les variables suivantes :  
 
-|ide_psh_cat (alphanumérique)|	Catégorie d’établissement (code à 3 chiffres). On peut joindre cette variable avec ETB_CAT_COD dans IR_CET_V. |
-|ide_psh_stj|	Statut Juridique de l'entité juridique (nomenclature IR_SJE_V)|
-|ide_eta_nom|	Raison sociale de l’établissement|
-|ide_eta_nu8|	Finess sans clef (8 caractères)|
-|ide_eta_num|	Finess (9 caractères)|
-|ide_ges_num|	Finess (9 caractères)|
+| Nom variable | Libellé variable | Table de valeurs |
+|--------------|------------------|------------------|
+| ide_psh_cat | Catégorie d’établissement (code à 3 chiffres) | IR_CET_V |
+| ide_psh_stj | Statut Juridique de l'entité juridique | IR_SJE_V |
+| ide_eta_nom | Raison sociale de l’établissement |
+| ide_eta_nu8 | Finess sans clef (8 caractères) |
+| ide_eta_num | Finess (9 caractères) |
+| ide_ges_num | Finess (9 caractères) |
+| ide_rsd_lib | Libellé de la commune |
+| ide_bdi_cod | Code postal |
 
-Les variables IDE_ETA_NU8 et IDE_ETA_NUM correspondent au même numéro FINESS, avec ou sans clef. Ces variables correspondent soit à un Finess juridique,  
+Les variables IDE_ETA_NUM et IDE_ETA_NU8 correspondent au même numéro FINESS, avec ou sans clef. Ces variables correspondent soit à un Finess juridique,  
 soit à un Finess géographique ; elles sont toujours renseignées dans BE_IDE_R. 
 
 Si la variable IDE_GES_NUM est correctement renseignée (différente de vide et de '000000000'), alors la valeur correspond à un Finess juridique,  
-et les variables IDE_ETA_NU8/IDE_ETA_NUM correspondent à un Finess géographique de cette enttié juridique.
+et les variables IDE_ETA_NU8/IDE_ETA_NUM correspondent à un Finess géographique de cette entité juridique.
 Si la variable IDE_GES_NUM est vide, les variables IDE_ETA_NU8/IDE_ETA_NUM correspondent à un Finess juridique.
 
-Par défaut ETB_PRE_FIN est le FINESS géographique de l’établissement . On observe que quand dans les cas où IDE_GES_NUM est vide ou constitué de 9 zéros, IDE_ETA_NUM est le FINESS juridique . 
-On applique donc la règle suivante pour constituer le finess juridique :
-IF ide_ges_num NE '000000000' THEN finess_juridique=ide_ges_num;
-IF ide_ges_num='000000000' THEN finess_juridique=ide_eta_num;
+Pour déterminer le Finess juridique, on peut appliquer le code suivant :  
+IF ide_ges_num NE '000000000' THEN finess_juridique = ide_ges_num ;
+IF ide_ges_num = '000000000' THEN finess_juridique = ide_eta_num ;
 
-La commune (ide_rsd_lib) et le code postal (ide_bdi_cod) sont également disponibles dans cette table(variables alphanumérique). 
+Dans la table ER_PRS_F, la variable ETB_PRE_FIN doit être le FINESS géographique de l’établissement. La jointure avec le référentiel BE_IDE_R se fait donc 
+avec ETB_PRE_FIN =IDE_ETA_NU8.
 
 On ne trouve pas de variable indiquant quand les données sont mises à jour dans la base. 
 On trouve cependant plusieurs variables de date. Parmi ces variables, la date la plus récente est le 2 décembre 2016. Ainsi, on peut raisonnablement penser que la table n’a pas été mise à jour depuis 2016. 
 
 ### La table DATASANTE_T_FINESS de la bibliothèque RFCOMMUN
+
 Atlasantéproduit un référentiel établissement à jour à partir des tables FINESS(finess.sante.gouv.fr).Cette table est disponible sur le portail dans le répertoire RFCOMMUN.DATASANTE_T_FINESS.
 
 
