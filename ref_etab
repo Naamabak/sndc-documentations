@@ -1,0 +1,74 @@
+# Le numéro FINESS dans le DCIR
+
+## Définitions et concepts 
+	### Les entités juridiques
+Une entité juridique correspond à la notion de personne morale. Une entité juridique détient des droits (autorisations, agréments, conventions…) 
+lui permettant d'exercer ses activités dans des établissements. A chaque entité juridique est associé un statut juridique classifiés en grands agrégats 
+qui sont :
+•	Organismes et établissements publics
+o	Etat et collectivités territoriales
+o	Etablissement public
+•	Organismes privés
+o	Organisme privé à but non lucratif
+o	Organisme privé à caractère commercial
+•	Personne morale de droit étranger
+	### Les établissements 
+Un établissement correspond à une implantation géographique. Il est obligatoirement relié à une entité juridique. 
+Chaque établissement est rattaché à une catégorie d'établissement (centre de santé, centre hospitalier, etc) 
+qui caractérise le cadre réglementaire dans lequel s'exerce l'activité de l'établissement.
+
+Les catégories d'établissements sont classifiées en grands agrégats qui sont :
+•	Etablissements relevant de la loi hospitalière.
+•	Autres établissements de soins et de prévention.
+•	Autres établissements à caractère sanitaire.
+•	Etablissements et services sociaux d'accueil, hébergement, assistance, réadaptation.
+•	Etablissements et services sociaux d'aide à la famille.
+•	Etablissements de formation des personnels sanitaires et sociaux.
+
+A chaque établissement sont associées les activités exercées. 
+Particularités :
+•	Plusieurs activités dépendant de budgets distincts au sein d'un même établissement, font l'objet d'immatriculations : 
+autant d'établissements dans le même lieu que de budgets distincts.
+•	Une entité juridique gérant sur un même lieu un « Centre Hébergement et Réinsertion sociale » et une « Maisons-Relais » aura, dans FINESS, 
+deux établissements à la même adresse correspondant à chacune des deux catégories d'établissements.
+	3. Les numéros FINESS
+A chaque établissement et à chaque entité juridique est attribué un numéro FINESS (Fichier National des Etablissements Sanitaires et Sociaux)
+à 9 caractères dont les 2 premiers correspondent au numéro du département d'implantation.
+
+Pour tous les départements d'outre-mer, les deux premiers caractères sont 97 et le quatrième caractère, dans ce cas précise le département 1 Guadeloupe, 
+2 Martinique, 3 Guyane et 4 Réunion. Pour Saint Pierre et Miquelon les deux premiers caractères sont 97 et le quatrième caractère est le 5. Pour Mayotte,
+les deux premiers caractères sont 98
+
+## En pratique
+
+Dans la table centrale du DCIR, la table prestation (ER_PRS_F), lorsqu’une prestation est associée à un établissement, 
+la variable ETB_PRE_FIN est non vide (FINESS de l’établissement prescripteur). La variable contient un code à 8 chiffres, 
+il s'agit du FINESS sans clefde l’établissement prescripteur .Pour obtenir des informations sur l’établissement, 
+on utilise le numéro FINESS à 8 chiffres comme clé de jointure afin de joindre la table prestation à un référentiel d’établissement. 
+La présente fiche porte sur le choix de ce référentiel entre la table établissement du SNDS BE_IDE_R et la table produit par atlasanté DATASANTE_T_FINESS.
+
+### La table BE_IDE_R de la bibliothèque ORAVUE
+
+Le SNDS met à disposition un référentiel d’établissement, la table BE_IDE_R de la bibliothèque ORAVUE. Elle contient notamment les variables suivantes :
+
+|ide_psh_cat (alphanumérique)|	Catégorie d’établissement (code à 3 chiffres). On peut joindre cette variable avec ETB_CAT_COD dans IR_CET_V. |
+|ide_psh_stj|	Statut Juridique de l'établissement juridique (nomenclature IR_SJE_V)|
+|ide_eta_nom|	nom de l’établissement|
+|ide_eta_nu8|	finess à 8 fiches pour la jointure avec la table prestation (etb_pre_fin = ide_eta_nu8)|
+|ide_eta_num|	finess à 9 chiffres|
+|ide_ges_num|	finess à 9 chiffres|
+
+Les variables IDE_ETA_NU8 et IDE_ETA_NUM ne sont jamais à vide dans BE_IDE_R. IDE_GES_NUM peut être soit à vide, soit renseigné, soit constitué de 9 zéro. Par défaut ETB_PRE_FIN est le FINESS géographique de l’établissement . On observe que quand dans les cas où IDE_GES_NUM est vide ou constitué de 9 zéros, IDE_ETA_NUM est le FINESS juridique . 
+On applique donc la règle suivante pour constituer le finess juridique :
+IF ide_ges_num NE '000000000' THEN finess_juridique=ide_ges_num;
+IF ide_ges_num='000000000' THEN finess_juridique=ide_eta_num;
+
+La commune (ide_rsd_lib) et le code postal (ide_bdi_cod) sont également disponibles dans cette table(variables alphanumérique). 
+
+On ne trouve pas de variable indiquant quand les données sont mises à jour dans la base. 
+On trouve cependant plusieurs variables de date. Parmi ces variables, la date la plus récente est le 2 décembre 2016. Ainsi, on peut raisonnablement penser que la table n’a pas été mise à jour depuis 2016. 
+
+### La table DATASANTE_T_FINESS de la bibliothèque RFCOMMUN
+Atlasantéproduit un référentiel établissement à jour à partir des tables FINESS(finess.sante.gouv.fr).Cette table est disponible sur le portail dans le répertoire RFCOMMUN.DATASANTE_T_FINESS.
+
+
