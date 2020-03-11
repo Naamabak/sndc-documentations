@@ -111,6 +111,7 @@ On trouve cependant plusieurs variables de date. Parmi ces variables, la date la
 Atlasanté produit un référentiel des structures Finess qui fait correspondre à chaque structure Finess, juridique ou géographique, 
 qui existe ou qui a existé depuis 2004, ses principales caractéristiques : statut juridique, catégorie, adresse, ...
 Mise à jour bimestrielle à partir des extractions Finess publiées sur data.gouv.fr
+[Pour plus d'information] (https://static.data.gouv.fr/resources/referentiel-finess-t-finess/20200207-125732/t-finess-doc.pdf).
 
 Cette table est disponible sur le portail dans le répertoire RFCOMMUN.DATASANTE_T_FINESS.
 
