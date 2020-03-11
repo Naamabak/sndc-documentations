@@ -52,7 +52,7 @@ deux établissements à la même adresse correspondant à chacune des deux caté
 
 Dans la table centrale du DCIR des prestations (ER_PRS_F), lorsqu’une prestation est associée à un établissement, 
 la variable ETB_PRE_FIN est non vide (FINESS de l’établissement prescripteur). La variable contient un code à 8 chiffres, 
-il s'agit du FINESS de l'établissement rpescripteur, sans clef. Pour obtenir des informations sur l’établissement, 
+il s'agit du FINESS de l'établissement prescripteur, sans clef. Pour obtenir des informations sur l’établissement, 
 on utilise le numéro FINESS à 8 chiffres comme clé de jointure afin de joindre la table ER_PRS_F à un référentiel d’établissement. 
 
 ### Le numéro FINESS dans le PMSI
