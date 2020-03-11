@@ -108,6 +108,10 @@ On trouve cependant plusieurs variables de date. Parmi ces variables, la date la
 
 ### La table DATASANTE_T_FINESS de la bibliothèque RFCOMMUN
 
-Atlasantéproduit un référentiel établissement à jour à partir des tables FINESS(finess.sante.gouv.fr).Cette table est disponible sur le portail dans le répertoire RFCOMMUN.DATASANTE_T_FINESS.
+Atlasanté produit un référentiel des structures Finess qui fait correspondre à chaque structure Finess, juridique ou géographique, 
+qui existe ou qui a existé depuis 2004, ses principales caractéristiques : statut juridique, catégorie, adresse, ...
+Mise à jour bimestrielle à partir des extractions Finess publiées sur data.gouv.fr
+
+Cette table est disponible sur le portail dans le répertoire RFCOMMUN.DATASANTE_T_FINESS.
 
 
