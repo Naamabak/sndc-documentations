@@ -22,7 +22,7 @@ Avant la C2S, le top CMU-C était positionné à 1 lorsque le type de contrat cm
 sinon il était positionné à zéro. Depuis la mise en place de la C2S, le top à 1 incluera les bénéficiaires de la C2S. 
 
 Cette variable ne permet pas de recenser l'ensemble des bénéficiaires de la CSS. 
-Pour recenser la population, il faut se référéer à la table IR_ORC_R  (seulement RG+SLM), avec la variable ben_cta_typ à 89. 
+Pour recenser la population, il faut se référéer à la table `IR_ORC_R`  (seulement RG+SLM), avec la variable `BEN_CTA_TYP` à 89. 
 
 Dans le PMSI, on repère les bénéficiaires de la C2S avec le code gestion 89. 
 
