@@ -10,19 +10,19 @@ En revanche, pour la population qui peut prétendre à l’ACS (moins de  1 007 
 les garanties seront alignées sur celles de la CMU-C, moyennant une « participation financière »
 
 ::: tip titre Attention période transitoire 
-Suppression progressive de l'ACS. Toutes les contrats ACS souscrits avant le 1er Nov 2019 pourront aller jusqu'à échéance soit 1er Nov 2020. 
+Suppression progressive de l'ACS. Toutes les contrats ACS souscrits avant le 1er Nov 2019 pourront aller jusqu'à échéance soit le 1er Nov 2020. 
 Conséquence à partir du 1er Novembre 2020, il n'y aura plus d'ACS et que des contrats C2S.   
 :::
 
 ## La C2S dans le SNDS
 
-A partir de l'entrée en vigueur de la C2S, on retrouve les bénéficiaires à l'aide du `BEN_CMU_TOP` dans la table prestation `ER_PRS_F`. 
-Le top CMU-C indique si une prestation est exonérée au titre de la CMU-C. 
+A partir de l'entrée en vigueur de la C2S, on retrouve les bénéficiaires dans la table prestation `ER_PRS_F` à l'aide du `BEN_CMU_TOP`. 
 Avant la C2S, le top CMU-C était positionné à 1 lorsque le type de contrat cmu est égal à 89 (bénéficiaire de la CMU complémentaire), 
 sinon il était positionné à zéro. Depuis la mise en place de la C2S, le top à 1 incluera les bénéficiaires de la C2S. 
 
-Cette variable ne permet pas de recenser l'ensemble des bénéficiaires de la CSS. 
-Pour recenser la population, il faut se référéer à la table `IR_ORC_R`  (seulement RG+SLM), avec la variable `BEN_CTA_TYP` à 89. 
+Le top CMU-C indique si une prestation est exonérée au titre de la CSS. 
+Il ne permet pas de recenser l'ensemble des bénéficiaires de la CSS dans la mesure où d'autres motifs d'exonération peuvent prévaloir sur la CSS.
+Ainsi, pour recenser la population, il faut se référéer à la table `IR_ORC_R`  (seulement RG+SLM), avec la variable `BEN_CTA_TYP` à 89. 
 
 Dans le PMSI, on repère les bénéficiaires de la C2S avec le code gestion 89. 
 
@@ -47,4 +47,5 @@ Pour plus d'informations se reporter au [site du nouveau Fonds Complémentaire S
 
 ### Sources
 Présentation de Céline Leroy au comité utilisateurs SNDS 
+
 Comité partenaires DCIR/PMSI de la CNAM du 9 mars 2020
