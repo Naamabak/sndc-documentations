@@ -9,7 +9,7 @@ En pratique, rien ne changera pour les assurés de l’actuelle CMUC (746 euros 
 En revanche, pour la population qui peut prétendre à l’ACS (moins de  1 007 euros pour un célibataire, 1 813 euros pour un couple avec enfant),
 les garanties seront alignées sur celles de la CMU-C, moyennant une « participation financière »
 
-:::tip titre Attention période transitoire 
+::: tip titre Attention période transitoire 
 Suppression progressive de l'ACS. Toutes les contrats ACS souscrits avant le 1ier Nov 2019 pourront aller jusqu'à échéance soit 1ier Nov 2020. 
 Conséquence à partir du 1ier Novembre 2020, il n'y aura plus d'ACS et que des contrats C2S.   
 :::
