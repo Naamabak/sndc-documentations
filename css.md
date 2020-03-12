@@ -1,6 +1,7 @@
 # La Complémentaire Santé Solidaire
 
-A partir du 1er novembre 2019, l'[ACS](fiches/acs.md) et la [CMU-C](fiches/cmu_c.md) ont fusionné pour former la Complémentaire Santé Solidaire.
+A partir du 1er novembre 2019, l'[ACS](fiches/acs.md) et la [CMU-C](fiches/cmu_c.md) ont fusionné pour former 
+la [Complémentaire Santé Solidaire] (https://www.complementaire-sante-solidaire.gouv.fr/).
 On distingue la C2S et la C2SP selon que les bénéficiaires participent ou non au paiement de sa complémentaire.
 Cette participation financière s'élève à maximum 1 euro par jour et par personne. 
 
@@ -9,10 +10,11 @@ En pratique, rien ne changera pour les assurés de l’actuelle CMUC (746 euros 
 En revanche, pour la population qui peut prétendre à l’ACS (moins de  1 007 euros pour un célibataire, 1 813 euros pour un couple avec enfant),
 les garanties seront alignées sur celles de la CMU-C, moyennant une « participation financière »
 
-::: tip titre Attention période transitoire 
+::: tip ATTENTION période transitoire
 Suppression progressive de l'ACS. Toutes les contrats ACS souscrits avant le 1er Nov 2019 pourront aller jusqu'à échéance soit le 1er Nov 2020. 
 Conséquence à partir du 1er Novembre 2020, il n'y aura plus d'ACS et que des contrats C2S.   
 :::
+
 
 ## La C2S dans le SNDS
 
@@ -43,7 +45,6 @@ La modalité P permet donc de distinguer les contrats participatifs des contrats
 
 
 
-Pour plus d'informations se reporter au [site du nouveau Fonds Complémentaire Santé Solidaire](https://www.complementaire-sante-solidaire.gouv.fr/).
 
 ### Sources
 Présentation de Céline Leroy au comité utilisateurs SNDS 
