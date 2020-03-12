@@ -10,8 +10,8 @@ En revanche, pour la population qui peut prétendre à l’ACS (moins de  1 007 
 les garanties seront alignées sur celles de la CMU-C, moyennant une « participation financière »
 
 ::: tip titre Attention période transitoire 
-Suppression progressive de l'ACS. Toutes les contrats ACS souscrits avant le 1ier Nov 2019 pourront aller jusqu'à échéance soit 1ier Nov 2020. 
-Conséquence à partir du 1ier Novembre 2020, il n'y aura plus d'ACS et que des contrats C2S.   
+Suppression progressive de l'ACS. Toutes les contrats ACS souscrits avant le 1er Nov 2019 pourront aller jusqu'à échéance soit 1er Nov 2020. 
+Conséquence à partir du 1er Novembre 2020, il n'y aura plus d'ACS et que des contrats C2S.   
 :::
 
 ## La C2S dans le SNDS
@@ -29,9 +29,22 @@ Dans le PMSI, on repère les bénéficiaires de la C2S avec le code gestion 89.
 
 ## Distinguer C2S et C2SP
 
-Slide CNAM avec modalités de la nouvelle variable 
+Depuis le mise en place du dispositif, il n'est pas possible de distinguer la C2S participative de la C2S gratuite. 
+Fin 2020, la variable `REF_C2S_COD` sera créée dans le table **[IR\_ORC\_R](../tables/DCIR_DCIRS/IR_ORC_R.md)**.
+Elle présentera les modalités suivantes:
+
+|Droit ouvert IR_BEN_R |Libelle|Entrepôt|
+|----------------------|-------|--------|
+|P | Contrat Participatif 	|		P   |
+|S | Contrat suspendu 		|		P   |
+|F | Contrat Ferme 			|		P   |
+
+La modalité P permet donc de distinguer les contrats participatifs des contrats gratuits. 
 
 
 
 Pour plus d'informations se reporter au [site du nouveau Fonds Complémentaire Santé Solidaire](https://www.complementaire-sante-solidaire.gouv.fr/).
 
+### Sources
+Présentation de Céline Leroy au comité utilisateurs SNDS 
+Comité partenaires DCIR/PMSI de la CNAM du 9 mars 2020
