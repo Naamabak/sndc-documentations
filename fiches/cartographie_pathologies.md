@@ -51,7 +51,7 @@ La table [CT_DEP_AAAA_GX](../tables/CARTOGRAPHIE_PATHOLOGIES/CT_DEP_AAAA_GN.md) 
  
 La table [CT_IDE_AAAA_GX](../tables/CARTOGRAPHIE_PATHOLOGIES/CT_IDE_AAAA_GN.md) est une table de passage entre les identifiants BEN_NIR_PSA et BEN_RNG_GEM du DCIR, et l'identifiant ID_CARTO propre à la cartographie.
 
-## Groupe des Maladies cardioneurovasculaires (sup_Cv_cat)
+## Groupe des Maladies cardioneurovasculaires (sup\_Cv\_cat)
 ### Top Syndrome coronaire aigu (top_CvIDM_aig)
 #### Description des critères de repérage
 
