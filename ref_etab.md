@@ -48,12 +48,25 @@ deux établissements à la même adresse correspondant à chacune des deux caté
 
 ## En pratique, dans le SNDS
 
-### Le numéro FINESS dans les prestations
+### Le numéro FINESS dans le DCIR/S
 
-Dans la table centrale du DCIR des prestations (ER_PRS_F), lorsqu’une prestation est associée à un établissement, 
-la variable ETB_PRE_FIN est non vide (FINESS de l’établissement prescripteur). La variable contient un code à 8 chiffres, 
-il s'agit du FINESS de l'établissement prescripteur, sans clef. Pour obtenir des informations sur l’établissement, 
-on utilise le numéro FINESS à 8 chiffres comme clé de jointure afin de joindre la table ER_PRS_F à un référentiel d’établissement. 
+Dans la table centrale du DCIR, la table des prestations (`ER_PRS_F`), lorsqu’une prescription est associée à un établissement, 
+la variable `ETB_PRE_FIN` est non vide. La variable contient un code à 8 chiffres, il s'agit du FINESS de l'établissement prescripteur, sans clef. 
+
+Dans le cas des prestations executées par un établissement, la table prestation du DCIR ne fournit que très peu d'information.
+Le mode d'exercice du professionnel de santé exécutant `PSE_STJ_COD` permet de distinguer les praticiens libéraux des salariés.
+Cependant, la variable n'est pas systématiquement renseignée, notamment pour les régimes autres que le régime général. 
+Afin d'obtenir l'ensemble des prestations du DCIR exécutées en établissement il faut joindre `ER_PRS_F` avec `ER_ETE_F` sur les 9 clés de jointure. 
+Attention cependant, le champ du DCIR ne couvre qu'une infime partie de l'activité des établissements publics. 
+
+
+Dans le DCIRS, les variables `ETB_PRE_FIN` et `ETB_EXE_FIN`sont disponibles dans la table prestation `NS_PRS_F`
+et correspondent respectivement aux FINESS de l'établissement prescripteur est exécutant. 
+Lorsqu'une prestation est prescrite en ville la variable ne sera pas vide comme dans le cas du DCIR mais contiendra 8 zéros.
+
+Pour obtenir des informations sur l’établissement, on utilise le numéro FINESS à 8 chiffres comme clé de jointure 
+afin de joindre la table `ER_PRS_F` ou la table `NS_PRS_F` à un référentiel d’établissement.
+
 
 ### Le numéro FINESS dans le PMSI
 
@@ -67,7 +80,7 @@ les autorisations appropriées soient acceptés (exemple : un Finess géographiq
 les tables SSR). 
 
 
-## Les référentiels disponibles pour les établissements
+## Le choix du référentiel d'établissements
 
 La présente fiche porte sur le choix de ce référentiel entre la table établissement du SNDS BE_IDE_R et la table produite par atlasanté DATASANTE_T_FINESS.
 
@@ -103,8 +116,9 @@ IF ide_ges_num = '000000000' THEN finess_juridique = ide_eta_num ;
 Dans la table ER_PRS_F, la variable ETB_PRE_FIN doit être le FINESS géographique de l’établissement. La jointure avec le référentiel BE_IDE_R se fait donc 
 avec ETB_PRE_FIN =IDE_ETA_NU8.
 
-On ne trouve pas de variable indiquant quand les données sont mises à jour dans la base. 
-On trouve cependant plusieurs variables de date. Parmi ces variables, la date la plus récente est le 2 décembre 2016. Ainsi, on peut raisonnablement penser que la table n’a pas été mise à jour depuis 2016. 
+Il est indiqué dans le fichier Offre_de_service mis à disposition par la CNAM sur le portail SNDS 
+que la dernière mise à jour de la BERF remonte à mai 2016. 
+
 
 ### La table DATASANTE_T_FINESS de la bibliothèque RFCOMMUN
 
