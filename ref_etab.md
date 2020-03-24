@@ -57,11 +57,12 @@ Dans le cas des prestations executées par un établissement, la table prestatio
 Le mode d'exercice du professionnel de santé exécutant `PSE_STJ_COD` permet de distinguer les praticiens libéraux des salariés.
 Cependant, la variable n'est pas systématiquement renseignée, notamment pour les régimes autres que le régime général. 
 Afin d'obtenir l'ensemble des prestations du DCIR exécutées en établissement il faut joindre `ER_PRS_F` avec `ER_ETE_F` sur les 9 clés de jointure. 
+On trouve dans `ER_ETE_F` le numéro FINESS sans clé de l'établissement exécutant (`ETB_EXE_FIN`). 
 Attention cependant, le champ du DCIR ne couvre qu'une infime partie de l'activité des établissements publics. 
-
+Le DCIR contient en revanche l'ensemble des prestations réalisées en établissement privé. 
 
 Dans le DCIRS, les variables `ETB_PRE_FIN` et `ETB_EXE_FIN`sont disponibles dans la table prestation `NS_PRS_F`
-et correspondent respectivement aux FINESS de l'établissement prescripteur est exécutant. 
+et correspondent respectivement aux FINESS de l'établissement prescripteur et exécutant. 
 Lorsqu'une prestation est prescrite en ville la variable ne sera pas vide comme dans le cas du DCIR mais contiendra 8 zéros.
 
 Pour obtenir des informations sur l’établissement, on utilise le numéro FINESS à 8 chiffres comme clé de jointure 
