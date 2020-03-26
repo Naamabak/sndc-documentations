@@ -20,7 +20,7 @@
     <div>
       <br/>
       <input type="hidden" value="https://gitlab.com/healthdatahub/documentation-snds/-/blob/master/" id="Citation">
-      <button class="button" v-on:click="copyQuotation()">Copier le lien à citer</button>
+      <button class="button" v-on:click="copyQuotation()">Copier citation</button>
       <div class="last-updated">
       Licence : Mozilla Public License 2.0 (MPL-2.0)
        </div>
@@ -141,6 +141,7 @@ export default {
         )
       }
 
+       if (!path.includes('README'))  path = path.replace('tables/','tables/.sources/');
       const base = outboundRE.test(docsRepo)
         ? docsRepo
         : `https://github.com/${docsRepo}`
@@ -149,7 +150,7 @@ export default {
         + `/edit`
         + `/${docsBranch}/`
         + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
-        + path.replace('tables/','tables/.sources/')
+        + path
       )
 
     },
@@ -196,6 +197,7 @@ export default {
         )
       }
 
+      if (!path.includes('README'))  path = path.replace('tables/','tables/.sources/');
       const base = outboundRE.test(docsRepo)
         ? docsRepo
         : `https://github.com/${docsRepo}`
@@ -213,11 +215,16 @@ export default {
      */
     copyQuotation: function(event){
       var copyText = document.getElementById("Citation");
-      copyText.value += this.$page.relativePath.replace('tables/','tables/.sources/');
+      copyText.value = "Information provenant de la fiche \”" + this.$page.title + "\", accessible à l'adresse " + copyText.value;
+      if (this.$page.relativePath.indexOf('README') == -1) {
+        copyText.value += this.$page.relativePath.replace('tables/','tables/.sources/');
+      } else{
+        copyText.value += this.$page.relativePath;
+      }
       copyText.setAttribute('type', 'text'); 
       copyText.select();
       document.execCommand("copy");
-      alert("Le lien suivant a été copié: " + copyText.value);
+      alert("Le texte suivant a été copié: " + copyText.value);
       copyText.value = "https://gitlab.com/healthdatahub/documentation-snds/-/blob/master/";
       copyText.setAttribute('type', 'hidden'); 
     }
