@@ -28,7 +28,7 @@ Si la durée de l'arrêt de travail est > à 6 mois, le salarié est en arrêt d
 
 - ou avoir cotisé sur un salaire au moins égal à 2 030 fois le montant du SMIC horaire au cours des douze mois civils précédant l'arrêt de travail.
 
-*Exemple* : l'arrêt de travail de plus de 6 mois a débuté le 1^er^ juillet 2018. Le droit aux IJ au-delà de 6 mois est ouvert :
+*Exemple :* l'arrêt de travail de plus de 6 mois a débuté le 1^er^ Juillet 2018. Le droit aux IJ au-delà de 6 mois est ouvert :
 
 - si la personne était déjà affiliée à la Sécurité sociale avant juillet 2017,
 
