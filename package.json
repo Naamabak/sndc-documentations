@@ -26,7 +26,7 @@
     "docs:build": "yarn run start && vuepress build",
     "lint-md": "remark --frail --use remark-validate-links . --quiet",
     "extended-lint-md": "yarn run start && remark --frail --use remark-validate-links --use remark-lint-no-dead-urls . --quiet",
-    "licence": "if find . -iname '*.md' -not -path '*/node_modules/*' -not -path '*/tables/.schemas/*' | grep -rL '<!-- SPDX-License-Identifier: MPL-2.0 -->' ; then exit 1"
+    "licence": "if find . -iname '*.md' -not -path '*/node_modules/*' -not -path '*/tables/.schemas/*' | grep -rL '<!-- SPDX-License-Identifier: MPL-2.0 -->' ; then exit 1 fi"
   }, 
   "devDependencies": {
     "vuepress-plugin-mermaidjs": "^1.2.0"
