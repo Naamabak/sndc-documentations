@@ -1,4 +1,5 @@
-# Indemnites journalières
+# Indemnités journalières
+L'abréviation IJ pour indemnités journalières sera utilisée pour cette fiche.
 
 ## Indemnités journalières -- Régime général
 
