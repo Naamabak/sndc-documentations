@@ -87,7 +87,7 @@ La présente fiche porte sur le choix de ce référentiel entre la table établi
 
 ### La table BE_IDE_R de la bibliothèque ORAVUE
 
-Le SNDS met à disposition un référentiel d’établissement, la table BE_IDE_R de la bibliothèque ORAVUE, qui contient une ligne pour chaque FINESS 
+Le SNDS met à disposition un référentiel d’établissement, la table `BE_IDE_R` de la bibliothèque ORAVUE, qui contient une ligne pour chaque FINESS 
 juridique et une ligne pour chaque FINESS géographique.  
 Ainsi un Finess juridique avec 4 sites sera représenté sur 5 lignes : 1 pour le Finess juridique et 4 pour chacun des Finess géographiques.
 Cette table contient notamment les variables suivantes :  
@@ -103,19 +103,24 @@ Cette table contient notamment les variables suivantes :
 | ide_rsd_lib | Libellé de la commune |
 | ide_bdi_cod | Code postal |
 
-Les variables IDE_ETA_NUM et IDE_ETA_NU8 correspondent au même numéro FINESS, avec ou sans clef. Ces variables correspondent soit à un Finess juridique,  
-soit à un Finess géographique ; elles sont toujours renseignées dans BE_IDE_R. 
+Les variables `IDE_ETA_NUM` et `IDE_ETA_NU8` correspondent au même numéro FINESS, avec ou sans clef. 
+Ces variables correspondent soit à un Finess juridique,  
+soit à un Finess géographique ; elles sont toujours renseignées dans `BE_IDE_R`. 
 
-Si la variable IDE_GES_NUM est correctement renseignée (différente de vide et de '000000000'), alors la valeur correspond à un Finess juridique,  
-et les variables IDE_ETA_NU8/IDE_ETA_NUM correspondent à un Finess géographique de cette entité juridique.
-Si la variable IDE_GES_NUM est vide, les variables IDE_ETA_NU8/IDE_ETA_NUM correspondent à un Finess juridique.
+Si la variable `IDE_GES_NUM` est correctement renseignée (différente de vide et de '000000000'), alors sa valeur correspond à un Finess juridique,  
+et les variables `IDE_ETA_NU8`/`IDE_ETA_NUM` correspondent à un Finess géographique de cette entité juridique.
+Si la variable `IDE_GES_NUM` est vide, les variables `IDE_ETA_NU8`/`IDE_ETA_NUM` correspondent à un Finess juridique.
 
-Pour déterminer le Finess juridique, on peut appliquer le code suivant :  
-IF ide_ges_num NE '000000000' THEN finess_juridique = ide_ges_num ;
-IF ide_ges_num = '000000000' THEN finess_juridique = ide_eta_num ;
+Pour déterminer le Finess juridique, on peut appliquer le code suivant : 
 
-Dans la table ER_PRS_F, la variable ETB_PRE_FIN doit être le FINESS géographique de l’établissement. La jointure avec le référentiel BE_IDE_R se fait donc 
-avec ETB_PRE_FIN =IDE_ETA_NU8.
+```sql
+IF IDE_GES_NUM NE '000000000' THEN finess_juridique = IDE_GES_NUM ;
+IF IDE_GES_NUM = '000000000' THEN finess_juridique = IDE_ETA_NUM ;
+``` 
+
+Dans la table `ER_PRS_F`, la variable `ETB_PRE_FIN` doit être le FINESS géographique de l’établissement. 
+La jointure avec le référentiel `BE_IDE_R` se fait donc 
+avec `ETB_PRE_FIN` = `IDE_ETA_NU8`.
 
 Il est indiqué dans le fichier Offre_de_service mis à disposition par la CNAM sur le portail SNDS 
 que la dernière mise à jour de la BERF remonte à mai 2016. 
