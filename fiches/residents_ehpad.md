@@ -1,4 +1,5 @@
 # Les résidents en EHPAD
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 
 Cette fiche présente les **spécificités de la prise en charge des soins des personnes âgées résidant en établissement** et les précautions à mettre en oeuvre lors de l'exploitation du SNDS.
 
@@ -46,7 +47,7 @@ Néanmoins, seules les consommations en dehors des périmètres de prise en char
 Par exemple, on ne pourra repérer les médicaments délivrés à un bénéficiaire que s'il est dans un établissement sans PUI, et on ne pourra repérer ses consultations auprès d'un généraliste que s'il est dans un établissement à tarif partiel.
 
 ::: warning Attention :
-Lorsqu'on travaille sur le recours aux soins des personnes âgées dans le SNDS, il faut donc avoir en tête que **seule une partie de leurs soins** apparaît lorsqu'ils sont résidents d'un établissement d'hébergement pour personnes âgées médicalisé (EHPAD et USLD).
+Lorsqu'on travaille sur le recours aux soins des personnes âgées dans le SNDS, il faut donc avoir en tête que **seule une partie de leurs soins** apparaît lorsqu'ils sont résidents d'un établissement d'hébergement pour personnes âgées médicalisées (EHPAD et USLD).
 :::
 
 ## Le repérage des résidents en établissement pour personnes âgées dans le SNDS
@@ -62,7 +63,7 @@ Resid-Ehpad est un outil de transmission des informations des établissements (E
 La base constituée à partir de cet outil est montée en charge au cours des dernières années et a rejoint le SNIIRAM en 2015.  
 
 ::: danger Attention :
-Depuis 2018, un décret prévoit l'évolution de RESID-EHPAD vers la base **RESID-ESMS**. Ce traitement de données, mis en oeuvre par la [CNAM](../glossaire/Cnam.md), permet d’identifier l’activité et la consommation de soins dans les établissements et services médico-sociaux accueillant des personnes âgées et handicapées. Le [décret](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036694217&categorieLien=id) ne prévoit un accès qu'à la CNAM et aux organismes gérant un régime de base de l'assurance maladie. Les informations présentées ci-dessous sur la base RESID-EHPAD ne seront plus valables à partir du 1er janvier 2020, date à la quelle le traitement Resid-Ehpad prend fin.
+Depuis 2018, un décret prévoit l'évolution de RESID-EHPAD vers la base **RESID-ESMS**. Ce traitement de données, mis en oeuvre par la [CNAM](../glossaire/Cnam.md), permet d’identifier l’activité et la consommation de soins dans les établissements et services médico-sociaux accueillant des personnes âgées et handicapées. Le [décret](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036694217&categorieLien=id) ne prévoit un accès qu'à la CNAM et aux organismes gérant un régime de base de l'assurance maladie. Les informations présentées ci-dessous sur la base RESID-EHPAD ne sont plus valables à partir du 1er janvier 2020, date à la quelle le traitement Resid-Ehpad a pris fin.
 :::
 
 ### Contenu
