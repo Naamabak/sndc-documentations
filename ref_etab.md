@@ -114,7 +114,7 @@ Pour déterminer le Finess juridique, on peut appliquer le code suivant :
 
 ```sql
 IF IDE_GES_NUM NE '000000000' THEN finess_juridique = IDE_GES_NUM ;
-IF IDE_GES_NUM = '000000000' THEN finess_juridique = IDE_ETA_NUM ;
+IF IDE_GES_NUM = '000000000' OR IDE_GES_NUM  IS NULL THEN finess_juridique = IDE_ETA_NUM ;
 ``` 
 
 Dans la table `ER_PRS_F`, la variable `ETB_PRE_FIN` doit être le FINESS géographique de l’établissement. 
