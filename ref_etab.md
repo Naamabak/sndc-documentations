@@ -132,6 +132,8 @@ qui existe ou qui a existé depuis 2004, ses principales caractéristiques : sta
 Mise à jour bimestrielle à partir des extractions Finess publiées sur data.gouv.fr
 [Pour plus d'information](https://static.data.gouv.fr/resources/referentiel-finess-t-finess/20200207-125732/t-finess-doc.pdf).
 
-Cette table est disponible sur le portail dans le répertoire RFCOMMUN.DATASANTE_T_FINESS.
+Cette table est disponible sur le portail dans le répertoire `RFCOMMUN.DATASANTE_T_FINESS`.
+Cette table dispose d'une variable `finess8` permettant de faire le lien directement avec les tables
+du SNDS. 
 
 
