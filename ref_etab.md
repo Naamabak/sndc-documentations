@@ -85,10 +85,21 @@ les tables SSR).
 
 La présente fiche porte sur le choix de ce référentiel entre la table établissement du SNDS BE_IDE_R et la table produite par atlasanté DATASANTE_T_FINESS.
 
-### La table BE_IDE_R de la bibliothèque ORAVUE
+### La base établissements référentiel (BERF) de la bibliothèque ORAVUE
 
-Le SNDS met à disposition un référentiel d’établissement, la table `BE_IDE_R` de la bibliothèque ORAVUE, qui contient une ligne pour chaque FINESS 
-juridique et une ligne pour chaque FINESS géographique.  
+Le SNDS met à disposition un référentiel d’établissement, la table `BE_IDE_R` de la bibliothèque ORAVUE
+
+Elle synthétise deux sources d'information: 
+- Les informations issues des bases établissements des CARSAT/CRAM portant sur les établissements relevant de la loi hospitalière (hôpitaux, cliniques…) 
+ et les établissements relevant de la loi sur les institutions sociales et médico-sociales pour lesquels l’Assurance Maladie intervient financièrement 
+- Les informations issues des fichiers des CPAM portant sur les centres de santé, les centres dentaires, les centres de PMI…
+
+La variable ‘origine administrative’ (IDE_NAT_ORI) permet de distinguer l’origine des informations : CARSAT/CRAM ou CPAM. 
+
+On trouve dans la BERF des informations sur des établissements étrangers pour lesquels des conventions ont été passées
+(exemple : établissement de Monaco). Pour ces établissements, dont les informations ont été saisies par les cpam, les n° finess sont fictifs.
+
+Elle contient une ligne pour chaque FINESS juridique et une ligne pour chaque FINESS géographique.  
 Ainsi un Finess juridique avec 4 sites sera représenté sur 5 lignes : 1 pour le Finess juridique et 4 pour chacun des Finess géographiques.
 Cette table contient notamment les variables suivantes :  
 
@@ -137,4 +148,6 @@ Cette table est disponible sur le portail dans le répertoire `RFCOMMUN.DATASANT
 Cette table dispose d'une variable `finess8` permettant de faire le lien directement avec les tables
 du SNDS. 
 
+## Sources
+Manuel utilisateur de l'univers BERF
 
