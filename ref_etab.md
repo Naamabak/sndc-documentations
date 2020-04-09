@@ -61,6 +61,7 @@ On trouve dans `ER_ETE_F` le numéro FINESS sans clé de l'établissement exécu
 Attention cependant, le champ du DCIR ne couvre qu'une infime partie de l'activité des établissements publics. 
 Le DCIR contient en revanche l'ensemble des prestations réalisées en établissement privé. 
 
+Dans le DCIRS, les variables `ETB_PRE_FIN` et `ETB_EXE_FIN` sont disponibles dans la table prestation `NS_PRS_F`
 et correspondent respectivement aux FINESS de l'établissement prescripteur et exécutant. 
 Lorsqu'une prestation est prescrite en ville la variable ne sera pas vide comme dans le cas du DCIR mais contiendra 8 zéros.
 
