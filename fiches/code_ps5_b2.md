@@ -16,17 +16,18 @@ Dans cette nomenclature, on peut trouver le code B2 dans la variable `PRS_NAT_CB
 Le cahier des charges de la norme B2 interrégimes, dont 
 la dernière version date de 2007, permet de codifier
 la **télétransmission** de factures entre professionnels de santé
-et Organismes d'Assurance Maladie. Cette norme permet de refléter la
-facturation tout en respectant le secret médical.
+et Organismes d'Assurance Maladie. Cette norme a pour visée la
+**facturation**.
 
 Si la dernière date de la norme B2 est 2007, 
 les annexes de la norme B2 évoluent régulièrement. 
 L'[annexe 10 de la norme B2](https://www.ameli.fr/fileadmin/user_upload/documents/Annexe10-B2-AMO_Novembre_2019.pdf)
 permet d'obtenir les différents codes de la norme B2 et de
-lier ces codes aux actes de référence auxquels ils sont liés. 
+lier ces codes aux actes de référence. 
 Dans cette annexe se trouvent également les codes des prestations 
-non transmis en norme B2, mais transmis au PS. 
-Cette annexe est en format pdf, pour la lire, on peut utiliser le code
+non transmis en norme B2, mais transmis au PS. Il s'agit
+de rémunérations forfaitaires, de contrats spécifiques aux PS, etc.
+Cette annexe est en format pdf, pour la lire, on peut utiliser le code `python`
 suivant:
 ```python
 import tabula
@@ -36,23 +37,34 @@ df = tabula.read_pdf("Annexe_10.pdf",
 ```
 
 
-Lorsque l'on compare les deux codes, il existe plusieurs types de relations possibles:
+Lorsque l'on compare ces deux types de codes, il existe plusieurs types de relations possibles:
 
 
 | Type de relation | `PRS_NAT_REF` | `PRS_NAT_CB2` | `PRS_NAT_LIB`|
 | -----------------| -------------| --------------| --------------|
 | Relation *one to one* entre  `PRS_NAT_REF` et `PRS_NAT_CB2`| Exemple : 4212 | ABA | AMBULANCES AGREEES|
 | Relation *many to one* entre `PRS_NAT_REF` et `PRS_NAT_CB2` | Exemple: 1434, 9421| 'PREVENTION BUCCO-DENTAIRE: CONSULTATION - MATER', 'PREVENTION BUCCO-DENTAIRE: CONSULTATION'| BDC|
-| Pas de correspondance dans la norme B2 pour le code prestation||||
+| Pas de correspondance dans la norme B2 pour le code prestation|Exemple: 9143|nan|SUPPLEMENT POUR SOINS AUX POLYTRAUMATISES|
 
 
-Pour la **grande majorité des codes (96 %)**, la relation est *one-to-one* entre
-les codes de la norme PS5 et les codes de la norme B2. 
+Pour la **grande majorité des codes qui ont une correspondance en B2**, la relation est *one-to-one* entre
+les codes de la norme PS5 et les codes de la norme B2 (96 %). 
+Les codes PS5 qui n'ont pas de correspondance B2 peuvent correspondre à des prestations 
+spécifiques NTEIR (notamment les codes mis à la disposition de la SNCF), 
+des prestations correspondant à des prestations en espèces, à de la prévention, à de la saisie 
+manuelle Qualiflux, etc.
+
+## Liens avec la NGAP 
+
+On reconnait dans la norme B2 des lettres clef de la [NGAP](../glossaire/NGAP.md)
+Les lettres clef sont des signes dont la valeur monétaire est déterminée par décret
+Un coefficient est associé à un acte, `PRS_ACT_COG` dans la table centrale du DCIR `ER_PRS_F`
 
 ## Références
 - Site de l'Assurance maladie sur la [norme B2](https://www.ameli.fr/l-assurance-maladie/documentation-technique/norme-b2/index.php)
 - [Cahier des charges noemie OC](https://www.ameli.fr/l-assurance-maladie/documentation-technique/norme-noemie/norme-noemie-oc/cahier-des-charges-noemie-oc-octobre-2019.php) 
 - [Annexe 10 de la norme B2](https://www.ameli.fr/fileadmin/user_upload/documents/Annexe10-B2-AMO_Novembre_2019.pdf)
+- [NGAP](https://www.ameli.fr/sites/default/files/Documents/674635/document/ngap_10_avril_2020_assurance_maladie.pdf)
 
 ::: tip Crédits
 Cette fiche a été rédigée par Raphaële Adjerad (DREES)
