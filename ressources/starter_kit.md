@@ -38,7 +38,7 @@ Ainsi, si je suis commanditaire ou promoteur de l’étude et je réalise moi-m�
 
 Dans tous les cas de figure, les rôles respectifs de chacun des acteurs doivent être clairement établis via des conventions et/ou un contrat de sous-traitance.
 
-## QUELLES SONT LES DÉMARCHES ADMINISTRATIVES A REALISER ?
+## QUELLES SONT LES DÉMARCHES ADMINISTRATIVES À RÉALISER ?
 
 En France, la réglementation est précise concernant la réutilisation des données personnelles de santé.
 
