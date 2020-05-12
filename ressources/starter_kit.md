@@ -1,8 +1,9 @@
 # Kit de démarrage avec les données de santé 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-# Kit de démarrage
 Comment débuter avec les données de santé ?
+
+Publié originalement sur le [site internet du Health Data Hub](https://www.health-data-hub.fr/) comme kit de démarrage avec les données 
 
 ## SOMMAIRE
 
