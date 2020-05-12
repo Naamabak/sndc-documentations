@@ -3,7 +3,7 @@
 
 Comment débuter avec les données de santé ?
 
-Publié originalement sur le [site internet du Health Data Hub](https://www.health-data-hub.fr/) comme kit de démarrage avec les données 
+Publié originalement sur le [site internet du Health Data Hub](https://www.health-data-hub.fr/) comme kit de démarrage avec les données. 
 
 ## SOMMAIRE
 
