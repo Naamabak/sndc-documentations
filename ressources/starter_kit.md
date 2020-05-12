@@ -50,7 +50,7 @@ En contrepartie de cet accès facilité, je dois respecter certaines obligations
 - Faire un engagement de conformité sur le site internet de la [CNIL ](https://www.cnil.fr/fr/declarer-un-fichier)
 - Enregistrer mon étude sur l[e répertoire public ](https://www.indsante.fr/fr/repertoire-public-des-etudes-realisees-sous-mr)tenu par le Health Data Hub
 
-Je souhaite réutiliser des données de santé existantes et j’ai la capacité d’informer **individuellement** les personnes concernées avant la mise en œuvre mon étude ? Mon traitement peut être éligible à la [MR 004.](https://fee494fb-072e-49c6-a5ed-00cfc497e5db.filesusr.com/ugd/46ab38_40f57b1aa5e640b2bb717693a1a41893.pdf)
+Je souhaite réutiliser des données de santé existantes et j’ai la capacité d’informer **individuellement** les personnes concernées avant la mise en œuvre mon étude ? Mon traitement peut être éligible à la [MR 004](https://fee494fb-072e-49c6-a5ed-00cfc497e5db.filesusr.com/ugd/46ab38_40f57b1aa5e640b2bb717693a1a41893.pdf).
 
 Il me sera toutefois interdit par exemple de : 
 - Recueillir de données nominatives
