@@ -79,7 +79,7 @@ Sur la plateforme technologique du Health Data Hub, je peux faire du Python, du 
 
 Pour le traitement du SNDS, ces plateformes doivent être conformes à un [référentiel de sécurité](https://fee494fb-072e-49c6-a5ed-00cfc497e5db.filesusr.com/ugd/46ab38_d1febacb746b4123808561f989ca7594.pdf) spécifique. Si j'ai recours à la plateforme du Heallth Data Hub, mon correspondant pourra me fournir les pièces nécessaires pour le justifier au sein de mon dossier. Si je dispose de mon propre système d'information, il faudra que je produise et fournisse moi-même ces documents.
 
-## QUELLES PIECES DOIS-JE RASSEMBLER POUR CONSTITUER MON DOSSIER ?
+## QUELLES PIÈCES DOIS-JE RASSEMBLER POUR CONSTITUER MON DOSSIER ?
 
 Le dépôt de mon dossier s’effectue en ligne sur [une plateforme de dépôt](https://www.indsante.fr/fr/deposer-une-demande) de dossier. L’ ensemble de la procédure est dématérialisée. Mon dossier ne sera instruit que s'il est complet.
 
