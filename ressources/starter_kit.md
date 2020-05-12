@@ -69,7 +69,7 @@ Ce dernier transmettra ma demande au comité éthique et scientifique pour les r
 
 Plus de renseignements sur le fonctionnement et les dates des prochaines réunions du CESREES, sont à trouver [ici](https://www.health-data-hub.fr/cesrees).
 
-## OU VONT ÊTRE TRAITEES MES DONNEES ?
+## OÙ VONT ÊTRE TRAITÉES MES DONNÉES ?
 
 Différentes options s'offrent à moi si je ne dispose pas de mon propre système d'information sécurisé pour traiter les données. Je peux recourir à un prestataire ou bien utiliser les plateformes du Health Data Hub ou de la CNAM.
 
