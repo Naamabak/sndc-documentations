@@ -14,7 +14,7 @@ Publié originalement sur le [site internet du Health Data Hub](https://www.heal
 5. Quelles pièces dois-je rassembler pour constituer mon dossier ?
 6. Comment aller plus loin ?
 
-## DE QUELLES DONNÉES AIS-JE BESOIN POUR MON PROJET ?
+## DE QUELLES DONNÉES AI-JE BESOIN POUR MON PROJET ?
 
 Le [système national des données de santé](https://documentation-snds.health-data-hub.fr/introduction/) (SNDS) est historiquement constitué des données dites "médico administratives": il s'agit des feuilles de soin, des données de facturation hospitalière et des causes médicales de décès. La loi du 24 juillet 2019 a élargi son périmètre à l'ensemble des données de santé donnant lieu à un remboursement de l'assurance maladie.
 
