@@ -39,6 +39,106 @@ Si la durée de l'arrêt de travail est > à 6 mois, le salarié est en arrêt d
 
 
 
+##### Cas particulier : Profession à caractère saisonnier ou discontinu
+La personne exerce une profession à caractère saisonnier ou discontinu et elle ne remplit pas les conditions de montant de cotisations ou de durée de travail prévues dans le cas général, elle doit alors :
+-	avoir travaillé au moins 600 heures au cours des 12 mois civils ou des 365 jours consécutifs précédant l'arrêt de travail,
+-	ou avoir cotisé sur un salaire au moins égal à 2 030 fois le montant du SMIC horaire au cours des douze mois civils précédant l'arrêt de travail.
+Si la durée de l'arrêt est > à 6 mois, elle doit également justifier de 12 mois d'immatriculation en tant qu'assuré social auprès de l'Assurance Maladie.
+À noter : la personne peut bénéficier de 360 indemnités journalières sur une période maximale de 3 ans. Si elle a une affection de longue durée, elle peut bénéficier d'indemnités journalières pendant 3 ans de date à date.
+
+
+#### Montant de l'indemnité journalière
+L'indemnité journalière que la personne recevra pendant l’arrêt de travail est égale à 50 % du salaire journalier de base. Celui-ci est calculé sur la moyenne des salaires bruts (= salaires soumis à cotisations) des 3 derniers mois précédant l’arrêt de travail, ou des 12 mois en cas d'activité saisonnière ou discontinue, pris en compte dans la limite de 1,8 fois le SMIC mensuel en vigueur (soit 2 697,25 € au 1er janvier 2018).
+Par exemple : sur la base d'un salaire journalier de 75€, l’IJ sera de 37,50€ par jour. 
+Si le salarié à au moins 3 enfants à charge, l’IJ est majorée à partir du 31ème jour d'arrêt de travail continu. Elle est alors égale à 66,66 % du salaire journalier de base.
+Par exemple : sur la base d'un salaire journalier de 75€,  l’IJ sera de 50 €.
+
+Montant maximum de l’indemnité journalière maladie au 1er janvier 2018 :
+
+Indemnité journalière maladie normale =	44,34 €
+
+Indemnité journalière maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail =	59.12 €
+
+#### Délai de carence de 3 jours
+
+Pendant les 3 premiers jours de l’arrêt de travail, les indemnités journalières ne sont pas versées, c'est ce que l'on appelle le délai de carence. En principe, le délai de carence s'applique au début de chaque arrêt de travail.
+Exceptions : Le délai de carence ne s'applique pas lors d'un arrêt de travail dans les cas suivants :
+-	la reprise d'activité entre deux prescriptions d'arrêt de travail ne dépasse pas 48 heures, à condition que le deuxième arrêt soit prescrit dans le cadre d'une prolongation ;
+-	si la personne est en affection de longue durée et que ses arrêts de travail sont en rapport avec cette maladie, le délai de carence n'est retenu que pour le premier arrêt de travail pour une même période de 3 ans.
+
+#### Cumul avec d’autres revenus
+Les indemnités journalières peuvent se cumuler notamment avec :
+-	la pension d'invalidité (lorsque le taux d'invalidité de la personne est compatible avec une reprise d'activité professionnelle),
+-	la pension de vieillesse (lorsque le retraité poursuit par ailleurs une activité salariée),
+-	les indemnités de congés payés,
+-	le salaire (si l'employeur le maintient, en tout ou partie, pendant l'arrêt de travail).
+
+Le cumul est impossible avec :
+-	les allocations chômage,
+-	les indemnités journalières de maternité,
+-	les indemnités journalières d'accident du travail et de maladie professionnelle (AT-MP).
+
+
+#### Indemnité complémentaire versée par l’employeur
+Pour percevoir les indemnités complémentaires, la personne doit remplir toutes les conditions suivantes :
+-	justifier d'au moins une année d'ancienneté dans l'entreprise (calculée à partir de votre 1er jour d'absence),
+-	avoir transmis à l'employeur le certificat médical dans les 48 heures,
+-	bénéficier des indemnités journalières (IJ) versées par la Sécurité sociale,
+-	être soigné en France ou dans l'un des États membres de l'Espace économique européen (EEE),
+-	ne pas être travailleur à domicile ou salarié saisonnier, intermittent ou temporaire.
+
+Si la personne remplit les conditions ouvrant droit aux indemnités complémentaires, elle perçoit 90 % de la rémunération brute qu’elle aurait perçue si elle avait travaillé. À partir du 31e jour d'arrêt consécutif, le pourcentage est abaissé aux 2/3 (soit 66,66 %) de sa rémunération.
+Un délai de carence de 7 jours est prévu pour chaque arrêt de travail. Ainsi, sauf dispositions conventionnelles ou accord collectif plus favorables, le versement des indemnités complémentaires commence au 8e jour de l'arrêt maladie.
+La durée de versement des indemnités versées par l'employeur varie en fonction de l’ancienneté, de la manière suivante :
+
+Tableau :
+
+Durée de versement des indemnités complémentaires en fonction de votre ancienneté
+Durée d'ancienneté dans l'entreprise	Durée maximum de versement des indemnités
+de 1 à 5 ans	60 jours (30 jours à 90 % et 30 jours à 66,66 %)
+de 6 à 10 ans	80 jours (40 jours à 90 % et 40 jours à 66,66 %)
+de 11 à 15 ans	100 jours (50 jours à 90 % et 50 jours à 66,66 %)
+de 16 à 20 ans	120 jours (60 jours à 90 % et 60 jours à 66,66 %)
+de 21 à 25 ans	140 jours (70 jours à 90 % et 70 jours à 66,66 %)
+de 26 à 30 ans	160 jours (80 jours à 90 % et 80 jours à 66,66 %)
+31 ans et plus	180 jours (90 jours à 90 % et 90 jours à 66,66 %)
+Si vous avez déjà bénéficié d'une ou plusieurs périodes d'indemnisation pour maladie par l'employeur dans les 12 mois précédents, la durée de versement est déduite du nombre de jours déjà indemnisés.
+
+
+### Indemnités journalières maladie – Cas du Sans emploi
+Sous conditions et après un délai de carence de 3 jours, la personne sans emploi percevra des indemnités journalières pendant l’arrêt maladie. Ces sommes sont versées par l'Assurance Maladie pour compenser la perte de ses allocations chômage. Elles se calculent sur la base du salaire antérieur à l’admission à Pôle emploi ou à la cessation de son activité depuis moins d’1 an. Elles sont également versées tous les 14 jours.
+
+#### Conditions d’attribution
+La personne peut percevoir des indemnités journalières si elle est sans emploi et sous réserve de remplir l'une des conditions suivantes :
+-	elle perçoit une allocation de l'assurance chômage ;
+-	elle a été indemnisé par l'assurance chômage au cours des 12 derniers mois ;
+-	elle a cessé son activité salariée depuis moins de 12 mois.
+C'est son activité salariée antérieure qui détermine l'attribution et le calcul des indemnités journalières. Le calcul s'effectue sur les derniers mois travaillés et non sur l’allocation chômage. De même, si elle a cessé son activité, sans bénéficier d'allocations chômage depuis, ses droits seront étudiés sur la base de ses derniers salaires dans la limite d'une année.
+
+#### Montant de l’indemnité journalière – idem Cas général
+
+Montant maximum de l’indemnité journalière maladie au 1er janvier 2018
+Indemnité journalière maladie normale	44,34 €
+Indemnité journalière maladie majorée pour charge de famille
+à partir du 31ème jour d’arrêt de travail	59.12 €
+
+#### Délai de carence - idem Cas général
+Tableau :
+
+Montant maximum de l’indemnité journalière maladie au 1er janvier 2018
+Indemnité journalière maladie normale	44,34 €
+Indemnité journalière maladie majorée pour charge de famille
+à partir du 31ème jour d’arrêt de travail	59.12 €
+
+
+### Indemnités journalières maladie – Cas des PAMC en arrêt de travail pendant la grossesse
+
+Si la personne est praticienne ou auxiliaire médicale conventionnée (PAMC), affiliée à titre personnel au régime d'assurance maladie des PAMC, enceinte et qu’elle se trouvez dans l'incapacité physique de continuer ou de reprendre son activité professionnelle en raison de difficultés médicales liées à sa grossesse, elle peut percevoir une indemnité journalière forfaitaire maladie, sous réserve de remplir les conditions d'ouverture de droit.
+L'indemnité journalière forfaitaire maladie perçue pendant l’arrêt de travail est = à 44,34 € par jour au 1er janvier 2018.
+Les indemnités journalières forfaitaires maladie sont versées par la caisse d'assurance maladie à compter du 4e jour d'arrêt de travail après un délai de carence de 3 jours. L'indemnité journalière forfaitaire maladie peut être versée pendant 87 jours maximum.
+
+
+
 #   Sources
 ==============
 
