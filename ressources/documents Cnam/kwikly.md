@@ -19,13 +19,10 @@ Le Kwikly permet de connaitre la présence des variables dans l’historique des
 Le Kwikly est un outil de clics rapides qui attend vos suggestions d’amélioration sur la boite <snds.cnam@assurance-maladie.fr>
 
 
-<style>
-.responsive-wrap iframe{ max-width: 95%; }
-</style>
-<div class="responsive-wrap">
 <p style="text-align:center;">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-pg6MTTIDkbvXoqxg2Z018UafGeOLkisjn5zXvg5tXMHhmLNgFkM4q2ZYyCCHPA56ntksePf-aNyx/pubhtml?widget=true&amp;headers=false">
+<iframe width='500' height='300' frameborder='0'
+src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-pg6MTTIDkbvXoqxg2Z018UafGeOLkisjn5zXvg5tXMHhmLNgFkM4q2ZYyCCHPA56ntksePf-aNyx/pubhtml?widget=true&amp;headers=false">
 </iframe>
 </p>
-</div>
+
 
