@@ -10,6 +10,8 @@ Katalogue des données SNIIRAM-SNDS
 Le **Kwikly** est un fichier Excel sur plusieurs onglets décrivant les variables des produits individuels bénéficiaires (type, taille, libellé) :
 - DCIR
 - PMSI
+- DCIRS
+- Cartographie
 - Causes de décès
 - Référentiel Bénéficiaires
 - Référentiel Médicalisé
@@ -18,11 +20,5 @@ Le Kwikly permet de connaitre la présence des variables dans l’historique des
 
 Le Kwikly est un outil de clics rapides qui attend vos suggestions d’amélioration sur la boite <snds.cnam@assurance-maladie.fr>
 
-
-<p style="text-align:center;">
-<iframe width='100%' height='500px' frameborder='0'
-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-pg6MTTIDkbvXoqxg2Z018UafGeOLkisjn5zXvg5tXMHhmLNgFkM4q2ZYyCCHPA56ntksePf-aNyx/pubhtml?widget=true&amp;headers=false">
-</iframe>
-</p>
 
 
