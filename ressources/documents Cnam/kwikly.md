@@ -24,7 +24,7 @@ Le Kwikly est un outil de clics rapides qui attend vos suggestions d’améliora
 </style>
 <div class="responsive-wrap">
 <p style="text-align:center;">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnAZ8igf_PGftLv0aIi0aveeOuOL-gcoKa2XbbroxMnd6FSfcdYaGnkxEfS9mTQQ/pubhtml?widget=true&amp;headers=false">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-pg6MTTIDkbvXoqxg2Z018UafGeOLkisjn5zXvg5tXMHhmLNgFkM4q2ZYyCCHPA56ntksePf-aNyx/pubhtml?widget=true&amp;headers=false">
 </iframe>
 </p>
 </div>
