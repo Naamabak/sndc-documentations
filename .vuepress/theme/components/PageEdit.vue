@@ -204,7 +204,7 @@ export default {
         + `/commits`
         + `/${docsBranch}/`
         + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
-        + path
+        + path.replace('tables/','tables/.sources/')
       )
 
     },
