@@ -149,7 +149,7 @@ export default {
         + `/edit`
         + `/${docsBranch}/`
         + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
-        + path.replace('tables/','tables/.sources/')
+        + path.replace('tables/','tables/.sources/').replace('tables/.sources/REDAME.md','tables/REDAME.md') 
       )
 
     },
@@ -204,7 +204,7 @@ export default {
         + `/commits`
         + `/${docsBranch}/`
         + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
-        + path.replace('tables/','tables/.sources/')
+        + path.replace('tables/','tables/.sources/').replace('tables/.sources/REDAME.md','tables/REDAME.md')
       )
 
     },
