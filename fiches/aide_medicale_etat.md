@@ -86,8 +86,8 @@ Il existe également des bénéficiaires de l’AME qui disposent d’un NIR (`B
 Lorsqu’un ouvrant droit provisoire obtient son NIR (assuré social étranger venant travailler en France), il change de numéro d’immatriculation, son matricule provisoire commençant par 7 ou 8 est remplacé par son NIR commençant par 1 ou 2. 
 
 
-Conséquence : Les bénéficaires de l'AME dont le `BEN_CDI_NIR` = 00 peuvent être suivis les autres malheureusement peuvent difficilement faire l’objet d’un suivi dans le temps.
-Dans la cartographies des pathologies, ont ne trouve que ces derniers.
+Conséquence : Les bénéficaires de l'AME dont le `BEN_CDI_NIR` = 00 peuvent être suivis, les autres malheureusement peuvent difficilement faire l’objet d’un suivi dans le temps.
+Dans la cartographies des pathologies, on ne trouve que ces derniers.
 
 ::: warning Attention
 le filtre sur les codes retour exclus de fait les AME qui en raison de leur NIR provisoire ne peuvent avoir des codes retour à 0 (NIR_RET = '0' and NAI_RET = '0' and SEX_RET = '0' and SEJ_RET = '0' and FHO_RET = '0'  and PMS_RET = '0' and DAT_RET = '0')
