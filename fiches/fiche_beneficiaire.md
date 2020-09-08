@@ -63,7 +63,7 @@ Les NIR certifiés sont identifiés avec la variable BEN_CDI_NIR renseignée à 
 Il existe des NIR provisoires qui sont, par exemple, attribués par un régime d’assurance maladie à un travailleur ou un étudiant étranger en attendant le contrôle des documents permettant la vérification de son identité.
 Les NIR provisoires sont identifiés avec la variable BEN_CDI_NIR renseignée à 03 ou 04.
 
-Il existe dans le DCIR des NIR fictifs pour certaines prestations afin de garantir l’anonymat de la personne (ex: IVG). Ils sont identifiés avec la variable BEN_CDI_NIR renseignée à 01, 05, 08, 09.
+Il existe dans le DCIR des NIR fictifs pour certaines prestations, comme les rémunérations forfaitaires des PS, ou afin de garantir l’anonymat de la personne (ex: IVG). Ils sont identifiés avec la variable BEN_CDI_NIR.
 Dans ER_PRS_F, on peut également repérer les prestations correspondant à un NIR fictif par le code du petit régime d’affiliation (RGM_COD) égal à 888 avec code grand régime de liquidation (RGM_GRG_COD) égal à 01. La variable BEN_CDI_NIR prend alors une des valeurs de NIR fictif.
 
 **Lorsque le NIR est fictif, le BEN_NIR_ANO n’est pas renseigné.**
@@ -86,6 +86,9 @@ Les modalités prises par BEN_CDI_NIR sont présentes dans la table référentie
 |13|NIR MATERNITE PS|
 |14|NIR PATERNITE PS|
 |15|NIR ADOPTION PS|
+
+Attention, la variable âge du patient (BEN_AMA_COD) est calculée aussi pour les NIR fictif. Dans la plupart des cas de NIR fictifs, l’année de naissance est égale à 1955 (mais pas uniquement).
+
 
 ## Fabrication des identifiants pour les demandes d’extractions
 
