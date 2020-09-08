@@ -23,8 +23,13 @@ Au cours de sa vie, un individu a, dans la majorité des cas, au moins 2 « pseu
 
 
 **Le rang gémellaire du bénéficiaire (BEN_RNG_GEM)** n’a pas la même signification pour les différents régimes :
-- Pour le _régime général_ (y compris SLM) et la MSA, il permet de distinguer les naissances gémellaires de même sexe donc de même BEN_NIR_PSA.
-- Pour tous les _autres régimes_, il permet de différencier les bénéficiaires rattachés au même ouvreur de droit.
+- Pour le _régime général_ (y compris SLM), il permet de distinguer les naissances gémellaires de même sexe donc de même BEN_NIR_PSA.
+- Tous les _autres régimes_, comme la MSA, ne gèrent pas le rang gémellaire, mais un rang de bénéficiaire. Ce rang de bénéficiaire est déterminé lors de l’ouverture des droits et correspond à un numéro d’ordre au sein d’une même famille.
+
+Aussi, toute évolution de droits au sein de la famille peut conduire à un ordre différent pour chaque personne de la famille : changement de régime, de caisse d’affiliation au sein d’un même régime, changement de structure de la famille, …
+
+Dans ce cas, l’identification des bénéficiaires ne peut se faire en retenant la donnée BEN_RNG_GEM.
+
 
 **Dans le DCIR, le lien entre la table centrale des prestations (ER_PRS_F) et le référentiel des bénéficiaires (IR_BEN_R) ou le référentiel des données médicalisées (IR_IMB_R) se fait à l’aide des clés de jointure BEN_NIR_PSA et BEN_RNG_GEM.
 A partir de 2006, le chainage avec les données du PMSI se fait avec le BEN_NIR_PSA = NIR_ANO_17.**
