@@ -106,6 +106,10 @@ L’identifiant BEN_ID vous permet directement de regrouper les informations d�
 - suivant son NIR pseudonymisé BEN_NIR_ANO lorsqu’il est renseigné dans la table IR_BEN_R, 
 - suivant son couple (identifiant SNIIRAM pseudonymisé; rang de bénéficiaire) lorsque son NIR ne figure pas dans la table IR_BEN_R.
 
+## Remarque sur le biais de l’identifiant unique dans l’historique
+Il existe un biais sur l’historique dans l’ensemble du dispositif d’identification unique des individus dans le SNDS car la règle de l’unicité d’un individu, déterminée à l’origine du SNIIRAM à partir de « BEN_NIR_PSA + BEN_RNG_GEM » n’est pas valide en dimension inter régimes pour les traitements sur l’historique : NIR unique du bénéficiaire non disponible pour tous les individus, pas d’historique dans IR_BEN_R sur les changements de pseudonymes, règle d’alimentation du concept de rang différente selon les régimes.
+
+
 ## Références
 
 ::: tip Crédit
