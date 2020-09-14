@@ -16,10 +16,12 @@ Dans le cadre des demandes d’extractions des données du SNDS (accès sur proj
 Un individu a plusieurs « pseudo-NIR » durant sa vie, en l’occurrence, autant de « pseudos NIR » que d’assurés :
 
 - Lorsque l’individu est enfant, il peut être assuré par 1 ou 2 parents. L’individu peut donc avoir à ce moment de la vie, 1 ou 2 « pseudos NIR » différents.
-- Lorsqu’il devient étudiant, il devient son propre assuré. Il a donc à ce moment de la vie un nouveau « pseudo NIR ».
-- Lorsque l’individu est adulte, il est la plupart du temps son propre assuré ; c’est le cas de tout travailleur salarié ou indépendant. Mais il peut également ne plus être son propre assuré (femme, homme au foyer par exemple), et être assuré par son conjoint. L’individu a alors un nouveau « pseudo NIR ».
+- Lorsque l’individu est adulte, il est la plupart du temps son propre assuré ; c’est le cas de tout travailleur salarié ou indépendant. C'est aussi le cas des étudiants jusque fin août 2019 (fin du régime étudiant le 31.08.2019, reprise de gestion par les caisses du RG à compter de cette date).
+    - Jusqu'en janvier 2016, l'individu peut également ne pas plus être son propre assuré (femme, homme au foyer par exemple), et être assuré par son conjoint en tant qu’ayant droit. L’individu a alors un nouveau « pseudo NIR » construit à partir du NIR de l’assuré (conjoint), de la date de naissance et du sexe du bénéficiaire.
+    - A partir du 01.01.2016, la [PUMa](https://solidarites-sante.gouv.fr/affaires-sociales/securite-sociale/article/la-mise-en-place-de-la-protection-universelle-maladie) garantit à toute personne (majeure ou de plus de 16 ans) qui travaille ou réside en France, un droit à la prise en charge des frais de santé. L'individu est alors son propre assuré et le statut d’ayants-droits ne concerne plus que les enfants.
 
-Au cours de sa vie, un individu a, dans la majorité des cas, au moins 2 « pseudos NIR » différents : 1 lorsqu’il n’est pas son propre assuré et 1 lorsqu’il devient son propre assuré.
+
+Au cours de sa vie, un individu a, dans la majorité des cas, au moins **2 « pseudos NIR » différents** : 1 lorsqu’il n’est pas son propre assuré et 1 lorsqu’il devient son propre assuré.
 
 
 **Le rang gémellaire du bénéficiaire (BEN_RNG_GEM)** n’a pas la même signification pour les différents régimes :
