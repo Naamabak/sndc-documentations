@@ -3,7 +3,7 @@
 
 La cartographie des indicateurs de santé recense et facilite la recherche des indicateurs statistiques de santé produits par les acteurs institutionnels. 
 
-Elle est accessible à l'adresse [http://dataviz.drees.solidarites-sante.gouv.fr/indicateurs_de_sante/](http://dataviz.drees.solidarites-sante.gouv.fr/indicateurs_de_sante/).
+Elle est accessible à l'adresse [https://drees.shinyapps.io/Cartographie_des_indicateurs/](https://drees.shinyapps.io/Cartographie_des_indicateurs/).
 
 ## Aperçu de l'application
 
