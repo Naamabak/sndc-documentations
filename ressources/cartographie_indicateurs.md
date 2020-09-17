@@ -39,7 +39,7 @@ La carthographie des indicateurs de santé a été développé à la DREES, grâ
 - les [ORS](../glossaire/ORS.md), notamment
 [SCORE Santé](https://www.scoresante.org/), 
 [BALISES](http://www.balises-auvergne-rhone-alpes.org/update.php), 
-[SIRSé](http://www.sirsepaca.org/); 
+[SIRSé (en accédant au site sirsepaca.org à partir du site orspaca.org)](http://www.orspaca.org/outils-cartographiques); 
 - l'[DARES](https://dares.travail-emploi.gouv.fr/dares-etudes-et-statistiques/); 
 - l'[OFDT](https://www.ofdt.fr/), notamment [ESCAPAD](https://www.ofdt.fr/enquetes-et-dispositifs/escapad/); 
 - la [HAS](https://www.has-sante.fr/), notamment [SCOPE Santé]https://www.scopesante.fr/#/); 
