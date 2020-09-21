@@ -10,7 +10,7 @@ https://solidarites-sante.gouv.fr/soins-et-maladies/medicaments/professionnels-d
 - Code UCD,  attention au codage : UCD7 précédé ’000000’ et pas UCD13
 - Utilisation des variables quantité et coefficient de fractionnement (info à construire)
 - Exécutant des médicaments rétrocédés codés en UCD : variable ETB_EXE_FIN dans la table ER_ETE.
-- Montant (info à construire ou peutetre dans une fiche en cours par Raphaele adjerad + kristel jacquier)
+- Montant (cf fiche en cours par Raphaele adjerad + kristel jacquier)
 
 3/ Attention dans cette table on trouve aussi des medic en sus du ghs (public)
 - définition médic en sus du GHS (dans un 2nd temps, prévoir une fiche dédiée)
