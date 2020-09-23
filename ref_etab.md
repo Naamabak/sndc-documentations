@@ -67,13 +67,8 @@ Le DCIR contient en revanche l'ensemble des prestations réalisées en établiss
 :::
 
 Dans la table centrale du DCIR, la table des prestations (`ER_PRS_F`), lorsqu’une prescription est associée à un établissement, 
-la variable `ETB_PRE_FIN` est non vide. La variable contient un code à 8 chiffres, il s'agit du FINESS de l'établissement prescripteur, sans clef. 
-
-Dans le cas des prestations executées par un établissement, la table prestation du DCIR ne fournit que très peu d'information.
-Le mode d'exercice du professionnel de santé exécutant `PSE_STJ_COD` permet de distinguer les praticiens libéraux des salariés.
-Cependant, la variable n'est pas systématiquement renseignée, notamment pour les régimes autres que le régime général. 
-Pour cibler le champ des prestations du DCIR exécutées en établissement il faut joindre `ER_PRS_F` avec la table affinée établissement `ER_ETE_F` sur les 9 clés de jointure. On trouve dans `ER_ETE_F` le numéro FINESS sans clé de l'établissement exécutant (`ETB_EXE_FIN`).  
-`ER_ETE_F` contient des informations sur l'établissement exécutant: la catégorie de l'établissement exécutant (`ETE_CAT_COD`), un top T2A `ETE_IND_TAA`, un top secteur public/privé `PRS_PPU_SEC` ou le code du mode de fixation des tarifs `MFT_COD`.
+la variable `ETB_PRE_FIN` est non vide. La variable contient un code à 8 chiffres, il s'agit du FINESS de l'établissement prescripteur, sans clef.   
+Dans le cas des prestations executées par un établissement, il faut joindre `ER_PRS_F` avec la table affinée établissement `ER_ETE_F` sur les 9 clés de jointure afin de récupérer le numéro FINESS sans clé de l'établissement exécutant (`ETB_EXE_FIN`).  
 
 Dans le DCIRS, les variables `ETB_PRE_FIN` et `ETB_EXE_FIN` sont disponibles dans la table prestation `NS_PRS_F`
 et correspondent respectivement aux FINESS de l'établissement prescripteur et exécutant. 
@@ -137,87 +132,6 @@ avec `ETB_PRE_FIN` = `IDE_ETA_NU8`.
 
 Il est indiqué dans le fichier Offre_de_service mis à disposition par la CNAM sur le portail SNDS 
 que la dernière mise à jour de la BERF remonte à mai 2016. 
-
-La variable `IDE_PSH_CAT` est la même catégorie d'établissement que l'on trouve dans la table affinée établissement du DCIR `ER_ETE_F`. Il s'agit d'un code à 3 chiffres, la nomenclature se trouve dans la table `IR_CET_V` dans la bibliothèque ORAVAL.
-Dans cette nomenclature la variable `ETB_CAT_RG1` donne la correspondance avec la nomenclature à 4 chiffres qui permet de faire le regroupement ci-dessous:
-| ETB_CAT_RG1   | Libelle                                                                      |
-|---------------|------------------------------------------------------------------------------|
-| 11            | ETABLISSEMENTS HOSPITALIERS                                                  |
-| 12            | AUTRES ETABLISSEMENTS RELEVANT DE LA LOI HOSPITALIERE                        |
-| 21            | CABINETS LIBERAUX (SCANNER ET IRMN)                                          |
-| 22            | AUTRES ETABLISSEMENTS DE SOINS ET DE PREVENTION                              |
-| 34            | AUTRES ETABLISSEMENTS A CARACTERE SANITAIRE                                  |
-| 41            | ETABLISSEMENTS ET SERVICES POUR L’ENFANCE ET LA JEUNESSE HANDICAPEE          |
-| 43            | ETABLISSEMENTS ET SERVICES POUR ADULTES HANDICAPES                           |
-| 44            | ETABLISSEMENT POUR PERSONNES AGEES                                           |
-| 45            | ETABLISSEMENTS ET SERVICES SOCIAUX CONCOURANT À LA PROTECTION DE L’ENFANCE   |
-| 46            | AUTRES ETABLISSEMENTS D’ACCUEIL, HEBERGEMENT ET DE READAPTATION SOCIALE      |
-| 99            | VALEUR INCONNUE                                                              |
-
-La variable `IDE_PSH_STJ` correspond à la nomenclature suivante qui permet de séparer le public (1), 
-le PSPH(2), et le privé non lucratif (3) du privé lucratif (4,5,7).
-|stj|typ_cod|
-|:-:|:-:|
-|5	|1|
-|6	|1|
-|4	|1|
-|1	|1|
-|2	|1|
-|3	|1|
-|16	|2|
-|21	|2|
-|20	|2|
-|19	|2|
-|22	|2|
-|17	|2|
-|12	|2|
-|15	|2|
-|14	|2|
-|13	|2|
-|11	|2|
-|18	|2|
-|10	|2|
-|26	|2|
-|27	|2|
-|28	|2|
-|29	|2|
-|23	|2|
-|49	|3|
-|60	|3|
-|61	|3|
-|62	|3|
-|89	|3|
-|64	|3|
-|50	|3|
-|65	|3|
-|48	|3|
-|63	|3|
-|51	|3|
-|47	|3|
-|46	|3|
-|45	|3|
-|44	|3|
-|43	|3|
-|42	|3|
-|41	|3|
-|40	|3|
-|52	|3|
-|71	|4|
-|79	|4|
-|70	|4|
-|72	|4|
-|73	|4|
-|74	|4|
-|75	|4|
-|76	|4|
-|77	|4|
-|78	|4|
-|86	|5|
-|87	|5|
-|88	|5|
-|85	|5|
-|90	|7|
-|99	|9|
 
 
 ### La table DATASANTE_T_FINESS de la bibliothèque RFCOMMUN
