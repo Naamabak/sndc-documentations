@@ -1,4 +1,6 @@
 # Indemnités journalières
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
 L'abréviation IJ pour indemnités journalières sera utilisée pour cette fiche.
 
 ## Indemnités journalières -- Régime général
