@@ -3,7 +3,7 @@
 
 L'abréviation IJ pour indemnités journalières sera utilisée pour cette fiche.
 
-## Indemnités journalières -- Régime général
+## Indemnités journalières - Régime général
 
 ### Indemnités journalières maladie - Cas général du Salarié
 
@@ -56,10 +56,10 @@ Si le salarié à au moins 3 enfants à charge, l’IJ est majorée à partir du
 Par exemple : sur la base d'un salaire journalier de 75€,  l’IJ sera de 50 €.
 
 Montant maximum de l’indemnité journalière maladie au 1er janvier 2018 :
-
-|Indemnité journalière maladie normale |	44,34 €|
-
-|Indemnité journalière maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail |	59.12 €|
+| Type indemnité journalière|	Montant |
+|----------------------------|----------------------------|
+|IJ maladie normale |	44.34 €|
+|IJ maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail |	59.12 €|
 
 #### Délai de carence de 3 jours
 
@@ -120,15 +120,21 @@ C'est son activité salariée antérieure qui détermine l'attribution et le cal
 #### Montant de l’indemnité journalière – idem Cas général
 
 Montant maximum de l’indemnité journalière maladie au 1er janvier 2018
-|Indemnité journalière maladie normale|	44,34 €|
-|Indemnité journalière maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail|	59.12 €|
+
+| Type indemnité journalière|	Montant |
+|----------------------------|----------------------------|
+|IJ maladie normale|	44.34 €|
+|IJ maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail|	59.12 €|
 
 #### Délai de carence - idem Cas général
-Tableau :
+
 
 Montant maximum de l’indemnité journalière maladie au 1er janvier 2018
-|Indemnité journalière maladie normale	|44,34 €|
-|Indemnité journalière maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail	|59.12 €|
+
+| Type indemnité journalière|	Montant |
+|----------------------------|----------------------------|
+|IJ maladie normale	|44.34 €|
+|IJ maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail	|59.12 €|
 
 
 ### Indemnités journalières maladie – Cas des PAMC en arrêt de travail pendant la grossesse
@@ -154,13 +160,11 @@ Dans le SNDS, les IJ sont repérées via les codes `PRS_NAT_REF` dans la table `
 |6118|IJ PARTIELLE, PERTE DE SALAIRE +3MOIS|
 |6119|IJ MAJOREES +6MOIS|
 |6115|IJ MAJOREES -3MOIS|
-
 |6121|IJ PRENATALES|
 |6122|IJ POSTNATALES|
 |6123|IJ EN CAS D’ADOPTION|
 |6124|IJ CONGE SUPPLEMENTAIRE PREMA|
 |6212|IJ CONGE MATERNITE AU PERE|
-
 |6120|INDEMNITE TEMPORAIRE D’INAPTITUDE |
 |6134|INDEMNITE MALADIE PAMC -3MOIS|
 |6135|INDEMNITE MALADIE PAMC +3MOIS|
