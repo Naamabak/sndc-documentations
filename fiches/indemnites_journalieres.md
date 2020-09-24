@@ -57,9 +57,9 @@ Par exemple : sur la base d'un salaire journalier de 75€,  l’IJ sera de 50 �
 
 Montant maximum de l’indemnité journalière maladie au 1er janvier 2018 :
 
-Indemnité journalière maladie normale =	44,34 €
+|Indemnité journalière maladie normale |	44,34 €|
 
-Indemnité journalière maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail =	59.12 €
+|Indemnité journalière maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail |	59.12 €|
 
 #### Délai de carence de 3 jours
 
@@ -91,19 +91,19 @@ Pour percevoir les indemnités complémentaires, la personne doit remplir toutes
 
 Si la personne remplit les conditions ouvrant droit aux indemnités complémentaires, elle perçoit 90 % de la rémunération brute qu’elle aurait perçue si elle avait travaillé. À partir du 31e jour d'arrêt consécutif, le pourcentage est abaissé aux 2/3 (soit 66,66 %) de sa rémunération.
 Un délai de carence de 7 jours est prévu pour chaque arrêt de travail. Ainsi, sauf dispositions conventionnelles ou accord collectif plus favorables, le versement des indemnités complémentaires commence au 8e jour de l'arrêt maladie.
-La durée de versement des indemnités versées par l'employeur varie en fonction de l’ancienneté, de la manière suivante :
+La durée de versement des indemnités versées par l'employeur varie en fonction de l’ancienneté, de la manière suivante 
 
-Tableau :
 
-Durée de versement des indemnités complémentaires en fonction de votre ancienneté
-Durée d'ancienneté dans l'entreprise	Durée maximum de versement des indemnités
-de 1 à 5 ans	60 jours (30 jours à 90 % et 30 jours à 66,66 %)
-de 6 à 10 ans	80 jours (40 jours à 90 % et 40 jours à 66,66 %)
-de 11 à 15 ans	100 jours (50 jours à 90 % et 50 jours à 66,66 %)
-de 16 à 20 ans	120 jours (60 jours à 90 % et 60 jours à 66,66 %)
-de 21 à 25 ans	140 jours (70 jours à 90 % et 70 jours à 66,66 %)
-de 26 à 30 ans	160 jours (80 jours à 90 % et 80 jours à 66,66 %)
-31 ans et plus	180 jours (90 jours à 90 % et 90 jours à 66,66 %)
+|Durée d'ancienneté dans l'entreprise|Durée maximum de versement des indemnités|
+|------------------------------------|------------------------------------|
+|de 1 à 5 ans | 60 jours (30 jours à 90 % et 30 jours à 66,66 %)|
+|de 6 à 10 ans |    80 jours (40 jours à 90 % et 40 jours à 66,66 %)|
+|de 11 à 15 ans|    100 jours (50 jours à 90 % et 50 jours à 66,66 %)|
+|de 16 à 20 ans|    120 jours (60 jours à 90 % et 60 jours à 66,66 %)|
+|de 21 à 25 ans|	140 jours (70 jours à 90 % et 70 jours à 66,66 %)|
+|de 26 à 30 ans|	160 jours (80 jours à 90 % et 80 jours à 66,66 %)|
+|31 ans et plus|	180 jours (90 jours à 90 % et 90 jours à 66,66 %)|
+
 Si vous avez déjà bénéficié d'une ou plusieurs périodes d'indemnisation pour maladie par l'employeur dans les 12 mois précédents, la durée de versement est déduite du nombre de jours déjà indemnisés.
 
 
@@ -120,17 +120,15 @@ C'est son activité salariée antérieure qui détermine l'attribution et le cal
 #### Montant de l’indemnité journalière – idem Cas général
 
 Montant maximum de l’indemnité journalière maladie au 1er janvier 2018
-Indemnité journalière maladie normale	44,34 €
-Indemnité journalière maladie majorée pour charge de famille
-à partir du 31ème jour d’arrêt de travail	59.12 €
+|Indemnité journalière maladie normale|	44,34 €|
+|Indemnité journalière maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail|	59.12 €|
 
 #### Délai de carence - idem Cas général
 Tableau :
 
 Montant maximum de l’indemnité journalière maladie au 1er janvier 2018
-Indemnité journalière maladie normale	44,34 €
-Indemnité journalière maladie majorée pour charge de famille
-à partir du 31ème jour d’arrêt de travail	59.12 €
+|Indemnité journalière maladie normale	|44,34 €|
+|Indemnité journalière maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail	|59.12 €|
 
 
 ### Indemnités journalières maladie – Cas des PAMC en arrêt de travail pendant la grossesse
