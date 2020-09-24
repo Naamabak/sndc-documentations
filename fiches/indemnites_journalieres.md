@@ -137,6 +137,42 @@ Si la personne est praticienne ou auxiliaire médicale conventionnée (PAMC), af
 L'indemnité journalière forfaitaire maladie perçue pendant l’arrêt de travail est = à 44,34 € par jour au 1er janvier 2018.
 Les indemnités journalières forfaitaires maladie sont versées par la caisse d'assurance maladie à compter du 4e jour d'arrêt de travail après un délai de carence de 3 jours. L'indemnité journalière forfaitaire maladie peut être versée pendant 87 jours maximum.
 
+### Les Indemnités journalières dans le SNDS
+
+Dans le SNDS, les IJ sont repérées via les codes `PRS_NAT_REF` dans la table `ER_PRS_F`.
+
+|PRS_NAT_REF | Libellé|
+|6110|IJ NORMALES +6MOIS|
+|6111|IJ NORMALES -3MOIS|
+|6112|IJ NORMALES +3MOIS|
+|6113|IJ REDUITES -3MOIS|
+|6114|IJ REDUITES +3MOIS|
+|6115|IJ MAJOREES -3MOIS|
+|6116|IJ MAJOREES +3MOIS|
+|6117|IJ PARTIELLE, PERTE DE SALAIRE -3MOIS|
+|6118|IJ PARTIELLE, PERTE DE SALAIRE +3MOIS|
+|6119|IJ MAJOREES +6MOIS|
+|6115|IJ MAJOREES -3MOIS|
+
+|6121|IJ PRENATALES|
+|6122|IJ POSTNATALES|
+|6123|IJ EN CAS D’ADOPTION|
+|6124|IJ CONGE SUPPLEMENTAIRE PREMA|
+|6212|IJ CONGE MATERNITE AU PERE|
+
+|6120|INDEMNITE TEMPORAIRE D’INAPTITUDE |
+|6134|INDEMNITE MALADIE PAMC -3MOIS|
+|6135|INDEMNITE MALADIE PAMC +3MOIS|
+|6239|INDEMNITE MALADIE DOUBLE ACTIVITE PAMC |
+
+
+Ces codes prestations sont à croiser avec la nature d’assurance au titre de laquelle les IJ sont versées. Il s’agit de la variable `RGO_ASU_NAT` dans la table `ER_PRS_F`.
+|RGO_ASU_NAT | Libellé|
+|10 | Maladie|
+|30 | Maternité|
+|40 | AT/MP|
+
+
 
 
 #   Sources
