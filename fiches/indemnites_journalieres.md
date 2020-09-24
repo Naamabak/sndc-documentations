@@ -142,6 +142,7 @@ Les indemnités journalières forfaitaires maladie sont versées par la caisse d
 Dans le SNDS, les IJ sont repérées via les codes `PRS_NAT_REF` dans la table `ER_PRS_F`.
 
 |PRS_NAT_REF | Libellé|
+|------------|------------|
 |6110|IJ NORMALES +6MOIS|
 |6111|IJ NORMALES -3MOIS|
 |6112|IJ NORMALES +3MOIS|
@@ -168,6 +169,7 @@ Dans le SNDS, les IJ sont repérées via les codes `PRS_NAT_REF` dans la table `
 
 Ces codes prestations sont à croiser avec la nature d’assurance au titre de laquelle les IJ sont versées. Il s’agit de la variable `RGO_ASU_NAT` dans la table `ER_PRS_F`.
 |RGO_ASU_NAT | Libellé|
+|------------|------------|
 |10 | Maladie|
 |30 | Maternité|
 |40 | AT/MP|
