@@ -14,29 +14,23 @@ En cas d'arrêt maladie, sous certaines conditions et après un délai de carenc
 Si l'arrêt de travail est < à 6 mois, le salarié doit avoir :
 
 - travaillé au moins 150 heures au cours des trois mois civils ou des 90 jours précédant l'arrêt de travail ;
-
 - **ou** avoir cotisé sur un salaire au moins égal à 1 015 fois le montant du SMIC horaire au cours des 6 mois civils précédant l'arrêt de travail.
 
 *Exemple :* l'arrêt de travail a débuté le 1er juillet 2018. Le droit aux IJ est ouvert :
 
 - si la personne a travaillé au moins 150 heures entre le 1er avril 2018 et le 30 juin 2018,
-
 - ou si elle a, entre le 1er janvier 2018 et le 30 juin 2018, cotisé sur la base d'une rémunération au moins égale à 10 028,20 €.
 
 Si la durée de l'arrêt de travail est > à 6 mois, le salarié est en arrêt de longue durée, il doit :
 
 - à la date de l'arrêt de travail, justifier de 12 mois d'immatriculation en tant qu'assuré social auprès de l'Assurance Maladie,
-
 - et avoir travaillé au moins 600 heures au cours des 12 mois civils ou des 365 jours précédant l'arrêt de travail,
-
 - ou avoir cotisé sur un salaire au moins égal à 2 030 fois le montant du SMIC horaire au cours des douze mois civils précédant l'arrêt de travail.
 
 *Exemple :* l'arrêt de travail de plus de 6 mois a débuté le 1er Juillet 2018. Le droit aux IJ au-delà de 6 mois est ouvert :
 
 - si la personne était déjà affiliée à la Sécurité sociale avant juillet 2017,
-
 - et si elle avait travaillé au moins 600 heures entre le 1er juillet 2017 et le 30 juin 2018,
-
 - ou si, pendant cette même période, elle avait cotisé sur la base d'une rémunération au moins égale à 19 812,80 €.
 
 
@@ -138,9 +132,11 @@ Le montant de l'indemnité journalière (IJ normale et IJ majorée) ainsi que le
 ### Cas des PAMC en arrêt de travail pendant la grossesse
 
 Si la personne est praticienne ou auxiliaire médicale conventionnée (PAMC), affiliée à titre personnel au régime d'assurance maladie des PAMC, enceinte et qu’elle se trouvez dans l'incapacité physique de continuer ou de reprendre son activité professionnelle en raison de difficultés médicales liées à sa grossesse, elle peut percevoir une indemnité journalière forfaitaire maladie, sous réserve de remplir les conditions d'ouverture de droit.
-L'indemnité journalière forfaitaire maladie perçue pendant l’arrêt de travail est = à 44,34 € par jour au 1er janvier 2018.
-Les indemnités journalières forfaitaires maladie sont versées par la caisse d'assurance maladie à compter du 4e jour d'arrêt de travail après un délai de carence de 3 jours. 
+
+Le montant de l'indemnité journalière est identique à celui du cas général (montant de l'IJ normale). Le délai de carence est identique à celui du cas général aussi.
+
 L'indemnité journalière forfaitaire maladie peut être versée pendant 87 jours maximum.
+
 
 ## Les indemnités journalières dans le SNDS
 
