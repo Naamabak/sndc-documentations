@@ -3,9 +3,9 @@
 
 L'abréviation IJ pour indemnités journalières sera utilisée pour cette fiche.
 
-## Indemnités journalières - Régime général
+## Règlementation des indemnités journalières du Régime général
 
-### Indemnités journalières maladie - Cas général du Salarié
+### Cas général du salarié
 
 Sous certaines conditions et après un délai de carence de trois jours, le salarié peut percevoir des indemnités journalières. Calculées sur la base des salaires bruts des 3 ou 12 mois précédant l'arrêt, elles sont versées tous les 14 jours.
 
@@ -118,7 +118,7 @@ La durée de versement des indemnités versées par l'employeur varie en fonctio
 Si vous avez déjà bénéficié d'une ou plusieurs périodes d'indemnisation pour maladie par l'employeur dans les 12 mois précédents, la durée de versement est déduite du nombre de jours déjà indemnisés.
 
 
-### Indemnités journalières maladie – Cas du Sans emploi
+### Cas de la personne sans emploi
 Sous conditions et après un délai de carence de 3 jours, la personne sans emploi percevra des indemnités journalières pendant l’arrêt maladie. 
 Ces sommes sont versées par l'Assurance Maladie pour compenser la perte de ses allocations chômage. 
 Elles se calculent sur la base du salaire antérieur à l’admission à Pôle emploi ou à la cessation de son activité depuis moins d’1 an. Elles sont également versées tous les 14 jours.
@@ -135,14 +135,14 @@ De même, si elle a cessé son activité, sans bénéficier d'allocations chôma
 Le montant de l'indemnité journalière (IJ normale et IJ majorée) ainsi que le délai de carence sont identiques à ceux du cas général.
 
 
-### Indemnités journalières maladie – Cas des PAMC en arrêt de travail pendant la grossesse
+### Cas des PAMC en arrêt de travail pendant la grossesse
 
 Si la personne est praticienne ou auxiliaire médicale conventionnée (PAMC), affiliée à titre personnel au régime d'assurance maladie des PAMC, enceinte et qu’elle se trouvez dans l'incapacité physique de continuer ou de reprendre son activité professionnelle en raison de difficultés médicales liées à sa grossesse, elle peut percevoir une indemnité journalière forfaitaire maladie, sous réserve de remplir les conditions d'ouverture de droit.
 L'indemnité journalière forfaitaire maladie perçue pendant l’arrêt de travail est = à 44,34 € par jour au 1er janvier 2018.
 Les indemnités journalières forfaitaires maladie sont versées par la caisse d'assurance maladie à compter du 4e jour d'arrêt de travail après un délai de carence de 3 jours. 
 L'indemnité journalière forfaitaire maladie peut être versée pendant 87 jours maximum.
 
-### Les Indemnités journalières dans le SNDS
+## Les indemnités journalières dans le SNDS
 
 Dans le SNDS, les IJ sont repérées via les codes `PRS_NAT_REF` dans la table `ER_PRS_F`.
 
