@@ -7,7 +7,7 @@ L'abréviation IJ pour indemnités journalières sera utilisée pour cette fiche
 
 ### Cas général du salarié
 
-Sous certaines conditions et après un délai de carence de trois jours, le salarié peut percevoir des indemnités journalières. Calculées sur la base des salaires bruts des 3 ou 12 mois précédant l'arrêt, elles sont versées tous les 14 jours.
+En cas d'arrêt maladie, sous certaines conditions et après un délai de carence de trois jours, le salarié peut percevoir des indemnités journalières. Calculées sur la base des salaires bruts des 3 ou 12 mois précédant l'arrêt, elles sont versées tous les 14 jours.
 
 #### Conditions d'attribution
 
