@@ -132,24 +132,7 @@ C'est son activité salariée antérieure qui détermine l'attribution et le cal
 Le calcul s'effectue sur les derniers mois travaillés et non sur l’allocation chômage. 
 De même, si elle a cessé son activité, sans bénéficier d'allocations chômage depuis, ses droits seront étudiés sur la base de ses derniers salaires dans la limite d'une année.
 
-#### Montant de l’indemnité journalière – idem Cas général
-
-Montant maximum de l’indemnité journalière maladie au 1er janvier 2018
-
-| Type indemnité journalière|	Montant |
-|----------------------------|----------------------------|
-|IJ maladie normale|	44,34 €|
-|IJ maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail|	59,12 €|
-
-#### Délai de carence - idem Cas général
-
-
-Montant maximum de l’indemnité journalière maladie au 1er janvier 2018
-
-| Type indemnité journalière|	Montant |
-|----------------------------|----------------------------|
-|IJ maladie normale	|44,34 €|
-|IJ maladie majorée pour charge de famille à partir du 31ème jour d’arrêt de travail	|59,12 €|
+Le montant de l'indemnité journalière (IJ normale et IJ majorée) ainsi que le délai de carence sont identiques à ceux du cas général.
 
 
 ### Indemnités journalières maladie – Cas des PAMC en arrêt de travail pendant la grossesse
