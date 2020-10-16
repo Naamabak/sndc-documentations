@@ -131,7 +131,7 @@ A minima, il faut exclure les séjours pour lesquels `VALO` prend la valeur 0, o
 
 ### En SSR 
 
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC` (sous ORAVUE), dans laquelle la variable `TOT_MNT_AM` n'est pas est calculée sur la base des [GMT](../glossaire/GMT.md) mais des tarifs journaliers de prestation.   
+Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_SSRaaSTC` (sous ORAVUE), dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GMT](../glossaire/GMT.md) mais des tarifs journaliers de prestation.   
 La table `T_SSRaaB` de description du séjour permet d'extraire des informations sur le mode d'hospitalisation (complète/partielle, variable `HOS_TYP_UM`), 
 ainsi que sur le [GME](../glossaire/GME.md) (variable `GR_GME`).
 
@@ -143,7 +143,7 @@ Les filtres sur les séjours sont les suivants :
 - Exclusion des séjours en erreur (en utilisant la variable `GRG_GME`, dont le code commence par 90 en cas d'erreur)
 - Exclusion des prestations inter établissement (en utilisant les variables `ENT_MOD` et `SOR_MOD`)
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
-- Exclusion des séjours non valorisés (variable `VALO` dans `T_SSRaaVALO` ou `FAC_SEJ_AM` dans `T_SSRaaSTC`) 
+- Exclusion des séjours non valorisés (variable `VALO` dans `T_SSRaaVALO` ou `FAC_SEJ_AM` dans `T_SSRaaSTC`, ne conserver que les lignes pour lesquelles `FAC_SEJ_AM` prend la valeur 1) 
 
 *En complément :*  
 À partir de 2017, on peut utiliser la variable `MNT_AM_RSFA` de la table de valorisation des séjours (corrigée par l'ATIH) `T_SSRaaVALO` sous ORAVUE, 
@@ -153,8 +153,7 @@ Dans ce cas, nous suggérons d'appliquer un facteur multiplicatif pour extrapole
 
 ### En HAD 
 
-À partir de 2017, on peut utiliser la variable `MNT_TOT_AM` de la table de valorisation des séjours (corrigée par l'ATIH) `T_HADaaVALO` sous ORAVUE.  
-Avant 2017, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC`, dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](../glossaire/GHT.md) mais des tarifs journaliers de prestation.   
+Sur le portail CNAM, nous ne disposons que de la table de facturation transmise par les établissements `T_HADaaSTC` (sous ORAVUE), dans laquelle la variable `TOT_MNT_AM` n'est pas calculée sur la base des [GHT](../glossaire/GHT.md) mais des tarifs journaliers de prestation.   
 La table de chaînage patients se nomme `T_HADaaC`. On y trouve l'identifiant bénéficiaire `NIR_ANO_17` ([fiche identifiant des bénéficiaires pour plus d'informations](fiche_beneficiaire.md)).  
 Des informations sur le [GHPC](../glossaire/GHPC.md) se trouvent dans la table `T_HAD_aaGRP` (variable `PAP_GRP_GHPC`).  
 
@@ -164,10 +163,17 @@ Les filtres sur les séjours sont les suivants :
 - Exclusion des FINESS géographiques (et non juridiques) APHP/APHM/HCL pour éviter les doublons (jusqu'en 2017 inclus) (en utilisant la variable `ETA_NUM_EPMSI`)
 - Exclusion des séjours en erreur (en utilisant la variable `PAP_GRP_GHPC`, dont le code commence par 99 en cas d'erreur)
 - Exclusion des séjours hors période d'étude (variables `EXE_SOI_DTD` et `EXE_SOI_DTF`)
-- Exclusion des séjours non valorisés (variable `VALO` dans `t_HADaaVALO` ou `FAC_SEJ_AM` dans `T_HADaaSTC`)  
+- Exclusion des séjours non valorisés (variable `FAC_SEJ_AM` dans `T_HADaaSTC`, ne conserver que les lignes pour lesquelles `FAC_SEJ_AM` prend la valeur 1)  
 
 Les éléments ci-dessus permettent d'extraire le montant AMO associé aux séjours en établissement publics en HAD.  
 Pour obtenir le montant total des dépenses, il faut ajouter au montant remboursé par l'AMO, le montant du RAC AMO du séjour, dont le calcul est détaillé dans la fiche sur "le reste à charge après AMO en établissement public".  
+
+*En complément :*  
+Le montant présenté à l'assurance maladie pour un séjour en HAD, calculé à partir des GHT, 
+est donné par la variable `MNT_TOT_AM` de la table de valorisation des séjours `HADaaVALO_DGF` 
+qui figure sur le portail de l'ATIH, mais pas sur celui de la CNAM.  
+
+
 
 ### En PSY
 

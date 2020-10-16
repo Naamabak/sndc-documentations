@@ -32,11 +32,11 @@ Cette liste est ensuite mise à jour par des arrêtés modificatifs.
 Sur le [site de l’ATIH](https://www.atih.sante.fr/unites-communes-de-dispensation-prises-en-charge-en-sus), vous trouverez le fichier historique qui permet de retracer toutes les modifications apportées à cette liste (inscription, radiation, modification de tarifs, modification du libellé UCD, etc.), ainsi que la date de prise d’effet de ces modifications.  
 Un tarif de responsabilité est fixé pour chaque UCD par le Comité économique des produits de santé, conformément à l’accord du 30 mars 2004, sous la forme d’avis publiés dans le journal officiel de la république française. Il est à noter qu’il y a un décalage dans le temps entre l’inscription sur la liste et la fixation d’un tarif de responsabilité.
 
-L'ATIH restitue également des [statistiques sur la consommation annuelle des médicaments en sus au niveau national](https://www.atih.sante.fr/unites-communes-de-dispensation-prises-en-charge-en-sus), déclinées par année année et par molécule.
+L'ATIH restitue également des [statistiques sur la consommation annuelle des médicaments en sus au niveau national](https://www.scansante.fr/applications/synthese-dmi-mo-sus), déclinées par année et par molécule.
 
 *Sources >* 
 - [ATIH : UCD prises en charge](https://www.atih.sante.fr/unites-communes-de-dispensation-prises-en-charge-en-sus)
-- [ATIH : synthèses nationales](https://www.atih.sante.fr/unites-communes-de-dispensation-prises-en-charge-en-sus)
+- [ATIH : synthèses nationales](https://www.scansante.fr/applications/synthese-dmi-mo-sus)
 
 ### Prescription de médicaments « en sus » des tarifs des séjours hospitaliers
 
@@ -68,7 +68,7 @@ Se référer au [dictionnaire des variables du SNDS](https://drees.shinyapps.io/
     o	Numéro FINESS de l’établissement  
     o	Numéro séquentiel du séjour   
     o	Code UCD  
-    o	Code LES (indication des spécialités pharmaceutiques inscrites sur la liste en sus)  
+    o	Code LES (indication des spécialités pharmaceutiques inscrites sur la liste en sus), (cette variable n'existe pas en SSR et est disponible seulement à partir de 2018 en MCO et HAD)  
     o	Prix d'achat multiplié par le nombre administré  
     o	Nombre administré éventuellement fractionnaire  
     o	Année de la date d'administration  
@@ -86,7 +86,7 @@ Se référer au [dictionnaire des variables du SNDS](https://drees.shinyapps.io/
     o	Numéro FINESS de l’établissement  
     o	Numéro séquentiel du séjour  
     o	Code UCD  
-    o	Code LES (indication des spécialités pharmaceutiques inscrites sur la liste en sus)  
+    o	Code LES (indication des spécialités pharmaceutiques inscrites sur la liste en sus), (cette variable n'existe pas en SSR et est disponible seulement à partir de 2018 en MCO et HAD)  
     o	Prix d'achat unitaire TTC  
     o	Prix unitaire facturé  
     o	Quantité  
@@ -95,9 +95,11 @@ Se référer au [dictionnaire des variables du SNDS](https://drees.shinyapps.io/
     o	Année de début du séjour  
     o   Mois de début du séjour  
 
-#### Tables et variables communes aux champs MCO et SSR
+#### Tables et variables spécifiques MCO
 
-- `T_MCOaaFHSTC`, `T_SSRaaFHSTC` : médicaments en SUS ACE (ES publics)  
+- `T_MCOaaMEDTHROMBO` : médicaments thrombolytiques pour le traitement de l’AVC ischémique (ES publics)  
+Mêmes variables que pour `T_MCOaaMEDATU`.
+- `T_MCOaaFHSTC` : médicaments en SUS ACE (ES publics)  
     o	Numéro FINESS de l’établissement  
     o	Numéro séquentiel de l’ACE  
     o	Code UCD  
@@ -107,11 +109,6 @@ Se référer au [dictionnaire des variables du SNDS](https://drees.shinyapps.io/
     o	Coefficient de fractionnement  
     o	Année de début du séjour  
     o	Mois de début du séjour  
-
-#### Tables et variables spécifiques MCO
-
-- `T_MCOaaMEDTHROMBO` : médicaments thrombolytiques pour le traitement de l’AVC ischémique (ES publics)  
-Mêmes variables que pour `T_MCOaaMEDATU`.
 
 #### Tables et variables spécifiques HAD
 
@@ -138,6 +135,8 @@ La plupart de ces filtres sont issus de la documentation de l’ATIH.
 - Nombre UCD < 0 ou prix d’achat < 0
 - Nombre UCD >=100 (l’ATIH ne recommande d’utiliser ce filtre qu’en SSR)
 - Codes UCD erronés (à vide ou indéterminés)
+- Année d’administration < N-2
+
 
 ##### Critère de suppression (spécifique table `MED`)
 
@@ -145,11 +144,10 @@ La plupart de ces filtres sont issus de la documentation de l’ATIH.
 
 ##### Vérification de l'appartenance à la liste en sus (spécifique table `MED`)
 
-On récupère le mois et l’année d’administration pour vérifier si ces médicaments étaient bien dans la liste en sus à cette période.  
-On utilise pour cela le [document où se trouvent les dates d'inscription et de radiation de chaque UCD dans la liste en sus](https://www.atih.sante.fr/nomenclatures-de-recueil-de-l-information/medicaments#Medicaments%20spe%20en%20SSR). 
-Si le mois et l’année d’administration sont à vide, l'ATIH recommande d'utiliser le mois et l’année de sortie de l'hôpital.  
-On ne conserve ensuite que les molécules appartenant à la liste en sus durant cette période.  
-Pour les données de l’année N, on ne conserve que les molécules dont l’année d’administration est égale à N, N-1 ou N-2.
+On récupère le mois et l’année d’administration, et on ne conserve que les médicaments 
+qui étaient dans la liste en sus au moment de l'administration.  
+On utilise pour cela le [document où se trouvent les dates d'inscription et de radiation de chaque UCD dans la liste en sus](https://www.atih.sante.fr/unites-communes-de-dispensation-prises-en-charge-en-sus) (fichier historique). 
+Si le mois et l’année d’administration sont à vide, l'ATIH recommande d'utiliser le mois et l’année de sortie de l'hôpital à la place.  
 
 ##### Cas particulier de certains médicaments
 
@@ -169,7 +167,7 @@ Pour identifier les séjours valorisés, il faut utiliser les tables de valorisa
 - `VALOACE` ou `FASTC` pour les ACE 
 
 La clef de chaînage avec ces tables est le couple (numéro FINESS de l’établissement, numéro séquentiel du séjour ou de l’ACE), qui permet de ne conserver que les dépenses en sus associées à des séjours/consultations valorisés.  
-*cf.* fiches sur les dépenses de santé dans les ES de santé publics et privés pour plus d’informations sur la valorisation des séjours.
+*cf.* fiches sur les dépenses de santé dans les ES de santé [publics](../fiches/depenses_hopital_public.md) et [privés](../fiches/fiche_etab_prives.md) pour plus d’informations sur la valorisation des séjours.
 
 ::: warning Attention  
 Pour les médicaments en autorisation temporaire d’utilisation, ce filtre permet également de sélectionner les dépenses associées à des séjours en ES publics ou privés.   
@@ -179,13 +177,12 @@ Le chaînage avec la table de valorisation / facturation en ES publics ou privé
 
 ##### Filtres supplémentaires sur les prix (spécifiques table `MED`) 
 
-Le remboursement est borné par le tarif de responsabilité.  
-Si un montant aberrant est renseigné par l’établissement, ce n’est pas ce qui sera remboursé.  
-L'ES arrive souvent à descendre au-dessous du tarif de responsabilité par négociation avec les laboratoires (puis l'établissement et et l'AM se partagent les bénéfices).  
-Dans les tables on a le prix d’achat négocié.   
+Dans les tables on a le prix d’achat négocié. 
+L'ES arrive souvent à descendre au-dessous du tarif de responsabilité par négociation avec les laboratoires (puis l'établissement et l'AM se partagent les bénéfices). 
 
 *cf.* documentation avec les [tarifs de responsabilité par code UCD](https://www.atih.sante.fr/unites-communes-de-dispensation-prises-en-charge-en-sus) (et leur historique car les tarifs évoluent dans le temps).  
- 
+
+Le remboursement est borné par le tarif de responsabilité. On peut toutefois trouver dans les bases un prix supérieur au tarif de responsabilité. Nous suggérons donc de plafonner le tarif négocié par le tarif de responsabilité.
 
 *Suggestion :* ajouter un filtre pour remplacer le prix par le tarif de responsabilité si le prix est supérieur au tarif de responsabilité, avec une différence de prix de plus de 10 %.  
 
