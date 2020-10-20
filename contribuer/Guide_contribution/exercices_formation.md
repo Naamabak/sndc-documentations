@@ -16,9 +16,8 @@ Le support de formation ci-dessous peut être ouvert en [suivant ce lien](https:
 </div>
 
 ::: tip Note
-Se rendre sur le **site de formation** et sur le **projet GitLab de formation** pour les TPs :
-- [**formation-gitlab**.documentation-snds.health-data-hub.fr/](https://formation-gitlab.documentation-snds.health-data-hub.fr/).
-- [gitlab.com/healthdatahub/**formation**/documentation-snds](https://gitlab.com/healthdatahub/formation/documentation-snds).
+Se rendre sur le **projet GitLab de formation** pour les TPs :
+[gitlab.com/healthdatahub/**formation**/documentation-snds](https://gitlab.com/healthdatahub/formation/documentation-snds).
 :::
 
 ## TP 1 : Explorer les outils
@@ -65,7 +64,7 @@ Utiliser le document CodiMD partagé, en suivant lien donné en formation.
     - Quels sont les derniers fichiers modifiés dans la branche `ecriture_fiche_foin` ?
 
 
-1. Explorer le site de documentation, **version de formation** : [**formation-gitlab**.documentation-snds.health-data-hub.fr/](https://formation-gitlab.documentation-snds.health-data-hub.fr/)
+1. Explorer le site de documentation
     - Quelles sont les 6 sections de la documentation ?
     - Quel est le titre du document partagé par Santé publique France ?
     - Quel est le sujet de la première présentation du 3ème Meetup ?
