@@ -342,9 +342,7 @@ Ces éléments sont personnels et ne doivent pas être utilisés par un tiers.
 Ce numéro de profil correspond à l’accès à un périmètre de données, selon les droits des organismes spécifiés dans le décret SNDS et la nature des données (profondeur d’historique, identifiants potentiels,…).
 
 *  L’adresse URL du portail est la suivante : 
-
-* [ ]  pour les partenaires de l’assurance maladie : https://portail.sniiram.ameli.fr 
-* [ ]  pour le réseau de l’assurance maladie: https://portail.sniiram.ramage
+    *  pour les partenaires de l’assurance maladie : https://portail.sniiram.ameli.fr 
 
 *  Les différents produits de restitutions des données SNDS sont interrogeables pour certains via des datamarts accessibles sous le logiciel BO Webi (Onglet TABLEAUX ET REQUETES) et pour d’autres via des tables accessibles par SAS guide (onglet STATISTIQUES) 
 
