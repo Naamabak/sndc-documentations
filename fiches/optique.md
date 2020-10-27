@@ -105,7 +105,7 @@ Il faut donc être prudent, car les informations de la table prestations sont du
 
 Pour éviter de surestimer le montant de l'acte, on peut au choix :
 - Diviser le montant agrégé par le nombre de lignes correspondantes dans la table affinée. 
-- Utiliser la méthode donnée par le [programme mis à disposition par Mathis Haradji (DSS)](https://gitlab.com/DREES_code/public/gu-snds/programmes-sas-gu-snds/blob/master/Optique_-_DCIR_-_DSS.sas)
+- Utiliser la méthode donnée par le [programme mis à disposition par Mathis Haradji (DSS)](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/DSS/2018_Haradji_DSS_Optique_MPL-2.0.sas)
 
 ## Références
 
