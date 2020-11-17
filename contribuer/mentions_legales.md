@@ -54,7 +54,6 @@ Le Health Data Hub s’efforce d’ouvrir l’accès à ce site 24 heures sur 24
 ​
 Le Health Data Hub met en œuvre tous les moyens mis à sa disposition pour assurer un accès et une utilisation de qualité au site et à ses services. L’obligation étant de moyens, la responsabilité du Health Data Hub ne sera pas engagée si ce résultat n’est pas atteint. Le visiteur a la possibilité de contacter le site par messagerie électronique à l’adresse suivante : hdh@health-data-hub.fr 
 
-​
 ### Informations contenues sur ce site
 
 Les informations figurant sur ce site proviennent de sources considérées comme étant fiables.
