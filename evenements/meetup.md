@@ -28,7 +28,7 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 [pptx](../files/presentations/meetup-snds6/20201106_PrésentationHDH_Meetup6.pptx),
 [pdf](../files/presentations/meetup-snds4/20201106_PrésentationHDH_Meetup6.pdf)
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=7UJmrRZ-4Fc&t=6s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7UJmrRZ-4Fc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Méthode de validation des algorithmes avec le SNDS  
 - Titre : Reconstituted Electronics Health Records (rEHR): a fact-checking method for algorithm validation in the SNDS.
@@ -38,7 +38,7 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 [pdf](../files/presentations/meetup-snds4/20201106_Présentation_PharmacoEpi-BPE_Meetup6.pdf)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=a4RYnxV5my4&t=7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a4RYnxV5my4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 2020.02.20 Meetup-SNDS5
 
