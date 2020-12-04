@@ -26,7 +26,7 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 - Présenté par : Lorien Benda et Tim Vlaar, Health Data Hub
 - Support de présentation :
 [pptx](../files/presentations/meetup-snds6/20201106_PrésentationHDH_Meetup6.pptx),
-[pdf](../files/presentations/meetup-snds4/20201106_PrésentationHDH_Meetup6.pdf)
+[pdf](../files/presentations/meetup-snds6/20201106_PrésentationHDH_Meetup6.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7UJmrRZ-4Fc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -35,7 +35,7 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 - Présenté par : les Drs. Nicolas Thurin (Pharmacien), Pauline Bosco (Médecin) et Patrick Blin (Médecin) de l’équipe Bordeaux PharmacoEpi (BPE : La BPE est une plateforme de recherche en pharmaco-épidémiologie de l’Université de Bordeaux qui fait partie du CIC 1401 INSERM du CHU de Bordeaux avec maintenant plus de 15 ans d’expérience dans l’analyse des données de l’Assurance Maladie). 
 - Support de présentation : 
 [pptx](../files/presentations/meetup-snds6/20201106_Présentation_PharmacoEpi-BPE_Meetup6.pptx),
-[pdf](../files/presentations/meetup-snds4/20201106_Présentation_PharmacoEpi-BPE_Meetup6.pdf)
+[pdf](../files/presentations/meetup-snds6/20201106_Présentation_PharmacoEpi-BPE_Meetup6.pdf)
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a4RYnxV5my4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
