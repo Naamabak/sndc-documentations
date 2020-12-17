@@ -78,11 +78,10 @@ Il est possible de recourir à un référentiel d’établissement afin d'obteni
 Pour cela on utilise le numéro FINESS à 8 chiffres comme clé de jointure.
 
 
-## Le choix du référentiel d'établissements
+## Les référentiels d'établissements
 
-Deux référentiels sont disponibles sur le portail SNDS: la table établissement BE_IDE_R et la table produite par atlasanté DATASANTE_T_FINESS.
 
-### La base établissements référentiel (BERF) de la bibliothèque ORAVUE
+### La base établissements référentiel (BERF) du SNDS
 
 Le SNDS met à disposition un référentiel d’établissement, la table `BE_IDE_R` de la bibliothèque ORAVUE
 
@@ -93,11 +92,10 @@ Elle synthétise deux sources d'information:
 
 La variable ‘origine administrative’ (IDE_NAT_ORI) permet de distinguer l’origine des informations : CARSAT/CRAM ou CPAM. 
 
-On trouve dans la BERF des informations sur des établissements étrangers pour lesquels des conventions ont été passées
-(exemple : établissement de Monaco). Pour ces établissements, dont les informations ont été saisies par les cpam, les n° finess sont fictifs.
 
 Elle contient une ligne pour chaque FINESS juridique et une ligne pour chaque FINESS géographique.  
-Ainsi un Finess juridique avec 4 sites sera représenté sur 5 lignes : 1 pour le Finess juridique et 4 pour chacun des Finess géographiques.
+Ainsi un Finess juridique avec 4 sites sera représenté sur 5 lignes : 1 pour le Finess juridique et 4 pour chacun des Finess géographiques.  
+
 Cette table contient notamment les variables suivantes :  
 
 | Nom variable | Libellé variable | Table de valeurs |
@@ -111,30 +109,18 @@ Cette table contient notamment les variables suivantes :
 | ide_rsd_lib | Libellé de la commune |
 | ide_bdi_cod | Code postal |
 
+
 Les variables `IDE_ETA_NUM` et `IDE_ETA_NU8` correspondent au même numéro FINESS, avec ou sans clef. 
 Ces variables correspondent soit à un Finess juridique,  
 soit à un Finess géographique ; elles sont toujours renseignées dans `BE_IDE_R`. 
+La variable `IDE_ETA_TYP` permet de distinguer entre les FINESS juridique (`IDE_ETA_TYP` = 1) et FINESS géographique (`IDE_ETA_TYP` = 2).  
 
-Si la variable `IDE_GES_NUM` est correctement renseignée (différente de vide et de '000000000'), alors sa valeur correspond à un Finess juridique,  
-et les variables `IDE_ETA_NU8`/`IDE_ETA_NUM` correspondent à un Finess géographique de cette entité juridique.
-Si la variable `IDE_GES_NUM` est vide, les variables `IDE_ETA_NU8`/`IDE_ETA_NUM` correspondent à un Finess juridique.
+La jointure avec la table `ER_PRS_F` se fait sur `ETB_PRE_FIN` = `IDE_ETA_NU8`.
 
-Pour déterminer le Finess juridique, on peut appliquer le code suivant : 
+La BERF a été mise à jour en mai 2020. Cette nouvelle version est alimentée à partir d’ETANAT (référentiel établissement utilisé pour la tarification). Seuls les établissements avec un FINESS géographique sont mis à jour (`IDE_ETA_TYP` = 2 ) tandis que les établissements avec FINESS juridique sont ceux qui étaient déjà présents dans les précédentes données en restitution (2014).
+Se référer au communiqué du 18 juin 2020 pour plus d'information.
 
-```sql
-IF IDE_GES_NUM NE '000000000' THEN finess_juridique = IDE_GES_NUM ;
-IF IDE_GES_NUM = '000000000' OR IDE_GES_NUM  IS NULL THEN finess_juridique = IDE_ETA_NUM ;
-``` 
-
-Dans la table `ER_PRS_F`, la variable `ETB_PRE_FIN` doit être le FINESS géographique de l’établissement. 
-La jointure avec le référentiel `BE_IDE_R` se fait donc 
-avec `ETB_PRE_FIN` = `IDE_ETA_NU8`.
-
-Il est indiqué dans le fichier Offre_de_service mis à disposition par la CNAM sur le portail SNDS 
-que la dernière mise à jour de la BERF remonte à mai 2016. 
-
-
-### La table DATASANTE_T_FINESS de la bibliothèque RFCOMMUN
+### La table Atlasanté DATASANTE_T_FINESS 
 
 Atlasanté produit un référentiel des structures Finess qui fait correspondre à chaque structure Finess, juridique ou géographique, 
 qui existe ou qui a existé depuis 2004, ses principales caractéristiques : statut juridique, catégorie, adresse, ...
@@ -142,9 +128,26 @@ Mise à jour bimestrielle à partir des extractions Finess publiées sur data.go
 [Pour plus d'information](https://static.data.gouv.fr/resources/referentiel-finess-t-finess/20200207-125732/t-finess-doc.pdf).
 
 Cette table est disponible sur le portail dans le répertoire `RFCOMMUN.DATASANTE_T_FINESS`.
-Cette table dispose d'une variable `finess8` permettant de faire le lien directement avec les tables
+Elle dispose d'une variable `finess8` permettant de faire le lien directement avec les tables
 du SNDS. 
 
+### Le référentiel FINESSGEO de l'ATIH
+
+Dans le répertoire nomenclatures générales de la plateforme ATIH on trouve le référentiel `finessgeo` qui contient les variables suivantes:
+| Nom variable | Libellé variable | Modalité|
+|--------------|------------------|------------------|
+| finessgeo | Finess géographique |  |
+| finess_pmsi | Finess PMSI du finess géographique |  |
+| finessj | Finess juridique du finess géographique |
+| niveau_pmsi | Niveau du Finess PMSI |J' si le finess PMSI correspond au finess juridique de l'établissement; 'G' si le finess PMSI correspond au finess géographique de l'établissement|
+| categ_geo| code de la catégorie du finess géographique |
+| mco | 1 si au moins un jour d'autorisation MCO dans l'année; 0 sinon |
+| ssr | 1 si au moins un jour d'autorisation SSR dans l'année; 0 sinon |
+| psy | 1 si au moins un jour d'autorisation PSY dans l'année; 0 sinon |
+| had | 1 si au moins un jour d'autorisation HAD dans l'année; 0 sinon |
+
+
+
 ## Sources
-Manuel utilisateur de l'univers BERF
+Manuel utilisateur de l'univers BERF  
 Pour aller plus loin: Code de la santé publique. livre 1er [articles L6111-1 à L6163-10](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031929304/)
