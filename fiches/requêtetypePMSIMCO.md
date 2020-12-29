@@ -4,17 +4,17 @@
 La fiche décrit une requête type de sélection de séjours hospitaliers dans les tables du PMSI-MCO à partir des diagnostics principaux (DP), 
 des diagnostics reliés (DR) et/ou des diagnostics associés significatifs (DAS).
 
-Le programme est accessible dans le dossier[Santé publique France des programmes-snds] (../programmes-snds/-/tree/master/Sante_publique_France). 
+Le programme est accessible dans le dossier [Santé publique France des programmes-snds](../programmes-snds/-/tree/master/Sante_publique_France). 
 
 ## 1.	Identification des tables et des variables du PMSI-MCO  
 ### 1.1	Les tables et variables de la requête type  
-Dans le portail SNDS, les tables du PMSI, disponibles à partir de 2005, se trouvent dans la bibliothèque ORAVUE.  
+Les tables du PMSI, disponibles à partir de 2005, se trouvent dans la bibliothèque ORAVUE.  
 Le nom des tables est de la forme T_MCOaaZ avec aa = année sur 2 caractères et Z = caractère(s) identifiant de la table.  
-Les six tables utilisées dans le programme type sont présentés ci-dessous :
+Les six tables utilisées dans le programme type sont présentées ci-dessous :
 
 
-La liste des variables sélectionnées dans la requête est présentée ci-dessous :    
-*	T_MCOaaB : table de description du séjour, une ligne par séjour  
+Liste des variables sélectionnées dans la requête:    
+* T_MCOaaB : table de description du séjour, une ligne par séjour  
     *	ETA_NUM : numéro Finess e-PMSI de l’établissement (variable de chainage)  
     *  	RSA_NUM : numéro séquentiel dans le PMSI (variable de chainage)  
     *	DGN_PAL : diagnostic principal  
@@ -35,7 +35,7 @@ La liste des variables sélectionnées dans la requête est présentée ci-desso
     *	NBR_DGN : nombre de diagnostics associés dans ce RSA  
     *	NBR_RUM : nombre de RUM composant le RSS d’origine  
     *	NBR_ACT : nombre de zones d’actes dans ce RSA  
-*	T_MCOaaC : table de chainage, une ligne par séjour   
+* T_MCOaaC : table de chainage, une ligne par séjour   
     *	ETA_NUM : numéro Finess e-PMSI de l’établissement (variable de chainage)  
     *	RSA_NUM : numéro séquentiel dans le PMSI (variable de chainage)  
     *	NIR_ANO_17 : identifiant du patient  
@@ -51,40 +51,40 @@ La liste des variables sélectionnées dans la requête est présentée ci-desso
     *	DAT_RET : code retour contrôle « date de référence » (date d’entrée) (à partir de 2006)  
     *	COH_NAI_RET : code retour contrôle « cohérence date de naissance » (à partir de 2013)  
     *	COH_SEX_RET : code retour contrôle « cohérence sexe » (à partir de 2013)  
-*	T_MCOaaA : table des actes, une ligne par acte  
+* T_MCOaaA : table des actes, une ligne par acte  
     *  	ETA_NUM : numéro Finess e-PMSI de l’établissement (variable de chainage)  
     *	RSA_NUM : numéro séquentiel dans le PMSI (variable de chainage)  
     *	CDC_ACT : code CCAM  
-*	T_MCOaaD : table des DAS, une ligne par diagnostic associé    
+* T_MCOaaD : table des DAS, une ligne par diagnostic associé    
     *	ETA_NUM : numéro Finess e-PMSI de l’établissement (variable de chainage)  
     *	RSA_NUM : numéro séquentiel dans le PMSI (variable de chainage)  
     *	ASS_DGN : diagnostic associé significatif  
-*	T_MCOaaUM : table des unités médicales, existe depuis 2006, une ligne par diagnostic principal d’UM  
+* T_MCOaaUM : table des unités médicales, existe depuis 2006, une ligne par diagnostic principal d’UM  
     *	ETA_NUM : numéro Finess e-PMSI de l’établissement (variable de chainage)  
     *	RSA_NUM : numéro séquentiel dans le PMSI (variable de chainage)  
     *	UM_TYP (2006-2009) / AUT_TYP1_UM (2010+) : type d’unité médicale  
     *	ETA_NUM_GEO1 (2012) / ETA_NUM_GEO (2013+) : premier numéro Finess géographique  
     *	DGN_PAL : diagnostic principal de l’unité médicale  
     *	DGN_REL : diagnostic relié de l’unité médicale  
-*	T_MCOaaE : table des établissements  
+* T_MCOaaE : table des établissements  
     *	ETA_NUM : numéro Finess e-PMSI de l’établissement (variable de chainage)  
     *	SOC_RAI : raison sociale  
     *	STA_ETA : statut  
 
 Si vous souhaitez ajouter d’autres variables dans votre requête, vous pouvez consulter le dictionnaire interactif de la documentation collaborative du SNDS.  
 
-### 1.2	Les variables « identifiants » et de jointure
+### 1.2	Les variables « identifiant» et de jointure
 
-L’identifiant anonyme du patient est NIR_ANO_17.
+L’identifiant anonymisé du patient est NIR_ANO_17.
 La jointure des tables se fait à l'aide des variables ETA_NUM et RSA_NUM, sauf pour la table établissement T_MCOaaE pour laquelle seule la variable ETA_NUM est nécessaire.  
 
-## 2.	Requête-type  
+## 2.	La requête  
 ### 2.1	Les filtres appliqués  
 *	Suppression des séjours en doublons pour les établissements APHP, APHM et HCL jusqu’en 2017 inclus.  
 *	Suppression des séjours dont les GHM commencent par 90 « Erreurs et autres séjours inclassables »
-*	Génération de la variable CR_OK pour vérification de la validité du chaînage intra-séjour. 
-        o	1 si tous les codes retours sont égaux à zéro : chainage valide
-        o	0 sinon
+*	Génération de la variable CR_OK pour vérification de la validité du chaînage intra-séjour:   
+        o	1 si tous les codes retours sont égaux à zéro : chainage valide  
+        o	0 sinon  
 ++Attention :++ les séjours avec codes retour erronés sont présents dans la table finale et doivent ensuite être supprimés.
 
 ### 2.2	Les diagnostics  
