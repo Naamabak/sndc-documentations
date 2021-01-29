@@ -12,7 +12,7 @@ Le programme de sélection des prestations sélectionne  des remboursements de m
 
 ## Identification des tables et des variables
 
-![figure 1](../files/Sante_publique_France/schema_prestation.jpg)
+![figure 1](../files/Sante_publique_France/20212801_SpF_schema-prestation_MLP-2.0.jpg)
 
 - La table des prestations (`ER_PRS_F`) est centrale dans le DCIR. Les variables généralement sélectionnées dans cette table sont :
   - Nature de la prestation (`PRS_NAT_REF`)
