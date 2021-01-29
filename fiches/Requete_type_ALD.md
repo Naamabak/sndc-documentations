@@ -167,11 +167,11 @@ where imb_ald_dtd<="&fin_ALD.:0:0:0"dt and (imb_ald_dtf>="&debut_ALD.:0:0:0"dt o
 run;
 ```
 
-::: Crédit
+::: tip Crédit
 Cette fiche a été créée par la direction DATA de Santé publique France
 :::
 
-::: Mise à jour
+::: tip Mise à jour
 Cette fiche se base sur une version originale datant du 30/04/2018 et a été mise à jour le 30/10/2020
 :::
 
