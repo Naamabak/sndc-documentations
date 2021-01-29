@@ -4,7 +4,7 @@
 Cette fiche décrit une requête type de sélection de prestations impliquant une table d'actes affinés de codage avec sélection de données concernant les bénéficiaires.
 
 Les programmes sont accessibles dans le dossier
-[Santé publique France des programmes-snds](https://gitlab.com/healthdatahub/programmes-sdns/-/tree/master/Sante_publique_France).
+[Santé publique France des programmes-snds](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master/Sante_publique_France).
 
 
 **Avertissement**
@@ -12,7 +12,7 @@ Le programme de sélection des prestations sélectionne  des remboursements de m
 
 ## Identification des tables et des variables
 
-![figure 1](../files/Sante_publique_France/2018_04_SpF_requetes-types-prestations-DCIR_figure-1_MPL-2.0.png)
+![figure 1](../files/Sante_publique_France/schema_prestation.jpg)
 
 - La table des prestations (`ER_PRS_F`) est centrale dans le DCIR. Les variables généralement sélectionnées dans cette table sont :
   - Nature de la prestation (`PRS_NAT_REF`)
