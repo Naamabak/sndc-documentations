@@ -11,6 +11,7 @@ Les tables du PMSI, disponibles à partir de 2005, se trouvent dans la biblioth�
 Le nom des tables est de la forme T_MCOaaZ avec aa = année sur 2 caractères et Z = caractère(s) identifiant de la table.  
 Les six tables utilisées dans le programme type sont présentées ci-dessous :
 
+![Schéma](../files/Sante_publique_France/files_Sante_publique_France_2020-12-30_SpF_SchemaFichePMSIMCO_MPL-2.0.png)
 
 Liste des variables sélectionnées:      
 * T_MCOaaB : table de description du séjour, une ligne par séjour  
