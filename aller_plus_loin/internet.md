@@ -16,6 +16,8 @@ pour des détails sur la base médicale des causes de décès.
 
 - Les [publications](https://www.irdes.fr/recherche/publications.html) de l'[Irdes](../glossaire/Irdes.md), dont certaines concernent le SNDS
 
-- Le site open data du gouvernement : [data.gouv](https://www.data.gouv.fr) et la [partie dédiée à la santé](https://www.data.gouv.fr/fr/topics/sante-et-social/) avec notamment sur le profil de [l'assurance maladie](https://www.data.gouv.fr/fr/datasets/?q=assurance+maladie&organization=534fff5ca3a7292c64a77d1a) qui répértorie tous les jeux de données open data de la Cnam. 
+- Le site open data du gouvernement : [data.gouv](https://www.data.gouv.fr) et la [partie dédiée à la santé](https://www.data.gouv.fr/fr/topics/sante-et-social/) avec notamment sur le profil de [l'assurance maladie](https://www.data.gouv.fr/fr/datasets/?q=assurance+maladie&organization=534fff5ca3a7292c64a77d1a) qui répértorie tous les jeux de données open data de la Cnam
 
-- [Rubrique statistiques et publications](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php) sur le site Ameli de la Cnam.
+- [Rubrique statistiques et publications](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php) sur le site Ameli de la Cnam
+
+- le portail [Géodes](https://geodes.santepubliquefrance.fr/#c=home) de Santé publique France
