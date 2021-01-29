@@ -42,3 +42,7 @@ En complément, d’autres pièces peuvent vous être demandées :
 - Les [modèles d’appariements]() et le [guide de la CNIL sur l’appariement direct](https://www.cnil.fr/fr/appariement-de-donnees-snds-numero-de-securite-sociale-nir-guide-pratique) 
 - L’[offre technologique du HDH](https://www.health-data-hub.fr/offre-technologique) 
 - L’[offre de formation](https://www.health-data-hub.fr/formations)
+
+## Déposez votre demande d'autorisation sur cette plateforme
+
+[Plateforme de dépôt](https://www.demarches-simplifiees.fr/commencer/soumission-d-un-projet-de-recherche-etude-ou-evalu)
