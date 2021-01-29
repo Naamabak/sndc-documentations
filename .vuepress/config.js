@@ -82,6 +82,17 @@ const sidebar = [
         ]
     },
     {
+        title: "Open Data",
+        path: "/open_data/",
+        children: [
+            "/open_data/opendata_cnam",
+            "/open_data/opendata_spf",
+            "/open_data/data_dress",
+            "/open_data/opendata_atih",
+            "/open_data/data_gouv"
+        ]
+    },
+    {
         title: "Évènements passés et à venir",
         path: "/evenements/",
         children: [
