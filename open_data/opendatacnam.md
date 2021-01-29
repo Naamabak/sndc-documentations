@@ -5,13 +5,12 @@ Régulièrement, la [CNAM](../glossaire/cnam.md) publie dans sa rubrique « Stat
 
 Ces séries statistiques de la CNAM, produites par la Direction de la Stratégie, des Etudes et des Statistiques (DSES) et issues notamment du Système National d’Information Inter Régimes de l’Assurance Maladie (SNIIRAM), ont été labellisées par l'Autorité de la statistique publique (arrêté du 14 avril 2015 sous le n° NOR FCPO1508846V).
 
-
 ## Données en open data
 
 En complément de la rubrique « [statistiques et publications](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php) » d’ameli.fr, l’Assurance Maladie enrichit son offre de données en open data en mettant à disposition des données de cadrage et des bases brutes extraites du [SNIIRAM](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/sniiram/finalites-du-sniiram.php).Ces données sont plus particulièrement destinées à des réutilisations nécessitant une exploration détaillée et des retraitements.
 
 
-La CNAM met également à disposition ces données :
+LA CNAM enrichit son offre de données en open data en mettant à disposition des données de cadrage et des bases brutes extraites du SNIIRAM. Ces données sont plus particulièrement destinées à des réutilisations, nécessitant une exploration détaillée et des retraitements. Elles contiennent d’ores et déjà :
 
 - sur le thème des dépenses d’assurance maladie : la base complète inter-régimes [Open Damir](http://open-data-assurance-maladie.ameli.fr/depenses/index.php#Open_DAMIR) avec 55 variables et 6 axes d’analyse, les [données nationales sources de la statistique mensuelle](http://open-data-assurance-maladie.ameli.fr/depenses/index.php#tables_N) ([Dépenses par type de risque](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/donnees-statistiques/depenses-d-assurance-maladie/depenses-par-type-de-risque/depenses-mensuelles-2017.php)) et les [données par Cpam](http://open-data-assurance-maladie.ameli.fr/depenses/index.php#tables_R).
 
