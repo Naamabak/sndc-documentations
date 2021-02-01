@@ -23,4 +23,3 @@ de restitution est souvent appelé « analyse multidimensionnelle ».
 
 ::: tip 
 [Lien vers Data.Drees](http://www.data.drees.sante.gouv.fr/ReportFolders/reportFolders.aspx?sCS_referer=&sCS_ChosenLang=fr)
-:::
