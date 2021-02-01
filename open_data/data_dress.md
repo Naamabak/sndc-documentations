@@ -1,4 +1,4 @@
-# Data.Drees
+# Open data Drees
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 L’espace [Data.Drees](http://www.data.drees.sante.gouv.fr/ReportFolders/reportFolders.aspx?sCS_referer=&sCS_ChosenLang=fr) permet la mise à disposition de tableaux de données dynamiques abordant les thèmes de la santé et de la protection sociale. Il est administré par la Direction de la recherche, des études, de l’évaluation et des statistiques ([DREES](../glossaire/drees.md)).
