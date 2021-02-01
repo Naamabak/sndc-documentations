@@ -21,5 +21,5 @@ souhaite analyser les données contenus dans l’hypercube. Ici la restitution d
 contenu du rapport peut donc varier en fonction de l’axe d’analyse choisi. Ce mode
 de restitution est souvent appelé « analyse multidimensionnelle ».
 
-::: tip 
+# Références
 [Lien vers Data.Drees](http://www.data.drees.sante.gouv.fr/ReportFolders/reportFolders.aspx?sCS_referer=&sCS_ChosenLang=fr)
