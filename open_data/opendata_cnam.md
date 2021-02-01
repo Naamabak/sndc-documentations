@@ -7,7 +7,7 @@ Ces séries statistiques de la CNAM, produites par la Direction de la Stratégie
 
 ## Données en open data
 
-En complément de la rubrique « [statistiques et publications](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php) » d’ameli.fr, l’Assurance Maladie enrichit son offre de données en open data en mettant à disposition des données de cadrage et des bases brutes extraites du [SNIIRAM](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/sniiram/finalites-du-sniiram.php).Ces données sont plus particulièrement destinées à des réutilisations nécessitant une exploration détaillée et des retraitements.
+En complément de la rubrique « [statistiques et publications](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php) » d’ameli.fr, l’Assurance Maladie enrichit son offre de [données en open data](http://open-data-assurance-maladie.ameli.fr/index.php) en mettant à disposition des données de cadrage et des bases brutes extraites du [SNIIRAM](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/sniiram/finalites-du-sniiram.php).Ces données sont plus particulièrement destinées à des réutilisations nécessitant une exploration détaillée et des retraitements.
 
 
 LA CNAM enrichit son offre de données en open data en mettant à disposition des données de cadrage et des bases brutes extraites du SNIIRAM. Ces données sont plus particulièrement destinées à des réutilisations, nécessitant une exploration détaillée et des retraitements. Elles contiennent d’ores et déjà :
