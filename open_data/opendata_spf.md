@@ -2,6 +2,7 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 Des données anonymes et agrégées sont disponibles sur le [portail Géodes](https://geodes.santepubliquefrance.fr) de Santé publique France ainsi que sur [data.gouv.fr](https://www.data.gouv.fr/fr/organizations/sante-publique-france/).
+Géodes permet de restituer près de 300 indicateurs sous forme de cartes dynamiques, de tableaux et de graphiques.
 
 ## Géodes
 [Géodes](https://geodes.santepubliquefrance.fr/#c=article&page=P005) est l’observatoire cartographique des indicateurs épidémiologiques produits par Santé publique France. Santé publique France construit des indicateurs de santé publique à partir d’un ensemble de bases de données. Ces données sont issues de nombreux systèmes de surveillance spécifique, du système de surveillance syndromique SurSaUD®, d’enquêtes épidémiologiques en population générale et de bases de données issues du Système National des Données de Santé (SNDS). Géodes fournit des  indicateurs produits par l’agence pouvant être déclinés à un niveau géographique infranational, le plus souvent régional et départemental. La plupart des indicateurs sont fournis annuellement. L’observatoire est régulièrement actualisé pour proposer de nouveaux indicateurs ou mettre à jour des indicateurs existants (ajout de la dernière année ou déclinaison pour une nouvelle unité géographique par exemple).
