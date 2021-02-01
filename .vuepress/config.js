@@ -86,10 +86,10 @@ const sidebar = [
         path: "/open_data/",
         children: [
             "/open_data/opendata_cnam",
-            "/open_data/opendata_spf",
-            "/open_data/data_dress",
             "/open_data/opendata_atih",
             "/open_data/opendata_cepidc",
+            "/open_data/opendata_spf",
+            "/open_data/data_dress",
             "/open_data/finess",
             "/open_data/data_sante",
             "/open_data/data_gouv"
