@@ -1,7 +1,7 @@
 # CNAM - Caisse nationale de l’assurance maladie
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-La Caisse nationale de l’assurance maladie est la « tête de réseau » opérationnelle du régime d’assurance maladie obligatoire en France. 
+La [Caisse nationale de l’assurance maladie](https://assurance-maladie.ameli.fr/qui-sommes-nous/organisation/cnam-tete-de-reseau/cnam-tete-reseau) (CNAM) est la « tête de réseau » opérationnelle du régime d’assurance maladie obligatoire en France. 
 Son rôle est impulser la stratégie au niveau national, puis coordonner et appuyer les organismes locaux qui composent son réseau.
 
 La CNAM est un établissement public national à caractère administratif, jouissant de la personnalité juridique et de l'autonomie financière. Elle est soumise à une double tutelle : celle du ministère chargé de la Sécurité Sociale et celle du ministère de l'Économie et des finances.
