@@ -1,4 +1,5 @@
 # Data Santé
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 
 [DataSanté](https://www.atlasante.fr/accueil/presentation_du_projet/659_573/datasante) est une base de données mise à disposition par [AtlaSanté](www.atlasante.fr). L'entrepôt a été construit pour stocker et partager des informations provenant de différentes sources de données, ainsi qu'alimenter les produits AtlaSanté (cartes intéractives Prodige, observatoire Géoclip)
 
