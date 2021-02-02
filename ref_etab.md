@@ -139,7 +139,7 @@ Dans le répertoire nomenclatures générales de la plateforme ATIH on trouve le
 | finessgeo | Finess géographique |  |
 | finess_pmsi | Finess PMSI du finess géographique |  |
 | finessj | Finess juridique du finess géographique |
-| niveau_pmsi | Niveau du Finess PMSI |J' si le finess PMSI correspond au finess juridique de l'établissement; 'G' si le finess PMSI correspond au finess géographique de l'établissement|
+| niveau_pmsi | Niveau du Finess PMSI |'J' si le finess PMSI correspond au finess juridique de l'établissement; 'G' si le finess PMSI correspond au finess géographique de l'établissement|
 | categ_geo| code de la catégorie du finess géographique |
 | mco | 1 si au moins un jour d'autorisation MCO dans l'année; 0 sinon |
 | ssr | 1 si au moins un jour d'autorisation SSR dans l'année; 0 sinon |
