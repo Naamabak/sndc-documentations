@@ -28,7 +28,7 @@ Les pièces obligatoires à [télécharger](https://www.health-data-hub.fr/start
 En complément, d’autres pièces peuvent vous être demandées :
 - L’avis du ou des comités scientifiques et/ou éthiques qui ont pu évaluer le projet et la composition de ce(s) comité(s), le cas échéant​
 - La liste des financeurs de l’étude
-- Pour les données du SNDS, des éléments certifiant le bon [niveau de sécurité]() du système d'information où elles seront traitées et une [analyse d'impact](https://www.cnil.fr/fr/outil-pia-telechargez-et-installez-le-logiciel-de-la-cnil).
+- Pour les données du SNDS, des éléments certifiant le bon [niveau de sécurité](https://www.health-data-hub.fr/sites/default/files/2020-12/SNDS_Referentiel_securite_Guide_accompagnement.pdf) du système d'information où elles seront traitées et une [analyse d'impact](https://www.cnil.fr/fr/outil-pia-telechargez-et-installez-le-logiciel-de-la-cnil).
 
 ## Ressources utiles
 
