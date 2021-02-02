@@ -1,7 +1,7 @@
 # Kit de démarrage avec les données de santé 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Guide pour d'accompagnement dans tous les projets d’utilisation des données de santé
+Guide pour vous accompagner dans vos projets d’utilisation des données de santé
 
 Publié originalement sur le [site internet du Health Data Hub](https://www.health-data-hub.fr/starter-kit) comme kit de démarrage avec les données. 
 
