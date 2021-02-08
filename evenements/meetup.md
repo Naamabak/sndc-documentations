@@ -17,7 +17,7 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 - [Chaîne youtube](https://www.youtube.com/channel/UCFmHnLZ31EgSrPhZQTM9weQ) du HealthDataHub
 - [Dossier sur GitLab](https://gitlab.com/healthdatahub/documentation-snds/tree/master/files/presentations) contenant l'ensemble des présentations
 
-## 2020.02.20 Meetup-SNDS6
+## 2020.11.26 Meetup-SNDS6
 
 [Page de l’événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/274203888/)
 
