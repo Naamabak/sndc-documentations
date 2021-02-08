@@ -17,6 +17,28 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 - [Chaîne youtube](https://www.youtube.com/channel/UCFmHnLZ31EgSrPhZQTM9weQ) du HealthDataHub
 - [Dossier sur GitLab](https://gitlab.com/healthdatahub/documentation-snds/tree/master/files/presentations) contenant l'ensemble des présentations
 
+## 2020.02.20 Meetup-SNDS6
+
+[Page de l’événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/274203888/)
+
+### Démarche open source du Health Data Hub
+- Titre : 
+    - Données de santé, open source et science ouverte 
+    - Notebooks : prise en main du SNDS à partir d'exercices simples et guidés sur les données de synthèse 
+- Présenté par : Lorien Benda, Tim Vlaar
+- Support de présentation :
+[pptx](../files/presentations/meetup-snds6/lien) *A COMPLETER *
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=7UJmrRZ-4Fc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Validation des algorithmes dans le SNDS Reconstituted Electronics Health Records (rEHR)
+- Titre : Reconstituted Electronics Health Records (rEHR): a fact-checking method for algorithm validation in the SNDS
+- Présenté par : Patrick Blin, Pauline Bosco, Nicolas Thurin
+- Support de présentation :
+[pptx](../files/presentations/meetup-snds6/lien) *A COMPLETER *
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=a4RYnxV5my4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## 2020.02.20 Meetup-SNDS5
 
 [Page de l’événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/268318992/)
