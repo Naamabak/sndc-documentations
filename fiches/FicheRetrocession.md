@@ -8,7 +8,7 @@ https://solidarites-sante.gouv.fr/soins-et-maladies/medicaments/professionnels-d
 Conformément à l’article L.5126-4 du Code de la Santé Publique, la liste des médicaments disposant d’une Autorisation de mise sur le marché (AMM) ou d’une Autorisation temporaire d’utilisation (ATU) de cohorte qui peuvent, pour des raisons de santé publique, être vendus au public au détail, est arrêtée par le Ministre chargé de la santé après avis ou sur proposition de l’Agence nationale de sécurité du médicament et des produits de santé (ANSM). Cette liste est communément appelée "liste de rétrocession".
 
 2/ Dans le SNDS, on retrouve la rétrocession hospitalière dans la table ER_UCD_F
-- Contenu : Rétrocession publique + rétrocession privée (établissement privés non lucratifs, participant au service public hospitalier (PSPH))
+- Contenu : Rétrocession publique + rétrocession privée 
 - Code UCD,  attention au codage : UCD7 précédé ’000000’ et pas UCD13
 - Utilisation des variables quantité et coefficient de fractionnement (info à construire)
 - Exécutant des médicaments rétrocédés codés en UCD : variable ETB_EXE_FIN dans la table ER_ETE.
