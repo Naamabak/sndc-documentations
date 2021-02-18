@@ -1,7 +1,8 @@
 # Requête type de sélection des affections de longue durée (ALD)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Cette fiche a pour objectif de décrire les informations disponibles dans le SNDS concernant les pathologies exonérantes (avec un focus sur les ALD). Elle propose également une requête type de sélection d'affections de longue durée.
+Cette fiche a pour objectif de décrire les informations disponibles dans le SNDS concernant les pathologies exonérantes (avec un focus sur les ALD).  
+Elle propose également une requête type de sélection d'affections de longue durée.
 
 ## Introduction 
 Le référentiel médicalisé [**IR_IMB_R**](../tables/DCIR_DCIRS/IR_IMB_R.md) recense les exonérations pour affections de longue durée, maladies professionnelles, accidents du travail, invalidité, grossesse… Ces informations proviennent des Services Médicaux des différents régimes (selon des critères différents et pour des périodes différentes).
@@ -83,7 +84,8 @@ Lorsqu'une exonération est créée, la date de mise à jour n'est pas renseign�
 
 ## Programme type
 
-Le programme est accessible dans l'espace **programme-snds**, dossier [**Sante_publique_France**](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master/Sante_publique_France).
+Le programme SAS est accessible dans l'espace **programme-snds**, dossier [**Sante_publique_France**](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master/Sante_publique_France).
+* ald_select_par_code_cim.sas
 
 ## Références
 
