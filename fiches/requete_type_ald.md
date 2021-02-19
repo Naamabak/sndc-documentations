@@ -84,7 +84,7 @@ Lorsqu'une exonération est créée, la date de mise à jour n'est pas renseign�
 
 ## Programme type
 
-Le programme SAS est accessible dans l'espace **programme-snds**, dossier [**Sante_publique_France**](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master/Sante_publique_France).
+Le programme SAS est accessible dans le dépôt **programme-snds**, dossier [**Sante_publique_France**](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master/Sante_publique_France).
 * ald_select_par_code_cim.sas
 
 ## Références
