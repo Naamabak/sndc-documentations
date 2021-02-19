@@ -63,13 +63,11 @@ Néanmoins, elles devraient être retenus avec les soins de ville. En effet, les
 
 #### Repérer les Actes et Consultations Externes du DCIR/DCIRS
 
-On trouve dans le DCIR les **actes et consultations externes** (ACE) en facturation directe. 
-En effet, depuis septembre 2011, certains établissements publics ont basculé leur activité ACE en facturation directe. 
-Cela concernait 335 établissements géographiques (268 FINESS juridiques) à fin septembre 2015, d’autres sont passés en 
-facturation directe depuis, mais il reste encore des établissements pour lesquels les ACE sont sur leur budget global. 
-Ainsi, l’information est partielle, tandis qu’elle est remontée de façon exhaustive dans le PMSI.
+Les données exhaustives concernant les **actes et consultations externes** (ACE) sont remontées via le PMSI.
+Le DCIR/DCIRS ne couvre que le champ des ACE en facturation directe. En effet, depuis septembre 2011, les établissements publics basculent leur activité ACE en facturation directe. Début 2019, le déploiement de FIDES ACE était effectif dans tous les établissements, à l’exception de l’AP-HP et de certains établissements ultramarins. 
 
-Pour exclure les Actes et Consultations Externes générés par les établissements Ex Dotation Globale (ex DG), il est conseillé d’utiliser 
+
+Pour exclure du DCIR/DCIRS les Actes et Consultations Externes générés par les établissements Ex Dotation Globale (ex DG), il est conseillé d’utiliser 
 le filtre ci-dessous :
 
 -	On exclut la prestation :
@@ -78,8 +76,7 @@ le filtre ci-dessous :
 un CH, un CH spécialité de lutte contre le cancer, un hôpital local, un établissement de soins obstétriques et chirurgico-gynécologiques,
 un établissement de soins pluridisciplinaires, un établissement de soins chirurgicaux ou un établissement de soins médicaux et que le code 
 du mode de traitement indique que la prestation est en hospitalisation complète, consultation et soins externes ou urgence (ou sans objet) **OU**
-
-Si l’indicateur de T2A est manquant, que l’indicateur du caractère privé ou public de l’établissement est manquant, 
+    - si l’indicateur de T2A est manquant, que l’indicateur du caractère privé ou public de l’établissement est manquant, 
 que la catégorie de l’établissement exécutant est manquant et que le mode de  traitement est manquant, on conserve la prestation. 
 
 Le code SAS correspondant est le suivant :
