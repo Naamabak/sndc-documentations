@@ -88,10 +88,6 @@ OR (T2.ETE_IND_TAA is null AND T2.PRS_PPU_SEC is null
         AND T2.ETE_CAT_COD is null AND T2.MDT_COD is null)
 ```
 
-#### Repérer les séjours des bénéficiaires de la CMU-C et de l’AME
-
-La valorisation d’un séjour à l’hôpital public se décompose en deux parties : 80% du Groupe Homogène de séjour (GHS) + (20% du tarif journalier de prestation (TJP) + un forfait journalier). Le remboursement des séjours à 80% sur la base du GHS est transmis via le PMSI. La seconde partie correspond à la part complémentaire. Dans le cas des bénéficiaires de la [CMU-C](../glossaire/CMUC.md) (devenue [CSS](../fiches/complementaire_sante_solidaire.md)) et de l’[AME](../glossaire/AME.md), elle remonte dans le DCIR à l’aide des codes prestation 2237 (part complémentaire AME) et 2250 (forfait journalier aide médicale) et 2252 (forfait journalier de sortie). Pour retracer les dépenses de soin des bénéficiaires de l'AME et de la CMUC dans le DCIR, il faut joindre la table prestation [ER_PRS_F](../tables/DCIR/ER_PRS_F.md) à la table affinée des remboursements autre que régime obligatoire [ER_ARO_F](../tables/DCIR/ER_ARO_F.md) et poser un filtre sur la variable `ARO_REM_TYP` (AME=7, CMUC=5 et 6). 
-
 ### Les centres de santé
 
 Les centres de santé correspondent aux  catégories d'établissements (124, 125, 130, 132, 133, 134, 142, 223, 224, 228, 230, 268, 269, 289, 297, 347, 413, 414, 433, 438, 439,700) de la variable `ETE_CAT_COD`(table de valeur `IR_CET_V`).   
