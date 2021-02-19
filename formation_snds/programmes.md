@@ -39,4 +39,4 @@ Ces programmes sont présents dans le dossier Santé publique France dont le dé
 * Programme de [sélection de données socio-démographiques dans les référentiels des bénéficiaires](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/dcir_infos_socio_eco_referentiels.sas)
 * Programme de [sélection des remboursements de médicaments dans le DCIR archivé et le DCIR](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/dcir_prestations_medicaments.sas)
 * Programme de [sélection des hospitalisations MCO en fonction des DP ou DR ou DAS incluant des variables relatives au patient, au séjour et à l'établissement de santé](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/pmsi_mco_select_sejours_par_diag.sas)
-* Programme de sélection des affections de longue durée (ALD) _(attente upload du fichier, avant de mettre le lien)_
+* Programme de [sélection des affections de longue durée (ALD)](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/ald_select_par_code_cim.sas)
