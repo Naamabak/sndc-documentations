@@ -10,7 +10,7 @@ Le programme de sélection des prestations sélectionne des remboursements de m�
 
 ## Identification des tables et des variables
 
-![figure 1](../files/Sante_publique_France/2018_04_SpF_requetes-types-prestations-DCIR_figure-1_MPL-2.0.png)
+![figure 1](../files/Sante_publique_France/20212801_SpF_schema-prestation_MLP-2.0.jpg)
 
 - La table des prestations (`ER_PRS_F`) est centrale dans le DCIR. Les variables généralement sélectionnées dans cette table sont :
   - Nature de la prestation (`PRS_NAT_REF`)
@@ -54,6 +54,9 @@ graph LR
 
 Par exemple : fusionner la table de prestations affinées de pharmacie : **ER_PHA_R** avec le référentiel pharmacie **IR_PHA_R** afin de faire une sélection sur un code ATC particulier regroupant plusieurs codes.
 
+
+- La table ER_ETE_F contient des informations liées à l’exécution de la prestation dans un établissement parmi lesquelles le mode de facturation de la prestation (ETE_IND_TAA), le statut juridique public ou privé de l’établissement (PRS_PPU_SEC), le numéro Finess de l’établissement (ETE_EXE_FIN).
+
 ## Recommandations pour les requêtes
 
 - La fusion des tables se fait par une procédure SQL.
@@ -67,6 +70,13 @@ Par exemple : fusionner la table de prestations affinées de pharmacie : **ER_PH
 - Lorsque l'on veut sélectionner des visites ou des consultations dans `ER_PRS_F`, il faut supprimer les enregistrements correspondant à des majorations et des compléments en utilisant le filtre `CPL_MAJ_TOP < 2`.
 
 - Pour le moment, l'information sur les soins externes réalisés en établissements publics n'est pas exhaustive, et sauf cas particulier, il convient d'appliquer un filtre pour les exclure (`DPN_QLF <> 71 AND PRS_DPN_QLP <> 71`)
+
+- Les actes et consultations externes (ACE) de tous les hôpitaux publics doivent dorénavant faire l’objet d’une facturation directe T2A. Par ailleurs les séjours des hôpitaux publics ne relevant pas d’une mission d’intérêt général doivent également être financés en facturation directe. Tous les hôpitaux publics n’appliquent pas actuellement la facturation T2A. L’information sur les ACE et les séjours des hôpitaux publics appliquant la facturation directe étant de ce fait partielle, il est nécessaire d’appliquer un filtre pour exclure ces enregistrements (ETE_IND_TAA ≠ 1 OR  ETE_IND_TAA IS MISSING ).
+NB : la condition ‘OR  ETE_IND_TAA IS MISSING’ est nécessaire lorsque l’on utilise une fusion à gauche (LEFT JOIN) dans le programme. 
+Evolution du pourcentage d’hôpitaux publics appliquant la T2A (ETE_IND_TAA=1):
+ inférieur à 1% (2010-2012), 3% (2013),5% (2014), 8% (2015), 24% (2016), 33% (2017), 34% (2018), 35% (2019).
+
+- La fiche 'Dépenses des établissements de santé dans le SNDS' disponible sur le site de la documentation collaborative du Health Data Hub décrit le façon d’identifier le lieu d’exercice du soin (en ville, en hôpital public ou en hôpital privé).
 
 - Les tables du DCIR sont des tables volumineuses. Les prestations alimentent le DCIR par mois de flux et non en fonction de la date d'exécution de la prestation de soins. Pour ces deux raisons, la requête peut être exécutée par mois de flux et, si l'on veut les prestations sur une année complète, la requête doit être répétée 18 fois (année entière plus les 6 mois suivants). En procédant ainsi, on connait par exemple plus de 98% des délivrances de médicaments  de l'année portées au remboursement.
 
