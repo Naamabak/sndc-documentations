@@ -5,7 +5,7 @@ Cette fiche décrit une requête type de sélection de prestations impliquant un
 
 
 :::warning Avertissement
-Le programme de sélection des prestations sélectionne des remboursements de médicaments et devra être adapté en fonction des prestations d’intérêt.
+Le programme de sélection des prestations sélectionne des remboursements de médicaments et devra être adapté en fonction des prestations d'intérêt.
 :::
 
 ## Identification des tables et des variables
@@ -36,7 +36,7 @@ De la table des prestations affinées, on ne retient généralement que le code 
 |--------------------------------------------------------------------------------------------------|-------------|-------------|-----------------------------------------------------------------------------------------------------|---------------------|
 | **ER_PHA_F** | `PHA_PRS_C13` | `PHA_ACT_QSN` | | **IR_PHA_R** |
 | **ER_BIO_F** | `BIO_PRS_IDE` | `BIO_ACT_QSN` | | **IR_BIO_R** |
-| **ER_CAM_F** | `CAM_PRS_IDE` | | Il n’y a pas de variable quantité dans la table **ER_CAM_F**. Prendre `PRS_ACT_QTE` de la table **ER_PRS_F**. <br><br> Pensez à prendre en compte `CAM_ACT_COD` (code activité) + `CAM_TRT_PHA` (code phase de traitement).| - |
+| **ER_CAM_F** | `CAM_PRS_IDE` | | Il n'y a pas de variable quantité dans la table **ER_CAM_F**. Prendre `PRS_ACT_QTE` de la table **ER_PRS_F**. <br><br> Pensez à prendre en compte `CAM_ACT_COD` (code activité) + `CAM_TRT_PHA` (code phase de traitement).| - |
 | **ER_UCD_F** | `UCD_UCD_COD` | `UCD_DLV_NBR` | | - |
 | **ER_TIP_F** | `TIP_PRS_IDE` | `TIP_ACT_QSN` | | **NT_LPP** |
 
@@ -55,7 +55,7 @@ graph LR
 Par exemple : fusionner la table de prestations affinées de pharmacie : **ER_PHA_R** avec le référentiel pharmacie **IR_PHA_R** afin de faire une sélection sur un code ATC particulier regroupant plusieurs codes.
 
 
-- La table ER_ETE_F contient des informations liées à l’exécution de la prestation dans un établissement parmi lesquelles le mode de facturation de la prestation (ETE_IND_TAA), le statut juridique public ou privé de l’établissement (PRS_PPU_SEC), le numéro Finess de l’établissement (ETE_EXE_FIN).
+- La table **ER_ETE_F** contient des informations liées à l'exécution de la prestation dans un établissement parmi lesquelles le mode de facturation de la prestation (`ETE_IND_TAA`), le statut juridique public ou privé de l'établissement (`PRS_PPU_SEC`), le numéro Finess de l'établissement (`ETE_EXE_FIN`).
 
 ## Recommandations pour les requêtes
 
@@ -71,12 +71,12 @@ Par exemple : fusionner la table de prestations affinées de pharmacie : **ER_PH
 
 - Pour le moment, l'information sur les soins externes réalisés en établissements publics n'est pas exhaustive, et sauf cas particulier, il convient d'appliquer un filtre pour les exclure (`DPN_QLF <> 71 AND PRS_DPN_QLP <> 71`)
 
-- Les actes et consultations externes (ACE) de tous les hôpitaux publics doivent dorénavant faire l’objet d’une facturation directe T2A. Par ailleurs les séjours des hôpitaux publics ne relevant pas d’une mission d’intérêt général doivent également être financés en facturation directe. Tous les hôpitaux publics n’appliquent pas actuellement la facturation T2A. L’information sur les ACE et les séjours des hôpitaux publics appliquant la facturation directe étant de ce fait partielle, il est nécessaire d’appliquer un filtre pour exclure ces enregistrements (ETE_IND_TAA ≠ 1 OR  ETE_IND_TAA IS MISSING ).
-NB : la condition ‘OR  ETE_IND_TAA IS MISSING’ est nécessaire lorsque l’on utilise une fusion à gauche (LEFT JOIN) dans le programme. 
-Evolution du pourcentage d’hôpitaux publics appliquant la T2A (ETE_IND_TAA=1):
- inférieur à 1% (2010-2012), 3% (2013),5% (2014), 8% (2015), 24% (2016), 33% (2017), 34% (2018), 35% (2019).
+- Les actes et consultations externes (ACE) de tous les hôpitaux publics doivent dorénavant faire l'objet d'une facturation directe T2A. Par ailleurs les séjours des hôpitaux publics ne relevant pas d'une mission d'intérêt général doivent également être financés en facturation directe. Tous les hôpitaux publics n'appliquent pas actuellement la facturation T2A. L'information sur les ACE et les séjours des hôpitaux publics appliquant la facturation directe étant de ce fait partielle, il est nécessaire d'appliquer un filtre pour exclure ces enregistrements (`ETE_IND_TAA <> 1 OR  ETE_IND_TAA IS MISSING`).
+NB : la condition `OR  ETE_IND_TAA IS MISSING` est nécessaire lorsque l'on utilise une fusion à gauche (`LEFT JOIN`) dans le programme. 
+Evolution du pourcentage d'hôpitaux publics appliquant la T2A (`ETE_IND_TAA = 1`) :
+ inférieur à 1% (2010-2012), 3% (2013), 5% (2014), 8% (2015), 24% (2016), 33% (2017), 34% (2018), 35% (2019).
 
-- La fiche 'Dépenses des établissements de santé dans le SNDS' disponible sur le site de la documentation collaborative du Health Data Hub décrit le façon d’identifier le lieu d’exercice du soin (en ville, en hôpital public ou en hôpital privé).
+- La fiche [Dépenses des établissements de santé dans le SNDS](https://documentation-snds.health-data-hub.fr/fiches/etablissements_sante.html) décrit la façon d'identifier le lieu d'exercice du soin (en ville, en hôpital public ou en hôpital privé).
 
 - Les tables du DCIR sont des tables volumineuses. Les prestations alimentent le DCIR par mois de flux et non en fonction de la date d'exécution de la prestation de soins. Pour ces deux raisons, la requête peut être exécutée par mois de flux et, si l'on veut les prestations sur une année complète, la requête doit être répétée 18 fois (année entière plus les 6 mois suivants). En procédant ainsi, on connait par exemple plus de 98% des délivrances de médicaments  de l'année portées au remboursement.
 
