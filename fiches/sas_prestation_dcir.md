@@ -12,7 +12,7 @@ Le programme de sélection des prestations sélectionne des remboursements de m�
 
 ![figure 1](../files/Sante_publique_France/20212801_SpF_schema-prestation_MLP-2.0.jpg)
 
-- La table des prestations (`ER_PRS_F`) est centrale dans le DCIR. Les variables généralement sélectionnées dans cette table sont :
+- La table des prestations (**ER_PRS_F**) est centrale dans le DCIR. Les variables généralement sélectionnées dans cette table sont :
   - Nature de la prestation (`PRS_NAT_REF`)
   - Dates (par exemple dates de début (`EXE_SOI_DTD`) et de fin de prestation (`EXE_SOI_DTF`))
   - variables concernant le PS exécutant ou prescripteur (par exemple spécialité médicale : `PSE_SPE_COD` (PS exécutant) et `PSP_SPE_COD` (PS prescripteur))
@@ -20,13 +20,13 @@ Le programme de sélection des prestations sélectionne des remboursements de m�
   - Régime d'affiliation à l'Assurance Maladie au moment de la prestation (généré à partir de`ORG_AFF_BEN`)
   - Département ou commune de résidence au moment de la prestation (`BEN_RES_DPT` et `BEN_RES_COM`)
 
-NB : la sélection des prestations peut se faire sur une valeur particulière de `PRS_NAT_REF` (nature de la prestation) comme par exemple 'visite chez un médecin généraliste' et dans ce cas la jointure s'effectue sur les seules tables  (`ER_PRS_F` et `IR_BEN_R`, `IR_BEN_R_ARC`).
+NB : la sélection des prestations peut se faire sur une valeur particulière de `PRS_NAT_REF` (nature de la prestation) comme par exemple 'visite chez un médecin généraliste' et dans ce cas la jointure s'effectue sur les seules tables  (**ER_PRS_F** et **IR_BEN_R**, **IR_BEN_R_ARC**).
 
-- Des pseudo-référentiels des bénéficiaires (`IR_BEN_R`/`IR_BEN_R_ARC`), on retient généralement les variables socio-démographiques (la table contient les informations les plus récentes) et l'identifiant unique `BEN_NIR_ANO` en plus des 2 clés de jointure (`BEN_NIR_PSA` et `BEN_RNG_GEM`).
+- Des pseudo-référentiels des bénéficiaires (**IR_BEN_R**/**IR_BEN_R_ARC**), on retient généralement les variables socio-démographiques (la table contient les informations les plus récentes) et l'identifiant unique `BEN_NIR_ANO` en plus des 2 clés de jointure (`BEN_NIR_PSA` et `BEN_RNG_GEM`).
 
 Cependant, on peut garder uniquement les variables de jointure (`BEN_NIR_PSA` et `BEN_RNG_GEM`) et conserver les variables socio-démographiques associées à des prestations déjà sélectionnées (cf programme type joint) ou récupérer les variables socio-démographiques de l'année 20aa  dans la table **EXTRACTION_PATIENTS20aaTR** du répertoire CONSOPAT.
 
-- La table d'actes affinés de codage précise la nature des remboursements liés à la prestation, comme par exemple la liste des médicaments liée à la prestation(`ER_PHA_F`) ou les actes médicaux (`ER_CAM_F`). 
+- La table d'actes affinés de codage précise la nature des remboursements liés à la prestation, comme par exemple la liste des médicaments liée à la prestation(**ER_PHA_F**) ou les actes médicaux (**ER_CAM_F**). 
 
 Le document « [SNDS ce qu'il faut savoir ](../files/Sante_publique_France/2019_01_SpF_SNDS-ce-quil-faut-savoir-MPL-2.0.docx)» décrit ces tables en détail.
 
@@ -63,11 +63,11 @@ Par exemple : fusionner la table de prestations affinées de pharmacie : **ER_PH
 
 - Il est recommandé de ne garder que les variables nécessaires.
 
-    - Ne pas sélectionner systématiquement les 9 variables constituant les clés de jointure entre la table `ER_PRS_F` et les tables affinées,
+    - Ne pas sélectionner systématiquement les 9 variables constituant les clés de jointure entre la table **ER_PRS_F** et les tables affinées,
 
-    - Ne pas systématiquement sélectionner en double les variables en fonction de leur provenance. (par exemple : variable `BEN_SEX_COD` dans `IR_BEN_R` et `ER_PRS_F`)   
+    - Ne pas systématiquement sélectionner en double les variables en fonction de leur provenance. (par exemple : variable `BEN_SEX_COD` dans **IR_BEN_R** et **ER_PRS_F**)   
 
-- Lorsque l'on veut sélectionner des visites ou des consultations dans `ER_PRS_F`, il faut supprimer les enregistrements correspondant à des majorations et des compléments en utilisant le filtre `CPL_MAJ_TOP < 2`.
+- Lorsque l'on veut sélectionner des visites ou des consultations dans **ER_PRS_F**, il faut supprimer les enregistrements correspondant à des majorations et des compléments en utilisant le filtre `CPL_MAJ_TOP < 2`.
 
 - Pour le moment, l'information sur les soins externes réalisés en établissements publics n'est pas exhaustive, et sauf cas particulier, il convient d'appliquer un filtre pour les exclure (`DPN_QLF <> 71 AND PRS_DPN_QLP <> 71`)
 
