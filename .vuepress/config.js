@@ -49,7 +49,7 @@ const sidebar = [
                 ]
             },
             "/formation_snds/Sante_publique_France",
-            "formation_snds/donnees_synthetiques",
+            "/formation_snds/donnees_synthetiques",
             "/formation_snds/notebook",
             "/formation_snds/programmes"
         ]
@@ -71,14 +71,14 @@ const sidebar = [
                             "/aller_plus_loin/documents_cnam/faq/faq_egb"
                         ]
                     },
-                    "aller_plus_loin/documents_cnam/kwikly",
-                    "aller_plus_loin/documents_cnam/pseudonymisation"
+                    "/aller_plus_loin/documents_cnam/kwikly",
+                    "/aller_plus_loin/documents_cnam/pseudonymisation"
                 ]
             },
-            "aller_plus_loin/Epi-Phare",
-            "aller_plus_loin/cartographie_indicateurs",
-            "aller_plus_loin/internet",
-            "aller_plus_loin/bibliographie"
+            "/aller_plus_loin/Epi-Phare",
+            "/aller_plus_loin/cartographie_indicateurs",
+            "/aller_plus_loin/internet",
+            "/aller_plus_loin/bibliographie"
         ]
     },
     {
@@ -90,10 +90,11 @@ const sidebar = [
             "/open_data/opendata_cepidc",
             "/open_data/opendata_spf",
             "/open_data/data_drees",
+            "/open_data/opendata_has",
             "/open_data/data_sante",
-            "/open_data/data_gouv",
             "/open_data/finess",
-            "/open_data/BDPM"
+            "/open_data/BDPM",
+            "/open_data/data_gouv"
         ]
     },
     {
@@ -101,7 +102,7 @@ const sidebar = [
         path: "/evenements/",
         children: [
             "/evenements/meetup",
-            "/evenements/Amphi_SNDS",
+            "/evenements/Amphi_SNDS"
         ]
     },
     sb.getSidebarGroup("tables"),
