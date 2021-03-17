@@ -7,4 +7,5 @@ Vous pouvez accéder aux données concernant les causes médicales de décès en
 
 L’accès aux principales séries statistiques de mortalité et la possibilité de les manipuler sous forme de tableaux graphiques et cartes est gratuit.
 
+## Lien d'accès
 Pour accéder aux données en libre accès (Open Data) sur les causes médicales de décès : [Cliquez ici](https://www.cepidc.inserm.fr/causes-medicales-de-deces/interroger-les-donnees-de-mortalite) 
