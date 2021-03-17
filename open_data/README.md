@@ -9,7 +9,7 @@ Cette section comporte une liste non exhaustive des données en open data sur le
 - [données](opendata_spf.md) de Santé publique France
 - [données](data_drees.md) de la data_drees
 - [données](data_sante.md) de AtlaSanté
-- [données](opendata_has) de la HAS
+- [données](opendata_has.md) de la HAS
 - [base](finess.md) Finess
 - [base](BDPM.md) BDPM
 
