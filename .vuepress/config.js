@@ -89,11 +89,11 @@ const sidebar = [
             "/open_data/opendata_atih",
             "/open_data/opendata_cepidc",
             "/open_data/opendata_spf",
-            "/open_data/data_dress",
+            "/open_data/data_drees",
             "/open_data/data_sante",
             "/open_data/data_gouv",
             "/open_data/finess",
-            "/open_data/BDPM",
+            "/open_data/BDPM"
         ]
     },
     {
