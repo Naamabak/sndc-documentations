@@ -22,3 +22,6 @@ LA CNAM enrichit son offre de données en open data en mettant à disposition de
 - sur le thème de la biologie médicale : les données [Open Bio](http://open-data-assurance-maladie.ameli.fr/biologie/index.php) présentant par groupe physiopathologique ou par code détaillé de la nomenclature, par caractéristique du bénéficiaire et par spécialité du prescripteur : le nombre de bénéficiaires, les montants remboursés et remboursables ainsi que le nombre d’actes prodigués.
 
 - sur le thème des dispositifs médicaux inscrits à la liste des produits et prestations : les données [Open LPP](http://open-data-assurance-maladie.ameli.fr/LPP/index.php) présentant, par Titre et sous chapitre de niveau 1 et 2, code affiné, par caractéristique du bénéficiaire et par spécialité du prescripteur : le nombre de bénéficiaires, les montants remboursés et remboursables ainsi que la quantité des dispositifs médicaux délivrés.
+
+## Lien d'accès
+[Portail](http://open-data-assurance-maladie.ameli.fr/index.php) de la CNAM
