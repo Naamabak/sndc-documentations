@@ -11,3 +11,8 @@ Les thématiques sont celles qui entrent dans le champ de Santé publique France
 
 ## Lien d'accès
 Portail [Géodes](https://geodes.santepubliquefrance.fr/#c=article&page=P005)
+
+
+::: tip Open data mortalité Covid-19
+Santé publique France présente les chiffres clés quotidiens de l’évolution de la COVID-19 sur [cette page](https://www.santepubliquefrance.fr/dossiers/coronavirus-covid-19/coronavirus-chiffres-cles-et-evolution-de-la-covid-19-en-france-et-dans-le-monde).
+:::
