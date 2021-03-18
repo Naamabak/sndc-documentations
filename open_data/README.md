@@ -7,7 +7,7 @@ Cette section comporte une liste non exhaustive des données en open data sur le
 - [données](opendata_atih.md) de l'ATIH
 - [données](opendata_cepidc.md) du CépiDc
 - [données](opendata_spf.md) de Santé publique France
-- [données](data_drees.md) de la data_drees
+- [données](data_drees.md) de la DREES
 - [données](data_sante.md) de AtlaSanté
 - [données](opendata_has.md) de la HAS
 - [base](finess.md) Finess
