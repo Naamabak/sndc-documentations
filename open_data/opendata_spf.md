@@ -1,4 +1,4 @@
-# Open Data SpF
+# Open Data Santé publique France
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 Des données anonymes et agrégées sont disponibles sur le [portail Géodes](https://geodes.santepubliquefrance.fr) de Santé publique France ainsi que sur [data.gouv.fr](https://www.data.gouv.fr/fr/organizations/sante-publique-france/).
