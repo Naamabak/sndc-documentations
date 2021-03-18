@@ -9,3 +9,7 @@ L’accès aux principales séries statistiques de mortalité et la possibilité
 
 ## Lien d'accès
 Pour accéder aux données en libre accès (Open Data) sur les causes médicales de décès : [Cliquez ici](https://www.cepidc.inserm.fr/causes-medicales-de-deces/interroger-les-donnees-de-mortalite) 
+
+::: tip Open data mortalité Covid-19
+Le CépiDc publie les statistiques de mortalité par Covid-19 en France sur un [site dédié](https://opendata.idf.inserm.fr/cepidc/covid-19/).
+:::
