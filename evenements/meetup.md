@@ -50,9 +50,9 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Anonymisation de données, que permettent les avatars ?
 - Présenté par : Pierre Antoine Gourraud (Professeur des universités, praticien-hospitalier de la faculté de médecine de l’université de Nantes (France)), Carole Requillard (Directrice de la Fabrique au Health Data Hub), Olivier Breillacq (Fondateur de la startup Octopize-Mimethik Data)
 - Support de présentation : 
-[pdf](files/presentations/meetup-snds7/20210318_Octopize_Deck-OctopizeHdhCom_MLP-2.0.pdf)
+[pdf](../files/presentations/meetup-snds7/20210318_Octopize_Deck-OctopizeHdhCom_MLP-2.0.pdf)
 
-<iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9z-deBBn7Q4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## 2020.11.26 Meetup-SNDS6
