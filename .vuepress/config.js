@@ -99,6 +99,7 @@ const sidebar = [
             "/open_data/data_drees",
             "/open_data/opendata_has",
             "/open_data/data_sante",
+            "/open_data/terminologie_ans",
             "/open_data/finess",
             "/open_data/BDPM",
             "/open_data/data_gouv"
