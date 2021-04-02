@@ -9,7 +9,7 @@ Issu de l’expérience de ses auteurs, ce document se veut une aide pour les ut
 
 
 ## Lien accès
-Télécharger le guide [ici](files/redsiam/202103_Redsiam_GTDenominateurs-ChoixDenominateurs_MLP-2.0.pdf)
+Télécharger le guide [ici](../../files/redsiam/202103_Redsiam_GTDenominateurs-ChoixDenominateurs_MLP-2.0.pdf)
 
 ## Auteurs
 
