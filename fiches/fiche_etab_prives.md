@@ -25,8 +25,6 @@ Afin de se concentrer sur le champ des établissements privés, les filtres à p
 Pour obtenir la classification des établissements, se référer à la nomenclature `ETE_TYE_V` présentée dans la section suivante.
 Se référer à la nomenclature pour savoir quel filtre exact appliquer sur `ETE_TYP_COD` en fonction de la catégorie de prestations ciblée. 
 
-Pour information, la variable `MFT_COD` permet d'avoir des informations sur le mode de fixation des tarifs. 
-
 -	 `ETE_CAT_COD` NOT IN (124, 125, 130, 132, 133, 134, 142, 223, 224, 228, 230, 268, 269, 289, 297, 347, 413, 414, 433, 438, 439,700). 
 On filtre sur la catégorie de l’établissement exécutant afin d'exclure les centres de santé.
 
