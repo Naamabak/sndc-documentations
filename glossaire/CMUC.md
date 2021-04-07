@@ -8,7 +8,7 @@ Elle n'est pas applicable à Mayotte.
 
 À partir du 1er novembre 2019, elle est remplacée par la [Complémentaire santé solidaire](https://www.ameli.fr/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante/complementaire-sante-solidaire).
 
-**Comment la retrouver dans les données de santé ?** Une fiche est disponible sur la [CMU-C et la Complémentaire santé solidaire dans les données de santé](https://documentation-snds.health-data-hub.fr/fiches/cmu_c.html#cmu-complementaire).
+**Comment la retrouver dans les données de santé ?** Une fiche est disponible sur la [CMU-C et la Complémentaire santé solidaire dans les données de santé](../fiches/cmu_c.md).
 
 
 # Références
