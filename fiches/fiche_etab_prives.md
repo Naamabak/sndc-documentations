@@ -36,7 +36,8 @@ ainsi que dans la statistique mensuelle de la CNAM.
 Si les caisses ont effectué des remboursements pour d’autres risques, ceux-ci ne sont pas censés être pris en charge. Par exemple la nature
 d'assurance 22 qui correspond à des soins aux invalides de guerre (CNMSS).
 
-
+Pour information, la variable `MFT_COD` permet d'avoir des informations sur le mode de fixation des tarifs.
+Le filtre `MFT_COD`=7 permet notamment de restreindre le champ aux prestations tarifées par contrat avec l'ARH pour les établissements privés.  
 ## Ventiler les dépenses
 
 ### Selon la nature juridique
