@@ -39,7 +39,7 @@ Le _Programme de Médicalisation des Systèmes d'Information_ recense l'activit�
 
 Les informations fournies par le _Centre d'épidémiologie sur les causes de décès_ permettent au SNDS en plus de disposer de la date, de pouvoir connaître la cause initiale ainsi que l'ensemble des causes de décès du bénéficiaire.
 
-Un délai de deux années est nécessaire par rapport à l'année en cours pour pouvoir effectuer la consolidation des donnéés et leur chargement dans le SNDS.
+Un délai de deux années est nécessaire par rapport à l'année en cours pour pouvoir effectuer la consolidation des données et leur chargement dans le SNDS.
 
 ## L'échantillon représentatif des personnes protégées
 
