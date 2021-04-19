@@ -74,21 +74,6 @@ Les données individuelles de l'Offre de soins qui concernent notamment:
 
 Une partie des informations mentionnées figurant dans les bases de données précitées sont accessibles en Open Data à un niveau beaucoup plus agrégé.
 
-Sur [le site de l'Assurance Maladie](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php), des données de cadrage sont disponibles et actualisées régulièrement, notamment sur les dépenses d'Assurance Maladie et les données statistiques sur les Professionnels de Santé (activité et prescription des médecins, activité et prescription des chirurgiens dentistes...)
+Pour plus d'informations à ce sujet, nous vous invitons à consulter la [section dédiée à l'open data](https://documentation-snds.health-data-hub.fr/open_data/).  
 
-Certains accès se font sous forme de bases et sont fournies et actualisées par l'Assurance Maladie.
-Les principales bases en Open Data, [disponibles ici](http://open-data-assurance-maladie.ameli.fr), sont les suivantes :
 
-- Open Damir : Ensemble des dépenses d'Assurance Maladie,tous régimes confondus, données nationales et par CPAM
-- Open Medic:  Ensemble des prescriptions de médicaments délivrées en officine de ville, par classe anatomique et thérapeutique et par classe [CIP](../glossaire/CIP.md)
-- Open Bio: Ensemble des données de biologie médicale, par groupe physiopathologique ou par code détaillé de la nomenclature
-
-L'[ATIH](../glossaire/ATIH.md) met également à disposition en Open Data des données à l'aide de l'outil [Scan Santé](http://www.scansante.fr/).
-Celui-ci permet de réaliser des analyses à travers les quatre secteurs du [PMSI](../glossaire/PMSI.md) existants ([MCO](../glossaire/MCO.md), [SSR](../glossaire/SSR.md), [HAD](../glossaire/HAD.md) et [PSY](../glossaire/RIM-P.md)) pour:
-
-- des données de synthèse telles que les statistiques médicales hospitalières sur les Groupes Homogènes de Malades ([GHM](../glossaire/GHM.md)), les diagnostics, les actes réalisés ou la consommation de médicaments délivrés en sus
-- des indicateurs calculés et prêts à l'emploi tels que les indicateurs de performance Hospi-Diag, les case-mix par établissements, la cartographie des établissements...
-
-Le [CépiDC](../glossaire/CepiDC.md) fournit en accès libre des données agrégées issues de la déclaration et de la codification des causes de décès collectées de manière officielle et régulière.
-Celles-ci sont interrogeables à l'aide d'un outil les recensant depuis 1979.
-Les effectifs de décès par année France entière, toutes causes confondues sont [disponibles ici](http://www.cepidc.inserm.fr/causes-medicales-de-deces/interroger-les-donnees-de-mortalite).
