@@ -9,7 +9,7 @@ Les médicaments délivrés en établissement sont de deux catégories : les mé
 * les médicaments thrombolytiques pour le traitement de l’AVC ischémique (MCO), 
 * les médicament coûteux hors liste en sus et hors ATU (HAD).
 
-Les médicaments délivrés en établissement sont recueillis dans la table [ER_UCD_R](../tables/DCIR/ER_UCD_F.md) par leurs codes [UCD](../fichse/medicament.md) pour les médicaments rétrocédés (établissements [ex-DG](../glossaire/ex-DG.md) et [ex-OQN](../glossaire/ex-OQN.md)) et les médicaments de la tarification à l’activité facturés par les établissements [ex-OQN](../glossaire/ex-OQN.md) et [ex-DG](../glossaire/ex-DG.md).
+Les médicaments délivrés en établissement sont recueillis dans la table [ER_UCD_R](../tables/DCIR/ER_UCD_F.md) par leurs codes [UCD](../fiches/medicament.md) pour les médicaments rétrocédés (établissements [ex-DG](../glossaire/ex-DG.md) et [ex-OQN](../glossaire/ex-OQN.md)) et les médicaments de la tarification à l’activité facturés par les établissements [ex-OQN](../glossaire/ex-OQN.md) et [ex-DG](../glossaire/ex-DG.md).
 
 Les médicaments de la tarification à l’activité délivrés en établissement sont également recueillis dans les tables du PMSI pour les établissements [ex-DG](../glossaire/ex-DG.md) et les [ex-OQN](../glossaire/ex-OQN.md). Il y a donc pour les établissements [ex-OQN](../glossaire/ex-OQN.md) et [ex-DG](../glossaire/ex-DG.md) et leurs médicaments de la tarification à l’activité un double recueil ([ER_UCD_R](../tables/DCIR/ER_UCD_F.md) et T_champaa).
 
