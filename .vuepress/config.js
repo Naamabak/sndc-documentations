@@ -83,7 +83,6 @@ const sidebar = [
                 ]
             },
             "/aller_plus_loin/Epi-Phare",
-            "/aller_plus_loin/cartographie_indicateurs",
             "/aller_plus_loin/internet",
             "/aller_plus_loin/bibliographie"
         ]
