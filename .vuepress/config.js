@@ -50,7 +50,7 @@ const sidebar = [
             },
             "/formation_snds/Sante_publique_France",
             {
-                title: "Guides de ReDSiam",
+                title: "Documents de ReDSiam",
                 path: "/formation_snds/redsiam/",
                 children: [
                     "/formation_snds/redsiam/guide"
@@ -100,6 +100,7 @@ const sidebar = [
             "/open_data/opendata_has",
             "/open_data/data_sante",
             "/open_data/terminologie_ans",
+            "/open_data/cartographie_indicateurs",
             "/open_data/finess",
             "/open_data/BDPM",
             "/open_data/data_gouv"
