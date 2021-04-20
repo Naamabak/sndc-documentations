@@ -28,6 +28,10 @@ Le gestionnaire de sécurité à Evreux traitera la demande après vérification
 Une fois le compte créé, le gestionnaire des habilitations adresse à l’AE ou l’AEd à l’origine de la demande une calculette associée au nouveau compte créé. 
 Au retour de la feuille d’émargement, la calculette est activée et l’utilisateur est informé par messagerie (copie AE), de son identifiant de connexion au portail SNIIRAM / SNDS. 
 
+## Ailleurs dans la documentation
+- [Guide de la CNAM pour un accès projet](../formation_snds/documents_cnam/guides_pedagogiques_snds/guide_pedagogique_acces_projets.md)
+- [Guide de la CNAM sur un accès permanent](../formation_snds/documents_cnam/guides_pedagogiques_snds/guide_pedagogique_acces_permanents.md)
+
 ## Références
 
 ::: tip Crédits
