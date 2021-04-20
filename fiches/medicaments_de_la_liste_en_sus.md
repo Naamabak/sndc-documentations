@@ -1,6 +1,22 @@
 # Médicaments de la liste en sus 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+Les médicaments peuvent être délivrés en ville ou en établissement. Les médicaments délivrés en ville sont recueillis dans le DCIR via la table [ER_PHA_R](../tables/DCIR/ER_PHA_R.md) et les codes [CIP](../fiche/medicament.md).
+
+Les médicaments délivrés en établissement sont de deux catégories : les médicaments rétrocédés et les médicaments de la tarification à l’activité (TAA) appartenant à des listes :
+* Listes en sus, 
+* Les médicaments soumis à autorisation temporaire d’utilisation (ATU) (en MCO, SSR et HAD), 
+* les médicaments thrombolytiques pour le traitement de l’AVC ischémique (MCO), 
+* les médicament coûteux hors liste en sus et hors ATU (HAD).
+
+Les médicaments délivrés en établissement sont recueillis dans la table [ER_UCD_R](../tables/DCIR/ER_UCD_F.md) par leurs codes [UCD](../fiche/medicament.md) pour les médicaments rétrocédés (établissements [ex-DG](glossaire/ex-DG.md) et [ex-OQN](../glossaire/ex-OQN.md)) et les médicaments de la tarification à l’activité facturés par les établissements [ex-OQN](../glossaire/ex-OQN.md) et [ex-DG](../glossaire/ex-DG.md).
+
+Les médicaments de la tarification à l’activité délivrés en établissement sont également recueillis dans les tables du PMSI pour les établissements [ex-DG](../glossaire/ex-DG.md) et les [ex-OQN](../glossaire/ex-OQN.md). Il y a donc pour les établissements [ex-OQN](../glossaire/ex-OQN.md) et [ex-DG](../glossaire/ex-DG.md) et leurs médicaments de la tarification à l’activité un double recueil ([ER_UCD_R](../tables/DCIR/ER_UCD_F.md) et T_champaa).
+
+::: warning
+Les médicaments délivrés par les établissements peuvent être déconditionnés et délivrés par fraction. Attention les variables numériques (`UCD_FRC_COE` et `COE_TAU`) indiquant le fractionnement en pourcentage dans les tables des médicaments du PMSI et la table [ER_UCD_R](../tables/ER_UCD_F.md) ne sont pas toujours sur la même échelle.
+:::
+
 Dans une première partie, nous présentons les médicaments facturés en sus des tarifs des séjours hospitaliers.   
 Dans une seconde partie, nous expliquons comment extraire du PMSI les dépenses associées aux médicaments de la liste en sus.
 
@@ -213,7 +229,7 @@ Pour plus de détail concernant la table affinée UCD, se reporter à la [page d
 
 
 ::: tip Crédits  
-Cette fiche a été rédigée par Noémie Courtejoie (DREES).
+Cette fiche a été rédigée par Noémie Courtejoie (DREES) et complétée par Guillaume Desjeux.
 :::
 
 
