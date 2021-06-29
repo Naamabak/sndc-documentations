@@ -92,7 +92,7 @@ Une fiche est en cours de rédaction sur la fiabilité de la date de décès dan
 
 ## Les variables concernant les droits
 ### La CMU-C
-La couverture maladie universelle complémentaire (CMU-C) permet aux assurés dont les ressources ne dépassent pas le plafond fixé par la loi de bénéficier d’une protection maladie complémentaire gratuite ([pour en savoir plus](https://www.ameli.fr/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante/cmu-complementaire)). La CMUC ne s’applique pas dans le département de Mayotte.  
+La couverture maladie universelle complémentaire (CMU-C) permet aux assurés dont les ressources ne dépassent pas le plafond fixé par la loi de bénéficier d’une protection maladie complémentaire gratuite. La CMUC ne s’applique pas dans le département de Mayotte.  
 L’étude de la CMU-C nécessite de travailler sur les personnes âgées de moins de 60 ans, afin d’exclure les personnes pouvant bénéficier de l’Allocation de Solidarité aux Personnes Âgées (Aspa, qui est le [minimum vieillesse](https://fr.wikipedia.org/wiki/Minimum_vieillesse) depuis 2006).  
 
 <!--
@@ -106,9 +106,13 @@ L’information sur la CMU de base est présente dans le **PMSI** depuis 2012 po
 
 Une [fiche](../fiches/cmu_c.md) est consacrée au repérage des bénéficiaires de la CMU-C. 
 
+::: tip Attention 
+Depuis le 1er novembre 2019, la Complémentaire santé solidaire remplace la CMU-C et l’ACS. Pour en savoir plus sur la [Complémentaire santé solidaire](https://www.ameli.fr/paris/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante).
+:::
+
 ### L'ACS
 L’aide à l’acquisition d’une complémentaire santé (ACS) est un dispositif destiné aux personnes à faibles revenus pour leur faciliter l’accès à une assurance maladie complémentaire.  
-Cette aide est accordée pour un an renouvelable aux personnes résidant en France de façon stable depuis plus de trois mois, en situation régulière et percevant des ressources comprises entre le plafond d'attribution de la CMU-C et 35 % au-delà, selon la composition du foyer ([pour en savoir plus](https://www.ameli.fr/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante/aide-paiement-complementaire-sante)).  
+Cette aide est accordée pour un an renouvelable aux personnes résidant en France de façon stable depuis plus de trois mois, en situation régulière et percevant des ressources comprises entre le plafond d'attribution de la CMU-C et 35 % au-delà, selon la composition du foyer.  
 
 <!--
 Depuis le 1er juillet 2015, il est possible d’identifier les bénéficiaires éligibles à l’ACS et ayant souscrit certains types de contrats d’assurance maladie complémentaire, à l’aide de la variable **BEN_ACS_TOP** dans la table des prestations ER_PRS_F.  
@@ -117,6 +121,10 @@ L’information sur l’ACS est absente du PMSI.
 -->
 
 Une [fiche](../fiches/acs.md) est consacrée au repérage des bénéficiaires de l'ACS dans le SNDS.  
+
+::: tip Attention 
+Depuis le 1er novembre 2019, la Complémentaire santé solidaire remplace la CMU-C et l’ACS. Pour en savoir plus sur la [Complémentaire santé solidaire](https://www.ameli.fr/paris/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante).
+:::
 
 ### L'AME
 L'Aide Médicale de l'État (AME) est destinée à permettre l'accès aux soins des personnes en situation irrégulière en France.  
