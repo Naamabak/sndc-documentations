@@ -13,4 +13,4 @@ Elle n'est pas applicable à Mayotte.
 
 # Références
  
-- [Site internet de l'Assurance maladie](https://www.ameli.fr/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante/cmu-complementaire)
+- [Site internet de la DREES](https://drees.solidarites-sante.gouv.fr/cmu-c-acs-css)
