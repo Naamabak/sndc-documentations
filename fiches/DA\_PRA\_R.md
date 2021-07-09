@@ -3,7 +3,7 @@ tags:
     - Professionnel de Santé
 ---
 
-# Référentiel des Professionnels de Santé: DA_PRA_R simplifié
+# Référentiel des Professionnels de Santé: DA\_PRA\_R simplifié
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 <TagLinks />
