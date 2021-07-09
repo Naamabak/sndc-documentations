@@ -52,7 +52,7 @@ L'ATIH restitue également des [statistiques sur la consommation annuelle des m�
 
 Les médicaments de la liste en sus peuvent être prescrits au cours de séjours (dans le public et privé) en MCO, HAD et SSR, ainsi qu’au cours d’actes et consultations externes MCO et SSR (dans le public).  
  
-En plus des médicaments de la liste en sus au sens strict, on trouve d’autres types de médicaments qui sont remboursés en sus du GHS.   
+En plus des médicaments de la liste en sus au sens strict, on trouve d’autres types de médicaments qui sont remboursés en sus des tarifs des séjours hospitaliers.   
 - les médicaments soumis à autorisation temporaire d’utilisation (ATU) (en MCO, SSR et HAD)
 - les médicaments thrombolytiques pour le traitement de l’AVC ischémique (MCO) 
 - les médicament coûteux hors liste en sus et hors ATU (HAD)
