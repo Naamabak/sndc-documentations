@@ -19,46 +19,41 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 
 ## 2021.06.24 Meetup-SNDS10
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/278726849/)
+Support de présentation : [pdf](../files/presentations/meetup-snds10/20210724_ANSM_meetup-datamed_MPL-2.0.pdf)
 
 ### Introduction : Présentation des parties prenantes et du projet
 - Présenté par : Joëlle Chong (Designer de services EIG), Line Rahal (Data Scientist EIG)
-- Support de présentation : A venir
 
-Vidéo à venir
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vlCoQ1CYofo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Concevoir la stratégie Data par le Design
 - Présenté par : Joëlle Chong (Designer de services EIG)
-- Support de présentation : A venir
 
-Vidéo à venir
+<iframe width="560" height="315" src="https://www.youtube.com/embed/14VCWMNkHcg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Exploiter les données de l'ANSM : du nettoyage et chaînage à la data visualisation
 - Présenté par : Line Rahal (Data Scientist EIG), Tim Vlaar (Data Scientist HDH)
-- Support de présentation : A venir
 
-Vidéo à venir
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wqDUZv3VVtc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 2021.06.11 Meetup-SNDS9
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/278465999/)
+Support de présentation : [pdf](../files/presentations/meetup-snds9/20210603_ANS_Meetup-ANS-SMT-MPL-2.0.pdf)
 
 ### La naissance du Serveur Multi-Terminologies de l'ANS
 - Présenté par : Thierry Dart (Directeur Pôle Données et interopérabilité sémantique à l'ANS), Yann Briand (Pharmacien expert sémantique), Tayeb Merabti (Directeur de programme "Terminologies de santé", responsable du SMT)
-- Support de présentation : A venir
 
-Vidéo à venir
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NOWmF0qRWSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Le projet SMT
 - Présenté par : Mélissa Mary (Ingénieure et experte sémantique), Tayeb Merabti (Directeur de programme "Terminologies de santé", responsable du SMT)
-- Support de présentation : A venir
 
-Vidéo à venir
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5FtZKLXr_sM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Les services SMT
 - Présenté par : Tayeb Merabti (Directeur de programme "Terminologies de santé", responsable du SMT), Abdelali Boussadi (Expert interopérabilité)
-- Support de présentation : A venir
 
-Vidéo à venir
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RkoGoQlGIpw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 2021.04.29 Meetup-SNDS8
 [Page de l'évènement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/277465346/)
