@@ -24,7 +24,7 @@ Lorsqu’un médicament disposait d'un code CIP 7, le code CIP 13 correspondant 
 
 ![schema 1](../files/Cnam/images_ciblage_medicaments/Medicaments_schema1.png)
 
-#### Calendrier de mise en plce du CIP 13 
+#### Calendrier de mise en place du CIP 13 
 Le calendrier de mise en place du CIP 13 est le suivant :
 
 ![schema 2](../files/Cnam/images_ciblage_medicaments/Medicaments_schema2.png)
