@@ -23,10 +23,10 @@ Les explications sont déclinées par spécialité hospitalière :
 Pour plus de détail sur ces spécialités, se reporter à la [documentation de l'ATIH](https://www.atih.sante.fr/domaines-d-activites/information-medicale), ou au 
 [panorama Etablissements de santé de la DREES](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/panoramas-de-la-drees/article/les-etablissements-de-sante-edition-2019).
 
-
-L'ensemble des dépenses associées à un séjour en établissement public comprend :
-* le **montant AMO** qui est la part légale prise en charge par l'assurance maladie obligatoire (AMO)  
-* le **reste à charge après AMO** payé par le patient et / ou son organisme complémentaire
+L'ensemble des dépenses associées aux séjours ou ACE en établissement public comprend :
+- le montant, que nous noterons pour simplifier, **"montant AMO"**, et qui comprend la part prise en charge par l'assurance maladie obligatoire (AMO), mais pas les parts supplémentaires prises en charge par le public (Sécurité sociale, Etat, ou organismes assurant les remboursements au titre de la CMU-C) pour les bénéficiaires de la CMU-C, de l'AME, des soins urgents, ainsi que pour les détenus.  
+  Nous intégrons à ce montant d'éventuelles dépenses en sus (pour molécules onéreuses notamment) intégralement prises en charge par l'AMO.
+- le **reste à charge après AMO** (RAC AMO), payé par le patient et / ou son organisme complémentaire
 
 Dans cette fiche, nous expliquons comment extraire à partir du PMSI :
 - le montant AMO d'un séjour en établissement public  
@@ -217,7 +217,7 @@ sous `T_MCOaaVALOACE`.
 Cette table contient une ligne par ACE (valorisé ou non).  
 On peut obtenir des détails sur la nature de l'ACE (accueil et traitement des urgences, actes d'analyse, dialyse, forfaits petit matériel, etc.) à l'aide de la variable `ACT_COD` de la table `T_MCOaaFBSTC` dont la nomenclature figure en [annexe de la fiche sur les ACE](actes_consult_externes.md#annexe).  
 Le montant des dépenses est donné par la variable `MNT_BR`, la base de remboursement de la sécurité sociale, car il n'existe pas de dépassements en ACE.  
-La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie (part légale et participations supplémentaires (détenus, SU, etc.)).    
+La variable `MNT_REMB` indique le montant remboursé par l'assurance maladie.    
 Le montant du reste à charge (RAC AMO) peut-être calculé comme la différence entre `MNT_BR` et `MNT_REMB`. 
 
 La table patients correspondant aux ACE est `T_MCOaaCSTC`. Elle contient notamment l'identifiant bénéficiaire `NIR_ANO_17`.  
