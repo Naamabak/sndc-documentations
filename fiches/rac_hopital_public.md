@@ -409,7 +409,7 @@ On utilise les variables suivantes :
 
 En MCO, on distingue 5 cas de figure pour le calcul du RAC AMO.  
 
-::: warning 
+::: warning CALCUL DU RAC AMO
 Calcul de la variable `rac` dans les différents cas de figure :  
 1. `rac` = 0 si `FJ_COD_PEC`==R & `TAUX_C`==100 (exonération de TM et de FJ)
 2. `rac` = `FAC_18`*18  + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas d'exonération de FJ)
@@ -550,7 +550,7 @@ On utilise les variables suivantes :
 
 
 En SSR, on distingue 5 cas de figure pour le calcul du RAC AMO.  
-::: warning 
+::: warning CALCUL DU RAC AMO
 Calcul de la variable `rac` dans les différents cas de figure :  
 1. `rac` = 0 si `FJ_COD_PEC`==R & `TAUX_C`==100 (exonération de TM et de FJ)
 2. `rac` = `FAC_18`*18 + `FJ_C2` si `FJ_COD_PEC`!=R & `TAUX_C`==100 (exonération de TM mais pas de FJ)
@@ -638,7 +638,7 @@ On utilise les variables suivantes :
 - `TM_C` : montant à facturer au titre du ticket modérateur (version corrigé de `FAC_MNT_TM` de la table `T_HADaaSTC`)
 
 En HAD, on distingue deux cas de figure pour le calcul du RAC AMO.  
-::: warning 
+::: warning CALCUL DU RAC AMO
 Calcul de la variable `rac` dans les différents cas de figure :  
 1. `rac` = `FAC_18`*18 si `TAUX_C`==100 (pas de TM, éventuellement PF si `FAC_18` == 1)
 2. `rac` = `TM_C` si `TAUX_C`!=100 (pas d'exonération de TM)
