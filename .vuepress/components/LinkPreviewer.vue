@@ -6,7 +6,7 @@
          <div class="parentcard">
       <div id="mycard" class="card"
           v-show="shown">
-        <img :src="previewImg" alt=""
+        <img src="../../files/images/glossaire.png" alt=""
              class="card-img-top">
         <div  class="card-body">
             <h5  class="card-title">{{previewTitle}}</h5>
@@ -23,7 +23,6 @@ export default {
       href : String,
       text : String,
       previewTitle : String,
-      previewImg : String,
       previewText : String
   },
 
@@ -54,11 +53,9 @@ export default {
 
 #mycard .card {
     width: 250px;
-
     font-size: 10px;
     color: black;
     z-index: 100;
-
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
@@ -69,11 +66,11 @@ export default {
 }
 
 #mycard .card img {
-    width: 150px;
+    width: 80px;
 }
 
  .card-title {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0.5rem;
     color: black;
     margin-top: 0;
@@ -94,6 +91,7 @@ export default {
 
 .card-img,
 .card-img-top {
+  width: 250px;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   margin-bottom: 0;
