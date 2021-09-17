@@ -56,11 +56,6 @@ function getTitleAndTextFromFilename(filename) {
     return null;
 }
 
-function updateTotal(total){
-    total_changes = total_changes + total;
-    console.log(total_changes)
-}
-
 /**
  * Changes the links to the glossary by a link-previewer markup to build preview card
  * Only for links to the glossary outside the glossary
@@ -72,7 +67,7 @@ function switchInPaths() {
             fs.readFile(filepath, function(err, data) {
                 if(err) throw err;
                 let str = data.toString();
-                const array = str.match(/\[[^\[]*\]\((\.\.|https:\/\/documentation\-snds\.health\-data\-hub\.fr)\/glossaire\/[^\[]*\.(md|html)\)/g);
+                const array = str.match(/\[[^\[]*\]\((\.\.|https:\/\/documentation\-snds\.health\-data\-hub\.fr|\.\.\/\.\.)\/glossaire\/[^\[]*\.(md|html)\)/g);
                 if (array){
                     total_changes_ext = total_changes_ext + array.length;
                     for(let i of array) {
@@ -80,11 +75,14 @@ function switchInPaths() {
                         let link_text = arr[0].slice(1);
                         let link = arr[1].slice(0,-1);
                         let filename;
-                        if(link.split('/')[2] !== "documentation-snds.health-data-hub.fr") {
-                            filename = link.split('/')[2];
+                        if(link.split('/')[2] === "documentation-snds.health-data-hub.fr") {
+                            filename = link.split('/')[4].replace(".html", ".md");         
+                        } else if (link.split('/')[2] === "glossaire"){
+                            filename = link.split('/')[3];
                             link = link.replace(".md",".html");
                         } else{
-                            filename = link.split('/')[4].replace(".html", ".md");
+                            filename = link.split('/')[2];
+                            link = link.replace(".md",".html");
                         }
                         let result = getTitleAndTextFromFilename(filename);
                         let markup = "<link-previewer href=\""+link+"\" text=\""+
@@ -103,6 +101,7 @@ function switchInPaths() {
         });
   })
 }
+
 /**
  * Changes the links to the glossary by a link-previewer markup to build preview card
  * Only for link to the glossary within the glossary
@@ -137,7 +136,6 @@ function switchInGlossary() {
                     console.log("___INFO: création des preview pour les références internes au glossaire___");
                     console.log(total_changes_int)
                 }
-                
             });
         });
   })
@@ -147,5 +145,7 @@ function switchInGlossary() {
 getSummary(glossary_path);
 switchInGlossary();
 switchInPaths();
+
+
 
 

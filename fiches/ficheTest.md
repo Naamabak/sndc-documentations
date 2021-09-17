@@ -27,6 +27,3 @@ Dans le SNDS, on retrouve entre autre le <link-previewer
 
 Pour les tables, il serait peut-être plus judicieux de garder l'ancienne preview, comme celle-ci [NS_PRS_F 1](../tables/DCIRS/NS_PRS_F.md). Et normalement on aurait une preview uniquement pour la première occurence, par exemple : [NS_PRS_F 2](../tables/DCIRS/NS_PRS_F.md), n'a pas de preview car elle apparait déjà.
 
-
-
-Ici je fais un autre test pour voir que seul la première occurence [AME 1](../glossaire/AME.md) fait apparaitre la page de preview [AME 2](../glossaire/AME.md). Et pourquoi pas une 3e tant qu'on y est [AME 3](../glossaire/AME.md).
