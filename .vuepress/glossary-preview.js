@@ -1,7 +1,9 @@
 const fs = require('fs');
 const glob = require("glob")
 const glossary_path = "./glossaire";
-var results = []
+var results = [];
+var total_changes_int = 0;
+var total_changes_ext = 0;
 
 
 /**
@@ -54,12 +56,16 @@ function getTitleAndTextFromFilename(filename) {
     return null;
 }
 
+function updateTotal(total){
+    total_changes = total_changes + total;
+    console.log(total_changes)
+}
+
 /**
  * Changes the links to the glossary by a link-previewer markup to build preview card
  * Only for links to the glossary outside the glossary
  */
 function switchInPaths() { 
-    let total_changes = 0;
     glob("./!(node_modules|.vuepress|files|contribuer)/**/*.md", function (err, files) {
         if(err) throw err;
         files.forEach(filepath => {
@@ -68,7 +74,7 @@ function switchInPaths() {
                 let str = data.toString();
                 const array = str.match(/\[[^\[]*\]\((\.\.|https:\/\/documentation\-snds\.health\-data\-hub\.fr)\/glossaire\/[^\[]*\.(md|html)\)/g);
                 if (array){
-                    total_changes = total_changes + array.length;
+                    total_changes_ext = total_changes_ext + array.length;
                     for(let i of array) {
                         let arr = i.split('](');
                         let link_text = arr[0].slice(1);
@@ -89,30 +95,29 @@ function switchInPaths() {
                            if (err) return console.log(err);
                     });
                 }
-                
+                if(files.indexOf(filepath, 0) === files.length-1){
+                    console.log("___INFO: création des preview pour les références externes au glossaire___");
+                    console.log(total_changes_ext)
+                }
             });
-            
         });
   })
-  console.log("___INFO: création des preview pour les références externes au glossaire___");
-  console.log(total_changes)
 }
 /**
  * Changes the links to the glossary by a link-previewer markup to build preview card
  * Only for link to the glossary within the glossary
  */
 function switchInGlossary() { 
-    let total_changes = 0;
     glob("./glossaire/*.md", function (err, files) {
         if(err) throw err;
         files.forEach(filepath => {
             fs.readFile(filepath, function(err, data) {
-                if(err) throw err;
 
+                if(err) throw err;
                 let str = data.toString();
                 const array = str.match(/\[[^\[]+\]\([^\/\[]+\.md\)/g);
-                if (array){
-                    total_changes = total_changes + array.length;
+                if (array){                    
+                    total_changes_int = total_changes_int + array.length;
                     for(let i of array) {
                         let arr = i.split('](');
                         let link_text = arr[0].slice(1);
@@ -128,18 +133,19 @@ function switchInGlossary() {
                             if (err) return console.log(err);
                     });
                 }
+                if(files.indexOf(filepath, 0) === (files.length-1)){
+                    console.log("___INFO: création des preview pour les références internes au glossaire___");
+                    console.log(total_changes_int)
+                }
                 
             });
-            
         });
   })
-  console.log("___INFO: création des preview pour les références internes au glossaire___");
-  console.log(total_changes)
 }
 
 
 getSummary(glossary_path);
-switchInPaths();
 switchInGlossary();
+switchInPaths();
 
 
