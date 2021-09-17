@@ -2,8 +2,6 @@ const fs = require('fs');
 const glob = require("glob")
 const glossary_path = "./glossaire";
 var results = []
-//let paths_to_switch = ['./fiches', './glossaire', './A_propos', './Boite_aux_lettres', './aller_plus_loin', 
- //                      './evenements', './formation_snds', './introduction', 'open_data']
 
 
 /**
@@ -48,7 +46,7 @@ function getSummary(path) {
  */
 function getTitleAndTextFromFilename(filename) { 
     for(let elem of results) {
-        if (elem.file === filename){
+        if (elem.file.toUpperCase() === filename.toUpperCase()){
             return elem;
         }
     }
@@ -57,8 +55,8 @@ function getTitleAndTextFromFilename(filename) {
 }
 
 /**
- * 
- * 
+ * Changes the links to the glossary by a link-previewer markup to build preview card
+ * Only for links to the glossary outside the glossary
  */
 function switchInPaths() { 
     glob("./!(node_modules|.vuepress|files|contribuer)/**/*.md", function (err, files) {
@@ -68,25 +66,30 @@ function switchInPaths() {
                 if(err) throw err;
 
                 let str = data.toString();
-                const array = str.match(/\[[^\[]*\]\(\.\.\/glossaire\/[^\[]*\.md\)/g);
+                const array = str.match(/\[[^\[]*\]\((\.\.|https:\/\/documentation\-snds\.health\-data\-hub\.fr)\/glossaire\/[^\[]*\.(md|html)\)/g);
                 if (array){
                     for(let i of array) {
-                        let arr = i.split('(');
-                        let link_text = arr[0].slice(1,-1);
-                        console.log(link_text)
+                        let arr = i.split('](');
+                        let link_text = arr[0].slice(1);
                         let link = arr[1].slice(0,-1);
-                        console.log(link)
-                        let filename = link.split('/')[2];
-                        console.log(filename)
-                        link = link.replace(".md",".html");
+                        let filename;
+                        if(link.split('/')[2] !== "documentation-snds.health-data-hub.fr") {
+                            filename = link.split('/')[2];
+                            link = link.replace(".md",".html");
+                        } else{
+                            filename = link.split('/')[4].replace(".html", ".md");
+                        }
                         let result = getTitleAndTextFromFilename(filename);
                         let markup = "<link-previewer href=\""+link+"\" text=\""+
                                  link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+result.text+"\" />";
-                        console.log(markup)
-                        //str.replace(i, markup)
+                        str = str.replace(i, markup);
+                        fs.writeFile(filepath, str, function (err) { //'utf8', 
+                           if (err) return console.log(err);
+                        });
                     }
-                    //console.log(filepath);
-                    //console.log(array);
+                    console.log(str);
+                    console.log(filepath);
+                    console.log(array);
                 }
                 
             });
@@ -94,7 +97,10 @@ function switchInPaths() {
         });
   })
 }
-
+/**
+ * Changes the links to the glossary by a link-previewer markup to build preview card
+ * Only for link to the glossary within the glossary
+ */
 function switchInGlossary() { 
     glob("./glossaire/*.md", function (err, files) {
         if(err) throw err;
@@ -106,26 +112,19 @@ function switchInGlossary() {
                 const array = str.match(/\[[^\[]+\]\([^\/\[]+\.md\)/g);
                 if (array){
                     for(let i of array) {
-                        let arr = i.split('(');
-                        let link_text = arr[0].slice(1,-1);
-                        //console.log(link_text)
+                        let arr = i.split('](');
+                        let link_text = arr[0].slice(1);
                         let link = arr[1].slice(0,-1);
-                        //console.log(link)
-                        let filename = link
-                        //console.log(filename)
+                        let filename = link;
                         link = link.replace(".md",".html");
                         let result = getTitleAndTextFromFilename(filename);
                         let markup = "<link-previewer href=\""+link+"\" text=\""+
                                  link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+result.text+"\" />";
-                        //console.log(markup)
-                        str = str.replace(i, markup)
-                        console.log(str)
-                        fs.writeFile("./glossaire/"+filename, str, function (err) { //'utf8', 
+                        str = str.replace(i, markup);
+                        fs.writeFile(filepath, str, function (err) { //'utf8', 
                             if (err) return console.log(err);
                          });
                     }
-                    console.log(filepath);
-                    console.log(array);
                 }
                 
             });
