@@ -83,13 +83,13 @@ function switchInPaths() {
                         let markup = "<link-previewer href=\""+link+"\" text=\""+
                                  link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+result.text+"\" />";
                         str = str.replace(i, markup);
-                        fs.writeFile(filepath, str, function (err) { //'utf8', 
-                           if (err) return console.log(err);
-                        });
                     }
-                    console.log(str);
-                    console.log(filepath);
-                    console.log(array);
+                    fs.writeFile(filepath, str, function (err) { //'utf8', 
+                           if (err) return console.log(err);
+                    });
+                    //console.log(str);
+                    //console.log(filepath);
+                    //console.log(array);
                 }
                 
             });
@@ -121,10 +121,13 @@ function switchInGlossary() {
                         let markup = "<link-previewer href=\""+link+"\" text=\""+
                                  link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+result.text+"\" />";
                         str = str.replace(i, markup);
-                        fs.writeFile(filepath, str, function (err) { //'utf8', 
-                            if (err) return console.log(err);
-                         });
                     }
+                    fs.writeFile(filepath, str, function (err) { //'utf8', 
+                            if (err) return console.log(err);
+                    });
+                    //console.log(str);
+                    //console.log(filepath);
+                    //console.log(array);
                 }
                 
             });
@@ -137,4 +140,5 @@ function switchInGlossary() {
 getSummary(glossary_path);
 switchInPaths();
 switchInGlossary();
+
 
