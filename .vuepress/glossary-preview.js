@@ -59,15 +59,16 @@ function getTitleAndTextFromFilename(filename) {
  * Only for links to the glossary outside the glossary
  */
 function switchInPaths() { 
+    let total_changes = 0;
     glob("./!(node_modules|.vuepress|files|contribuer)/**/*.md", function (err, files) {
         if(err) throw err;
         files.forEach(filepath => {
             fs.readFile(filepath, function(err, data) {
                 if(err) throw err;
-
                 let str = data.toString();
                 const array = str.match(/\[[^\[]*\]\((\.\.|https:\/\/documentation\-snds\.health\-data\-hub\.fr)\/glossaire\/[^\[]*\.(md|html)\)/g);
                 if (array){
+                    total_changes = total_changes + array.length;
                     for(let i of array) {
                         let arr = i.split('](');
                         let link_text = arr[0].slice(1);
@@ -87,21 +88,21 @@ function switchInPaths() {
                     fs.writeFile(filepath, str, function (err) { //'utf8', 
                            if (err) return console.log(err);
                     });
-                    //console.log(str);
-                    //console.log(filepath);
-                    //console.log(array);
                 }
                 
             });
             
         });
   })
+  console.log("___INFO: création des preview pour les références externes au glossaire___");
+  console.log(total_changes)
 }
 /**
  * Changes the links to the glossary by a link-previewer markup to build preview card
  * Only for link to the glossary within the glossary
  */
 function switchInGlossary() { 
+    let total_changes = 0;
     glob("./glossaire/*.md", function (err, files) {
         if(err) throw err;
         files.forEach(filepath => {
@@ -111,6 +112,7 @@ function switchInGlossary() {
                 let str = data.toString();
                 const array = str.match(/\[[^\[]+\]\([^\/\[]+\.md\)/g);
                 if (array){
+                    total_changes = total_changes + array.length;
                     for(let i of array) {
                         let arr = i.split('](');
                         let link_text = arr[0].slice(1);
@@ -125,15 +127,14 @@ function switchInGlossary() {
                     fs.writeFile(filepath, str, function (err) { //'utf8', 
                             if (err) return console.log(err);
                     });
-                    //console.log(str);
-                    //console.log(filepath);
-                    //console.log(array);
                 }
                 
             });
             
         });
   })
+  console.log("___INFO: création des preview pour les références internes au glossaire___");
+  console.log(total_changes)
 }
 
 
