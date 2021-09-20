@@ -33,7 +33,16 @@ function getSummary(path) {
                     result.text = arr[3];
                 } else {
                     result.text = arr[4];
-                }  
+                } 
+                let str = result.text.toString();
+                const array = str.match(/\[[^\[]+\]\([^\/\[]+\.md\)/g);
+                if (array){                    
+                    for(let i of array) {
+                        let arr = i.split('](');
+                        let link_text = arr[0].slice(1);
+                        result.text = result.text.replace(i, link_text);
+                    }
+                }
             }
             results.push(result)
         });
