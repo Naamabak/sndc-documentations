@@ -35,7 +35,7 @@ function getSummary(path) {
                     result.text = arr[4];
                 } 
                 let str = result.text.toString();
-                const array = str.match(/\[[^\[]+\]\([^\/\[]+\.md\)/g);
+                const array = str.match(/\[[^\[]+\]\([^\/\[]+\)/g);
                 if (array){                    
                     for(let i of array) {
                         let arr = i.split('](');
@@ -94,8 +94,9 @@ function switchInPaths() {
                             link = link.replace(".md",".html");
                         }
                         let result = getTitleAndTextFromFilename(filename);
+                        let esc_text = result.text.replace('"', '\"');
                         let markup = "<link-previewer href=\""+link+"\" text=\""+
-                                 link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+result.text+"\" />";
+                                 link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+esc_text+"\" />";
                         str = str.replace(i, markup);
                     }
                     fs.writeFile(filepath, str, function (err) { //'utf8', 
@@ -133,8 +134,9 @@ function switchInGlossary() {
                         let filename = link;
                         link = link.replace(".md",".html");
                         let result = getTitleAndTextFromFilename(filename);
+                        let esc_text = result.text.replace('"', '\"');
                         let markup = "<link-previewer href=\""+link+"\" text=\""+
-                                 link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+result.text+"\" />";
+                                 link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+esc_text+"\" />";
                         str = str.replace(i, markup);
                     }
                     fs.writeFile(filepath, str, function (err) { //'utf8', 
