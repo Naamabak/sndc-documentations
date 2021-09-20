@@ -35,7 +35,7 @@ function getSummary(path) {
                     result.text = arr[4];
                 } 
                 let str = result.text.toString();
-                const array = str.match(/\[[^\[]+\]\([^\/\[]+\)/g);
+                const array = str.match(/\[[^\[]+\]\((https:\/\/|)[^\[]+(\.md|)\)/g);
                 if (array){                    
                     for(let i of array) {
                         let arr = i.split('](');
@@ -94,7 +94,7 @@ function switchInPaths() {
                             link = link.replace(".md",".html");
                         }
                         let result = getTitleAndTextFromFilename(filename);
-                        let esc_text = result.text.replace('"', '\"');
+                        let esc_text = result.text.replace(/"/g, '&quot;');
                         let markup = "<link-previewer href=\""+link+"\" text=\""+
                                  link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+esc_text+"\" />";
                         str = str.replace(i, markup);
@@ -134,7 +134,7 @@ function switchInGlossary() {
                         let filename = link;
                         link = link.replace(".md",".html");
                         let result = getTitleAndTextFromFilename(filename);
-                        let esc_text = result.text.replace('"', '\"');
+                        let esc_text = result.text.replace(/"/g, '&quot;');
                         let markup = "<link-previewer href=\""+link+"\" text=\""+
                                  link_text+"\" preview-title=\""+result.title+"\" preview-text=\""+esc_text+"\" />";
                         str = str.replace(i, markup);
