@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 IFS=':'
 echo ___INFO: création des preview pour les références externes aux tables___ 
 grep -ERio --exclude-dir={node_modules,.vuepress,files,contribuer} --include \*.md '\[[^\/]*\]\(\.\.\/tables\/[^\/]*\/[^\/]*\.md\)' . | wc -l
@@ -14,7 +14,7 @@ grep -ERio --exclude-dir={node_modules,.vuepress,files,contribuer} --include \*.
     escaped_output=$(printf '%s\n' "$output" | sed -e 's/[]\/$*.^[]/\\&/g')
     escaped_input=$(printf '%s\n' "$seq" | sed -e 's/[]\/$*.^[]/\\&/g')
     #sed -i -e "s|$escaped_input|$escaped_output|g" "$file"
-    sed -i "0,|$escaped_input|{s|$escaped_input|$escaped_output|}" "$file"
+    sed -i "0,/$escaped_input/{s/$escaped_input/$escaped_output/}" "$file"
 done
 echo ___INFO: création des preview pour les références internes aux tables___
 grep -ERio --exclude-dir={node_modules,.vuepress,files} --include \*.md '\[[^\/]*\]\(\/tables\/[^\/]*)' ./tables/ | wc -l
@@ -26,5 +26,5 @@ grep -ERio --exclude-dir={node_modules,.vuepress,files} --include \*.md '\[[^\/]
     escaped_output=$(printf '%s\n' "$output" | sed -e 's/[]\/$*.^[]/\\&/g')
     escaped_input=$(printf '%s\n' "$seq" | sed -e 's/[]\/$*.^[]/\\&/g')
     #sed -i -e "s|$escaped_input|$escaped_output|g" "$file"
-    sed -i "0,|$escaped_input|{s|$escaped_input|$escaped_output|}" "$file"
+    sed -i "0,/$escaped_input/{s/$escaped_input/$escaped_output/}" "$file"
 done
