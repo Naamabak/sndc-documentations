@@ -1,7 +1,7 @@
 # PS - Professionnel de santé 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Les Professionnel de santé (PS) sont des personnes physiques pouvent prescrire ou exécuter des prestations de santé.
+Les Professionnel de santé (PS) sont des personnes physiques pouvant prescrire ou exécuter des prestations de santé.
 
 Les PS sont identifiés par un [numéro Adeli](ADELI.md), ou un numero [RPPS](RPPS.md) pour les médecins, sages-femmes, chirurgiens-dentistes et pharmaciens.
 
