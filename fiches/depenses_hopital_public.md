@@ -35,13 +35,13 @@ Dans cette fiche, nous expliquons comment extraire à partir du PMSI :
 
 Pour obtenir l'ensemble des dépenses associées à un séjour en établissement public, 
 il faut ajouter au montant AMO décrit dans la présente fiche, le montant du RAC AMO du séjour.   
-Une fiche est en cours de rédaction sur le calcul du reste à charge après AMO en établissement public.
+La méthode de calcul du reste à charge après AMO en établissement public est présentée dans la fiche [reste à charge après AMO en établissements de santé publics](rac_hopital_public.md).
 
 Le montant AMO ici défini exclut les parts supplémentaires prises en charge par le public (Sécurité sociale, Etat, ou organismes assurant les remboursements au titre de la CMU-C)
 pour les bénéficiaires de la CMU-C, de l'AME, des soins urgents, ainsi que pour les détenus. 
 À l'hôpital public, le montant de ces parts supplémentaires est égal à celui du RAC opposable (tarif de convention - montant AMO) : 
 des éléments permettant d'identifier les populations concernées dans le PMSI (CMU-C, AME, SU, détenus) 
-et de calculer leur RAC opposable figurent dans la fiche en cours de rédaction sur le calcul du RAC AMO en établissement public.
+et de calculer leur RAC opposable figurent dans la fiche [reste à charge après AMO en établissements de santé publics](rac_hopital_public.md).
 
 En complément, des informations sur les dépenses en établissements de santé privés 
 se trouvent dans la fiche sur [les dépenses des établissements de santé privés (à partir du DCIRS)](fiche_etab_prives.md).
