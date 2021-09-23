@@ -302,7 +302,7 @@ Dans la table `T_MCOaaB`, qui est la **table de description du séjour**, nous c
 - `TYP_GEN_RSA` : type de génération automatique du résumé de sortie anonyme
 
 ::: warning ATTENTION
-Les variables `MNT_18` (qui n'existe qu'en MCO) et `FAC_18E` (tous PMSI) ne figurent plus dans les tables du SNDS à partir de 2019. Après cette date, il est possible de reconstituer le montant de la participation forfaitaire pour actes lourds et coûteux à partir du code d'exonération du ticket modérateur (codes "1" et "C" notamment), mais cette méthode reste à améliorer.     
+À partir de 2019, le montant du ticket modérateur forfaitaire (TMF) passe de 18 à 20 € et les variables `MNT_18` (qui n'existe qu'en MCO) et `FAC_18E` (tous PMSI) sont remplacées par `MNT_TMF` et `TOP_TMF` respectivement.     
 :::
 
 ### Filtres à ajouter
