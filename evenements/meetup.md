@@ -17,7 +17,23 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 - [Chaîne youtube](https://www.youtube.com/channel/UCFmHnLZ31EgSrPhZQTM9weQ) du HealthDataHub
 - [Dossier sur GitLab](https://gitlab.com/healthdatahub/documentation-snds/tree/master/files/presentations) contenant l'ensemble des présentations
 
-## 2021.06.24 Meetup-SNDS10
+
+## 2021.06.24 Meetup - SNDS11 - BOAS, soutien au développement et à la validation d’algorithmes de ciblage
+[Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/280593950/)
+
+
+### Le lancement de BOAS et l’appel à projets
+- Présenté par : Romain Girard, équipe Open Source au Health Data Hub
+Support de présentation : [pdf](../files/presentations/meetup-snds11/20211005_HDH_meetup11-BOAS_MPL-2.0.pdf)
+
+### Pourquoi un algorithme de ciblage ? Pourquoi le valider ? Un cas d’usage
+- Présenté par : Malek Bentayeb, épidémiologiste au Health Data Hub
+Support de présentation : [pdf](../files/presentations/meetup-snds11/20211005_HDH_meetup11-ciblage_MPL-2.0.pdf)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GXHxIHfXV0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 2021.06.24 Meetup - SNDS10
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/278726849/)
 Support de présentation : [pdf](../files/presentations/meetup-snds10/20210724_ANSM_meetup-datamed_MPL-2.0.pdf)
 
@@ -36,7 +52,7 @@ Support de présentation : [pdf](../files/presentations/meetup-snds10/20210724_A
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wqDUZv3VVtc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 2021.06.11 Meetup-SNDS9
+## 2021.06.11 Meetup - SNDS9
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/278465999/)
 Support de présentation : [pdf](../files/presentations/meetup-snds9/20210603_ANS_Meetup-ANS-SMT-MPL-2.0.pdf)
 
@@ -55,7 +71,7 @@ Support de présentation : [pdf](../files/presentations/meetup-snds9/20210603_AN
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RkoGoQlGIpw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 2021.04.29 Meetup-SNDS8
+## 2021.04.29 Meetup - SNDS8
 [Page de l'évènement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/277465346/)
 
 ### Présentation du portail ScanSanté
@@ -76,7 +92,7 @@ Support de présentation : [pdf](../files/presentations/meetup-snds9/20210603_AN
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lwVXci18eXc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 2021.03.11 Meetup-SNDS7
+## 2021.03.11 Meetup - SNDS7
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/276539610/)
 
 ### Introduction globale sur les données de synthèse
@@ -113,7 +129,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gDhQZxVaZfk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## 2020.11.26 Meetup-SNDS6
+## 2020.11.26 Meetup - SNDS6
 
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/274203888/)
 
@@ -136,7 +152,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a4RYnxV5my4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 2020.02.20 Meetup-SNDS5
+## 2020.02.20 Meetup - SNDS5
 
 [Page de l’événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/268318992/)
 
@@ -158,7 +174,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Support de présentation :
 [pdf](../files/presentations/meetup-snds5/20200220_meetupsnds5_redsiam.pdf)
 
-## 2019.11.28 Meetup-SNDS4
+## 2019.11.28 Meetup - SNDS4
 
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/266283776/)
 
@@ -183,7 +199,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4eqnTq_hYIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 2019.09.19 Meetup-SNDS3
+## 2019.09.19 Meetup - SNDS3
 
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/264156369/)
 
@@ -213,7 +229,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ARhlmnBi_to" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 2019.06.12 Meetup-SNDS2
+## 2019.06.12 Meetup - SNDS2
 
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/261637008/)
 
@@ -248,7 +264,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-wGL753gCrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 2019.03.27 Meetup-SNDS1
+## 2019.03.27 Meetup - SNDS1
 
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/259764548/)
 
