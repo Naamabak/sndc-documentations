@@ -18,17 +18,17 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 - [Dossier sur GitLab](https://gitlab.com/healthdatahub/documentation-snds/tree/master/files/presentations) contenant l'ensemble des présentations
 
 
-## 2021.06.24 Meetup - SNDS11 - BOAS, soutien au développement et à la validation d’algorithmes de ciblage
+## 2021.09.14 Meetup - SNDS11 - BOAS, soutien au développement et à la validation d’algorithmes de ciblage
 [Page de l'événement](https://www.meetup.com/fr-FR/Health-Data-Hub/events/280593950/)
 
 
 ### Le lancement de BOAS et l’appel à projets
 - Présenté par : Romain Girard, équipe Open Source au Health Data Hub
-Support de présentation : [pdf](../files/presentations/meetup-snds11/20211005_HDH_meetup11-BOAS_MPL-2.0.pdf)
+- Support de présentation : [pdf](../files/presentations/meetup-snds11/20211005_HDH_meetup11-BOAS_MPL-2.0.pdf)
 
 ### Pourquoi un algorithme de ciblage ? Pourquoi le valider ? Un cas d’usage
 - Présenté par : Malek Bentayeb, épidémiologiste au Health Data Hub
-Support de présentation : [pdf](../files/presentations/meetup-snds11/20211005_HDH_meetup11-ciblage_MPL-2.0.pdf)
+- Support de présentation : [pdf](../files/presentations/meetup-snds11/20211005_HDH_meetup11-ciblage_MPL-2.0.pdf)
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GXHxIHfXV0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
