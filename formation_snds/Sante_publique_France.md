@@ -6,7 +6,7 @@ Documents publiés par [Santé publique France](../glossaire/SpF.md) sur ce site
 ## SNDS, ce qu'il faut savoir
 
 ::: tip
-Télécharger [SNDS, ce qu'il faut savoir](../files/Sante_publique_France/2020-10_SpF_SNDS-ce-quil-faut-savoir_V2_MPL-2.0.docx) [Sante publique France - MPL-2.0], mise à jour d'octobre 2020.
+Télécharger [SNDS, ce qu'il faut savoir](../files/Sante_publique_France/2021-10-SpF-SNDS-ce-quil-faut-savoir-v3-MPL-2.0.pdf) [Sante publique France - MPL-2.0], mise à jour d'octobre 2021.
 :::
 
 Le document "SNDS, ce qu’il faut savoir" se veut une aide à l’utilisation des données du DCIR, du PMSI (MCO, SSR, HAD, RIMP) et des causes médicales de décès sur le portail SNDS. 
