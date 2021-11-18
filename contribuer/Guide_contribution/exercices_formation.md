@@ -3,17 +3,6 @@
 
 Cette page contient les travaux pratiques des formations GitLab pour contribuer à la documentation.
 
-Le support de formation ci-dessous peut être ouvert en [suivant ce lien](https://frama.link/formation-gitlab). 
-
-<style>
-.responsive-wrap iframe{ max-width: 95%; }
-</style>
-<div class="responsive-wrap">
-<p style="text-align:center;">
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSCZjdOn5mObOv8bnkKdLfyLA0lLg9h0q0vW48sAfj_DMcbooNuLv6cTO8t06h8k-GcK0GRjSETP_RE/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-</iframe>
-</p>
-</div>
 
 ## TP 1 : Explorer les outils
 
