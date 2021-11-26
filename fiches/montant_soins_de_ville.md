@@ -207,7 +207,7 @@ Cependant, on trouve deux types d’indicateurs pour analyser les dépenses à l
 - les indicateurs bruts : montant de la dépense, quantité, montant versé/remboursé, base de remboursement et montant du dépassement
 - les indicateurs préfiltrés: montant de la dépense de la prestation, quantité de la prestation, montant versé/remboursé (part de base uniquement) et montant du dépassement de la prestation
 
-Les indicateurs bruts correspondent aux variables du DCIR (`PRS_PAI_MNT`, `PRS_ ACT_QTE`, `PRS_REM_MNT` et `BSE_REM_BSE`). 
+Les indicateurs bruts correspondent aux variables du DCIR (`PRS_PAI_MNT`, `PRS_ ACT_QTE`, `PRS_REM_MNT` et `PRS_REM_BSE`). 
 **Lorsque l'on utilise les indicateurs bruts, il est nécessaire de poser un filtre sur le type de remboursement (la variable `PRS_REM_TYP`).**
 
 | Type de remboursement | Libellé du type de remboursement |
