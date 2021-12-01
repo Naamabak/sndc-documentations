@@ -131,5 +131,5 @@ Vous pouvez donc vous reporter à la fiche [Dépenses de soins de ville dans le 
 - Statistique mensuelle des cliniques privées, 2010, portail de la CNAM
 
 ::: tip Crédits
-Cette fiche a été rédigée par Kristel JACQUIER et Raphaële ADJERAD.
+Cette fiche a été rédigée par Kristel JACQUIER (DSS) et Raphaële ADJERAD (DREES).
 :::
