@@ -1,6 +1,6 @@
 # Base RAC sur les dépenses et les restes à charge en santé après Assurance maladie obligatoire
 
-La Direction de la recherche, des études, de l’évaluation et des statistiques (DREES) a mis au point une base simplifiée des dépenses de santé et des restes à charge à partir du Système national des données de santé (SNDS).
+La Direction de la recherche, des études, de l’évaluation et des statistiques (DREES) a mis au point une [base simplifiée des dépenses de santé et des restes à charge](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/la-base-rac-sur-les-depenses-et-les-restes-charge-en-sante-apres) à partir du Système national des données de santé (SNDS).
 Cette base a permis de produire plusieurs Études et Résultats sur le sujet des restes à charge en France.   
 L'ensemble des [programmes](https://gitlab.com/DREES_code/public/outils/restes-a-charge-snds/-/tree/main/pipeline_baserac) permettant de construire la base RAC, ainsi que la [documentation associée](https://gitlab.com/DREES_code/public/outils/restes-a-charge-snds/-/tree/main/documentation), ont été mis en open source sur le gitlab de la DREES.
 
