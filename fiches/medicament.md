@@ -22,7 +22,19 @@ Un CIP 13 commence toujours par le préfixe `3400` en France.
 
 Lorsqu’un médicament disposait d'un code CIP 7, le code CIP 13 correspondant est construit de la manière suivante :
 
-![schema 1](../files/Cnam/images_ciblage_medicaments/Medicaments_schema1.png)
+![schema 1](../files/HDH/20220304_HDH_structure-cip_MPL-2.0.png)
+
+**3400** : Préfixe médicament France
+**X** : Code rubrique défini par le Club Inter Pharmaceutique selon le type de produit
+| Valeur | Description |
+| ------ | ------ |
+| 1 | Identification du laboratoire homéopathique Weleda |
+| 2 | Identification du laboratoire homéopathique Lehning |
+| 3 | Identification du laboratoire homéopathique Boiron |
+| 4 | Identification du laboratoire homéopathique Rocal |
+| 5 | Identifiant homeopathie |
+| 8 | Unités Communes de Dispensation (UCD) utilisées dans les établissements de santé |
+| 9 | Résentations pharmaceutiques à usage humain soumises à AMM |
 
 #### Calendrier de mise en place du CIP 13 
 Le calendrier de mise en place du CIP 13 est le suivant :
@@ -31,6 +43,19 @@ Le calendrier de mise en place du CIP 13 est le suivant :
 
 Le code CIP13 peut donc être présent dans les bases dès 2007, tandis que le CIP7 est présent au moins jusque 2014. 
 Une période de transition, où les 2 codes se chevauchent existe donc.
+
+#### Correspondance CIP / UCD
+Le référentiel UCD en lien avec les CIP est maintenant disponible sur le [SMT de l'ANS](https://smt.esante.gouv.fr/terminologie-cip_ucd/). Le référentiel comporte :
+
+- code UCD 7
+- code CIP 7
+- libellé UCD
+- laboratoire
+- quantité
+- EphMRA
+- code UCD13
+- code CIP13
+- Libellé CIP
 
 ### Classe ATC
 Les médicaments sont regroupés en **classes ATC**, en fonction des organes (ou systèmes d'organes) cibles, et de leurs propriétés thérapeutiques, pharmacologiques ou chimiques.
@@ -144,5 +169,7 @@ quit;
 ## Références
 
 ::: tip Crédits
-Cette fiche provient d'un [document publié](../files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
+Cette fiche provient en partie d'un [document publié](../files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
+- https://www.france-mvo.fr/wp-content/uploads/2019/10/CIP-GS1-Guide-de-lecture-du-DataMatrix-sur-les-medicaments.pdf
+- https://www.cipmedicament.org/wp-content/uploads/2020/04/CIP-ACL-n%C2%B028-Les-Cahiers-CIP-ACL-Harmonisation-des-libell%C3%A9s-des-m%C3%A9dicaments-hom%C3%A9opathiques-%C3%A0-nom-commun.pdf
 :::
