@@ -23,5 +23,21 @@ LA CNAM enrichit son offre de données en open data en mettant à disposition de
 
 - sur le thème des dispositifs médicaux inscrits à la liste des produits et prestations : les données [Open LPP](http://open-data-assurance-maladie.ameli.fr/LPP/index.php) présentant, par Titre et sous chapitre de niveau 1 et 2, code affiné, par caractéristique du bénéficiaire et par spécialité du prescripteur : le nombre de bénéficiaires, les montants remboursés et remboursables ainsi que la quantité des dispositifs médicaux délivrés.
 
+### Open SNDS
+
+[Open SNDS](https://open-snds.has-sante.fr/) est une application web pour interroger rapidement certaines données agrégées du SNDS, publiées en open data par l'Assurance maladie.
+
+On interroge les données en choisissant une base (Open Medic, Open Bio, éventuellement d'autres à venir), puis en filtrant sur un (ou plusieurs) codes, aux différents niveaux de hierarchie des nomenclatures. 
+
+On visualise alors le nombre de bénéficiaires, le nombre de consommations, et les montants de remboursements. 
+Ces informations sont déclinées selon plusieurs axes d'analyse : évolution annuelle depuis 2014, répartition selon les caractéristiques du bénéficiaire (sexe, classe d'âge, région), ou la spécialité du prescripteur.
+Elles sont affichées via un graphique, et un tableau qu'il est possible de télécharger.
+
+L'application Open SNDS est développée et hébergée par la Haute Autorité de Santé.
+
+L'application est accessible à cette [adresse](https://open-snds.has-sante.fr/).
+
 ## Lien d'accès
 [Portail](http://open-data-assurance-maladie.ameli.fr/index.php) de la CNAM
+
+[Application Open SNDS](https://open-snds.has-sante.fr) de la HAS
