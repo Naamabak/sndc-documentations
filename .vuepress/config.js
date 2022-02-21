@@ -182,6 +182,7 @@ module.exports = {
             {text: "Forum entraide", link: "https://entraide.health-data-hub.fr/"},
             {text: "Dico interactif", link: "https://health-data-hub.shinyapps.io/dico-snds/"},
             {text: "Groupe Meetup", link: "https://www.meetup.com/fr-FR/Health-Data-Hub/"},
+            {text: "Open SNDS", link: "https://open-snds.has-sante.fr"},
         ],
         sidebar: sidebar,
         sidebarDepth: 1,

@@ -75,5 +75,3 @@ Les données individuelles de l'Offre de soins qui concernent notamment:
 Une partie des informations mentionnées figurant dans les bases de données précitées sont accessibles en Open Data à un niveau beaucoup plus agrégé.
 
 Pour plus d'informations à ce sujet, nous vous invitons à consulter la [section dédiée à l'open data](https://documentation-snds.health-data-hub.fr/open_data/).  
-
-
