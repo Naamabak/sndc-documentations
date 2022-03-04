@@ -10,6 +10,8 @@ pour des détails sur la base médicale des causes de décès.
 
 - Les [publications](https://www.irdes.fr/recherche/publications.html) de l'[Irdes](../glossaire/Irdes.md), dont certaines concernent le SNDS
 
+- La [cartographie interactive de l'écosystème SNDS](https://ecosysteme-snds.health-data-hub.fr/) permettant de visualiser les utilisateurs du SNDS
+
 
 
 
