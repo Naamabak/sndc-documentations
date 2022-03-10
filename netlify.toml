@@ -4,3 +4,5 @@
 [build]
   command = "yarn create-preview && yarn docs:build"
   publish = ".vuepress/dist/"
+[context.deploy-preview.environment]
+  NODE_VERSION = "16"
