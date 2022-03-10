@@ -96,7 +96,7 @@ IF substr(depcom,1,2) in ("97","20") THEN dept=substr(depcom,1,3);
 ELSE dept=substr(depcom,1,2);
 ```
 
-Pour reconstituer le code département de la Corse (Haute-Corse `201`, et Corse-du-Sud `202`), 
+Pour reconstituer le code département de la Corse (Corse-du-Sud `201` et Haute-Corse `202`), 
 il est également possible d'utiliser le département de l'organisme d'affiliation du bénéficiaire `(substr(ORG_AFF_BEN,4,3))`.
 Les deux départements de la Corse y sont en effet bien distingués pour le régime général, et pour les SLM.
 
