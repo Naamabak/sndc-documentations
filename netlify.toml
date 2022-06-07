@@ -2,7 +2,7 @@
   NODE_OPTIONS = "--max_old_space_size=4096"
   NODE_VERSION = "16"
 [build]
-  command = "yarn create-preview && yarn docs:build"
+  command = "yarn docs:build"
   publish = ".vuepress/dist/"
 [context.deploy-preview.environment]
   NODE_VERSION = "16"
