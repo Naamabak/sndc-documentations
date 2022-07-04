@@ -46,8 +46,44 @@ Dans la suite du document le comptage des bénéficiaires se fera sur l’identi
 ![Image3](../files/Cnam/Images_fiche_comptage_benef/Image3.png)
 ![Image4](../files/Cnam/Images_fiche_comptage_benef/Image4.png)
 
-Proposition de programme SAS :
-Proposition de programme en SQL passthrough :
+**Proposition de programme SAS**
+
+```sql
+
+proc sql ;
+create table nb_ben_IR as
+(select BEN_IDT_TOP, count(distinct BEN_IDT_ANO) as nb_idt from oravue.IR_BEN_R
+where BEN_DCD_AME = '160001' and BEN_CDI_NIR = '00'
+AND (( MAX_TRT_DTD >= '1Jan2017:0:0:0'dt )
+OR ( MAX_TRT_DTD = '1Jan1600:0:0:0'dt AND BEN_DTE_INS >= '1Jan2017:0:0:0'dt) )
+and ((IND_RNM_BEN is null and org_aff_ben not like '01%')
+or (IND_RNM_BEN in ('E', 'F') and org_aff_ben like '01%'))
+group by BEN_IDT_TOP
+);
+quit;
+
+```
+**Proposition de programme en SQL passthrough**
+
+```sql
+
+%connectora;
+create table irben_regime as select * from connection to oracle
+(select BEN_IDT_TOP, substr(org_aff_ben,1,3) as regime, count(distinct
+BEN_IDT_ANO) as nb_idt from IR_BEN_R
+where BEN_DCD_AME = '160001' and BEN_CDI_NIR = '00'
+and (max_trt_dtd >= to_date('20190101','YYYYMMDD')
+OR (max_trt_dtd = to_date('16000101','YYYYMMDD') and ben_dte_ins >= to_date('20190101','YYYYMMDD')))
+and ((IND_RNM_BEN is null and org_aff_ben not like '01%')
+or (IND_RNM_BEN in ('E', 'F') and org_aff_ben like
+'01%'))
+group by BEN_IDT_TOP, substr(org_aff_ben,1,3)
+order by BEN_IDT_TOP, substr(org_aff_ben,1,3)
+);
+disconnect from oracle;
+quit;
+
+```
 
 
 # Références
