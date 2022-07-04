@@ -39,5 +39,12 @@ pour un unique bénéficiaire (enfant ayant-droit de son père, de sa mère, pui
 Dans la suite du document le comptage des bénéficiaires se fera sur l’identifiant bénéficiaire BEN_IDT_ANO.
 
 ## Des écarts explicables Référentiel Bénéficiaires du SNDS / Rniam
+![Image1](../files/Cnam/Images_fiche_comptage_benef/Image1.png)
+![Image2](../files/Cnam/Images_fiche_comptage_benef/Image2.png)
 
 ## Proposition de filtres dans le Référentiel Bénéficiaires du SNDS pour comparaison avec le Rniam
+![Image3](../files/Cnam/Images_fiche_comptage_benef/Image3.png)
+![Image4](../files/Cnam/Images_fiche_comptage_benef/Image4.png)
+
+Proposition de programme SAS :
+Proposition de programme en SQL passthrough :
