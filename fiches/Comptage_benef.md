@@ -48,3 +48,12 @@ Dans la suite du document le comptage des bénéficiaires se fera sur l’identi
 
 Proposition de programme SAS :
 Proposition de programme en SQL passthrough :
+
+
+# Références
+::: tip Ressources
+
+Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est téléchargeable [téléchargeable ici](../files/Cnam/20210429_Cnam_IR_ESM_R_sansprofils_MPL-2.0LIENACHANGER.docx) dans sa version d'origine.
+
+Il a été initialement publié sur le portail SNDS de la Cnam le jj mm 2022.
+:::
