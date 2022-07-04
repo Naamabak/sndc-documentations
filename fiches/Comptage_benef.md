@@ -89,7 +89,7 @@ quit;
 # Références
 ::: tip Ressources
 
-Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est téléchargeable [téléchargeable ici](../files/Cnam/2022-03-Cnam_9_SNDS_Fiches_Thematiques_DNB_BENEF_Référentiel_SNDS_MPL-2.0.pdf.docx) dans sa version d'origine.
+Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est téléchargeable [téléchargeable ici](../files/Cnam/2022-03-Cnam_9_SNDS_Fiches_Thematiques_DNB_BENEF_Référentiel_SNDS_MPL-2.0.pdf) dans sa version d'origine.
 
 Il a été initialement publié sur le portail SNDS de la Cnam le jj mm 2022.
 :::
