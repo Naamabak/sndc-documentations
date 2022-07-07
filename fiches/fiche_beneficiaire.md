@@ -55,7 +55,7 @@ Il est conseillé en revanche, de la ramener comme une variable pour départager
 
 Par ailleurs, pour établir des statistiques sur les patients et pour chaîner sur les différents PMSI (plusieurs années et/ou entre les différents champs du PMSI), on applique le filtre suivant pour éliminer des clés de chainage incorrectes :
 ```sql
-Where NIR_RET<>'0' and NAI_RET <>'0' and SEX_RET <>'0' and SEJ_RET<>'0' and FHO_RET <>'0' and PMS_RET<>'0' and DAT_RET <>'0' and NIR_ANO_17 not in ('xxxxxxxxxxxxxxxxx','XXXXXXXXXXXXXXXXD')
+Where NIR_RET='0' and NAI_RET='0' and SEX_RET='0' and SEJ_RET='0' and FHO_RET='0' and PMS_RET='0' and DAT_RET='0' and NIR_ANO_17 not in ('xxxxxxxxxxxxxxxxx','XXXXXXXXXXXXXXXXD')
 ```
 **BEN_NIR_ANO est le numéro d’inscription au répertoire (NIR)**, appelé aussi numéro de sécurité sociale ; il est unique pour un individu durant toute sa vie. BEN_NIR_ANO ne dépend pas de l’ouvreur de droit, mais uniquement de l’individu. BEN_NIR_ANO est également un pseudonyme
 
