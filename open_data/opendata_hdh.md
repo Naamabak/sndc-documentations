@@ -38,7 +38,7 @@ les allergies aux pollens.
 Pour cela le HDH a réalisé des requêtes afin d'identifier les communes les plus touchées par les rhinites allergiques en Normandie. 
 
 ::: details Documents produits dans le cadre de ce partenariat
-- [PDF title](../files/files/HDH/RequetealaDemande/2022_07-VYV_Restitution_indicateurs.pdf)
+- [PDF title](../files/HDH/RequetealaDemande/2022_07-VYV_Restitution_indicateurs.pdf)
 - [excel](../files/HDH/RequetealaDemande/2022_07-VYV_Resultatscomplets.xlsx)
 - doc technique
 ::: 
