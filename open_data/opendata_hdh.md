@@ -9,9 +9,9 @@ Le HDH est amené, dans le cadre d'une expérimentation en cours, à réaliser d
 
 L'objectif est d'estimer la population prise en charge pour chaque vascularite (nombre de personnes) selon les différentes caractéristiques (sexe, âge, répartition régionale). A partir de l’identification de deux codes, une requête préliminaire sur les patients ayant eu un séjour hospitalier pour Granulomatose avec polyangéite (Wegener) et pour polyangéite microscopique a ainsi été réalisée dans le SNDS.
 
-Les documents produits dans le cadre de ce partenariat sont les suivants :
-
-    - doc word 202110- Template restitution résultat FV - V0 revue
+::: details Documents produits dans le cadre de ce partenariat
+- doc word 202110- Template restitution résultat FV - V0 revue
+::: 
 
 
 - données produites pour le [Quotidien du Médecin](https://www.health-data-hub.fr/quotidien-du-medecin)
@@ -20,6 +20,7 @@ L'objectif est de disposer d’indicateurs chiffrés afin d’alimenter permetta
 
 Les documents produits dans le cadre de ce partenariat sont les suivants :
 
-    - [PDF title](../files/HDH/RequetealaDemande/202205-_Point_QDM-HDH_-_Restitution_résultats.pdf)
+* toto
+1. [PDF title](../files/HDH/RequetealaDemande/202205-_Point_QDM-HDH_-_Restitution_résultats.pdf)
    
 - données produites pour 
