@@ -28,6 +28,7 @@ Les documents produits dans le cadre de ce partenariat sont les suivants :
 - **données produites pour le groupe VYV**
 [lienVYV](https://www.groupe-vyv.fr/)
 [lien2VYV](https://www.harmonie-mutuelle.fr/marque/a-propos/groupe-vyv)
+
 Cette demande s’inclut d'un partenariat entre le HDH et le [datalab Normandie](https://www.datalab-normandie.fr/). 
 
 
