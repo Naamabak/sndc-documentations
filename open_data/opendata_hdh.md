@@ -11,6 +11,7 @@ L'objectif est d'estimer la population prise en charge pour chaque vascularite (
 
 ::: details Documents produits dans le cadre de ce partenariat
 - doc word 202110- Template restitution résultat FV - V0 revue
+- doc technique
 ::: 
 
 
@@ -20,7 +21,8 @@ L'objectif est de disposer d’indicateurs chiffrés afin d’alimenter permetta
 
 Les documents produits dans le cadre de ce partenariat sont les suivants :
 
-* toto
 1. [PDF title](../files/HDH/RequetealaDemande/202205-_Point_QDM-HDH_-_Restitution_résultats.pdf)
+2. excel
+3. doc technique
    
 - données produites pour 
