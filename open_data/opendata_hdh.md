@@ -10,8 +10,8 @@ Le HDH est amené, dans le cadre d'une expérimentation en cours, à réaliser d
 L'objectif est d'estimer la population prise en charge pour chaque vascularite (nombre de personnes) selon les différentes caractéristiques (sexe, âge, répartition régionale). A partir de l’identification de deux codes, une requête préliminaire sur les patients ayant eu un séjour hospitalier pour Granulomatose avec polyangéite (Wegener) et pour polyangéite microscopique a ainsi été réalisée dans le SNDS.
 
 ::: details Documents produits dans le cadre de ce partenariat
-1. doc word 202110- Template restitution résultat FV - V0 revue
-2. doc technique
+1. Support de restitution - doc word 202110- Template restitution résultat FV - V0 revue
+2. Documentation technique
 ::: 
 
 
@@ -19,15 +19,14 @@ L'objectif est d'estimer la population prise en charge pour chaque vascularite (
 
 L'objectif est de disposer d’indicateurs chiffrés afin d’alimenter permettant d'alimenter un article ou un dossier sur la thématique des téléconsultations.
 
-Les documents produits dans le cadre de ce partenariat sont les suivants :
 
-1. [PDF title](../files/HDH/RequetealaDemande/202205-_Point_QDM-HDH_-_Restitution_résultats.pdf)
-2. excel
-3. doc technique
-   
-- **données produites pour le groupe VYV**
-[lienVYV](https://www.groupe-vyv.fr/)
-[lien2VYV](https://www.harmonie-mutuelle.fr/marque/a-propos/groupe-vyv)
+::: details Documents produits dans le cadre de ce partenariat
+1. [Support de restitution](../files/HDH/RequetealaDemande/202205-_Point_QDM-HDH_-_Restitution_résultats.pdf)
+2. Résultats complets
+3. Documentation technique
+:::
+
+- **données produites pour le groupe [VYV](https://www.groupe-vyv.fr/)**
 
 Cette demande s’inclut d'un partenariat entre le HDH et le [datalab Normandie](https://www.datalab-normandie.fr/). 
 
@@ -38,7 +37,7 @@ les allergies aux pollens.
 Pour cela le HDH a réalisé des requêtes afin d'identifier les communes les plus touchées par les rhinites allergiques en Normandie. 
 
 ::: details Documents produits dans le cadre de ce partenariat
-- [PDF title](../files/HDH/RequetealaDemande/2022_07-VYV_Restitution_indicateurs.pdf)
-- [excel](../files/HDH/RequetealaDemande/2022_07-VYV_Resultatscomplets.xlsx)
-- doc technique
+- [Support de restitution](../files/HDH/RequetealaDemande/2022_07-VYV_Restitution_indicateurs.pdf)
+- [Résultats complets](../files/HDH/RequetealaDemande/2022_07-VYV_Resultatscomplets.xlsx)
+- Documentation technique
 ::: 
