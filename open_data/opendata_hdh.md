@@ -1,11 +1,12 @@
 # Open Data du HDH
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Le HDH est amené, dans le cadre d'une expérimentation en cours, à réaliser des requêtes pour apporter un chiffrage et des éléments de cadrage sur une population en particulier. Cela permet au HDH de développer une documentation autour d'algorithmes d’identification de pathologies et d’utilisation des données liées à ces populations d’étude. Les éléments produits dans ce cadre sont multiples : algorithmes d'identification, scripts de la requête, documentation technique associée à la requête et résultats. Ces documents sont mis en partage ici pour le bénéfice de l’ensemble de la communauté utilisant les données du SNDS afin d’aider le plus grand nombre à comprendre ces données, leur organisation, leurs biais potentiels et leurs limites. 
+
+Le HDH expérimente une offre de service consistant à permettre à certains acteurs (associations d’usagers du système de santé, journalistes, chercheurs en sciences sociales) ayant besoin d’éléments chiffrés issus du SNDS, non disponibles en open data et ne relevant pas d’un projet d’étude en cours d’en disposer sans accomplir de formalités réglementaires particulières. Ces éléments sont produits par le HDH dans le cadre de son accès permanent et de la promotion de l’open data. Les éléments produits dans ce cadre sont variés : algorithmes de ciblage, scripts de la requête, documentation technique associée à la requête et résultats. Ces documents sont mis en partage pour le bénéfice de l’ensemble de la communauté utilisant les données du SNDS afin d’aider le plus grand nombre à comprendre ces données, leur organisation, leurs biais potentiels et leurs limites. 
 
 ## Données en open data
 
-- **Partenariat avec / données produites pour l'association [France Vascularite](https://www.health-data-hub.fr/france-vascularites)**
+- **Partenariat avec l'association [France Vascularite](https://www.health-data-hub.fr/france-vascularites)**
 
 L'objectif est d'estimer la population prise en charge pour chaque vascularite (nombre de personnes) selon les différentes caractéristiques (sexe, âge, répartition régionale). A partir de l’identification de deux codes, une requête préliminaire sur les patients ayant eu un séjour hospitalier pour Granulomatose avec polyangéite (Wegener) et pour polyangéite microscopique a ainsi été réalisée dans le SNDS.
 
@@ -16,9 +17,9 @@ L'objectif est d'estimer la population prise en charge pour chaque vascularite (
 ::: 
 
 
-- **données produites pour le [Quotidien du Médecin](https://www.health-data-hub.fr/quotidien-du-medecin)**
+- **Partenariat avec le [Quotidien du Médecin](https://www.health-data-hub.fr/quotidien-du-medecin)**
 
-L'objectif est de disposer d’indicateurs chiffrés afin d’alimenter permettant d'alimenter un article ou un dossier sur la thématique des téléconsultations.
+L'objectif est de disposer d’indicateurs chiffrés afin d’alimenter un article ou un dossier sur la thématique des téléconsultations.
 
 
 ::: details Documents produits dans le cadre de ce partenariat
@@ -28,7 +29,7 @@ L'objectif est de disposer d’indicateurs chiffrés afin d’alimenter permetta
 4. [Programme](https://gitlab.com/healthdatahub/programmes-snds/-/blob/new_Dir_HDH/HDH/202206_QuotidienDuMedecin_Teleconsultations.sas)
 :::
 
-- **données produites pour le groupe [VYV](https://www.groupe-vyv.fr/)**
+- **Partenariat avec le groupe [VYV](https://www.groupe-vyv.fr/)**
 
 Cette demande s’inclut d'un partenariat entre le HDH et le [datalab Normandie](https://www.datalab-normandie.fr/). 
 
