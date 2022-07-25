@@ -12,6 +12,7 @@ L'objectif est d'estimer la population prise en charge pour chaque vascularite (
 ::: details Documents produits dans le cadre de ce partenariat
 1. Support de restitution - doc word 202110- Template restitution résultat FV - V0 revue
 2. Documentation technique
+3. Programme
 ::: 
 
 
@@ -24,6 +25,7 @@ L'objectif est de disposer d’indicateurs chiffrés afin d’alimenter permetta
 1. [Support de restitution](../files/HDH/RequetealaDemande/202205-_Point_QDM-HDH_-_Restitution_résultats.pdf)
 2. Résultats complets
 3. Documentation technique
+4. Programme
 :::
 
 - **données produites pour le groupe [VYV](https://www.groupe-vyv.fr/)**
@@ -37,7 +39,8 @@ les allergies aux pollens.
 Pour cela le HDH a réalisé des requêtes afin d'identifier les communes les plus touchées par les rhinites allergiques en Normandie. 
 
 ::: details Documents produits dans le cadre de ce partenariat
-- [Support de restitution](../files/HDH/RequetealaDemande/2022_07-VYV_Restitution_indicateurs.pdf)
-- [Résultats complets](../files/HDH/RequetealaDemande/2022_07-VYV_Resultatscomplets.xlsx)
-- Documentation technique
+1. [Support de restitution](../files/HDH/RequetealaDemande/2022_07-VYV_Restitution_indicateurs.pdf)
+2. [Résultats complets](../files/HDH/RequetealaDemande/2022_07-VYV_Resultatscomplets.xlsx)
+3. Documentation technique
+4. Programme
 ::: 
