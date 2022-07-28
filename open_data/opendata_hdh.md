@@ -11,7 +11,8 @@ Le HDH expérimente une offre de service consistant à permettre à certains act
 L'objectif est d'estimer la population prise en charge pour chaque vascularite (nombre de personnes) selon les différentes caractéristiques (sexe, âge, répartition régionale). A partir de l’identification de deux codes, une requête préliminaire sur les patients ayant eu un séjour hospitalier pour Granulomatose avec polyangéite (Wegener) et pour polyangéite microscopique a ainsi été réalisée dans le SNDS.
 
 ::: details Documents produits dans le cadre de ce partenariat
-1. Support de restitution - doc word 202110- Template restitution résultat FV - V0 revue
+1. Support de restitution
+2. Résultats complets
 2. Documentation technique
 3. Programme
 ::: 
