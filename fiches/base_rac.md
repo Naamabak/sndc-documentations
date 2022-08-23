@@ -1,4 +1,13 @@
+---
+tags:
+  - Dépenses
+  - PMSI
+---
+
 # Base RAC sur les dépenses et les restes à charge en santé après Assurance maladie obligatoire
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+<TagLinks />
 
 La Direction de la recherche, des études, de l’évaluation et des statistiques (DREES) a mis au point une [base simplifiée des dépenses de santé et des restes à charge](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/la-base-rac-sur-les-depenses-et-les-restes-charge-en-sante-apres) à partir du Système national des données de santé (SNDS).
 Cette base a permis de produire plusieurs Études et Résultats sur le sujet des restes à charge en France.   
