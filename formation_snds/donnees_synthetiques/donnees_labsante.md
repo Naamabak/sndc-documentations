@@ -1,6 +1,10 @@
 # Données de synthèse du lab santé de la DREES
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+::: danger Attention
+_Pour des raisons techniques liées aux licences acceptées par Gitlab, ces données sont temporairement indisponibles au téléchargement direct. Elles peuvent toutefois être générées à partir des outils indiqués ci-dessous. Si vous souhaitez accéder au jeu de données sans le générer, vous pouvez contacter le Health Data Hub à l'adresse opensource@health-data-hub.fr_
+:::
+
 Ce jeu de données est généré grâce à la librairie [tsfaker](https://gitlab.com/healthdatahub/tsfaker) à partir du [schéma formel](https://gitlab.com/healthdatahub/schema-snds) du SNDS et il est disponible dans le dépôt GitLab du Health Data Hub dans le dossier synthetic-snds. Son utilisation est libre suivant la [licence ouverte](https://www.etalab.gouv.fr/licence-ouverte-open-licence).
 Ces données sont identiques aux données tels que les organismes ayant un accès permanent y accèdent. La différence entre un accès permanent et une extraction DEMEX (extractions du SNDS délivrées par la CNAM) étant l’identifiant bénéficiaire dans le DCIR : BEN_NIR_PSA pour les accès permanent et NUM_ENQ pour les extractions DEMEX.
  
