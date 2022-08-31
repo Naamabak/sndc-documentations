@@ -5,6 +5,8 @@
 Elle est attribuée sous conditions de résidence et de ressources.   
 L'AME n'est pas applicable à Mayotte.
 
-# Références
- 
+## Ailleurs dans la documentation
+- Fiche thématique [variables socio-démiographiques](../fiches/variables_sociodemo.md)
+
+## Références
 - [Site internet de l'Assurance maladie](https://www.ameli.fr/assure/droits-demarches/situations-particulieres/situation-irreguliere-ame)
