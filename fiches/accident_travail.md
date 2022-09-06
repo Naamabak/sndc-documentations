@@ -35,9 +35,9 @@ Le montant des IJ ne peut être supérieur au salaire journalier net. La victime
 A la fin de l'arrêt de travail, le médecin de la victime établit un certificat médical final qui indique les conséquences de l'accident. Si des séquelles subsistent de manière permanente, le service médical de la CPAM fixe un **taux d'incapacité permanente** (IP) selon un barème très précis défini par le [Code de la Sécurité sociale](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000028678079/), qui prend en compte la nature de l'infirmité, l'âge de la victime et ses qualifications professionnelles. La victime reçoit alors:
 - **une indemnité en capital** si le taux d'IP est strictement inférieur à 10%. Son [montant](https://www.ameli.fr/assure/remboursements/pensions-allocations-rentes/incapacite-permanente-suite-accident-travail) est fixé par décret, forfaitaire et dépend du taux d'incapacité.
 - **une rente d'incapacité permanente** si le taux d'IP est supérieur ou égal à 10%. Cette rente est versée chaque trimestre (si le taux d'IP < 50%) ou chaque mois (si le taux d'IP $`\ge`$ 50%) jusqu'au décès de la victime. Son montant annuel est déterminé par la formule suivante, où $`\tau`$ est le taux d'IP, $`W`$ le salaire annuel de référence et $`s_1, s_2`$ des seuils en euros définis chaque année par le régime AT/MP (par exemple, au 1er avril 2021, $`s_1`$ = 37 300€ et $`s_2`$ = 149 199€):
-```math
-\left[\frac{1}{2}\min(\tau,50\%)+\frac{3}{2}\max(\tau - 50\%,0)\right]\times\left\{\min(W,s_1)+\frac{1}{3}\min\left(\max\left(0,W-s_1\right),s_2-s_1\right)\right\}
-```
+
+$$\left[\frac{1}{2}\min(\tau,50\%)+\frac{3}{2}\max(\tau - 50\%,0)\right]\times\left\{\min(W,s_1)+\frac{1}{3}\min\left(\max\left(0,W-s_1\right),s_2-s_1\right)\right\}$$
+
 
 Les rentes d'incapacité se distinguent ainsi des pensions d'invalidité versées lorsque l'accident n'est pas d'origine professionnelle. La rente peut être majorée en cas de faute inexcusable de la part de l'employeur. En cas de rechute, la victime peut connaître un nouvel arrêt de travail. Dans ce cas, les IJ ne peuvent être inférieures à celles perçues lors de l'arrêt de travail initial et elles sont diminuées du montant journalier de la rente.
 Les indemnités en capital et rentes d'incapacité permanente sont exonérées de CSG, de CRDS et d'impôt sur le revenu.

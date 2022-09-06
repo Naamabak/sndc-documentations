@@ -31,6 +31,7 @@
     "licence": "bash test-licence.sh"
   },
   "devDependencies": {
-    "vuepress-plugin-mermaidjs": "^1.2.0"
+    "vuepress-plugin-mermaidjs": "^1.2.0",
+    "@maginapp/vuepress-plugin-katex": "^1.0.11"
   }
 }
