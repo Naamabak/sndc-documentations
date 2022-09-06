@@ -208,6 +208,7 @@ module.exports = {
         }
     },
     plugins: [
-        ["mermaidjs"]
+        ["mermaidjs"],
+        ["@maginapp/vuepress-plugin-katex", { delimiters: "dollars" }]
     ]
 };
