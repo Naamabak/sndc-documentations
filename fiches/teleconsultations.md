@@ -101,7 +101,7 @@ if etb_exe_fin <> null then delete;
 run;
 ```
 
-## Quelques résultats
+## Résultats
 
 L’ensemble des résultats produits peuvent être consultés [ici](../files/HDH/RequetealaDemande/202207_TELECONSULTATIONS_QDM_MPL-2.0.xlsx). 
 
@@ -111,7 +111,7 @@ Les effectifs inférieurs à 11 ne sont pas restitués.
 
 ## Références  
 :::tip Crédit
-Cette fiche a été réalisée dans le cadre d’un partenariat avec le Quotidien du Médecin.
+Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande par le Health Data Hub et dans le cadre d’un partenariat avec le [Quotidien du Médecin](https://www.health-data-hub.fr/quotidien-du-medecin).
 L'objectif était que ce dernier dispose d’indicateurs afin d’alimenter un article sur la thématique des téléconsultations.
 L'article a été publié le 09/09/2022 sur le site du [Quotidien du médecin](https://www.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/qui-profite-le-boom-des-consultations-distance).
 
