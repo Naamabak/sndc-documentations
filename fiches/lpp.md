@@ -210,7 +210,7 @@ Chaque ligne individuelle se rattache à une ligne générique (sauf si impossib
 
 Depuis le 1er janvier 2022 le remboursement ne se fait plus sur la base des codes génériques mais individuels. Les codes génériques restent valables à titre de spécifications techniques et de liste des indications.
 
-L'extranet https://lpp-details.atih.sante.fr indique la correspondance entre lignes génériques et individuelles. 
+L'extranet de l'ATIH [lpp-details.atih.sante.fr](https://lpp-details.atih.sante.fr) indique la correspondance entre lignes génériques et individuelles. 
 
 Cette correspondance se voit aussi sur  l'[extranet de l'Assurance maladie](http://www.codage.ext.cnamts.fr/codif/tips/index_presentation.php) cité plus haut : la ligne générique est souvent indiquée dans la rubrique *Ancien code*. Par exemple pour le code [6318832](http://www.codage.ext.cnamts.fr/cgi/tips/cgi-fiche?p_code_tips=6318832&p_date_jo_arrete=%25&p_menu=FICHE&p_site=AMELI) le code générique est 1396655.
 
@@ -378,7 +378,7 @@ Dans le portail SNDS, il y a le datamart *AMOS – LPP*.
 
 ::: tip Programmes de référence
 
-- https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/DSS/2018_Haradji_DSS_Optique_MPL-2.0.sas 
+- [gitlab.com/healthdatahub/programmes-snds/-/blob/master/DSS/2018_Haradji_DSS_Optique_MPL-2.0.sas](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/DSS/2018_Haradji_DSS_Optique_MPL-2.0.sas)
 
 - Portail SNDS / Documentation / Bibliothèque de requêtes SAS / Maitrise médicalisée / Maitrise médicalisée 2019
 :::
