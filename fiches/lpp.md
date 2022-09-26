@@ -41,7 +41,7 @@ La notion de produit de santé est également définie dans la [5e partie du Cod
 Au sein des produits médicaux, les dispositifs médicaux sont définis de façon commune à l’ensemble des Etats membres de l’Union européenne (dans l'article premier d'une directive surnommée la « [directive DM](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A01993L0042-20071011) »).
 
 Dans la loi française, la définition se trouve dans le [livre II](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045630295/) de la 5e partie du Code de la santé publique citée plus haut : 
-_« On entend par dispositif médical : tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé destiné par le fabricant à être utilisé, seul ou en association, chez l'homme (…) »._
+_« On entend par dispositif médical : tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l'homme (…) »._
 Schématiquement, il s'agit de tous les produits "manufacturés" (non biologiques...) utilisés chez l'humain à des fins médicales, à l'exclusion des produits pharmaceutiques.
 
 C'est donc une catégorie très large qui regroupe à l'heure actuelle 20 000 types de produits, allant de petits objets à des équipements lourds :
@@ -62,7 +62,7 @@ La **surveillance du dispositif** est assurée par l'ANSM, après la mise sur le
 :::
 
 
-### LLP(R) : définition
+### LPP(R) : définition
 
 La LPP liste, parmi les produits et prestations ayant trait aux dispositifs médicaux, ce qui est remboursable **aux bénéficiaires par l'Assurance maladie**. 
 
@@ -74,7 +74,7 @@ Plusieurs des termes utilisés méritent des développements :
 
 - **Liste** 
 
-La LPP définit ce qui est remboursable par l'Assurance maladie : c’est donc un document juridique. Elle est organisé en titres, chapitres, sections et sous-sections. Elle définit précisément les conditions auxquelles un dispositif médical peut être remboursé, exprimées de façon très précise, avec des spécifications techniques et éventuellement des schémas.
+La LPP définit ce qui est remboursable par l'Assurance maladie : c’est donc un document juridique. Elle est organisée en titres, chapitres, sections et sous-sections. Elle définit précisément les conditions auxquelles un dispositif médical peut être remboursé, exprimées de façon très précise, avec des spécifications techniques et éventuellement des schémas.
 
 Elle évolue par arrêtés ministériels. L'Assurance maladie effectue un important travail de veille pour [compiler les arrêtés](https://www.ameli.fr/sites/default/files/Documents/lpp-09052022.pdf), sur le champ des codes LPP génériques (voir plus bas).
 
