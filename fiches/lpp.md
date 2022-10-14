@@ -41,7 +41,7 @@ La notion de produit de santé est également définie dans la [5e partie du Cod
 Au sein des produits médicaux, les dispositifs médicaux sont définis de façon commune à l’ensemble des Etats membres de l’Union européenne (dans l'article premier d'une directive surnommée la « [directive DM](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A01993L0042-20071011) »).
 
 Dans la loi française, la définition se trouve dans le [livre II](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045630295/) de la 5e partie du Code de la santé publique citée plus haut : 
-_« On entend par dispositif médical : tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé destiné par le fabricant à être utilisé, seul ou en association, chez l'homme (…) »._
+_« On entend par dispositif médical : tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l'homme (…) »._
 Schématiquement, il s'agit de tous les produits "manufacturés" (non biologiques...) utilisés chez l'humain à des fins médicales, à l'exclusion des produits pharmaceutiques.
 
 C'est donc une catégorie très large qui regroupe à l'heure actuelle 20 000 types de produits, allant de petits objets à des équipements lourds :
@@ -74,7 +74,7 @@ Plusieurs des termes utilisés méritent des développements :
 
 - **Liste** 
 
-La LPP définit ce qui est remboursable par l'Assurance maladie : c’est donc un document juridique. Elle est organisé en titres, chapitres, sections et sous-sections. Elle définit précisément les conditions auxquelles un dispositif médical peut être remboursé, exprimées de façon très précise, avec des spécifications techniques et éventuellement des schémas.
+La LPP définit ce qui est remboursable par l'Assurance maladie : c’est donc un document juridique. Elle est organisée en titres, chapitres, sections et sous-sections. Elle définit précisément les conditions auxquelles un dispositif médical peut être remboursé, exprimées de façon très précise, avec des spécifications techniques et éventuellement des schémas.
 
 Elle évolue par arrêtés ministériels. L'Assurance maladie effectue un important travail de veille pour [compiler les arrêtés](https://www.ameli.fr/sites/default/files/Documents/lpp-09052022.pdf), sur le champ des codes LPP génériques (voir plus bas).
 
@@ -176,14 +176,14 @@ C'est le fabricant qui demande le remboursement aux pouvoirs publics. Le circuit
 
 Le premier niveau de codage, très important, est le **code nature de prestation**.
 
-A l'heure actuelle, 89 codes nature de prestation sont afférents à la LPP. On peut les retrouver dans dans le SNDS dans la table de valeurs `IR_NAT_V` avec le critère `PRS_NAT_RGT = 6`. Leur code PS5 commence toujours par 35 et 
+A l'heure actuelle, 89 codes nature de prestation sont afférents à la LPP. On peut les retrouver dans dans le SNDS dans la table de valeurs `IR_NAT_V` avec le critère `PRS_NAT_RGT = 6`. Leur code PS5 commence toujours par 35.
 
 Certains sont des codes historiques calés sur la structure juridique de la LPP : par exemple *MAC : Matériels et appariels de contention et de maintien* (code PS5 3513) correspond au chapitre 2 du titre I.
 
 La liste des codes évolue selon la réglementation, voici les changements les plus récents :
 
 - début 2020 : création de codes dédiés au 100% santé optique (remplaçant les codes historiques)
-- début 2021 : création decodes dédiés au 100% santé audioprothèses (remplaçant les codes historiques)
+- début 2021 : création de codes dédiés au 100% santé audioprothèses (remplaçant les codes historiques)
 - début 2021 : création d'un code dédié à la délivrance de masques par les pharmaciens, MSQ (3596), assimilé LPP.
 
 Dans le portail SNDS, sur la page d'accueil, un document Excel liste les évolutions des codes nature prestations et c'est extrêmement utile de le consulter.
@@ -196,6 +196,9 @@ Certains codes sont très particuliers : ils sont liés au mode de remboursement
 - ATL (3575) : Complément 150% LPP pour AT
 - PCD (3591) : Prise en charge dérogatoire LPP
 - DLE (3592) : Prise en charge exceptionnelle dépassement LPP
+
+NB : les forfaits Complémentaire santé solidaire (CSS), précédemment forfaits CMU-C, correspondent à un financement spécifique de l'optique et des audioprothèses et se rattachent donc aussi à la LPP. On peut les retrouver dans la table de valeurs `IR_NAT_V`, cette fois avec le critère `PRS_NAT_RGT = 40`. Leur code PS5 va de 5101 à 5130 (forfaits optique) et de 5401 à 5403 (forfaits audioprothèses). Cette liste inclut les codes des forfaits CMU-C, supprimés au moment de la création de la CSS, et les nouveaux codes qui sont afférents aux forfaits CSS. 
+Leurs codes B2 sont identiques à ceux des prestations de l'Assurance maladie obligatoire : par exemple, on retrouve le code B2 *SV2* (prestation d'appairage niveau 1 ou 2 ou 3) en regard du code 3584 pour la part obligatoire et du code 5129 pour le forfait CSS (précédemment CMU-C). Dans cet exemple, on trouve une même "ligne de DCIR" (définie par les 9 variables de jointure) dans trois tables : er_prs_f avec le code PS5 3584, er_aro_f avec le code PS5 5129, et er_tip_f avec un code affiné à 7 chiffres (voir plus bas).   
 
 ### Codes affinés à 7 chiffres
 
