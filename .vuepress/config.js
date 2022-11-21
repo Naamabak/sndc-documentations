@@ -179,11 +179,16 @@ module.exports = {
         docsDir: '.',
         editLinks: true,
         nav: [
-            {text: "Forum", link: "https://entraide.health-data-hub.fr/"},
-            {text: "Dico", link: "https://health-data-hub.shinyapps.io/dico-snds/"},
-            {text: "Meetup", link: "https://www.meetup.com/fr-FR/Health-Data-Hub/"},
-            {text: "Open SNDS", link: "https://open-snds.has-sante.fr"},
-            {text: "Carto", link: "https://ecosysteme-snds.health-data-hub.fr/"},
+            {
+                text: "Outils SNDS", 
+                items: [
+                    {text: "Forum d'entraide", link: "https://entraide.health-data-hub.fr/"},
+                    {text: "Dictionnaire des variables", link: "https://health-data-hub.shinyapps.io/dico-snds/"},
+                    {text: "Meetup", link: "https://www.meetup.com/fr-FR/Health-Data-Hub/"},
+                    {text: "Open SNDS", link: "https://open-snds.has-sante.fr"},
+                    {text: "Cartographie de l'écosystème", link: "https://ecosysteme-snds.health-data-hub.fr/"}
+                ]
+            }
         ],
         sidebar: sidebar,
         sidebarDepth: 1,
