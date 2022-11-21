@@ -22,10 +22,14 @@
     "vuepress": "^1.7.1"
   },
   "scripts": {
-    "start": "cp -r files .vuepress/public/files && node .vuepress/include-tables.js",
+    "start": "cp -r files/* .vuepress/public/files && cp -r _vuepress_snds/files/* _vuepress_snds/.vuepress/public/files && cp -r _vuepress_omop/files/* _vuepress_omop/.vuepress/public/files && cd _vuepress_snds && node .vuepress/include-tables.js && cd ..",
     "create-preview": "node .vuepress/glossary-preview.js",
     "docs:dev": "yarn run start && vuepress dev",
-    "docs:build": "yarn run start && vuepress build",
+    "snds:build": "cd _vuepress_snds/ && vuepress build",
+    "omop:build": "cd _vuepress_omop/ && vuepress build",
+    "main:build": "vuepress build",
+    "post-build": "cp -r _vuepress_omop/.vuepress/dist/* .vuepress/dist/_vuepress_omop && cp -r _vuepress_snds/.vuepress/dist/* .vuepress/dist/_vuepress_snds",
+    "docs:build": "yarn run start && yarn run snds:build && yarn run omop:build && yarn run main:build && yarn run post-build",
     "lint-md": "remark --frail --use remark-validate-links . --quiet",
     "extended-lint-md": "yarn run start && remark --frail --use remark-validate-links --use remark-lint-no-dead-urls . --quiet",
     "licence": "bash test-licence.sh"
