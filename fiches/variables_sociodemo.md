@@ -20,32 +20,31 @@ Cette fiche présente les différentes variables disponibles, leur qualité et o
 
 ## Différentes approches de la situation socio-démographique
 On peut distinguer trois types de variables dans le SNDS qui permettent de caractériser la situation des bénéficiaires.
-* Les variables **individuelles** : sexe, âge, date de naissance, date de décès
+* Les variables **démographiques** : sexe, âge, date de naissance, date de décès, département et commune de résidence
 * Les variables **liées aux droits** dont bénéficient les individus : [CMU-C](../glossaire/CMUC.md), [ACS](../glossaire/ACS.md), [AME](../glossaire/AME.md)
-* Les variables dites **écologiques**, qui caractérisent les territoires auxquels sont associés les bénéficiaires : l'indice de déprivation FDEP.  
-On considère dans ce dernier cas que les individus qui habitent sur un territoire défavorisé, sont également défavorisés.
+Par ailleurs, il est possible grâce à la mise à disposition sur le portail du FDEP( French DEPrivation index) de caractériser la commune de résidence du bénéficiaire en terme de désavantage social. On affecte aux indivdus habitant sur un même terrioire le niveau de désavantage de celui-ci.
 
-Ces variables peuvent être présentes dans le SNIIRAM, dans le PMSI, ou dans les deux. Dans le premier cas, il s'agit de remontées administratives, tandis que dans le second, il s'agit d'informations déclaratives collectées au cours du séjour du patient, et qui ne sont donc pas vérifiées.
+Dans le DCIR, les variables socio-démographiques sont issues de remontées administratives depuis les BDO locales ou d'informations présentes sur les feuilles de soins. Dans le PMSI, il s'agit d'informations provenant de document d'état civil ou d'assurance maladie (date de naissance, sexe) ou de données déclaratives collectées à l'admission du patient. Pour les bases médicales de décès, les informations sont issues des certificats de décès.
 
-## Les variables individuelles 
+## Les variables démographiques 
 ### Le sexe
-Dans le SNIIRAM, la variable `BEN_SEX_COD` renseigne sur le sexe du bénéficiaire.
-La variable `BEN_SEX_COD` (variable numérique) est présente dans la table de prestations de soins [**ER_PRS_F**](../tables/DCIR/ER_PRS_F.md) à chaque soin, ainsi que dans le référentiel des bénéficiaires, [**IR_BEN_R**](../tables/BENEFICIAIRE/IR_BEN_R.md), pour les consommants et les non-consommants. Elle est aussi disponible dans les tables de consommants du répertoire CONSOPAT, et est issue du référentiel **IR_BEN_R**. 
+Dans le DCIR, la variable `BEN_SEX_COD` renseigne sur le sexe du bénéficiaire.
+La variable `BEN_SEX_COD` (variable numérique) est présente dans la table de prestations  [**ER_PRS_F**](../tables/DCIR/ER_PRS_F.md) à chaque soin. Elle est aussi présente dans le référentiel des bénéficiaires, [**IR_BEN_R**](../tables/BENEFICIAIRE/IR_BEN_R.md), pour les consommants de tous les régimes et les non-consommants de certains régimes dont régime général et SLM infogérées par le régime général. Elle est aussi disponible dans les tables de consommants du répertoire CONSOPAT (fichiers EXTRACTION_PATIENTSxxxx et EXTRACTION_PATIENTSxxxxTR), et est issue du référentiel **IR_BEN_R**. 
 Cette variable ne contient quasiment pas de valeur manquante.
 
-Dans le PMSI, la variable `COD_SEX` renseigne sur le sexe du bénéficiaire. Elle se trouve dans la table **T_MCOaaB**.
+Dans le PMSI, la variable `COD_SEX` (variable numérique) renseigne sur le sexe du bénéficiaire. Elle se trouve pour le PMSI-MCO dans la table **T_MCOaaB**.
 
 ### La date de naissance
-La date de naissance est disponible dans le SNDS mais limitée au mois (`BEN_NAI_MOI`) et à l'année de naissance (`BEN_NAI_ANN`). Le jour de naissance n’est pas disponible. 
-Ces deux variables sont restituées dans le référentiel des bénéficiaires, **IR_BEN_R**, pour les consommants et les non-consommants. Elles sont aussi disponibles dans les tables de consommants du répertoire CONSOPAT, et sont issues du référentiel **IR_BEN_R**. 
-L'année de naissance `BEN_NAI_ANN` est également restituée dans la table de prestations de soins **ER_PRS_F** à chaque soin.  
+La date de naissance est disponible dans le SNDS mais limitée au mois (`BEN_NAI_MOI`) et à l'année de naissance (`BEN_NAI_ANN`). Les deux variables sont de type alphanumérique.Le jour de naissance n’est pas disponible. 
+Les deux variables sont restituées dans le référentiel des bénéficiaires, **IR_BEN_R**, pour les consommants de tous les régimes et les non-consommants de certains régimes dont régime général et SLM infogérées par le régime général. Elles sont aussi disponibles dans les tables de consommants du répertoire CONSOPAT, et sont issues du référentiel **IR_BEN_R**. 
+L'année de naissance `BEN_NAI_ANN` est également restituée dans la table de prestations **ER_PRS_F** à chaque soin.  
 La valeur manquante de l’année de naissance et du mois de naissance est forcée à janvier 1600.
-En 2016, cette variable ne contient quasiment pas de valeur manquante, la qualité ayant nettement progressé pour les bénéficiaires du [RSI](../glossaire/RSI.md)
+Depuis 2016, cette variable ne contient quasiment pas de valeur manquante, la qualité ayant nettement progressé pour les bénéficiaires du [RSI](../glossaire/RSI.md) depuis 2010.
 
 ### L'âge au moment du soin
 L’âge à la date des soins peut être calculé à partir de l'année de naissance, en âge atteint dans l’année : année des soins - année de naissance.  
 
-Il existe également dans les tables de prestations **ER_PRS_F** et [**NS_PRS_F**](../tables/DCIRS/NS_PRS_F.md), la variable `BEN_AMA_COD`, qui donne l'**âge à la date des soins en années** pour les bénéficiaires de plus de 2 ans.  
+Il existe également dans les tables de prestations **ER_PRS_F**, la variable `BEN_AMA_COD`, qui donne l'**âge à la date des soins en années** pour les bénéficiaires de plus de 2 ans.  
 Cette variable est calculée comme l’écart entre l’année et le mois de la date des soins (ou à défaut de la date de liquidation) et l’année et le mois de naissance du bénéficiaire. 
 
 Pour les nourrissons de moins de 2 ans, `BEN_AMA_COD` donne l'âge en mois + 1000 (exemple : 1023 = 23 mois). 
@@ -53,12 +52,12 @@ Pour les nourrissons de moins de 2 ans, `BEN_AMA_COD` donne l'âge en mois + 100
 Lorsque l’âge calculé est supérieur à 129 ou inférieur à 0, `BEN_AMA_COD` prend la valeur ‘9999’.  
 
 ::: warning Attention 
-Un problème d’arrondi impacte les `BEN_AMA_COD` calculés avant Novembre 2014 (date de traitement). Une correction a été apportée dans la règle de calcul depuis sans reprise de l’historique (cf. communiqué du 18/12/2014). 
+Un problème d’arrondi impacte les `BEN_AMA_COD` calculés avant novembre 2014 (date de traitement). Une correction a été apportée dans la règle de calcul depuis sans reprise de l’historique (cf. communiqué du 18/12/2014). 
 :::  
 
 Dans le PMSI, il existe 2 variables indiquant l’âge au moment des soins : 
 - `AGE_ANN` correspondant à l'âge du patient au début de l’hospitalisation en années révolues
-- `AGE_JOU` correspondant à l’âge en jours. Cette variable est renseignée uniquement pour les enfants de moins de 1 an (variable disponible en mco, had et psy).
+- `AGE_JOU` correspondant à l’âge en jours pour les enfants de moins de 1 an (variable disponible en mco, had, ssr et psy).
 
 :::tip A noter : 
 - Pour une même personne, ces variables `AGE_ANN` et `AGE_JOU` pourront prendre des valeurs différentes lorsqu’il y a plusieurs séjours au cours de l’année.
@@ -78,17 +77,22 @@ Le processus d’alimentation de la date de décès est propre à chaque régime
 * RG : dans **IR_BEN_R**, pour le RG hors SLM, si la date de décès n’est pas mise à jour par les flux de prestations, elle est enrichie par les bases locales (BDO) des CPAM (il existe un circuit entre l’Insee et les CPAM pour l’enregistrement des décès et leur certification). C’est le cas depuis juillet 2009, ce qui assure l’exhaustivité de l’information du statut vital depuis juillet 2009 pour le RG hors SLM dans **IR_BEN_R** (cf. forum du 09/09/2011 « Informations sur les décès dans le DCIR »).
 * MSA : remonte par les flux de prestations depuis l’intégration de la MSA dans le DCIR, c’est-à-dire depuis janvier 2009.
 * RSI : date de décès très mal renseignée.
-* SLM : très mal renseigné. Cela dépend des sections mutualistes. Pour les 8 SLM (LMG, MGP, MFPS, MNH, HFP, CAMIEG, Interiale, LMDE) dont les non consommants sont inclus depuis septembre 2015 dans IR_BEN_R, la date de décès est renseignée.
+* SLM : très mal renseigné. Cela dépend des sections mutualistes. Pour les SLM infogérées, la date de décès est renseignée.
 * ENIM, CANMSS, CRCPEN et CAVIMAC : date de décès renseignée à partir des BDO dans **IR_BEN_R**.
 
-Pour le PMSI, l’information est présente si le patient est décédé au cours de son hospitalisation (mode de sortie égal à 9). Dans ce cas, on peut récuperer la date de sortie du séjour `SOR-DAT`.
+Pour le PMSI, l’information est présente si le patient est décédé au cours de son hospitalisation (mode de sortie égal à 9). Dans ce cas, on peut récupérer la date de sortie du séjour `SOR_DAT`.
 
-Depuis juin 2018, les causes de décès sont intégrées dans le SNDS, les variables `BEN_DCD_DTE` et `BEN_DCD_AME` apparaissent donc également dans les tables [KI_CCI_R](../tables/Causes de décès/KI_CCI_R.md) et [KI_ECD_R](../tables/Causes de décès/KI_ECD_R.md). 
+Les variables `BEN_DCD_DTE` et `BEN_DCD_AME` apparaissent également dans les tables des causes de décès [KI_CCI_R](../tables/Causes de décès/KI_CCI_R.md) et [KI_ECD_R](../tables/Causes de décès/KI_ECD_R.md). 
 ::: warning Attention 
 Il est possible d’avoir une date de décès renseignée dans les tables relatives aux causes de décès, mais  mise par défaut au 01 janvier 1600 dans **IR_BEN_R**, bien que le certificat ait pu être apparié à un bénéficiaire. 
 :::
 
 Une fiche est en cours de rédaction sur la fiabilité de la date de décès dans le SNDS.
+
+### Le lieu de résidence
+Le SNDS couvre les bénéficiaires qui résident en France ou à l'étranger. Il existe différentes variables dans le SNDS qui renseignent sur le dépatement ou la commune de résidence. 
+
+Pour plus d'informations voir la [fiche consacrée à la localisation des bénéficiaires dans le SNDS](localisation_geographique_beneficiaires.md).
 
 ## Les variables concernant les droits
 ### La CMU-C
@@ -137,12 +141,6 @@ Dans le **PMSI**, l’information sur l’AME est présente depuis 2012 dans la 
 
 Une [fiche](../fiches/aide_medicale_etat.md) est consacrée au repérage des bénéficiaires de l'AME. 
 
-## Les variables écologiques
-### Le lieu de résidence
-Le SNDS couvre les bénéficiaires qui résident en France, DOM inclus ou à l’étranger.
-Il existe différentes variables dans le SNDS qui renseignent sur le département ou la commune de résidence du bénéficiaire. Elles ne sont pas toutes construites de la même façon.
-
-Pour plus d'informations, une [fiche](../fiches/localisation_geographique_beneficiaires.md) est consacrée à la localisation des bénéficiaires dans le SNDS.
 
 ### L'indice de désavantage social : le FDep
 
@@ -172,23 +170,23 @@ L'indice de désavantage social n'est pas disponible pour certains bénéficiair
   
 #### Où trouver la variable ?
 
-L'indice de déprivation social est disponible sous les variables `FDEP09` et `FDEP13` présentes dans les tables **DEFA_UU2009** et **DEFA_UU2013** de la bibliothèque `CONSOPAT`. L'identifiant de ces tables est `depcom`, qui est la concaténation de `BEN_RES_DPT` et `BEN_RES_COM ` et les tables comptent autant de lignes que de communes, soit un peu plus que 35 000. L’indice est calculé pour les communes de France métropolitaine. En raison d’une mauvaise qualité de l’information portant sur la commune, **l’indice de désavantage social n’est considéré comme exploitable que pour les données du RG (hors SLM), du RSI et de la MSA**. Les tables sont accessibles via tout profil permettant d’accéder au DCIR et permettant d’accéder au code commune de résidence du bénéficiaire.
+L'indice de désavantage social est disponible dans la variable FDEPaa présente dans la table DEFA_UU20aa de la bibliothèque `CONSOPAT` pour les années 2009, 2013 et 2015. L'identifiant de ces tables est `depcom`, qui est la concaténation de `BEN_RES_DPT` et `BEN_RES_COM ` et les tables comptent autant de lignes que de communes, soit un peu plus que 35 000. L’indice est calculé pour les communes de France métropolitaine. Avant d'utiliser la variable depcom il convient de vérifier la qualité de son codage. En effet, certains régimes renseignent un code postal au lieu d'un code géographique Insee. Les tables sont accessibles via tout profil permettant d’accéder au DCIR et permettant d’accéder au code commune de résidence du bénéficiaire.
 
 La variable `QUINTILE_COM` donne la répartition en quintile des communes. Après pondération par le nombre d’habitant·e·s de la commune, l’indice permet de définir des quintiles de population générale en fonction du niveau de désavantage social de la commune (`QUINTILE_POP`), du quintile de population le plus favorisé (Q1) au quintile le plus défavorisé (Q5).
 
-L'utilisation des tables **DEFA_UU2009** et **DEFA_UU2013** pour d'autres années que 2009 et 2013 est compliquée par les changements de géographie (création, disparition, fusion, scission de communes). C'est pourquoi il est plus facile d'utiliser le quintile de défavorisation déjà associé à chaque consommant dans les tables **EXTRACTION_PATIENTSaaaa** (RG + SLM) ou **EXTRACTION_PATIENTSaaaaTR** (tours régimes). En effet, le travail de correction des géographies y a déjà été fait par la Cnam en faisant appel aux tables **CORRECTIONS_COMaaaa_NEW** de la bibliothèque `RFCOMMUN`. La variable dans les tables de consommants s'appelle `QUINT_DEFA` et non `QUINTILE_POP` comme dans la table **DEFA_UUaaaa**. Attention à ne garder qu'une seule ligne par couple `BEN_NIR_PSA`, `BEN_RNG_GEM` en cas d'utilisation de la table tous régimes **EXTRACTION_PATIENTSaaaaTR**.
+L'utilisation des tables **DEFA_UUaa** pour d'autres années que 2009, 2013 et 2015 est compliquée par les changements de géographie (création, disparition, fusion, scission de communes). C'est pourquoi il est plus facile d'utiliser le quintile de défavorisation déjà associé à chaque consommant dans les tables **EXTRACTION_PATIENTSaaaa** (RG + SLM) ou **EXTRACTION_PATIENTSaaaaTR** (tours régimes). En effet, le travail de correction des géographies y a déjà été fait par la Cnam en faisant appel aux tables **CORRECTIONS_COMaaaa_NEW** de la bibliothèque `RFCOMMUN`. La variable dans les tables de consommants s'appelle `QUINT_DEFA` et non `QUINTILE_POP` comme dans la table **DEFA_UUaaaa**. Attention à ne garder qu'une seule ligne par couple `BEN_NIR_PSA`, `BEN_RNG_GEM` en cas d'utilisation de la table tous régimes **EXTRACTION_PATIENTSaaaaTR**.
 
 ## Repérer les publics précaires 
 
 L'analyse de la précarité peut se faire par le repérage des publics ayant accès à certains droits, comme présenté ci-dessus: 
-* les CMU-cistes, 
-* les bénéficaires de l'ACS, 
-* de l'AME. 
+* les bénéficiaires de la CMU-C, 
+* les bénéficiaires de l'ACS, 
+* les bénéficiaires de l'AME. 
 
 Il est également possible de repérer les [détenus](detenus.md) dans le SNDS.
 
 ::: tip Attention 
-Depuis le 1er novembre 2019, la Complémentaire santé solidaire remplace la CMU-C et l’ACS. Pour en savoir plus sur la [Complémentaire santé solidaire](https://www.ameli.fr/paris/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante).
+Depuis le 1er novembre 2019, la [Complémentaire santé solidaire](complementaire_sante_solidaire.md) remplace la CMU-C et l’ACS. Pour en savoir plus sur la [Complémentaire santé solidaire](https://www.ameli.fr/paris/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante).
 :::
 
 ::: tip Crédits  
