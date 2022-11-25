@@ -27,6 +27,7 @@ Pour identifier les bénéficiaires de l'AME dans la table des prestations du DC
 On prends les modalités : 
 - 95 : aide médicale gratuite 100 % état
 - 96 : aide médicale hospitalière gratuite 100 % état
+- 652: détenu en situation irrégulière
 
 Seul souci : on ne considère que les consommants puisque on a l'information uniquement dans la table des prestations. 
 Il faut donc que l'individu ait au moins une prestation, ce qui est souvent le cas pour les AME. 
@@ -51,7 +52,7 @@ create table sasdata1.AME as select * from connection to oracle (
 select distinct /*ben_nir_psa, ben_rng_gem,*/t2.ben_idt_ano, t1.ben_ama_cod, t1.ben_sex_cod
 from er_prs_f t1 left join IR_BEN_R  t2 on (t1.ben_nir_psa=t2.ben_nir_psa
 and t1.ben_rng_gem=t2.ben_rng_gem)
-where t1.rgm_cod in (95,96)
+where t1.rgm_cod in (95,96,652)
 /*and RGM_GRG_COD in (1)*/
 AND t1.EXE_SOI_AMD BETWEEN '201801' and '201812'/*to_date('01012018','DDMMYYYY') AND to_date('31122018','DDMMYYYY')*/
 AND t1.FLX_DIS_DTD BETWEEN to_date('01012018','DDMMYYYY') AND to_date('31032019','DDMMYYYY')
