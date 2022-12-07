@@ -19,7 +19,7 @@
     "vue-router": "^3.4.5",
     "vue-server-renderer": ">= 2.6.11",
     "vue-template-compiler": ">= 2.6.11",
-    "vuepress": "^1.7.1"
+    "vuepress": "^1.9.7"
   },
   "scripts": {
     "start": "cp -r files .vuepress/public/files && node .vuepress/include-tables.js",
