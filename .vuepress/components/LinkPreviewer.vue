@@ -6,7 +6,7 @@
          <div class="parentcard">
       <div id="mycard" class="card"
           v-show="shown">
-        <img src="../../files/images/glossaire.png" alt=""
+        <img src="../../snds/files/images/glossaire.png" alt=""
              class="card-img-top">
         <div  class="card-body">
             <h5  class="card-title">{{previewTitle}}</h5>

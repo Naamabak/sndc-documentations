@@ -1,6 +1,6 @@
 const markdownInclude = require('markdown-include');
 const fs = require('fs');
-const tables_path = "./tables/.sources";
+const tables_path = "./snds/tables/.sources";
 
 function createEmptyTableFolders(src, dest){
     //list subdirectories
@@ -32,9 +32,9 @@ function writeJsonFile(filename, dirname) {
     //path of the written file
     const path = tables_path + "/" + dirname + "/temp_" + filename + ".json";
     //destination folder
-    var destFolder = "tables";
+    var destFolder = "snds/tables";
     //source folder
-    var srcFolder = "tables/.sources";
+    var srcFolder = "snds/tables/.sources";
     //content of the file
     var content = '{\n	"build" : "' + destFolder + '/' + dirname + '/' + filename +
         '",\n	"files" : ["' + srcFolder + '/' + dirname + '/' + filename + '"]\n }';
@@ -97,5 +97,5 @@ function searchAndCompile(path) {
 
 }
 
-createEmptyTableFolders(tables_path, "./tables")
+createEmptyTableFolders(tables_path, "./snds/tables")
 searchAndCompile(tables_path);

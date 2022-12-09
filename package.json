@@ -14,15 +14,15 @@
     "remark-lint": ">= 6.0.4",
     "remark-lint-no-dead-urls": ">= 0.4.1",
     "remark-validate-links": ">= 9.0.1",
-    "vue": ">= 2.6.11",
+    "vue": "^2.6.11",
     "vue-loader": ">= 15.8.3",
     "vue-router": "^3.4.5",
-    "vue-server-renderer": ">= 2.6.11",
+    "vue-server-renderer": "^2.6.11",
     "vue-template-compiler": ">= 2.6.11",
-    "vuepress": "^1.7.1"
+    "vuepress": "^1.9.7"
   },
   "scripts": {
-    "start": "cp -r files .vuepress/public/files && node .vuepress/include-tables.js",
+    "start": "cp -r snds/files .vuepress/public/files && cp omop/files_and_images/* .vuepress/public/files && node .vuepress/include-tables.js",
     "create-preview": "node .vuepress/glossary-preview.js",
     "docs:dev": "yarn run start && vuepress dev",
     "docs:build": "yarn run start && vuepress build",
@@ -31,7 +31,7 @@
     "licence": "bash test-licence.sh"
   },
   "devDependencies": {
-    "vuepress-plugin-mermaidjs": "^1.2.0",
-    "@maginapp/vuepress-plugin-katex": "^1.0.11"
+    "@maginapp/vuepress-plugin-katex": "^1.0.11",
+    "vuepress-plugin-mermaidjs": "^1.2.0"
   }
 }
