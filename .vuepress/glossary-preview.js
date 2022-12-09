@@ -1,6 +1,6 @@
 const fs = require('fs');
 const glob = require("glob")
-const glossary_path = "./glossaire";
+const glossary_path = "./snds/glossaire";
 var results = [];
 var total_changes_int = 0;
 var total_changes_ext = 0;
@@ -20,7 +20,7 @@ function getSummary(path) {
             
             let arr = data.toString().replace(/\r\n/g,'\n').split('\n');
             let result = new Object()
-            result.path="../glossaire/"+filename
+            result.path="../snds/glossaire/"+filename
             result.file=filename
             result.title = arr[0].slice(2);
             if (arr.length < 4) {     
@@ -70,7 +70,7 @@ function getTitleAndTextFromFilename(filename) {
  * Only for links to the glossary outside the glossary
  */
 function switchInPaths() { 
-    glob("./!(node_modules|.vuepress|files|contribuer)/**/*.md", function (err, files) {
+    glob("./!(node_modules|.vuepress|files|snds/contribuer)/**/*.md", function (err, files) {
         if(err) throw err;
         files.forEach(filepath => {
             fs.readFile(filepath, function(err, data) {
@@ -117,7 +117,7 @@ function switchInPaths() {
  * Only for link to the glossary within the glossary
  */
 function switchInGlossary() { 
-    glob("./glossaire/*.md", function (err, files) {
+    glob("./snds/glossaire/*.md", function (err, files) {
         if(err) throw err;
         files.forEach(filepath => {
             fs.readFile(filepath, function(err, data) {

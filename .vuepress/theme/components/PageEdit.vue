@@ -116,8 +116,8 @@ export default {
 
       if (showEditLink && docsRepo && this.$page.relativePath) {
         var path = this.$page.relativePath
-        if (this.$page.relativePath.includes('tables/') && !this.$page.relativePath.includes('README.md')){
-          path = path.replace('tables/','tables/.sources/');
+        if (this.$page.relativePath.includes('snds/tables/') && !this.$page.relativePath.includes('README.md')){
+          path = path.replace('snds/tables/','snds/tables/.sources/');
           console.log(path)
         }
         return this.createHistoryLink(
