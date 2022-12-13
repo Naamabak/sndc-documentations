@@ -264,10 +264,10 @@ Les prothèses faciales sont une exception, elles sont sans tarifs et remboursé
 Du point de vue du bénéficiaire, il y a trois cas :
 
 - soit il n'y a pas de prix limite de vente, ou il y a un prix limite de vente supérieur à la base remboursement. Dans ce cas, le prix payé par le patient a de grandes chances d'être supérieur à la base de remboursement. Le reste à charge du patient est alors composé du ticket modérateur (si le taux de remboursement n'est pas de 100%), et de cette part de liberté tarifaire. S'il ou elle a une complémentaire santé, cette dernière peut prendre en charge tout ou partie de ce reste à charge.
-![Image](../files/DREES/Schema_tarification__cas_1_.png)
+![Image](/files/DREES/Schema_tarification__cas_1_.png)
 
 - soit il y a un prix limite de vente égal à la base de remboursement. Le reste à charge du patient est alors composé du ticket modérateur si le taux de remboursement n'est pas de 100%.
-![Image](../files/DREES/Schema_tarification__cas_2_.png)
+![Image](/files/DREES/Schema_tarification__cas_2_.png)
 
 Le taux de remboursement est :
 
@@ -288,7 +288,7 @@ Pour chaque code LPP :
 - Si on a *prix d’achat > tarif LPP* dans la limite du prix limite de vente (PLV) : l’établissement est remboursé du prix d’achat ;
 - Si on a *prix d’achat < tarif LPP* : l’établissement est aussi remboursé sur le prix d’achat, mais perçoit aussi un écart tarifaire indemnisable (ETI) égal à 50% de la différence *prix d’achat – tarif*. Avec ce mécanisme incitatif, l’Assurance Maladie et l’établissement récupèrent chacun.e la moitié de la marge de l’établissement (partage 50/50).
 
-![Image](../files/DREES/Schema_tarification__cas_h_.png)
+![Image](/files/DREES/Schema_tarification__cas_h_.png)
 
 ## Requêtage dans le SNDS
 

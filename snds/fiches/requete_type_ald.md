@@ -86,7 +86,7 @@ Lorsqu'une exonération est créée, la date de mise à jour n'est pas renseign�
 
 **Exemple** :
 
-<img src="../files/Sante_publique_France/20201209_SpF_ald-exemple_MLP-2.0.png" alt="Exemple" width="800px"/>
+<img src="/files/Sante_publique_France/20201209_SpF_ald-exemple_MLP-2.0.png" alt="Exemple" width="800px"/>
 
 * L'individu 1 est en ALD depuis le 27 juin 2006 (information insérée le 7 août). La première période d'exonération s'étendait jusqu'au 27 juin 2011. Elle a été revue le 3 juin puis prolongée jusqu'au 27 juin 2016 (5 ans supplémentaires).
 * L'individu 2 est en ALD depuis le 13 juin 2003. C'est une ALD ancienne qui a été intégrée dans le référentiel en 2005 (lors du rapatriement de toutes les exonérations dans le logiciel). La date de fin n'était alors pas fixée, elle a été repoussée au 23 mars 2014 lors de l'insertion du 2 mai 2009. Le 6 décembre 2010, la date de fin a de nouveau été revue et fixée au 3 novembre 2015 (soit 5 ans après l'insertion). 

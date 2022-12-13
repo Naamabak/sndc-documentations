@@ -23,7 +23,7 @@ Le remboursement de la Sécurité sociale est de 20 euros, soit 70 % * 30 euros 
 Le <link-previewer href="ticket_moderateur.html" text="ticket modérateur" preview-title="TM - Ticket modérateur" preview-text="Le ticket modérateur (TM) correspond à la part des frais de soins qui n’est pas remboursée par l’assurance maladie et reste donc à la charge du patient ou de son éventuel organisme complémentaire (mutuelle, couverture maladie universelle …). " /> à 30 % correspond à 9 euros, et est obligatoirement pris en charge si le patient est couvert par un contrat responsable. 
 La complémentaire santé peut, selon le contrat souscrit, prendre en charge tout ou partie des dépassements d‘honoraires qui représentent 15 euros.
 
-![Schéma explicatif des remboursements et des restes à charge](../files/DREES/2018-10-18_DREES_restes-a-charge_MPL-2.0.png)
+![Schéma explicatif des remboursements et des restes à charge](/files/DREES/2018-10-18_DREES_restes-a-charge_MPL-2.0.png)
 
 ## Références
 

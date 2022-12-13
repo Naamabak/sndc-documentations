@@ -45,7 +45,7 @@ Les lignes en gras, où le `STA_PFS_NUM` = `PFS_PFS_NUM`, correspondent aux info
 Dans l’exemple ci-dessus en récupérant le Numéro du cabinet principal `STA_PFS_NUM` dans le référentiel simplifié des professionnels de santé, nous pouvons connaitre l’intégralité de ses cabinets secondaires.
 Ce regroupement permet d’obtenir l’ensemble de l’activité pour un professionnel.
 
-![schéma jointure DCIR/ Référentiel PS](../files/Cnam/20210708_CNAM_Ref-PS_MPL-2.0.png)
+![schéma jointure DCIR/ Référentiel PS](/files/Cnam/20210708_CNAM_Ref-PS_MPL-2.0.png)
 
 ::: warning Important
 Le `STA_PFS_NUM` peut changer dans le temps, il faut donc être vigilant car le professionnel peut arrêter son activité sur son cabinet principal (nature d’exercice = 07) pour en ouvrir un autre ce qui entrainera un changement de `STA_PFS_NUM`.
@@ -90,17 +90,17 @@ Le motif de fin d’exercice (`EXC_FIN_MTF`) n’a de sens que pour un cabinet e
 #### Codes nature d'exercice
 Définition des natures d'exercice et des autorisations par catégorie de professionnel de santé.
 
-![Table code nature exercice](../files/Cnam/20210708_Cnam_Ref-PS_code-nature-ex_MPL-2.0.png)
+![Table code nature exercice](/files/Cnam/20210708_Cnam_Ref-PS_code-nature-ex_MPL-2.0.png)
 
 #### Motifs de fin d'exercice
 Définition des natures d'exercice et des autorisations par catégorie de professionnel de santé.
 
-![Table motif fin d'excercie](../files/Cnam/20210708_Cnam_Ref-PS_Motif-fin-ex_MPL-2.0.png)
+![Table motif fin d'excercie](/files/Cnam/20210708_Cnam_Ref-PS_Motif-fin-ex_MPL-2.0.png)
 
 #### Codes association
 Cette table définit la valeur du 1er caractère des codes association et les catégories de professionnels santé autorisées par association.
 
-![Table code association](../files/Cnam/20210708_Cnam_Ref-PS_Code-association.png)
+![Table code association](/files/Cnam/20210708_Cnam_Ref-PS_Code-association.png)
 
 #### Classification des laboratoires
 Définition des codes de classification des laboratoires.
@@ -118,7 +118,7 @@ Définition des codes de classification des laboratoires.
 
 
 ::: tip Auteur et version
-Cette fiche a été rédigée à partir d'un document rédigé par la CNAM et disponible en version originale [ici](../files/Cnam/20210708_CNAM_DA_PRA_R-table simplifiee_MPL-2.0.docx).
+Cette fiche a été rédigée à partir d'un document rédigé par la CNAM et disponible en version originale [ici](/files/Cnam/20210708_CNAM_DA_PRA_R-table simplifiee_MPL-2.0.docx).
 
 Version : Juillet 2021
 :::

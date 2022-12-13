@@ -21,8 +21,8 @@ N'hésitez pas à suggérer des modifications ou à poser vos questions sur la c
 **Définitions :**  
 
 Le schéma ci-dessous résume les notions importantes pour une dépense présentée au remboursement :  
-[](../files/DREES/2020_01_schema_rac_amo_hospit.png)
-<img src="../files/DREES/2020_01_schema_rac_amo_hospit.png"  width="430" height="300">
+[](/files/DREES/2020_01_schema_rac_amo_hospit.png)
+<img src="/files/DREES/2020_01_schema_rac_amo_hospit.png"  width="430" height="300">
 
 *Signification des abréviations présentes sur le schéma :*  
 **AMO** : assurance maladie obligatoire; **BRSS** : base de remboursement de la sécurité sociale;   
@@ -178,7 +178,7 @@ Un patient recevant des actes lourds s'acquittera donc du montant de la particip
 
 Les principales règles de calcul du RAC AMO sont résumées dans le tableau ci-dessous.  
 
-![](../files/DREES/2020-01_tableau_RAC.png)  
+![](/files/DREES/2020-01_tableau_RAC.png)  
 
 *Signification des sigles utilisés dans le tableau :*  
 **FJU** : forfait journalier unitaire (par journée d’hospitalisation)  

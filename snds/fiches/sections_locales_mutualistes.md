@@ -21,7 +21,7 @@ Les variables ORG_CLE_NEW (Code de l'organisme de liquidation) et ORG_AFF_BEN (C
 *  Code de la SLM d’affiliation : N° de la SLM ou 000 si CPAM stricto sensu
 
 
-![schema SLM](../files/Cnam/Images_cnam/schema_slm.png)
+![schema SLM](/files/Cnam/Images_cnam/schema_slm.png)
 
 
 ### Organisme de liquidation du bénéficiaire 
@@ -105,7 +105,7 @@ Il n’y a pas de code organisme d’affiliation en `01CXXX000` ; les 3 dernièr
 :::tip 
 Un tableau de suivi des codifications des SLM est disponible
 - dans le portail SNDS, au chemin: `Dossiers Publics/Documentation SNIIRAM-SNDS/Offre de service/Suivi des chargements_SLM dans SNIIRAM.xls`
-- en [téléchargement ici](../files/Cnam/2019-10-14_Codification-SLM-SNIIRAM_MPL-2.0.xls), éventuellement moins à jour 
+- en [téléchargement ici](/files/Cnam/2019-10-14_Codification-SLM-SNIIRAM_MPL-2.0.xls), éventuellement moins à jour 
 :::
 
 
@@ -114,5 +114,5 @@ Un tableau de suivi des codifications des SLM est disponible
 Ce document a été initialement publié sur le portail SNDS de la Cnam en décembre 2019. 
 
 Il a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches.
-Il est [téléchargeable ici](../files/Cnam/SNDS_Fiches_Thematiques_SLM-Mutuelles_MLP_2.0.docx) dans sa version d'origine.
+Il est [téléchargeable ici](/files/Cnam/SNDS_Fiches_Thematiques_SLM-Mutuelles_MLP_2.0.docx) dans sa version d'origine.
 :::

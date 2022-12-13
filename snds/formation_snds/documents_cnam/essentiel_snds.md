@@ -7,7 +7,7 @@ Ce document a été rédigé par la [CNAM](../../glossaire/Cnam.md) et est tél�
 
 ## Le Circuit d’Alimentation du SNDS
 <p style="text-align:center;">
-<img src="../../files/Cnam/20210406_Cnam_alimentation-snds_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
+<img src="/files/Cnam/20210406_Cnam_alimentation-snds_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
 </p>
 
 ## Le Référentiel Sécurité du SNDS
@@ -65,7 +65,7 @@ La table contient également des informations sur les non-consommants.
 Une table centrale autour de laquelle gravitent les autres tables de prestations affinées. Plusieurs lignes pour 1 bénéficiaire et pour une prestation dans la table [**ER_PRS_F**](../../tables/DCIR/ER_PRS_F.md). 9 clés de jointure répliquées dans toutes les tables de consommation de soins.
  
 <p style="text-align:center;">
-<img src="../../files/Cnam/20210406_Cnam_presentation-dcir_essentiel-snds_MLP-2.0.png" alt="wip" width="800"/>
+<img src="/files/Cnam/20210406_Cnam_presentation-dcir_essentiel-snds_MLP-2.0.png" alt="wip" width="800"/>
 </p>
 
 ### Clés de jointure
@@ -94,7 +94,7 @@ Le DCIR contient également l’information sur la période des soins :
 **Pour cibler sur une période de soin, il faut impérativement optimiser la requête en bornant une période de traitement plus large** pour récupérer l’ensemble des soins concernés (jusqu’à 27 mois, généralement 99% des soins sont remontés à 6 mois) :
 
 <p style="text-align:center;">
-<img src="../../files/Cnam/20210406_CNAM_date-flux_essentiel-snds_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/Cnam/20210406_CNAM_date-flux_essentiel-snds_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 ### Autres variables du DCIR
@@ -117,7 +117,7 @@ Les modalités de ces variables sont répertoriées dans les tables IR_SPE_V pou
 Dans le cas des SLM « infogérées », l’organisme d’affiliation du bénéficiaire est bien celui de la SLM de son lieu de résidence.
 
 <p style="text-align:center;">
-<img src="../../files/Cnam/20210406_Cnam_organise-affiliation_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
+<img src="/files/Cnam/20210406_Cnam_organise-affiliation_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
 </p>
 
 ### Indicateurs
@@ -133,7 +133,7 @@ La quantité sert à la tarification de la prestation. Elle correspond au nombre
 * **Le coefficient global** est utilisé pour les actes à coefficients. Il est égal à coefficient tarifé x quantité ; donne une idée du «volume d’actes ». Ne doit pas être confondu avec l’objet « coefficient tarifé ».
 
 <p style="text-align:center;">
-<img src="../../files/Cnam/20210406_Cnam_indicateur_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
+<img src="/files/Cnam/20210406_Cnam_indicateur_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
 </p>
 
 ### Les tables affinées
@@ -147,7 +147,7 @@ Montant remboursé de l’acte affiné = Base de remboursement de l’acte affin
 ```
 
 <p style="text-align:center;">
-<img src="../../files/Cnam/20210406_Cnam_tables-affinees_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
+<img src="/files/Cnam/20210406_Cnam_tables-affinees_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
 </p>
 
 Il en est de même pour les indicateurs affinés de la table ER_ARO_F selon le type de remboursement. Concernant [ER_ETE_F](../../tables/DCIR/ER_ETE_F.md), il n’y a que des informations sur les établissements, pas d’indicateurs affinés.
@@ -162,7 +162,7 @@ Cette table contient plusieurs lignes par bénéficiaire et conserve l’histori
 * Pour sélectionner des patients qui ont une ALD active sur une période :
 
 <p style="text-align:center;">
-<img src="../../files/Cnam/20210406_Cnam_referentiel-medicalise_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
+<img src="/files/Cnam/20210406_Cnam_referentiel-medicalise_essentiel-snds_MLP-2.0.png" alt="wip" width="900"/>
 </p>
 
 Filtre à utiliser : 
@@ -176,7 +176,7 @@ Date de début de l’ALD IMB_ALD_DTD <= 31/12/2015 et date de fin de l’ALD IM
 * Différences entre **DCIR** et **PMSI**
 
 <p style="text-align:center;">
-<img src="../../files/Cnam/20210406_Cnam_pmsidcir_essentiel-snds_MLP-2.0.png" alt="wip" width="800"/>
+<img src="/files/Cnam/20210406_Cnam_pmsidcir_essentiel-snds_MLP-2.0.png" alt="wip" width="800"/>
 </p>
 
 * Les principales tables du **PMSI MCO**
@@ -189,7 +189,7 @@ Date de début de l’ALD IMB_ALD_DTD <= 31/12/2015 et date de fin de l’ALD IM
 
 * Schéma global
 <p style="text-align:center;">
-<img src="../../files/Cnam/20210406_Cnam_schema-pmsi_essentiel-snds_MLP-2.0.png" alt="wip" width="800"/>
+<img src="/files/Cnam/20210406_Cnam_schema-pmsi_essentiel-snds_MLP-2.0.png" alt="wip" width="800"/>
 </p>
 
 * Filtre de nettoyage sur le PMSI (jusque 2018) :
@@ -234,7 +234,7 @@ Date : décembre 2020
 :::
 
 ::: tip Télécharger
-Télécharger le document original à ce [lien](../../files/Cnam/20210406_CNAM_essentiel-SNDS_v2122020_MLP-2.0.pdf)
+Télécharger le document original à ce [lien](/files/Cnam/20210406_CNAM_essentiel-SNDS_v2122020_MLP-2.0.pdf)
 :::
 
 

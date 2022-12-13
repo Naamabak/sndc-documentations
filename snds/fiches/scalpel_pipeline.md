@@ -34,7 +34,7 @@ Cette première étape transforme les tables d'origine `.csv` en tables `parquet
 Actuellement, les tables obtenues sont : `DCIR`, `MCO`, `MCO_CE`, `SSR`, `SSR_CE`, `HAD`, `RIP`, `RIP_3A`. L'extension `_CE` désigne les consultations externes. Nous avons construit trois types d'aplatissement adaptés aux structures des différents produits du SNDS : le plus simple est utilisé pour obtenir la base de données DCIR (cf. Fig. 1) et les deux autres pour les différentes bases de données PMSI. Les différentes méthodes sont détaillées sur le [github du projet](https://github.com/X-DataInitiative/SCALPEL-Flattening/blob/DREES-104-DocFlattening/README_joins.md) en anglais.
 
 <p align="center">
-<img src="../files/DREES/2020-03-05_aplatissement_dcir.png" width="500px"/>
+<img src="/files/DREES/2020-03-05_aplatissement_dcir.png" width="500px"/>
 </p>  
 
 *Fig. 1, Logique de jointure pour le DCIR*

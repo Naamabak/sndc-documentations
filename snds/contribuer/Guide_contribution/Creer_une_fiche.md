@@ -10,7 +10,7 @@ Avant de créer une fiche, un [ticket](Ticket.md) décrivant une proposition de 
 Après avoir créé un ticket, retourner dans le menu principal `Dépot`. Allez dans le dossier `fiches` ou `glossaire` selon le type de fiche que vous souhaitez créer. Cliquer sur l'onglet `+` et choisir `nouveau fichier`. 
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-13_HDH_creer-fiche_MLP-2.0.png" alt="wip" width="900"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-13_HDH_creer-fiche_MLP-2.0.png" alt="wip" width="900"/>
 </p>
 
 Une fenêtre d'édition s'ouvre. Celle-ci est identique à celle lors de la [modification de fiche](Modifier_une_fiche.md).
@@ -34,7 +34,7 @@ Un formulaire en bas de la page éditée permet d'enregistrer vos modifications 
 * En bas de page, la case `créer une nouvelle demande de fusion` est automatiquement cochée. Laissez cette case cochée. 
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-13_HDH_creer-fiche-edition_MLP-2.0.png" alt="wip" width="900"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-13_HDH_creer-fiche-edition_MLP-2.0.png" alt="wip" width="900"/>
 </p>
 
 ## Enregistrer la fiche (demande de fusion ou merge-request)

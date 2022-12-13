@@ -40,7 +40,7 @@ Après avoir sélectionné un projet, la page qui s'affiche contient :
 Chaque élément est détaillé ci-dessous.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-20_HDH_naviguer-projet_MLP-2.0.png" alt="changer branche" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-20_HDH_naviguer-projet_MLP-2.0.png" alt="changer branche" width="1000"/>
 </p>
 
 #### Dépôt
@@ -52,14 +52,14 @@ Au-dessus des dossiers, il est affiché le dernier `commit` soit une description
 En cliquant sur une fiche, une page de prévisualisation s'affiche. Cette page permet de prévisualiser la fiche, visualiser la fiche au format markdown, d'[éditer la fiche](Modifier_une_fiche.md). Au-dessus du titre de la fiche, il est indiqué la dernière modification ayant eu lieu sur cette fiche (le dernier `commit`).
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_presentation-fiche_MLP-2.0.png" alt="changer branche" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_presentation-fiche_MLP-2.0.png" alt="changer branche" width="1000"/>
 </p>
 
 ##### Commits
 En cliquant sur `Dépôt`>`Commits` dans le menu à droite, l'[historique](https://gitlab.com/healthdatahub/documentation-snds/commits/master) des modifications ayant eu lieu s'affiche via des commits. Un commit est une description des modifications effectuées. Il comprend l'auteur, la date et une courte description des modifications. 
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_commit-depot_MLP-2.0.png" alt="changer branche" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_commit-depot_MLP-2.0.png" alt="changer branche" width="1000"/>
 </p>
 
 #### Ticket
@@ -73,14 +73,14 @@ Sous forme de liste les tickets sont classés par ordre de création. Chaque tic
 Tant que le ticket est ouvert, il est classé dans l'onglet `Open`, s'il est résolu il est classé dans l'onglet `Closed`.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_ticket-liste_MLP-2.0.png" alt="changer branche" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_ticket-liste_MLP-2.0.png" alt="changer branche" width="1000"/>
 </p>
 
 ##### Tableaux
 L'affichage des tickets sous la forme de tableau permet de savoir quelles fiches sont à faire, celles qui sont en cours de rédaction et d’y contribuer éventuellement. Il est possible d'afficher uniquement les tickets qui comporte une étiquette en allant dans la barre de recherche `Lable` et en ajoutant `=` et `Nom de l'étiquette`.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_ticket-tableau_MLP-2.0.png" alt="changer branche" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_ticket-tableau_MLP-2.0.png" alt="changer branche" width="1000"/>
 </p>
 
 ### Notion de branches et de travail à plusieurs en parallèle
@@ -132,14 +132,14 @@ Une fiche détaillée est dédiée aux [demandes de fusion](demande_fusion.md)
 Pour choisir une version de travail, il suffit d'aller dans l'onglet `Dépôt`, puis de cliquer sur le menu déroulant où il est indiqué *master*. Toutes les branches encore ouverte et n'ayant pas encore été fusionnées à la branche principale sont disponibles dans ce menu. 
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_image-branche_MLP-2.0.png" alt="changer branche" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_image-branche_MLP-2.0.png" alt="changer branche" width="1000"/>
 </p>
 
 ## Procédure de contribution à la documentation
 Les différentes notions abordées précédemment sont exploitées lors d'une contribution à la documentation via Gitlab. Le processus de contribution est décrit dans la figure ci-dessous. 
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-10_HDH_procedure-contribution_MLP-2.0.png" alt="wip" width="900"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-10_HDH_procedure-contribution_MLP-2.0.png" alt="wip" width="900"/>
 </p>
 
 Des fiches sur les [tickets](Ticket.md), la [modification d'une fiche](Modifier_une_fiche.md), la [création d'une fiche](Creer_une_fiche.md) et sur les [demandes de fusions](demande_fusion.md) permettent d'aller plus loin dans l'utilisation de Gitlab. 

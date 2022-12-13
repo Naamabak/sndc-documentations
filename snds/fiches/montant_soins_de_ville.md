@@ -23,7 +23,7 @@ Différentes informations sur les montants sont indiquées :
 - les participations supplémentaires prises en charge par le public ([CMU-C](../glossaire/CMUC.md), [AME](../glossaire/AME.md), etc.)
 
 ### Exemple schématique des différents montants 
-![ex_montants_sdv](../files/HEVA/2019-07-16_HEVA_ex_montants_sdv_dcir_MPL-2.0.png)
+![ex_montants_sdv](/files/HEVA/2019-07-16_HEVA_ex_montants_sdv_dcir_MPL-2.0.png)
 
 Dans cet exemple, il n'y a pas de parts supplémentaires. 
 
@@ -201,7 +201,7 @@ Toutes les prestations présentées au remboursement sont disponibles dans l’u
 
 Il est possible de décomposer la dépense de la même façon que dans le DCIR: 
 
-![indicateurs_damir](../files/DSS/indicateurs_DAMIR_.png)
+![indicateurs_damir](/files/DSS/indicateurs_DAMIR_.png)
 
 Cependant, on trouve deux types d’indicateurs pour analyser les dépenses à l'aide du DAMIR : 
 - les indicateurs bruts : montant de la dépense, quantité, montant versé/remboursé, base de remboursement et montant du dépassement

@@ -7,7 +7,7 @@ Différents outils opensource sont mis à disposition par le Health Data Hub et 
 Les fiches et documents sont partagés un dépôt dans [Gitlab](https://gitlab.com/healthdatahub/documentation-snds) par les contributeurs avant d'être compilés par un logiciel Open Source [Vuepress](https://vuepress.vuejs.org/) pour donner le site de la documentation. 
 
 <p style="center">
-<img src="../../files/images/tutoriel_gitlab/2020-05-10_HDH_outils-documentation_MLP-2.0.png" alt="Éditer sur GitLab" width="600"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-10_HDH_outils-documentation_MLP-2.0.png" alt="Éditer sur GitLab" width="600"/>
 </p>
 
 ### Gitlab
@@ -45,5 +45,5 @@ Il est possible de contribuer de plusieurs manières :
 - en partageant des [programmes](partage_document.md)
 
 <p style="center">
-<img src="../../files/images/tutoriel_gitlab/2020-05-10_HDH_procedure-contribution_MLP-2.0.png" alt="Éditer sur GitLab" width="800"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-10_HDH_procedure-contribution_MLP-2.0.png" alt="Éditer sur GitLab" width="800"/>
 </p>

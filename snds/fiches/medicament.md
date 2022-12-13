@@ -22,7 +22,7 @@ Un CIP 13 commence toujours par le préfixe `3400` en France.
 
 Lorsqu’un médicament disposait d'un code CIP 7, le code CIP 13 correspondant est construit de la manière suivante :
 
-![schema 1](../files/HDH/20220304_HDH_structure-cip_MPL-2.0.png)
+![schema 1](/files/HDH/20220304_HDH_structure-cip_MPL-2.0.png)
 
 **3400** : Préfixe médicament France
 **X** : Code rubrique défini par le Club Inter Pharmaceutique selon le type de produit
@@ -39,7 +39,7 @@ Lorsqu’un médicament disposait d'un code CIP 7, le code CIP 13 correspondant 
 #### Calendrier de mise en place du CIP 13 
 Le calendrier de mise en place du CIP 13 est le suivant :
 
-![schema 2](../files/Cnam/images_ciblage_medicaments/Medicaments_schema2.png)
+![schema 2](/files/Cnam/images_ciblage_medicaments/Medicaments_schema2.png)
 
 Le code CIP13 peut donc être présent dans les bases dès 2007, tandis que le CIP7 est présent au moins jusque 2014. 
 Une période de transition, où les 2 codes se chevauchent existe donc.
@@ -164,18 +164,18 @@ quit;
 ```
 
 ## Récapitulatif
-![schema 3](../files/Cnam/images_ciblage_medicaments/Medicaments_schema3.png)
+![schema 3](/files/Cnam/images_ciblage_medicaments/Medicaments_schema3.png)
 
 ## Références
 
 ::: tip Crédits
-Cette fiche provient en partie d'un [document publié](../files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
+Cette fiche provient en partie d'un [document publié](/files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
 - https://www.france-mvo.fr/wp-content/uploads/2019/10/CIP-GS1-Guide-de-lecture-du-DataMatrix-sur-les-medicaments.pdf
 - https://www.cipmedicament.org/wp-content/uploads/2020/04/CIP-ACL-n%C2%B028-Les-Cahiers-CIP-ACL-Harmonisation-des-libell%C3%A9s-des-m%C3%A9dicaments-hom%C3%A9opathiques-%C3%A0-nom-commun.pdf
 :::
 
 ::: tip Exemple d'utilisation
-Les requêtes présentées dans cette fiche rédigée par la Cnam peuvent par exemple servir à produire [ce type de résultats](../files/HDH/RequetealaDemande/202207_VYV_MPL-2.0.xlsx). Il s’agit d’éléments qui ont été produits dans le cadre de l’expérimentation du service de requête à la demande pour le groupe VYV et suite à un partenariat entre le HDH et le [datalab Normandie](https://www.datalab-normandie.fr/). L’objectif était que ce dernier dispose de la volumétrie des personnes, résidantes en Normandie, et ayant eu au moins une délivrance de médicaments donnés afin d’alimenter des travaux de modélisation de donnée de dispersion de pollens allergènes, d’aménagement botanique du territoire et de consommation de soins relatifs aux allergies.
+Les requêtes présentées dans cette fiche rédigée par la Cnam peuvent par exemple servir à produire [ce type de résultats](/files/HDH/RequetealaDemande/202207_VYV_MPL-2.0.xlsx). Il s’agit d’éléments qui ont été produits dans le cadre de l’expérimentation du service de requête à la demande pour le groupe VYV et suite à un partenariat entre le HDH et le [datalab Normandie](https://www.datalab-normandie.fr/). L’objectif était que ce dernier dispose de la volumétrie des personnes, résidantes en Normandie, et ayant eu au moins une délivrance de médicaments donnés afin d’alimenter des travaux de modélisation de donnée de dispersion de pollens allergènes, d’aménagement botanique du territoire et de consommation de soins relatifs aux allergies.
 :::
 
 ::: tip Mise à jour de la fiche 

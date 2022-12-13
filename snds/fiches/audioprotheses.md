@@ -69,8 +69,8 @@ la table de nomenclature `NT_HIS`, où `LPH_PRS_NAT` représente le code prestat
 
 ## Répartition de la base de remboursement par codes LPP
 
-![graphique base remboursement audio](../files/DREES/2020-04-09_audioprotheses.png "Base remboursement titre II chap 3")
-![graphique base remboursement audio_quantite](../files/DREES/2020-04-09_audioprotheses_quantite.png "Quantité titre II chap 3")
+![graphique base remboursement audio](/files/DREES/2020-04-09_audioprotheses.png "Base remboursement titre II chap 3")
+![graphique base remboursement audio_quantite](/files/DREES/2020-04-09_audioprotheses_quantite.png "Quantité titre II chap 3")
 
 *Note*: Ces graphiques sont donnés à titre indicatif, graphique 1: 10 premiers codes LPP
 en parts de la base de remboursement, graphique 2: 10 premiers codes LPP en ce qui concerne la
