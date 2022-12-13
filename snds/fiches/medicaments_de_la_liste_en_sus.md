@@ -30,8 +30,6 @@ La liste des médicaments bénéficiant de ce financement dérogatoire s’appel
 En pratique, au-delà de l’ASMR, qui est une condition nécessaire, il y a un second critère prix qui joue : un médicament pourra être inscrit sur la liste en sus si son prix est trop élevé pour être intégré au tarif du séjour hospitalier. 
 Ainsi, si des médicaments génériques ou biosimilaires d’un médicament référent inscrit sur la liste en sus arrivent sur le marché, ils seront de facto ASMR V mais ajoutés à la liste en sus si leur prix reste élevé.
 
-*Source >* [site du Ministère de la santé](https://solidarites-sante.gouv.fr/archives/archives-presse/archives-breves/article/prise-en-charge-des-medicaments-a-l-hopital-precisions-sur-le-decret-liste-en)
-
 ### Unités communes de dispensation (UCD) prises en charge 
 
 La liste en sus définit un ensemble d’unités communes de dispensation (UCD), *i.e.* le plus petit conditionnement pharmaceutique, auxquelles correspondent un code (7 caractères numériques) et un libellé.

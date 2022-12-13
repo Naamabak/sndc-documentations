@@ -29,7 +29,7 @@ Le datamart DAMIR propose des données de dépenses agrégées sur les caractér
 
 ## Identifiants du PS dans le SNDS
 
-Le PS, libéral ou salarié, est caractérisé par un numéro unique, le [N° RPPS (Répertoire Partagé des Professionnels de Santé)](https://documentation-snds.health-data-hub.fr/glossaire/RPPS.html) constitué de 11 chiffres qui resteront inchangés durant toute sa carrière professionnelle. 
+Le PS, libéral ou salarié, est caractérisé par un numéro unique, le [N° RPPS (Répertoire Partagé des Professionnels de Santé)](../glossaire/RPPS.md) constitué de 11 chiffres qui resteront inchangés durant toute sa carrière professionnelle. 
 Toutefois cet identifiant n’est pas encore disponible dans le SNDS (sauf pour les prescripteurs salariés : PSP_PPS_NUM dans DCIR-DCIRS).
 **Les produits du SNDS proposent de suivre l’activité des PS libéraux exerçant en cabinet de ville ou en établissement privé.
 Les identifiants du PS dans le SNDS sont en réalité les identifiants de son (ou ses) cabinet(s).**
@@ -44,7 +44,7 @@ Les deux numéros seront donc identiques lorsque le patient consulte dans le cab
 Ainsi, il existe le **Numéro du PS Statistique** (appelé également le N° Assurance maladie) constitué de 8 chiffres (et 1 clé). 
 **Il correspond au numéro du CABINET PRINCIPAL du PS à partir duquel est fait le chaînage statistique sous lequel est regroupée toute l’activité exécutée/prescrite qu’un praticien est susceptible d’avoir sous différents numéros de liquidation.** 
 Un **Numéro de PS de liquidation** correspond au numéro du **cabinet du FLUX** c’est-à-dire le cabinet du lieu où a été TRAITÉE (liquidée) l’activité du praticien : il peut donc s’agir soit du cabinet principal, soit d’un cabinet secondaire s’il est différent du Numéro de PS Statistique. 
-Les 2 premiers chiffres de ces numéros représentent le département d’implantation du cabinet, et le 3ème la [catégorie du PS](https://documentation-snds.health-data-hub.fr/fiches/professionnel_sante.html#notions-liees-aux-identifiants-ps-du-snds).
+Les 2 premiers chiffres de ces numéros représentent le département d’implantation du cabinet, et le 3ème la catégorie du PS.
 
 Par exemple, un PS généraliste ayant un cabinet principal à Paris et un cabinet secondaire à Nanterre aura deux activités distinguables :
 
@@ -231,7 +231,7 @@ Enfin, le **code convention** renseigne sur le type de conventionnement que le P
 | 8 VALEUR INCONNUE  | 9 SECTEUR INCONNU   | 
 | 9 PRATICIEN SALARIE (SERVICE MEDICAL DU REGIME SNCF, RATP OU MINES) | 0 SECTEUR 0   | 
 
-Ces variables peuvent être complétées dans les datamarts AMOS et DCIR par les différents contrats sur objectifs signés par le PS, par exemple son adhésion à l’[OPTAM](https://documentation-snds.health-data-hub.fr/glossaire/OPTAM.html) (PRS_CRD_OPT) qui a remplacé le Contrat d’Accès aux Soins.
+Ces variables peuvent être complétées dans les datamarts AMOS et DCIR par les différents contrats sur objectifs signés par le PS, par exemple son adhésion à l’[OPTAM](../glossaire/OPTAM.md) (PRS_CRD_OPT) qui a remplacé le Contrat d’Accès aux Soins.
 Elles peuvent également constituer un « contexte du PS » (dans DCIR, EXE_CTX_PFS) qui servira à établir la grille tarifaire des actes chirurgicaux de la nomenclature CCAM.
 
 

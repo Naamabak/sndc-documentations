@@ -17,8 +17,8 @@ Le statut d’ayant droit est défini par le fait de ne pas avoir de droit ouver
 :::tip Note
 
 Pour plus d’informations sur les notions d’identifiants patients, nous vous invitons à consulter les fiches :
-- [L'Essentiel du SNDS](https://documentation-snds.health-data-hub.fr/formation_snds/documents_cnam/essentiel_snds.html)
-- [Identifiants des bénéficiaires](https://documentation-snds.health-data-hub.fr/fiches/fiche_beneficiaire.html)
+- [L'Essentiel du SNDS](../formation_snds/documents_cnam/essentiel_snds.md)
+- [Identifiants des bénéficiaires](fiche_beneficiaire.md)
 :::
 
 Cette fiche décline la démarche adoptée avant de restituer le code SQL de la requête SNDS et de partager les résultats qui en sont issus.
