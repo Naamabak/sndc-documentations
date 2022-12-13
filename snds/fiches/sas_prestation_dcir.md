@@ -87,7 +87,7 @@ NB : la condition `OR  ETE_IND_TAA IS MISSING` est nécessaire lorsque l'on util
 Evolution du pourcentage d'hôpitaux publics appliquant la T2A (`ETE_IND_TAA = 1`) :
  inférieur à 1% (2010-2012), 3% (2013), 5% (2014), 8% (2015), 24% (2016), 33% (2017), 34% (2018), 35% (2019).
 
-- La fiche [Dépenses des établissements de santé dans le SNDS](https://documentation-snds.health-data-hub.fr/fiches/etablissements_sante.html) décrit la façon d'identifier le lieu d'exercice du soin (en ville, en hôpital public ou en hôpital privé).
+- La fiche [Dépenses des établissements de santé dans le SNDS](etablissements_sante.md) décrit la façon d'identifier le lieu d'exercice du soin (en ville, en hôpital public ou en hôpital privé).
 
 - Les tables du DCIR sont des tables volumineuses. Les prestations alimentent le DCIR par mois de flux et non en fonction de la date d'exécution de la prestation de soins. Pour ces deux raisons, la requête peut être exécutée par mois de flux et, si l'on veut les prestations sur une année complète, la requête doit être répétée 18 fois (année entière plus les 6 mois suivants). En procédant ainsi, on connait par exemple plus de 98% des délivrances de médicaments  de l'année portées au remboursement.
 

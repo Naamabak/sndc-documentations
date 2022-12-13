@@ -37,7 +37,7 @@ Toutes les téléconsultations autres que celles réalisées en ville ont été 
 
 
 :::tip Note
-Pour un ensemble plus large de prestations relatives aux téléconsultations mais aussi aux téléexpertises et télésurveillances, nous vous invitons à consulter la [fiche sur les prestations liées au COVID](https://documentation-snds.health-data-hub.fr/fiches/prestation_covid.html#les-teleconsultations).
+Pour un ensemble plus large de prestations relatives aux téléconsultations mais aussi aux téléexpertises et télésurveillances, nous vous invitons à consulter la [fiche sur les prestations liées au COVID](prestation_covid.md).
 ::: 
 
 
@@ -48,9 +48,9 @@ La spécialité du médecin exécutant est identifiée par la variable `PSE_SPE_
 Le patient est considéré comme en ALD si au cours de l’année il a eu une téléconsultation en rapport ou non en rapport avec son ALD (`EXO_MTF` in 41,42,43,44,45,46).
 
 
-:::tip Autres références sur les ALD
-- Fiche [Requête type de sélection des affections de longue durée (ALD)](https://documentation-snds.health-data-hub.fr/fiches/requete_type_ald.html) 
-- Fiche [Bénéficiaires du dispositif ALD](https://documentation-snds.health-data-hub.fr/fiches/beneficiaires_ald.html)
+::: tip Autres références sur les ALD
+- Fiche [Requête type de sélection des affections de longue durée (ALD)](requete_type_ald.md) 
+- Fiche [Bénéficiaires du dispositif ALD](beneficiaires_ald.md)
 ::: 
 
 
@@ -110,7 +110,7 @@ Les effectifs inférieurs à 11 ne sont pas restitués.
 
 
 ## Références  
-:::tip Crédit
+::: tip Crédit
 Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande par le Health Data Hub et dans le cadre d’un partenariat avec le [Quotidien du Médecin](https://www.health-data-hub.fr/quotidien-du-medecin).
 L'objectif était que ce dernier dispose d’indicateurs afin d’alimenter un article sur la thématique des téléconsultations.
 L'article a été publié le 09/09/2022 sur le site du [Quotidien du médecin](https://www.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/qui-profite-le-boom-des-consultations-distance).

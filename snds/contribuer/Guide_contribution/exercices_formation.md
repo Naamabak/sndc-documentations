@@ -58,13 +58,6 @@ Utiliser le document CodiMD partagé, en suivant lien donné en formation.
     - Quelle est la dernière issue fermée ?
     - Quels sont les derniers fichiers modifiés dans la branche `ecriture_fiche_foin` ?
 
-
-1. Explorer le site de documentation, **version de formation** : [**formation-gitlab**.documentation-snds.health-data-hub.fr/](https://formation-gitlab.documentation-snds.health-data-hub.fr/)
-    - Quelles sont les 6 sections de la documentation ?
-    - Quel est le titre du document partagé par Santé publique France ?
-    - Quel est le sujet de la première présentation du 3ème Meetup ?
-    - Quelles différences y a t-il entre les dossiers sur GitLab et le sommaire du site de documentation ?
-
 1. Proposer une modification 
     - Parcourez les pages du site de documentation, en particulier les fiches de glossaire
     - Chercher une **proposition d'amélioration simple** à faire : ajout d'une phrase, faute d'orthographe, référence à ajouter, etc.

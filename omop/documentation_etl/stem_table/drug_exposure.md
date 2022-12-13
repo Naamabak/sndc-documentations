@@ -1,14 +1,11 @@
 # Domaine ‘Drug exposure’
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-## **Tables du PMSI**
+## Tables du PMSI
 
-Le PMSI contient les [<u>médicaments de la liste en
-SUS</u>](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html#presentation)
-délivrés dans le cadre d’une hospitalisation, les autres prises de
-médicament ne sont pas renseignées.
+Le PMSI contient les [médicaments de la liste en SUS](../../../snds/fiches/medicaments_de_la_liste_en_sus.md) délivrés dans le cadre d’une hospitalisation, les autres prises de médicament ne sont pas renseignées.
 
-### *Tables et variables utilisées dans le SNDS*
+### Tables et variables utilisées dans le SNDS
 
 -   Tables à considérer :
 
@@ -30,7 +27,7 @@ médicament ne sont pas renseignées.
 
     -   **T_MCOaaMEDTHROMBO**
 
-### *Règles de transformation*
+### Règles de transformation
 
 <table style="width:100%;">
 <colgroup>

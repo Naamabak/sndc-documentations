@@ -208,8 +208,8 @@ Tables du DCIR:
 
 La localisation choisie est le code commune INSEE à 5 chiffres. Ce code
 n’est pas indiqué tel quel dans le SNDS pour les patients. Il faut la
-reconstituer en suivant [<u>cette
-méthode</u>](https://documentation-snds.health-data-hub.fr/fiches/localisation_geographique_beneficiaires.html#construction-de-la-localisation-dans-le-pmsi)
+reconstituer en suivant [cette
+méthode](../../snds/fiches/localisation_geographique_beneficiaires.md)
 à partir des variables *ben_res_com, ben_res_dpt* et *org_aff_ben.* La
 notion d’état (*state*) n’existant pas en France, nous avons choisi de
 renseigner la région.
