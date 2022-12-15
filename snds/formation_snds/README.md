@@ -3,6 +3,7 @@
 
 Différentes ressources sont disponibles pour se former au SNDS :
 
+- un [guide d'initiation au SNDS](initiation)
 - un [kit de démarrage](starter_kit.md) pour débuter avec l'accès aux données
 - des [guides et formations de la CNAM](documents_cnam)
     - l'[essentiel du SNDS](documents_cnam/essentiel_snds.md)
