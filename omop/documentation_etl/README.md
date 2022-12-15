@@ -15,7 +15,7 @@ Il est conseillé de traiter les tables dans l'ordre suivant :
 ## Développement de l'ETL 
 - La section [traitements préliminaires](traitements_preliminaires/README.md) décrit les changements préalables qui ont été effectués sur les tables DCIR pour faciliter le développement de l'ETL. 
 
-- La section [macros](macros.md) rescence les principales macros utilisées lors du développement de l'ETL.
+- La section [macros](macros.md) recense les principales macros utilisées lors du développement de l'ETL.
 
 
 L'intégralité des scripts SQL effectuant la transformation de l'échantillon SNDS au format OMOP-CDM est disponible sur [ce dépot GIT](https://gitlab.com/healthdatahub/snds_omop). 
