@@ -14,4 +14,4 @@ Différentes ressources sont disponibles pour se former au SNDS :
 - deux jeux de [données de synthèse](donnees_synthetiques)
 - des [notebook](notebook.md) pour avoir une première approche sur les données
 - des [programmes](programmes.md)
-
+- des [ressources pour apprendre à utiliser R sur le portail SNDS](ressources_R.md)
