@@ -2,7 +2,7 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ::: Ressources
-Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources. Il est [téléchargeable ici](/files/Cnam/2019-07_Cnam_Guide_pedagogique_SNDS_acces_projet_MPL-2.0.docx) dans sa version d'origine.
+Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources. Il est [téléchargeable ici](https://documentation-snds.health-data-hub.fr/files/Cnam/2019-07_Cnam_Guide_pedagogique_SNDS_acces_projet_MPL-2.0.docx) dans sa version d'origine.
 
 Il a été initialement publié sur le portail SNDS de la Cnam en XX.
 

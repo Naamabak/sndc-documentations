@@ -43,6 +43,6 @@ Vous pouvez à tout moment adresser vos remarques et vos questions sur la pseudo
 ## Références
 
 ::: tip 
-Télécharger la fiche au format Word [consignes sur la pseudonymisation des identifiants bénéficiaires](/files/Cnam/2019-10_Cnam_Consigne_pseudonymisation_identifiants_MPL-2.0.docx) [Cnam, MPL-2.0]
+Télécharger la fiche au format Word [consignes sur la pseudonymisation des identifiants bénéficiaires](https://documentation-snds.health-data-hub.fr/files/Cnam/2019-10_Cnam_Consigne_pseudonymisation_identifiants_MPL-2.0.docx) [Cnam, MPL-2.0]
 :::
 

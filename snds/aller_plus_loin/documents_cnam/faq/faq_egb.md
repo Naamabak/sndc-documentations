@@ -335,6 +335,6 @@ La proportion des prestations concernées est très faible.
 
 ## REFERENCES
 
-La [FAQ EGB 09 2019](/files/Cnam/2019-06-CNAM-FAQ_EGB_MLP-2.0.xlsx) [CNAM - MPL-2.0] reprend les questions fréquemment posées sur l'EGB.
+La [FAQ EGB 09 2019](https://documentation-snds.health-data-hub.fr/files/Cnam/2019-06-CNAM-FAQ_EGB_MLP-2.0.xlsx) [CNAM - MPL-2.0] reprend les questions fréquemment posées sur l'EGB.
 
 

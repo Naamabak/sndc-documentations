@@ -9,6 +9,6 @@ Plus précisément, l'extraction contient :
 - Les tables du PMSI 2019 non consolidées.
 - Les tables COVID commençant par C_MCO.
 
-Dans ce cadre, la liste complète des tables et variables du SNDS qui ont été standardisées est disponible dans [ce fichier](/files/tables_variables_snds.xlsx).
+Dans ce cadre, la liste complète des tables et variables du SNDS qui ont été standardisées est disponible dans [ce fichier](https://documentation-snds.health-data-hub.fr/files/tables_variables_snds.xlsx).
 
 
