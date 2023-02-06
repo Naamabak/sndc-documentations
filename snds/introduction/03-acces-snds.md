@@ -73,11 +73,11 @@ Les laboratoires de recherche ou bureaux d'études réalisant des études pour d
 La liste des organismes ayant fait cet engagement est disponible dans le document ci-dessous. 
 
 <p style="text-align: center;">
-<object data="/files/INDS/Engagement_de_conformite_au_reférentiel_au_05-03-20.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="/files/INDS/Engagement_de_conformite_au_reférentiel_au_05-03-20.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/INDS/Engagement_de_conformite_au_reférentiel_au_05-03-20.pdf">Download PDF</a>.</p>
+<object data="https://documentation-snds.health-data-hub.fr/files/INDS/Engagement_de_conformite_au_reférentiel_au_05-03-20.pdf" type="application/pdf" width="500px" height="450px">
+    <embed src="https://documentation-snds.health-data-hub.fr/files/INDS/Engagement_de_conformite_au_reférentiel_au_05-03-20.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://documentation-snds.health-data-hub.fr/files/INDS/Engagement_de_conformite_au_reférentiel_au_05-03-20.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 </p>
 
-[Télécharger le document](/files/INDS/Engagement_de_conformite_au_reférentiel_au_05-03-20.pdf).
+[Télécharger le document](https://documentation-snds.health-data-hub.fr/files/INDS/Engagement_de_conformite_au_reférentiel_au_05-03-20.pdf).

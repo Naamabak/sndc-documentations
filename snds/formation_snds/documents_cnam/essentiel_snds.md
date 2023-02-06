@@ -234,7 +234,7 @@ Date : décembre 2020
 :::
 
 ::: tip Télécharger
-Télécharger le document original à ce [lien](/files/Cnam/20210406_CNAM_essentiel-SNDS_v2122020_MLP-2.0.pdf)
+Télécharger le document original à ce [lien](https://documentation-snds.health-data-hub.fr/files/Cnam/20210406_CNAM_essentiel-SNDS_v2122020_MLP-2.0.pdf)
 :::
 
 

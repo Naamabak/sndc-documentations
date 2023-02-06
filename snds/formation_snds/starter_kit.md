@@ -37,28 +37,28 @@ En complément, d’autres pièces peuvent vous être demandées :
 - La note d’accompagnement relative à l’information des personnes concernées (à venir)
 - La notion d’[intérêt public](https://www.health-data-hub.fr/interet-public) 
 - Le guide de remplissage de l’expression de besoin pour le SNDS historique (à venir)
-- Le [guide d’accompagnement de mise en conformité du référentiel de sécurité du SNDS](/files/HDH/SNDS_Referentiel_securite_Guide_accompagnement.pdf)
+- Le [guide d’accompagnement de mise en conformité du référentiel de sécurité du SNDS](https://documentation-snds.health-data-hub.fr/files/HDH/SNDS_Referentiel_securite_Guide_accompagnement.pdf)
 <p style="text-align: center;">
-<object data="/files/HDH/SNDS_Referentiel_securite_Guide_accompagnement.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="/files/HDH/SNDS_Referentiel_securite_Guide_accompagnement.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/HDH/SNDS_Referentiel_securite_Guide_accompagnement.pdf">Download PDF</a>.</p>
+<object data="https://documentation-snds.health-data-hub.fr/files/HDH/SNDS_Referentiel_securite_Guide_accompagnement.pdf" type="application/pdf" width="500px" height="450px">
+    <embed src="https://documentation-snds.health-data-hub.fr/files/HDH/SNDS_Referentiel_securite_Guide_accompagnement.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://documentation-snds.health-data-hub.fr/files/HDH/SNDS_Referentiel_securite_Guide_accompagnement.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 </p>
 - La présentation du [CESREES](https://www.health-data-hub.fr/cesrees)
 - Les [modèles d’appariements](/files/HDH/HDH_schemas_appariement.pdf)
 <p style="text-align: center;">
-<object data="/files/HDH/HDH_schemas_appariement.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="/files/HDH/HDH_schemas_appariement.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/HDH/HDH_schemas_appariement.pdf">Download PDF</a>.</p>
+<object data="https://documentation-snds.health-data-hub.fr/files/HDH/HDH_schemas_appariement.pdf" type="application/pdf" width="500px" height="450px">
+    <embed src="https://documentation-snds.health-data-hub.fr/files/HDH/HDH_schemas_appariement.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://documentation-snds.health-data-hub.fr/files/HDH/HDH_schemas_appariement.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 </p>
 - le [guide de la CNIL sur l’appariement direct](https://www.cnil.fr/fr/appariement-de-donnees-snds-numero-de-securite-sociale-nir-guide-pratique) 
 <p style="text-align: center;">
-<object data="/files/HDH/guide_pratique_circuits_nir_recherche_en_sante.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="/files/HDH/guide_pratique_circuits_nir_recherche_en_sante.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/HDH/guide_pratique_circuits_nir_recherche_en_sante.pdf">Download PDF</a>.</p>
+<object data="https://documentation-snds.health-data-hub.fr/files/HDH/guide_pratique_circuits_nir_recherche_en_sante.pdf" type="application/pdf" width="500px" height="450px">
+    <embed src="https://documentation-snds.health-data-hub.fr/files/HDH/guide_pratique_circuits_nir_recherche_en_sante.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://documentation-snds.health-data-hub.fr/files/HDH/guide_pratique_circuits_nir_recherche_en_sante.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 </p>

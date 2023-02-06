@@ -184,9 +184,9 @@ La visualisation de pdf n'est pas supporté par le format Markdown. Une solution
 
 ```
 <p style="text-align: center;">
-<object data="/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf">Download PDF</a>.</p>
+<object data="https://documentation-snds.health-data-hub.fr/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf" type="application/pdf" width="500px" height="450px">
+    <embed src="https://documentation-snds.health-data-hub.fr/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://documentation-snds.health-data-hub.fr/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 </p>

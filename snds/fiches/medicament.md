@@ -169,7 +169,7 @@ quit;
 ## Références
 
 ::: tip Crédits
-Cette fiche provient en partie d'un [document publié](/files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
+Cette fiche provient en partie d'un [document publié](https://documentation-snds.health-data-hub.fr/files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
 - https://www.france-mvo.fr/wp-content/uploads/2019/10/CIP-GS1-Guide-de-lecture-du-DataMatrix-sur-les-medicaments.pdf
 - https://www.cipmedicament.org/wp-content/uploads/2020/04/CIP-ACL-n%C2%B028-Les-Cahiers-CIP-ACL-Harmonisation-des-libell%C3%A9s-des-m%C3%A9dicaments-hom%C3%A9opathiques-%C3%A0-nom-commun.pdf
 :::

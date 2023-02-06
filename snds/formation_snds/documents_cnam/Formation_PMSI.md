@@ -7,24 +7,24 @@ Cette section rassemble des ressources disponibles pour se former au PMSI. Ces r
 Ce document est une initiation au PMSI à travers le SNDS et provient d'une formation PMSI proposée par la Cnam. Il comprend une genèse du PMSI, une description de l'alimentation des données du PMSI, du PMSI MCO, des actes et consultations externes, du PMSI SSR, du PMSI HAD et du PMSI PSY. 
 
 <p style="text-align: center;">
-<object data="/files/Cnam/2020-06-18_CNAM_Formation-PMSI-v-Mars2020_MLP-2.0.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="/files/Cnam/2020-06-18_CNAM_Formation-PMSI-v-Mars2020_MLP-2.0.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/Cnam/files/Cnam/2020-06-18_CNAM_Formation-PMSI-v-Mars2020_MLP-2.0.pdf">Download PDF</a>.</p>
+<object data="https://documentation-snds.health-data-hub.fr/files/Cnam/2020-06-18_CNAM_Formation-PMSI-v-Mars2020_MLP-2.0.pdf" type="application/pdf" width="500px" height="450px">
+    <embed src="https://documentation-snds.health-data-hub.fr/files/Cnam/2020-06-18_CNAM_Formation-PMSI-v-Mars2020_MLP-2.0.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://documentation-snds.health-data-hub.fr/files/Cnam/files/Cnam/2020-06-18_CNAM_Formation-PMSI-v-Mars2020_MLP-2.0.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 </p>
 
-[Télécharger ce document](/files/Cnam/2020-06-18_CNAM_Formation-PMSI-v-Mars2020_MLP-2.0.pdf).
+[Télécharger ce document](https://documentation-snds.health-data-hub.fr/files/Cnam/2020-06-18_CNAM_Formation-PMSI-v-Mars2020_MLP-2.0.pdf).
 
 ## Exercices
 Ce document comprend des excercices de nettoyage de bases, des excercices sur le PMSI MCO, PMSI SSR, PMSI HAD et PMSI PSY. 
 
 <p style="text-align: center;">
-<object data="/files/Cnam/2020-04-30_CNAM_Enonces-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="/files/Cnam/2020-04-30_CNAM_Enonces-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/Cnam/2020-04-30_CNAM_Enonces-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf">Download PDF</a>.</p>
+<object data="https://documentation-snds.health-data-hub.fr/files/Cnam/2020-04-30_CNAM_Enonces-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf" type="application/pdf" width="500px" height="450px">
+    <embed src="https://documentation-snds.health-data-hub.fr/files/Cnam/2020-04-30_CNAM_Enonces-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://documentation-snds.health-data-hub.fr/files/Cnam/2020-04-30_CNAM_Enonces-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 </p>
 
-[Télécharger ce document](/files/Cnam/2020-04-30_CNAM_Enonces-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf).
+[Télécharger ce document](https://documentation-snds.health-data-hub.fr/files/Cnam/2020-04-30_CNAM_Enonces-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf).
