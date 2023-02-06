@@ -67,5 +67,5 @@ Un fichier "*Bonnes Pratiques SAS_V1.6.doc*" est également disponible sur le po
 ## Références
 
 ::: tip Crédits
-Cette fiche provient d'un [document publié](/files/Cnam/2019-10_Cnam_Recommandations-SAS_MPL-2.0.pdf) par la Cnam en octobre 2019
+Cette fiche provient d'un [document publié](../files/Cnam/2019-10_Cnam_Recommandations-SAS_MPL-2.0.pdf) par la Cnam en octobre 2019
 :::
