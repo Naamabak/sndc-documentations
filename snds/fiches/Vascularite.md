@@ -97,7 +97,7 @@ Le tableau suivant présente le nombre de patients pris en charge pour vasculari
 | Sous-ensemble des patients (M313 ou M317)                      |                       3916 |   
 | Ensemble des patients (M313, M317, M300, M302, M308, M352)     |                       6815 |
 
-L’ensemble des résultats produits peuvent être consultés [ici](https://documentation-snds.health-data-hub.fr/files/HDH/RequetealaDemande/202205_ResFVascularite_MPL-2.0.xlsx). 
+L’ensemble des résultats produits peuvent être consultés [ici](/files/HDH/RequetealaDemande/202205_ResFVascularite_MPL-2.0.xlsx). 
 
 Les effectifs inférieurs à 50 ne sont pas restitués.
 

@@ -103,7 +103,7 @@ run;
 
 ## Résultats
 
-L’ensemble des résultats produits peuvent être consultés [ici](https://documentation-snds.health-data-hub.fr/files/HDH/RequetealaDemande/202207_TELECONSULTATIONS_QDM_MPL-2.0.xlsx). 
+L’ensemble des résultats produits peuvent être consultés [ici](/files/HDH/RequetealaDemande/202207_TELECONSULTATIONS_QDM_MPL-2.0.xlsx). 
 
 Les effectifs inférieurs à 11 ne sont pas restitués.
 

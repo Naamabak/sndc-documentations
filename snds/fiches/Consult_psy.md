@@ -94,7 +94,7 @@ proc sql;
 
 ## Quelques résultats
 
-L’ensemble des résultats produits peuvent être consultés [ici](https://documentation-snds.health-data-hub.fr/files/HDH/RequetealaDemande/20220608_Cpsy_CH_Toulon_MPL-2.0.xlsx). 
+L’ensemble des résultats produits peuvent être consultés [ici](/files/HDH/RequetealaDemande/20220608_Cpsy_CH_Toulon_MPL-2.0.xlsx). 
 
 Les effectifs inférieurs à 11 ne sont pas restitués.
 

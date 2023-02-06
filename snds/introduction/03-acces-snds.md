@@ -14,7 +14,7 @@ Chacun des services de l'État, des établissements publics ou des organismes ch
 - La liste des traitements de données individuelles du SNDS et de ses caractéristiques,
 - La liste des personnes habilitées en son sein à accéder aux données du SNDS et les procédures d’habilitation mises en place.
 
-Ces documents doivent être présentés conformément à des modèles établis par arrêté des ministres chargés de la santé et de la sécurité sociale, publiés au JO le 15 avril 2017 ([Télécharger](https://documentation-snds.health-data-hub.fr/files/HDH/modele_caracteristiques_des_traitements.doc) le modèle « caractéristique des traitements » et [Télécharger](https://documentation-snds.health-data-hub.fr/files/HDH/modele_habilitation.doc) le modèle « personnes habilitées »).
+Ces documents doivent être présentés conformément à des modèles établis par arrêté des ministres chargés de la santé et de la sécurité sociale, publiés au JO le 15 avril 2017 ([Télécharger](/files/HDH/modele_caracteristiques_des_traitements.doc) le modèle « caractéristique des traitements » et [Télécharger](/files/HDH/modele_habilitation.doc) le modèle « personnes habilitées »).
 :::
 
 La tenue de ces listes répond à une exigence de transparence et de sécurité : la tenue rigoureuse de ces listes permet en effet de recenser qui a accès aux données du SNDS et à quoi servent les données.

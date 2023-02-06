@@ -118,7 +118,7 @@ Définition des codes de classification des laboratoires.
 
 
 ::: tip Auteur et version
-Cette fiche a été rédigée à partir d'un document rédigé par la CNAM et disponible en version originale [ici](https://documentation-snds.health-data-hub.fr/files/Cnam/20210708_CNAM_DA_PRA_R-table simplifiee_MPL-2.0.docx).
+Cette fiche a été rédigée à partir d'un document rédigé par la CNAM et disponible en version originale [ici](/files/Cnam/20210708_CNAM_DA_PRA_R-table simplifiee_MPL-2.0.docx).
 
 Version : Juillet 2021
 :::

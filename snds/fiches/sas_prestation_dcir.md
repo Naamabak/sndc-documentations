@@ -39,7 +39,7 @@ Cependant, on peut garder uniquement les variables de jointure (`BEN_NIR_PSA` et
 
 - La table d'actes affinés de codage précise la nature des remboursements liés à la prestation, comme par exemple la liste des médicaments liée à la prestation(**ER_PHA_F**) ou les actes médicaux (**ER_CAM_F**). 
 
-Le document « [SNDS ce qu'il faut savoir ](https://documentation-snds.health-data-hub.fr/files/Sante_publique_France/2019_01_SpF_SNDS-ce-quil-faut-savoir-MPL-2.0.docx)» décrit ces tables en détail.
+Le document « [SNDS ce qu'il faut savoir ](/files/Sante_publique_France/2019_01_SpF_SNDS-ce-quil-faut-savoir-MPL-2.0.docx)» décrit ces tables en détail.
 
 De la table des prestations affinées, on ne retient généralement que le code affiné et la quantité correspondante
 
@@ -108,5 +108,5 @@ Cette fiche a été créée par la direction DATA de Santé publique France
 :::
 
 :::tip Mise à jour
-Cette fiche provient du document [Requêtes types dans la table prestations du DCIR](https://documentation-snds.health-data-hub.fr/files/Sante_publique_France/2018_04_SpF_requetes-types-prestations-DCIR_MPL-2.0.docx) datant d'avril 2018
+Cette fiche provient du document [Requêtes types dans la table prestations du DCIR](/files/Sante_publique_France/2018_04_SpF_requetes-types-prestations-DCIR_MPL-2.0.docx) datant d'avril 2018
 :::

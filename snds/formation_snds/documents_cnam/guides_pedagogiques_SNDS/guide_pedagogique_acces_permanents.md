@@ -2,7 +2,7 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ::: tip Note
-Cette fiche provient du guide pour les [accès permanents](https://documentation-snds.health-data-hub.fr/files/Cnam/2019-07_Cnam_Guide_pedagogique_SNDS_acces_permanents_MPL-2.0.docx) publié par la Cnam, sous licence MPL-2.0
+Cette fiche provient du guide pour les [accès permanents](/files/Cnam/2019-07_Cnam_Guide_pedagogique_SNDS_acces_permanents_MPL-2.0.docx) publié par la Cnam, sous licence MPL-2.0
 
 :::
 

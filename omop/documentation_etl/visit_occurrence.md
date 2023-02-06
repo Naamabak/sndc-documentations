@@ -398,7 +398,7 @@ dans le format OMOP-CDM sont :
 </table>
 
 -   [<u>Fichier de correspondance prs_nat_ref --\>
-   OMOP</u>](https://documentation-snds.health-data-hub.fr/files/correspondance_prs_nat_ref_omop.xlsx)
+   OMOP</u>](/files/correspondance_prs_nat_ref_omop.xlsx)
 
     -   *prs_nat_ref*
 

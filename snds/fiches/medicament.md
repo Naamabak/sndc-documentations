@@ -175,7 +175,7 @@ Cette fiche provient en partie d'un [document publié](https://documentation-snd
 :::
 
 ::: tip Exemple d'utilisation
-Les requêtes présentées dans cette fiche rédigée par la Cnam peuvent par exemple servir à produire [ce type de résultats](https://documentation-snds.health-data-hub.fr/files/HDH/RequetealaDemande/202207_VYV_MPL-2.0.xlsx). Il s’agit d’éléments qui ont été produits dans le cadre de l’expérimentation du service de requête à la demande pour le groupe VYV et suite à un partenariat entre le HDH et le [datalab Normandie](https://www.datalab-normandie.fr/). L’objectif était que ce dernier dispose de la volumétrie des personnes, résidantes en Normandie, et ayant eu au moins une délivrance de médicaments donnés afin d’alimenter des travaux de modélisation de donnée de dispersion de pollens allergènes, d’aménagement botanique du territoire et de consommation de soins relatifs aux allergies.
+Les requêtes présentées dans cette fiche rédigée par la Cnam peuvent par exemple servir à produire [ce type de résultats](/files/HDH/RequetealaDemande/202207_VYV_MPL-2.0.xlsx). Il s’agit d’éléments qui ont été produits dans le cadre de l’expérimentation du service de requête à la demande pour le groupe VYV et suite à un partenariat entre le HDH et le [datalab Normandie](https://www.datalab-normandie.fr/). L’objectif était que ce dernier dispose de la volumétrie des personnes, résidantes en Normandie, et ayant eu au moins une délivrance de médicaments donnés afin d’alimenter des travaux de modélisation de donnée de dispersion de pollens allergènes, d’aménagement botanique du territoire et de consommation de soins relatifs aux allergies.
 :::
 
 ::: tip Mise à jour de la fiche 

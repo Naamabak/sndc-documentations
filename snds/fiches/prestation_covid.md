@@ -195,6 +195,6 @@ Il est important d’indiquer cette condition dans la requête afin de pouvoir r
 
 ## Références
 ::: tip Ressources
-Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est [téléchargeable ici](https://documentation-snds.health-data-hub.fr/files/Cnam/20210628_Fiche_Thematique_Prestations_COVID_MPL-2.0.docx) dans sa version d'origine.
+Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est [téléchargeable ici](/files/Cnam/20210628_Fiche_Thematique_Prestations_COVID_MPL-2.0.docx) dans sa version d'origine.
 :::
 
