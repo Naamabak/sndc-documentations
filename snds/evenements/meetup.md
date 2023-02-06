@@ -24,11 +24,11 @@ Merci de nous contacter si vous souhaiter initier un groupe local.
 
 ### Le lancement de BOAS et l’appel à projets
 - Présenté par : Romain Girard, équipe Open Source au Health Data Hub
-- Support de présentation : [pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds11/20211005_HDH_meetup11-BOAS_MPL-2.0.pdf)
+- Support de présentation : [pdf](/files/presentations/meetup-snds11/20211005_HDH_meetup11-BOAS_MPL-2.0.pdf)
 
 ### Pourquoi un algorithme de ciblage ? Pourquoi le valider ? Un cas d’usage
 - Présenté par : Malek Bentayeb, épidémiologiste au Health Data Hub
-- Support de présentation : [pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds11/20211005_HDH_meetup11-ciblage_MPL-2.0.pdf)
+- Support de présentation : [pdf](/files/presentations/meetup-snds11/20211005_HDH_meetup11-ciblage_MPL-2.0.pdf)
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GXHxIHfXV0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -76,19 +76,19 @@ Support de présentation : [pdf](/files/presentations/meetup-snds9/20210603_ANS_
 
 ### Présentation du portail ScanSanté
 - Présenté par: Aline CUSSON (cheffe de projet à l'ATIH)
-- Support de présentation: [pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds8/20210429_ATIH_meetup8-scansante_MPL-2.0.pdf)
+- Support de présentation: [pdf](/files/presentations/meetup-snds8/20210429_ATIH_meetup8-scansante_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jQ4I42CvH_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Présentation du dictionnaire interactif des données du PMSI ATIH
 - Présenté par: Sandra Steunou (cheffe de service adjointe à l'ATIH)
-- Support de présentation: [pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds8/20210429_ATIH_meetup8-dico-interactif_MPL-2.0.pdf)
+- Support de présentation: [pdf](/files/presentations/meetup-snds8/20210429_ATIH_meetup8-dico-interactif_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/R1W20WKzuTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Présentation de ScanCovid
 - Présenté par: Vincent Biot (datascientist à l'ATIH)
-- Support de présentation: [pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds8/20210429_ATIH_meetup8-scancovid_MPL-2.0.pdf)
+- Support de présentation: [pdf](/files/presentations/meetup-snds8/20210429_ATIH_meetup8-scancovid_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lwVXci18eXc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -99,7 +99,7 @@ Support de présentation : [pdf](/files/presentations/meetup-snds9/20210603_ANS_
 - Titre : Données de synthèse, définition, utilité, pourquoi en a-t-on besoin ?
 - Présenté par : Lorien Benda (Health Data Hub)
 - Support de présentation :
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds7/20210318_HDH_slide-intro-meetup7_MLP-2.0.pdf)
+[pdf](/files/presentations/meetup-snds7/20210318_HDH_slide-intro-meetup7_MLP-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q1MrbE0-KRg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -108,7 +108,7 @@ Support de présentation : [pdf](/files/presentations/meetup-snds9/20210603_ANS_
 - Présenté par : Pr Emmanuel Oger (Directeur de l'EA 7449 REPERES (REcherche en Pharmaco-Epidémiologie et REcours aux Soins))
 André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthodes"), Erwan Drezen (CEO de la société CUBR).
 - Support de présentation : 
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds7/20210318_cuber_meetup7_MLP-2.0.pdf)
+[pdf](/files/presentations/meetup-snds7/20210318_cuber_meetup7_MLP-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GNU53hCFEbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -116,7 +116,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Création d'un générateur de données de synthèse
 - Présenté par : Gilles Essoki Ndame et Aymeric Floyrac (Health Data Hub).
 - Support de présentation : 
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds7/20210318_HDH_slides-generateur-meetup7_MLP-2.0.pdf)
+[pdf](/files/presentations/meetup-snds7/20210318_HDH_slides-generateur-meetup7_MLP-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9z-deBBn7Q4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -124,7 +124,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Anonymisation de données, que permettent les avatars ?
 - Présenté par : Pierre Antoine Gourraud (Professeur des universités, praticien-hospitalier de la faculté de médecine de l’université de Nantes (France)), Carole Requillard (Directrice de la Fabrique au Health Data Hub), Olivier Breillacq (Fondateur de la startup Octopize-Mimethik Data)
 - Support de présentation : 
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds7/20210318_Octopize_Deck-OctopizeHdhCom_MLP-2.0.pdf)
+[pdf](/files/presentations/meetup-snds7/20210318_Octopize_Deck-OctopizeHdhCom_MLP-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gDhQZxVaZfk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -137,8 +137,8 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Présentation et actualité et présentation des notebooks des exercices sur les données de synthèse inspirés des programmes partagés sur gitlab par la communauté.
 - Présenté par : Lorien Benda et Tim Vlaar, Health Data Hub
 - Support de présentation :
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds6/20201106_PresentationHDH_Meetup6.pptx),
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds6/20201106_PresentationHDH_Meetup6.pdf)
+[pptx](/files/presentations/meetup-snds6/20201106_PresentationHDH_Meetup6.pptx),
+[pdf](/files/presentations/meetup-snds6/20201106_PresentationHDH_Meetup6.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7UJmrRZ-4Fc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -146,8 +146,8 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Reconstituted Electronics Health Records (rEHR): a fact-checking method for algorithm validation in the SNDS.
 - Présenté par : les Drs. Nicolas Thurin (Pharmacien), Pauline Bosco (Médecin) et Patrick Blin (Médecin) de l’équipe Bordeaux PharmacoEpi (BPE : La BPE est une plateforme de recherche en pharmaco-épidémiologie de l’Université de Bordeaux qui fait partie du CIC 1401 INSERM du CHU de Bordeaux avec maintenant plus de 15 ans d’expérience dans l’analyse des données de l’Assurance Maladie). 
 - Support de présentation : 
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds6/20201106_Presentation_PharmacoEpi-BPE_Meetup6.pptx),
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds6/20201106_Presentation_PharmacoEpi-BPE_Meetup6.pdf)
+[pptx](/files/presentations/meetup-snds6/20201106_Presentation_PharmacoEpi-BPE_Meetup6.pptx),
+[pdf](/files/presentations/meetup-snds6/20201106_Presentation_PharmacoEpi-BPE_Meetup6.pdf)
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a4RYnxV5my4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -160,19 +160,19 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Les coulisses du PMSI
 - Présenté par : Marlène BERNARD, ingénieur statisticien, Sandra STEUNOU, chef de service adjoint, Pauline RENAUD, chef de service (ATIH)
 - Support de présentation :
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds5/20200220_meetupsnds5_pmsiatih.pptx)
+[pptx](/files/presentations/meetup-snds5/20200220_meetupsnds5_pmsiatih.pptx)
 
 ### Algorithme de typage du diabète 
 - Titre : Développement d’un algorithme de typage du diabète à partir de données de la cohorte Constances et son application dans le SNDS
 - Présenté par : Sonsoles Fuentes, doctorant (Santé Publique France)
 - Support de présentation : 
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds5/20200220_meetupsnds5_spf_typdiab.pptx)
+[pptx](/files/presentations/meetup-snds5/20200220_meetupsnds5_spf_typdiab.pptx)
 
 ### ReDSiam, des algorithmes disponibles 
 - Titre : Le réseau ReDSiam : des algorithmes pour identifier des pathologies dans le SNDS
 - Présenté par :  Emeline Heyndrickx de l’unité Cohortes épidémiologiques en population (UMS 11 - Inserm)
 - Support de présentation :
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds5/20200220_meetupsnds5_redsiam.pdf)
+[pdf](/files/presentations/meetup-snds5/20200220_meetupsnds5_redsiam.pdf)
 
 ## 2019.11.28 Meetup - SNDS4
 
@@ -182,8 +182,8 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Comment les données du CépiDc sont-elles collectées et quelles sont leurs possibles utilisations ?
 - Présenté par : Grégoire Rey, directeur du CépiDc (CépiDc-Inserm)
 - Support de présentation :
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds4/2019.11.28_CEPIDC_MPL-2.0.pptx),
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds4/2019.11.28_CEPIDC_MPL-2.0.pdf)
+[pptx](/files/presentations/meetup-snds4/2019.11.28_CEPIDC_MPL-2.0.pptx),
+[pdf](/files/presentations/meetup-snds4/2019.11.28_CEPIDC_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_0rrgW1kMQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -195,7 +195,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 ### Histoire d’un appariement SNDS chez Clinityx
 - Présenté par :  Nicolas Glatt (directeur général et co-fondateur de Clinityx)
 - Support de présentation :
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds4/2019.11.28_CLYNTIX_France-Tavi_MPL-2.0.pdf)
+[pdf](/files/presentations/meetup-snds4/2019.11.28_CLYNTIX_France-Tavi_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4eqnTq_hYIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -207,8 +207,8 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Espace ANSM, rubrique à brac et boîte à outils
 - Présenté par : Thien le Tri (ANSM Epi-Phare)
 - Support de présentation :
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds3/2019.09.19_EpiPhare_Espace-ANSM_MPL-2.0.pptx),
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds3/2019.09.19_EpiPhare_Espace-ANSM_MPL-2.0.pdf)
+[pptx](/files/presentations/meetup-snds3/2019.09.19_EpiPhare_Espace-ANSM_MPL-2.0.pptx),
+[pdf](/files/presentations/meetup-snds3/2019.09.19_EpiPhare_Espace-ANSM_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CmeVbjNtLNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -216,8 +216,8 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : La boîte à outils du data scientist pour analyser les données du SNDS
 - Présenté par : Martin Prodel (HEVA)
 - Support de présentation :
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds3/2019.09.19_Heva_Boite-a-outil-data-scientist_MPL-2.0.pptx),
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds3/2019.09.19_Heva_Boite-a-outil-data-scientist_MPL-2.0.pdf)
+[pptx](/files/presentations/meetup-snds3/2019.09.19_Heva_Boite-a-outil-data-scientist_MPL-2.0.pptx),
+[pdf](/files/presentations/meetup-snds3/2019.09.19_Heva_Boite-a-outil-data-scientist_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ytpi4PRXYZc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
@@ -225,7 +225,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Présentation du modèle de données commun OMOP, et du travail de conversion réalisé par le groupe interChus, qui mène à l'organisation d'un datathon multi-centre
 - Présenté par : Nicolas Paris (APHP) et Matthieu Doutreligne (DREES)
 - Support de présentation :
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds3/2019.09.19_APHP_DREES_OMOP-datathon_MPL-2.0.pdf)
+[pptx](/files/presentations/meetup-snds3/2019.09.19_APHP_DREES_OMOP-datathon_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ARhlmnBi_to" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -237,8 +237,8 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : 1990 - 2019 : du rêve à la réalité, le regard d'un clinicien sur le SNDS
 - Présenté par : le Dr Bertrand Lukacs (APHP)
 - Support de présentation :
-[ppt](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds2/2019.06.12_Lukacs_SNDS-du-reve-a-la-realite_MPL-2.0.ppt),
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds2/2019.06.12_Lukacs_SNDS-du-reve-a-la-realite_MPL-2.0.pdf)
+[ppt](/files/presentations/meetup-snds2/2019.06.12_Lukacs_SNDS-du-reve-a-la-realite_MPL-2.0.ppt),
+[pdf](/files/presentations/meetup-snds2/2019.06.12_Lukacs_SNDS-du-reve-a-la-realite_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xAbyRQW8KlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -259,8 +259,8 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Temporalité de la restitution des données dans le SNDS – Synthèse pour les analyses longitudinales 
 - Présenté par : Cedric Collin (Pharmacoépidemiologiste chez IQVIA)
 - Support de présentation :
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds2/2019.06.12_IQVIA_Temporalite-restitution-SNDS_MPL-2.0.pptx),
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds2/2019.06.12_IQVIA_Temporalite-restitution-SNDS_MPL-2.0.pdf)
+[pptx](/files/presentations/meetup-snds2/2019.06.12_IQVIA_Temporalite-restitution-SNDS_MPL-2.0.pptx),
+[pdf](/files/presentations/meetup-snds2/2019.06.12_IQVIA_Temporalite-restitution-SNDS_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-wGL753gCrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -291,7 +291,7 @@ André Happe (EA 7449 REPERES, en charge de l'axe transversal "Outils et Méthod
 - Titre : Appariements entre les cohortes et le SNDS - zoom sur un cas concret
 - Présenté par : Mehdi Gabbas et Brice Dufresne ([Cnam](../glossaire/Cnam.md))
 - Support de présentation :
-[pptx](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds1/2019.03.27_CNAM_Possibilités_Appariement_SNDS_MPL-2.0.pptx),
-[pdf](https://documentation-snds.health-data-hub.fr/files/presentations/meetup-snds1/2019.03.27_CNAM_Possibilités_Appariement_SNDS_MPL-2.0.pdf)
+[pptx](/files/presentations/meetup-snds1/2019.03.27_CNAM_Possibilités_Appariement_SNDS_MPL-2.0.pptx),
+[pdf](/files/presentations/meetup-snds1/2019.03.27_CNAM_Possibilités_Appariement_SNDS_MPL-2.0.pdf)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8M12owyEst4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -6,9 +6,9 @@
 **Tableau 5. Synthèse des informations disponibles et sélectionnées dans ce guide, sur les caractéristiques bénéficiaires et les principaux types de soins**
 
 <p style="text-align: center;">
-<object data="https://documentation-snds.health-data-hub.fr/files/HDH/202212_HDH_synthèse_information_disponible_MPL-2.0.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="https://documentation-snds.health-data-hub.fr/files/HDH/202212_HDH_synthèse_information_disponible_MPL-2.0.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://documentation-snds.health-data-hub.fr/files/HDH/202212_HDH_synthèse_information_disponible_MPL-2.0.pdf">Download PDF</a>.</p>
+<object data="/files/HDH/202212_HDH_synthèse_information_disponible_MPL-2.0.pdf" type="application/pdf" width="500px" height="450px">
+    <embed src="/files/HDH/202212_HDH_synthèse_information_disponible_MPL-2.0.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/HDH/202212_HDH_synthèse_information_disponible_MPL-2.0.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 </p>

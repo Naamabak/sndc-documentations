@@ -346,13 +346,13 @@ Quelques exemples d'ALD non exonérantes : Hypertension artérielle, Hypothyroï
 [bénéficaires du dispositif des ALD](https://assurance-maladie.ameli.fr/sites/default/files/2016-06_beneficiaires-ald-2014-evolutions-depuis-2005_points-de-repere-46_assurance-maladie.pdf)
 
 ::: tip Crédits
-Le contenu original de cette fiche provient du document [2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx](https://documentation-snds.health-data-hub.fr/files/DREES/2019-04-08_DREES-ARS_Beneficiaires-ALD/2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx)) rédigé par Kristel JACQUIER (DREES), Claire-Lise DUBOST (DREES), Céline LEROY (ARS).
+Le contenu original de cette fiche provient du document [2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx](/files/DREES/2019-04-08_DREES-ARS_Beneficiaires-ALD/2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx)) rédigé par Kristel JACQUIER (DREES), Claire-Lise DUBOST (DREES), Céline LEROY (ARS).
 
 Cette fiche s'appuie fortement sur la présentation partagée par la CNAM lors d'un comité utilisateurs partenaires intitulé « Referentiel_médicalisé_IR_IMB_R_présentationCNAM » et que l'on retrouve sur le portail BO.
 :::
 
 ::: tip Autre source
-La Cnam a publié en octobre 2019 une [fiche sur les ALD](https://documentation-snds.health-data-hub.fr/files/Cnam/2019-10_Cnam_Programmes-SAS-ALD_MPL-2.0.doc).
+La Cnam a publié en octobre 2019 une [fiche sur les ALD](/files/Cnam/2019-10_Cnam_Programmes-SAS-ALD_MPL-2.0.doc).
 :::
 
 

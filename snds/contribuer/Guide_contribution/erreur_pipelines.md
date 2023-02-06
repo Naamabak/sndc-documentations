@@ -31,7 +31,7 @@ Les erreurs les plus courantes pour les liens internes sont les suivantes:
 ::: tip
 Pour la remontée à la racine par exemple si dans la fiche `Formation PMSI` du sous-dossier Cnam dans le dossier ressource on souhaite ajouter une image présente dans le dossier files, la remontée se fera selon ce chemin, la fiche étant 2 niveaux en dessous de la racine :
 
-`https://documentation-snds.health-data-hub.fr/files/Cnam/2020-04-30_CNAM_Enoncés-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf`
+`/files/Cnam/2020-04-30_CNAM_Enoncés-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf`
 :::
 
 # Erreur lien externe

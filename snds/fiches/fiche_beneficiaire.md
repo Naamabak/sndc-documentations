@@ -126,6 +126,6 @@ Il existe un biais sur l’historique dans l’ensemble du dispositif d’identi
 ## Références
 
 ::: tip Crédit
-Le contenu original de cette fiche provient du document [Fiche bénéficiaires](https://documentation-snds.health-data-hub.fr/files/Cnam/2019-06_CNAM-INDS_SNDS_Fiches_Thematiques_BENEF_MAJ-2020-09_MPL-2.0.pdf) rédigé par la [CNAM](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php)  
+Le contenu original de cette fiche provient du document [Fiche bénéficiaires](/files/Cnam/2019-06_CNAM-INDS_SNDS_Fiches_Thematiques_BENEF_MAJ-2020-09_MPL-2.0.pdf) rédigé par la [CNAM](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php)  
 MAJ Septembre 2020
 :::

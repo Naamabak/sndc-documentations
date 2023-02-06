@@ -119,5 +119,5 @@ La qualité des données initiale est donc primordiale pour un appariement indir
 ## Références
 
 ::: tip Crédits
-Cette fiche provient d'un [document publié](https://documentation-snds.health-data-hub.fr//files/Cnam/2019-10_Cnam_Appariement_MPL-2.0.pdf) par la Cnam en Octobre 2019.
+Cette fiche provient d'un [document publié](/files/Cnam/2019-10_Cnam_Appariement_MPL-2.0.pdf) par la Cnam en Octobre 2019.
 :::

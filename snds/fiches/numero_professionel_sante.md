@@ -174,9 +174,9 @@ Elles sont disponibles par année et par zone géographique (bassin de vie, comm
 
 ## Références
 ::: tip Crédits
-Fiche réalisée en 2019 par Catherine Bisquay (ARS île de France) [document source](https://documentation-snds.health-data-hub.fr/files/ARS/IDF/2019_ARSIF_Numero-Professionnel-Sante_MPL-2.0.docx)
+Fiche réalisée en 2019 par Catherine Bisquay (ARS île de France) [document source](/files/ARS/IDF/2019_ARSIF_Numero-Professionnel-Sante_MPL-2.0.docx)
 :::
 
 ::: tip Autre ressource
-La Cnam a publié en octobre 2019 une [fiche sur la thématique des professionnels de santé](https://documentation-snds.health-data-hub.fr/files/Cnam/2019-10_Cnam_Professionnels-sante_MLP-2.0.pdf).
+La Cnam a publié en octobre 2019 une [fiche sur la thématique des professionnels de santé](/files/Cnam/2019-10_Cnam_Professionnels-sante_MLP-2.0.pdf).
 :::
