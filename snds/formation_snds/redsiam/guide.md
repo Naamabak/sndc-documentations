@@ -9,7 +9,7 @@ Issu de l’expérience de ses auteurs, ce document se veut une aide pour les ut
 
 
 ## Lien accès
-Télécharger le guide [ici](../../files/redsiam/202103_Redsiam_GTDenominateurs-ChoixDenominateurs_MLP-2.0.pdf)
+Télécharger le guide [ici](https://documentation-snds.health-data-hub.fr/files/redsiam/202103_Redsiam_GTDenominateurs-ChoixDenominateurs_MLP-2.0.pdf)
 
 ## Auteurs
 
@@ -17,4 +17,4 @@ Ce travail a été réalisé dans le cadre du réseau [ReDSiam](../../glossaire/
 
 Marjorie Boussac-Zarebska (Santé publique France), Jérôme Brocca (ARS Centre Val de Loire), Marie Dalichampt (ORS Pays de Loire), Claire-Lise Dubost (DREES), Kristel Jacquier (DREES), Céline Leroy (ARS Normandie), Laurence Mandereau-Bruno (Santé publique France), Antoine Rachas (CNAM), Fanny Raguideau (HEVA), Sébastien Rivière (CNAM) pour le groupe de travail
 
-![logo](../../files/redsiam/20210402_redsiam_logo_MLP-2.0.png)
+![logo](/files/redsiam/20210402_redsiam_logo_MLP-2.0.png)

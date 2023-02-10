@@ -27,10 +27,10 @@ Les différents PMSI ont un historique d'exhaustivité différents dans le SNDS
 ## PMSI MCO
 
 ### Schéma des concepts du PMSI MCO
-![schéma concepts pmsi MCO](../files/INDS/concepts_mco.png)
+![schéma concepts pmsi MCO](/files/INDS/concepts_mco.png)
 
 ### L'articulation des principales bases du PMSI MCO
-![schéma structuration pmsi MCO](../files/INDS/structuration_mco.png)
+![schéma structuration pmsi MCO](/files/INDS/structuration_mco.png)
 
 ### L'identification d'un séjour dans le PMSI MCO
 Un séjour hospitalier MCO est identifié par :
@@ -44,10 +44,10 @@ Exemple : T_MCO16B concerne les séjours uniquement terminés en 2016
 ## PMSI HAD
 
 ### Schéma des concepts du PMSI HAD
-![schéma concepts pmsi HAD](../files/INDS/concepts_had.png)
+![schéma concepts pmsi HAD](/files/INDS/concepts_had.png)
 
 ### L'articulation des principales bases du PMSI HAD
-![schéma structuration pmsi HAD](../files/INDS/Structuration_tables_HAD.png)
+![schéma structuration pmsi HAD](/files/INDS/Structuration_tables_HAD.png)
 
 ### L'identification d'un séjour dans le PMSI HAD
 Un séjour hospitalier en HAD est constitué d'une suite de séquences de soins, elles-mêmes décomposées en sous-séquences.
@@ -65,10 +65,10 @@ Un séjour est indentifié par les clés de jointure suivantes :
 ## PMSI SSR
 
 ### Schéma des concepts du PMSI SSR
-![schéma concepts pmsi SSR](../files/INDS/Concepts_SSR.png)
+![schéma concepts pmsi SSR](/files/INDS/Concepts_SSR.png)
 
 ### L'articulation des principales bases du PMSI SSR
-![schéma structuration pmsi SSR](../files/INDS/Structuration_tables_SSR.png)
+![schéma structuration pmsi SSR](/files/INDS/Structuration_tables_SSR.png)
 
 ### L'identification d'un séjour dans le PMSI SSR
 Un séjour hospitalier en SSR est couvert par un ou plusieurs résumés hebdomadaires standardisés (RHS)
@@ -86,10 +86,10 @@ Un séjour est identifié par les clés de jointure suivantes :
 ## PMSI RIM-P
 
 ### Schéma des concepts du PMSI RIM-P
-![schéma concepts pmsi PSY](../files/INDS/concepts_PSY.png)
+![schéma concepts pmsi PSY](/files/INDS/concepts_PSY.png)
 
 ### L'articulation des principales bases du PMSI RIM-P
-![schéma structuration pmsi PSY](../files/INDS/Structuration_tables_PSY.png)
+![schéma structuration pmsi PSY](/files/INDS/Structuration_tables_PSY.png)
 
 ### L'identification d'un séjour dans le PMSI RIM-P
 

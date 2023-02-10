@@ -9,7 +9,7 @@ Les tests permettent de vérifier que les liens externes et internes sont valide
 Si une icône orange ou rouge apparaît, il est possible de connaitre la source d'erreur. En cliquant sur l'icone du test, une fenêtre apparait. Les indications utiles se trouvent en bas de cette fenêtre.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-20_HDH_erreur-lien-int_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-20_HDH_erreur-lien-int_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 Dans l'exemple ci-dessus, l'erreur est dans un lien interne, dans la fiche cmu_c.md à la ligne 7. 
@@ -31,7 +31,7 @@ Les erreurs les plus courantes pour les liens internes sont les suivantes:
 ::: tip
 Pour la remontée à la racine par exemple si dans la fiche `Formation PMSI` du sous-dossier Cnam dans le dossier ressource on souhaite ajouter une image présente dans le dossier files, la remontée se fera selon ce chemin, la fiche étant 2 niveaux en dessous de la racine :
 
-`../../files/Cnam/2020-04-30_CNAM_Enoncés-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf`
+`/files/Cnam/2020-04-30_CNAM_Enoncés-EXERCICES-TOUS-PMSI-fev-2019_MLP-2.0.pdf`
 :::
 
 # Erreur lien externe

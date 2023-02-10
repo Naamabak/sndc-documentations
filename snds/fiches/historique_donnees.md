@@ -22,9 +22,9 @@ Cette présentation illustre l'historique de la disponibilité d'informations re
 Cet historique permet de voir aussi l'ajout des différents régimes dans les bases.
 
 ## Historique de l'information et des régimes dans les bases du SNDS
-![Historique données SNDS - P1](../files/INDS/historique_donnees/Diapo1_MAJ2020novembre.png)
+![Historique données SNDS - P1](/files/INDS/historique_donnees/Diapo1_MAJ2020novembre.png)
 
-![Historique données SNDS - P2](../files/INDS/historique_donnees/Diapo2_MAJ2020novembre.png)
+![Historique données SNDS - P2](/files/INDS/historique_donnees/Diapo2_MAJ2020novembre.png)
 
 ## Régimes disponibles et années de présence dans les tables
 
@@ -59,7 +59,7 @@ Le PMSI enregistre l’ensemble des séjours hospitaliers en France quel que soi
 (4) *Tableaux de chargement du DCIR de la documentation du portail SNDS de la CNAM*
 
 ::: tip Crédits
-Le contenu original de cette fiche provient du document [Historique des données du SNDS](../files/INDS/historique_donnees/2019_INDS_Historique-des-données-SNDS_MPL-2.0.pptx) [INDS - 2019 - MPL-2.0].
+Le contenu original de cette fiche provient du document [Historique des données du SNDS](/files/INDS/historique_donnees/2019_INDS_Historique-des-données-SNDS_MPL-2.0.pptx) [INDS - 2019 - MPL-2.0].
 
 Cette fiche a été intialement rédigée par Anne Cuerq à partir des références (1) et (2), avec des contributions de Tim Vlaar à partir des références (3) et (4).
 :::

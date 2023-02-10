@@ -141,15 +141,15 @@ Pour inclure une image, il faut tout d'abord la téléverser dans Gitlab (voir f
 1. Pour afficher une image, ajouter un **point d'exclamation** devant son chemin ou son URL.
 
 ```
-![texte alternatif de l'image](../../files/images/logo/logoSNDS.jpg)
+![texte alternatif de l'image](/files/images/logo/logoSNDS.jpg)
 ```
-Résultat : ![texte alternatif de l'image](../../files/images/logo/logoSNDS.jpg)
+Résultat : ![texte alternatif de l'image](/files/images/logo/logoSNDS.jpg)
 
 2. Pour préciser les dimensions de l'image, il faut utiliser des balises html.
 ```
-<img src="../../files/images/logo/logoSNDS.jpg" alt="Éditer sur GitLab" width="100px"/>
+<img src="/files/images/logo/logoSNDS.jpg" alt="Éditer sur GitLab" width="100px"/>
 ```
-Résultat : <img src="../../files/images/logo/logoSNDS.jpg" alt="Éditer sur GitLab" width="100px"/>
+Résultat : <img src="/files/images/logo/logoSNDS.jpg" alt="Éditer sur GitLab" width="100px"/>
 
 3. Légende
 
@@ -159,24 +159,24 @@ Pour que ce texte soit **en dessous** de l'image, insérer deux espaces à la fi
 [^legende]: Mardown n'a pas à proprement parler de notion de légende.
 
 ```
-![texte alternatif de l'image](../../files/images/logo/logoSNDS.jpg)    
+![texte alternatif de l'image](/files/images/logo/logoSNDS.jpg)    
 *Logo SNDS* 
 ```
 Résultat :
 
-![Editer sur Gitlab](../../files/images/logo/logoSNDS.jpg)  
+![Editer sur Gitlab](/files/images/logo/logoSNDS.jpg)  
 *Logo SNDS* 
 
 4. Pour centrer l'image, des balises html doivent également être utilisées :
 ```
 <p align="center">
-<img src="../../files/images/logo/logoSNDS.jpg" width="100px"/>
+<img src="/files/images/logo/logoSNDS.jpg" width="100px"/>
 </p>
 ```
 Résultat :
 
 <p style="text-align:center;">
-<img src="../../files/images/logo/logoSNDS.jpg" alt="Éditer sur GitLab" width="100"/>
+<img src="/files/images/logo/logoSNDS.jpg" alt="Éditer sur GitLab" width="100"/>
 </p>
 
 ### Visualiser un pdf
@@ -184,9 +184,9 @@ La visualisation de pdf n'est pas supporté par le format Markdown. Une solution
 
 ```
 <p style="text-align: center;">
-<object data="../../files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="../../files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf">Download PDF</a>.</p>
+<object data="/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf" type="application/pdf" width="500px" height="450px">
+    <embed src="/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 </p>

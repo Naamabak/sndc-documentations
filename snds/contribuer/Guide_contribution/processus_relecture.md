@@ -12,7 +12,7 @@ Des modifications peuvent être suggérées par le relecteur :
 * Soit en faisant un commentaire ou une proposition de modification sur une ligne spécifique. Pour cela, aller dans l'onglet `Changes` de la demande de fusion, et passer la souris sur la ligne à commenter/modifier. Un bouton bleu contenant une bulle de conversation apparait à gauche. En le sélectionnant il est possible d'écrire un commentaire spécifique à la ligne sélectionnée. Une suggestion de modification peut être insérée à partir de la fenêtre des commentaires en cliquant sur le bouton `Insert Suggestion`. Cela fera apparaitre une suggestion de modification dans l'onglet `Vue d'ensemble` de la demande de fusion. Celle-ci pourra être acceptée ou refusée par l'auteur de la fiche.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-10_HDH_proposer-correction_MLP-2.0.png" alt="changer branche" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-10_HDH_proposer-correction_MLP-2.0.png" alt="changer branche" width="1000"/>
 </p>
 
 ::: tip

@@ -18,7 +18,7 @@ Ces données sont **factices**, et ne contiennent aucune information personnelle
 
 Pour visualiser les données synthétiques, le plus simple est actuellement de parcourir le dossier `schemas` du [projet GitLab SNDS synthétiques](https://gitlab.com/healthdatahub/synthetic-snds).
 
-Voici par exemple 10 lignes synthétiques de la [table ER_PHA_F du DCIR](../../files/images/extrait_ER_PHA_R_synthetique_github.png)
+Voici par exemple 10 lignes synthétiques de la [table ER_PHA_F du DCIR](/files/images/extrait_ER_PHA_R_synthetique_github.png)
 
 
 Vous pouvez également [télécharger une archive zip du projet](https://gitlab.com/healthdatahub/synthetic-snds/-/archive/master/synthetic-snds-master.zip). 
@@ -30,7 +30,7 @@ Les données synthétiques sont générées à partir du [schéma formel du SNDS
 [^2]: La librairie `tsfaker` a été développée par Pierre-Alain Jachiet pour le SNDS synthétiques. 
     Sa spécificité par rapport à d'autres libraires équivalentes est de s'appuyer sur le standard [Table-Schema](../../glossaire/table-schema.md), et de bien gérer un grand nombre de clés étrangères. 
 
-![Génération du SNDS synthétique à partir du schéma](../../files/images/schema-to-synthetic.png)
+![Génération du SNDS synthétique à partir du schéma](/files/images/schema-to-synthetic.png)
 
 À chaque modification du schéma, de nouvelles données synthétiques sont automatiquement générées sur le projet [SNDS synthétique](https://github.com/indsante/synthetic-snds/). 
 

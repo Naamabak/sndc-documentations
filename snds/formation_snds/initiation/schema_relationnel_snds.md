@@ -248,7 +248,7 @@ Pour rappel, le DCIR est une base comptable : elle contient l'information de cha
 	- Ex : la table affinée pharmacie `ER_PHA_F` apporte des informations plus détaillées sur les remboursements de médicaments renseignés dans la table centrale, comme la référence précise du médicament (code [CIP](../../glossaire/CIP.md)) ou le prix unitaire.
 - complétées par les 2 tables **référentiels sur les bénéficiaires** `IR_BEN_R` et `IR_IMB_R`, présentées en sections 3.2.3 et 3.2.4.
 
-![Image](../../files/HDH/2022-12-12_HDH_SNDS_SCHEMA_GENERAL_MLP-2.0.png)
+![Image](/files/HDH/2022-12-12_HDH_SNDS_SCHEMA_GENERAL_MLP-2.0.png)
 
 Figure 2 : Schéma relationnel de la base de données DCIR
 

@@ -133,11 +133,11 @@ PROC SQL ; CREATE TABLE actes_spe_decompte AS
 QUIT;
 ```
 #### Résultats illustrés
-![](../files/DREES/2019-04_DREES_actes_consultations_externes/Graphique_ACE_type_acte.png)   
+![](/files/DREES/2019-04_DREES_actes_consultations_externes/Graphique_ACE_type_acte.png)   
 *Répartition du nombre de séjours et de patients en ACE en janvier 2017 selon le type d'actes effectués*
 
 
-![](../files/DREES/2019-04_DREES_actes_consultations_externes/Graphique_ACE_type_specialitemedecin.png)   
+![](/files/DREES/2019-04_DREES_actes_consultations_externes/Graphique_ACE_type_specialitemedecin.png)   
 *Répartition du nombre de séjours et de patients en ACE en janvier 2017 selon la spécialité du professionnel ayant effectué l'acte*
 
 
@@ -201,10 +201,10 @@ RUN;
 ```
 
 #### Résultats illustrés
-![](../files/DREES/2019-04_DREES_actes_consultations_externes/Graphique_ACE_Gyn_repartitionactes.png)   
+![](/files/DREES/2019-04_DREES_actes_consultations_externes/Graphique_ACE_Gyn_repartitionactes.png)   
 *Répartition des ACE effectués par un gynécologue en 2017 selon le type de prestations*
 
-![](../files/DREES/2019-04_DREES_actes_consultations_externes/Graphique_ACE_Gyn_repartitionlieu.png)   
+![](/files/DREES/2019-04_DREES_actes_consultations_externes/Graphique_ACE_Gyn_repartitionlieu.png)   
 *Répartition des patients ayant vu un gynécologue en 2017 selon le type de recours*
 
 

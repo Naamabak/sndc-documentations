@@ -145,7 +145,7 @@ Sur le portail SNDS géré par la [Cnam](../../glossaire/Cnam.md), les données 
 Ce guide sera principalement axé sur l’exploitation des données individuelles exhaustives, mais les informations contenues dans ce document pourront être facilement applicables aux données des autres datamarts (et notamment à l'ESND).
 
 Figure 1. Sources d'alimentation du SNDS
-![image](../../files/HDH/202212_HDH_alimentation-snds_MPL-2.0.png)
+![image](/files/HDH/202212_HDH_alimentation-snds_MPL-2.0.png)
 
 ### 2.2.2 Le DCIR
 
@@ -288,20 +288,20 @@ L’ajout de données provenant des Maisons Départementales des Personnes Handi
 
 ## 2.3 Synthèse des données disponibles
 ### 2.3.1 Le DCIR
-![image](../../files/HDH/2022-12-12_HDH_DCIR_MLP-2.0.png)
+![image](/files/HDH/2022-12-12_HDH_DCIR_MLP-2.0.png)
 
 ### 2.3.2 PMSI MCO (séjours ou séances)
-![image](../../files/HDH/2022-12-12_HDH_PMSI_MCO_MLP-2.0.png)
+![image](/files/HDH/2022-12-12_HDH_PMSI_MCO_MLP-2.0.png)
 
 ### 2.3.3 PMSI HAD
-![image](../../files/HDH/2022-12-12_HDH_PMSI_HAD_MLP-2.0.png)
+![image](/files/HDH/2022-12-12_HDH_PMSI_HAD_MLP-2.0.png)
 
 ### 2.3.4 PMSI SSR (séjours)
-![image](../../files/HDH/2022-12-12_HDH_PMSI_SSR_MLP-2.0.png)
+![image](/files/HDH/2022-12-12_HDH_PMSI_SSR_MLP-2.0.png)
 
 Il est prévu une suppression du FPP dans le PMSI à partir de 2023 : le codage de la Manifestation Morbide Principale (MPP) et de l’Affection Etiologique (AE) est maintenu.
 ### 2.3.5 PMSI PSY (RIM-P) (séjours ou actes externes (EDGAR))
-![image](../../files/HDH/2022-12-12_HDH_PMSI_PSY_MLP-2.0.png)
+![image](/files/HDH/2022-12-12_HDH_PMSI_PSY_MLP-2.0.png)
 
 ## 2.4. Avantages et limites de ces données
 * **Avantages :**

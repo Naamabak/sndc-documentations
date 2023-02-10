@@ -265,7 +265,7 @@ Base de remboursement affinée = qté affinée (`PHA_DEC_QSU`) x prix unitaire (
 Montant remboursé affiné = qté affinée (`PHA_DEC_QSU`) x prix unitaire (`PHA_DEC_PRU`) x tx de rbmt(`RGO_REM_TAU`)/100 
 ```
 
-![Schéma cas de figure table médicaments](../files/DREES/2020-09-16_schema_table_medicament.png) 
+![Schéma cas de figure table médicaments](/files/DREES/2020-09-16_schema_table_medicament.png) 
 
 Le référentiel pharmacie se trouve sous le répertoire oravue (table `IR_PHA_R`). 
 A partir du code CIP à 13 chiffres de la table affinée (`PHA_PRS_C13`), on peut joindre cette table affinée au référentiel (qui contient également la variable `PHA_CIP_C13`), 
@@ -382,7 +382,7 @@ Cependant, contrairement à la table pharmacie où `PHA_ACT_PRU` est très bien 
 jusqu’à 7% de valeurs manquantes.  
 
 
-![Taux de lignes avec tarif égal à zéro](../files/DSS/files_DSS_20200428_Haradji_tip_act_qsn_MPL-2.0.jpg)  
+![Taux de lignes avec tarif égal à zéro](/files/DSS/files_DSS_20200428_Haradji_tip_act_qsn_MPL-2.0.jpg)  
 **Source** : SNIIRAM-DCIR. Extraction des tables affinées `ER_PHA_F` et `ER_TIP_F` au 28 avril 2020.
 
 Pour pallier ce manque, le plus simple est de calculer la base de remboursement avec la formule ci-dessus,
@@ -500,7 +500,7 @@ lignes par `CLE_DCI_JNT` dans la table affinée, à la joindre avec la table cen
 et à diviser les montants agrégés d'intérêt par ce nombre. 
 
 Le schéma ci-dessous donne l'exemple avec la table affinée de la CCAM:  
-![schema_jointure](../files/DSS/2020-08-17_JACQUIER_schemajointure_MPL-2.0.png)
+![schema_jointure](/files/DSS/2020-08-17_JACQUIER_schemajointure_MPL-2.0.png)
 
 
 Code pour le DCIRS

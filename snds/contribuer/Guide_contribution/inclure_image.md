@@ -37,13 +37,13 @@ Aller dans `Dépôt` > `Fichier` puis dans le dossier [files de Gitlab](https://
 Cliquer sur le bouton `+` et choisir `téléverser un fichier`.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_ajout-fichier_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_ajout-fichier_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 Ajouter l'image à téléverser, remplir une description de commit explicite, donner un nom de branche explicite (ne pas oublier de remplacer les espaces par des tirets). Laisser la case `Créer une nouvelle demande de fusion avec ces changements` cochée, puis cliquer sur `Téléverser un fichier`.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_televerser-fichier_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_televerser-fichier_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 ### Insérer l'image dans la fiche
@@ -52,19 +52,19 @@ Pour insérer une image dans une fiche, il faut que l'insertion dans la fiche se
 Aller dans la [demande de fusion](demande_fusion.md) créée lors de l'ajout de l'image dans Gitlab. Aller dans l'onglet `Changes`, et copier le chemin de l'image. Si cela est nécessaire, vous pouvez vous remémorer le nom de la branche dans l'onglet `Vue d'ensemble`. 
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_chemin_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_chemin_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 Pour trouver la fiche à modifier, aller dans `Dépôt` > `Fichiers` et sélectionner la branche de travail précédemment utilisée.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_image-branche_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_image-branche_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 Allez dans le dossier qui contient la fiche où l'image doit être incluse et ouvrir la fiche en mode édition. 
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-15_HDH_modifier-fichier-branche_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-15_HDH_modifier-fichier-branche_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 Vous pouvez ensuite intégrer l'image dans la page de documentation soit 

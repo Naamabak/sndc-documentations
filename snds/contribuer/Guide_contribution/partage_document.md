@@ -30,7 +30,7 @@ Les programmes plus conséquents, par exemple un script complet d'analyse, sont 
 Pour créer un nouveau dossier, naviguer dans le dossier de votre choix, et sélectionnez **Nouveau dossier** dans le menu déroulant `+`. 
 
 <p align="center">
-<img src="../../files/images/tutoriel_gitlab/2020-03-10_HDH_ajout-dossier_MLP-2.0.png" width="600px"/>
+<img src="/files/images/tutoriel_gitlab/2020-03-10_HDH_ajout-dossier_MLP-2.0.png" width="600px"/>
 </p>
 
 Nommez votre dossier, ajoutez un commit et enregistrez dans une branche.

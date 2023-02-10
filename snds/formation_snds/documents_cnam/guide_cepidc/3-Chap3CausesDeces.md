@@ -40,7 +40,7 @@ Le champ `dcd_idt_top` figure également dans la table de l’ensemble des cause
 :::
 
 **Schéma 1 – recherche des informations dans DCIR et le référentiel IR_IMB_R**
-![schema1](../../../files/Cnam/Images_guide-CepiDc/20201022_Cepidc_GuideCauseDecesSchema1_MLP-2.0.png)
+![schema1](/files/Cnam/Images_guide-CepiDc/20201022_Cepidc_GuideCauseDecesSchema1_MLP-2.0.png)
 
 
 
@@ -56,4 +56,4 @@ Il vous est donc impossible de distinguer les jumeaux, triplés, … de même se
 
 
 **Schéma 2 – recherche des informations dans le PMSI**
-![schema2](../../../files/Cnam/Images_guide-CepiDc/20201022_cepidc_GuideCauseDecesSchema2_MLP-2.0.png)
+![schema2](/files/Cnam/Images_guide-CepiDc/20201022_cepidc_GuideCauseDecesSchema2_MLP-2.0.png)
