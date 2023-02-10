@@ -365,9 +365,13 @@ export default ({ router }) => {
       "/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf":
         "/snds/files/images/tutoriel_gitlab/2020-03-30_HDH_Cheatsheet-markdown_MLP-2.0.pdf",
     };
-    const redirect = redirectList[to.path.toLowerCase()];
-    console.log(redirect);
+    let topath = to.path;
+    if (topath !== undefined) {
+      topath = topath.toLowerCase();
+    }
+    const redirect = redirectList[topath];
     if (redirect) {
+      console.log(redirect);
       next({ path: redirect });
     } else next();
   });
