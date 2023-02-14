@@ -73,72 +73,70 @@ const sidebar = {
       children: [
         "/snds/formation_snds/starter_kit",
         {
-            title: "Se former au SNDS",
-            path: "/snds/formation_snds/",
-            children: [
+          title: "Se former au SNDS",
+          path: "/snds/formation_snds/",
+          children: [
+            {
+              title: "Guide d'initiation au SNDS",
+              path: "/snds/formation_snds/initiation/",
+              children: [
+                "/snds/formation_snds/initiation/objectifs",
+                "/snds/formation_snds/initiation/snds_en_bref",
+                "/snds/formation_snds/initiation/schema_relationnel_snds",
+                "/snds/formation_snds/initiation/etude_vie_reelle",
+                "/snds/formation_snds/initiation/annexes",
+              ],
+            },
+            "/snds/formation_snds/starter_kit",
+            {
+              title: "Guides et formations de la CNAM",
+              path: "/snds/formation_snds/documents_cnam/",
+              children: [
+                "/snds/formation_snds/documents_cnam/essentiel_snds",
+                "/snds/formation_snds/documents_cnam/Formation_demex",
+                "/snds/formation_snds/documents_cnam/Formation_PMSI",
                 {
-                    title: "Guide d'initiation au SNDS",
-                    path: "/snds/formation_snds/initiation/",
-                    children: [
-                        "/snds/formation_snds/initiation/objectifs",
-                        "/snds/formation_snds/initiation/snds_en_bref",
-                        "/snds/formation_snds/initiation/schema_relationnel_snds",
-                        "/snds/formation_snds/initiation/etude_vie_reelle",
-                        "/snds/formation_snds/initiation/annexes"
-                    ]
-                },
-                "/snds/formation_snds/starter_kit",
-                {
-                    title: "Guides et formations de la CNAM",
-                    path: "/snds/formation_snds/documents_cnam/",
-                    children: [
-                        "/snds/formation_snds/documents_cnam/essentiel_snds",
-                        "/snds/formation_snds/documents_cnam/Formation_demex",
-                        "/snds/formation_snds/documents_cnam/Formation_PMSI",
-                        {
-                            title: "Guide causes médicales de décès",
-                            path: "/snds/formation_snds/documents_cnam/guide_cepidc/",
-                            children: [
-                                "/snds/formation_snds/documents_cnam/guide_cepidc/Avant_propos",
-                                "/snds/formation_snds/documents_cnam/guide_cepidc/0-IntroductionCausesDeces",
-                                "/snds/formation_snds/documents_cnam/guide_cepidc/1-Chap1CausesDeces",
-                                "/snds/formation_snds/documents_cnam/guide_cepidc/2-Chap2CausesDeces",
-                                "/snds/formation_snds/documents_cnam/guide_cepidc/3-Chap3CausesDeces",
-                                "/snds/formation_snds/documents_cnam/guide_cepidc/4-Chap4CausesDeces",
-                                "/snds/formation_snds/documents_cnam/guide_cepidc/5-Annexe1-CausesDeces",
-                                "/snds/formation_snds/documents_cnam/guide_cepidc/6-Annexe2-CausesDeces"
-                            ]
-                        },
-                        {
-                            title: "Guides pédagogiques",
-                            path: "/snds/formation_snds/documents_cnam/guides_pedagogiques_SNDS/",
-                            children: [
-                                "/snds/formation_snds/documents_cnam/guides_pedagogiques_SNDS/guide_pedagogique_acces_permanents",
-                                "/snds/formation_snds/documents_cnam/guides_pedagogiques_SNDS/guide_pedagogique_acces_projets"
-                            ]
-                        },
-                    ]
-                },
-                "/snds/formation_snds/Sante_publique_France",
-                {
-                    title: "Documents de ReDSiam",
-                    path: "/snds/formation_snds/redsiam/",
-                    children: [
-                        "/snds/formation_snds/redsiam/guide"
-                    ]
+                  title: "Guide causes médicales de décès",
+                  path: "/snds/formation_snds/documents_cnam/guide_cepidc/",
+                  children: [
+                    "/snds/formation_snds/documents_cnam/guide_cepidc/Avant_propos",
+                    "/snds/formation_snds/documents_cnam/guide_cepidc/0-IntroductionCausesDeces",
+                    "/snds/formation_snds/documents_cnam/guide_cepidc/1-Chap1CausesDeces",
+                    "/snds/formation_snds/documents_cnam/guide_cepidc/2-Chap2CausesDeces",
+                    "/snds/formation_snds/documents_cnam/guide_cepidc/3-Chap3CausesDeces",
+                    "/snds/formation_snds/documents_cnam/guide_cepidc/4-Chap4CausesDeces",
+                    "/snds/formation_snds/documents_cnam/guide_cepidc/5-Annexe1-CausesDeces",
+                    "/snds/formation_snds/documents_cnam/guide_cepidc/6-Annexe2-CausesDeces",
+                  ],
                 },
                 {
-                    title: "Données synthétiques",
-                    path: "/snds/formation_snds/donnees_synthetiques/",
-                    children: [
-                        "/snds/formation_snds/donnees_synthetiques/donnees_labsante",
-                        "/snds/formation_snds/donnees_synthetiques/donnees_reperes",
-                        "/snds/formation_snds/donnees_synthetiques/generateur_HDH"
-                    ]
+                  title: "Guides pédagogiques",
+                  path: "/snds/formation_snds/documents_cnam/guides_pedagogiques_SNDS/",
+                  children: [
+                    "/snds/formation_snds/documents_cnam/guides_pedagogiques_SNDS/guide_pedagogique_acces_permanents",
+                    "/snds/formation_snds/documents_cnam/guides_pedagogiques_SNDS/guide_pedagogique_acces_projets",
+                  ],
                 },
-                "/snds/formation_snds/notebook",
-                "/snds/formation_snds/programmes"
-            ]
+              ],
+            },
+            "/snds/formation_snds/Sante_publique_France",
+            {
+              title: "Documents de ReDSiam",
+              path: "/snds/formation_snds/redsiam/",
+              children: ["/snds/formation_snds/redsiam/guide"],
+            },
+            {
+              title: "Données synthétiques",
+              path: "/snds/formation_snds/donnees_synthetiques/",
+              children: [
+                "/snds/formation_snds/donnees_synthetiques/donnees_labsante",
+                "/snds/formation_snds/donnees_synthetiques/donnees_reperes",
+                "/snds/formation_snds/donnees_synthetiques/generateur_HDH",
+              ],
+            },
+            "/snds/formation_snds/notebook",
+            "/snds/formation_snds/programmes",
+          ],
         },
         "/snds/formation_snds/Sante_publique_France",
         {
@@ -322,6 +320,7 @@ module.exports = {
     // },
     smoothScroll: true,
   },
+  globalUIComponents: "Form",
   markdown: {
     // options for markdown-it-anchor
     // anchor: { permalink: false },

@@ -61,11 +61,11 @@ Where NIR_RET<>'0' and NAI_RET <>'0' and SEX_RET <>'0' and SEJ_RET<>'0' and FHO_
 
 ## Tableau des identifiants des bénéficiaires
 
-![tableau_identifiants_beneficiaires](../files/Cnam/images_Tiches_Thematiques_BENEF/tableau_identifiants_beneficiaires.png)
+![tableau_identifiants_beneficiaires](/files/Cnam/images_Tiches_Thematiques_BENEF/tableau_identifiants_beneficiaires.png)
 
 ## Schéma des identifiants
 
-![schema_identifiants_beneficiaires](../files/Cnam/images_Tiches_Thematiques_BENEF/schema_identifiants_beneficiaires.png)
+![schema_identifiants_beneficiaires](/files/Cnam/images_Tiches_Thematiques_BENEF/schema_identifiants_beneficiaires.png)
 
 ## Utilisation des identifiants
 
@@ -126,6 +126,6 @@ Il existe un biais sur l’historique dans l’ensemble du dispositif d’identi
 ## Références
 
 ::: tip Crédit
-Le contenu original de cette fiche provient du document [Fiche bénéficiaires](../files/Cnam/2019-06_CNAM-INDS_SNDS_Fiches_Thematiques_BENEF_MAJ-2020-09_MPL-2.0.pdf) rédigé par la [CNAM](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php)  
+Le contenu original de cette fiche provient du document [Fiche bénéficiaires](/files/Cnam/2019-06_CNAM-INDS_SNDS_Fiches_Thematiques_BENEF_MAJ-2020-09_MPL-2.0.pdf) rédigé par la [CNAM](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php)  
 MAJ Septembre 2020
 :::

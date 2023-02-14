@@ -7,7 +7,7 @@ Elle est accessible à l'adresse [https://drees.shinyapps.io/Cartographie_des_in
 
 ## Aperçu de l'application
 
-![Aperçu de l'application](../files/DREES/2019-10_demo-carto-indicateurs-sante_MPL-2.0.gif)
+![Aperçu de l'application](/files/DREES/2019-10_demo-carto-indicateurs-sante_MPL-2.0.gif)
 
 L'application est encore en cours de développement. 
 Un formulaire dans le menu latéral est disponible pour reccueillir des suggestions ou répondre à des questions.
@@ -25,7 +25,7 @@ L'application offre une fonctionnalité d'édition contrôlée par une clef d'id
 
 Si vous souhaitez corriger une coquille, compléter une information ou mettre à jour des instructions pour retrouver l'indicateur sur le site du producteur, nous serions ravis de recevoir votre aide.
 
-![Correction](../files/DREES/2019-11_demo_correction_indicateurs_MPL-2.0.gif)
+![Correction](/files/DREES/2019-11_demo_correction_indicateurs_MPL-2.0.gif)
 
 ## Producteurs d'indicateurs
 

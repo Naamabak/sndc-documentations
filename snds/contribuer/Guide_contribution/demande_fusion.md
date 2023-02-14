@@ -17,7 +17,7 @@ En cliquant sur le bouton `Edit` il est possible d'éditer la demande de fusion 
 Des icônes rondes (de couleur verte, orange, rouge, bleue) sont présentes. Ces icônes correspondent à des pipelines (se référer au point pipelines ci-dessous pour plus de détails) .
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-12_HDH_vue-densemble-MR_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-12_HDH_vue-densemble-MR_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 * Onglet `Commits`
@@ -39,7 +39,7 @@ Lorsque la prévisualisation est construite, la deuxième icône passe au vert.
 Cliquer dessus, permet d'ouvrir la prévisualisation du site. 
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-12_HDH_pipelines_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-12_HDH_pipelines_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 À chaque nouveau commit sur la branche, le pipeline est relancé, et la prévisualisation est mise à jour avec la même url.
@@ -55,12 +55,12 @@ Dans le menu déroulant `compare` il est possible de choisir quelles versions so
 Le bouton Crayon `Edit File` permet d'apporter de nouvelles modifications (voir ci-dessous)
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-10_HDH_MR-comparaison_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-10_HDH_MR-comparaison_MLP-2.0.png" alt="wip" width="1000"/>
 </p>
 
 ## Retrouver sa demande de fusion
 Pour retrouver une demande de fusion dans lequel on s'est assigné, il faut aller dans la barre de navigation de Gitlab et cliquer sur le bouton orange  `Demande de fusion`. Si on ne s'est pas assigné dans la demande de fusion, il faut aller dans l'onglet `Demande de fusion` dans la barre à gauche de l'interface Gitlab et chercher sa demande de fusion parmi la liste.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-12_HDH_retrouver-MR_MLP-2.0.png" alt="wip" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-12_HDH_retrouver-MR_MLP-2.0.png" alt="wip" width="1000"/>
 </p>

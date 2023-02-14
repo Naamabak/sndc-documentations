@@ -1122,7 +1122,7 @@ La table ORAVAL.IR_NAT_V (variable PRS_NAT_CB2) contient les informations néces
 
 ## REFERENCES
 
-La [FAQ DCIR 09 2019](../../../files/Cnam/2019-07-CNAM-FAQ_DCIR_MLP-2.0.xlsx) [CNAM - MPL-2.0] reprend les questions fréquemment posées sur le DCIR.
+La [FAQ DCIR 09 2019](/files/Cnam/2019-07-CNAM-FAQ_DCIR_MLP-2.0.xlsx) [CNAM - MPL-2.0] reprend les questions fréquemment posées sur le DCIR.
 
 
 

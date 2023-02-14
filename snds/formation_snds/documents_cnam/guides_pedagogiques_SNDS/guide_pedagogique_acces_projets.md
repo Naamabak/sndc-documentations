@@ -2,7 +2,7 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ::: Ressources
-Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources. Il est [téléchargeable ici](../../../files/Cnam/2019-07_Cnam_Guide_pedagogique_SNDS_acces_projet_MPL-2.0.docx) dans sa version d'origine.
+Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources. Il est [téléchargeable ici](/files/Cnam/2019-07_Cnam_Guide_pedagogique_SNDS_acces_projet_MPL-2.0.docx) dans sa version d'origine.
 
 Il a été initialement publié sur le portail SNDS de la Cnam en XX.
 
@@ -93,7 +93,7 @@ Par ailleurs, le SNDS étant constitué de données de santé à caractère pers
 -	**La Cnam est chargée de la constitution, du stockage et de la mise à disposition de la base principale, sur le périmètre initial du SNDS, et pourra ajouter  les bases exhaustives du catalogue suite à un arrêté ministériel**,
 - **Le Health Data Hub est chargé de l’enrichissement du  catalogue  par les données ajoutées au périmètre SNDS ; il met à disposition sur sa plateforme technologique les données du catalogue et les données de la base principale**.
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig1_SNDSelargi.png)
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig1_SNDSelargi.png)
 
 
 ## Qui a accès au SNDS et à quelles données ?
@@ -114,7 +114,7 @@ Le SNDS assure la mise à disposition des données selon la nature des données 
     -  Ou **accès par projet**, via des accès standards après avis favorables ou favorables avec recommandation de la Plateforme des données de Santé (ou Health Data Hub - HDH) et du CESREES (Comité Ethique et Scientifique pour les recherches, les études et les évaluations dans le domaine de la santé), et sur autorisation de la CNIL, ou via des accès simplifiés, **à des fins de recherche, d’étude et d’évaluation d’intérêt public dans le domaine de la santé, pour les demandeurs publics et privés** (intermédiaires nécessaires dans certains cas pour respecter les 2 finalités interdites qui sont la promotion des produits, et la modification des contrats d’assurance) :  **accès à une partie du SNDS (EGB) ou à des extractions de données du SNDS restituées dans des conditions de sécurité équivalente**.
 
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig2.png)
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig2.png)
 
 
 
@@ -133,7 +133,7 @@ Le SNDS assure la mise à disposition des données selon la nature des données 
 4. enfin, en fonction de l’autorisation de la CNIL, **une convention est signée entre la Cnam et le responsable du traitement des données** afin de mettre en œuvre l’extraction des données sur le périmètre autorisé.
 
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig2.png)
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig2.png)
 
 
 **La procédure d’accès simplifiée à l’EGB (Echantillon de données individuelles de consommation de soins) est la suivante :** 
@@ -301,13 +301,13 @@ Cet accès se formalise :
 Dans le cadre d’un accès sur projet aux données du SNDS sur le portail de la Cnam, un schéma de formations a été mis en place au travers de plusieurs modules indispensables. Ces formations sont ouvertes dès lors que le CESREES a formulé un avis favorable ou favorable avec recommandation sur le projet d’étude ou que le HDH a autorisé l’accès simplifié pour un accès sur projet à l’EGB.
 
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig4.png)
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig4.png)
 
 Pour être habilité à consulter les extractions de données du SNDS sur le portail, le futur utilisateur doit obligatoirement suivre le module de formation « Données d’extraction pour les accès sur projet » (réf. Institut 4.10 REQ-256-AM).
 
 En complément, une formation sur les données du PMSI accessibles dans le SNDS « initiation au PMSI à travers le SNDS » (réf. Institut 4.10 REQ-254-AM) peut être suivie.
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig5.png) 
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig5.png) 
 
 
 Pour être habilité à consulter l’EGB sur projet, en procédure standard ou simplifiée autorisée par le HDH, le futur utilisateur doit obligatoirement suivre le module de formation « Architecture et données du SNIIRAM/SNDS » (réf. Institut 4.10 REQ-054-AM) suivi du module de formation  « EGB » (réf. Institut 4.10 REQ-086-AM).
@@ -340,13 +340,13 @@ Tous ces profils permettent d’accéder :
 
 L’adresse de connexion au portail est la suivante : [**https://portail.sniiram.ameli.fr**](https://portail.sniiram.ameli.fr). Les données d’extraction ainsi que le produit EGB se situent dans l’onglet STATISTIQUES du portail SNDS où les tables autorisées sont accessibles et interrogeables par SAS guide.
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig6.png) 
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig6.png) 
 
 1. Saisir son identifiant
 2. Saisir le code d’accès généré par la calculette
 3. Cliquer sur Se connecter
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig7.png) 
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig7.png) 
 
 Le **guide d’utilisation** du portail et la **procédure d’installation** de certains modules (certificats, citrix) sont disponibles sur la **page d'accueil** du portail.
   
@@ -389,17 +389,17 @@ Une solution d’import/export est proposée sur le portail dans la rubrique `TE
 
 ### Télechargement des fichiers
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/SchemaFiche8_1.png)
+![schema](/files/Cnam/Images_guide_acces_projets/SchemaFiche8_1.png)
 
 
 #### Le processus d’import de fichiers
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/SchemaFiche8_2.png)
+![schema](/files/Cnam/Images_guide_acces_projets/SchemaFiche8_2.png)
 
 
 #### Le processus d’export de fichiers
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/SchemaFiche8_3.png)
+![schema](/files/Cnam/Images_guide_acces_projets/SchemaFiche8_3.png)
 
 
 
@@ -411,7 +411,7 @@ Le DPD doit veiller à la traçabilité des traitements réalisés par la tenue 
 
 Ce dernier doit comporter a minima les informations suivantes, sur l’utilisation des données individuelles bénéficiaires, professionnels de santé ou établissements ainsi que les identifiants potentiels utilisés (Cf. 3. QUELLE EST LA SECURITE AU SEIN DU SNDS ?) et pourra faire l’objet d’un contrôle par la CNIL :
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/SchemaFiche9.png)
+![schema](/files/Cnam/Images_guide_acces_projets/SchemaFiche9.png)
 
 
 ## Quel accompagnement autour du SNDS ? 
@@ -421,7 +421,7 @@ La Cnam propose le **dispositif d’accompagnement** suivant en se connectant su
 L’ensemble des profils permet d’interroger la documentation.
 
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/SchemaFiche10.png)
+![schema](/files/Cnam/Images_guide_acces_projets/SchemaFiche10.png)
 
 
 ### Le Support sur les données
@@ -432,9 +432,9 @@ Pour vous aider dans l'exploitation des données du SNDS, un Support d'aide aux 
 
 -	**Le fichier Excel Kwikly**, accessible directement sur la page d’accueil du portail, permet de connaitre le format, la définition et l’historique de toutes les tables individuelles bénéficiaires (DCIR, PMSI, Causes de décès, etc…)
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig8.png) 
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig8.png) 
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig9.png) 
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig9.png) 
 
 
 - **L’assistance aux utilisateurs** : différente en fonction du type d’aide souhaitée : une aide fonctionnelle ou une aide technique.
@@ -456,14 +456,14 @@ Pour vous aider dans l'exploitation des données du SNDS, un Support d'aide aux 
 → Les **bonnes pratiques SAS et BO**.
 → Et **divers documents d’actualité forte** (pallier de pseudonymisation par exemple)
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig10.png) 
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig10.png) 
 
 **Pour recevoir régulièrement par courriel une communication sur les actualités des bases SNDS pour être informer plus rapidement vous pouvez vous inscrire à l’adresse suivante : 
 https://framaforms.org/actualites-snds-1606908539 **
 
 -	En cliquant sur l’onglet **TABLEAUX ET REQUETES**, vous accédez à une arborescence de documentations insérées dans Business Object.
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig11.png) 
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig11.png) 
 
 
 | Dans ce dossier | Vous trouverez | 
@@ -531,7 +531,7 @@ Afin de signer la convention, le porteur de projet doit avoir bien rempli tous l
 •	Type de données non exhaustives et mise à disposition des données par un accès à l’EGB ; 
 Alors les utilisateurs des données du projet devront suivre des formations adéquates  pour accéder au portail du SNDS afin d’être sensibilisés à la sécurité. Cette étape est requise afin de valider la création d’un espace projet et/ou d’un accès au portail.
 
-![schema](../../../files/Cnam/Images_guide_acces_projets/202112_Fig13.png) 
+![schema](/files/Cnam/Images_guide_acces_projets/202112_Fig13.png) 
 
 
 

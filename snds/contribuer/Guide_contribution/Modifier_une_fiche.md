@@ -14,13 +14,13 @@ Il y a deux manières d'éditer un fichier : en passant par le site de la docume
 En [bas de chaque page de la documentation](Utiliser_le_site_de_documentation.md) se trouve un lien, vous invitant à éditer la fiche sur Gitlab. Ce lien redirige directement vers l'interface de Gitlab.
 
 <p style="center">
-<img src="../../files/images/tutoriel_gitlab/editer_sur_gitlab.png" alt="Éditer sur GitLab" width="200"/>
+<img src="/files/images/tutoriel_gitlab/editer_sur_gitlab.png" alt="Éditer sur GitLab" width="200"/>
 </p>
 
 La seconde option pour modifier une fiche est de trouver et afficher la fiche à modifier dans le dépôt sur [Gitlab](https://gitlab.com/healthdatahub/documentation-snds/-/tree/master/fiches) et d'ouvir l'interface d'édition avec le bouton `Editer`.
 
 <p style="center">
-<img src="../../files/images/tutoriel_gitlab/edition.png" alt="interface edition" width="600"/>
+<img src="/files/images/tutoriel_gitlab/edition.png" alt="interface edition" width="600"/>
 </p>
 
 Dans l'interface d'édition, il est possible de modifier le nom d'une fiche, modifier le texte en utilisant le format markdown. 
@@ -35,7 +35,7 @@ Dans l'interface d'édition, il est possible de modifier le nom d'une fiche, mod
 Vous pouvez vous reporter aux fiches [inclure une image](inclure_image.md), [tutoriel Markdown](tutoriel_markdown.md#liens-hypertextes) pour aller plus loin.
 
 <p style="center">
-<img src="../../files/images/tutoriel_gitlab/2020-04-27_HDH_modifier-fiche_MLP-2.0.png" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-04-27_HDH_modifier-fiche_MLP-2.0.png" width="1000"/>
 </p>
 
 ## Enregistrer les modifications apportées
@@ -48,7 +48,7 @@ Un formulaire en bas de la page éditée permet d'enregistrer vos modifications 
 - Cliquer sur `Commit Changes`
 
 <p style="center">
-<img src="../../files/images/tutoriel_gitlab/2020-04-27_HDH_modifier-fiche-enregistrer_MLP-2.0.png" alt="commit" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-04-27_HDH_modifier-fiche-enregistrer_MLP-2.0.png" alt="commit" width="1000"/>
 </p>
 
 ## Ouverture d'une demande de fusion (merge-request)
@@ -60,7 +60,7 @@ Une page s'ouvre alors pour configurer la demande de fusion.
 - Soumettre votre merge-request en bas de page.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/wip.png" alt="wip" width="900"/>
+<img src="/files/images/tutoriel_gitlab/wip.png" alt="wip" width="900"/>
 </p>
 
 ::: tip
@@ -79,13 +79,13 @@ Il existe deux méthodes pour apporter des modifications supplémentaires dans l
 Pour cela aller dans la barre présente à gauche de l'interface Gitlab. Aller dans l'onglet `Dépôt` > `Fichiers`. Aller sur le bouton `master`. En cliquant dessus un menu déroulant contenant les branches de travail encore ouvertes s'affiche. Choisir la branche cible voulue, aller dans le dossier `Fiches` et ouvrir en mode édition la fiche à modifier. Les nouveaux commits ainsi créés apparaîtront alors dans la demande de fusion associée à cette branche.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-12_HDH_changer-branche_MLP-2.0.png" alt="changer branche" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-12_HDH_changer-branche_MLP-2.0.png" alt="changer branche" width="1000"/>
 </p>
 
 2. La seconde méthode consiste à ouvrir sa demande de fusion. Dans l'onglet `Changes`, cliquer sur le bouton Crayon `Edit File`. Une fenêtre d'édition identique à celle lors de la première édition s'ouvre. Un nouveau commit décrivant les modifications apportées doit être enregistré. Il apparaitra dans l'historique des modifications dans la demande de fusion.
 
 <p style="text-align:center;">
-<img src="../../files/images/tutoriel_gitlab/2020-05-10_HDH_edit-file_MLP-2.0.png" alt="changer branche" width="1000"/>
+<img src="/files/images/tutoriel_gitlab/2020-05-10_HDH_edit-file_MLP-2.0.png" alt="changer branche" width="1000"/>
 </p>
 
 ## Suggérer des modifications

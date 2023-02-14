@@ -1,7 +1,7 @@
 # Section introduction
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-![le SNDS](../files/images/logo/logoSNDS.jpg)
+![le SNDS](/files/images/logo/logoSNDS.jpg)
 
 
 Cette section héberge un guide introductif au SNDS, décliné en quatre sections :

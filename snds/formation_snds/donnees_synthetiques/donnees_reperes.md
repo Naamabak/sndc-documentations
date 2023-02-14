@@ -2,13 +2,13 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 Ce jeu de données a été généré de manière aléatoire sur la base de statistiques descriptives du SNDS ainsi qu’une série de règles métier et ressemble à une livraison DEMEX et ne contient aucune donnée de santé personnelle.
-Ces données ne sont pas exhaustives, la liste des tables et variables disponibles est disponible dans ce [document](../../files/HDH/20201119_HDH_reperes_MLP-2.0.docx).
+Ces données ne sont pas exhaustives, la liste des tables et variables disponibles est disponible dans ce [document](/files/HDH/20201119_HDH_reperes_MLP-2.0.docx).
 
 ## Description
 Le jeu de données de synthèse s’étend sur 4 ans (2015 à 2018 inclus) et représente une partie du DCIR et PMSI MCO. Dans les tables du DCIR `NUM_ENQ` est la variable identifiante, pour les tables du PMSI la variable identifiante est `NIR_ANO_17`.
 
 ## Accéder aux données
-L’accès aux données de synthèse développés par l’équipe EA REPERES (dont les conditions sont décrites dans une convention entre l’équipe EA REPERES et le HDH) est soumis à la signature par tous les utilisateurs d’un [accord de confidentialité](../../files/HDH/20201119_HDH_acces_reperes_MLP-2.0.docx) signé avec le Health Data Hub.
+L’accès aux données de synthèse développés par l’équipe EA REPERES (dont les conditions sont décrites dans une convention entre l’équipe EA REPERES et le HDH) est soumis à la signature par tous les utilisateurs d’un [accord de confidentialité](/files/HDH/20201119_HDH_acces_reperes_MLP-2.0.docx) signé avec le Health Data Hub.
 
 Pour demander un accès vous pouvez envoyer un mail à <opensource@health-data-hub.fr>.
 
