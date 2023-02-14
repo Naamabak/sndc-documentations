@@ -10,5 +10,5 @@
 
 ## Autres ressources
 
-- [Tutoriel "Pratiquer R sur le portail SNDS"](../files/DREES/tuto_R_portail_SNDS.nb.html) d'un utilisateur de la DREES, qui complète le guide utilisateur de la Cnam 
+- <a href="/files/DREES/tuto_R_portail_SNDS.nb.html" title="Download" download>Tutoriel "Pratiquer R sur le portail SNDS"</a> d'un utilisateur de la DREES, qui complète le guide utilisateur de la Cnam 
 
