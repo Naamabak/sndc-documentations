@@ -71,7 +71,6 @@ const sidebar = {
       title: "Se former au SNDS",
       path: "/snds/formation_snds/",
       children: [
-        "/snds/formation_snds/starter_kit",
         {
           title: "Se former au SNDS",
           path: "/snds/formation_snds/",
