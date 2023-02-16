@@ -82,7 +82,10 @@ const sidebar = {
             "/snds/formation_snds/initiation/annexes",
           ],
         },
-        "/snds/formation_snds/starter_kit",
+        {
+          title: "Kit de démarrage avec les données de santé",
+          path: "/snds/formation_snds/starter_kit",
+        },
         {
           title: "Guides et formations de la CNAM",
           path: "/snds/formation_snds/documents_cnam/",
@@ -114,7 +117,10 @@ const sidebar = {
             },
           ],
         },
-        "/snds/formation_snds/Sante_publique_France",
+        {
+          title: "Documents Sante publique France",
+          path: "/snds/formation_snds/Sante_publique_France",
+        },
         {
           title: "Documents de ReDSiam",
           path: "/snds/formation_snds/redsiam/",
@@ -129,12 +135,15 @@ const sidebar = {
             "/snds/formation_snds/donnees_synthetiques/generateur_HDH",
           ],
         },
-        "/snds/formation_snds/notebook",
-        "/snds/formation_snds/programmes",
+        {
+          title: "Notebooks de prise en main du SNDS",
+          path: "/snds/formation_snds/notebook",
+        },
+        { title: "Programmes", path: "/snds/formation_snds/programmes" },
         {
           title: "Ressources R",
           path: "/snds/formation_snds/ressources_R",
-        }
+        },
       ],
     },
     {
