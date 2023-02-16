@@ -131,6 +131,10 @@ const sidebar = {
         },
         "/snds/formation_snds/notebook",
         "/snds/formation_snds/programmes",
+        {
+          title: "Ressources R",
+          path: "/snds/formation_snds/ressources_R",
+        }
       ],
     },
     {
