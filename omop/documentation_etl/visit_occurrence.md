@@ -831,12 +831,12 @@ de visite dont il s’agit (séjour, ambulatoire, urgence, etc.)</th>
 </tbody>
 </table>
 
-## DCIR_ER_ETE_F
+## DCIR\_ER\_ETE\_F
 
 ### Commentaires généraux
 
 -   Dans cette partie, on traite les visites en établissement de santé
-   (**\_ER_ETE_F)**.
+   (**\_ER\_ET\E_F)**.
 
 -   Comme pour les tables LOCATION et CARE_SITE, on retire les
    établissements de **\_ER_ETE_F** pour lesquels ( *etb_cat_rg1* \>
@@ -971,11 +971,11 @@ visite</p></th>
 </table>
 
 
-## DCIR _ER_PRS_F sans ER_ETE_F
+## DCIR \_ER\_PRS\_F sans ER\_ETE\_F
 
 ### Commentaires généraux
 
-Dans cette partie, sont concernées les visites de **\_ER_PRS_F** qui ne sont pas dans **\_ER_ETE_F** (elles ont déjà été prises en compte dans la partie précédente)
+Dans cette partie, sont concernées les visites de **\_ER\_PRS\_F** qui ne sont pas dans **\_ER\_ETE\_F** (elles ont déjà été prises en compte dans la partie précédente)
 
 ### Règles de transformation
 
