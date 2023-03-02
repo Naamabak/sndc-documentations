@@ -59,7 +59,7 @@ d’être utilisés. Notamment :
 <th><p>Code commune construit à partir de <em>ben_res_dpt</em> et
 <em>ben_res_com</em>, et <em>org_aff_ben</em> en utilisant le script de
 la <a
-href="https://documentation-snds.health-data-hub.fr/fiches/localisation_geographique_beneficiaires.html#construction-de-la-localisation-dans-le-sniiram"><u>documentation
+href="https://documentation-snds.health-data-hub.fr/snds/fiches/localisation_geographique_beneficiaires.html#construction-de-la-localisation-dans-le-sniiram"><u>documentation
 du SNDS</u></a></p>
 <p>On sélectionne ensuite le code commune associé à la date de mise à
 jour des données la plus récente (<em>ben_dte_maj</em>)</p></th>
