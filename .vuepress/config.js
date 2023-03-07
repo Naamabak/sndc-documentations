@@ -300,13 +300,14 @@ module.exports = {
     sidebarDepth: 1,
     lastUpdated: "Dernière modification",
     searchPlaceholder: "",
-    // algolia: {
-    //     apiKey: "b1d88a4e2413821b4ebe7441ecc95a97",
-    //     indexName: "health-data-hub-snds",
-    //     algoliaOptions:{
-    //        hitsPerPage: 10,
-    //     },
-    // },
+    algolia: {
+      apiKey: "b1d88a4e2413821b4ebe7441ecc95a97",
+      // indexName: "health-data-hub-snds",
+      appId: "01BFDJ3C4P",
+      algoliaOptions: {
+        hitsPerPage: 10,
+      },
+    },
     smoothScroll: true,
   },
   globalUIComponents: "Form",
