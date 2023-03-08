@@ -302,9 +302,11 @@ module.exports = {
     // searchPlaceholder: "",
     algolia: {
       apiKey: "b1d88a4e2413821b4ebe7441ecc95a97",
+      siteId: "8b6916da-a2c8-406b-ab0c-b20eb85b8085",
       // indexName: "health-data-hub-snds",
       appId: "01BFDJ3C4P",
       branch: "algolia-fix",
+      selector: "div#search",
     },
     smoothScroll: true,
   },
