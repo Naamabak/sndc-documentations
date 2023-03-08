@@ -303,7 +303,7 @@ module.exports = {
     algolia: {
       apiKey: "09b126609d39d5f8a29ecf62d948a741",
       // siteId: "8b6916da-a2c8-406b-ab0c-b20eb85b8085",
-      // indexName: "docSNDS-dev",
+      indexName: "docSNDS-dev",
       appId: "01BFDJ3C4P",
       // branch: "algolia-fix",
       // selector: "div#search",
