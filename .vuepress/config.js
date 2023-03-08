@@ -304,6 +304,7 @@ module.exports = {
       apiKey: "b1d88a4e2413821b4ebe7441ecc95a97",
       // indexName: "health-data-hub-snds",
       appId: "01BFDJ3C4P",
+      branch: "algolia-fix",
       algoliaOptions: {
         hitsPerPage: 10,
       },
