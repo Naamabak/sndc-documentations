@@ -299,7 +299,7 @@ module.exports = {
     sidebar: sidebar,
     sidebarDepth: 1,
     lastUpdated: "Dernière modification",
-    searchPlaceholder: "",
+    // searchPlaceholder: "",
     algolia: {
       apiKey: "b1d88a4e2413821b4ebe7441ecc95a97",
       // indexName: "health-data-hub-snds",
