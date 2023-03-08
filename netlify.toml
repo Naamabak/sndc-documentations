@@ -6,3 +6,7 @@
   publish = ".vuepress/dist/"
 [context.deploy-preview.environment]
   NODE_VERSION = "16"
+[[plugins]]
+package = "@algolia/netlify-plugin-crawler"
+  [plugins.inputs]
+  branches = ["*"]
