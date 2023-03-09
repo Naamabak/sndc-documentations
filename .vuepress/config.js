@@ -1,3 +1,4 @@
+const { getIndexName } = require("./indexing");
 const sb = require("./sidebar");
 
 const sidebar = {
@@ -302,7 +303,7 @@ module.exports = {
     // searchPlaceholder: "",
     algolia: {
       apiKey: "09b126609d39d5f8a29ecf62d948a741",
-      indexName: "docSNDS-dev",
+      indexName: getIndexName(),
       appId: "01BFDJ3C4P",
     },
     smoothScroll: true,

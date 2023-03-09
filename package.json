@@ -5,6 +5,7 @@
   "license": "MPL-2.0",
   "dependencies": {
     "@opendataschema/table-schema-to-markdown": ">= 0.4.2",
+    "algoliasearch": "^4.15.0",
     "handlebars-helpers": ">= 0.10.0",
     "markdown-include": ">= 0.4.3",
     "markdown-it-footnote": ">= 3.0.2",
