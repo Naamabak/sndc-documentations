@@ -11,3 +11,4 @@ package = "@algolia/netlify-plugin-crawler"
   [plugins.inputs]
   branches = ["*"]
   template = "hierarchical"
+  customDomain = "https://documentation-snds.health-data-hub.fr/"
