@@ -301,11 +301,11 @@ module.exports = {
     sidebarDepth: 1,
     lastUpdated: "Dernière modification",
     searchPlaceholder: "",
-    algolia: {
-      apiKey: "09b126609d39d5f8a29ecf62d948a741",
-      indexName: getIndexName(),
-      appId: "01BFDJ3C4P",
-    },
+    // algolia: {
+    //   apiKey: "09b126609d39d5f8a29ecf62d948a741",
+    //   indexName: getIndexName(),
+    //   appId: "01BFDJ3C4P",
+    // },
     smoothScroll: true,
   },
   globalUIComponents: "Form",
