@@ -300,6 +300,7 @@ module.exports = {
     sidebar: sidebar,
     sidebarDepth: 1,
     lastUpdated: "Dernière modification",
+    searchPlaceholder: "",
     algolia: {
       apiKey: "09b126609d39d5f8a29ecf62d948a741",
       indexName: getIndexName(),
