@@ -1,3 +1,4 @@
+const { getIndexName } = require("./indexing");
 const sb = require("./sidebar");
 
 const sidebar = {
@@ -299,14 +300,11 @@ module.exports = {
     sidebar: sidebar,
     sidebarDepth: 1,
     lastUpdated: "Dernière modification",
-    searchPlaceholder: "",
-    // algolia: {
-    //     apiKey: "b1d88a4e2413821b4ebe7441ecc95a97",
-    //     indexName: "health-data-hub-snds",
-    //     algoliaOptions:{
-    //        hitsPerPage: 10,
-    //     },
-    // },
+    algolia: {
+      apiKey: "09b126609d39d5f8a29ecf62d948a741",
+      indexName: getIndexName(),
+      appId: "01BFDJ3C4P",
+    },
     smoothScroll: true,
   },
   globalUIComponents: "Form",
