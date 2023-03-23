@@ -25,3 +25,8 @@ L'intégralité des scripts SQL effectuant la transformation de l'échantillon S
 Ces travaux de transformation sont une première version du SNDS OMOP-CDM. Des erreurs peuvent subsister et des choix peuvent être questionnés. N'hésitez pas à contribuer à l'amélioreration de l'etl via Gitlab ou en créant des tickets sur la documentation.
 
 :::
+
+::: tip Accéder au code source
+Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop)
+:::
+

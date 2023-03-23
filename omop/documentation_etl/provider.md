@@ -130,3 +130,7 @@ liste.
 <tbody>
 </tbody>
 </table>
+
+::: tip Accéder au code source
+Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop)
+:::

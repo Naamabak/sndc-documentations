@@ -1,14 +1,14 @@
 # **Table PERSON**
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-### *Description*
+## *Description*
 
 La table PERSON est une table centrale dans le modèle OMOP. Elle
 contient l’identité des personnes figurant dans la base de données.
 Chaque personne est identifiée de manière unique et certaines
 informations démographiques sont renseignées.
 
-### *Tables et variables du SNDS utilisées* 
+## *Tables et variables du SNDS utilisées* 
 
 -   **\_IR_BEN_R**
 
@@ -34,7 +34,7 @@ informations démographiques sont renseignées.
 | person_source_value | varchar(50) | Clé secondaire correspondant à l’identifiant de la personne dans les données sources. Cette clé est nécessaire lorsqu'un cas d'utilisation nécessite un lien vers les données relatives à la personne dans l'ensemble de données source.                                                                | Non              | Non               |                               |
 | gender_source_value | varchar(50) | Code correspondant au sexe dans la base de données source. Le sexe de la personne est mis en mappé avec un concept de genre standard dans le Vocabulaire standardisé ; la valeur originale est stockée ici à titre de référence.                                                                        | Non              | Non               |                               |
 
-### *Règles de transformation*
+## *Règles de transformation*
 
 <table style="width:100%;">
 <colgroup>
@@ -131,4 +131,7 @@ informations démographiques sont renseignées.
 </tbody>
 </table>
 
-# 
+::: tip Accéder au code source
+Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop)
+:::
+

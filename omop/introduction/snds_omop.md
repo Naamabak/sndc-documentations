@@ -19,4 +19,6 @@ Ce travail a permis de réduire de 180 à une vingtaine le nombre de tables de l
 
 Depuis décembre 2021, le Health Data Hub travaille sur un second appel à projet du consortium EHDEN concernant la standardisation du SNDS au format OMOP-CDM, avec cette fois-ci un élargissement du périmètre d’étude aux années 2015 à 2021 sur un échantillon de trois millions de bénéficiaires.
 
-
+::: tip Accéder au code source
+Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop)
+:::

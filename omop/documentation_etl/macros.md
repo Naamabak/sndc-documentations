@@ -103,3 +103,7 @@ remboursés lors d’une instance de la table ER\_PHA\_F.
       CAST(SUBSTR(pha_unt_nbr_dses, 0, POSITION('/' IN pha_unt_nbr_dses)) AS INTEGER) * SUM(a.pha_act_qsn) -- on suppose que la quantité est nombre de boîtes * 3
  END quantity
 ```
+
+::: tip Accéder au code source
+Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop)
+:::
