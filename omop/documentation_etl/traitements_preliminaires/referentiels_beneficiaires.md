@@ -128,3 +128,7 @@ Si le patient est en vie, la date sera le 1er Janvier 1600)</th>
 <tbody>
 </tbody>
 </table>
+
+::: tip Accéder au code source
+Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop)
+:::

@@ -199,3 +199,7 @@ médical dans les données source si le concept_id est à 0.</th>
 <tbody>
 </tbody>
 </table>
+
+::: tip Accéder au code source
+Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop)
+:::
