@@ -8,3 +8,5 @@ dist/
 ignored/
 
 package-lock.json
+.vscode/settings.json
+how-to-launch.txt
