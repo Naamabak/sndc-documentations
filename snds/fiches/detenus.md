@@ -25,6 +25,7 @@ Cette population est rattachée au régime général d'assurance maladie et affi
 
 Dans le SNDS et plus praticulièrement dans les bases du DCIR, la population des détenus se repère avec la variable `RGM_COD`, lorsque le code de gestion vaut 65 (cf ci-dessous).
 On trouve cette variable dans la table prestation (`ER_PRS_F` dans le DCIR ou [NS_PRS_F](../tables/DCIRS/NS_PRS_F.md) dans le DCIRS). 
+Les detenus sous écrous sont rattachés à 2 CPAM spécifiques :  les CPAM du Lot (01C46) et de l'Oise (01C60). 
 
 
 | Code gestion  | libellé  |
@@ -95,7 +96,7 @@ Ces établissements peuvent être repérés dans le SNDS.
 
 Ces unités aujourd'hui appelées USMP (unité sanitaire en milieu pénitentier) sont situées dans un établissement pénitentiaire mais adossées à un établissement de santé. 
 Les consultations qui y sont dispensées font l'objet d'un financement spécifique.
-Elles peuvent être repérées dans les table `T_MCOaaFCSTC` à partir de la variable `CONSULT_MIG`, l'UCSA correspond à la modalité 10
+Elles peuvent être repérées dans les table `T_MCOaaFCSTC` à partir de la variable `CONSULT_MIG`, l'UCSA correspond à la modalité 10. 
 
 ```sql
 proc sql;
