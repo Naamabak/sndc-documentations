@@ -3,12 +3,18 @@
     <span class="closebtn" onclick="this.parentElement.style.display='none';"
       >&times;</span
     >
-    Dans le cadre de l'amélioration continue de la documentation collaborative
-    SNDS en ligne, le Health Data Hub souhaite recueillir vos idées et souhaits
-    en termes de nouvelles fiches thématiques et de mises-à-jour de fiches.
-    <a class="url" href="https://form.jotform.com/230221593031038">
-      Nous vous remercions par avance pour la complétion de ce formulaire</a
+    <div class="headerDiv">
+      📣 La 4ème vague de candidatures pour l'AMI BOAS (Bibliothèque Ouverte
+      d'Algorithmes en Santé) est ouverte jusqu'au 26 juin ! 📣
+    </div>
+    <br />
+    Vous souhaitez contribuer à l'évaluation d'algorithmes développés par des
+    institutions nationales afin de faciliter la manipulation des données du
+    SNDS à des fins de recherche ?
+    <a class="url" href="https://www.health-data-hub.fr/ami-boas"
+      >Retrouvez ici</a
     >
+    toutes les informations relatives au programme.
   </div>
 </template>
 
@@ -26,6 +32,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.headerDiv {
+  font-weight: 500;
+}
 .alert {
   font-size: 90%;
   border-radius: 15px;
@@ -53,6 +62,7 @@ export default {
   transition: 0.3s;
 }
 .url{
+  text-decoration: underline;
   font-size: 110%;
   color: #764DFF;
 }
