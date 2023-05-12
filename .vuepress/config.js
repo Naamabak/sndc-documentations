@@ -308,6 +308,7 @@ module.exports = {
     // },
     smoothScroll: true,
   },
+  globalUIComponents: "Form",
   markdown: {
     // options for markdown-it-anchor
     // anchor: { permalink: false },
