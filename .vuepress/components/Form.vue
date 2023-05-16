@@ -8,7 +8,6 @@
       d'Algorithmes en Santé) est ouverte jusqu'au 26 juin ! 📣
     </div>
     <br />
-    Retrouvez ici
     <a class="url" href="https://www.health-data-hub.fr/ami-boas"
       >Retrouvez ici</a
     >
