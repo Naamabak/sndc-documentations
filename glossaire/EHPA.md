@@ -1,1 +1,1 @@
-# EHPA - Etablissement d’Hébergement pour Personnes  gées
+# EHPA - Etablissement d’Hébergement pour Personnes âgées
