@@ -20,16 +20,19 @@ Taux d’appariement indirect avec les référentiels bénéficiaires IR_BEN_R e
 
 | Année |	% |
 |-------|-----|
-|2006 | 34,27% |
-|2007 |	39,61% |
-|2008 | 48,75% |
-|2009 |	57,95% |
-|2010 | 62,74% |
-|2011 |	68,34% |
-|2012 | 76,79% |
-|2013 |	88,67% déjà restitué |
-|2014 |	90,07% déjà restitué |
-|2015 | 90,08% déjà restitué |
-|2016 |	83,28% |
+|2006 | 34,27% (restitué en septembre 2020)|
+|2007 |	39,61% (restitué en septembre 2020)|
+|2008 | 48,75% (restitué en septembre 2020)|
+|2009 |	57,95% (restitué en septembre 2020)|
+|2010 | 62,74% (restitué en septembre 2020)|
+|2011 |	68,34% (restitué en septembre 2020)|
+|2012 | 76,79% (restitué en septembre 2020)|
+|2013 |	88,67% (restitué en juin 2018) |
+|2014 |	90,07% (restitué en juin 2018) |
+|2015 | 90,08% (restitué en juin 2018) |
+|2016 |	83,28% (restitué en septembre 2020)|
+|2017 |	84,10% (restitué en février 2022)|
+
+[Source](https://documentation-snds.health-data-hub.fr/snds/formation_snds/documents_cnam/guide_cepidc/avant_propos) : Documentation à l’attention des utilisateurs concernant l’intégration des causes médicales de décès dans le système national des données de santé - Version 4, INSERM.
 
 Cette documentation doit vous permettre d’exploiter les informations sur les causes médicales de décès intégrées au SNDS et sur les liens que vous pourrez établir entre ces informations et les données de remboursements de soins et du PMSI. Vous pouvez rechercher des informations complémentaires sur le site Internet du [CépiDc](http://www.cepidc.inserm.fr/).
