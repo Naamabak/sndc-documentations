@@ -4,7 +4,7 @@
 Katalogue des données SNIIRAM-SNDS
 
 ::: tip
-[Télécharger le Kwikly](/files/Cnam/202209_Cnam_KWIKLY-KatalogueSniiramSNDSv2022-1_MPL-2.0.xlsm) [CNAM - V2022.1 - 2022-09-02 - MPL-2.0]. 
+[Télécharger le Kwikly](/files/Cnam/KWIKLY_Katalogue_Sniiram_SNDS_v2023-1.xlsm) [CNAM - 2023-1 - MPL-2.0]. 
 :::
 
 
@@ -18,6 +18,7 @@ Le **Kwikly** est un fichier Excel sur plusieurs onglets décrivant les variable
 - Référentiel Médicalisé
 
 :::tip Historique des mises à jour
+- 09.08.2023 : Mise à jour (version 2023.1)
 - 31.07.2022 : Mise à jour (version 2022.1) avec intégration du PMSI 2021 et ajout d'une variable `Table de valeur (ORAVAL)` pour le DCIR permettant de connaître la table de valeur de telle ou telle variable sous ORAVAL (si disponible).
 - 07.09.2021 : Mise à jour (version 3.2) avec l’ajout de deux nouvelles tables :
    - IR_VAC_F : Table des patients vaccinés contre le COVID-19
