@@ -4,7 +4,7 @@
 Katalogue des données SNIIRAM-SNDS
 
 ::: tip
-[Télécharger le Kwikly](/files/Cnam/202209_Cnam_KWIKLY-KatalogueSniiramSNDSv2022-1_MPL-2.0.xlsm) [CNAM - V2022.1 - 2022-09-02 - MPL-2.0]. 
+[Télécharger le Kwikly](/files/Cnam/KWIKLY_Katalogue_Sniiram_SNDS_v2023-1.xlsm) [CNAM - 2023-1 - MPL-2.0]. 
 :::
 
 
