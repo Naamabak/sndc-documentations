@@ -62,8 +62,11 @@ function compileDocumentation(files, path, dir) {
             compileDocumentation(filesList, path + '/' + dir, filename);
         } else {
             var fullDir = dir;
-            //fix directory path for PMSI subdirectories
-            if (dir.includes("PMSI")) fullDir = 'PMSI/' + fullDir;
+
+            //Deprecated 
+            ////fix directory path for PMSI subdirectories
+            //if (dir.includes("PMSI")) fullDir = 'PMSI/' + fullDir;
+            
             //write compilation parameters in json file
             var jsonPath = writeJsonFile(filename, fullDir);
             //execute compilation
