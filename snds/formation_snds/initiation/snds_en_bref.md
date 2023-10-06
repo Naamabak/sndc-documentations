@@ -243,9 +243,9 @@ Les nomenclatures utilisées dans le cadre du SNDS sont gérées et mises à jou
 #### 2.2.5.2 Référentiels
 
 Les principaux référentiels du SNDS sont énumérés ici et les liens renvoient vers des fiches présentant leurs caractéristiques. 
-* Référentiel des bénéficiaires **`IR_BEN_R`** : contient des informations socio-démographiques des bénéficiaires. Ce référentiel dispose d’une version actuelle (`IR_BEN_R`) portant sur les bénéficiaires ayant eu au moins une consommation depuis le 01/01/2013 et une version archivée (`IR_BEN_R_ARC`) portant sur les bénéficiaires ayant eu au moins une consommation avant le 01/01/2013. [Référentiel bénéficiaires](../../tables/.sources/BENEFICIAIRE/IR_BEN_R.md)
+* Référentiel des bénéficiaires **`IR_BEN_R`** : contient des informations socio-démographiques des bénéficiaires. Ce référentiel dispose d’une version actuelle (`IR_BEN_R`) portant sur les bénéficiaires ayant eu au moins une consommation depuis le 01/01/2013 et une version archivée (`IR_BEN_R_ARC`) portant sur les bénéficiaires ayant eu au moins une consommation avant le 01/01/2013. [Référentiel bénéficiaires](../../tables/REFERENTIELS/IR_BEN_R.md)
 
-* Référentiel médicalisé des bénéficiaires **`IR_IMB_R`** : contient des informations médicalisées (exonération pour [ALD](../../glossaire/ALD.md), maladie professionnelle, etc.). [Référentiel médicalisé](../../tables/.sources/DCIR_DCIRS/IR_IMB_R.md)
+* Référentiel médicalisé des bénéficiaires **`IR_IMB_R`** : contient des informations médicalisées (exonération pour [ALD](../../glossaire/ALD.md), maladie professionnelle, etc.). [Référentiel médicalisé]../../tables/REFERENTIELS/IR_IMB_R.md)
 
 * Référentiel des médicaments **`IR_PHA_R`** : permet d'avoir des informations sur les médicaments délivrés en officine (identification via les classifications ATC, [CIP](../../glossaire/CIP.md) et [UCD](../../glossaire/UCD.md), la composition, la date de mise sur le marché, le nom du laboratoire, etc.).
 
