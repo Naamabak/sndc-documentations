@@ -33,7 +33,7 @@ Indépendamment de l'accès en clair ou crypté, le numéro de PS est présent �
 Cette information n'est renseignée que dans le cadre d'une activité libérale.
 :::
 
-2. Dans la table du référentiel professionnel de santé [DA\_PRA\_R](../tables/DCIR_DCIRS/DA_PRA_R.md), qui contient les données administratives des professionnels de santé libéraux :
+2. Dans la table du référentiel professionnel de santé [DA\_PRA\_R](../tables/REFERENTIELS/DA_PRA_R.md), qui contient les données administratives des professionnels de santé libéraux :
  - variable PFS\_PFS\_NUM
 
 DA\_PRA\_R contient une ligne par PS et par mois (variable DTE\_MOI\_FIN) et année (variable DTE\_ANN\_TRT) de traitement.
