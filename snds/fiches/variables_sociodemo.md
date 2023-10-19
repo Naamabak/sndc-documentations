@@ -29,7 +29,7 @@ Dans le DCIR, les variables socio-démographiques sont issues de remontées admi
 ## Les variables démographiques 
 ### Le sexe
 Dans le DCIR, la variable `BEN_SEX_COD` renseigne sur le sexe du bénéficiaire.
-La variable `BEN_SEX_COD` (variable numérique) est présente dans la table de prestations  [**ER_PRS_F**](../tables/DCIR/ER_PRS_F.md) à chaque soin. Elle est aussi présente dans le référentiel des bénéficiaires, [**IR_BEN_R**](../tables/BENEFICIAIRE/IR_BEN_R.md), pour les consommants de tous les régimes et les non-consommants de certains régimes dont régime général et SLM infogérées par le régime général. Elle est aussi disponible dans les tables de consommants du répertoire CONSOPAT (fichiers EXTRACTION_PATIENTSxxxx et EXTRACTION_PATIENTSxxxxTR), et est issue du référentiel **IR_BEN_R**. 
+La variable `BEN_SEX_COD` (variable numérique) est présente dans la table de prestations  [**ER_PRS_F**](../tables/DCIR/ER_PRS_F.md) à chaque soin. Elle est aussi présente dans le référentiel des bénéficiaires, [**IR_BEN_R**](../tables/REFERENTIELS/IR_BEN_R.md), pour les consommants de tous les régimes et les non-consommants de certains régimes dont régime général et SLM infogérées par le régime général. Elle est aussi disponible dans les tables de consommants du répertoire CONSOPAT (fichiers EXTRACTION_PATIENTSxxxx et EXTRACTION_PATIENTSxxxxTR), et est issue du référentiel **IR_BEN_R**. 
 Cette variable ne contient quasiment pas de valeur manquante.
 
 Dans le PMSI, la variable `COD_SEX` (variable numérique) renseigne sur le sexe du bénéficiaire. Elle se trouve pour le PMSI-MCO dans la table **T_MCOaaB**.

@@ -58,12 +58,12 @@ Une deuxième option consiste à faire recours à des fichiers mis à dispositio
 
 | **UNIVERS**| **TABLE**| **VARIABLE DÉPARTEMENT** (str(3)) | **VARIABLE COMMUNE** (str(3)) | **REMARQUES** |
 |------------|----------|----------|----------|----------|
-| **SNIIRAM  DCIR** | **Référentiel des bénéficiaires** [IR_BEN_R](../tables/BENEFICIAIRE/IR_BEN_R.md) | BEN_RES_DPT | BEN_RES_COM | Dernière information disponible (table des prestations ou données administratives des caisses de sécurité sociale) |
+| **SNIIRAM  DCIR** | **Référentiel des bénéficiaires** [IR_BEN_R](../tables/REFERENTIELS/IR_BEN_R.md) | BEN_RES_DPT | BEN_RES_COM | Dernière information disponible (table des prestations ou données administratives des caisses de sécurité sociale) |
 | | **Table prestations** [ER_PRS_F](../tables/DCIR/ER_PRS_F.md)| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
-| **SNIIRAM DCIRS** | **Référentiel des bénéficiaires** [IR_IBA_R](../tables/BENEFICIAIRE/IR_IBA_R.md) | BEN_RES_DPT | BEN_RES_COM | Dernière information disponible (table des prestations ou données administratives des caisses de sécurité sociale) |
+| **SNIIRAM DCIRS** | **Référentiel des bénéficiaires** [IR_IBA_R](../tables/REFERENTIELS/IR_IBA_R.md) | BEN_RES_DPT | BEN_RES_COM | Dernière information disponible (table des prestations ou données administratives des caisses de sécurité sociale) |
 | | **Table prestations** [NS_PRS_F](../tables/DCIRS/NS_PRS_F.md)| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
 | | **Tables affinées** [NS_XXX_F](../tables/DCIRS)| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
-| **PMSI MCO/SSR/HAD** | **Table séjour B** [T_MCOaa_B](../tables/PMSI/PMSI%20MCO/T_MCOaaB.md) | BDI_DEP | BDI_COD (str(5))| |
+| **PMSI MCO/SSR/HAD** | **Table séjour B** [T_MCOaa_B](../tables/PMSI%20MCO/T_MCOaaB.md) | BDI_DEP | BDI_COD (str(5))| |
 | **Cartographie des pathologies** | **Table individus** [CT_IND_AAAA_GN](../tables/CARTOGRAPHIE_PATHOLOGIES/CT_IND_AAAA_GN.md)| dpt| Non disponible | Code reconstitué à partir des informations du DCIR et du PMSI et corrigé si besoin |
 | **Causes de décès** | **Table cause initiale de décès** [KI_CCI_R](../tables/Causes%20de%20décès/KI_CCI_R.md) | BEN_RES_DPT | BEN_RES_COM | Les codes ont été transformés pour coller aux référentiels du SNIIRAM IR_DPT_V et IR_GEO_V |
 

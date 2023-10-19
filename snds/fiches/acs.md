@@ -53,7 +53,7 @@ quel que soit le médecin, même s'il pratique des honoraires libres (« secteur
 - À l'exonération du paiement de la participation forfaitaire de 1 € et des franchises médicales
 
 Ces droits sont donnés à toute personne bénéficiaire de l'ACS. 
-Ce sont les périodes de droits d’ouverture de l’ACS présente dans la table [IR_ACS_R](../tables/DCIR_DCIRS/IR_ACS_R.md). 
+Ce sont les périodes de droits d’ouverture de l’ACS présente dans la table [IR_ACS_R](../tables/REFERENTIELS/IR_ACS_R.md). 
 
 Voici un tableau récapitulatif dans l'ordre chronologique :
 | Date | Evènement législatif |
@@ -93,7 +93,7 @@ L'effectif du Fonds CMU est le cumul sur les 12 derniers mois au 31/12/2016.
 
 ### Bénéficiaires ayant utilisé leur attestation à l'ACS
 
-La variable à considérer est `BEN_CTA_TYP` dans [IR_ORC_R](../tables/DCIR_DCIRS/IR_ORC_R.md) ou dans `NS_PRS_F` (DCIRS) ou [ER_PRS_F](../tables/DCIR/ER_PRS_F.md) (DCIR). 
+La variable à considérer est `BEN_CTA_TYP` dans [IR_ORC_R](../tables/REFERENTIELS/IR_ORC_R.md) ou dans `NS_PRS_F` (DCIRS) ou [ER_PRS_F](../tables/DCIR/ER_PRS_F.md) (DCIR). 
 
 Les filtres à poser sont décrits dans la table suivante.
 Pour la table `IR_ORC_R`, il faut également filtrer sur les dates de début et de fin de contrat.

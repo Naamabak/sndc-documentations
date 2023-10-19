@@ -61,7 +61,7 @@ Après une montée en charge en 2015, `BEN_CTA_TYP` est systématiquement rensei
 
 
 ### Table des affiliations IR\_ORC\_R
-**[IR\_ORC\_R](../tables/DCIR_DCIRS/IR_ORC_R.md)** : Table des affiliations à un organisme d'assurance maladie complémentaire 
+**[IR\_ORC\_R](../tables/REFERENTIELS/IR_ORC_R.md)** : Table des affiliations à un organisme d'assurance maladie complémentaire 
 
 Cette table recense les affiliations des bénéficiaires du régime général et des 12 organismes infogérés par ce régime [^2] sur la période du SNIIRAM (à partir du 1er janvier 2013 actuellement), que ces bénéficiaires soient consommants ou non.
 
@@ -135,7 +135,7 @@ Enfin, en cas d'exigence particulière du bénéficiaire, des dépassements d'ho
 Lorsqu'une personne a été topée comme bénéficiaire de la CMU-C (ben_ cmu_top=1) une fois dans l'année, il est préférable de considérer cette personne comme cmuciste toute l'année. 
 En effet, comme évoqué précédemment, lorsque le patient est en ALD, le top CMU-c est forcé à 0 pour les prestations liquidées en rapport avec son ALD (car celle-ci est prioritaire).
 
-Néanmoins, pour recenser la population CMU complémentaire de manière exhaustive, la méthode la plus efficace consiste à utiliser la table **[IR\_ORC\_R](../tables/DCIR_DCIRS/IR_ORC_R.md)**.
+Néanmoins, pour recenser la population CMU complémentaire de manière exhaustive, la méthode la plus efficace consiste à utiliser la table **[IR\_ORC\_R](../tables/REFERENTIELS/IR_ORC_R.md)**.
 
 ## Références
 
