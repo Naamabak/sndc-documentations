@@ -16,7 +16,7 @@ D’autre part, **ER_PRS_F** contient pour les soins en établissement :
 - Les médicaments et dispositifs facturés « en sus » des forfaits ([GHS](https://documentation-snds.health-data-hub.fr/glossaire/GHS.html)).
 
 ::: tip Crédits
-Les informations ci-dessus sont tirées du document [*SNDS, ce qu'il faut savoir*](/snds/formation_snds/Sante_publique_France.md) constitué par Santé Publique France.
+Les informations ci-dessus sont tirées du document [*SNDS, ce qu'il faut savoir*](../../formation_snds/Sante_publique_France.md) constitué par Santé Publique France.
 :::
 
 <!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->

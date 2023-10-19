@@ -12,7 +12,7 @@ Les codes UCD sont consultables sur le site [ameli](https://www.ameli.fr/pharmac
 Pour plus d'informations, consulter la section dédiée sur la fiche [Dépenses dans les tables affinées du DCIR](https://documentation-snds.health-data-hub.fr/fiches/tables_affinees.html#les-medicaments-retrocedes-et-de-la-liste-en-sus)
 
 ::: tip Crédits
-Les informations ci-dessus sont tirées du document [*SNDS, ce qu'il faut savoir*](/snds/formation_snds/Sante_publique_France.md) constitué par Santé Publique France.
+Les informations ci-dessus sont tirées du document [*SNDS, ce qu'il faut savoir*](../../formation_snds/Sante_publique_France.md) constitué par Santé Publique France.
 :::
 
 <!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
