@@ -4,14 +4,31 @@
       >&times;</span
     >
     <div class="headerDiv">
-      📣 La 4ème vague de candidatures pour l'AMI BOAS (Bibliothèque Ouverte
-      d'Algorithmes en Santé) est ouverte jusqu'au 26 juin ! 📣
+      Le
+      <a class="url" href="https://health-data-hub.shinyapps.io/dico-snds/"
+        >dictionnaire interactif SNDS</a
+      >
+      est en cours de mise à jour avec les informations actualisées sur les
+      tables, variables et nomenclatures du SNDS.
+      <br />
+      Le
+      <a
+        class="url"
+        href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds"
+        >schéma SNDS</a
+      >
+      sous-jacent au dictionnaire interactif SNDS a également été mis à jour à
+      cet effet.
+      <br />
+      L'ancienne version du schéma restera disponible dans le repository Gitlab
+      du HDH au niveau du
+      <a
+        class="url"
+        href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tags"
+        >schéma SNDS</a
+      >
+      Nous vous prions de bien vouloir nous excuser pour toute gêne occasionnée.
     </div>
-    <br />
-    <a class="url" href="https://www.health-data-hub.fr/ami-boas"
-      >Retrouvez ici</a
-    >
-    toutes les informations relatives au programme.
   </div>
 </template>
 
