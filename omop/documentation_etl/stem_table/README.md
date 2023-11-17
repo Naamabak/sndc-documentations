@@ -3,34 +3,63 @@
 
 ## Description
 
-La STEM_TABLE est une table intermédiaire qui contient les champs des
-tables stockant les différents événements médicaux: [DRUG_EXPOSURE](drug_exposure.md)
-(prises de médicaments), [PROCEDURE_OCCURRENCE](procedure.md) (actes médicaux),
-[CONDITION_OCCURRENCE](condition.md) (diagnostics), [DEVICE_EXPOSURE](device.md) (dispositifs
-médicaux) , [MEASUREMENT](measurement.md) (examens médicaux donnant lieu à une mesure) ,
-OBSERVATION (observations) et SPECIMEN (prélèvement d’échantillons).
+La STEM_TABLE est une table intermédiaire qui contient les champs des tables stockant les différents événements médicaux: DRUG_EXPOSURE (prises de médicaments), PROCEDURE_OCCURRENCE (actes médicaux), CONDITION_OCCURRENCE (diagnostics), DEVICE_EXPOSURE (dispositifs médicaux) , MEASUREMENT (examens médicaux donnant lieu à une mesure) , OBSERVATION (observations) et SPECIMEN (prélèvement d'échantillons).
 
 ## Commentaires généraux
 
--   La STEM_TABLE contient tous les champs des tables mentionnées
-   ci_dessous, ils sont au préalable rendus agnostiques du domaine
-   dont ils proviennent. Par exemple : *drug_concept_id*,
-   *procedure_concept_id* ou encore *device_concept_id* sont
-   représentés par le champ : *concept_id*.
+-   La STEM_TABLE contient tous les champs des tables mentionnées ci_dessous, ils sont au préalable rendus agnostiques du domaine dont ils proviennent. Par exemple : *drug_concept_id*, *procedure_concept_id* ou encore *device_concept_id* sont représentés par le champ : *concept_id*.
 
--   Les tables du SNDS qui les alimentent ces tables événements sont
-   traitées séparément dans la construction de la STEM_TABLE, en
-   fonction de leur domaine a priori. Puis toutes les occurrences de
-   cette table sont ensuite redistribuées vers les différentes
-   parties, en fonction du champ *domain_id*, qui contient le domaine
-   du concept standard associé à l’occurrence.
+-   Les tables du SNDS qui les alimentent ces tables événements sont traitées séparément dans la construction de la STEM_TABLE, en fonction de leur domaine a priori. Puis toutes les occurrences de cette table sont ensuite redistribuées vers les différentes parties, en fonction du champ *domain_id*, qui contient le domaine du concept standard associé à l'occurrence.
 
--   De même, le remplissage des différents champs est agnostique du
-   domaine théorique de l’occurrence. Par exemple, le champ end_date
-   n’est pas présent dans la table PROCEDURE, mais on cherche tout de
-   même à le remplir lors du traitement de la table **\_ER_CAM_F.**
+-   De même, le remplissage des différents champs est agnostique du domaine théorique de l'occurrence. Par exemple, le champ end_date n'est pas présent dans la table PROCEDURE, mais on cherche tout de même à le remplir lors du traitement de la table **\_ER_CAM_F.**
 
-## Variables du format OMOP-CDM remplies
+## Tables et variables utilisées dans le modèle OMOP
+
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 26%" />
+<col style="width: 19%" />
+<col style="width: 24%" />
+</colgroup>
+<tdead>
+<tr class="header">
+<td><strong>VISIT_OCCURRENCE</strong>
+<ul>
+<li>Person_id</li>
+<li>Visit_occurrence_id</li>
+<li>Visit_occurrence_source_value</li>
+<li>Visit_start_date</li>
+<li>Visit_end_date</li>
+<li>Provider_id</li>
+</ul></td>
+<td><strong>SOURCE_TO_CONCEPT_MAP</strong>
+<ul>
+<li>Source_code</li>
+<li>Target_concept_id</li>
+<li>Source_concept_id</li>
+<li>Source_vocabulary_id</li>
+</ul></td>
+<td><strong>CONCEPT</strong>
+<ul>
+<li>Concept_code</li>
+<li>Vocabulary_id</li>
+<li>Concept_id</li>
+<li>Domain_id</li>
+</ul></td>
+<td><strong>CONCEPT_RELATIONSHIP</strong>
+<ul>
+<li>Concept_id_1</li>
+<li>Concept_id_2</li>
+<li>Relationship_id</li>
+</ul></td>
+</tr>
+</tdead>
+<tbody>
+</tbody>
+</table>
+
+### Variables du format OMOP-CDM remplies
 
 <table>
 <colgroup>
@@ -41,165 +70,159 @@ OBSERVATION (observations) et SPECIMEN (prélèvement d’échantillons).
 <col style="width: 8%" />
 <col style="width: 11%" />
 </colgroup>
-<thead>
-<tr class="header">
-<th><strong>Variable OMOP</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Clé primaire</strong></th>
-<th><strong>Clé étrangère</strong></th>
-<th><strong>Table de la clé étrangère</strong></th>
+<tbody>
+<tr class="odd">
+<td><strong>Variable OMOP</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Type</strong></td>
+<td><strong>Clé primaire</strong></td>
+<td><strong>Clé étrangère</strong></td>
+<td><strong>Table de la clé étrangère</strong></td>
+</tr>
+<tr class="even">
+<td><strong>id*</strong></td>
+<td>Identifiant unique de l’événement médical pour un patient.</td>
+<td>integer</td>
+<td>Oui</td>
+<td>Non</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>id*</strong></th>
-<th>Identifiant unique de l’événement médical pour un patient.</th>
-<th>integer</th>
-<th>Oui</th>
-<th>Non</th>
-<th></th>
+<td><strong>person_id*</strong></td>
+<td>Identifiant du patient pour qui l'événement est enregistré.</td>
+<td>integer</td>
+<td>Non</td>
+<td>Oui</td>
+<td>PERSON</td>
+</tr>
+<tr class="even">
+<td><strong>concept_id*</strong></td>
+<td>Concept standard correspondant au concept source codant l’ événement
+médical.</td>
+<td>integer</td>
+<td>Non</td>
+<td>Oui</td>
+<td>CONCEPT</td>
 </tr>
 <tr class="odd">
-<th><strong>person_id*</strong></th>
-<th>Identifiant du patient pour qui l'événement est enregistré.</th>
-<th>integer</th>
-<th>Non</th>
-<th>Oui</th>
-<th>PERSON</th>
+<td><strong>start_date*</strong></td>
+<td>Date de début de l’événement</td>
+<td>date</td>
+<td>Non</td>
+<td>Non</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>start_datetime</strong></td>
+<td></td>
+<td>datetime</td>
+<td>Non</td>
+<td>Non</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>concept_id*</strong></th>
-<th>Concept standard correspondant au concept source codant l’ événement
-médical.</th>
-<th>integer</th>
-<th>Non</th>
-<th>Oui</th>
-<th>CONCEPT</th>
+<td><strong>end_date</strong></td>
+<td>Date de fin de l'événement.</td>
+<td>date</td>
+<td>Non</td>
+<td>Non</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>end_datetime</strong></td>
+<td></td>
+<td>datetime</td>
+<td>Non</td>
+<td>Non</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>start_date*</strong></th>
-<th>Date de début de l’événement</th>
-<th>date</th>
-<th>Non</th>
-<th>Non</th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>start_datetime</strong></th>
-<th></th>
-<th>datetime</th>
-<th>Non</th>
-<th>Non</th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>end_date</strong></th>
-<th>Date de fin de l'événement.</th>
-<th>date</th>
-<th>Non</th>
-<th>Non</th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>end_datetime</strong></th>
-<th></th>
-<th>datetime</th>
-<th>Non</th>
-<th>Non</th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>type_concept_id*</strong></th>
-<th>Ce champ peut être utilisé pour déterminer la provenance de
+<td><strong>type_concept_id*</strong></td>
+<td>Ce champ peut être utilisé pour déterminer la provenance de
 l'enregistrement de l’événement médical, c'est-à-dire si
 l’enregistrement provient d'un système de dossier médical électronique,
-d'un remboursement, d'un registre ou d'autres sources.</th>
-<th>integer</th>
-<th>Non</th>
-<th>Oui</th>
-<th>CONCEPT</th>
+d'un remboursement, d'un registre ou d'autres sources.</td>
+<td>integer</td>
+<td>Non</td>
+<td>Oui</td>
+<td>CONCEPT</td>
 </tr>
-<tr class="odd">
-<th><strong>status_concept_id</strong></th>
-<th><p>[Spécifique au domain Condition]</p>
-<p>Ce concept représente le moment de la visite où le diagnostic a été
+<tr class="even">
+<td><strong>status_concept_id</strong></td>
+<td>[Spécifique au domain Condition]
+Ce concept représente le moment de la visite où le diagnostic a été
 posé (diagnostic d'admission, diagnostic final), si le diagnostic a été
 posé suite à un examen biologique ou par exclusion ou s'il s'agit d'un
-diagnostic préliminaire, par exemple.</p></th>
-<th>integer</th>
-<th>Non</th>
-<th>Oui</th>
-<th>CONCEPT</th>
+diagnostic préliminaire, par exemple.</td>
+<td>integer</td>
+<td>Non</td>
+<td>Oui</td>
+<td>CONCEPT</td>
 </tr>
 <tr class="odd">
-<th><strong>quantity</strong></th>
-<th>Nombre d’occurrence de l’événement médical (ou quantité administrée)
-au cours de la visite.</th>
-<th>integer</th>
-<th>Non</th>
-<th>Non</th>
-<th></th>
+<td><strong>quantity</strong></td>
+<td>Nombre d’occurrence de l’événement médical (ou quantité administrée)
+au cours de la visite.</td>
+<td>integer</td>
+<td>Non</td>
+<td>Non</td>
+<td></td>
 </tr>
-<tr class="odd">
-<th><strong>provider_id</strong></th>
-<th>Le professionnel de santé associé à l’événement médical, par exemple
+<tr class="even">
+<td><strong>provider_id</strong></td>
+<td>Le professionnel de santé associé à l’événement médical, par exemple
 le professionnel qui a posé le diagnostic ou le prestataire qui a
-enregistré le symptôme.</th>
-<th>integer</th>
-<th>Non</th>
-<th>Oui</th>
-<th>PROVIDER</th>
+enregistré le symptôme.</td>
+<td>integer</td>
+<td>Non</td>
+<td>Oui</td>
+<td>PROVIDER</td>
 </tr>
 <tr class="odd">
-<th><strong>visit_occurrence_id</strong></th>
-<th>Visite pendant laquelle l’événement médical a eu lieu.</th>
-<th>integer</th>
-<th>Non</th>
-<th>Oui</th>
-<th><p>VISIT_</p>
-<p>OCCURRENCE</p></th>
+<td><strong>visit_occurrence_id</strong></td>
+<td>Visite pendant laquelle l’événement médical a eu lieu.</td>
+<td>integer</td>
+<td>Non</td>
+<td>Oui</td>
+<td>VISIT_
+OCCURRENCE</td>
+</tr>
+<tr class="even">
+<td><strong>source_value</strong></td>
+<td>Concept codant l’événement médical dans les données source.</td>
+<td>varchar(50)</td>
+<td>Non</td>
+<td>Non</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>source_value</strong></th>
-<th>Concept codant l’événement médical dans les données source.</th>
-<th>varchar(50)</th>
-<th>Non</th>
-<th>Non</th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>source_concept_id</strong></th>
-<th>Identifiant unique attribué au concept source (source_value) lorsque
+<td><strong>source_concept_id</strong></td>
+<td>Identifiant unique attribué au concept source (source_value) lorsque
 celui-ci est intégré aux vocabulaires d’OHDSI. Il n’est pas
-nécessairement standard.</th>
-<th>integer</th>
-<th>Non</th>
-<th>Oui</th>
-<th>CONCEPT</th>
+nécessairement standard.</td>
+<td>integer</td>
+<td>Non</td>
+<td>Oui</td>
+<td>CONCEPT</td>
+</tr>
+<tr class="even">
+<td><strong>status_source_value</strong></td>
+<td>[Spécifique au domain Condition]
+Cf définition de status_concept_id, mais telle que l’information est
+codée dans les données source.</td>
+<td>varchar(50)</td>
+<td>Non</td>
+<td>Non</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>status_source_value</strong></th>
-<th><p>[Spécifique au domain Condition]</p>
-<p>Cf définition de status_concept_id, mais telle que l’information est
-codée dans les données source.</p></th>
-<th>varchar(50)</th>
-<th>Non</th>
-<th>Non</th>
-<th></th>
+<td><strong>domain_id</strong></td>
+<td>Domaine d’appartenance du concept_id ou domaine de l’événement
+médical dans les données source si le concept_id est à 0.</td>
+<td>varchar</td>
+<td>Non</td>
+<td>Oui</td>
+<td>CONCEPT</td>
 </tr>
-<tr class="odd">
-<th><strong>domain_id</strong></th>
-<th>Domaine d’appartenance du concept_id ou domaine de l’événement
-médical dans les données source si le concept_id est à 0.</th>
-<th>varchar</th>
-<th>Non</th>
-<th>Oui</th>
-<th>CONCEPT</th>
-</tr>
-</thead>
-<tbody>
 </tbody>
 </table>
-
-::: tip Accéder au code source
-Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop)
-:::
