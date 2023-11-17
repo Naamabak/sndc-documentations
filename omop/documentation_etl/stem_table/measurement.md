@@ -1,4 +1,5 @@
-# Domaine 'Measurement' 
+# Domaine 'Measurement'
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ## Tables du DCIR
 

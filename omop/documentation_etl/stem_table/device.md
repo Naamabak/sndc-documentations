@@ -1,4 +1,5 @@
 # Domaine 'Device exposure' - DCIR
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ## Tables et variables du SNDS utilisées
 

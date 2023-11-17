@@ -1,4 +1,5 @@
 # Domaine 'Drug exposure' - DCIR
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ## Commentaires généraux
 
