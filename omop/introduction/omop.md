@@ -17,7 +17,7 @@ OMOP a collaboré avec des chercheurs universitaires et des partenaires de donn�
 Pour remédier à la complexité technique des projets de recherche due à des bases de données disparates, OMOP a conçu le modèle de données commun éponyme (appelé OMOP-CDM) comme un mécanisme permettant de normaliser la structure, le contenu et la sémantique des données d'observation et de rendre possible l'écriture de codes d'analyse statistique uniques qui pourraient être réutilisés sur chaque base de données. 
 
 Après conversion de premières bases de données dans ce format, il a été démontré qu'il était possible d'établir un modèle de données commun et des vocabulaires normalisés qui pourraient accueillir différents types de données provenant de différents environnements de soins et représentés par différents vocabulaires sources d'une manière qui pourrait faciliter la collaboration entre les établissements et chercheurs au niveau international.
-![schema omopisation](/files/20201211_HDH_omopisation_MLP-2.0.png)
+
 
 
 ## Parties prenantes
