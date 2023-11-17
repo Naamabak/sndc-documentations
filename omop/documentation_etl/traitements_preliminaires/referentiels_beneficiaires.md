@@ -29,46 +29,46 @@ d’être utilisés. Notamment :
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Variable</strong></th>
-<th><strong>Provenance</strong></th>
-<th><strong>Description</strong></th>
+<td><strong>Variable</strong></td>
+<td><strong>Provenance</strong></td>
+<td><strong>Description</strong></td>
 </tr>
 <tr class="odd">
-<th>ben_nir_psa</th>
-<th>IR_BEN_R</th>
-<th></th>
+<td>ben_nir_psa</td>
+<td>IR_BEN_R</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th>ben_sex_cod</th>
-<th>IR_BEN_R</th>
-<th></th>
+<td>ben_sex_cod</td>
+<td>IR_BEN_R</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th>ben_nai_ann</th>
-<th>IR_BEN_R</th>
-<th></th>
+<td>ben_nai_ann</td>
+<td>IR_BEN_R</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th>ben_nai_moi</th>
-<th>IR_BEN_R</th>
-<th></th>
+<td>ben_nai_moi</td>
+<td>IR_BEN_R</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th>code_commune</th>
-<th>IR_BEN_R</th>
-<th><p>Code commune construit à partir de <em>ben_res_dpt</em> et
+<td>code_commune</td>
+<td>IR_BEN_R</td>
+<td><p>Code commune construit à partir de <em>ben_res_dpt</em> et
 <em>ben_res_com</em>, et <em>org_aff_ben</em> en utilisant le script de
 la <a
 href="https://documentation-snds.health-data-hub.fr/snds/fiches/localisation_geographique_beneficiaires.html#construction-de-la-localisation-dans-le-sniiram"><u>documentation
 du SNDS</u></a></p>
 <p>On sélectionne ensuite le code commune associé à la date de mise à
-jour des données la plus récente (<em>ben_dte_maj</em>)</p></th>
+jour des données la plus récente (<em>ben_dte_maj</em>)</p></td>
 </tr>
 <tr class="odd">
-<th>ben_dcd_dte</th>
-<th>IR_BEN_R</th>
-<th>Date de décès la plus récente renseignée dans la table (Remarque :
-Si le patient est en vie, la date sera le 1er Janvier 1600)</th>
+<td>ben_dcd_dte</td>
+<td>IR_BEN_R</td>
+<td>Date de décès la plus récente renseignée dans la table (Remarque :
+Si le patient est en vie, la date sera le 1er Janvier 1600)</td>
 </tr>
 </thead>
 <tbody>
@@ -85,44 +85,46 @@ Si le patient est en vie, la date sera le 1er Janvier 1600)</th>
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Variable</strong></th>
-<th><strong>Provenance</strong></th>
-<th><strong>Description</strong></th>
+<td><strong>Variable</strong></td>
+<td><strong>Provenance</strong></td>
+<td><strong>Description</strong></td>
 </tr>
 <tr class="odd">
-<th>ben_nir_psa</th>
-<th>IR_IMB_R</th>
-<th></th>
+<td>ben_nir_psa</td>
+<td>IR_IMB_R</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th>med_mtf_code</th>
-<th>IR_IMB_R</th>
-<th></th>
+<td>med_mtf_code</td>
+<td>IR_IMB_R</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th>imb_etm_nat</th>
-<th>IR_IMB_R</th>
-<th></th>
+<td>imb_etm_nat</td>
+<td>IR_IMB_R</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th>imb_ald_dtd</th>
-<th>IR_IMB_R</th>
-<th></th>
+<td>imb_ald_dtd</td>
+<td>IR_IMB_R</td>
+<td>MIN(imb_ald_dtd) , premier enregistrement de la maladie</td>
 </tr>
 <tr class="odd">
-<th>imb_ald_dtf</th>
-<th>IR_IMB_R</th>
-<th></th>
+<td>imb_ald_dtf</td>
+<td>IR_IMB_R</td>
+<td>MAX(imb_ald_dtf), date de validité de la prise en charge ALD/MT/Accident professionnel la plus récente 
+</td>
 </tr>
 <tr class="odd">
-<th>ins_dte</th>
-<th>IR_IMB_R</th>
-<th></th>
+<td>ins_dte</td>
+<td>IR_IMB_R</td>
+<td>MAX(ins_dte) date de saisie de l’information la plus récente</td>
 </tr>
 <tr class="odd">
-<th>upd_dte</th>
-<th>IR_IMB_R</th>
-<th></th>
+<td>upd_dte</td>
+<td>IR_IMB_R</td>
+<td>MAX(upd_dte) date de mise à jour la plus récente
+</td>
 </tr>
 </thead>
 <tbody>

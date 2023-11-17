@@ -1,14 +1,13 @@
 # Périmètre des données SNDS standardisées
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Cette documentation concerne la standardisation d'un **échantillon** du SNDS au format OMOP-CDM. Plus précisément, cet échantillon contient des données de patients pour les années 2019-2020, qui ont reçu un diagnostic COVID-19 lors d'une visite à l'hôpital, c'est-à-dire les données du [SNDS Fast-Track](https://www.health-data-hub.fr/catalogue-de-donnees/snds-fast-track-donnees-du-systeme-national-des-donnees-de-sante-pour-les). 
+Cette documentation concerne la standardisation d'un **échantillon** du SNDS au format OMOP. Plus précisément, cet échantillon contient des données de 3 millions de patients sur les années 2015-2021.
 
 Plus précisément, l'extraction contient : 
 
-- Les tables du DCIR 2019-2020.
-- Les tables du PMSI 2019 non consolidées.
-- Les tables COVID commençant par C_MCO.
+- Les tables du **DCIR** et du **PMSI** pour les années **2015-2021**.
+- Les tables du **CépiDC** pour les années **2015-2017**.
 
-Dans ce cadre, la liste complète des tables et variables du SNDS qui ont été standardisées est disponible dans [ce fichier](/files/tables_variables_snds.xlsx).
+Dans ce cadre, la liste complète des tables et variables du SNDS qui ont été utilisées lors de la standardisation est disponible dans [ce fichier](/files/tables_variables_snds.xlsx).
 
 

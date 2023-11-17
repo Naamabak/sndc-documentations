@@ -1,25 +1,16 @@
-# Domaine ‘Device exposure’
-<!-- SPDX-License-Identifier: MPL-2.0 -->
+# Domaine 'Device exposure' - DCIR
 
-## **Tables du DCIR**
-
-### *Tables du DCIR utilisées*
+## Tables et variables du SNDS utilisées
 
 -   **\_ER_TIP_F**
-
     -   *etb_pre_fin*
-
     -   *dcir_visit_id*
-
     -   *tip_acl_dtd*
-
     -   *tip_prs_typ*
-
     -   *tip_acl_dtf*
-
     -   *tip_prs_ide*
 
-### *Règles de transformation*
+## Règles de transformation
 
 <table>
 <colgroup>
@@ -31,154 +22,144 @@
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Variables</strong></th>
-<th><strong>Règles</strong></th>
-<th><strong>Gauche</strong></th>
-<th><strong>Droite</strong></th>
-<th><strong>Filtre</strong></th>
+<td><strong>Variables</strong></td>
+<td><strong>Règles</strong></td>
+<td><strong>Gauche</strong></td>
+<td><strong>Droite</strong></td>
+<td><strong>Filtre</strong></td>
 </tr>
 <tr class="odd">
-<th><strong>id*</strong></th>
-<th>hash (source_value)</th>
-<th></th>
-<th></th>
-<th></th>
+<td><strong>id*</strong></td>
+<td>hash (source_value)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="header">
+<td><strong>visit_occurrence_id</strong></td>
+<td>visit_occurrence_id de VISIT_OCCURRENCE</td>
+<td><p><strong>_ER_TIP_F</strong></p>
+<p>‘dciraa’ || ‘_’ || <em>etb_pre_fin || dcir_visit_id</em></p></td>
+<td><p>VISIT_OCCURRENCE</p>
+<p>visit_occurrence_source_value</p></td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>visit_occurrence_id</strong></th>
-<th>visit_occurrence_id de VISIT_OCCURRENCE</th>
-<th><p><strong>_ER_TIP_F</strong></p>
-<p>‘dciraa’ || ‘_’ || <em>etb_pre_fin || dcir_visit_id</em></p></th>
-<th><p>VISIT_OCCURRENCE</p>
-<p>visit_source_value</p></th>
-<th></th>
+<td><strong>person_id*</strong></td>
+<td>person_id de VISIT_OCCURRENCE</td>
+<td colspan="2">cf jointure pour visit_occurrence_id</td>
+<td></td>
+</tr>
+<tr class="header">
+<td><strong>start_date*</strong></td>
+<td><em>tip_acl_dtd</em> de <strong>_ER_TIP_F</strong></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>person_id*</strong></th>
-<th>person_id de VISIT_OCCURRENCE</th>
-<th colspan="2">cf jointure pour visit_occurrence_id</th>
-<th></th>
+<td><strong>start_datetime</strong></td>
+<td>start_date + ‘00:00:00’</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="header">
+<td><strong>end_date</strong></td>
+<td><ul>
+<li><p>Si la prestation concerne un achat : <em>tip_prs_typ</em> = 1 :
+null</p></li>
+<li><p>Sinon :<em>tip_acl_dtf</em></p></li>
+</ul></td>
+<td colspan="2">cf jointure pour visit_occurrence_id</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>start_date*</strong></th>
-<th><em>tip_acl_dtd</em> de <strong>_ER_TIP_F</strong></th>
-<th></th>
-<th></th>
-<th></th>
+<td><strong>end_datetime</strong></td>
+<td>end_date + ‘00:00:00’</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="header">
+<td><strong>type_concept_id*</strong></td>
+<td>32810</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>start_datetime</strong></th>
-<th>start_date + ‘00:00:00’</th>
-<th></th>
-<th></th>
-<th></th>
+<td><strong>provider_id</strong></td>
+<td>provider_id de VISIT_OCCURRENCE</td>
+<td colspan="2">cf jointure pour visit_occurrence_id</td>
+<td></td>
+</tr>
+<tr class="header">
+<td><strong>source_value</strong></td>
+<td><em>typ_prs_ide</em> de <strong>_ER_TIP_F</strong></td>
+<td></td>
+<td></td>
+<td><em>typ_prs_ide != ‘9999999999999’</em></td>
 </tr>
 <tr class="odd">
-<th><strong>end_date</strong></th>
-<th><ul>
-<li>
-<p>Si la prestation concerne un achat : <em>tip_prs_typ</em> = 1 :
-visit_end_date de VISIT_OCCURRENCE</p>
-</li>
-<li>
-<p>Sinon, si <em>tip_acl_dtf</em> est null <em>:</em> visit_end_date de
-VISIT_OCCURRENCE</p>
-</li>
-</ul></th>
-<th colspan="2">cf jointure pour visit_occurrence_id</th>
-<th></th>
+<td><strong>source_concept_id</strong></td>
+<td>source_concept_id de SOURCE_TO_CONCEPT_MAP</td>
+<td><p><strong>_ER_TIP_F</strong></p>
+<p><em>typ_prs_ide</em></p></td>
+<td><p>SOURCE_TO_CONCEPT_MAP</p>
+<p>source_code</p></td>
+<td>source_vocabulary_id = ‘LPP’</td>
+</tr>
+<tr class="header">
+<td><strong>concept_id*</strong></td>
+<td>concept_id de SOURCE_TO_CONCEPT_MAP</td>
+<td><p><strong>_ER_TIP_F</strong></p>
+<p><em>typ_prs_ide</em></p></td>
+<td><p>SOURCE_TO_CONCEPT_MAP</p>
+<p>source_code</p></td>
+<td>source_vocabulary_id = ‘LPP’</td>
 </tr>
 <tr class="odd">
-<th><strong>end_datetime</strong></th>
-<th>end_date + ‘00:00:00’</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>type_concept_id*</strong></th>
-<th>32810</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>provider_id</strong></th>
-<th>provider_id de VISIT_OCCURRENCE</th>
-<th colspan="2">cf jointure pour visit_occurrence_id</th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>source_value</strong></th>
-<th><em>typ_prs_ide</em> de <strong>_ER_TIP_F</strong></th>
-<th></th>
-<th></th>
-<th><em>typ_prs_ide != ‘9999999999999’</em></th>
-</tr>
-<tr class="odd">
-<th><strong>source_concept_id</strong></th>
-<th>source_concept_id de SOURCE_TO_CONCEPT_MAP</th>
-<th><p><strong>_ER_TIP_F</strong></p>
-<p><em>typ_prs_ide</em></p></th>
-<th><p>SOURCE_TO_CONCEPT_MAP</p>
-<p>source_code</p></th>
-<th>source_vocabulary_id = ‘LPP’</th>
-</tr>
-<tr class="odd">
-<th><strong>concept_id*</strong></th>
-<th>concept_id de SOURCE_TO_CONCEPT_MAP</th>
-<th><p><strong>_ER_TIP_F</strong></p>
-<p><em>typ_prs_ide</em></p></th>
-<th><p>SOURCE_TO_CONCEPT_MAP</p>
-<p>source_code</p></th>
-<th>source_vocabulary_id = ‘LPP’</th>
-</tr>
-<tr class="odd">
-<th><strong>domain_id</strong></th>
-<th><ul>
-<li>
-<p>domain_id de CONCEPT s’il existe</p>
-</li>
-<li>
-<p>Sinon ‘Device’</p>
-</li>
-</ul></th>
-<th><p><strong>_ER_TIP_F</strong></p>
+<td><strong>domain_id</strong></td>
+<td><ul>
+<li><p>domain_id de CONCEPT s’il existe</p></li>
+<li><p>Sinon ‘Device’</p></li>
+</ul></td>
+<td><p><strong>_ER_TIP_F</strong></p>
 <p><em>typ_prs_ide</em></p>
 <p><u>Jointure 2:</u></p>
 <p>SOURCE_TO_CONCEPT_MAP</p>
-<p>concept_id</p></th>
-<th><p>SOURCE_TO_CONCEPT_MAP</p>
+<p>concept_id</p></td>
+<td><p>SOURCE_TO_CONCEPT_MAP</p>
 <p>source_code</p>
 <p><u>Jointure 2:</u></p>
 <p>CONCEPT</p>
-<p>concept_id</p></th>
-<th>source_vocabulary_id = ‘LPP’</th>
+<p>concept_id</p></td>
+<td>source_vocabulary_id = ‘LPP’</td>
 </tr>
-<tr class="odd">
-<th><strong>quantity</strong></th>
-<th>
+<tr class="header">
+<td><strong>quantity</strong></td>
+<td><blockquote>
 <p><em>quantity</em> de <strong>_ER_TIP_F</strong></p>
-</th>
-<th></th>
-<th></th>
-<th></th>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </thead>
 <tbody>
 </tbody>
 </table>
 
+# Domaine 'Device exposure' - PMSI
 
-## **Tables du PMSI**
-
-### *Tables et variables du PMSI utilisées*
+## Tables et variables utilisées dans le SNDS
 
 -   **T_MCOaaDMIP**
-
 -   **T_MCOaaFPSTC**
+-   **T_SSRaaFPSTC (à partir de 2020)**
 
-### *Règles de transformation*
+## Règles de transformation
 
 <table>
 <colgroup>
@@ -190,180 +171,161 @@ VISIT_OCCURRENCE</p>
 </colgroup>
 <thead>
 <tr class="header">
-<th rowspan="2"><strong>Variables</strong></th>
-<th rowspan="2"><strong>Règles</strong></th>
-<th colspan="2"><strong>Jointures</strong></th>
-<th rowspan="2"><strong>Filtres</strong></th>
+<td rowspan="2"><strong>Variables</strong></td>
+<td rowspan="2"><strong>Règles</strong></td>
+<td colspan="2"><strong>Jointures</strong></td>
+<td rowspan="2"><strong>Filtres</strong></td>
 </tr>
 <tr class="odd">
-<th><strong>Gauche</strong></th>
-<th><strong>Droite</strong></th>
+<td><strong>Gauche</strong></td>
+<td><strong>Droite</strong></td>
+</tr>
+<tr class="header">
+<td><strong>id*</strong></td>
+<td>hash (source_value)</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>id*</strong></th>
-<th>hash (source_value)</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>visit_occurrence_id</strong></th>
-<th>visit_occurrence_id de VISIT_OCCURRENCE</th>
-<th><p><strong>T_MCOaaDMIP</strong></p>
+<td><strong>visit_occurrence_id</strong></td>
+<td>visit_occurrence_id de VISIT_OCCURRENCE</td>
+<td><p><strong>T_MCOaaDMIP</strong></p>
 <p>‘mcoaa’ || ‘_’ || <em>eta_num || ‘_’ || rsa_num</em></p>
 <p><strong>T_MCOaaFPSTC</strong></p>
-<p>‘mcoaaace’ || ‘_’ || <em>eta_num || ‘_’ || seq_num</em></p></th>
-<th><p>VISIT_OCCURRENCE</p>
-<p>visit_source_value</p></th>
-<th></th>
+<p>‘mcoaaace’ || ‘_’ || <em>eta_num || ‘_’ || seq_num</em></p>
+<p><strong>T_SSRaaFPSTC</strong></p>
+<p>‘ssrace’ || ‘_’ || <em>eta_num || ‘_’ || seq_num</em></p></td>
+<td><p>VISIT_OCCURRENCE</p>
+<p>visit_occurrence_source_value</p></td>
+<td></td>
+</tr>
+<tr class="header">
+<td><strong>person_id*</strong></td>
+<td>person_id de VISIT_OCCURRENCE</td>
+<td colspan="2">cf jointure pour visit_occurrence_id</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>person_id*</strong></th>
-<th>person_id de VISIT_OCCURRENCE</th>
-<th colspan="2">cf jointure pour visit_occurrence_id</th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>start_date*</strong></th>
-<th><p>visit_start_date de VISIT_OCCURRENCE + :</p>
+<td><strong>start_date*</strong></td>
+<td><p>visit_start_date de VISIT_OCCURRENCE + :</p>
 <ul>
-<li>
-<p>Pour <strong>T_MCOaaDMIP :</strong> <em>delai</em></p>
-</li>
-<li>
-<p>Pour <strong>T_MCOaaFPSTC :</strong> <em>del_dat_ent</em></p>
-</li>
-</ul></th>
-<th colspan="2">cf jointure pour visit_occurrence_id</th>
-<th></th>
+<li><p>Pour <strong>T_MCOaaDMIP :</strong> <em>delai</em></p></li>
+<li><p>Pour <strong>T_MCOaaFPSTC :</strong>
+<em>del_dat_ent</em></p></li>
+<li><p>Pour <strong>T_SSRaaFPSTC :</strong>
+<em>del_dat_ent</em></p></li>
+</ul></td>
+<td colspan="2">cf jointure pour visit_occurrence_id</td>
+<td></td>
+</tr>
+<tr class="header">
+<td><strong>start_datetime</strong></td>
+<td>start_date + ‘00:00:00’</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>start_datetime</strong></th>
-<th>start_date + ‘00:00:00’</th>
-<th></th>
-<th></th>
-<th></th>
+<td><strong>end_date</strong></td>
+<td>null</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="header">
+<td><strong>end_datetime</strong></td>
+<td>end_date + ‘00:00:00’</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>end_date</strong></th>
-<th>null</th>
-<th></th>
-<th></th>
-<th></th>
+<td><strong>type_concept_id*</strong></td>
+<td>32810</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="header">
+<td><strong>provider_id</strong></td>
+<td>provider_id de VISIT_OCCURRENCE</td>
+<td colspan="2">cf jointure pour visit_occurrence_id</td>
+<td></td>
 </tr>
 <tr class="odd">
-<th><strong>end_datetime</strong></th>
-<th>end_date + ‘00:00:00’</th>
-<th></th>
-<th></th>
-<th></th>
+<td><strong>source_value</strong></td>
+<td><ul>
+<li><p><strong>T_MCOaaDMIP :</strong> <em>lpp_cod</em></p></li>
+<li><p><strong>T_MCOaaFPSTC :</strong> <em>lpp_cod</em></p></li>
+<li><p><strong>T_SSRaaFPSTC :</strong> <em>lpp_cod</em></p></li>
+</ul></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
-<th><strong>type_concept_id*</strong></th>
-<th>32810</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>provider_id</strong></th>
-<th>provider_id de VISIT_OCCURRENCE</th>
-<th colspan="2">cf jointure pour visit_occurrence_id</th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>source_value</strong></th>
-<th><ul>
-<li>
-<p><strong>T_MCOaaDMIP :</strong> <em>lpp_cod</em></p>
-</li>
-<li>
-<p><strong>T_MCOaaFPSTC :</strong> <em>lpp_cod</em></p>
-</li>
-</ul></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><strong>source_concept_id</strong></th>
-<th>source_concept_id de SOURCE_TO_CONCEPT_MAP</th>
-<th><p><strong>T_MCOaaDMIP</strong></p>
+<tr class="header">
+<td><strong>source_concept_id</strong></td>
+<td>source_concept_id de SOURCE_TO_CONCEPT_MAP</td>
+<td><p><strong>T_MCOaaDMIP</strong></p>
 <p><em>lpp_cod</em></p>
 <p><strong>T_MCOaaFPSTC</strong></p>
-<p><em>lpp_cod</em></p></th>
-<th><p>SOURCE_TO_CONCEPT_MAP</p>
-<p>source_code</p></th>
-<th>source_vocabulary_id = ‘LPP’</th>
+<p><em>lpp_cod</em></p></td>
+<td><p>SOURCE_TO_CONCEPT_MAP</p>
+<p>source_code</p></td>
+<td>source_vocabulary_id = ‘LPP’</td>
 </tr>
 <tr class="odd">
-<th><strong>concept_id*</strong></th>
-<th>concept_id de SOURCE_TO_CONCEPT_MAP</th>
-<th><p><strong>T_MCOaaDMIP</strong></p>
+<td><strong>concept_id*</strong></td>
+<td>concept_id de SOURCE_TO_CONCEPT_MAP</td>
+<td><p><strong>T_MCOaaDMIP</strong></p>
 <p><em>lpp_cod</em></p>
 <p><strong>T_MCOaaFPSTC</strong></p>
-<p><em>lpp_cod</em></p></th>
-<th><p>SOURCE_TO_CONCEPT_MAP</p>
-<p>source_code</p></th>
-<th>source_vocabulary_id = ‘LPP’</th>
+<p><em>lpp_cod</em></p></td>
+<td><p>SOURCE_TO_CONCEPT_MAP</p>
+<p>source_code</p></td>
+<td>source_vocabulary_id = ‘LPP’</td>
 </tr>
-<tr class="odd">
-<th rowspan="2"><strong>domain_id</strong></th>
-<th rowspan="2"><ul>
-<li>
-<p>domain_id de CONCEPT s’il existe</p>
-</li>
+<tr class="header">
+<td><strong>domain_id</strong></td>
+<td><ul>
+<li><p>domain_id de CONCEPT s’il existe</p></li>
 </ul>
 <ul>
-<li>
-<p>Sinon ‘Device’</p>
-</li>
-</ul></th>
-<th><p><u>Jointure 1 :</u></p>
+<li><p>Sinon ‘Device’</p></li>
+</ul></td>
+<td><p><u>Jointure 1 :</u></p>
 <p><strong>T_MCOaaDMIP</strong></p>
 <p><em>lpp_cod</em></p>
-<p><em>UNION</em></p>
 <p><strong>T_MCOaaFPSTC</strong></p>
-<p><em>lpp_cod</em></p></th>
-<th><p><u>Jointure 1:</u></p>
+<p><em>lpp_cod</em></p>
+<p><u>Jointure 2:</u></p>
 <p>SOURCE_TO_CONCEPT_MAP</p>
-<p>source_code</p></th>
-<th></th>
-</tr>
-<tr class="odd">
-<th><p><u>Jointure 2:</u></p>
+<p>concept_id</p></td>
+<td><p><u>Jointure 1:</u></p>
 <p>SOURCE_TO_CONCEPT_MAP</p>
-<p>concept_id</p></th>
-<th><p><u>Jointure 2:</u></p>
+<p>source_code</p>
+<p><u>Jointure 2:</u></p>
 <p>CONCEPT</p>
-<p>concept_id</p></th>
-<th>source_vocabulary_id = ‘LPP’</th>
+<p>concept_id</p></td>
+<td>source_vocabulary_id = ‘LPP’</td>
 </tr>
 <tr class="odd">
-<th><strong>quantity</strong></th>
-<th>
-<p>Somme de :</p>
-
+<td><strong>quantity</strong></td>
+<td><p>Somme de :</p>
 <ul>
-<li>
-<p>Pour <strong>T_MCOaaDMIP :</strong> <em>nbr_pos</em></p>
-</li>
-<li>
-<p>Pour <strong>T_MCOaaFPSTC :</strong> <em>lpp_qua</em></p>
-</li>
+<li><p>Pour <strong>T_MCOaaDMIP :</strong> <em>nbr_pos</em></p></li>
+<li><p>Pour <strong>T_MCOaaFPSTC :</strong> <em>lpp_qua</em></p></li>
+<li><p>Pour <strong>T_SSRaaFPSTC :</strong> <em>lpp_qua</em></p></li>
 </ul>
 <p>sur domain_id, person_id, visit_occurrence_id, provider_id,
 concept_id, source_value, source_concept_id, start_date, et
-end_date</p></th>
-<th></th>
-<th></th>
-<th></th>
+end_date</p></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </thead>
 <tbody>
 </tbody>
 </table>
-
-::: tip Accéder au code source
-Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop)
-:::

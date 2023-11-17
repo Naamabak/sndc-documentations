@@ -8,8 +8,8 @@ const sidebar = {
       path: "/omop/introduction/",
       children: [
         "/omop/introduction/snds_omop",
-        "/omop/introduction/perimetre_snds",
         "/omop/introduction/omop",
+        "/omop/introduction/perimetre_snds",
       ],
     },
     {
@@ -27,9 +27,9 @@ const sidebar = {
         "/omop/documentation_etl/location",
         "/omop/documentation_etl/care_site",
         "/omop/documentation_etl/person",
-        "/omop/documentation_etl/observation_period",
+        
         "/omop/documentation_etl/provider",
-        "/omop/documentation_etl/visit_occurrence",
+        "/omop/documentation_etl/visit_occurrence",        
         {
           title: "STEM_TABLE",
           path: "/omop/documentation_etl/stem_table",
@@ -41,6 +41,8 @@ const sidebar = {
             "/omop/documentation_etl/stem_table/drug_exposure",
           ],
         },
+        "/omop/documentation_etl/observation_period",
+        "/omop/documentation_etl/visit_detail",
         "/omop/documentation_etl/macros",
       ],
     },
