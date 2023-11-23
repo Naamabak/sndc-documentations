@@ -43,11 +43,14 @@ Sauf si précisé, ils sont hébergés sur le dépôt commun.
 La HAS héberge son propre [dépôt de programmes SNDS](https://gitlab.has-sante.fr/has-sante/public/programmes-snds), 
 avec un [site web de documentation](https://has-sante.pages.has-sante.fr/public/programmes-snds/).
 
+
 Les programmes publiés en 2023 portent sur 
 
 - Pratiques de prise en charge des adultes et des enfants avec épilepsie
 - Etat des pratiques de recours à l’IRM du membre inférieur
 - Description des parcours de soins préopératoires des adultes de 40 ans et plus opérés d’une acromioplastie isolée
+
+Les programmes pour le calcul des indicateurs BPCO, publiés en 2022, sont dans un [dépôt dédié](https://gitlab.has-sante.fr/has-sante/public/snds-indicateurs-parcours-bpco).
 
 ### Santé Publique France (SpF)
 
