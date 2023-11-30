@@ -1,21 +1,23 @@
 # **Requête type dans le PMSI-HAD**
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
 ---
 # Table des matières
 
 
-- [1. Requête type dans le PMSI-HAD](#1-requete-type-dans-le-pmsi-had)
-    - [1.1 Rappel des concepts de fonctionnement du PMSI-HAD](#11-rappel-des-concepts-de-fonctionnement-du-pmsi-had)
-        - [1.1.1 Fonctionnement du PMSI-SSR](#111-fonctionnement-du-pmsi-ssr)
-        - [1.1.2 Tables et variables principales](#112-tables-et-variables-principales)
-        - [1.1.3 Les diagnostics](#113-les-diagnostics)
-    - [1.2 Requêtes types](#12-requêtes-types)
-        - [1.2.1 Filtres recommandés](#121-filtres-recommandés)
-        - [1.2.2 Sélection des séjours](#122-sélection-des-séjours)
-        - [1.2.3 Sélection sur les diagnostics](#123-sélection-sur-les-diagnostics)
-        - [1.2.4 Sélection sur les actes CCAM](#124-sélection-sur-les-actes-ccam)
-        - [1.2.5 Table finale de séjours](#125-table-finale-de-séjours)
-        - [1.2.6 Pièges et limites d'utilisations](#126-pièges-et-limites-dutilisations)
-        - [1.2.7 Pour aller plus loin](#127-pour-aller-plus-loin)
+- [1. Requête type dans le PMSI-HAD](#_1-requete-type-dans-le-pmsi-had)
+    - [1.1 Rappel des concepts de fonctionnement du PMSI-HAD](#_1-1-rappel-des-concepts-de-fonctionnement-du-pmsi-had)
+        - [1.1.1 Fonctionnement du PMSI](#_1-1-1-fonctionnement-du-pmsi)
+        - [1.1.2 Tables et variables principales](#_1-1-2-tables-et-variables-principales)
+        - [1.1.3 Les diagnostics](#_1-1-3-les-diagnostics)
+    - [1.2 Requêtes types](#_1-2-requetes-types)
+        - [1.2.1 Filtres recommandés](#_1-2-1-filtres-recommandes)
+        - [1.2.2 Sélection des séjours](#_1-2-2-selection-des-sejours)
+        - [1.2.3 Sélection sur les diagnostics](#_1-2-3-selection-sur-les-diagnostics)
+        - [1.2.4 Sélection sur les actes CCAM](#_1-2-4-selection-sur-les-actes-ccam)
+        - [1.2.5 Table finale de séjours](#_1-2-5-table-finale-de-sejours)
+        - [1.2.6 Pièges et limites d'utilisations](#_1-2-6-pieges-et-limites-d-utilisations)
+        - [1.2.7 Pour aller plus loin](#_1-2-7-pour-aller-plus-loin)
 
 
 ---
@@ -66,15 +68,14 @@ Le PMSI-HAD contient les informations des **séjours** effectués au sein d’un
 Ces **séquences sont elles-mêmes décomposées en sous-séquences** qui dépendent uniquement du rythme de facturation de l’établissement. Le recueil de ces données constitue le Résumé par Sous-Séquences (RPSS ou RAPSS quand celui-ci est anonymisé). L’établissement produit donc une facture par sous-séquence. Le découpage temporel de la facturation est propre à chaque établissement, il n’est pas imposé (il est souvent à la semaine). La sous-séquence est classée par année : la date de fin détermine dans quelle année PMSI l’information est remontée dans la base de données.
 
 
-Cf. [Schéma des concepts du PMSI-HAD](../fiches/concepts_PMSI.md#schema-des-concepts-du-pmsi-had).
-
+Cf. [Schéma des concepts du PMSI-HAD](../fiches/concepts_PMSI.md#pmsi-had).
 
 
 
 #### **1.1.2 Tables et variables principales**
 
 
-La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en HAD](../formation_snds/initiation/snds_en_bref.md#_2-3-3-pmsi-had).
+La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en HAD](../formation_snds/initiation/snds_en_bref#_2-3-3-pmsi-had).
 
 
 Dans les tables HAD, un séjour est identifié pour une année de soins par :
@@ -203,7 +204,15 @@ Dans la grande majorité des cas, les séjours associés à des clés de chainag
 
 
 ```sql
-Table C : NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' AND COH_NAI_RET = '0' 
+Table C : 
+NIR_RET = '0' 
+AND NAI_RET = '0' 
+AND SEX_RET = '0' 
+AND SEJ_RET = '0' 
+AND FHO_RET = '0' 
+AND PMS_RET = '0' 
+AND DAT_RET = '0' 
+AND COH_NAI_RET = '0' 
 AND COH_SEX_RET = '0'
 ```
 
@@ -215,12 +224,16 @@ Considérons l’ensemble des séjours en HAD terminés en 2021, sélectionnés 
 
 
 ```sql
-CREATE TABLE table_sejours_HAD_2021 AS
-SELECT C.NIR_ANO_17, 
-       S.ETA_NUM_EPMSI, S.RHAD_NUM, /* clés de jointure */
-       C.EXE_SOI_DTD, C.EXE_SOI_DTF, S.SEJ_NBJ as duree_sej_nb_j
-FROM T_HAD21S AS S 
-INNER JOIN T_HAD21C AS C
+CREATE TABLE table_sejours_HAD_2021 AS (
+  SELECT 
+    C.NIR_ANO_17, 
+    S.ETA_NUM_EPMSI, /* clés de jointure */
+    S.RHAD_NUM, /* clés de jointure */
+    C.EXE_SOI_DTD, 
+    C.EXE_SOI_DTF, 
+    S.SEJ_NBJ AS duree_sej_nb_j
+  FROM T_HAD21S S 
+INNER JOIN T_HAD21C  C
   ON S.ETA_NUM_EPMSI = C.ETA_NUM_EPMSI
   AND S.RHAD_NUM = C.RHAD_NUM
 /* Sélection des séjours terminés dans l'année */
@@ -228,7 +241,7 @@ WHERE S.SEJ_FINI = '1'
 /* Sélection des clés de chainage correctes sur les informations des bénéficiaires via les variables codes retours (dans l'objectif d'étudier le parcours de soins) */
   AND C.NIR_RET = '0' AND C.NAI_RET = '0' AND C.SEX_RET = '0' 
   AND C.SEJ_RET = '0'  AND C.FHO_RET = '0' AND C.PMS_RET = '0' 
-  AND C.DAT_RET = '0' AND C.COH_NAI_RET = '0' AND C.COH_SEX_RET = '0';
+  AND C.DAT_RET = '0' AND C.COH_NAI_RET = '0' AND C.COH_SEX_RET = '0')
   ```
 
 
@@ -245,17 +258,23 @@ Cette sélection vise à suivre les bénéficiaires dont l'essentiel de la prise
 
 ```sql
 /* Sélection des sous-séquences avec le diagnostic d'intérêt */
-CREATE TABLE sseq_cancer_2021_tmp AS
-SELECT B.ETA_NUM_EPMSI, B.RHAD_NUM, B.SEQ_NUM, B.SSEQ_NUM, /* clés de jointure */
-       B.PEC_PAL, B.PEC_ASS, B.DEP_COT /* données de prise en charge */
-FROM T_HAD21B AS B 
-LEFT JOIN 
+CREATE TABLE sseq_cancer_2021_tmp AS (
+  SELECT 
+    B.ETA_NUM_EPMSI, B.RHAD_NUM, B.SEQ_NUM, B.SSEQ_NUM, /* clés de jointure */
+    B.PEC_PAL, B.PEC_ASS, B.DEP_COT /* données de prise en charge */
+  FROM T_HAD21B AS B 
+  LEFT JOIN 
   /* Attention à ne pas doublonner les sous-séquences */
   /* Il y a plusieurs lignes par sous-séquence dans la table DMPP */
-  (SELECT DISTINCT ETA_NUM_EPMSI, RHAD_NUM, SEQ_NUM, SSEQ_NUM, 1 AS select_dcmpp
-   FROM T_HAD21DMPP 
-   WHERE DGN_ASS_MPPLIKE 'C50%') AS DMPP 
-  ON B.ETA_NUM_EPMSI = DMPP.ETA_NUM_EPMSI
+    (SELECT DISTINCT 
+      ETA_NUM_EPMSI, 
+      RHAD_NUM, 
+      SEQ_NUM, 
+      SSEQ_NUM, 
+      1 AS select_dcmpp
+    FROM T_HAD21DMPP 
+    WHERE DGN_ASS_MPPLIKE 'C50%') AS DMPP 
+ON B.ETA_NUM_EPMSI = DMPP.ETA_NUM_EPMSI
   AND B.RHAD_NUM = DMPP.RHAD_NUM
   AND B.SEQ_NUM = DMPP.SEQ_NUM
   AND B.SSEQ_NUM = DMPP.SSEQ_NUM
@@ -392,5 +411,6 @@ Des informations administratives sur le bénéficiaire et les données d’activ
 * [Rappel des bonnes pratiques SAS sur le portail SNDS](../fiches/execution_SAS.md).
 
 
-\- tip Crédits
+::: tip Crédits 
 Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
+:::
