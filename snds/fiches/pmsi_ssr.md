@@ -5,24 +5,19 @@
 
 
 ## Table des matières
-- [1 Requête type dans le PMSI-SSR](#1-requête-type-dans-le-pmsi-ssr)
-  - [1.1 Rappel des concepts de fonctionnement du PMSI-SSR](#11-rappel-des-concepts-de-fonctionnement-du-pmsi-ssr)
-    - [1.1.1 Fonctionnement du PMSI-SSR](#111-fonctionnement-du-pmsi-ssr)
-    - [1.1.2 Tables et variables principales](#112-tables-et-variables-principales)
-    - [1.1.3 Les diagnostics](#113-les-diagnostics)
-  - [1.2 Requêtes types](#12-requêtes-types)
-    - [1.2.1 Filtres recommandés](#121-filtres-recommandés)
-    - [1.2.2 Sélection des séjours](#122-sélection-des-séjours)
-    - [1.2.3 Sélection sur les diagnostics](#123-sélection-sur-les-diagnostics)
-    - [1.2.4 Sélection sur les actes CSARR](#124-sélection-sur-les-actes-csarr)
-    - [1.2.5 Table finale de patients](#125-table-finale-de-patients)
-    - [1.2.6 Pièges et limites d'utilisations](#126-pièges-et-limites-dutilisations)
-    - [1.2.7 Pour aller plus loin](#127-pour-aller-plus-loin)
+  - [1 Rappel des concepts de fonctionnement du PMSI-SSR](#1-rappel-des-concepts-de-fonctionnement-du-pmsi-ssr)
+    - [1.1 Fonctionnement du PMSI-SSR](#11-fonctionnement-du-pmsi-ssr)
+    - [1.2 Tables et variables principales](#12-tables-et-variables-principales)
+    - [1.3 Les diagnostics](#13-les-diagnostics)
+  - [2 Requêtes types](#2-requêtes-types)
+    - [2.1 Filtres recommandés](#21-filtres-recommandés)
+    - [2.2 Sélection des séjours](#22-sélection-des-séjours)
+    - [2.3 Sélection sur les diagnostics](#23-sélection-sur-les-diagnostics)
+    - [2.4 Sélection sur les actes CSARR](#24-sélection-sur-les-actes-csarr)
+    - [2.5 Table finale de patients](#25-table-finale-de-patients)
+    - [2.6 Pièges et limites d'utilisations](#26-pièges-et-limites-dutilisations)
+    - [2.7 Pour aller plus loin](#27-pour-aller-plus-loin)
 ---
-
-
-# **1 Requête type dans le PMSI-SSR**
-
 
 Cette fiche décrit **une requête type de sélection de séjours dans les tables du PMSI-SSR à partir des diagnostics et des actes de rééducation et réadaptation.** Des variables relatives au patient, au séjour et à l’établissement sont restituées en sortie.
 
@@ -39,9 +34,9 @@ Ce document fait suite à la fiche ["Requête type dans le PMSI-MCO"](../fiches/
 Il est construit à partir des [Guides Méthodologiques de production des informations relatives à l’activité médicale et à sa facturation en soins de suite et de réadaptation](https://www.atih.sante.fr/les-guides-methodologiques-ssr) et de la [formation PMSI élaborée par l’ATIH, les ARS Centre-Val de Loire et Normandie, le HDH et la Cnam](../formation_snds/documents_cnam/Formation_PMSI.md).
 
 
-## **1.1 Rappel des concepts de fonctionnement du PMSI-SSR**
+## **1 Rappel des concepts de fonctionnement du PMSI-SSR**
 ---
-### **1.1.1 Fonctionnement du PMSI-SSR**
+### **1.1 Fonctionnement du PMSI-SSR**
 
 
 L’activité des structures en SSR concerne les groupes de disciplines sanitaires suivants: maladies à évolution prolongée, convalescence, repos et régime, rééducation fonctionnelle et réadaptation, lutte contre la tuberculose et les maladies respiratoires, cures thermales, cures médicales ou postcures pour alcooliques. Ces structures assurent des soins médicaux, curatifs et palliatifs, de la rééducation et réadaptation, de la prévention, de l’éducation thérapeutique et de l’accompagnement à la réinsertion.
@@ -66,7 +61,7 @@ Les informations médicales, comme les autres variables du RHA, doivent être en
 Cf. [Schéma des concepts du PMSI-SSR](../fiches/concepts_PMSI.md#pmsi-ssr).
 
 
-### **1.1.2 Tables et variables principales**
+### **1.2 Tables et variables principales**
 
 
 La description du schéma relationnel du Système National des Données de Santé (SNDS), des règles de nommage des tables et variables et des dictionnaires disponibles se trouve dans le ["Guide d’initiation au SNDS"](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en Soins de Suite et de Réadaptation (SSR)](../formation_snds/initiation/snds_en_bref.md#234-pmsi-ssr-séjours).
@@ -169,7 +164,7 @@ Les tables et variables principales en SSR, en lien avec les séjours des établ
   Cette table peut être reliée aux autres uniquement via le numéro d’établissement `ETA_NUM`. Elle contient les informations administratives des établissements : raison sociale (`SOC_RAI`), région d’implantation (`REG_ETA`) ou statut juridique (`STA_ETA`).
 
 
-#### **1.1.3 Les diagnostics**
+### **1.3 Les diagnostics**
 
 
 En résumé, les données médicales principales de ce champ d’activité, renseignées par Unité Médicale pour chaque semaine (`RHS_NUM`), sont :
@@ -179,11 +174,11 @@ En résumé, les données médicales principales de ce champ d’activité, rens
 - Les **diagnostics associés** (`DGN_COD` de la `table D`)
 
 
-### **1.2 Requêtes types**
+## **2 Requêtes types**
 Dans l’objectif de présenter des requêtes qui s’adaptent facilement aux différentes variantes des langages de bases de données,  il a été choisi d’utiliser le système de gestion de base de données MySQL (système le plus utilisé aujourd’hui).
 
 
-#### **1.2.1 Filtres recommandés**
+### **2.1 Filtres recommandés**
 
 
 Dans la [formation PMSI](../formation_snds/documents_cnam/Formation_PMSI.md), il est recommandé (diapo 150) :
@@ -201,7 +196,7 @@ Dans la grande majorité des cas, les séjours associés à des clés de chaîna
 - Table C : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' AND COH_NAI_RET = '0' AND COH_SEX_RET = '0'`
 
 
-### **1.2.2 Sélection des séjours**
+### **2.2 Sélection des séjours**
 
 
 Il est possible de sélectionner des indicateurs synthétiques des séjours en SSR via la table S. Cependant, au vu du rythme hebdomadaire des remontées d’informations (via les RHA), qui est en décalage avec le rythme de valorisation des hospitalisations complètes (à la clôture du séjour), il est plus intuitif d’analyser les données au niveau des RHA dans ce champ d’activité. 
@@ -234,7 +229,7 @@ WHERE S.ACT_TYP in ('1', '2', '3')
         AND C.SEJ_RET = '0' AND C.FHO_RET = '0' AND C.PMS_RET = '0' 
         AND C.DAT_RET = '0' AND C.COH_NAI_RET = '0' AND C.COH_SEX_RET = '0';
 ```
-### **1.2.3 Sélection sur les diagnostics**
+### **2.3 Sélection sur les diagnostics**
 
 
 Sélection des RHA de 2021 avec une manifestation morbide principale (MMP) ou une affection étiologique (AE) d'obésité (code [CIM-10](../glossaire/CIM.md) E66). Il est également possible de sélectionner sur la finalité principale de prise en charge (FPP) dans le cas où des actes ou des motifs de recours aux soins sont recherchés (codes CIM-10 en « Z », arrêt de codage au 01/03/2023).
@@ -255,7 +250,7 @@ WHERE MOR_PRP LIKE 'E66%' OR ETL_AFF LIKE 'E66%';
 ```
 
 
-### **1.2.4 Sélection sur les actes CSARR**
+### **2.4 Sélection sur les actes CSARR**
 Sélection des RHA avec une prise en charge en lien avec l’obésité ET au moins un acte d’éducation dans le cadre d’un programme d’éducation thérapeutique (codes [CSARR](https://www.atih.sante.fr/les-versions-du-csarr).
 
 
@@ -278,7 +273,7 @@ INNER JOIN
    AND B.RHA_NUM = RR.RHA_NUM
    AND B.RHS_NUM = RR.RHS_NUM;
 ```
-### **1.2.5 Table finale de patients**
+### **2.5 Table finale de patients**
 Synthétisons la prise en charge SSR en lien avec l’obésité et associée à un programme d’éducation thérapeutique du patient : il est possible de calculer le nombre de séjours concernés, le nombre de RHA, le nombre de jours de présence ou encore le nombre d’actes réalisés en 2021.
 
 
@@ -321,7 +316,7 @@ ON B.ETA_NUM = E.ETA_NUM;
 ```
 
 
-#### **1.2.6 Pièges et limites d'utilisations**
+### **2.6 Pièges et limites d'utilisations**
 
 
 Il est recommandé de bien définir le périmètre de données à analyser en fonction des objectifs d'étude, et notamment d'identifier s'il est possible de travailler sur les prises en charge hebdomadaires par année ou s'il est nécessaire de suivre l'activité de SSR au cours d'un séjour sur plusieurs années.
@@ -344,7 +339,7 @@ Les bases de données PMSI ont une structure complexe qui varie dans le temps :
 Des informations administratives sur le bénéficiaire et les données d'activité hospitalière sont en doublons entre le PMSI et le DCIR : cf. ["Guide d'initiation au SNDS"](../formation_snds/initiation/schema_relationnel_snds.md).
 
 
-#### **1.2.7 Pour aller plus loin**
+### **2.7 Pour aller plus loin**
 
 
 - Identification des [médicaments en sus en SSR](../fiches/medicaments_de_la_liste_en_sus.md).

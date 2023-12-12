@@ -1,26 +1,23 @@
-#**Requête type dans le PMSI-PSY**
+# **Requête type dans le PMSI-PSY**
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ---
 
 
 ## Table des matières
-- [1 Requête type PMSI-PSY](#1-requête-type-pmsi-psy)
-  - [1.1 Rappel des concepts de fonctionnement du PMSI-PSY](#11-rappel-des-concepts-de-fonctionnement-du-pmsi-psy)
-    - [1.1.1 Fonctionnement du PMSI-PSY](#111-fonctionnement-du-pmsi-psy)
-    - [1.1.2 Tables et variables principales](#112-tables-et-variables-principales)
-    - [1.1.3 Les diagnostics](#113-les-diagnostics)
-  - [1.2 Requêtes types](#12-requêtes-types)
-    - [1.2.1 Filtres recommandés](#121-filtres-recommandés)
-    - [1.2.2 Sélection des séjours](#122-sélection-des-séjours)
-    - [1.2.3 Sélection sur les diagnostics](#123-sélection-sur-les-diagnostics)
-    - [1.2.4 Sélection sur des prises en charge spécifiques](#124-sélection-sur-des-prises-en-charge-spécifiques)
-    - [1.2.5 Table finale de patients](#125-table-finale-de-patients)
-    - [1.2.6 Pièges et limites d'utilisations](#126-pièges-et-limites-dutilisations)
-    - [1.2.7 Pour aller plus loin](#127-pour-aller-plus-loin)
+  - [1 Rappel des concepts de fonctionnement du PMSI-PSY](#1-rappel-des-concepts-de-fonctionnement-du-pmsi-psy)
+    - [1.1 Fonctionnement du PMSI-PSY](#11-fonctionnement-du-pmsi-psy)
+    - [1.2 Tables et variables principales](#12-tables-et-variables-principales)
+    - [1.3 Les diagnostics](#13-les-diagnostics)
+  - [2 Requêtes types](#2-requêtes-types)
+    - [2.1 Filtres recommandés](#21-filtres-recommandés)
+    - [2.2 Sélection des séjours](#22-sélection-des-séjours)
+    - [2.3 Sélection sur les diagnostics](#23-sélection-sur-les-diagnostics)
+    - [2.4 Sélection sur des prises en charge spécifiques](#24-sélection-sur-des-prises-en-charge-spécifiques)
+    - [2.5 Table finale de patients](#25-table-finale-de-patients)
+    - [2.6 Pièges et limites d'utilisations](#26-pièges-et-limites-dutilisations)
+    - [2.7 Pour aller plus loin](#27-pour-aller-plus-loin)
 
-
-## **1 Requête type PMSI-PSY**
 
 
 Cette fiche décrit **une requête type de sélection de séjours dans les tables du PMSI-PSY à partir des diagnostics et des prises en charge spécifiques à la psychiatrie**. Des variables relatives au patient, au séjour et à l’établissement sont restituées en sortie.
@@ -33,9 +30,9 @@ Ce document fait suite à la fiche [« Requête type dans le PMSI-MCO »](../fic
 
 Il est construit à partir des [Guides Méthodologiques de production des recueils d’informations médicalisés en psychiatrie](https://www.atih.sante.fr/les-guides-methodologiques-psychiatrie) et de la [formation PMSI élaborée par l’ATIH, les ARS Centre-Val de Loire et Normandie, le HDH et la Cnam](../formation_snds/documents_cnam/Formation_PMSI.md).
 
- ### **1.1 Rappel des concepts de fonctionnement du PMSI-PSY**
+## **1 Rappel des concepts de fonctionnement du PMSI-PSY**
 
-#### **1.1.1 Fonctionnement du PMSI-PSY**
+### **1.1 Fonctionnement du PMSI-PSY**
 
 Les établissements de psychiatrie prennent en charge les troubles mentaux. L’offre de santé est surtout centrée sur les prises en charge des troubles sévères et persistants nécessitant l’intervention d’une équipe multi-professionnelle. Ce champ du PMSI n’inclut pas les activités réalisées par les structures relevant du secteur médicosocial (mobilisées pour assurer l’hébergement et l’accompagnement des personnes en situation de handicap psychique).
 
@@ -49,7 +46,7 @@ Ces établissements effectuent également des soins en [ambulatoire](../glossair
 
 [Cf. Schéma des concepts du PMSI-PSY](../fiches/concepts_PMSI.md#pmsi-rim-p).
 
-#### **1.1.2 Tables et variables principales**
+### **1.2 Tables et variables principales**
 
 La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en PSY](../formation_snds/initiation/snds_en_bref.md#235-pmsi-psy-rim-p-séjours-ou-actes-externes-edgar).
 
@@ -121,15 +118,6 @@ L'information complète au niveau des séjours se retrouve uniquement sur la der
 - Type de génération automatique du RPSA (`TYP_GEN_RSA`, disponible depuis 2015) : permet d’identifier les « faux » RPSA générés automatiquement pour des besoins de facturation.
 
 
-
-
-
-
-
-
-
-
-
 - **Table RSAD (`T_RIPaaRSAD`) : table des diagnostics associés (DA)**
 
 Cette table contient les Diagnostics Associés (DA, variable `ASS_DGN`) : morbidités associées au DP ayant contribué à alourdir la prise en charge de chaque séquence.
@@ -142,7 +130,7 @@ Cette table contient des informations sur les actes techniques médicaux, codés
 
 Cette table peut être reliée aux autres uniquement via le numéro d’établissement `ETA_NUM`. Elle contient les informations administratives des établissements : raison sociale SOC_RAI, région d’implantation REG_ETA ou statut juridique STA_ETA.
 
- #### **1.1.3 Les diagnostics**
+ ### **1.3 Les diagnostics**
 
 En résumé, les données médicales principales de ce champ d’activité, renseignées pour chaque séquence (`SEQ_SEQ_NUM`), sont :
 
@@ -151,10 +139,10 @@ En résumé, les données médicales principales de ce champ d’activité, rens
 
 
 
- ## **1.2 Requêtes types**
+## **2 Requêtes types**
 Dans l’objectif de présenter des requêtes qui s’adaptent facilement aux différentes variantes des langages de bases de données,  il a été choisi d’utiliser le système de gestion de base de données MySQL (système le plus utilisé aujourd’hui).
 
-#### **1.2.1 Filtres recommandés**
+### **2.1 Filtres recommandés**
 
 Dans la [formation PMSI](../formation_snds/documents_cnam/Formation_PMSI.md), il est recommandé d’exclure les séquences indiquées comme « sortie d’essai » jusqu’en 2016 car elles ne sont pas considérées comme des hospitalisations (diapo 238) :
 `SEQ_IND <> E`
@@ -166,7 +154,7 @@ Dans la grande majorité des cas, les séjours associés à des clés de chainag
 Table C :` NIR_RET = 0 AND NAI_RET = 0 AND SEX_RET = 0 AND SEJ_RET = 0 AND FHO_RET = 0 AND PMS_RET = 0 AND DAT_RET = 0 AND COH_NAI_RET = 0 AND COH_SEX_RET = 0`
 
 
- #### **1.2.2 Sélection des séjours**
+ ### **2.2 Sélection des séjours**
 Il est possible de sélectionner des indicateurs synthétiques des séjours en psychiatrie via la table S. Cependant, au vu du rythme trimestriel (ou mensuel à partir de 2023) des remontées d’informations (via les RPSA), il est plus intuitif d’analyser les données au niveau des séquences dans ce champ d’activité.
 Considérons l’ensemble des RPSA en PSY en hospitalisation complète en 2021, sélectionné avec les filtres recommandés :
 ```sql
@@ -199,7 +187,7 @@ SELECT *
 FROM table_RPSA_RIP_2021
 WHERE DGN_PAL LIKE 'F20%' ;
 ```
-#### **1.2.4 Sélection sur des prises en charge spécifiques**
+### **2.4 Sélection sur des prises en charge spécifiques**
 Sélection des RPSA en hospitalisation complète pour schizophrénie et avec au moins un jour d’isolement thérapeutique ou avec des soins sans consentement :
 ```sql
 CREATE TABLE RPSA_F20_SSC_ISO_2021 AS
@@ -212,7 +200,7 @@ WHERE THE_ISO_NBJ > 0
          AND FOR_ACT <> '04' ) ;
  ```        
 
-#### **1.2.5 Table finale de patients**
+### **2.5 Table finale de patients**
 
 Synthétisons la prise en charge à temps plein en psychiatrie en lien avec la schizophrénie et associée à un isolement thérapeutique ou à des soins sans consentement : il est possible de calculer le nombre de séjours concernés, le nombre de séquences de soins, le nombre de jours de présence en hospitalisation, le nombre de jours en isolement thérapeutique ou encore d’identifier les bénéficiaires de soins sans consentement en 2021.
 Création d’une table de travail avec une ligne par patient :
@@ -247,7 +235,7 @@ WHERE RSA.ETA_NUM_EPMSI = E.ETA_NUM ;
 ```
 
 
-#### **1.2.6 Pièges et limites d'utilisations**
+### **2.6 Pièges et limites d'utilisations**
 Il est recommandé de bien définir le périmètre de données à analyser en fonction des objectifs d’étude, et notamment d’identifier s’il est possible de travailler sur les séquences de soins ou s’il est nécessaire de suivre l’activité de psychiatrie au cours d’un séjour sur plusieurs années :
 
 - Par exemple, pour suivre les soins en psychiatrie d’un bénéficiaire, il n’est pas utile de reconstituer le séjour entier. Il est possible d’analyser les données au niveau de la séquence et de proposer d’autres indicateurs que le nombre de séjours, comme le nombre de journées ou demi-journées en psychiatrie par année.
@@ -274,7 +262,7 @@ Suite à la réforme du financement en psychiatrie, des changements importants d
 Des informations administratives sur le bénéficiaire et les données d’activité hospitalière sont en doublons entre le PMSI et le DCIR : cf. [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md).
 
 
-#### **1.2.7 Pour aller plus loin**
+### **2.7 Pour aller plus loin**
 
 - Valorisation de l’activité en psychiatrie :
   - Fiche [« Dépenses des établissements de santé publics dans le PMSI »](../fiches/depenses_hopital_public.md)

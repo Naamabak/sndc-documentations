@@ -2,28 +2,25 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ---
-# Table des matières
+## Table des matières
 
 
-- [1. Requête type dans le PMSI-HAD](#1-requête-type-dans-le-pmsi-had)
-    - [1.1 Rappel des concepts de fonctionnement du PMSI-HAD](#11-rappel-des-concepts-de-fonctionnement-du-pmsi-had)
-        - [1.1.1 Fonctionnement du PMSI](#111-fonctionnement-du-pmsi)
-        - [1.1.2 Tables et variables principales](#112-tables-et-variables-principales)
-        - [1.1.3 Les diagnostics](#113-les-diagnostics)
-    - [1.2 Requêtes types](#12-requêtes-types)
-        - [1.2.1 Filtres recommandés](#121-filtres-recommandés)
-        - [1.2.2 Sélection des séjours](#122-sélection-des-séjours)
-        - [1.2.3 Sélection sur les diagnostics](#123-sélection-sur-les-diagnostics)
-        - [1.2.4 Sélection sur les actes CCAM](#124-sélection-sur-les-actes-ccam)
-        - [1.2.5 Table finale de séjours](#125-table-finale-de-séjours)
-        - [1.2.6 Pièges et limites d'utilisations](#126-pièges-et-limites-dutilisations)
-        - [1.2.7 Pour aller plus loin](#127-pour-aller-plus-loin)
+  - [1 Rappel des concepts de fonctionnement du PMSI-HAD](#1-rappel-des-concepts-de-fonctionnement-du-pmsi-had)
+      - [1.1 Fonctionnement du PMSI](#11-fonctionnement-du-pmsi)
+      - [1.2 Tables et variables principales](#12-tables-et-variables-principales)
+      - [1.3 Les diagnostics](#13-les-diagnostics)
+  - [2 Requêtes types](#2-requêtes-types)
+      - [2.1 Filtres recommandés](#21-filtres-recommandés)
+      - [2.2 Sélection des séjours](#22-sélection-des-séjours)
+      - [2.3 Sélection sur les diagnostics](#23-sélection-sur-les-diagnostics)
+      - [2.4 Sélection sur les actes CCAM](#24-sélection-sur-les-actes-ccam)
+      - [2.5 Table finale de séjours](#25-table-finale-de-séjours)
+      - [2.6 Pièges et limites d'utilisations](#26-pièges-et-limites-dutilisations)
+      - [2.7 Pour aller plus loin](#27-pour-aller-plus-loin)
 
 
 ---
 
-
-## **1. Requête type dans le PMSI-HAD**   
 
 Cette fiche décrit une **requête type de sélection de séjours dans les tables du PMSI-HAD à partir des diagnostics et des actes CCAM**. Des variables relatives au bénéficiaire, au séjour et à l’établissement sont restituées en sortie.
 
@@ -40,13 +37,11 @@ Ce document fait suite à la fiche ["Requête type dans le PMSI-MCO"](../fiches/
 Il est construit à partir des [Guides Méthodologiques de production des recueils d’informations standardisés de l’Hospitalisation à Domicile](https://www.atih.sante.fr/les-guides-methodologiques-had) et de la [formation PMSI élaborée par l’ATIH, les ARS Centre-Val de Loire et Normandie, le HDH et la Cnam](../formation_snds/documents_cnam/Formation_PMSI.md).
 
 
-### **1.1 Rappel des concepts de fonctionnement du PMSI-HAD** 
-
+## **1 Rappel des concepts de fonctionnement du PMSI-HAD** 
 
 ___
 
-
-#### **1.1.1 Fonctionnement du PMSI** 
+### **1.1 Fonctionnement du PMSI** 
 
 
 Une structure d’HAD permet d’assurer au domicile du bénéficiaire des soins non réalisables en ville car trop complexes, trop intenses ou trop techniques, pour des personnes qui ont besoin d’une équipe pluridisciplinaire (infirmières, rééducateurs, assistante sociale, psychologue, diététicienne, etc.) et médicalisée (il y a toujours un médecin coordonnateur en HAD) disponible 24h/24. Le domicile peut être un établissement social ou médico-social avec hébergement.
@@ -71,7 +66,7 @@ Cf. [Schéma des concepts du PMSI-HAD](../fiches/concepts_PMSI.md#pmsi-had).
 
 
 
-#### **1.1.2 Tables et variables principales** 
+### **1.2 Tables et variables principales** 
 
 
 La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en HAD](../formation_snds/initiation/snds_en_bref.md#233-pmsi-had).
@@ -170,7 +165,7 @@ Dans le cas d’un séjour sur plusieurs années, l’information du séjour est
 
 
 
-#### **1.1.3 Les diagnostics** 
+### **1.3 Les diagnostics** 
 
 
 En résumé, les données médicales principales de ce champ d’activité, renseignées pour chaque sous-séquence (`SSEQ_NUM`) de chaque séquence (`SEQ_NUM`), sont :
@@ -181,7 +176,7 @@ En résumé, les données médicales principales de ce champ d’activité, rens
 - Les **diagnostics associés** pris en charge mais non liés au MPP ou au MPA (`DGN_ASS` de la `table D`)
 
 
-### **1.2 Requêtes types**
+## **2 Requêtes types**
 
 
 ___
@@ -190,7 +185,7 @@ ___
 Dans l’objectif de présenter des requêtes qui s’adaptent facilement aux différentes variantes des langages de bases de données, il a été choisi d’utiliser le système de gestion de base de données MySQL (système le plus utilisé aujourd’hui).
 
 
-#### **1.2.1 Filtres recommandés**
+### **2.1 Filtres recommandés**
 
 
 Dans la [formation PMSI](../formation_snds/documents_cnam/Formation_PMSI.md), il est recommandé d’exclure les sous-séquences qui ne seront pas valorisées, i.e. les sous-séquences avec une erreur de groupage (diapo 198) :
@@ -216,7 +211,7 @@ AND COH_SEX_RET = '0'
 ```
 
 
-#### **1.2.2 Sélection des séjours** 
+### **2.2 Sélection des séjours** 
 
 
 Considérons l’ensemble des séjours en HAD terminés en 2021, sélectionnés avec les filtres recommandés :
@@ -244,7 +239,7 @@ WHERE S.SEJ_FINI = '1'
   ```
 
 
-  ### **1.2.3 Sélection sur les diagnostics**
+  ### **2.3 Sélection sur les diagnostics**
 
 
 Sélection des sous-séquences de séjours en HAD, terminées en 2021, avec un DP ou un DCMPP de cancer du sein (code [CIM-10](../glossaire/CIM.md) C50).
@@ -301,7 +296,7 @@ INNER JOIN
 Dans le champ HAD, il est courant de vouloir sélectionner sur les MPP, MPA et IK. Comme ces trois variables principales en HAD résument la prise en charge et l’état de santé du patient pour chaque séquence, et qu’elles servent à la valorisation du séjour, elles sont très souvent décrites. La sélection sur ces variables peut se faire selon la même requête que la sélection sur le DP, car elles se trouvent dans la table B.
 
 
-   ### **1.2.4 Sélection sur les actes CCAM** 
+   ### **2.4 Sélection sur les actes CCAM** 
 
 
 Sélection des séquences avec un diagnostic de cancer du sein ET au moins un acte de surveillance d'une analgésie contrôlée par le patient (code [CCAM](https://www.atih.sante.fr/nomenclatures-de-recueil-de-linformation/ccam) ANMP001), c'est-à-dire sur la même prise en charge.
@@ -325,7 +320,7 @@ AND B.RHAD_NUM = A.RHAD_NUM
 AND B.SEQ_NUM = A.SEQ_NUM;
  ```
  
-   ###  **1.2.5 Table finale de séjours** 
+   ###  **2.5 Table finale de séjours** 
 
 
 Création d'une table de travail avec une ligne par séjour :
@@ -367,7 +362,7 @@ ON S.ETA_NUM_EPMSI = E.ETA_NUM;
  ```
 
 
- ### **1.2.6 Pièges et limites d'utilisations** 
+ ### **2.6 Pièges et limites d'utilisations** 
 
 
 Il est recommandé de bien définir le périmètre de données à analyser en fonction des objectifs d’étude, et notamment d’identifier s’il est possible de travailler sur les séjours terminés par année ou s’il est nécessaire de suivre l’activité de HAD au cours d’un séjour sur plusieurs années.
@@ -392,7 +387,7 @@ Les bases de données PMSI ont une structure complexe qui varie dans le temps :
 Des informations administratives sur le bénéficiaire et les données d’activité hospitalière sont en doublons entre le PMSI et le DCIR : cf. [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md).
 
 
-### **1.2.7 Pour aller plus loin** 
+### **2.7 Pour aller plus loin** 
 
 
 
