@@ -154,7 +154,7 @@ Les tables et variables principales en SSR, en lien avec les séjours des établ
 - **Table CSARR (`T_SSRaaCSARR`) : table des actes de rééducation** et de réadaptation (disponible depuis 2009, cependant cette table s’appelle CCAR entre 2009 et 2013)
 
 
-  Cette table contient des informations sur les actes du Catalogue Spécifique des Actes de Rééducation et Réadaptation ([CSARR](../glossaire/CdaRR.md)). [Une nouvelle version est publiée chaque année](https://www.atih.sante.fr/les-versions-du-csarr).
+  Cette table contient des informations sur les actes du Catalogue Spécifique des Actes de Rééducation et Réadaptation ([CSARR](../glossaire/CdARR.md)). [Une nouvelle version est publiée chaque année](https://www.atih.sante.fr/les-versions-du-csarr).
 
 
 - **Table CCAM (`T_SSRaaCCAM`) : table des actes techniques médicaux**(disponible depuis 2009)

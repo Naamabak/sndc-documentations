@@ -111,7 +111,7 @@ La durée de la visite, ou \"durée du séjour\", est définie comme suit : visi
     -   Visites sans hospitalisation (le patient ne reste pas pour une
         nuit) : tables ACE (Actes et Consultations Externes, voir la
         [documentation
-        SNDS](../../snds/fiches/actes_consult_externes.md#que-regroupent-les-actes-et-consultations-externes))
+        SNDS](../../snds/fiches/actes_consult_externes.md#que-regroupent-les-actes-et-consultations-externes-))
         du PMSI. Le concept_id associé est "9202 : outpatient
         visit".
 
@@ -121,7 +121,7 @@ La durée de la visite, ou \"durée du séjour\", est définie comme suit : visi
     doublons. Pour distinguer les visites en pharmacie, en laboratoire
     et en ville (outpatient), on utilise le code de prestation de
     référence
-    ([prs_nat_ref](../../snds/fiches/prestation.md#definition)),
+    ([prs_nat_ref](../../snds/fiches/prestation.md#définition)),
     et leur correspondance avec les trois concept_id : "9202 :
     outpatient visit", "581458 : pharmacy visit" et "32036 : laboratory
     visit".
@@ -439,7 +439,7 @@ de visite dont il s’agit (séjour, ambulatoire, urgence, etc.)</td>
     renseignée.
 
 -   On supprime les séjours avec [codes retours
-    erronés](../../snds/fiches/requete_type_pmsi_mco.md#_1-identification-des-tables-et-des-variables-de-la-requete),
+    erronés](../../snds/fiches/requete_type_pmsi_mco.md#1-identification-des-tables-et-des-variables-de-la-requête),
     c'est-à-dire qu'on garde les lignes pour lesquelles les codes
     retours valent 0 (*nir_ret, nai_ret, sex_ret, sej_ret, fho_ret,
     pms_ret, dat_ret, coh_nai_ret, coh_sex_ret* des **tables C**).
@@ -793,7 +793,7 @@ correspondant au sej_idt</p></td>
     renseignée.
 
 -   On supprime les séjours avec [codes retours
-    erronés](../../snds/fiches/requete_type_pmsi_mco.md#_1-identification-des-tables-et-des-variables-de-la-requete),
+    erronés](../../snds/fiches/requete_type_pmsi_mco.md#1-identification-des-tables-et-des-variables-de-la-requête),
     c'est-à-dire qu'on garde les lignes pour lesquelles les codes
     retours valent 0 (*nir_ret, nai_ret, sex_ret, ias_ret, ent_dat_ret*
     des **tables CSTC**)

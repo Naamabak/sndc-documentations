@@ -308,7 +308,7 @@ standard)</p>
 # Domaine 'Drug exposure' - PMSI
 
 Le PMSI contient les [<u>médicaments de la liste en
-SUS</u>](../../../snds/fiches/medicaments_de_la_liste_en_sus.md#presentation)
+SUS</u>](../../../snds/fiches/medicaments_de_la_liste_en_sus.md#présentation)
 délivrés dans le cadre d'une hospitalisation, les autres prises de
 médicament ne sont pas renseignées.
 
