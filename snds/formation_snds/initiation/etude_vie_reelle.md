@@ -96,7 +96,7 @@ Pour certaines études et périodes d'études, il peut être nécessaire de pré
 - leur régime d'affiliation,
 - les données disponibles en fonction du régime et de l'année.
 
-## 4.3 Sélection des bénéficiaires <a name="4-3-selection-des-beneficiaires"></a>
+## 4.3 Sélection des bénéficiaires
 
 ### 4.3.1 A partir du référentiel bénéficiaires
 

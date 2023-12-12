@@ -90,7 +90,7 @@ Exemples :
 * `CLE_TEC_PRS` = Clé technique d’une prestation (DCIR)
 * `ETA_NUM` = Numéro d'établissement (FINESS) (PMSI)
 
-## 3.2. Les bénéficiaires <a name="3-2-les-beneficiaires"></a>
+## 3.2. Les bénéficiaires 
 ### 3.2.1 Identifiants du SNDS
 L’une des mesures fondamentales du référentiel de sécurité du SNDS, visant à conserver la confidentialité des données, est la procédure de pseudonymisation : procédé cryptographique irréversible appliqué à chaque champ identifiant du patient, afin d’empêcher la possibilité d'identification directe de l'individu auquel il se rattache.
 

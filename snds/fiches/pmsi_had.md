@@ -5,25 +5,25 @@
 # Table des matières
 
 
-- [1. Requête type dans le PMSI-HAD](#requete-type-dans-le-pmsi-had)
-    - [1.1 Rappel des concepts de fonctionnement du PMSI-HAD](#rappel-des-concepts-de-fonctionnement-du-pmsi-had)
-        - [1.1.1 Fonctionnement du PMSI](#fonctionnement-du-pmsi)
-        - [1.1.2 Tables et variables principales](#tables-et-variables-principales)
-        - [1.1.3 Les diagnostics](#les-diagnostics)
-    - [1.2 Requêtes types](#requetes-types)
-        - [1.2.1 Filtres recommandés](#filtres-recommandes)
-        - [1.2.2 Sélection des séjours](#selection-sur-les-sejours)
-        - [1.2.3 Sélection sur les diagnostics](#selection-sur-les-diagnostics)
-        - [1.2.4 Sélection sur les actes CCAM](#selection-sur-les-actes-ccam)
-        - [1.2.5 Table finale de séjours](#table-finale-de-sejours)
-        - [1.2.6 Pièges et limites d'utilisations](#pieges-et-limites-d-utilisations)
-        - [1.2.7 Pour aller plus loin](#pour-aller-plus-loin)
+- [1. Requête type dans le PMSI-HAD](#1-requête-type-dans-le-pmsi-had)
+    - [1.1 Rappel des concepts de fonctionnement du PMSI-HAD](#11-rappel-des-concepts-de-fonctionnement-du-pmsi-had)
+        - [1.1.1 Fonctionnement du PMSI](#111-fonctionnement-du-pmsi)
+        - [1.1.2 Tables et variables principales](#112-tables-et-variables-principales)
+        - [1.1.3 Les diagnostics](#113-les-diagnostics)
+    - [1.2 Requêtes types](#12-requêtes-types)
+        - [1.2.1 Filtres recommandés](#121-filtres-recommandés)
+        - [1.2.2 Sélection des séjours](#122-sélection-des-séjours)
+        - [1.2.3 Sélection sur les diagnostics](#123-sélection-sur-les-diagnostics)
+        - [1.2.4 Sélection sur les actes CCAM](#124-sélection-sur-les-actes-ccam)
+        - [1.2.5 Table finale de séjours](#125-table-finale-de-séjours)
+        - [1.2.6 Pièges et limites d'utilisations](#126-pièges-et-limites-dutilisations)
+        - [1.2.7 Pour aller plus loin](#127-pour-aller-plus-loin)
 
 
 ---
 
 
-## **1. Requête type dans le PMSI-HAD**   <a name="requete-type-dans-le-pmsi-had"></a>
+## **1. Requête type dans le PMSI-HAD**   
 
 Cette fiche décrit une **requête type de sélection de séjours dans les tables du PMSI-HAD à partir des diagnostics et des actes CCAM**. Des variables relatives au bénéficiaire, au séjour et à l’établissement sont restituées en sortie.
 
@@ -40,13 +40,13 @@ Ce document fait suite à la fiche ["Requête type dans le PMSI-MCO"](../fiches/
 Il est construit à partir des [Guides Méthodologiques de production des recueils d’informations standardisés de l’Hospitalisation à Domicile](https://www.atih.sante.fr/les-guides-methodologiques-had) et de la [formation PMSI élaborée par l’ATIH, les ARS Centre-Val de Loire et Normandie, le HDH et la Cnam](../formation_snds/documents_cnam/Formation_PMSI.md).
 
 
-### **1.1 Rappel des concepts de fonctionnement du PMSI-HAD** <a name="rappel-des-concepts-de-fonctionnement-du-pmsi-had"></a>
+### **1.1 Rappel des concepts de fonctionnement du PMSI-HAD** 
 
 
 ___
 
 
-#### **1.1.1 Fonctionnement du PMSI** <a name="fonctionnement-du-pmsi"></a>
+#### **1.1.1 Fonctionnement du PMSI** 
 
 
 Une structure d’HAD permet d’assurer au domicile du bénéficiaire des soins non réalisables en ville car trop complexes, trop intenses ou trop techniques, pour des personnes qui ont besoin d’une équipe pluridisciplinaire (infirmières, rééducateurs, assistante sociale, psychologue, diététicienne, etc.) et médicalisée (il y a toujours un médecin coordonnateur en HAD) disponible 24h/24. Le domicile peut être un établissement social ou médico-social avec hébergement.
@@ -71,10 +71,10 @@ Cf. [Schéma des concepts du PMSI-HAD](../fiches/concepts_PMSI.md#pmsi-had).
 
 
 
-#### **1.1.2 Tables et variables principales** <a name="tables-et-variables-principales"></a>
+#### **1.1.2 Tables et variables principales** 
 
 
-La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en HAD](../formation_snds/initiation/snds_en_bref#2-3-3-pmsi-had).
+La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en HAD](../formation_snds/initiation/snds_en_bref.md#_2-3-3-pmsi-had).
 
 
 Dans les tables HAD, un séjour est identifié pour une année de soins par :
@@ -170,7 +170,7 @@ Dans le cas d’un séjour sur plusieurs années, l’information du séjour est
 
 
 
-#### **1.1.3 Les diagnostics** <a name="les-diagnostics"></a>
+#### **1.1.3 Les diagnostics** 
 
 
 En résumé, les données médicales principales de ce champ d’activité, renseignées pour chaque sous-séquence (`SSEQ_NUM`) de chaque séquence (`SEQ_NUM`), sont :
@@ -181,7 +181,7 @@ En résumé, les données médicales principales de ce champ d’activité, rens
 - Les **diagnostics associés** pris en charge mais non liés au MPP ou au MPA (`DGN_ASS` de la `table D`)
 
 
-### **1.2 Requêtes types** <a name="requetes-types"></a>
+### **1.2 Requêtes types**
 
 
 ___
@@ -190,7 +190,7 @@ ___
 Dans l’objectif de présenter des requêtes qui s’adaptent facilement aux différentes variantes des langages de bases de données, il a été choisi d’utiliser le système de gestion de base de données MySQL (système le plus utilisé aujourd’hui).
 
 
-#### **1.2.1 Filtres recommandés** <a name="filtres-recommandes"></a>
+#### **1.2.1 Filtres recommandés**
 
 
 Dans la [formation PMSI](../formation_snds/documents_cnam/Formation_PMSI.md), il est recommandé d’exclure les sous-séquences qui ne seront pas valorisées, i.e. les sous-séquences avec une erreur de groupage (diapo 198) :
@@ -216,7 +216,7 @@ AND COH_SEX_RET = '0'
 ```
 
 
-#### **1.2.2 Sélection des séjours** <a name="selection-sur-les-sejours"></a>
+#### **1.2.2 Sélection des séjours** 
 
 
 Considérons l’ensemble des séjours en HAD terminés en 2021, sélectionnés avec les filtres recommandés :
@@ -244,7 +244,7 @@ WHERE S.SEJ_FINI = '1'
   ```
 
 
-  ### **1.2.3 Sélection sur les diagnostics** <a name="selection-sur-les-diagnostics"></a>
+  ### **1.2.3 Sélection sur les diagnostics**
 
 
 Sélection des sous-séquences de séjours en HAD, terminées en 2021, avec un DP ou un DCMPP de cancer du sein (code [CIM-10](../glossaire/CIM.md) C50).
@@ -301,7 +301,7 @@ INNER JOIN
 Dans le champ HAD, il est courant de vouloir sélectionner sur les MPP, MPA et IK. Comme ces trois variables principales en HAD résument la prise en charge et l’état de santé du patient pour chaque séquence, et qu’elles servent à la valorisation du séjour, elles sont très souvent décrites. La sélection sur ces variables peut se faire selon la même requête que la sélection sur le DP, car elles se trouvent dans la table B.
 
 
-   ### **1.2.4 Sélection sur les actes CCAM** <a name="selection-sur-les-actes-ccam"></a>
+   ### **1.2.4 Sélection sur les actes CCAM** 
 
 
 Sélection des séquences avec un diagnostic de cancer du sein ET au moins un acte de surveillance d'une analgésie contrôlée par le patient (code [CCAM](https://www.atih.sante.fr/nomenclatures-de-recueil-de-linformation/ccam) ANMP001), c'est-à-dire sur la même prise en charge.
@@ -325,7 +325,7 @@ AND B.RHAD_NUM = A.RHAD_NUM
 AND B.SEQ_NUM = A.SEQ_NUM;
  ```
  
-   ###  **1.2.5 Table finale de séjours** <a name="table-finale-de-sejours"></a>
+   ###  **1.2.5 Table finale de séjours** 
 
 
 Création d'une table de travail avec une ligne par séjour :
@@ -348,7 +348,7 @@ AND S.RHAD_NUM = A.RHAD_NUM;
 Il est possible d’ajouter des informations au niveau du bénéficiaire. Les variables âges AGE_ANN, sexe COD_SEX, type de lieu de domicile PAT_TYP_DOM, code géographique de résidence BDI_COD ou COD_POST se trouvent dans la table B. Il faut sélectionner l’information de la première séquence et sous-séquence, ou inversement de la dernière séquence et sous-séquence du séjour, en fonction des besoins d’analyse.
 
 
-Cependant, pour les données administratives, il est conseillé d’utiliser les données disponibles dans la table IR_BEN_R du DCIR. Une requête type pour construire une table bénéficiaires est disponible dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/etude_vie_reelle.md#4-3-selection-des-beneficiaires). Il est importantimportant de se souvenir que l’[identifiant bénéficiaire](../formation_snds/initiation/schema_relationnel_snds.md#3-2-les-beneficiaires) dans le PMSI est la variable NIR_ANO_17 (qui correspond au BEN_NIR_PSA du DCIR) et que le rang gémellaire n’est pas disponible. Il faut donc travailler constamment avec une table intermédiaire pour avoir une correspondance entre le BEN_NIR_PSA/NIR_ANO_17 et le BEN_NIR_ANO.
+Cependant, pour les données administratives, il est conseillé d’utiliser les données disponibles dans la table IR_BEN_R du DCIR. Une requête type pour construire une table bénéficiaires est disponible dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/etude_vie_reelle.md#_4-3-selection-des-beneficiaires). Il est importantimportant de se souvenir que l’[identifiant bénéficiaire](../formation_snds/initiation/schema_relationnel_snds.md#_3-2-les-beneficiaires) dans le PMSI est la variable NIR_ANO_17 (qui correspond au BEN_NIR_PSA du DCIR) et que le rang gémellaire n’est pas disponible. Il faut donc travailler constamment avec une table intermédiaire pour avoir une correspondance entre le BEN_NIR_PSA/NIR_ANO_17 et le BEN_NIR_ANO.
 
 
 Il est également possible d’ajouter des informations administratives au niveau de l’établissement, notamment le statut juridique :
@@ -367,7 +367,7 @@ ON S.ETA_NUM_EPMSI = E.ETA_NUM;
  ```
 
 
- ### **1.2.6 Pièges et limites d'utilisations** <a name="pieges-et-limites-d-utilisations"></a>
+ ### **1.2.6 Pièges et limites d'utilisations** 
 
 
 Il est recommandé de bien définir le périmètre de données à analyser en fonction des objectifs d’étude, et notamment d’identifier s’il est possible de travailler sur les séjours terminés par année ou s’il est nécessaire de suivre l’activité de HAD au cours d’un séjour sur plusieurs années.
@@ -392,7 +392,7 @@ Les bases de données PMSI ont une structure complexe qui varie dans le temps :
 Des informations administratives sur le bénéficiaire et les données d’activité hospitalière sont en doublons entre le PMSI et le DCIR : cf. [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md).
 
 
-### **1.2.7 Pour aller plus loin** <a name="pour-aller-plus-loin"></a>
+### **1.2.7 Pour aller plus loin** 
 
 
 
