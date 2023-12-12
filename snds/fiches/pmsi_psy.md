@@ -176,7 +176,7 @@ WHERE RSA.FOR_ACT IN ('01','02','03','04','05','06','07')
 	AND C.SEJ_RET = '0' AND C.FHO_RET = '0' AND C.PMS_RET = '0'
 	AND C.DAT_RET = '0' AND C.COH_NAI_RET = '0' AND C.COH_SEX_RET = '0' ;
   ```
- #### **1.2.3 Sélection sur les diagnostics**
+ ### **2.3 Sélection sur les diagnostics**
 Sélection des séquences en hospitalisation complète en 2021, avec un DP de schizophrénie (code [CIM-10](../glossaire/CIM.md) F20).
 Cette sélection vise à suivre les bénéficiaires dont l'essentiel de la prise en charge, d'au moins une partie du séjour psychiatrique, est liée à leur schizophrénie.
 Dans le cas où l’objectif serait de sélectionner les patients souffrant de schizophrénie, il faudrait également utiliser les DA (dans la table RSAD).
