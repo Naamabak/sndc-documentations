@@ -9,9 +9,9 @@
 
 -   Le SNDS comporte à la fois des informations sur les médicaments
     vendus en pharmacie hospitalière ([médicaments
-    rétrocédés](https://documentation-snds.health-data-hub.fr/tables/er_ucd_f/#er-ucd-f))
+    rétrocédés](../../../snds/tables/.sources/DCIR/ER_UCD_F.md))
     et [en
-    ville](https://documentation-snds.health-data-hub.fr/tables/er_pha_f/#er-pha-f).
+    ville](../../../snds/tables/.sources/DCIR/ER_PHA_F.md).
 
 ## Tables et variables du SNDS utilisées
 
@@ -308,7 +308,7 @@ standard)</p>
 # Domaine 'Drug exposure' - PMSI
 
 Le PMSI contient les [<u>médicaments de la liste en
-SUS</u>](https://documentation-snds.health-data-hub.fr/fiches/medicaments_de_la_liste_en_sus.html#presentation)
+SUS</u>](../../../snds/fiches/medicaments_de_la_liste_en_sus.md#presentation)
 délivrés dans le cadre d'une hospitalisation, les autres prises de
 médicament ne sont pas renseignées.
 

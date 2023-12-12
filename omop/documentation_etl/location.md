@@ -181,7 +181,7 @@ manière unique le lieu tel qu'il apparaît dans les données sources.</td>
 La localisation choisie est le code commune INSEE à 5 chiffres. Ce code
 n'est pas indiqué tel quel dans le SNDS pour les patients. Il faut la
 reconstituer en suivant [cette
-méthode](https://documentation-snds.health-data-hub.fr/fiches/localisation_geographique_beneficiaires.html#construction-de-la-localisation-dans-le-pmsi)
+méthode](../../snds/fiches/localisation_geographique_beneficiaires.md#construction-de-la-localisation-dans-le-sniiram)
 à partir des variables *ben_res_com, ben_res_dpt* et *org_aff_ben.* La
 notion d'état (*state*) n'existant pas en France, nous avons choisi de
 renseigner la région.

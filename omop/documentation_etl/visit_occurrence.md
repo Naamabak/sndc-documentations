@@ -22,7 +22,7 @@ visites, qui forment une structure hiérarchique. Les concepts possibles
 dans le format OMOP-CDM sont :
 
 -   [Inpatient
-    visit](https://atdena.ohdsi.org/search-terms/terms/9201)
+    visit](https://athena.ohdsi.org/search-terms/terms/9201)
     (Visite de patient hospitalisé) Concept_ID = 9201 : Personne se
     rendant à l\'hôpital, sur un site de soins, occupant un lit, pour
     une durée de plus d\'une journée, avec des médecins et d\'autres
@@ -30,7 +30,7 @@ dans le format OMOP-CDM sont :
     heures sur 24
 
 -   [Emergency Room
-    Visit](https://atdena.ohdsi.org/search-terms/terms/9203)
+    Visit](https://athena.ohdsi.org/search-terms/terms/9203)
     (Visite de la salle d'urgence) Concept_ID = 9203 : Personne qui se
     rend dans un établissement de soins de santé spécialisé dans le
     traitement des urgences, sur un site de soins, dans un délai d\'un
@@ -38,7 +38,7 @@ dans le format OMOP-CDM sont :
     permanence pour fournir un service 24 heures sur 24
 
 -   [Emergency Room and inpatient
-    visit](https://atdena.ohdsi.org/search-terms/terms/262)
+    visit](https://athena.ohdsi.org/search-terms/terms/262)
     (Salle d\'urgence et visite des patients hospitalisés) Concept_ID =
     262 : Personne qui se rend aux urgences, puis est hospitalisée,
     lorsque le service des urgences fait partie de l\'hôpital et que la
@@ -46,7 +46,7 @@ dans le format OMOP-CDM sont :
     n\'est pas définie.
 
 -   [Non-hospital institution
-    visit](https://atdena.ohdsi.org/search-terms/terms/42898160)
+    visit](https://athena.ohdsi.org/search-terms/terms/42898160)
     (Visite d\'un établissement non hospitalier) Concept_ID = 42898160 :
     Personne se rendant dans un établissement spécialisé pour des
     raisons de santé, sur un site de soins, sans médecin mais avec la
@@ -54,7 +54,7 @@ dans le format OMOP-CDM sont :
     pour fournir un service 24 heures sur 24
 
 -   [Outpatient
-    visit](https://atdena.ohdsi.org/search-terms/terms/9202)
+    visit](https://athena.ohdsi.org/search-terms/terms/9202)
     (Visite ambulatoire) Concept_ID = 9202: Personne qui se rend dans un
     établissement de soins ambulatoires spécialisé, dans un site de
     soins, dans un délai d\'un jour, sans lit, avec des médecins ou des
@@ -62,30 +62,30 @@ dans le format OMOP-CDM sont :
     pendant la visite
 
 -   [Home
-    visit](https://atdena.ohdsi.org/search-terms/terms/581476)
+    visit](https://athena.ohdsi.org/search-terms/terms/581476)
     (Visite à domicile) Concept_ID = 581476: Prestataire visitant une
     personne, sans site de soins, dans un délai d\'un jour, fournissant
     un service
 
 -   [Telehealtd
-    visit](https://atdena.ohdsi.org/search-terms/terms/5083)
+    visit](https://athena.ohdsi.org/search-terms/terms/5083)
     (Visite en téléconsultation) Concept_ID = 5083: Le patient s\'engage
     avec le fournisseur par le biais des médias de communication
 
 -   [Pharmacy
-    visit](https://atdena.ohdsi.org/search-terms/terms/581458)
+    visit](https://athena.ohdsi.org/search-terms/terms/581458)
     (Visite en pharmacie) Concept_ID = 581458 : Personne qui se rend à
     la pharmacie pour délivrer un médicament, sur un site de soins, dans
     la journée
 
 -   [Laboratory
-    Visit](https://atdena.ohdsi.org/search-terms/terms/32036)
+    Visit](https://athena.ohdsi.org/search-terms/terms/32036)
     (Visite du laboratoire) Concept_ID = 32036 : Visite d\'un patient
     dans un établissement spécialisé, sur un site de soins, dans un
     délai d\'un jour, en vue d\'une analyse biologique.
 
 -   [Ambulance
-    Visit](https://atdena.ohdsi.org/search-terms/terms/581478)
+    Visit](https://athena.ohdsi.org/search-terms/terms/581478)
     (Visite en ambulance) Concpet_ID = 581478 : Personne utilisant un
     service de transport dans le but d\'effectuer l\'une des autres
     visites, sans site de soins, dans un délai d\'un jour,
@@ -93,7 +93,7 @@ dans le format OMOP-CDM sont :
     fournissant le service.
 
 -   [Case Management
-    Visit](https://atdena.ohdsi.org/search-terms/terms/38004193)
+    Visit](https://athena.ohdsi.org/search-terms/terms/38004193)
     : Visite de gestion de cas Concept_ID = 38004193 : Personne en
     contact avec le système de soins de santé, sans site de soins, dans
     un délai d\'un jour, sans prestataire, à des fins administratives
@@ -111,7 +111,7 @@ La durée de la visite, ou \"durée du séjour\", est définie comme suit : visi
     -   Visites sans hospitalisation (le patient ne reste pas pour une
         nuit) : tables ACE (Actes et Consultations Externes, voir la
         [documentation
-        SNDS](https://documentation-snds.healtd-data-hub.fr/fiches/actes_consult_externes.html#que-regroupent-les-actes-et-consultations-externes))
+        SNDS](../../snds/fiches/actes_consult_externes.md#que-regroupent-les-actes-et-consultations-externes))
         du PMSI. Le concept_id associé est "9202 : outpatient
         visit".
 
@@ -121,7 +121,7 @@ La durée de la visite, ou \"durée du séjour\", est définie comme suit : visi
     doublons. Pour distinguer les visites en pharmacie, en laboratoire
     et en ville (outpatient), on utilise le code de prestation de
     référence
-    ([prs_nat_ref](https://documentation-snds.healtd-data-hub.fr/fiches/prestation.html#definition)),
+    ([prs_nat_ref](../../snds/fiches/prestation.md#definition)),
     et leur correspondance avec les trois concept_id : "9202 :
     outpatient visit", "581458 : pharmacy visit" et "32036 : laboratory
     visit".
@@ -246,7 +246,7 @@ Tables du DCIR :
 </table>
 
 -   [Fichier de correspondance prs_nat_ref \--\>
-    OMOP](https://docs.google.com/spreadsheets/d/1DwK-X2WO0qr4mDB-e5fIHTQ44MDHo0mA/edit?usp=sharing&ouid=116511643135693496321&rtpof=true&sd=true)
+    OMOP](/files/Freq_prs_nat_ref_er_prs_f.csv)
 
     -   *prs_nat_ref*
     -   *mapped_omop*
@@ -439,7 +439,7 @@ de visite dont il s’agit (séjour, ambulatoire, urgence, etc.)</td>
     renseignée.
 
 -   On supprime les séjours avec [codes retours
-    erronés](https://documentation-snds.healtd-data-hub.fr/fiches/requete_type_pmsi_mco.html#_1-identification-des-tables-et-des-variables-de-la-requete),
+    erronés](../../snds/fiches/requete_type_pmsi_mco.md#_1-identification-des-tables-et-des-variables-de-la-requete),
     c'est-à-dire qu'on garde les lignes pour lesquelles les codes
     retours valent 0 (*nir_ret, nai_ret, sex_ret, sej_ret, fho_ret,
     pms_ret, dat_ret, coh_nai_ret, coh_sex_ret* des **tables C**).
@@ -447,7 +447,7 @@ de visite dont il s’agit (séjour, ambulatoire, urgence, etc.)</td>
 -   Jusqu\'en 2017, les hôpitaux de l'APHP, l'APHM et les HCL les
     séjours sont transmis en double, à la fois avec eta_num = finess
     juridique et eta_num = finess géographique. [Cette
-    fiche](https://documentation-snds.healtd-data-hub.fr/snds/fiches/activite_en_double.html)
+    fiche](../../snds/fiches/activite_en_double.md)
     conseille de prendre en compte seulement les séjours transmis à
     travers leur finess juridique. On supprime les séjours transmis à
     travers leur finess géographique, c'est à dire pour lesquels eta_num.
@@ -793,7 +793,7 @@ correspondant au sej_idt</p></td>
     renseignée.
 
 -   On supprime les séjours avec [codes retours
-    erronés](https://documentation-snds.healtd-data-hub.fr/fiches/requete_type_pmsi_mco.html#_1-identification-des-tables-et-des-variables-de-la-requete),
+    erronés](../../snds/fiches/requete_type_pmsi_mco.md#_1-identification-des-tables-et-des-variables-de-la-requete),
     c'est-à-dire qu'on garde les lignes pour lesquelles les codes
     retours valent 0 (*nir_ret, nai_ret, sex_ret, ias_ret, ent_dat_ret*
     des **tables CSTC**)
