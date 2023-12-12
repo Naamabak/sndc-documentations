@@ -74,7 +74,7 @@ Cf. [Schéma des concepts du PMSI-HAD](../fiches/concepts_PMSI.md#pmsi-had).
 #### **1.1.2 Tables et variables principales** 
 
 
-La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en HAD](../formation_snds/initiation/snds_en_bref.md#_2-3-3-pmsi-had).
+La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en HAD](../formation_snds/initiation/snds_en_bref.md#233-pmsi-had).
 
 
 Dans les tables HAD, un séjour est identifié pour une année de soins par :
@@ -348,7 +348,7 @@ AND S.RHAD_NUM = A.RHAD_NUM;
 Il est possible d’ajouter des informations au niveau du bénéficiaire. Les variables âges AGE_ANN, sexe COD_SEX, type de lieu de domicile PAT_TYP_DOM, code géographique de résidence BDI_COD ou COD_POST se trouvent dans la table B. Il faut sélectionner l’information de la première séquence et sous-séquence, ou inversement de la dernière séquence et sous-séquence du séjour, en fonction des besoins d’analyse.
 
 
-Cependant, pour les données administratives, il est conseillé d’utiliser les données disponibles dans la table IR_BEN_R du DCIR. Une requête type pour construire une table bénéficiaires est disponible dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/etude_vie_reelle.md#_4-3-selection-des-beneficiaires). Il est importantimportant de se souvenir que l’[identifiant bénéficiaire](../formation_snds/initiation/schema_relationnel_snds.md#_3-2-les-beneficiaires) dans le PMSI est la variable NIR_ANO_17 (qui correspond au BEN_NIR_PSA du DCIR) et que le rang gémellaire n’est pas disponible. Il faut donc travailler constamment avec une table intermédiaire pour avoir une correspondance entre le BEN_NIR_PSA/NIR_ANO_17 et le BEN_NIR_ANO.
+Cependant, pour les données administratives, il est conseillé d’utiliser les données disponibles dans la table IR_BEN_R du DCIR. Une requête type pour construire une table bénéficiaires est disponible dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/etude_vie_reelle.md#43-sélection-des-bénéficiaires). Il est importantimportant de se souvenir que l’[identifiant bénéficiaire](../formation_snds/initiation/schema_relationnel_snds.md#32-les-bénéficiaires) dans le PMSI est la variable NIR_ANO_17 (qui correspond au BEN_NIR_PSA du DCIR) et que le rang gémellaire n’est pas disponible. Il faut donc travailler constamment avec une table intermédiaire pour avoir une correspondance entre le BEN_NIR_PSA/NIR_ANO_17 et le BEN_NIR_ANO.
 
 
 Il est également possible d’ajouter des informations administratives au niveau de l’établissement, notamment le statut juridique :
