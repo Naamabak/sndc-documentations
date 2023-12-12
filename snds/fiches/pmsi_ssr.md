@@ -1,5 +1,5 @@
 # **Requête type dans le PMSI-SSR**
-
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ---
 
@@ -63,13 +63,13 @@ Il existe également de l’Activité et Consultations Externes (ACE) en SSR, se
 
 
 Les informations médicales, comme les autres variables du RHA, doivent être enregistrées de façon rétrospective à l’issue de chaque semaine observée. Ces informations peuvent varier d’une semaine à l’autre, selon l’évolution de l’état clinique du patient et de sa prise en charge.
-Cf. [Schéma des concepts du PMSI-SSR](../fiches/concepts_PMSI.md#schema-des-concepts-du-pmsi-ssr).
+Cf. [Schéma des concepts du PMSI-SSR](../fiches/concepts_PMSI.md#pmsi-ssr).
 
 
 ### **1.1.2 Tables et variables principales**
 
 
-La description du schéma relationnel du Système National des Données de Santé (SNDS), des règles de nommage des tables et variables et des dictionnaires disponibles se trouve dans le ["Guide d’initiation au SNDS"](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en Soins de Suite et de Réadaptation (SSR)](../formation_snds/initiation/snds_en_bref.md#_2-3-4-pmsi-ssr-sejours).
+La description du schéma relationnel du Système National des Données de Santé (SNDS), des règles de nommage des tables et variables et des dictionnaires disponibles se trouve dans le ["Guide d’initiation au SNDS"](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en Soins de Suite et de Réadaptation (SSR)](../formation_snds/initiation/snds_en_bref.md#234-pmsi-ssr-séjours).
 
 
 Dans les tables SSR, le séjour est identifié pour une année de soins donnée par :
@@ -154,7 +154,7 @@ Les tables et variables principales en SSR, en lien avec les séjours des établ
 - **Table CSARR (`T_SSRaaCSARR`) : table des actes de rééducation** et de réadaptation (disponible depuis 2009, cependant cette table s’appelle CCAR entre 2009 et 2013)
 
 
-  Cette table contient des informations sur les actes du Catalogue Spécifique des Actes de Rééducation et Réadaptation ([CSARR](../glossaire/cdarr.md)). [Une nouvelle version est publiée chaque année](https://www.atih.sante.fr/les-versions-du-csarr).
+  Cette table contient des informations sur les actes du Catalogue Spécifique des Actes de Rééducation et Réadaptation ([CSARR](../glossaire/CdaRR.md)). [Une nouvelle version est publiée chaque année](https://www.atih.sante.fr/les-versions-du-csarr).
 
 
 - **Table CCAM (`T_SSRaaCCAM`) : table des actes techniques médicaux**(disponible depuis 2009)
@@ -300,7 +300,7 @@ GROUP BY NIR_ANO_17;
 Il est possible d’ajouter des informations au niveau du bénéficiaire. Les variables âges AGE_ANN, sexe COD_SEX, code géographique de résidence BDI_COD ou COD_POST se trouvent dans la table B. Il faut sélectionner l’information du premier RHA, ou inversement du dernier RHA, en fonction des besoins d’analyse.
 
 
-Cependant, pour les données administratives, il est conseillé d’utiliser les données disponibles dans la table IR_BEN_R du DCIR. Une requête type pour construire une table bénéficiaires est disponible dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/etude_vie_reelle.md#_4-3-selection-des-beneficiaires). Il important de se souvenir que l’[identifiant bénéficiaire](../formation_snds/initiation/schema_relationnel_snds.md#_3-2-les-beneficiaires) dans le PMSI est la variable NIR_ANO_17 (qui correspond au BEN_NIR_PSA du DCIR) et que le rang gémellaire n’est pas disponible. Il faut donc travailler constamment avec une table intermédiaire pour avoir une correspondance entre le BEN_NIR_PSA/NIR_ANO_17 et le BEN_NIR_ANO.
+Cependant, pour les données administratives, il est conseillé d’utiliser les données disponibles dans la table IR_BEN_R du DCIR. Une requête type pour construire une table bénéficiaires est disponible dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/etude_vie_reelle.md#43-sélection-des-bénéficiaires). Il important de se souvenir que l’[identifiant bénéficiaire](../formation_snds/initiation/schema_relationnel_snds.md#32-les-bénéficiaires) dans le PMSI est la variable NIR_ANO_17 (qui correspond au BEN_NIR_PSA du DCIR) et que le rang gémellaire n’est pas disponible. Il faut donc travailler constamment avec une table intermédiaire pour avoir une correspondance entre le BEN_NIR_PSA/NIR_ANO_17 et le BEN_NIR_ANO.
 
 
 Il est également possible d’ajouter des informations administratives au niveau de l’établissement, notamment le statut juridique, dans la table des RHA :

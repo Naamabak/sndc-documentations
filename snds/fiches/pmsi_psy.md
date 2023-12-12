@@ -1,7 +1,11 @@
 #**Requête type dans le PMSI-PSY**
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+---
+
 
 ## Table des matières
-- [1 Requête type dans le PMSI-PSY](#1-requête-type-dans-le-pmsi-psy)
+- [1 Requête type PMSI-PSY](#1-requête-type-pmsi-psy)
   - [1.1 Rappel des concepts de fonctionnement du PMSI-PSY](#11-rappel-des-concepts-de-fonctionnement-du-pmsi-psy)
     - [1.1.1 Fonctionnement du PMSI-PSY](#111-fonctionnement-du-pmsi-psy)
     - [1.1.2 Tables et variables principales](#112-tables-et-variables-principales)
@@ -10,7 +14,7 @@
     - [1.2.1 Filtres recommandés](#121-filtres-recommandés)
     - [1.2.2 Sélection des séjours](#122-sélection-des-séjours)
     - [1.2.3 Sélection sur les diagnostics](#123-sélection-sur-les-diagnostics)
-    - [1.2.4 Sélection sur des prises en charge spécifiques](#124-sélection-sur-les-prises-en-charge-spécifiques)
+    - [1.2.4 Sélection sur des prises en charge spécifiques](#124-sélection-sur-des-prises-en-charge-spécifiques)
     - [1.2.5 Table finale de patients](#125-table-finale-de-patients)
     - [1.2.6 Pièges et limites d'utilisations](#126-pièges-et-limites-dutilisations)
     - [1.2.7 Pour aller plus loin](#127-pour-aller-plus-loin)
@@ -47,7 +51,7 @@ Ces établissements effectuent également des soins en [ambulatoire](../glossair
 
 #### **1.1.2 Tables et variables principales**
 
-La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en PSY](../formation_snds/initiation/snds_en_bref.md#_2-3-5-pmsi-psy-rim-p-sejours-ou-actes-externes-edgar).
+La description du schéma relationnel du SNDS, des règles de nommages des tables et variables et des dictionnaires disponibles se trouve dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/schema_relationnel_snds.md). De même qu’une [synthèse des informations disponibles en PSY](../formation_snds/initiation/snds_en_bref.md#235-pmsi-psy-rim-p-séjours-ou-actes-externes-edgar).
 
 Dans les tables PSY, le séjour est identifié pour une année de soins par :
 - le [numéro FINESS](../fiches/ref_etab.md) de l’établissement : `ETA_NUM_EPMSI`,
@@ -225,7 +229,7 @@ FROM RPSA_F20_SSC_ISO_2021
 GROUP BY NIR_ANO_17 ;
 ```
 Il est possible d’ajouter des informations au niveau du bénéficiaire. Les variables âges `AGE_ANN`, sexe `COD_SEX`, code géographique de résidence `BDI_COD` ou `COD_POST` se trouvent dans la table RSA. Il faut sélectionner l’information de la première séquence, ou inversement de la dernière, en fonction des besoins d’analyse.
-Cependant, pour les données administratives, il est conseillé d’utiliser les données disponibles dans la table `IR_BEN_R` du DCIR. Une requête type pour construire une table bénéficiaires est disponible dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/etude_vie_reelle.md#_4-3-selection-des-beneficiaires). Il est important de se souvenir que l’[identifiant bénéficiaire](../formation_snds/initiation/schema_relationnel_snds.md#_3-2-les-beneficiaires) dans le PMSI est la variable `NIR_ANO_17` (qui correspond au BEN_NIR_PSA du DCIR) et que le rang gémellaire n’est pas disponible. Il faut donc travailler constamment avec une table intermédiaire pour avoir une correspondance entre le `BEN_NIR_PSA/NIR_ANO_17 et le BEN_NIR_ANO`.
+Cependant, pour les données administratives, il est conseillé d’utiliser les données disponibles dans la table `IR_BEN_R` du DCIR. Une requête type pour construire une table bénéficiaires est disponible dans le [« Guide d’initiation au SNDS »](../formation_snds/initiation/etude_vie_reelle.md#43-sélection-des-bénéficiaires). Il est important de se souvenir que l’[identifiant bénéficiaire](../formation_snds/initiation/schema_relationnel_snds.md#32-les-bénéficiaires) dans le PMSI est la variable `NIR_ANO_17` (qui correspond au BEN_NIR_PSA du DCIR) et que le rang gémellaire n’est pas disponible. Il faut donc travailler constamment avec une table intermédiaire pour avoir une correspondance entre le `BEN_NIR_PSA/NIR_ANO_17 et le BEN_NIR_ANO`.
 Il est également possible d’ajouter des informations administratives au niveau de l’établissement, notamment le statut juridique, dans la table des RPSA :
 
 ```sql
