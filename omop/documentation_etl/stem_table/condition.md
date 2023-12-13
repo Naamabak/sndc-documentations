@@ -4,7 +4,7 @@
 
 Les seuls diagnostics disponibles dans le DCIR sont les affections
 longue durée.
-([ALD](https://documentation-snds.healtd-data-hub.fr/fiches/beneficiaires_ald.html)).
+([ALD](../../../snds/fiches/beneficiaires_ald.md)).
 
 ### Tables et variables du SNDS utilisées
 
@@ -201,7 +201,7 @@ pour la période.</p></li>
 
 # Domaine 'Condition' - PMSI
 
-## [<u>Diagnostics principaux</u>](https://documentation-snds.healtd-data-hub.fr/glossaire/DP.html) 
+## [<u>Diagnostics principaux</u>](../../../snds/glossaire/DP.md) 
 
 ### Tables et variables du SNDS utilisées 
 
@@ -507,7 +507,7 @@ rhs_num</em></p></td>
 </table>
 
 
-## Diagnostics reliés et [<u>associés</u>](https://documentation-snds.healtd-data-hub.fr/glossaire/DA.html)
+## Diagnostics reliés et [<u>associés</u>](../../../snds/glossaire/DA.md)
 
 ### Tables et variables du SNDS utilisées
 

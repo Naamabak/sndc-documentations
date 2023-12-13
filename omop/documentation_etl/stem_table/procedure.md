@@ -511,5 +511,5 @@ entre le début de la visite et l’événement :</p>
 </table>
 
 ::: tip Accéder au code source
-Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healtddatahub/snds_omop)
+Le code source est disponible sur le dépôt Gitlab [suivant](https://gitlab.com/healthdatahub/snds_omop/)
 :::

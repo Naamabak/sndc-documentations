@@ -293,7 +293,7 @@ L’ajout de données provenant des Maisons Départementales des Personnes Handi
 ### 2.3.2 PMSI MCO (séjours ou séances)
 ![image](/files/HDH/2022-12-12_HDH_PMSI_MCO_MLP-2.0.png)
 
-### 2.3.3 PMSI HAD
+### 2.3.3 PMSI HAD 
 ![image](/files/HDH/2022-12-12_HDH_PMSI_HAD_MLP-2.0.png)
 
 ### 2.3.4 PMSI SSR (séjours)
