@@ -61,14 +61,14 @@ Pour retrouver les **séjours de naissance**, on suit les recommandations du doc
 
 - Séjour de la CMD 15;
 - Âge en jours de 0;
-- Mode d'entrée 8="Domicile";
+- Mode d'entrée 8="Domicile" OU mode d'entrée N="Naissance";
 - Poids de naissance supérieur ou égal à 500 grammes OU âge gestationnel supérieur ou égal à 22 semaines.
 
 En langage PMSI, cela donne:
 
 - `GRG_GHM` commençant par 15;
 - `AGE_JOU` = 0;
-- `ENT_MOD` = 8;
+- (`ENT_MOD` = 8) OU (`ENT_MOD` = N);
 - (`POI_NAI` ≥ 500) OU (`AGE_GES` ≥ 22).
 
 
