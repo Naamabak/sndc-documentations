@@ -2,10 +2,10 @@
 
 - Titre : Table individus de la cartographie des pathologies pour l'année AAAA et l'algorithme N
 <br />
-- Clé primaire : `ben_nir_psa`, `ben_rng_gem`
+- Clé primaire : `BEN_NIR_PSA`, `BEN_RNG_GEM`
 <br />
 - Clé(s) étrangère(s) : <br />
-`ben_nir_psa`, `ben_rng_gem` => table [IR_BEN_R](/tables/IR_BEN_R) [ `BEN_NIR_PSA`, `BEN_RNG_GEM` ]<br />
+`BEN_NIR_PSA`, `BEN_RNG_GEM` => table [IR_BEN_R](/tables/IR_BEN_R) [ `BEN_NIR_PSA`, `BEN_RNG_GEM` ]<br />
 
 ### Liste des variables
 <br />
@@ -18,8 +18,8 @@
 
 Nom|Type|Description|Propriétés
 -|-|-|-
-`id_carto`|chaîne de caractères|Identifiant bénéficiaire cartographie|<p>valeur unique</p>|
-`ben_nir_psa`|chaîne de caractères|Identifiant anonyme du patient dans le SNIIRAM||
-`ben_rng_gem`|nombre entier|rang de naissance du bénéficiaire||
-`version`|chaîne de caractères|Version de la cartographie||
+`BEN_NIR_PSA`|chaîne de caractères|Identifiant anonyme du patient dans le SNIIRAM||
+`BEN_RNG_GEM`|nombre entier|rang de naissance du bénéficiaire||
+`ID_CARTO`|chaîne de caractères|Identifiant bénéficiaire cartographie||
+`VERSION`|chaîne de caractères|Version||
 
