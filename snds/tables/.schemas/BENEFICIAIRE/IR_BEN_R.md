@@ -21,7 +21,7 @@ Nom|Type|Description|Propriétés
 `BEN_IDT_ANO`|chaîne de caractères|Identifiant bénéficiaire anonymisé|<p>valeur unique</p>|
 `BEN_IDT_TOP`|booléen|Top identifiant bénéficiaire Anonymisé||
 `ASS_NIR_ANO`|chaîne de caractères|Matricule anonymisé de l&#x27;ouvreur de droits||
-`BEN_IDT_MAJ`|date|Date d&#x27;alimentation du NIR BEN_NIR_NAO||
+`BEN_IDT_MAJ`|date|Date d&#x27;alimentation du NIR BEN_NIR_ANO||
 `BEN_CDI_NIR`|chaîne de caractères|Code d&#x27;identification du NIR||
 `BEN_NAI_ANN`|année|Année de naissance du bénéficiaire||
 `BEN_NAI_MOI`|date|Mois de naissance du bénéficiaire||
