@@ -1,19 +1,25 @@
 # Programmes
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Cette page référence des dépôts publics de programmes sur le SNDS dont le code est public.
+Cette page référence des dépôts de programmes sur le SNDS dont le code est public.
+Ils sont des contributions de l'écosystème, produits par différentes organisations. 
 
 
 ## Dépôt commun
 
-Le dépôt [programmes-snds](https://gitlab.com/healthdatahub/programmes-snds) héberge des programmes produits par différentes organisations, et partagés sous licence `Apache-2.0`. Il est maintenu par le Health Data Hub.
+Le dépôt commun [programmes-snds](https://gitlab.com/healthdatahub/programmes-snds) héberge des programmes produits par différentes organisations. 
+Il est maintenu par le Health Data Hub pour faciliter le partage de programme. 
+Tous les programmes disponibles sur [programme-snds](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master) sont partagés sous [licences Apache 2.0](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/LICENSE).
 
 Le README principal explique l'organisation du dépôt. 
 Le document [CONTRIBUTING.md](https://gitlab.com/healthdatahub/programmes-snds/blob/master/CONTRIBUTING.md) explique les bonnes pratiques pour contribuer à ce dépôt.
 
+
 ## Liste des programmes disponibles 
 
-Tous les programmes disponibles sur [programme-snds](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master) sont sous [licences Apache 2.0](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/LICENSE) et proviennent de contributions de l'écosystème.
+Les programmes disponibles sont présentés par organisation les ayant publié.
+
+Sauf si précisé, ils sont hébergés sur le dépôt commun.
 
 ### Agence Régional de Santé (ARS) Normandie et Centre Val de Loire 
 
@@ -32,9 +38,23 @@ Tous les programmes disponibles sur [programme-snds](https://gitlab.com/healthda
 
 - Programme de [Repérage des Rhabdomyolyse d'effort en 2016](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/SSA-CESPA/Rhabdomyolise_09012020.sas). Pour toutes informations sur ce programme, vous pouvez contacter [Bakridine Mmadi-Mrenda](mailto:bakridine.mmadi-mrenda@intradef.gouv.fr)
 
+### Haute Autorité de Santé (HAS)
+
+La HAS héberge son propre [dépôt de programmes SNDS](https://gitlab.has-sante.fr/has-sante/public/programmes-snds), 
+avec un [site web de documentation](https://has-sante.pages.has-sante.fr/public/programmes-snds/).
+
+
+Les programmes publiés en 2023 portent sur 
+
+- Pratiques de prise en charge des adultes et des enfants avec épilepsie
+- Etat des pratiques de recours à l’IRM du membre inférieur
+- Description des parcours de soins préopératoires des adultes de 40 ans et plus opérés d’une acromioplastie isolée
+
+Les programmes pour le calcul des indicateurs BPCO, publiés en 2022, sont dans un [dépôt dédié](https://gitlab.has-sante.fr/has-sante/public/snds-indicateurs-parcours-bpco).
+
 ### Santé Publique France (SpF)
 
-Ces programmes sont présents dans le dossier Santé publique France dont le détail est disponible dans le [README](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/README.md) dédié. 
+Ces programmes sont présents dans le dossier Santé publique France du dépôt commun, dont le détail est disponible dans le [README](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/README.md) dédié. 
 
 * Programme de [sélection de données socio-démographiques dans les référentiels des bénéficiaires](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/dcir_infos_socio_eco_referentiels.sas)
 * Programme de [sélection des remboursements de médicaments dans le DCIR archivé et le DCIR](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/dcir_prestations_medicaments.sas)
