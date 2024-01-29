@@ -18,7 +18,7 @@ La deuxième et la troisième parties décrivent respectivement comment retrouve
 
 ### De 2012 à 2018
 
-Le numéro anonyme mère-enfant `NIR_ANO_MAM` est décrit de manière précise dans le document [Aide à l'utilisation des informations de chaînage](https://atih.sante.fr/aide-lutilisation-des-informations-de-chainage) publié par l'ATIH. Depuis 2012, une nouvelle variable est ajoutée **au niveau de l'hôpital**: le numéro de facture de la mère. Elle permet la construction d'une variable anonyme permettant de chaîner le séjour de la mère et de l'enfant dans le PMSI: 
+Le numéro anonyme mère-enfant `NIR_ANO_MAM` est décrit de manière précise dans le document [Aide à l'utilisation des informations de chaînage](https://atih.sante.fr/aide-lutilisation-des-informations-de-chainage) publié par l'ATIH. Depuis 2012, une nouvelle variable est ajoutée **au niveau de l'hôpital**: le numéro de facture de la mère. Elle permet la construction d'une variable anonyme permettant de chaîner le séjour de la mère et de l'enfant dans le PMSI ([Fiche pdf de l'ATIH](https://www.scansante.fr/sites/www.scansante.fr/files/content/312/notice_indicateurs_de_sante_perinatale_20220901.pdf)): 
 
 1. dans le séjour du nouveau-né, le numéro de séjour de la mère est indiqué dans la variable **numéro administratif de séjour de la mère**;
 2. en consultant le séjour de la mère, on retrouve son numéro anonyme;
