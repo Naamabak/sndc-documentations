@@ -3,22 +3,22 @@
 ---
 
 ## Table des matières
-- [Télémédecine](#télémédecine)
-  - [1.1 La téléconsultation](#11-la-téléconsultation)
-    - [1.1.1 Contexte](#111-contexte)
-    - [1.1.2 Dans le SNDS](#112-dans-le-snds)
-  - [1.2 La téléexpertise](#12-la-téléexpertise)
-    - [1.2.1 Contexte](#121-contexte-1)
-    - [1.2.2 Dans le SNDS](#122-dans-le-snds-1)
-  - [1.3 La télésurveillance](#13-la-télésurveillance)
-    - [1.3.1 Contexte](#131-contexte-2)
-    - [1.3.2 Dans le SNDS](#132-dans-le-snds-2)
-  - [1.4 Le télésoin](#14-le-télésoin)
-    - [1.4.1 Contexte](#141-contexte-3)
-    - [1.4.2 Dans le SNDS](#142-dans-le-snds-3)
-  - [1.5 La téléassistance](#15-la-téléassistance)
-  - [1.6 La réponse médicale téléphonique](#16-la-réponse-médicale-téléphonique)
-  - [1.7 Requêtes types](#17-requêtes-types)
+- [Télémédecine](télémédecine)
+  - [1.1 La téléconsultation](11-la-téléconsultation)
+    - [1.1.1 Contexte](111-contexte)
+    - [1.1.2 Dans le SNDS](112-dans-le-snds)
+  - [1.2 La téléexpertise](12-la-téléexpertise)
+    - [1.2.1 Contexte](121-contexte-1)
+    - [1.2.2 Dans le SNDS](122-dans-le-snds-1)
+  - [1.3 La télésurveillance](13-la-télésurveillance)
+    - [1.3.1 Contexte](131-contexte-2)
+    - [1.3.2 Dans le SNDS](132-dans-le-snds-2)
+  - [1.4 Le télésoin](14-le-télésoin)
+    - [1.4.1 Contexte](141-contexte-3)
+    - [1.4.2 Dans le SNDS](142-dans-le-snds-3)
+  - [1.5 La téléassistance](15-la-téléassistance)
+  - [1.6 La réponse médicale téléphonique](16-la-réponse-médicale-téléphonique)
+  - [1.7 Requêtes types](17-requêtes-types)
 
 ---
 
@@ -198,7 +198,7 @@ En 2021, dans l’ESND, seules les prestations 1172/TSA, 1174/TSM et 3593/TSR re
 Un télésoin permet de bénéficier d’un soin à distance avec un pharmacien ou un auxiliaire médical (ex : effectuer un bilan des traitements médicamenteux, poursuivre un programme de rééducation, réaliser un diagnostic de pédicurie-podologie).
 
 
-Depuis le 5 juin 2020, tous les actes des orthophonistes inscrits à la [NGAP](../glossaire/NGAP.md) sont réalisables en télésoin, à l’exception des bilans initiaux et des actes nécessitant un contact direct en présentiel avec le patient et/ou un équipement spécifique non disponible auprès du patient.
+Depuis le 5 juin 2020, tous les actes des orthophonistes inscrits à la [NGAP](../snds/glossaire/NGAP.md) sont réalisables en télésoin, à l’exception des bilans initiaux et des actes nécessitant un contact direct en présentiel avec le patient et/ou un équipement spécifique non disponible auprès du patient.
 
 
 Les actes en télésoin sont valorisés dans les mêmes conditions que les actes réalisés en présentiel.
