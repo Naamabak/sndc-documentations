@@ -198,7 +198,7 @@ En 2021, dans l’ESND, seules les prestations 1172/TSA, 1174/TSM et 3593/TSR re
 Un télésoin permet de bénéficier d’un soin à distance avec un pharmacien ou un auxiliaire médical (ex : effectuer un bilan des traitements médicamenteux, poursuivre un programme de rééducation, réaliser un diagnostic de pédicurie-podologie).
 
 
-Depuis le 5 juin 2020, tous les actes des orthophonistes inscrits à la [NGAP](../snds/glossaire/NGAP.md) sont réalisables en télésoin, à l’exception des bilans initiaux et des actes nécessitant un contact direct en présentiel avec le patient et/ou un équipement spécifique non disponible auprès du patient.
+Depuis le 5 juin 2020, tous les actes des orthophonistes inscrits à la [NGAP](../glossaire/NGAP.md) sont réalisables en télésoin, à l’exception des bilans initiaux et des actes nécessitant un contact direct en présentiel avec le patient et/ou un équipement spécifique non disponible auprès du patient.
 
 
 Les actes en télésoin sont valorisés dans les mêmes conditions que les actes réalisés en présentiel.
