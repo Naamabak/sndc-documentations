@@ -76,7 +76,7 @@ Se référer au [dictionnaire des variables du SNDS](https://drees.shinyapps.io/
     o	Numéro FINESS de l’établissement  
     o	Numéro séquentiel du séjour   
     o	Code UCD  
-    o	Code LES (indication des spécialités pharmaceutiques inscrites sur la liste en sus), (cette variable n'existe pas en SSR et est disponible seulement à partir de 2018 en MCO et HAD)  
+    o	Code LES (indication des spécialités pharmaceutiques inscrites sur la liste en sus), (cette variable n'existe pas en SSR et est disponible seulement à partir de 2018 en MCO et HAD, cf. [doc ATIH](https://www.atih.sante.fr/unites-communes-de-dispensation-prises-en-charge-en-sus))  
     o	Prix d'achat multiplié par le nombre administré  
     o	Nombre administré éventuellement fractionnaire  
     o	Année de la date d'administration  
@@ -94,20 +94,20 @@ Se référer au [dictionnaire des variables du SNDS](https://drees.shinyapps.io/
     o	Numéro FINESS de l’établissement  
     o	Numéro séquentiel du séjour  
     o	Code UCD  
-    o	Code LES (indication des spécialités pharmaceutiques inscrites sur la liste en sus), (cette variable n'existe pas en SSR et est disponible seulement à partir de 2018 en MCO et HAD)  
+    o	Code LES (indication des spécialités pharmaceutiques inscrites sur la liste en sus), (cette variable n'existe pas en SSR et est disponible seulement à partir de 2018 en MCO et HAD, cf. [doc ATIH](https://www.atih.sante.fr/unites-communes-de-dispensation-prises-en-charge-en-sus))  
     o	Prix d'achat unitaire TTC  
     o	Prix unitaire facturé  
     o	Quantité  
     o	Montant total facturé TTC  
     o	Coefficient de fractionnement  
     o	Année de début du séjour  
-    o   Mois de début du séjour  
+    o   Mois de début du séjour
 
 #### Tables et variables spécifiques MCO
 
 - `T_MCOaaMEDTHROMBO` : médicaments thrombolytiques pour le traitement de l’AVC ischémique (ES publics)  
 Mêmes variables que pour `T_MCOaaMEDATU`.
-- `T_MCOaaFHSTC` : médicaments en SUS ACE (ES publics)  
+- `T_MCOaaFHSTC` : médicaments rétrocédés des établissements publics dans le cadre de la pharmacie à usage interne pour les ACE (ES publics)  
     o	Numéro FINESS de l’établissement  
     o	Numéro séquentiel de l’ACE  
     o	Code UCD  
@@ -115,12 +115,12 @@ Mêmes variables que pour `T_MCOaaMEDATU`.
     o	Quantité  
     o	Montant total facturé TTC   
     o	Coefficient de fractionnement  
-    o	Année de début du séjour  
-    o	Mois de début du séjour  
+    o	Année de début du séjour/prise en charge  
+    o	Mois de début du séjour/prise en charge  
 
 #### Tables et variables spécifiques HAD
 
-- `T_MCOaaMEDCHL` : médicament coûteux hors liste en sus et hors ATU (ES publics)  
+- `T_HADaaMEDCHL` : médicament coûteux hors liste en sus et hors ATU (ES publics)  
 Mêmes variables que pour `T_HADaaMEDATU`.
 
 ### Les filtres à appliquer
@@ -222,6 +222,8 @@ Pour plus de détail concernant la table affinée UCD, se reporter à la [page d
 
 ::: tip Crédits  
 Cette fiche a été rédigée par Noémie Courtejoie (DREES).
+
+Quelques modifications apportées suite à la contribution de Guillaume Desjeux.
 :::
 
 
