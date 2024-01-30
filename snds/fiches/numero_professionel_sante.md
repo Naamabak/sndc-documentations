@@ -45,7 +45,7 @@ Pour garantir l'unicité de la ligne du professionnel, il convient de
 - ne garder que le maximum de l'année et mois de traitement (dernière situation connue du PS) 
 - ou de joindre l'année et mois de traitement en plus du numéro de PS si on souhaite connaitre la situation du PS au moment du remboursement de la prestation.
 
-Cette table peut être accessible avec certaines restrictions pour les demandes d'accès sur projet.Toutefois, elle ne conditionne pas l'accès au numéro de professionel de santé en clair.   
+Cette table peut être accessible avec certaines restrictions pour les demandes d'accès sur projet. Toutefois, elle ne conditionne pas l'accès au numéro de professionel de santé en clair.   
 
 ## Le numéro du PS est unique pour un lieu d'exécution des soins
 
@@ -141,6 +141,8 @@ La principale caractéristique de l'identifiant RPPS est qu'il est unique et pé
 
 A un numéro RPPS donné correspond également une ou plusieurs activités qui sont également recensées dans la base.
 
+Pour plus d'information, une étude a été publiée par _Desjeux G, et al. (2020)_ sur la qualité du RPPS dans les données du SNDS : [Utilisation des informations sur les professionnels de santé dans le Système national des données de santé](https://www.sciencedirect.com/science/article/abs/pii/S0398762020303357).
+
 ### Le numéro ADELI
 
 Le numéro de professionel de santé dans la base ADELI est normalement unique pour un département de gestion donné et une profession donnée. 
@@ -167,7 +169,7 @@ La correspondance avec le numéro ADELI ne peut se faire que de manière empiriq
 Celui-ci est à privilégier si l'on s'intéresse à l'offre de soins et à sa géolocalisation fine. 
 Il est unique par lieu d'exécution des soins mais un PS peut alors être compté plusieurs fois s'il exerce dans plusieurs cabinets.
 
-A savoir : Le dénombrement des professionnels de santé diffusé par l'Assurance Maladie est réalisé sur le numéro PS de chainage statistique (= sur les cabinets principaux).
+A savoir : Le dénombrement des professionnels de santé diffusé par l'Assurance Maladie est réalisé sur le numéro PS de chainage statistique (= sur les cabinets principaux).8252662
 
 Dans le portail SNDS, ces tables, dont le nom commence par DENB\_PS ou DNB\_PS, se trouvent dans la bibliothèque SAS « RFCOMMUN». 
 Elles sont disponibles par année et par zone géographique (bassin de vie, commune, zone urbaine sensible (ZUS), zone franche urbaine (ZFU), IRIS et quartier prioritaire de la politique de la ville (QPV).
