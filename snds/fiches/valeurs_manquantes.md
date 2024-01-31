@@ -1,4 +1,3 @@
-
 # Valeurs manquantes
 
 Tenir compte de la présence de valeurs manquantes dans les requêtes Snds
@@ -62,7 +61,7 @@ quit;
 ```
 
 
-Ref : https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Nulls.html
+Ref : [SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Nulls.html)
 
 
 
