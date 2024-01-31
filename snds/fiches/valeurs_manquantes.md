@@ -1,3 +1,6 @@
+
+# Valeurs manquantes
+
 Tenir compte de la présence de valeurs manquantes dans les requêtes Snds
 
 
