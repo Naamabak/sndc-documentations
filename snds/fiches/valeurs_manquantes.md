@@ -1,6 +1,6 @@
 # Valeurs manquantes dans les requêtes SNDS
 
-En effet, la **présence de valeurs manquantes peut avoir un impact non souhaité, s’il n’y est fait attention,
+La **présence de valeurs manquantes peut avoir un impact non souhaité, s’il n’y est fait attention,
 sur le résultat de requêtes SQL**, lorsque les termes de la requête utilisent des fonctions impliquant
 des champs comportant des valeurs manquantes. En effet, dans ce cas, un contenu vide i.e. non défini, ne peut être évalué et le résultat de la fonction est à son tour une valeur manquante ce qui, à
 moins de le spécifier autrement, écarte la ligne du résultat de la requête. Tous les types de fonctions
