@@ -1,3 +1,9 @@
+---
+tags:
+    - Généralité SNDS
+    - Fiche-programme
+---
+
 # Valeurs manquantes dans les requêtes SNDS
 
 La **présence de valeurs manquantes peut avoir un impact non souhaité, s’il n’y est fait attention,
