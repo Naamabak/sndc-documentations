@@ -47,7 +47,7 @@ AND ( BEN_DCD_AME >= ‘202101’ OR BEN_DCD_AME = ‘160001’ )
 
 #### **1.1.2 Référentiel médicalisé**
 
-Pour travailler sur le référentiel médicalisé [IR_IMB_R](../tables/.sources/DCIR_DCIRS/IR_IMB_R.md), qui permet notamment d’identifier les bénéficiaires du dispositif de l’[ALD](../glossaire/ALD.md) , il est conseillé d’effectuer la sélection sur les diagnostics codés en CIM-10 sur 3 caractères ou via la référentiel de la classification des ALD.
+Pour travailler sur le référentiel médicalisé [IR_IMB_R](../tables/DCIR_DCIRS/IR_IMB_R.md), qui permet notamment d’identifier les bénéficiaires du dispositif de l’[ALD](../glossaire/ALD.md) , il est conseillé d’effectuer la sélection sur les diagnostics codés en CIM-10 sur 3 caractères ou via la référentiel de la classification des ALD.
 
 Identification de bénéficiaires sur un code diagnostic sur l’année 2021, exemple du diabète :
 
