@@ -165,17 +165,6 @@ from ORAVUE.T_MCO18UM T1 left join ORAVUE.T_MCO18C T2 on (T1.ETA_NUM=T2.ETA_NUM 
 where t2.NIR_ANO_17 in (select ben_nir_psa from ORAUSER.detenus)
 group by 1,3;
 quit;
-Proc sql; 
-Create table detenu_UM as select 
-distinct t2.NIR_ANO_17,
-count(distinct T1.ETA_NUM||t1.RSA_NUM) as nb_sejour,
-AUT_TYP1_UM
-from ORAVUE.T_MCO18UM T1 left join ORAVUE.T_MCO18C T2 on (T1.ETA_NUM=T2.ETA_NUM and T1.RSA_NUM=T2.RSA_NUM)
-						INNER JOIN ORAVUE.T_MCO18B T3 on (T1.ETA_NUM=T3.ETA_NUM and T1.RSA_NUM=T3.RSA_NUM)
-where t2.NIR_ANO_17 in (select ben_nir_psa from ORAUSER.detenus)
-group by 1,3;
-quit;
-
 
 ```
 
@@ -209,7 +198,7 @@ Le troisième caractère donne des informations sur le secteur.
 
 ```sql
 /* l'UHSA correspond aux UM qui ont un 3ieme caractère = P */
-/* ici on s'interresse à tous les détenus (à partir du code petit régime) et on recherche l'unité médicale dans lequel se trouve le patient*/
+/* ici on s'interesse à tous les détenus (à partir du code petit régime) et on recherche l'unité médicale dans lequel se trouve le patient*/
 proc sql;
 Create table detenu_UHSA as 
 select 
@@ -221,7 +210,36 @@ group by 2
 ;
 quit;
 
-``` 
+```
+
+Au niveau des R3A, on ne peut récupérer que les détenus qui ont une hospitalisation compléte ou partielle (seuls ces dernier ont un NIR_ANO_17 et nous permettent de chainer le NIR_ANO_17 avec l'IPP_IRR_CRY présent dans la table `T_RIPAAC`)  
+
+```sql
+/* recuperation des NIR_ANO_17 des detenus et de l'IPP */ 
+proc sql;
+drop table ORAUSER.detenus_IPP ;
+create table ORAUSER.detenus_IPP as 
+select distinct t2.NIR_ANO_17,
+T1.ETA_NUM_EPMSI,
+ t1.IPP_IRR_CRY 
+from ORAVUE.T_RIP18RSA t1 LEFT JOIN ORAVUE.T_RIP18C t2 on (t1.ETA_NUM_EPMSI=t2.ETA_NUM_EPMSI and t1.RIP_NUM=t2.RIP_NUM)
+and t2.NIR_ANO_17 in (select ben_nir_psa from ORAUSER.detenus);
+quit;
+
+/* recuperation des actes en ambulatoire sur les detenus */ 
+
+proc sql;
+Create table detenu_UHSA_lieu as 
+select distinct ACt_LIEU,
+count(distinct ETA_NUM_EPMSI||IPP_IRR_CRY) as nb_patient, 
+count(distinct ETA_NUM_EPMSI||ORD_NUM||SEJ_IDT) as nb_passage
+from ORAVUE.T_RIP18R3A t1 
+where ETA_NUM_EPMSI||IPP_IRR_CRY in (select ETA_NUM_EPMSI||IPP_IRR_CRY from ORAUSER.detenus_IPP)
+group by 1
+;
+quit;
+
+```
 
 On peut savoir où a eu lieu le soin grâce à la variabe `ACT_LIEU` dans les tables `T_RIPaaRSA` ou `T_RIPaaR3A`. 
 Le code `L06` correspond au milieu pénitentier. 
