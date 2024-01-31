@@ -1,4 +1,12 @@
-# **Requête type dans le PMSI-PSY**
+---
+tags:
+    - Généralité SNDS
+    - Diagnostics
+    - PMSI
+    - Fiche-programme
+---
+
+# Requête type dans le PMSI-PSY
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ---
