@@ -1,6 +1,6 @@
-# Valeurs manquantes
 
-Tenir compte de la présence de valeurs manquantes dans les requêtes Snds
+
+# Tenir compte de la présence de valeurs manquantes dans les requêtes Snds
 
 
 La **présence de valeurs manquantes peut avoir un impact non souhaité, s’il n’y est fait attention,
