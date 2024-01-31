@@ -1,4 +1,12 @@
-# **Requête type dans le PMSI-HAD**
+---
+tags:
+    - Généralité SNDS
+    - Diagnostics
+    - PMSI
+    - Fiche-programme
+---
+
+# Requête type dans le PMSI-HAD
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 ---
