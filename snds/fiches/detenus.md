@@ -21,7 +21,7 @@ Cette population est rattachée au régime général d'assurance maladie et affi
 
 ## Repérage des détenus
 
-### DANS le DCIR 
+### Dans le DCIR 
 
 Dans le SNDS et plus praticulièrement dans les bases du DCIR, la population des détenus se repère avec la variable `RGM_COD`, lorsque le code de gestion vaut 65 (cf ci-dessous).
 On trouve cette variable dans la table prestation (`ER_PRS_F` dans le DCIR ou [NS_PRS_F](../tables/DCIRS/NS_PRS_F.md) dans le DCIRS). 
@@ -174,7 +174,7 @@ Pour chaque région pénitentaire, il existe un Services Médico-Psychologiques 
 
 Pour les prisons ne disposant pas d’un SMPR, le dispositif de soins psychiatrique implique des personnels soignants issus d’un établissement psychiatrique qui assurent des vacations et sont intégrés dans les UHSA (Unités d’Hospitalisation Spécialement Aménagées), visant à accueillir les détenus ayant besoin de soins en milieu hospitalier.
 
-# Les UHSA 
+### Les UHSA 
 La loi de programmation et d’orientation de la justice du 9 septembre 2002 crée les UHSA ( Unités d’Hospitalisation Spécialement Aménagées), visant à accueillir les détenus ayant besoin de soins en milieu hospitalier 
 
 – les unités sont implantées au sein d’un établissement de santé mentale
@@ -299,7 +299,9 @@ DCIR exploitation ARS NORMANDIE (données detenus Normands)
  
  
 ::: tip Crédits
-Cette fiche a été initialement rédigée par Céline Leroy, ARS Normandie,  MAJ AOUT 2020 
+Cette fiche a été initialement rédigée par Céline Leroy, ARS Normandie.
+
+MAJ: 08/2020, 01/2024  
 :::
 
 
