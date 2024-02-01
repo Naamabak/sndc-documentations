@@ -1,28 +1,5 @@
-# **Télémédecine**
-
----
-
-## Table des matières
-- [Télémédecine]
-  - [1.1 La téléconsultation]
-    - [1.1.1 Contexte]
-    - [1.1.2 Dans le SNDS]
-  - [1.2 La téléexpertise]
-    - [1.2.1 Contexte]
-    - [1.2.2 Dans le SNDS]
-  - [1.3 La télésurveillance]
-    - [1.3.1 Contexte]
-    - [1.3.2 Dans le SNDS]
-  - [1.4 Le télésoin]
-    - [1.4.1 Contexte]
-    - [1.4.2 Dans le SNDS]
-  - [1.5 La téléassistance]
-  - [1.6 La réponse médicale téléphonique]
-  - [1.7 Requêtes types]
-
----
-
-## **Télémédecine**
+# Télémédecine
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 
 La télémédecine est une pratique médicale effectuée par un médecin à distance en mobilisant des technologies de l’information et de la communication.
 
@@ -36,21 +13,19 @@ La télémédecine est constituée de 6 types de prestations :
 
 Les éléments de contexte sont tirés du site Ameli : [Espace Professionnel de santé – Télémédecine](https://www.ameli.fr/rhone/medecin/exercice-liberal/telemedecine) et [Espace Assuré – Télémédecine](https://www.ameli.fr/rhone/assure/remboursements/rembourse/consultations-telemedecine/telemedecine).
 
-### **1.1 La téléconsultation**
+## La téléconsultation
 
----
+### Contexte
 
-#### **1.1.1 Contexte**
-
-La téléconsultation ou consultation à distance est une consultation réalisée par un médecin (généraliste ou de toute autre spécialité médicale), à distance d’un patient, ce dernier pouvant être assisté ou non par un autre professionnel de santé (PS ; ex : médecin, infirmier, pharmacien). Elle peut être suivi d'un acte de téléassistance médicale.
+La téléconsultation ou consultation à distance est une consultation réalisée par un médecin (généraliste ou de toute autre spécialité médicale), à distance d’un patient, ce dernier pouvant être assisté ou non par un autre professionnel de santé (PS) (ex : médecin, infirmier, pharmacien). Elle peut être suivi d'un acte de téléassistance médicale.
 
 L’ensemble des patients peut bénéficier de téléconsultations, cependant cela relève de la décision du médecin traitant.
 
 Quelques conditions sont à respecter :
 
-- La téléconsultation doit respecter le parcours de soins coordonnés avec orientation préalable du médecin traitant ;
--Suivi régulier et de qualité des patients (alternance entre présentiel et téléconsultations) ;
--La téléconsultation doit s’inscrire dans une logique d’ancrage territorial de réponse aux soins.
+- La téléconsultation doit respecter le parcours de soins coordonnés avec orientation préalable du médecin traitant ;  
+- Suivi régulier et de qualité des patients (alternance entre présentiel et téléconsultations) ;  
+- La téléconsultation doit s’inscrire dans une logique d’ancrage territorial de réponse aux soins.
 
 
 Par rapport à la consultation, la nécessité de respecter le parcours de soins pour tout recours à une téléconsultation n'est pas requise pour :
@@ -67,11 +42,11 @@ La téléconsultation est facturée par le médecin téléconsultant au même ta
 
 Les règles de prise en charge sont les mêmes que pour une consultation en présentiel, selon les mêmes taux de prise en charge qu’une consultation classique (i.e. 70%).
 
-#### **1.1.2 Dans le SNDS**
+### Dans le SNDS
 
 La téléconsultation pouvant être réalisée par tous médecins, libéraux ou hospitaliers, ces prestations vont remonter dans le DCIR pour l’activité libérale et dans le PMSI en actes et consultations externes pour les praticiens hospitaliers publics.
 
-| Code PS5 (Prestation DCIR - PRS_NAT_REF) | Code B2 (Prestation PMSI ACE - ACT_COD) | Libellé | Commentaire |
+| Code PS5 (Prestation DCIR - `PRS_NAT_REF`) | Code B2 (Prestation PMSI ACE - `ACT_COD`) | Libellé | Commentaire |
 | ------ | ------ | ------ | ------ |
 | 1056 | JC  | TELECONSULTATION GENERALISTE IVG | Versement au PS, prestation non individualisée bénéficiaire |
 | 1057 | JCS | TELECONSULTATION SPECIALISTE IVG | Versement au PS, prestation non individualisée bénéficiaire |
@@ -89,11 +64,9 @@ En 2021, dans l’ESND, les prestations 1191/TC et 1192/TCG représentaient plus
 
 La fiche [Téléconsultations](../fiches/teleconsultations.md) propose les éléments nécessaires à la construction d’indicateurs sur la thématique des téléconsultations.
 
-### **1.2 La téléexpertise**
+## La téléexpertise
 
----
-
-#### **1.2.1 Contexte**
+### Contexte
 
 La téléexpertise permet à un médecin, dit « médecin requérant », de solliciter un confrère, dit « médecin requis », en raison de sa formation ou de sa compétence particulière, sur la base d’informations ou d’éléments médicaux liés à la prise en charge d’un patient, et ce, hors de la présence de ce dernier. Les PS non-médicaux peuvent demander une téléexpertise à un PS médical.
 
@@ -129,12 +102,12 @@ Du côté du médecin requérant, aucun acte n'aura besoin d'être facturé.
 
 L'acte de téléexpertise est pris en charge par l'Assurance Maladie obligatoire depuis le 10 février 2019.
 
-#### **1.2.1 Dans le SNDS**
+### Dans le SNDS
 
 La téléexpertise pouvant être requise et/ou réalisée par tous médecins, libéraux ou hospitaliers, ces prestations vont remonter dans le DCIR pour l’activité libérale et dans le PMSI en actes et consultations externes pour les praticiens hospitaliers publics.
 
 
-| Code PS5 (Prestation DCIR - PRS_NAT_REF) | Code B2 (Prestation PMSI ACE - ACT_COD) | Libellé | Commentaire |
+| Code PS5 (Prestation DCIR - `PRS_NAT_REF`) | Code B2 (Prestation PMSI ACE - `ACT_COD`) | Libellé | Commentaire |
 | ------ | ------ | ------ | ------ |
 | 1097 | TDT | TELE EXPERTISE DOSSIER TRAITANT | Arrêté le 29/03/2019 |
 | 1158 | TEP | ACTE DE TELE EXPERTISE| Arrêté le 31/12/2016 |
@@ -149,11 +122,9 @@ La téléexpertise pouvant être requise et/ou réalisée par tous médecins, li
 En 2021, dans l’ESND, les prestations 1193/TE1 et 1194/TE2 représentaient 100% des prestations de téléconsultations dans le DCIR et en ACE dans le PMSI MCO.
 
 
-### **1.3 Télésurveillance**
+## Télésurveillance
 
----
-
-#### **1.3.1.Contexte**
+### Contexte
 
 La télésurveillance médicale permet à un PS d’interpréter à distance des données pour le suivi médical d’un patient. L’enregistrement et la transmission de ces données peuvent être automatisés ou réalisés par le patient lui-même ou par le PS.
 
@@ -170,12 +141,12 @@ Les nouveaux actes de télésurveillance sont également rémunérés sous forme
 - Niveau 1 (TVA) : 11 € ;
 - Niveau 2 (TVB) : 28 €.
 
-#### **1.3.2 Dans le SNDS**
+### Dans le SNDS
 
 La télésurveillance pouvant être réalisée par tous PS, libéraux ou hospitaliers, ces prestations vont remonter dans le DCIR pour l’activité libérale et dans le PMSI en actes et consultations externes pour les PS hospitaliers publics.
 
 
-| Code PS5 (Prestation DCIR - PRS_NAT_REF) | Code B2 (Prestation PMSI ACE - ACT_COD) | Libellé | Commentaire |
+| Code PS5 (Prestation DCIR - `PRS_NAT_REF`) | Code B2 (Prestation PMSI ACE - `ACT_COD`) | Libellé | Commentaire |
 | ------ | ------ | ------ | ------ |
 | 1172 | TSA | TELESURVEILLANCE : PS EFFECTUANT L'ACCOMPAGNEMENT | Depuis 2017 |
 | 1174 | TSM | TELESURVEILLANCE : MEDECIN TELESURVEILLANT | Depuis 2017 |
@@ -186,14 +157,16 @@ La télésurveillance pouvant être réalisée par tous PS, libéraux ou hospita
 | 3597 | TL1 | TELESURVEILLANCE COMMUN | Depuis 2022 |
 | 3601 | TL2 | TELESURVEILLANCE DEROGATOIRE | Depuis 2023 |
 
-En 2021, dans l’ESND, seules les prestations 1172/TSA, 1174/TSM et 3593/TSR remontent dans le DCIR. Respectivement, l’accompagnement représente près de 9% des prestations, la surveillance médecin près de 48% et la prestation fournisseur plus de 43%. En ACE dans le PMSI MCO, seules les prestations 1172/TSA et 1174/TSM remontent. L’accompagnement représente 9% des prestations et la surveillance médecin 91%.
+En 2021, dans l’ESND, seules les prestations 1172/TSA, 1174/TSM et 3593/TSR remontent dans le DCIR. 
+
+Respectivement, l’accompagnement représente près de 9% des prestations, la surveillance médecin près de 48% et la prestation fournisseur plus de 43%. 
+
+En ACE dans le PMSI MCO, seules les prestations 1172/TSA et 1174/TSM remontent. L’accompagnement représente 9% des prestations et la surveillance médecin 91%.
 
 
-### **1.4 Télésoin**
+## 1.4 Télésoin
 
----
-
-#### **1.4.1 Contexte**
+### Contexte
 
 Un télésoin permet de bénéficier d’un soin à distance avec un pharmacien ou un auxiliaire médical (ex : effectuer un bilan des traitements médicamenteux, poursuivre un programme de rééducation, réaliser un diagnostic de pédicurie-podologie).
 
@@ -204,11 +177,11 @@ Depuis le 5 juin 2020, tous les actes des orthophonistes inscrits à la [NGAP](.
 Les actes en télésoin sont valorisés dans les mêmes conditions que les actes réalisés en présentiel.
 
 
-#### **1.4.2 Dans le SNDS**
+### Dans le SNDS
 
 Le télésoin étant réalisé par des PS non médecins, ces prestations vont remonter exclusivement dans le DCIR à partir de 2021.
 
-| Code PS5 (Prestation DCIR - PRS_NAT_REF) | Code B2 (Prestation PMSI ACE - ACT_COD) | Libellé |
+| Code PS5 (Prestation DCIR - `PRS_NAT_REF`) | Code B2 (Prestation PMSI ACE - `ACT_COD`) | Libellé |
 | ------ | ------ | ------ |
 | 1086 | TFS | TELESOINS SF |
 | 3123 | TMK | TELESOINS MK |
@@ -220,17 +193,13 @@ Le télésoin étant réalisé par des PS non médecins, ces prestations vont re
 
 En 2021, dans l’ESND, seule la prestation 3142/TMO remontait dans les données DCIR.
 
-### **1.5 Téléassistance**
-
----
+## Téléassistance
 
 La téléassistance médicale a pour objet de permettre à un PS médecin d’assister à distance un autre PS au cours de la réalisation d’un acte.
 
 Cette prestation ne remonte pas dans le SNDS.
 
-### **1.6 Réponse Médicale Téléphonique**
-
----
+## Réponse Médicale Téléphonique
 
 La réponse médicale téléphonique englobe la réponse, les conseils ou l’orientation vers un service de secours.
 
@@ -238,9 +207,7 @@ Ce type d’acte de télémédecine est réalisé notamment par les interlocuteu
 
 Cette prestation ne remonte pas dans le SNDS.
 
-### **1.7 Requêtes Types**
-
----
+## Requêtes Types
 
 Dans l’objectif de présenter des requêtes qui s’adaptent facilement aux différentes variantes des langages de bases de données,  il a été choisi d’utiliser le système de gestion de base de données MySQL (système le plus utilisé aujourd’hui).
 
@@ -292,5 +259,6 @@ AND (TRIM(F.ACT_COD) IN ('TCP', 'TC', 'TCG', 'TDT', 'RQT', 'CRT', 'RQD', 'TSA', 
 La quasi-totalité des actes de télémédecine remontent dans la table `T_MCOaaFCSTC`, table des honoraires en ACE. Quelques rares actes mal codés peuvent remonter dans la table `T_MCOaaFBSTC`, table des prestations en ACE.
 
 
-\- tip Crédits
+::: tip Crédits
 Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
+:::
