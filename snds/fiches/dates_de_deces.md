@@ -1,7 +1,7 @@
 ---
 tags:
-    - Bénéficiaires
-    - Régime / Organisme
+- Bénéficiaires
+- Régime / Organisme
 - DCIR/DCIRS
 - Référentiels de bénéficiaires
 - PMSI  
@@ -10,16 +10,9 @@ tags:
 # Dates de décès: recueil et fiabilité
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-## Table des matières
-    - [1 Repérage des dates de décès](#1-reperage-dates-deces)  
-    - [2 Méthodologie de recueil de la date de décès BEN_DCD_DTE](#2-methodologie-recueil-date-deces-ben_dcd_dte)  
-    - [3 Exhaustivité des dates de décès](#3-exhaustivite-dates-deces)
-    - [4 Référence](#4-reference)  
-
-
 L'objectif de cette note est de documenter la fiabilité de la date de décès des individus et de proposer une méthodologie de recueil de la date la plus sûre.
 
-## 1 Repérage des dates de décès
+## Repérage des dates de décès
 
 Les informations relatives aux dates de décès des individus peuvent se situer dans différentes tables.  
 La date de décès peut être présente de façon directe ou par croisement entre deux variables. Le tableau ci-dessous recense ces informations.  
@@ -60,7 +53,7 @@ Les dates de décès sont alignées avec celles de l'INSEE pour tous les décès
 Pour plus d'informations sur l'appariement des causes médicales de décès, produites par le [CepidC](https://www.cepidc.inserm.fr/), aux données SNDS, vous pouvez consulter [ce guide](https://documentation-snds.health-data-hub.fr/snds/formation_snds/documents_cnam/guide_cepidc/2-chap2causesdeces).
 
 
-## 2 Méthodologie de recueil de la date de décès BEN_DCD_DTE
+## Méthodologie de recueil de la date de décès BEN_DCD_DTE
 
 Plusieurs méthodes peuvent être envisagées pour déterminer la date de décès. 
 Pour chacune d'elles, il est conseillé de recencer l'information aussi largement que possible depuis les différentes tables possibles.
@@ -70,7 +63,7 @@ Pour cela, il existe 2 possibilités :
 1. Choisir la date la plus récente;
 2. Etablir un algorithme donnant priorité à l'une ou l'autre des sources.
 
-## 3 Exhaustivité des dates de décès
+## Exhaustivité des dates de décès
 
 Les élements de ce paragraphe sont extraits du document ["SNDS, ce qu'il faut savoir"](https://documentation-snds.health-data-hub.fr/ressources/Sante_publique_France.html) publié par Santé publique France. 
 
@@ -94,11 +87,11 @@ La date de décès est très mal renseigné. Cependant, cela dépend des section
 - pour les SLM infogérées (LMG, MGP, MFPS, MNH, HFP, CAMIEG, Interiale) dont les non consommants sont inclus depuis septembre 2015 dans `IR_BEN_R`, la date de décès est renseignée.
 - pour ENIM, CANMSS, CRCPEN et CAVIMAC, la date de décès est renseignée à partir des BDO dans `IR_BEN_R`.
 
-::: A savoir
-L’évolution du nombre de personnes décédées par régime et par an est disponible dans la documentation de Santé Publique France (cf. [référence](#4-reference)).  
+::: A savoir  
+L’évolution du nombre de personnes décédées par régime et par an est disponible dans la documentation de Santé Publique France (cf. Référence ci-dessous).  
 :::
 
-## 4 Référence  
+## Référence  
 
 ::: tip Crédits  
 Cette fiche a été rédigée par Claire IMBAUD (CépiDc - INSERM), et complété par Anne CUERQ à partir du document "SNDS, ce qu'il faut savoir" publié par Santé publique France.  
