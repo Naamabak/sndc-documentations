@@ -6,7 +6,7 @@
 ### On repère les soins dentaires par la spécialité de l'exécutant :
 
  Dans le DCIR les codes spécialités Professionnels de Santé concernés se retrouvent sur 2 variables :
-sur la variable Spécialité médicale PS exécutant PSE_SPE_COD  (pour les médecins) :
+sur la variable Spécialité médicale PS exécutant `PSE_SPE_COD`  (pour les médecins) :
 - 18 : Stomatologie
 - 36 : Chirurgie dentaire (spécialiste O.D.F.)
 - 44 : Chirurgie maxillo-faciale
