@@ -38,9 +38,9 @@ Les soins remontées en doublon dans le DCIR et dans le PMSI sont identifiés pa
 Il est possible de spécifier des années d’études sur la frise chronologique, entre 2006 et 2023.
 
 Les tables contenant uniquement des informations de facturation et remboursement ne sont pas présentées :
-- **DCIR** : table des données de remboursements complémentaires [ER_ARO_F](../tables/.sources/DCIR/ER_ARO_F.md)   
-- **PMSI MCO** : valorisation des hospitalisations en ES public depuis 2011 dans la table [T_MCOaaVALO](../tables/.sources/PMSI/PMSI MCO/T_MCOaaVALO.md)  
-- **PMSI MCO** : valorisation des ACE depuis 2013 dans la table [T_MCOaaVALOACE](../tables/.sources/PMSI/PMSI MCO/T_MCOaaVALOACE.md)  
+- **DCIR** : table des données de remboursements complémentaires `ER_ARO_F`   
+- **PMSI MCO** : valorisation des hospitalisations en ES public depuis 2011 dans la table `T_MCOaaVALO`  
+- **PMSI MCO** : valorisation des ACE depuis 2013 dans la table `T_MCOaaVALOACE`  
 - **PMSI SSR** : valorisation des hospitalisations en ES public ou privé depuis 2018 dans la table `T_SSRaaVALO`
 
 ## Autres sources
