@@ -94,11 +94,9 @@ La date de décès est très mal renseigné. Cependant, cela dépend des section
 - pour les SLM infogérées (LMG, MGP, MFPS, MNH, HFP, CAMIEG, Interiale) dont les non consommants sont inclus depuis septembre 2015 dans `IR_BEN_R`, la date de décès est renseignée.
 - pour ENIM, CANMSS, CRCPEN et CAVIMAC, la date de décès est renseignée à partir des BDO dans `IR_BEN_R`.
 
-### Evolution selon les régimes
-
-L’évolution du nombre de personnes décédées par régime et par an est donnée dans les graphiques ci-dessous, issus de la documentation de Santé Publique France (cf. [référence](#4-reference))
-![Graphique1](C:\Users\AngéliqueDelbarre\Downloads\graphique_1_spfguidesnds)
-![Graphique2](C:\Users\AngéliqueDelbarre\Downloads\graphique_2_spfguidesnds)
+::: A savoir
+L’évolution du nombre de personnes décédées par régime et par an est disponible dans la documentation de Santé Publique France (cf. [référence](#4-reference)).  
+:::
 
 ## 4 Référence  
 
