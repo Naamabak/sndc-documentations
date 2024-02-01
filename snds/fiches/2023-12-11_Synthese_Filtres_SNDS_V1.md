@@ -1,31 +1,12 @@
-# **Synthèse des filtres recommandés dans le SNDS**
-
-
----
-# Table des matières
-- 1 [Synthèse des filtres à appliquer sur les données SNDS]
-   - 1.1 [DCIR]
-      - 1.1.1 [Référentiel bénéficiaire]
-      - 1.1.2 [Référentiel médicalisé]
-      - 1.1.3 [Prestations]
-   - 1.2 [PMSI]
-      - 1.2.1 [MCO]
-      - 1.2.2 [HAD]
-      - 1.2.3 [SMR (anciennement SSR)]
-      - 1.2.4 [PSY ou RIP ou RIM-P]
----
-
-## **1 Synthèse des filtres à appliquer sur les données SNDS**
+# Filtres recommandés dans le SNDS - synthèse
 
 Cette fiche a pour objectif de regrouper tous les filtres recommandés des requêtes types sur les tables principales du SNDS. Elle est construite à partir des supports de [Formation DCIR](../formation_snds/documents_cnam/Formation_demex.md) et [Formation PMSI](../formation_snds/documents_cnam/Formation_PMSI.md). 
 
 Afin de présenter des requêtes qui s’adaptent facilement aux différentes variantes des langages de bases de données,  il a été choisi d’utiliser le système de gestion de base de données MySQL (système le plus utilisé aujourd’hui).
 
-### **1.1 DCIR**
+## DCIR
 
----
-
-#### **1.1.1 Référentiel bénéficiaire**
+### Référentiel bénéficiaire
 
 Pour travailler sur le référentiel bénéficiaire [IR_BEN_R](../fiches/fiche_beneficiaire.md), il est conseillé de sélectionner des identifiants certifiés par l’INSEE, et éventuellement des identifiants provisoires (migrant provisoire ou ouvrant droit provisoire), et de sélectionner des bénéficiaires avec les variables âge et sexe correctement renseignées :
 
@@ -45,7 +26,7 @@ WHERE MAX_TRT_DTD >= ‘2021-01-01’ )
 AND ( BEN_DCD_AME >= ‘202101’ OR BEN_DCD_AME = ‘160001’ )
 ```
 
-#### **1.1.2 Référentiel médicalisé**
+### Référentiel médicalisé
 
 Pour travailler sur le référentiel médicalisé [IR_IMB_R](../tables/DCIR_DCIRS/IR_IMB_R.md), qui permet notamment d’identifier les bénéficiaires du dispositif de l’[ALD](../glossaire/ALD.md) , il est conseillé d’effectuer la sélection sur les diagnostics codés en CIM-10 sur 3 caractères ou via la référentiel de la classification des ALD.
 
@@ -75,7 +56,7 @@ Il est également possible de borner la sélection aux ALD commencées dans les 
 Plus d’informations dans les fiches [Requête type de sélection des affections de longue durée (ALD)](../fiches/requete_type_ald.md) et [Bénéficiaires du dispositif ALD](../fiches/beneficiaires_ald.md).  
 
 
-#### **1.1.3 Prestations**
+### Prestations
 
 Pour travailler sur la table principale du DCIR, la table des prestations `ER_PRS_F`, il est conseillé d’exclure systématiquement des requêtes l’ensemble de l’activité (i.e. actes et consultations externes – ACE - et séjours) des établissements de santé (ES) public (ex-DG). 
 
@@ -116,12 +97,12 @@ Uniquement pour dénombrer un nombre de prestations (i.e. hors analyses des coû
 
 Plus d’informations dans la fiche [Requête type dans la table prestations du DCIR](../fiches/sas_prestation_dcir.md). 
 
-### **1.2 PMSI**
+## PMSI
 
+### PMSI MCO
 ---
 
-#### **1.2.1 MCO**
-##### **1.2.1.1 Séjours**
+#### Séjours
 
 Pour travailler sur les séjours/séances en MCO, il est recommandé d’appliquer systématiquement plusieurs filtres aux requêtes :
 
@@ -153,9 +134,9 @@ AND C.COH_NAI_RET = ‘0’ AND C.COH_SEX_RET = ‘0’ ;
 
 Plus d’informations dans la fiche [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md). 
 
-##### **1.2.1.2 Activité externe**
+#### Activité externe
 
-Pour travailler sur l'activité externe des ES ex-DG en MCO, il est recommandé d’exclure les FINESS géographiques APHP, APHM et HCL dont les remontées sont en doublons sur leur FINESS juridique entre 2005 et 2017 (Cf. fiche [Activité en double dans les fichiers PMSI](../fiches/activite_en_double.md)) et d’exclure les séjours avec des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours, via la table T_MCOaaCSTC :
+Pour travailler sur l'activité externe des ES ex-DG en MCO, il est recommandé d’exclure les FINESS géographiques APHP, APHM et HCL dont les remontées sont en doublons sur leur FINESS juridique entre 2005 et 2017 (Cf. fiche [Activité en double dans les fichiers PMSI](../fiches/activite_en_double.md)) et d’exclure les séjours avec des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours, via la table `T_MCOaaCSTC` :
 
 ```sql
 /* Exclusion des FINESS géographiques APHP, APHM et HCL en doublons entre 2005 et 2017 */
@@ -169,7 +150,8 @@ AND ENT_DAT_RET = ‘0’ ;
 
 Plus d’informations dans la fiche [Actes et consultations externes](../fiches/actes_consult_externes.md). 
 
-#### **1.2.2 HAD**
+### PMSI HAD
+---
 
 Pour travailler sur les séjours en HAD, il est recommandé d’exclure les sous-séquences qui ne seront pas valorisées, i.e. les sous-séquences avec une erreur de groupage, via la table `T_HADaaGRP` :
 
@@ -184,8 +166,10 @@ Table `T_HADaaC`, variables disponibles depuis 2013 : `COH_NAI_RET = '0' AND COH
 
 Dans ce champ d’activité, les ES APHP, APHM et HCL n’ont pas remonté leur activité en double sur leur FINESS géographique.
 
-#### **1.2.3 SMR (anciennement SSR)**
-##### **1.2.3.1 Séjours**
+### PMSI SMR (anciennement SSR)
+---
+
+#### Séjours
 
 Pour travailler sur les séjours en SMR, il est recommandé d’appliquer systématiquement plusieurs filtres aux requêtes :
 
@@ -203,7 +187,7 @@ Table `T_SSRaaC`, variables disponibles depuis 2013 : `COH_NAI_RET = '0' AND COH
 
 Dans ce champ d’activité, les ES APHP, APHM et HCL n’ont pas remonté leur activité en double sur leur FINESS géographique.
 
-##### **1.2.3.2 Activité externe**
+#### Activité externe
 
 Pour travailler sur l’activité externe en SMR (disponible avec le chaînage des bénéficiaires à partir de 2013), il est recommandé d’exclure les ACE associés à des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours : 
 
@@ -212,7 +196,8 @@ Table `T_SSRaaCSTC` : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND IAS
 Les ES APHP, APHM et HCL n’ont pas remonté leur activité en double sur leur FINESS géographique.
 
 
-#### **1.2.4 PSY ou RIP ou RIM-P**
+### PMSI PSY ou RIP ou RIM-P
+---
 
 Pour travailler sur les séjours en psychiatrie, il est recommandé d’appliquer systématiquement plusieurs filtres aux requêtes :
 
@@ -224,5 +209,6 @@ Table `T_RIPaaRSA`, variable `TYP_GEN_RSA` disponible depuis 2015 : `TYP_GEN_RSA
 Table `T_RIPaaC`, variables disponibles depuis 2007 : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' `
 Table `T_RIPaaC`, variables disponibles depuis 2013 : `COH_NAI_RET = '0' AND COH_SEX_RET = '0'`
 
-\- tip Crédits
-Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
+::: tip Crédits
+Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.  
+:::
