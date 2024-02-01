@@ -37,7 +37,7 @@ Les dates de décès `BEN_DCD_DTE` ne remontent que pour les individus dont une 
 
 Les dates de décès sont alimentées par `ER_PRS_F` et par la Base de données opérante (BDO). Le flux de la BDO provient du référentiel individu de Versailles qui obtient l’information des certifications de décès par l’INSEE.
 
-::: tip A savoir
+::: warning A savoir
 La date de décès n'est remontée que pour un seul `BEN_NIR_PSA`. Pour l'ensemble des `BEN_NIR_PSA` associés au même bénéficiaire, la date de décès est renseignée par défaut même si ces `BEN_NIR_PSA` contiennent des variables aux modalités multiples (rang gémellaire, sexe, année et mois de naissance, qualité du bénéficiaire etc…).
 :::
 
@@ -87,7 +87,7 @@ La date de décès est très mal renseigné. Cependant, cela dépend des section
 - pour les SLM infogérées (LMG, MGP, MFPS, MNH, HFP, CAMIEG, Interiale) dont les non consommants sont inclus depuis septembre 2015 dans `IR_BEN_R`, la date de décès est renseignée.
 - pour ENIM, CANMSS, CRCPEN et CAVIMAC, la date de décès est renseignée à partir des BDO dans `IR_BEN_R`.
 
-::: A savoir  
+::: warning A savoir  
 L’évolution du nombre de personnes décédées par régime et par an est disponible dans la documentation de Santé Publique France (cf. Référence ci-dessous).  
 :::
 
