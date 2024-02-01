@@ -164,7 +164,7 @@ Respectivement, l’accompagnement représente près de 9% des prestations, la s
 En ACE dans le PMSI MCO, seules les prestations 1172/TSA et 1174/TSM remontent. L’accompagnement représente 9% des prestations et la surveillance médecin 91%.
 
 
-## 1.4 Télésoin
+## Télésoin
 
 ### Contexte
 
