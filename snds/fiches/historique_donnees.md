@@ -39,10 +39,10 @@ Cet historique permet de voir aussi l'ajout des différents régimes dans les ba
 | ENIM | Etablissement National des Invalides de la Marine | 06 | 2012 | 2012 | 2015 |  |
 | CANSSM | Caisse Autonome Nationale de Sécurité Sociale dans les Mines | 07 | 2012 | 2012 | 2015 |  |
 | CNMSS | Caisse Nationale Militaire de Sécurité Sociale | 08 | 2009 | 2009 | 2009 |  |
-| CRPCEN | Caisse de Retraite et de Prévoyance des Clercs et Employés de Notaires  | 10 | 2009 | 2009 | 2009 | Données disponibles à partir de août 2009 |
+| CRPCEN | Caisse de Retraite et de Prévoyance des Clercs et Employés de Notaires  | 10 | 2010 | 2010 | 2010 | Données disponibles à partir de août 2009 |
 | CCIP | Chambre de Commerce et d'Industrie de Paris | 12 | 2012-2013 | 2012-2013 | 2012 | Depuis janvier 2013, le régime CCIP n’existe plus et ses bénéficiaires sont gérés par le régime général. Pour isoler les bénéficiaires anciennement rattaché au CCIP : RGM_GRG_COD=1 et RGM_COD=(119, 129, 159, 188, 209, 539). |
 | CPPAB | Caisse de Prévoyance du Port Autonome de Bordeaux | 16 | 2012-2018 | 2012-2018 | 2012 | Depuis janvier 2018, les bénéficiaires du CCPAB sont intégrés à la CPAM de Bordeaux et ne sont plus identifiables dans le DCIR. |
-| CAVIMAC |  Caisse d'Assurance Vieillesse, Invalidité et MAladie des Cultes | 90 | 2009 | 2009 | 2009 | Données disponibles à partir de août 2009 |
+| CAVIMAC |  Caisse d'Assurance Vieillesse, Invalidité et MAladie des Cultes | 90 | 2010 | 2010 | 2010 | Données disponibles à partir de août 2009 |
 
 
 Le PMSI enregistre l’ensemble des séjours hospitaliers en France quel que soit le régime d’assurance maladie des bénéficiaires. Le code du grand régime (variable `NOE_RGM`) est présent dans la table `T_MCOaaFASTC` depuis 2007 (établissements publics) et dans la table `T_MCOaaFA` depuis 2006 (établissements privés).
