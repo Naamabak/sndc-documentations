@@ -124,7 +124,7 @@ Plusieurs institutions et agences mettent à disposition des référentiels pour
 
  Selon Les recommandations des fiches [MCO](../fiches/requete_type_pmsi_mco.md), [HAD](../fiches/pmsi_had.md) et [SSR](../fiches/pmsi_ssr.md) sont à appliquer.
 
-Selon les recommandations de la fiche [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html) :
+Selon les recommandations de la fiche [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.md) :
 - Sélectionner les administrations avec une quantité positive : `ADM_NBR > 0`
 - Spécifiquement en MCO, exclure les répétitions d’administration sur plusieurs séjours. Deux options, donnant des résultats assez proches, mais pas totalement similaires, sont possibles :
   - **Option 1** : Avant de sommer les montants des différentes lignes pour obtenir des montants par UCD, par séjour ou par bénéficiaire, diviser les quantités et prix d’achat par la variable nombre de séjours impliqués :
