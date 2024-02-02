@@ -88,8 +88,12 @@ La date de décès est très mal renseigné. Cependant, cela dépend des section
 - pour ENIM, CANMSS, CRCPEN et CAVIMAC, la date de décès est renseignée à partir des BDO dans `IR_BEN_R`.
 
 ::: warning A savoir  
-L’évolution du nombre de personnes décédées par régime et par an est disponible dans la documentation de Santé Publique France (cf. Référence ci-dessous).  
+L’évolution du nombre de personnes décédées par régime et par an est disponible dans la documentation de Santé Publique France (cf. Graphiques et référence ci-dessous). 
 :::
+
+![Graphique1](/files/Sante_publique_France/Images_Guide-SNDS-SpF/graphique_1_spfguidesnds.png)  
+
+![Graphique2](/files/Sante_publique_France/Images_Guide-SNDS-SpF/graphique_2_spfguidesnds.png)  
 
 ## Référence  
 
