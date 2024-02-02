@@ -13,7 +13,7 @@ sur le résultat de requêtes SQL**, lorsque les termes de la requête utilisent
 En effet, dans ce cas, un contenu vide (i.e. non défini) ne peut être évalué et le résultat de la fonction est à son tour une valeur manquante ce qui, à moins de le spécifier autrement, écarte la ligne du résultat de la requête. 
 
 ::: warning A savoir
-Tous les types de fonctions sont concernés: égalité, différence, jointure, etc.   
+Tous les types de fonctions et de requêtes sont concernés: égalité, différence, calcul de fréquence, jointure entre des tables, etc.   
 :::
 
 Pour conserver des lignes comportant des valeurs manquantes dans les champs utilisés dans le résultat de la requête, il convient de l’indiquer expressément comme une modalité à retenir en définissant le périmètre de la requête.  
