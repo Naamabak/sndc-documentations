@@ -14,16 +14,16 @@ Depuis le 1er juillet 2021, deux nouveaux dispositifs d’accès dérogatoires e
 - l’accès compassionnel,
 - et l’accès précoce.
 
-Afin de remplacer les six dispositifs d’Autorisation Temporaire d’Utilisation ([ATU](../glossaire/ATU.html)) existants : 
+Afin de remplacer les six dispositifs d’Autorisation Temporaire d’Utilisation ([ATU](../glossaire/ATU.md)) existants : 
 - ATU nominative, ATU de cohorte et dispositif post-ATU,
 - Recommandation Temporaire d’Utilisation (RTU), 
 - ATU d’extension d’indication et prise en charge temporaire.
 
 Cette réforme avait pour objectif de simplifier les procédures et d’accélérer les délais d’accès à ces traitements.
 
-L’accès compassionnel remplace l’ATU nominative et les RTU. Ce dispositif concerne les médicaments qui ne sont pas destinés à être commercialisés en France. Pour qu’un patient bénéficie d’un accès compassionnel, son médecin doit en faire la demande à l’Agence Nationale de Sécurité du Médicament et des produits de santé ([ANSM](../glossaire/ANSM.html)). Après évaluation par l’ANSM, un patient peut bénéficier d’un Cadre de Prescription Compassionnelle (CPC ; valable trois ans renouvelables) ou d’une Autorisation d’Accès Compassionnel (AAC ; valable un an, renouvelable).
+L’accès compassionnel remplace l’ATU nominative et les RTU. Ce dispositif concerne les médicaments qui ne sont pas destinés à être commercialisés en France. Pour qu’un patient bénéficie d’un accès compassionnel, son médecin doit en faire la demande à l’Agence Nationale de Sécurité du Médicament et des produits de santé ([ANSM](../glossaire/ANSM.md)). Après évaluation par l’ANSM, un patient peut bénéficier d’un Cadre de Prescription Compassionnelle (CPC ; valable trois ans renouvelables) ou d’une Autorisation d’Accès Compassionnel (AAC ; valable un an, renouvelable).
 
-L’accès précoce remplace les dispositifs d’ATU de cohorte, post-ATU, ATU d’extension d’indication et de prise en charge temporaire. Il concerne les médicaments destinés à être commercialisés en France, des médicaments innovants, pour lesquels des données cliniques sont ou seront disponibles dans l’indication concernée. La demande se fait via le laboratoire, directement auprès de la Haute Autorité de Santé (HAS) si l’Autorisation de Mise sur le Marché ([AMM](../glossaire/AMM.html)) a déjà été obtenue, si non auprès de l’ANSM. Après évaluation, la HAS peut octroyer une Autorisation d’Accès Précoce (AAP) d’un an renouvelable.
+L’accès précoce remplace les dispositifs d’ATU de cohorte, post-ATU, ATU d’extension d’indication et de prise en charge temporaire. Il concerne les médicaments destinés à être commercialisés en France, des médicaments innovants, pour lesquels des données cliniques sont ou seront disponibles dans l’indication concernée. La demande se fait via le laboratoire, directement auprès de la Haute Autorité de Santé (HAS) si l’Autorisation de Mise sur le Marché ([AMM](../glossaire/AMM.md)) a déjà été obtenue, si non auprès de l’ANSM. Après évaluation, la HAS peut octroyer une Autorisation d’Accès Précoce (AAP) d’un an renouvelable.
 
 Les médicaments bénéficiant d’un accès dérogatoire sont financés en sus du GHS et pris en charge à 100% par l’assurance maladie. Ils sont fournis à l’établissement de santé par le laboratoire. Par conséquent, ces traitements vont pouvoir être identifiés dans les données du SNDS, via les données hospitalières.
 
@@ -110,9 +110,9 @@ La date d’administration peut être calculée à partir du délai entre la dat
 En cas de financement par un laboratoire le prix d’achat du traitement doit être renseigné à 0 euro.
 
 - Variables de jointures de chaque champs avec les tables de séjours/séquences : 
-ETA_NUM et RSA_NUM en MCO (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.html), 
-ETA_NUM_EPMSI, RHAD_NUM, SEQ_SEJ, SSEQ_NUM en HAD (Cf. [Requête type dans le PMSI-HAD](../fiches/pmsi_had.html), 
-ETA_NUM, RHA_NUM et RHS_NUM en SSR (Cf. [Requête type dans le PMSI-SSR](../fiches/pmsi_ssr.html). 
+ETA_NUM et RSA_NUM en MCO (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md), 
+ETA_NUM_EPMSI, RHAD_NUM, SEQ_SEJ, SSEQ_NUM en HAD (Cf. [Requête type dans le PMSI-HAD](../fiches/pmsi_had.md), 
+ETA_NUM, RHA_NUM et RHS_NUM en SSR (Cf. [Requête type dans le PMSI-SSR](../fiches/pmsi_ssr.md). 
 
 
 ### **Référentiels**
@@ -122,7 +122,7 @@ Plusieurs institutions et agences mettent à disposition des référentiels pour
 - [Référentiel ATIH](https://www.atih.sante.fr/medicament-en-aap-aac-et-cpc-ex-atu-et-post-atu),
 - [Référentiel ANSM](https://ansm.sante.fr/documents/reference/referentiel-des-specialites-en-acces-derogatoire).
 
- Selon Les recommandations des fiches [MCO](../fiches/requete_type_pmsi_mco.html), [HAD](../fiches/pmsi_had.html) et [SSR](../fiches/pmsi_ssr.html) sont à appliquer.
+ Selon Les recommandations des fiches [MCO](../fiches/requete_type_pmsi_mco.md), [HAD](../fiches/pmsi_had.md) et [SSR](../fiches/pmsi_ssr.md) sont à appliquer.
 
 Selon les recommandations de la fiche [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html) :
 - Sélectionner les administrations avec une quantité positive : `ADM_NBR > 0`
@@ -176,9 +176,9 @@ Ce programme peut être adapté à l’HAD et au SSR en adaptant simplement les 
 
 ### **Pour aller plus loin**
 
-- Identification des [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).
+- Identification des [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.md).
 
-- Vigilance dans le cas des dénombrements d’administrations de médicaments à la fois en accès précoce et sur liste en sus. Il existe des cas particuliers de certains médicaments qui sont retrouvés à la fois dans les tables MED et MEDATU/MEDAPAC. Cf. les recommandations de la fiche [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).
+- Vigilance dans le cas des dénombrements d’administrations de médicaments à la fois en accès précoce et sur liste en sus. Il existe des cas particuliers de certains médicaments qui sont retrouvés à la fois dans les tables MED et MEDATU/MEDAPAC. Cf. les recommandations de la fiche [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.md).
 
 
 ::: tip Crédits 
