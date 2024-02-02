@@ -174,7 +174,7 @@ A partir de 2022, la requête doit être adaptée en remplaçant la table MEDATU
 Ce programme peut être adapté à l’HAD et au SSR en adaptant simplement les filtres des requêtes types et les variables de jointure.
 
 
-###**Pour aller plus loin**
+### **Pour aller plus loin**
 
 - Identification des [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.html).
 
