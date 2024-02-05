@@ -448,7 +448,7 @@ Les séjours des établissements privés figurent dans le [DCIR](../../glossaire
 
 Cette table permet notamment :
 
-- D’exclure les soins réalisés dans des établissements publics sous [T2A](../../glossaire/T2A.md) (ACE et séjours) pour lesquels l’information n’est pas encore exhaustive, via la variable ETE_IND_TAA : `where ETE_IND_TAA ≠ 1 or ETE_IND_TAA is missing`
+- D’exclure les soins réalisés dans des établissements publics sous [T2A](../../glossaire/T2A.md) (ACE et séjours) pour lesquels l’information n’est pas encore exhaustive, via la variable ETE_IND_TAA : `where ETE_IND_TAA ≠ 1 or ETE_IND_TAA is null`
 
 - De connaître le n° FINESS géographique de l'établissement exécutant (`ETB_EXE_FIN`) et son secteur public ou privé (`PRS_PPU_SEC`).
 
