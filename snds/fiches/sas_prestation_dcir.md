@@ -82,8 +82,8 @@ Par exemple : fusionner la table de prestations affinées de pharmacie : **ER_PH
 
 - Pour le moment, l'information sur les soins externes réalisés en établissements publics n'est pas exhaustive, et sauf cas particulier, il convient d'appliquer un filtre pour les exclure (`DPN_QLF <> 71 AND PRS_DPN_QLP <> 71`)
 
-- Les actes et consultations externes (ACE) de tous les hôpitaux publics doivent dorénavant faire l'objet d'une facturation directe T2A. Par ailleurs les séjours des hôpitaux publics ne relevant pas d'une mission d'intérêt général doivent également être financés en facturation directe. Tous les hôpitaux publics n'appliquent pas actuellement la facturation T2A. L'information sur les ACE et les séjours des hôpitaux publics appliquant la facturation directe étant de ce fait partielle, il est nécessaire d'appliquer un filtre pour exclure ces enregistrements (`ETE_IND_TAA <> 1 OR  ETE_IND_TAA IS MISSING`).
-NB : la condition `OR  ETE_IND_TAA IS MISSING` est nécessaire lorsque l'on utilise une fusion à gauche (`LEFT JOIN`) dans le programme. 
+- Les actes et consultations externes (ACE) de tous les hôpitaux publics doivent dorénavant faire l'objet d'une facturation directe T2A. Par ailleurs les séjours des hôpitaux publics ne relevant pas d'une mission d'intérêt général doivent également être financés en facturation directe. Tous les hôpitaux publics n'appliquent pas actuellement la facturation T2A. L'information sur les ACE et les séjours des hôpitaux publics appliquant la facturation directe étant de ce fait partielle, il est nécessaire d'appliquer un filtre pour exclure ces enregistrements (`ETE_IND_TAA <> 1 OR  ETE_IND_TAA IS NULL`).
+NB : la condition `OR  ETE_IND_TAA IS NULL` est nécessaire lorsque l'on utilise une fusion à gauche (`LEFT JOIN`) dans le programme. 
 Evolution du pourcentage d'hôpitaux publics appliquant la T2A (`ETE_IND_TAA = 1`) :
  inférieur à 1% (2010-2012), 3% (2013), 5% (2014), 8% (2015), 24% (2016), 33% (2017), 34% (2018), 35% (2019).
 
