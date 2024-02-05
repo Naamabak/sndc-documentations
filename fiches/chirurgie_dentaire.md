@@ -43,7 +43,7 @@ Le premier code correspond au code prestation `PRS_NAT_REF`, le deuxième code c
 *  1470	END	ENDODONTIE
 
 
-***SPR Prothèses Dentaires :*** ils concernent tous les soins en rapport avec l'implantologie dentaire (remplacement d'une ou plusieurs dents, mise en place deracines artificielles....
+***SPR Prothèses Dentaires :*** ils concernent tous les soins en rapport avec l'implantologie dentaire (remplacement d'une ou plusieurs dents, mise en place de racines artificielles....
 *  1423	SPR	ACTES DE PROTHESE DENTAIRE PRATIQUES PAR LE CHIRURGIEN-DENTISTE
 *  1425	ATD	COMPLEMENT AT 150% DENTAIRE
 *  1452	PAR	PROTHESE AMOVIBLE DEFINITIVE RESINE
