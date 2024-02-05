@@ -22,7 +22,7 @@ Cette présentation illustre l'historique de la disponibilité d'informations re
 Cet historique permet de voir aussi l'ajout des différents régimes dans les bases.
 
 ## Historique de l'information et des régimes dans les bases du SNDS
-![Historique données SNDS - P1](/files/INDS/historique_donnees/Diapo1_MAJ2020novembre.png)
+![Historique données SNDS - P1](/files/Sante_publique_France/2022-11-22_historique_SNDS_MPL-2.0.png)
 
 ![Historique données SNDS - P2](/files/INDS/historique_donnees/Diapo2_MAJ2020novembre.png)
 
@@ -67,5 +67,5 @@ Cette fiche a été intialement rédigée par Anne Cuerq à partir des référen
 :::tip Mise à jour de la fiche - 07.12.2020
 Suite à l'intégration des données de causes médicales de décès pour les années 2006 à 2012 + 2016, les deux images de la section "Historique de l'information et des régimes dans les bases du SNDS" ont été modifiées et rechargées (date de chargement des données : 07/09/2020).
 
-Pour plus d'informations sur l'intégration des causes médicales de décès dans le SNDS, vous pouvez vous reporter à la [documentation rédigée par la Cnam (Laurence De Roquefeuil et départements DEMSI, DATAD et DFID), avec l’aide de Grégoire Rey, Karim Bounebache et Claire Imbaud (INSERM – CépiDc)](../formation_snds/documents_cnam/guide_cepidc/Avant_propos.md).
+Pour plus d'informations sur l'intégration des causes médicales de décès dans le SNDS, vous pouvez vous reporter à la [documentation rédigée par la Cnam (Laurence De Roquefeuil et départements DEMSI, DATAD et DFID), avec l’aide de Grégoire Rey, Karim Bounebache et Claire Imbaud (INSERM – CépiDc)](../formation_snds/documents_cnam/guide_cepidc/Avant_propos.md), et Lisa Cahour pour le graphique de disponibilités des données selon les années et régimes.
 :::
