@@ -53,7 +53,7 @@ Les dates de décès sont alignées avec celles de l'INSEE pour tous les décès
 Pour plus d'informations sur l'appariement des causes médicales de décès, produites par le [CepidC](https://www.cepidc.inserm.fr/), aux données SNDS, vous pouvez consulter [ce guide](https://documentation-snds.health-data-hub.fr/snds/formation_snds/documents_cnam/guide_cepidc/2-chap2causesdeces).
 
 
-## Méthodologie de recueil de la date de décès BEN_DCD_DTE
+## Méthodologie de recueil de la date de décès BEN\_DCD\_DTE
 
 Plusieurs méthodes peuvent être envisagées pour déterminer la date de décès. 
 Pour chacune d'elles, il est conseillé de recencer l'information aussi largement que possible depuis les différentes tables possibles.
