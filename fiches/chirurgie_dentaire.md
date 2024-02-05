@@ -34,7 +34,7 @@ Pour avoir plus de détail sur les prestations en dentaire, on pourra aussi se s
  
 
 ### On peut aussi distinguer différents types de soins  dentaires avec les regroupements des codes actes suivants :
-
+Le premier code correspond au code prestation `PRS_NAT_REF`, le deuxième code correspond au **code acte**. Ce dernier figure dans la table de nomenclature `IR_NAT_V` dans la variable `PRS_NAT_CB2`. Pour le dentaire, le code acte correspond au **code de regroupement** en dentaire. Les codes de regroupement en dentaire figurent par exemple dans l'Annexe 10 de la norme B2 [norme B2, annexe 10](https://www.ameli.fr/fileadmin/user_upload/documents/Annexe10-B2-AMO_Novembre_2019.pdf). Le dernier élément est le libellé de la prestation.
 ***SC les Soins Conservateurs :*** ils concernent les soins du type détartrage, traitement d'une carie, dévitalisation d'une dent,...
 *  1411	SCM/SPA	ACTES EN SCM (ET SPA POUR LA CRPCEN)
 *  1433	SC/SCA	ACTES EN SC (ET SCA POUR LA CRPCEN)
