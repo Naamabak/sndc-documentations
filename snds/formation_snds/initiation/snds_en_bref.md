@@ -4,10 +4,13 @@
 ## 2.1. Notre système de santé
 ### 2.1.1 Présentation générale
 En France, le système de santé  est composé de **3 grands secteurs d’activité** :
-* Soins **réalisés en ville** :
+
+1. Soins **réalisés en ville** :  
+
 Les professionnels de santé libéraux ou salariés exercent, soit individuellement dans des cabinets, soit en groupe ou de manière coordonnée en maison de santé ou en centre de santé. Les professionnels de santé peuvent être des médecins généralistes ou spécialistes, des chirurgiens-dentistes, des pharmaciens, des sage-femmes, des infirmiers, des rééducateurs, etc.
 
-* Soins **réalisés en établissements de santé (ES)** :
+2. Soins **réalisés en établissements de santé (ES)** :
+
 Ces établissements (toutes activités confondues) sont répartis selon trois catégories de <u>statut juridique</u> :
   * Les **hôpitaux publics** : centres hospitaliers régionaux (CHR), centre hospitaliers universitaires (CHU), centres hospitaliers (CH), etc. correspond à **61,5%** des lits en 2019 (cf. [Fiche 01 – Les grandes catégories d’établissements de santé](https://drees.solidarites-sante.gouv.fr/publications/panoramas-de-la-drees/les-etablissements-de-sante-edition-2021)),
   * Les **établissements privés d’intérêt collectif**, notamment les centres de lutte contre le cancer correspond à **14,5%** des lits en 2019(cf. [Fiche 01 – Les grandes catégories d’établissements de santé](https://drees.solidarites-sante.gouv.fr/publications/panoramas-de-la-drees/les-etablissements-de-sante-edition-2021)),
@@ -27,16 +30,18 @@ Il existe également des **USLD, devenues ES-SLD** : Unités de Soins de Longue 
 
 Certains établissements de santé autorisés en [MCO](../../glossaire/MCO.md) ont également des activités de médecine d’urgence avec des services d’urgence, des Services d’Aide Médicale Urgente (SAMU) ou des Services Mobiles d’Urgence et de Réanimation (SMUR).
 
-* Soins *réalisés en établissements ou services médico-sociaux (ESMS)* :
+3. Soins **réalisés en établissements ou services médico-sociaux (ESMS)** :
+
 Ils apportent un accompagnement et une prise en charge des personnes « fragiles », en situation de précarité, d’exclusion, de handicap ou de dépendances. 
-Les **établissements médico-sociaux** regroupent notamment :
+
+D'abord, les **établissements médico-sociaux** regroupent :
 * Des Établissements d’Hébergement pour Personnes Agées Dépendantes (EHPAD)
 * Des structures pour personnes handicapées : Foyers d’Accueil Médicalisé (FAM), Maisons d’Accueil Spécialisées (MAS), Instituts Thérapeutiques, Educatifs et Pédagogiques (ITEP), …
 * Des structures pour les personnes en état de dépendance : Centres de Soins, d’Accompagnement et de Prévention en Addictologie (CSAPA), Centres d’Accueil et d’Accompagnement à la Réduction des risques pour Usagers de Drogues (CAARUD)…
 
-Les **services médico-sociaux** sont très diversifiés ; ils comprennent par exemple des services d’aide et de soins à domicile : les services de soins infirmiers à domicile (SSIAD) qui permettent la surveillance à domicile ainsi que des soins d’hygiène et paramédicaux. A bien différencier de l’hospitalisation à domicile où les patients sont hospitalisés.
+Ensuite, les **services médico-sociaux** sont très diversifiés ; ils comprennent par exemple des services d’aide et de soins à domicile : les services de soins infirmiers à domicile (SSIAD) qui permettent la surveillance à domicile ainsi que des soins d’hygiène et paramédicaux. A bien différencier de l’hospitalisation à domicile où les patients sont hospitalisés.
 
-* Enfin, il est important de mentionner que certains soins peuvent être réalisés via la *télémédecine* : Elle comprend entre autres la téléconsultation, la téléexpertise ou la télésurveillance et permet de réaliser les pratiques médicales à distance, facilitées par les nouvelles technologies de l’information et de la communication.
+>Enfin, il est important de mentionner que certains soins, selon les catégories, peuvent être réalisés via la *télémédecine* : Elle comprend entre autres la téléconsultation, la téléexpertise ou la télésurveillance et permet de réaliser les pratiques médicales à distance, facilitées par les nouvelles technologies de l’information et de la communication.
 
 ### 2.1.2 Le système de remboursement des soins et les modes de financement des établissements de santé
 En France, la sécurité sociale existe depuis 1945 (ordonnances du 4 et 19 octobre 1945) et a pour mission de protéger les Français contre tous les risques de la vie. Elle est subdivisée en 3 grands régimes (2 grands régimes depuis le 1er janvier 2018) et des régimes spéciaux, couvrant chacun une ou plusieurs catégories socioprofessionnelles spécifiques et se caractérisant par des modalités de gestion et de prise en charge différentes.
