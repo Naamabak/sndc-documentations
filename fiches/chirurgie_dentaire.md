@@ -20,7 +20,18 @@ sur la variable Nature d'activité du PS exécutant PSE_ACT_NAT (pour les chirur
 Dans le DCIRS la condition porte  sur l'ensemble de ces codes sur la variable Spécialité ou nature d'activité du professionnel de santé exécutant **PSE_ACT_SPE**
 
 En terme de codes prestations, certains  sont spécifiques aux médecins (stomatologues) d'autres spécifiques aux chirurgiens dentistes d'autres communs aux deux. A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues
-A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues
+A noter également que d'autres actes non spécifiques comme les consultations visites ou radios sont également réalisés par les chirurgiens dentistes et les stomatologues.
+
+Pour sélectionner les `PRS_NAT_REF` correspondant au champ du dentaire, on peut donc sélectionner tous les actes cliniques et techniques et filtrer les `PRS_NAT_REF` en fonction de la spécialité du PS exécutant (par exemple pour le DCIRS, dans `NS_PRS_F`, `PRS_ACT_SPE` IN [18, 19, 36, 44, 45, 53 54]). 
+
+Pour sélectionner l'ensemble des actes cliniques et techniques, on peut s'aider de la maquette de la statistique mensuelle de la CNAM ([fiche statistique mensuelle CNAM](../fiches/statistiques_mensuelles.md). 
+
+::: tip Attention
+La dernière maquette de la statistique mensuelle disponible sur le portail date de octobre 2017. Ainsi, certains codes prestations peuvent ne pas y figurer.
+:::
+
+Pour avoir plus de détail sur les prestations en dentaire, on pourra aussi se servir de la table affinée CCAM : `ER_CAM_F` dans le DCIR et `NS_CAM_F` dans le DCIRS.  
+ 
 
 ### On peut aussi distinguer différents types de soins  dentaires avec les regroupements des codes actes suivants :
 
