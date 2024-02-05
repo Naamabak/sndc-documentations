@@ -97,7 +97,7 @@ or (t2.ETE_IND_TAA is null and t2.PRS_PPU_SEC is null and t2.ETE_CAT_COD is null
 
 data qte_ps_teleconsultations;
 set qte_ps_teleconsultations;
-if etb_exe_fin <> null then delete;
+if etb_exe_fin ne . then delete;
 run;
 ```
 
