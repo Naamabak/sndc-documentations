@@ -163,6 +163,46 @@ disconnect from oracle;
 quit;
 
 ```
+## Codes regroupement par panier : réforme 100 % santé
+
+Comme énoncé ci-dessus, dans le cadre de la réforme du 100% santé, un certain nombre de nouveaux codes regroupement en dentaire ont été définis. Un code regroupement en dentaire dans la table centrale des prestations correspond à un ensemble de codes CCAM dans la table affinée. En parallèle, la CCAM a évolué, en particulier sur les codes en dentaire. 
+
+Ci-dessous sont listés les codes regroupement par panier avec leur libellé:
+
+| Panier | Codes regroupement  | Libellé du code regroupement                |
+|--------|--------------|---------------------------------------------|
+| RAC 0 | CM0          | Prothèse fixe métallique RAC0               |
+| RAC 0 | CT0          | Couronne transitoire RAC 0                  |
+| RAC 0 | CZ0          | Couronne zircone RAC 0                      |
+| RAC 0 | IC0          | Inlay core RAC 0                            |
+| RAC 0 | PA0          | Prothèse amovible RAC 0                     |
+| RAC 0 | PF0          | Prothèse fixe RAC 0                         |
+| RAC 0 | PT0          | Prothèse amovible de transition RAC 0       |
+| RAC 0 | RA0          | Réparation Adjonction RAC 0                 |
+| RAC 0 | RF0          | Réparation facette  prothèse amovible RAC 0 |
+| RAC 0 | RS0          | Réparation prothèse adjointe simple RAC 0   |
+| RAC 0 | SU0          | Supplément prothèse résine RAC 0            |
+| RAC modéré | BR1 |  Bridge RAC modéré                        |
+| RAC modéré | CT1 | Couronne transitoire RAC modéré           |
+| RAC modéré | CZ1 | Couronne zircone RAC modéré               |
+| RAC modéré | IC1 | Inlay core RAC  modéré                    |
+| RAC modéré | IN1 | Inlay onlay RAC modéré                    |
+| RAC modéré | PA1 | Prothèse amovible RAC modéré              |
+| RAC modéré | PF1 | Prothèse fixe RAC modéré                  |
+| RAC modéré | RE1 | Réparation prothèse RAC modéré            |
+| RAC modéré | SU1 | Supplément prothèse métallique RAC modéré |
+| Tarifs Libres | ICO | Inlay core Tarif libre                   |
+| Tarifs Libres | INO | Inlay onlay Tarif libre                  |
+| Tarifs Libres | PAM | Prothèse amovible métallique Tarif libre |
+| Tarifs Libres | PAR | Prothèse amovible résine Tarif libre     |
+| Tarifs Libres | PDT | Couronne transitoire Tarif libre         |
+| Tarifs Libres | PFC | Prothèse fixe céramique Tarif libre      |
+| Tarifs Libres | PFM | Prothèse fixe métallique  Tarif libre    |
+| Tarifs Libres | RPN | Réparation prothèse Tarif libre          |
+| Tarifs Libres | IMP | Implantologie                            |
+
+La 
+
 
 Les corrections sur les codes communes sont appliquées de manière à pouvoir rétablir les départements corses et d'outre-mer.
 
