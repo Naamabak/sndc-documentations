@@ -80,7 +80,8 @@ Le premier code correspond au code prestation `PRS_NAT_REF`, le deuxième code c
 *  1421	PRO	ACTES DE PROTHESE DENTAIRE PRATIQUES PAR LE MEDECIN
 *  1461	ADP	ACTES DIVERS PROTHESE DENTAIRE CCAM
 *  1471	INO	INLAY-ONLAY
-
+A noter que l'ensemble des codes actes correspondant à la réforme du 100% santé figurent ci-dessus. Les codes dont le libellé contient `RAC 0` correspondent aux biens du panier 100% santé et les codes dont le libellé contient le terme `MODERE` correspondent au biens du panier tarifs modérés. 
+Cette réforme concernant le dentaire, l'optique et l'audiologie, rentre en oeuvre progressivement de 2019 à 2021.
 ***TO Orthodontie :*** L’orthodontie concerne les soins visant à corriger ou à prévenir les déformations et les malpositions dentaires grâce à des appareils dentaires....
 *  1422	ORT/EOS	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE MEDECIN (ET EOS POUR LA CRPCEN)
 *  1424	TO/ETO	TRAITEMENTS D  ORTHODONTIE PRATIQUES PAR LE CHIRURGIEN-DENTISTE (ET ETO POUR LA CRPCEN)
