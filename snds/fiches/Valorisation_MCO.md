@@ -20,7 +20,7 @@ Le financement des ES de MCO est décomposé en 5 enveloppes financières :
 
 La répartition des enveloppes des tarifs, de dépenses en sus et des forfaits dépend du niveau d’activité de chaque ES. Ce mode de financement est appelé **financement à l’activité** ([T2A](../glossaire/T2A.md)). 
 
-En 2018, l’ONDAM hospitalier s’élevait à 80,5 milliards d’euros. 67% était représenté par l’Objectif National des Dépenses en Médecine Chirurgie Obstétrique (ODMCO), lui-même composé de la parti tarif pour 87%, des listes en sus pour 10% et des forfaits annuels pour 3%. La partie MIGAC représentait 8% de l’ONDAM hospitalier (Cf. [Journée des données hospitalières, Atelier 3 « Les coulisses d’une campagne tarifaire »])(https://www.atih.sante.fr/jdh/restitutions.html). 
+En 2018, l’ONDAM hospitalier s’élevait à 80,5 milliards d’euros. 67% était représenté par l’Objectif National des Dépenses en Médecine Chirurgie Obstétrique (ODMCO), lui-même composé de la parti tarif pour 87%, des listes en sus pour 10% et des forfaits annuels pour 3%. La partie MIGAC représentait 8% de l’ONDAM hospitalier (Cf. [Journée des données hospitalières, Atelier 3 « Les coulisses d’une campagne tarifaire »](https://www.atih.sante.fr/jdh/restitutions.html)).
 
 
 Les réformes ont visé à améliorer la pertinence des tarifs, à introduire des incitations à la qualité des soins, et à mieux prendre en compte la chronicité des pathologies.
