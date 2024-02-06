@@ -90,7 +90,7 @@ En SSR, la variable n’existe pas.
 En cas de financement par un laboratoire, le prix d’achat du traitement doit être renseigné à 0 euro.
 - Variables de jointures de chaque champs avec les tables de séjours/séquences : ETA_NUM et RSA_NUM en MCO (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md), 
 ETA_NUM_EPMSI, RHAD_NUM, SEQ_SEJ, SSEQ_NUM en HAD (Cf. [Requête type dans le PMSI-HAD](../fiches/pmsi_had.md), 
-ETA_NUM, RHA_NUM et RHS_NUM en SSR (Cf. [Requête type dans le PMSI-SSR](../fiches/pmsi_ssr.md). 
+ETA_NUM, RHA_NUM et RHS_NUM en SSR (Cf. [Requête type dans le PMSI-SSR](../fiches/pmsi_ssr.md)). 
 
 ### Référentiels
 Plusieurs institutions et agences mettent à disposition des référentiels pour ces médicaments en accès dérogatoires, notamment pour recenser les codes UCD, les codes indications ou les dates de début et de fin d’autorisation : 
