@@ -1,6 +1,6 @@
 # Valorisation de l’activité en MCO à partir du PMSI
 
-Cette fiche explique comment valoriser l’activité des séjours hospitaliers de [MCO](../glossaire/mco.md), selon les perspectives base de remboursement (BR) et remboursement Assurance Maladie Obligatoire (AMO). 
+Cette fiche explique comment valoriser l’activité des séjours hospitaliers de [MCO](../glossaire/MCO.md), selon les perspectives base de remboursement (BR) et remboursement Assurance Maladie Obligatoire (AMO). 
 
 Il est nécessaire de savoir identifier un séjour en MCO avant de pouvoir le valoriser : cf. fiche [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md). 
 
@@ -172,7 +172,7 @@ Bien que les données de valorisation PMSI soient moins précises que celles du 
 
 ### Dans le DCIR
 
-Les données hospitalières sont incomplètes dans le DCIR pour les ES ex-DG. Dans la fiche [Dépenses des établissements de santé dans le SNDS](../fiches/etablissements_sante.md#les-etablissements-publics), il est recommandé d’exclure ces prestations dans le DCIR et d’analyser les dépenses des ES publics dans le PMSI.
+Les données hospitalières sont incomplètes dans le DCIR pour les ES ex-DG. Dans la fiche [Dépenses des établissements de santé dans le SNDS](../fiches/etablissements_sante.md), il est recommandé d’exclure ces prestations dans le DCIR et d’analyser les dépenses des ES publics dans le PMSI.
 
 
 Les séjours en ES ex-OQN sont facturés directement à l’Assurance Maladie ce qui garantit l’exhaustivité des remontées d’information sur ce champ. 
@@ -252,7 +252,7 @@ LEFT JOIN
 
 Il est possible de valoriser l’activité externe des ES ex-DG. La fiche [Dépenses des établissements de santé publics dans le PMSI](../fiches/depenses_hopital_public.md#valorisation-des-actes-et-consultations-externes) détaille les modalités de calcul.
 
-Il est possible d’obtenir le montant total facturé en ajoutant le montant de reste à charge (RAC) AMO au montant AMO pour les ES publics. La fiche [Reste à charge après AMO en établissements de santé publics](../snds/fiches/rac_hopital_public.md) décrit les modalités de calcul du RAC. 
+Il est possible d’obtenir le montant total facturé en ajoutant le montant de reste à charge (RAC) AMO au montant AMO pour les ES publics. La fiche [Reste à charge après AMO en établissements de santé publics](../fiches/rac_hopital_public.md) décrit les modalités de calcul du RAC. 
 
 
 ::: tip Crédits
