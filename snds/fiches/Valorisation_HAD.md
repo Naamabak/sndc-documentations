@@ -38,7 +38,7 @@ Les [guides méthodologiques](https://www.atih.sante.fr/les-guides-methodologiqu
 
 Dans un même GHPC, des activités médicales extrêmement hétérogènes sont regroupées. Il ne s’agit donc pas d’une classification médico-économique comme en MCO ou SMR. 
 
-En HAD, la classification médico-économique est en construction à l’ATIH depuis 2018 et en phase d’expérimentation depuis juillet 2023 (https://www.atih.sante.fr/presentation-nouvelle-classification-had-0).
+En HAD, la [classification médico-économique](https://www.atih.sante.fr/presentation-nouvelle-classification-had-0) est en construction à l’ATIH depuis 2018 et en phase d’expérimentation depuis juillet 2023.
 
 ### Le tarif GHT
 
