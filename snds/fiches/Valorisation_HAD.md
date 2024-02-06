@@ -128,12 +128,12 @@ Bien que les données de valorisation PMSI soient moins précises que celles du 
   Cette table est constituée de plusieurs lignes par séjour et contient :
 
   - **Montant de base de remboursement (`REM_BAS`)** : la base de remboursement des honoraires n’est pas remontée dans la table FA.
-  - Variables de jointures : ETA_NUM_EPMSI, RHAD_NUM (Cf. [Requête type dans le PMSI-HAD](../fiches/pmsi_had.html)), 
+  - Variables de jointures : ETA_NUM_EPMSI, RHAD_NUM (Cf. [Requête type dans le PMSI-HAD](../fiches/pmsi_had.md)), 
 
 
 ### Données DCIR
 
-Les données hospitalières sont incomplètes dans le DCIR pour les ES ex-DG. Dans la fiche [Dépenses des établissements de santé dans le SNDS](../fiches/etablissements_sante.md#les-etablissements-publics), il est recommandé d’exclure ces prestations dans le DCIR et d’analyser les dépenses des ES publics dans le PMSI.
+Les données hospitalières sont incomplètes dans le DCIR pour les ES ex-DG. Dans la fiche [Dépenses des établissements de santé dans le SNDS](../fiches/etablissements_sante.md), il est recommandé d’exclure ces prestations dans le DCIR et d’analyser les dépenses des ES publics dans le PMSI.
 
 
 Les séjours en ES ex-OQN sont facturés directement à l’Assurance Maladie ce qui garantit l’exhaustivité des remontées d’information sur ce champ. 
