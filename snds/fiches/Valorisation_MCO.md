@@ -1,4 +1,4 @@
-# Valorisation de l’activité en MCO à partir du PMSI
+# Valorisation de l’activité MCO dans le PMSI
 
 Cette fiche explique comment valoriser l’activité des séjours hospitaliers de [MCO](../glossaire/MCO.md), selon les perspectives base de remboursement (BR) et remboursement Assurance Maladie Obligatoire (AMO). 
 
@@ -7,7 +7,6 @@ Il est nécessaire de savoir identifier un séjour en MCO avant de pouvoir le va
 Ce document est construit à partir des [documents de financement des établissements sanitaires](https://www.atih.sante.fr/financement-des-etablissements/mco) produit par l’[ATIH](../glossaire/ATIH.md). 
 
 ## Financement des établissements
----
 
 Depuis 2004, les établissements de santé (ES) de MCO sont financés selon un système de répartition entre les ES, d’enveloppes préalablement définies dans Objectif National de Dépenses d'Assurance Maladie (ONDAM), fixé chaque année par le Parlement. 
 
@@ -26,7 +25,6 @@ En 2018, l’ONDAM hospitalier s’élevait à 80,5 milliards d’euros. 67% ét
 Les réformes ont visé à améliorer la pertinence des tarifs, à introduire des incitations à la qualité des soins, et à mieux prendre en compte la chronicité des pathologies.
 
 ## Valorisation de l’activité
----
 
 La valorisation de l’activité hospitalière en MCO est assez complexe car composée de nombreuses règles. De plus, ces règles peuvent varier chaque année. Ce document ne se veut pas exhaustif sur l’ensemble de l’historique du PMSI et l’ensemble des cas de facturation. L’objectif est de présenter les règles principales et de savoir identifier les ressources clés pour suivre les évolutions de financement.
 
@@ -113,7 +111,7 @@ Ces financements ne sont comptabilisés dans le cadre des analyses de l’activi
 
 
 ## Dans le SNDS
----
+
 ### Dans le PMSI
 #### ES ex-DGF et ex-OQN
 
@@ -121,14 +119,14 @@ Ces financements ne sont comptabilisés dans le cadre des analyses de l’activi
   
   Cette table est constituée d’une ligne par séjour et contient :
 
-  -  **Numéro GHM (`GRG_GHM`) **
+  -  **Numéro GHM (`GRG_GHM`)**
   - **Numéro GHS (`GHS_NUM`)** : la Cnam met à disposition le numéro GHS dans la variable numérique ETE_GHS_NUM.
   - **Nombre de nuitées du séjour (`SEJ_NBJ`)**
   - **Nombre de journées au-delà de la borne EXH (`BEH_NBJ`)**
   - **Mode de sortie (`SOR_MOD`)** : permet d’identifier les séjours terminés par un décès (=9).
   - **Suppléments (`NBR_SUP_REA`, `NBR_SUP_SOI`, `NBR_SUP_STF`, `NBR_SUP_SRC`, `NBR_SUP_NN1`, `NBR_SUP_NN2`, `NBR_SUP_NN3`, `NBR_SUP_REP`, `SUP_RAD_PED`, `ANT_SUP_NBR`, `RTH_SUP_NBR`, `TOP_DEF_CARD`)**
-  - Autres suppléments (GHS_9615_ACT, SUP_HEM_HS, SUP_ENT_DPA, SUP_ENT_DPC, SUP_ENT_HEM)
-  - Variables de jointures : ETA_NUM, RSA_NUM (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md)).
+  - Autres suppléments (`GHS_9615_ACT`, `SUP_HEM_HS`, `SUP_ENT_DPA`, `SUP_ENT_DPC`, `SUP_ENT_HEM`)
+  - Variables de jointures : `ETA_NUM`, `RSA_NUM` (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md)).
 
 #### ES ex-DGF
 
@@ -138,10 +136,13 @@ Ces financements ne sont comptabilisés dans le cadre des analyses de l’activi
 
   Cette table est constituée d’une ligne par séjour et contient :
 
-  - **Type de valorisation du séjour (`VALO`)** : indique si le séjour est facturable à l’AM (=1) ou non (=0), s’il est non valorisé avec prélèvement d’organe (=3), ou si le patient est bénéficiaire de l’AME (=3), de soins urgents (=4) ou s’il est détenus (5). Pour analyser les dépenses, il est conseillé d’exclure les séjours non valorisés.
-  - **Montant total du séjour remboursé par l’AMO** (**`MNT_TOT_AM`** entre 2011 et 2021, **`MT_TOT_AM`** à partir de 2022) : calculé sur la base des GHS, avec prise en compte de l’ensemble des paiements complémentaires, des coefficients, des dépenses en sus et du taux de remboursement.
-  - **Base de remboursement totale du séjour (`MNT_TOT_BR`** entre 2011 et 2021, **`MT_TOT_BR`** à partir de 2022) : calculé sur la base des GHS, avec prise en compte de l’ensemble des paiements complémentaires et des dépenses en sus. Seul le coefficient géographique est appliqué.
-  -  Variables de jointures : ETA_NUM, RSA_NUM (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md)).
+  - **Type de valorisation du séjour (`VALO`)** :  
+  indique si le séjour est facturable à l’AM (=1) ou non (=0), s’il est non valorisé avec prélèvement d’organe (=3), ou si le patient est bénéficiaire de l’AME (=3), de soins urgents (=4) ou s’il est détenus (5). Pour analyser les dépenses, il est conseillé d’exclure les séjours non valorisés.
+  - **Montant total du séjour remboursé par l’AMO** (**`MNT_TOT_AM`** entre 2011 et 2021, **`MT_TOT_AM`** à partir de 2022) :  
+  calculé sur la base des GHS, avec prise en compte de l’ensemble des paiements complémentaires, des coefficients, des dépenses en sus et du taux de remboursement.
+  - **Base de remboursement totale du séjour (`MNT_TOT_BR`** entre 2011 et 2021, **`MT_TOT_BR`** à partir de 2022) :  
+   calculé sur la base des GHS, avec prise en compte de l’ensemble des paiements complémentaires et des dépenses en sus. Seul le coefficient géographique est appliqué.
+  -  Variables de jointures : `ETA_NUM`, `RSA_NUM` (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md)).
 
 
 #### ES ex-OQN
@@ -149,7 +150,7 @@ Ces financements ne sont comptabilisés dans le cadre des analyses de l’activi
 Bien que les données de valorisation PMSI soient moins précises que celles du DCIR pour les ES ex-OQN, il est possible de travailler uniquement sur le PMSI. Cette méthode permet d’avoir accès aux informations médicalisées et particulièrement aux diagnostics du séjour, données importantes notamment dans le cadre d'études épidémiologiques. En effet, le chaînage entre le PMSI et le DCIR est complexe à réaliser. Ce choix a pour limite de travailler sur des données moins exhaustives car les soins ne rentrant pas en compte dans la valorisation (dits "non-classants") ne sont pas systématiquement renseignés. 
 
 
-- **Table FA (`T_MCOaaFA`) : table de début de facture des ES ex-OQN**(disponible depuis 2005)
+- **Table FA (`T_MCOaaFA`)** : table de début de facture des ES ex-OQN (disponible depuis 2005)
 
   Cette table est construite à partir des informations brutes fournies par les ES. Les méthodes de calcul peuvent différer par rapport à la valorisation réelle. Cependant, ces données permettent de calculer une estimation exploitable des financements de l’activité de MCO.
 
@@ -158,17 +159,17 @@ Bien que les données de valorisation PMSI soient moins précises que celles du 
   - **Montant remboursable par l’AMO pour les prestations hospitalières (`PH_AMO_MNR`)** : ce montant regroupe la part des tarifs, les suppléments et les dépenses en sus.
   - **Montant remboursable par l’AMO pour les honoraires (`HON_AM_MNR`)**
   - **Base de remboursement des prestations hospitalières (`PH_BRM`)**
-  - Montant total facturé pour les prestations hospitalières (PH_MNT)
-  - Montant total facturé pour les honoraires (HON_MNT)
-  - Variables de jointures : ETA_NUM, RSA_NUM (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md)).
+  - Montant total facturé pour les prestations hospitalières (`PH_MNT`)
+  - Montant total facturé pour les honoraires (`HON_MNT`)
+  - Variables de jointures : `ETA_NUM`, `RSA_NUM` (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md)).
 
 
 - **Table FC (`T_MCOaaFC`) : table des honoraires des ES ex-OQN** (disponible depuis 2005)
 
   Cette table est constituée de plusieurs lignes par séjour et contient :
 
-  - **Montant de base de remboursement (`REM_BAS`)** : la base de remboursement des honoraires n’est pas remontée dans la table FA.
-  - Variables de jointures : ETA_NUM, RSA_NUM (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md)).
+  - **Montant de base de remboursement (`REM_BAS`)** : la base de remboursement des honoraires n’est pas remontée dans la table `FA`.
+  - Variables de jointures : `ETA_NUM`, `RSA_NUM` (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md)).
 
 ### Dans le DCIR
 
@@ -180,7 +181,7 @@ Les séjours en ES ex-OQN sont facturés directement à l’Assurance Maladie ce
 Dans un objectif de suivi des dépenses des ES, il est conseillé d’utiliser les données DCIR pour établir une valorisation très précise des séjours comme détaillé dans la fiche [Dépenses des établissements privés (à partir du DCIRS)](../fiches/fiche_etab_prives.md). Cette fiche présente la  sélection des prestations liées aux ES dans le DCIR et la distinction des champs d’activité. Le calcul des montants est identique à celui des prestations de ville. Les centres de santé sont exclus des prestations car ceux-ci sont catégorisés en soins de ville dans les comptes de la santé ou dans les statistiques Cnam.
 
 ## Requêtes type
----
+
 ### Filtres recommandés
 
 Les filtres recommandés sur les requêtes types en [MCO](../fiches/requete_type_pmsi_mco.md) sont à appliquer.
@@ -188,11 +189,11 @@ Les filtres recommandés sur les requêtes types en [MCO](../fiches/requete_type
 
 Pour l’analyse des dépenses des ES, il est recommandé d’exclure les séjours non valorisés :
 
-`Table VALO : VALO <> '0' OR VALO IS NULL`
+>**Table VALO** : `VALO <> '0' OR VALO IS NULL`
 
 ### Requête
 
-Dans l’objectif de présenter des requêtes qui s’adaptent facilement aux différentes variantes des langages de bases de données,  il a été choisi d’utiliser le système de gestion de base de données MySQL (système le plus utilisé aujourd’hui).
+Dans l’objectif de présenter des requêtes qui s’adaptent facilement aux différentes variantes des langages de bases de données,  il a été choisi d’utiliser le système de gestion de base de données *MySQL* (système le plus utilisé aujourd’hui).
 
 
 Considérons les séjours en ES ex-DG et ex-OQN terminés en 2022, sélectionnés avec les filtres principaux du PMSI :
@@ -255,7 +256,7 @@ Il est possible de valoriser l’activité externe des ES ex-DG. La fiche [Dépe
 Il est possible d’obtenir le montant total facturé en ajoutant le montant de reste à charge (RAC) AMO au montant AMO pour les ES publics. La fiche [Reste à charge après AMO en établissements de santé publics](../fiches/rac_hopital_public.md) décrit les modalités de calcul du RAC. 
 
 
-::: tip Crédits
+::: tip Crédits  
 Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.  
 :::  
 
