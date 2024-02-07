@@ -88,6 +88,29 @@ Lorsqu'une prestation est prescrite en ville la variable ne sera pas vide comme 
 Il est possible de recourir à un référentiel d’établissement afin d'obtenir davantage de détail sur les établissements.
 Pour cela on utilise le numéro FINESS à 8 chiffres comme clé de jointure.
 
+### Calcul de la clé des n° Finess
+
+Le neuvième chiffre d’un numéro Finess correspond à une clé de contrôle. Cette clé de contrôle est calculée selon un algorithme qui utilise les 8 premiers chiffres de chaque numéro Finess, i.e. la partie signifiante de chaque numéro. L’algorithme de détermination de la clé, comme de sa détermination, est celui de « Luhn modulo 10 ». Si l’on souhaite, à partir des numéro Finess de longueur 8, ajouter le neuvième caractère (par exemple pour une présentation plus habituelle) sans recourir à une table de correspondance, il est possible de calculer la clé selon la méthode suivante :
+
+```sql
+data temp;
+finess8='01000002';
+f1=substr(finess8,8,1)*2; if f1>9 then f1=f1-9;
+f2=substr(finess8,7,1)*1; 
+f3=substr(finess8,6,1)*2; if f3>9 then f3=f3-9;
+f4=substr(finess8,5,1)*1; 
+f5=substr(finess8,4,1)*2; if f5>9 then f5=f5-9;
+f6=substr(finess8,3,1)*1; 
+f7=substr(finess8,2,1)*2; if f7>9 then f7=f7-9;
+f8=substr(finess8,1,1)*1; 
+f=f1+f2+f3+f4+f5+f6+f7+f8;
+if mod(f,10)=0 then cle=0; else cle=10-mod(f,10);
+finess=compress(finess8||cle);
+run;
+```
+
+À noter pour les numéro Finess des départements de la Corse notés `2Axxxxxx` ou `2Bxxxxxx`, il convient, pour le calcul de la clé, de remplacer par `2001xxxx` et `2002xxxx` respectivement.
+
 
 ## Les référentiels d'établissements
 
@@ -164,6 +187,6 @@ Pour aller plus loin: Code de la santé publique. livre 1er [articles L6111-1 à
 
 
 ::: tip Crédits
-Cette fiche a été rédigée par Kristel JACQUIER (DSS) et Marlène Bernard (ATIH)
+Cette fiche a été rédigée par Kristel JACQUIER (DSS) , Marlène Bernard (ATIH) et Albert Vuagnat (DREES)
 :::
 
