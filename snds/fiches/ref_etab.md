@@ -72,7 +72,7 @@ les tables SSR).
 
 ### Le numéro FINESS dans le DCIR/S
 
-::: tip Attention
+::: warning Attention
 Le champ du DCIR ne couvre qu'une infime partie de l'activité des établissements publics. 
 Le DCIR contient en revanche l'ensemble des prestations réalisées en établissement privé.
 :::
@@ -90,7 +90,7 @@ Pour cela on utilise le numéro FINESS à 8 chiffres comme clé de jointure.
 
 ### Calcul de la clé des n° Finess
 
-Le neuvième chiffre d’un numéro Finess correspond à une clé de contrôle. Cette clé de contrôle est calculée selon un algorithme qui utilise les 8 premiers chiffres de chaque numéro Finess, i.e. la partie signifiante de chaque numéro. L’algorithme de détermination de la clé, comme de sa détermination, est celui de « Luhn modulo 10 ». Si l’on souhaite, à partir des numéro Finess de longueur 8, ajouter le neuvième caractère (par exemple pour une présentation plus habituelle) sans recourir à une table de correspondance, il est possible de calculer la clé selon la méthode suivante :
+Le neuvième chiffre d’un numéro Finess correspond à une clé de contrôle. Cette clé de contrôle est calculée selon un algorithme qui utilise les 8 premiers chiffres de chaque numéro Finess, i.e. la partie signifiante de chaque numéro. L’algorithme de détermination de la clé, comme de sa vérification, est celui de « Luhn modulo 10 ». Si l’on souhaite, à partir des numéro Finess de longueur 8, ajouter le neuvième caractère (par exemple pour une présentation plus habituelle) sans recourir à une table de correspondance, il est possible de calculer la clé selon la méthode suivante :
 
 ```sql
 data temp;
