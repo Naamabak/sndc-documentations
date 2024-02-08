@@ -7,7 +7,7 @@ tags:
     - Référentiels bénéficiaires
 ---
 
-# Complémentaire Santé Solidaire
+# CSS - Complémentaire Santé Solidaire
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 <TagLinks />
