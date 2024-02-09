@@ -96,17 +96,17 @@ Ces régimes (mutuelles, assurances privées, etc.) peuvent prendre en charge ce
 
 * Les financeurs publics : l’Etat  
 
-L'Etat finance notamment le système de Complémentaire Santé Solidaire (C2S) et l’Aide Médicale de l'Etat ([AME](../../glossaire/AME.md)).
+L'Etat finance notamment le système de Complémentaire Santé Solidaire ([C2S](../../glossaire/C2S.md)) et l’Aide Médicale de l'Etat ([AME](../../glossaire/AME.md)).
   * Avant le 1er novembre 2019 *:
     * CMU complémentaire ([CMU-C](../../glossaire/CMUC.md)) : remboursement total des frais de santé pour les personnes ayant des revenus inférieurs à un seuil défini.
     * Aide à la Complémentaire Santé ([ACS](../../glossaire/ACS.md)) : remboursement des frais de santé à un coût minimal pour les personnes ayant des revenus légèrement supérieurs aux bénéficiaires de la [CMU-C](../../glossaire/CMUC.md) mais toujours inférieurs à un seuil dépendant du seuil de pauvreté.
   * Après le 1er novembre 2019 *: 
-    * CMU-C](../../glossaire/CMUC.md) et [ACS](../../glossaire/ACS.md) remplacées par la Complémentaire Santé Solidaire (C2S).
+    * [CMU-C](../../glossaire/CMUC.md) et [ACS](../../glossaire/ACS.md) remplacées par la Complémentaire Santé Solidaire ([C2S](../../glossaire/C2S.md)).
 Pour les personnes les plus défavorisées (revenus mensuels inférieurs à un seuil défini dépendant du seuil de pauvreté), des aides pour une complémentaire santé sont possibles pour avoir accès à un remboursement total des frais de santé.
     * Aide Médicale de l’Etat ([AME](../../glossaire/AME.md)) :
 Permet un accès aux soins des personnes en situation irrégulière selon la réglementation sur le séjour en France et est attribuée sous conditions de résidence et de ressources.
 
-Les demandes d’inscription à la C2S et l’[AME](../../glossaire/AME.md) sont à réaliser auprès de l’assurance maladie.
+Les demandes d’inscription à la [C2S](../../glossaire/C2S.md) et l’[AME](../../glossaire/AME.md) sont à réaliser auprès de l’assurance maladie.
 
 * Les ménages : reste à charge
 
