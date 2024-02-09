@@ -313,24 +313,28 @@ L’ajout de données provenant des Maisons Départementales des Personnes Handi
 ### 2.3.4 PMSI SSR (séjours)
 ![image](/files/HDH/2022-12-12_HDH_PMSI_SSR_MLP-2.0.png)
 
-Il est prévu une suppression du FPP dans le PMSI à partir de 2023 : le codage de la Manifestation Morbide Principale (MPP) et de l’Affection Etiologique (AE) est maintenu.
+>Il est prévu une suppression du FPP dans le PMSI à partir de 2023.  
+Les codages de la Manifestation Morbide Principale (MPP) et de l’Affection Etiologique (AE) sont maintenus.
 ### 2.3.5 PMSI PSY (RIM-P) (séjours ou actes externes (EDGAR))
 ![image](/files/HDH/2022-12-12_HDH_PMSI_PSY_MLP-2.0.png)
 
 ## 2.4. Avantages et limites de ces données
 * **Avantages :**
-  * Données exhaustives sur les hospitalisations et les consommations de soins remboursées.
+  * Données exhaustives sur les hospitalisations et les consommations de soins remboursées.  
   * Données exhaustives pour les montants remboursés par l'assurance maladie.
   * Le chaînage de plusieurs données permet de suivre le parcours de soins ville/hôpital de chaque individu.
   * La profondeur des données permet de créer des cohortes avec de longues périodes de suivi sans perdus de vue.
   * Données collectées de manière prospective et de manière identique : pas de biais de mémorisation, variables standardisées et préexistantes au recueil de données.
+
 * **Limites :**
   * Peu de données cliniques, en particulier sur les soins et prestations réalisés en ville.
   * Aucun résultat d’examen (analyse biologique, imagerie, etc.).
   * Pas de données sur la consommation effective par les patients des médicaments (seulement sur la délivrance), ni sur l’utilisation effective des dispositifs médicaux (en ville).
-
-  * L’utilisation du [PMSI](../../glossaire/PMSI.md) pour la facturation hospitalière génère des biais de production des données. Par exemple, le codage des diagnostics associés ([DA](../../glossaire/DA.md)) peut ne pas être exhaustif (il est même parfois limité aux pathologies inscrites à la liste des complications et morbidités associées ([CMA](../../glossaire/CMA.md)). Autre exemple, le codage des actes [CCAM](../../glossaire/CCAM.md) peut ne pas être exhaustif (certains actes non classants et à visée diagnostique peuvent ne pas être codés (radiographie de thorax, ponction lombaire, électrocardiogramme, etc.)).
-  * Pas d’information sur la situation socio-économique du patient (niveau d’étude, chômage, etc.). Le FDep ne caractérise que très indirectement le patient car il caractérise sa commune de résidence ; il est à utiliser avec précaution pour les communes très peuplées et présentant une hétérogénéité populationnelle (ex : zones résidentielles favorisées limitrophes de quartiers politique de la ville (QPV)). 
+  * L’utilisation du [PMSI](../../glossaire/PMSI.md) pour la facturation hospitalière génère des biais de production des données.  
+    * Par exemple, le codage des diagnostics associés ([DA](../../glossaire/DA.md)) peut ne pas être exhaustif (il est même parfois limité aux pathologies inscrites à la liste des complications et morbidités associées ([CMA](../../glossaire/CMA.md)).  
+    * Autre exemple, le codage des actes [CCAM](../../glossaire/CCAM.md) peut ne pas être exhaustif (certains actes non classants et à visée diagnostique peuvent ne pas être codés (radiographie de thorax, ponction lombaire, électrocardiogramme, etc.)).
+  * Pas ou peu d’information sur la situation socio-économique du patient (niveau d’étude, chômage, etc.). (cf. [la fiche sur les indices de précarité dans le SNDS](../../fiches/precarite.md))  
+Par exemple, le FDep ne caractérise que très indirectement le patient car il caractérise sa commune de résidence ; il est à utiliser avec précaution pour les communes très peuplées et présentant une hétérogénéité populationnelle (ex : zones résidentielles favorisées limitrophes de quartiers politique de la ville (QPV)). 
 
 ## 2.5. Responsabilité individuelle en terme de sécurité des données de santé
 Le SNDS contient des données de santé individuelles et à ce titre, le traitement de ces données est régi par plusieurs textes réglementaires afin de protéger les libertés et droits fondamentaux des personnes :
