@@ -56,7 +56,8 @@ Tableau 1. Les différents régimes de la sécurité sociale
 | **Autres régimes spéciaux (au nombre de 27 en 2021)**                             | Régime spécifique des marins, des mines, SNCF, RATP, etc.                                                                                                                                                                   | Régimes spéciaux : 2%                 |
 
 
-Source : Tuppin P, et al. Value of a national administrative database to guide public decisions: From the système national d’information interrégimes de l’Assurance Maladie (SNIIRAM) to the système national des données de santé (SNDS) in France. Rev DÉpidémiologie Santé Publique. 2017 Oct;65:S149–67
+*Source : Tuppin P, et al. Value of a national administrative database to guide public decisions: From the système national d’information interrégimes de l’Assurance Maladie (SNIIRAM) to the système national des données de santé (SNDS) in France. Rev DÉpidémiologie Santé Publique. 2017 Oct;65:S149–67*  
+
 La sécurité sociale se compose de 5 branches :
 * La branche famille,
 * La branche retraite,
@@ -218,11 +219,13 @@ Les informations présentes sur le certificat de décès et disponibles dans la 
 ### 2.2.5 Autres produits
 #### 2.2.5.1 Nomenclatures de santé pour le codage et la facturation
 
-Les nomenclatures utilisées dans le cadre du SNDS sont gérées et mises à jour régulièrement par différentes structures :
-* Gérées et maintenues par la [Cnam](../../glossaire/Cnam.md) et l'[ATIH](../../glossaire/ATIH.md) :
-  * Actes médico-techniques : Classification Commune des Actes Médicaux ([CCAM](../../glossaire/CCAM.md))
-[Cnam](https://www.ameli.fr/accueil-de-la-ccam/index.php) : version utilisée pour la facturation (DCIR)
-[ATIH](https://www.atih.sante.fr/ccam-descriptive-usage-pmsi-2022) : version utilisée pour la description et la facturation (PMSI)
+Les nomenclatures utilisées dans le cadre du SNDS sont gérées et mises à jour régulièrement par différentes structures :  
+
+**Gérées et maintenues par la [Cnam](../../glossaire/Cnam.md) et l'[ATIH](../../glossaire/ATIH.md) :**
+
+* Actes médico-techniques : Classification Commune des Actes Médicaux ([CCAM](../../glossaire/CCAM.md))  
+  * [Cnam](https://www.ameli.fr/accueil-de-la-ccam/index.php) : version utilisée pour la facturation (DCIR)  
+  * [ATIH](https://www.atih.sante.fr/ccam-descriptive-usage-pmsi-2022) : version utilisée pour la description et la facturation (PMSI)  
 * Médicaments : 
   * Code Identifiant de Présentation ([CIP](../../glossaire/CIP.md)) : médicaments remboursables aux assurés sociaux et agréés aux collectivités (DCIR).
   * Unité Commune de Dispensation ([UCD](../../glossaire/UCD.md)) : médicaments rétrocédés ou facturables en sus des [GHS](../../glossaire/GHS.md), des [GHPC](../../glossaire/GHPC.md) ou des [GME](../../glossaire/GME.md) par les établissements de santé (PMSI et DCIR).
@@ -233,7 +236,8 @@ Les nomenclatures utilisées dans le cadre du SNDS sont gérées et mises à jou
   * Liste de DMI issue de la [LPP](../../glossaire/LPP.md)
 [DMI ATIH](https://www.atih.sante.fr/dispositifs-medicaux-pris-en-charge-en-sus/) 
 
-* Gérées et maintenues par la [Cnam](../../glossaire/Cnam.md) :
+**Gérées et maintenues par la [Cnam](../../glossaire/Cnam.md) :**
+
   * Actes de biologie : Nomenclature des Actes de Biologie Médicale ([NABM](../../glossaire/NABM.md))
 [Cnam](http://www.codage.ext.cnamts.fr/codif/nabm/index_presentation.php?p_site=AMELI/)
   * Actes généraux des professionnels de santé (hors [CCAM](../../glossaire/CCAM.md) et hors [NABM](../../glossaire/NABM.md)) : 
@@ -243,43 +247,41 @@ Les nomenclatures utilisées dans le cadre du SNDS sont gérées et mises à jou
   * Normes encadrant les échanges informatiques de données entre ES et assurance maladie(Norme B2-Noémie) : 
 [Cnam](https://www.ameli.fr/assure/documentation-technique/norme-b2)
 
-* Gérée et maintenue par l’[OMS](../../glossaire/OMS.md) :
+**Gérée et maintenue par l’[OMS](../../glossaire/OMS.md) :**
+
   * Médicaments : classifications Anatomique, Thérapeutique et Chimique (ATC)
 [OMS](https://www.whocc.no/atc_ddd_index/)
 
-* Gérée et maintenue par l’[OMS](../../glossaire/OMS.md) et l'[ATIH](../../glossaire/ATIH.md) :
-  * Maladies, signes, symptômes, circonstances sociales et causes externes de maladies ou de blessures : Classification Internationale des Maladies, 10ème version ([CIM](../../glossaire/CIM.md)-10), qui est modifiée et complétée par l'[ATIH](../../glossaire/ATIH.md) dans la version utilisée dans le PMSI
-    * [OMS](https://icd.who.int/browse10/2019/en#/)
-    * [ATIH](https://www.atih.sante.fr/cim-10-fr-2022-usage-pmsi)
+**Gérée et maintenue par l’[OMS](../../glossaire/OMS.md) et l'[ATIH](../../glossaire/ATIH.md) :**
+
+Maladies, signes, symptômes, circonstances sociales et causes externes de maladies ou de blessures : Classification Internationale des Maladies, 10ème version ([CIM](../../glossaire/CIM.md)-10), qui est modifiée et complétée par l'[ATIH](../../glossaire/ATIH.md) dans la version utilisée dans le PMSI  
+* [OMS](https://icd.who.int/browse10/2019/en#/)
+* [ATIH](https://www.atih.sante.fr/cim-10-fr-2022-usage-pmsi)
 
 #### 2.2.5.2 Référentiels
 
 Les principaux référentiels du SNDS sont énumérés ici et les liens renvoient vers des fiches présentant leurs caractéristiques. 
-* Référentiel des bénéficiaires **`IR_BEN_R`** : contient des informations socio-démographiques des bénéficiaires. Ce référentiel dispose d’une version actuelle (`IR_BEN_R`) portant sur les bénéficiaires ayant eu au moins une consommation depuis le 01/01/2013 et une version archivée (`IR_BEN_R_ARC`) portant sur les bénéficiaires ayant eu au moins une consommation avant le 01/01/2013. [Référentiel bénéficiaires](../../tables/.sources/BENEFICIAIRE/IR_BEN_R.md)
+* [Référentiel bénéficiaires](../../tables/.sources/BENEFICIAIRE/IR_BEN_R.md) **`IR_BEN_R`** : contient des informations socio-démographiques des bénéficiaires. Ce référentiel dispose d’une version actuelle (`IR_BEN_R`) portant sur les bénéficiaires ayant eu au moins une consommation depuis le 01/01/2013 et une version archivée (`IR_BEN_R_ARC`) portant sur les bénéficiaires ayant eu au moins une consommation avant le 01/01/2013.  
 
-* Référentiel médicalisé des bénéficiaires **`IR_IMB_R`** : contient des informations médicalisées (exonération pour [ALD](../../glossaire/ALD.md), maladie professionnelle, etc.). [Référentiel médicalisé](../../tables/.sources/DCIR_DCIRS/IR_IMB_R.md)
+* [Référentiel médicalisé](../../tables/.sources/DCIR_DCIRS/IR_IMB_R.md) des bénéficiaires **`IR_IMB_R`** : contient des informations médicalisées (exonération pour [ALD](../../glossaire/ALD.md), maladie professionnelle, etc.).  
 
-* Référentiel des médicaments **`IR_PHA_R`** : permet d'avoir des informations sur les médicaments délivrés en officine (identification via les classifications ATC, [CIP](../../glossaire/CIP.md) et [UCD](../../glossaire/UCD.md), la composition, la date de mise sur le marché, le nom du laboratoire, etc.).
-
-La mise à jour mensuelle à partir des parutions au Journal Officiel est effectuée par le « département d’Etudes sur les pathologies & les patients » de la [Cnam](../../glossaire/Cnam.md). Une description détaillée du référentiel est disponible dans le communiqué du 24/01/2012.
-  * [Référentiel médicaments](../../fiches/medicament.md)
+* [Référentiel des médicaments](../../fiches/medicament.md) **`IR_PHA_R`** : permet d'avoir des informations sur les médicaments délivrés en officine (identification via les classifications ATC, [CIP](../../glossaire/CIP.md) et [UCD](../../glossaire/UCD.md), la composition, la date de mise sur le marché, le nom du laboratoire, etc.).  
+*La mise à jour mensuelle à partir des parutions au Journal Officiel est effectuée par le « département d’Etudes sur les pathologies & les patients » de la [Cnam](../../glossaire/Cnam.md). Une description détaillée du référentiel est disponible dans le communiqué du 24/01/2012.*  
 
 * Référentiel des actes de biologie **`IR_BIO_R`** : contient l’historique complet des modifications de tarifs des actes de biologie médicale (identification des actes via la classification [NABM](../../glossaire/NABM.md)).
 
-* Référentiel d’établissements **`BE_IDE_R`** : permet d’avoir des informations concernant les établissements sanitaires et médico-sociaux grâce au numéro FINESS. Ce référentiel couvre les établissements de santé ([ex-DG](../../glossaire/ex-DG.md) et [ex-OQN](../../glossaire/ex-OQN.md)) et les ESMS mais également les centres de santé, PMI, les centres dentaires, …
-[Référentiel d’établissements](../../fiches/ref_etab.md)
+* [Référentiel d’établissements](../../fiches/ref_etab.md) **`BE_IDE_R`** : permet d’avoir des informations concernant les établissements sanitaires et médico-sociaux grâce au numéro FINESS. Ce référentiel couvre les établissements de santé ([ex-DG](../../glossaire/ex-DG.md) et [ex-OQN](../../glossaire/ex-OQN.md)) et les ESMS mais également les centres de santé, PMI, les centres dentaires, …
 
-* Référentiel des bénéficiaires de soins en établissement ou service médico-social (ESMS) **`IR_ESM_R`** : permet l’identification de bénéficiaires pris en charge par un service ou résidant ou ayant résidé dans un ESMS (EHPAD, autres ESMS, etc.), selon différentes caractéristiques. A noter que les patients hospitalisés en ES-SLD sont également référencés dans ce référentiel.
-[Référentiel bénéficiaires soins médico-sociaux](../../fiches/IR_ESM_R.md)
+* [Référentiel des bénéficiaires de soins en établissement ou service médico-social](../../fiches/IR_ESM_R.md) (ESMS) **`IR_ESM_R`** : permet l’identification de bénéficiaires pris en charge par un service ou résidant ou ayant résidé dans un ESMS (EHPAD, autres ESMS, etc.), selon différentes caractéristiques. A noter que les patients hospitalisés en ES-SLD sont également référencés dans ce référentiel.
 
-* Référentiel des Professionnels de Santé `DA_PRA_R` : contient des informations sur l’activité des Professionnels de Santé ([PS](../../glossaire/PS.md)) (mode d’exercice, différents cabinets, etc.). 
-[Référentiel professionnels de santé](../../fiches/DA_PRA_R.md)
+* [Référentiel des professionnels de santé](../../fiches/DA_PRA_R.md) `DA_PRA_R` : contient des informations sur l’activité des Professionnels de Santé ([PS](../../glossaire/PS.md)) (mode d’exercice, différents cabinets, etc.). 
 
-Seuls les référentiels `IR_PHA_R` et `IR_BIO_R` sont disponibles et téléchargeables au format CSV dans le [dictionnaire interactif](https://health-data-hub.shinyapps.io/dico-snds/) (onglet "recherche dans les nomenclatures").
+>Seuls les référentiels `IR_PHA_R` et `IR_BIO_R` sont disponibles et téléchargeables au format CSV dans le [dictionnaire interactif](https://health-data-hub.shinyapps.io/dico-snds/) (onglet "recherche dans les nomenclatures").
 
 #### 2.2.5.3 Autres sources
 
-**Catalogue du SNDS**
+**Catalogue du SNDS**  
+
 Des bases de données seront accessibles via la plateforme du Health Data Hub ([HDH](../../glossaire/HDH.md)), en plus de la base principale du SNDS qui inclut Vaccin-covid et SI-DEP. Ces bases de données seront listées dans le [catalogue du SNDS](https://www.health-data-hub.fr/catalogue-de-donnees).
 Suivant l'arrêté du 12 mai 2022, les bases suivantes feront parties du catalogue de données disponibles :
 
