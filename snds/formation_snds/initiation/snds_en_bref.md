@@ -94,7 +94,8 @@ Ces soins sont remboursés selon un pourcentage variable (pouvant aller jusqu’
 * Les régimes complémentaires :
 Ces régimes (mutuelles, assurances privées, etc.) peuvent prendre en charge ce qui n’est pas remboursé par l’assurance maladie (ticket modérateur, franchises, forfaits hospitaliers, etc.), les dépassements d’honoraire, ou bien encore des soins non remboursés par l’assurance maladie. La prise en charge partielle ou totale est dépendante du contrat souscrit avec le régime complémentaire.
 
-* Les financeurs publics : l’Etat
+* Les financeurs publics : l’Etat  
+
 L'Etat finance notamment le système de Complémentaire Santé Solidaire (C2S) et l’Aide Médicale de l'Etat ([AME](../../glossaire/AME.md)).
   * Avant le 1er novembre 2019 *:
     * CMU complémentaire ([CMU-C](../../glossaire/CMUC.md)) : remboursement total des frais de santé pour les personnes ayant des revenus inférieurs à un seuil défini.
