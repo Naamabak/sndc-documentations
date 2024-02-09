@@ -38,7 +38,7 @@ Exemples :
 * `ER_PRS_F` = Table des prestations de la base DCIR
 * `IR_BEN_R` = Référentiel des bénéficiaires du DCIR
 
-**Le nommage des tables PMSI[^6]** [^6]:Pour le PMSI, les règles de nommage Cnam dans le SNDS peuvent différer des règles de nommage appliquées par l'ATIH sur le portail des données hospitalières (système fils du SNDS). est composé généralement de :
+**Le nommage des tables PMSI** est composé généralement de :
 
 * la lettre **T**
 * le **champ d'activité** : 3 caractères 
@@ -60,6 +60,9 @@ Exemples :
 * `T_MCO20B` = Table PMSI MCO 2020 des séjours
 * `T_SSR18A` = Table PMSI SSR2018 des actes CCAM 
 * `MS_CIM_V` = Table de valeurs du PMSI des diagnostics au format CIM-10
+
+>Pour le PMSI, les règles de nommage Cnam dans le SNDS peuvent différer des règles de nommage appliquées par l'ATIH sur le portail des données hospitalières (système fils du SNDS).  
+
 
 Le **nommage des variables** est composé généralement de :
 
@@ -101,7 +104,7 @@ Les différents pseudonymes du SNDS (Cf. le descriptif plus détaillé du guide 
 - **`BEN_NIR_PSA` ET `BEN_RNG_GEM` : pseudo-NIR du bénéficiaire et rang gémellaire du bénéficiaire**. **Cet identifiant remonte actuellement dans les bases [DCIR](../../glossaire/DCIR.md) et [PMSI](../../glossaire/PMSI.md).**
 Cet identifiant est pseudonymisé à partir de la concaténation du [NIR](../../glossaire/NIR.md) de l’assuré (et non selon le [NIR](../../glossaire/NIR.md) du bénéficiaire, d'où l'appellation "pseudo-NIR"), de la date de naissance et du sexe du bénéficiaire : variable DCIR `BEN_NIR_PSA` ou variable PMSI `NIR_ANO_17`. 
 	- Deux points importants sont à noter :
-		- Le `BEN_NIR_PSA` ne permet pas de distinguer les jumeaux de même sexe ayant-droits (c’est notamment le cas des enfants assurés par leurs parents). Pour le [RG](../../glossaire/RG.md)(y compris [SLM](../../glossaire/SLM.md)) , il faut ajouter le rang de naissance du bénéficiaire : variable DCIR `BEN_RNG_GEM`. Cependant, cette variable n'a pas la même signification pour les autres régimes, où elle permet de différencier les bénéficiaires rattachés au même ouvreur de droit. Par ailleurs, le [RSI](../../glossaire/RSI.md) utilise majoritairement le code 0 pour l’identification des ouvreurs de droit. Le rang de naissance dans le PMSI (`RNG_NAI`) est actuellement de qualité insuffisante pour être utilisé comme variable de chaînage avec le DCIR (cf. [document de formation PMSI](../../formation_snds/documents_cnam/Formation_PMSI.md)).
+		- Le `BEN_NIR_PSA` ne permet pas de distinguer les jumeaux de même sexe ayant-droits (c’est notamment le cas des enfants assurés par leurs parents). Pour le [RG](../../glossaire/RG.md) (y compris [SLM](../../glossaire/SLM.md)) , il faut ajouter le rang de naissance du bénéficiaire : variable DCIR `BEN_RNG_GEM`. Cependant, cette variable n'a pas la même signification pour les autres régimes, où elle permet de différencier les bénéficiaires rattachés au même ouvreur de droit. Par ailleurs, le [RSI](../../glossaire/RSI.md) utilise majoritairement le code 0 pour l’identification des ouvreurs de droit. Le rang de naissance dans le PMSI (`RNG_NAI`) est actuellement de qualité insuffisante pour être utilisé comme variable de chaînage avec le DCIR (cf. [document de formation PMSI](../../formation_snds/documents_cnam/Formation_PMSI.md)).
 		- Un bénéficiaire a autant de `BEN_NIR_PSA` différents au cours de sa vie qu'il a d’ouvreurs de droit. Description du cas où le bénéficiaire n'est pas l'assuré (il est alors qualifié d'ayant-droit) : un enfant assuré par ses 2 parents aura 2 pseudo-NIR différents (i.e. via le numéro d'assuré de chaque parent), puis quand il sera son propre ouvreur de droit, il aura un 3ème pseudo-[NIR](../../glossaire/NIR.md) associé à son propre numéro d’assuré. 
 La variable DCIR `BEN_QAF_COD` permet d'identifier si le pseudo-NIR est celui de l'assuré ou de l’ayant-droit.
 
@@ -127,7 +130,8 @@ Cependant, **l'utilisation du `BEN_NIR_ANO` va impliquer des traitements particu
 
 - Les bases DCIR contiennent les identifiants `BEN_NIR_PSA` et `BEN_RNG_GEM` : il faudra là encore utiliser le référentiel bénéficiaire (`IR_BEN_R`, cf. section 3.2.3) pour récupérer les différents couples `BEN_NIR_PSA`||`BEN_RNG_GEM` pour un bénéficiaire, pour un `BEN_NIR_ANO`.
 
-- Les bases PMSI contiennent uniquement l'identifiant `NIR_ANO_17` (équivalent de `BEN_NIR_PSA`) : il faudra là encore utiliser le référentiel bénéficiaire pour récupérer les différents `BEN_NIR_PSA` d'un bénéficiaire. Dans le cas particulier des jumeaux de même sexe assurés par la même personne, il n'est pas possible (sans un traitement complexe, qui est détaillé en section Pour aller plus loin) d'identifier le bénéficiaire du séjour. Le séjour est alors attribué aux deux jumeaux. Pour rappel, en 2020, [1,6% des accouchements étaient des naissances multiples](https://www.insee.fr/fr/statistiques/5414759?sommaire=5414771).
+- Les bases PMSI contiennent uniquement l'identifiant `NIR_ANO_17` (équivalent de `BEN_NIR_PSA`) : il faudra là encore utiliser le référentiel bénéficiaire pour récupérer les différents `BEN_NIR_PSA` d'un bénéficiaire.  
+Dans le cas particulier des jumeaux de même sexe assurés par la même personne, il n'est pas possible (sans un traitement complexe, qui est détaillé en section *Pour aller plus loin*) d'identifier le bénéficiaire du séjour. Le séjour est alors attribué aux deux jumeaux. Pour rappel, en 2020, [1,6% des accouchements étaient des naissances multiples](https://www.insee.fr/fr/statistiques/5414759?sommaire=5414771).
 
 - Inversement, le ciblage des bénéficiaires, i.e. la sélection des bénéficiaires selon une consommation de soins particulière, est réalisé via le `BEN_NIR_PSA` (et `BEN_RNG_GEM` dans le DCIR). Pour recueillir l'ensemble du parcours de soins des bénéficiaires, les `BEN_NIR_ANO` associés aux `BEN_NIR_PSA` ciblés seront récupérés. Puis, pour chaque `BEN_NIR_ANO` recensé, l'ensemble des `BEN_NIR_PSA` sera utilisé dans l'étude.
 
@@ -137,15 +141,17 @@ Cependant, **l'utilisation du `BEN_NIR_ANO` va impliquer des traitements particu
 
 ::: tip Pour aller plus loin :
 
-- **Une description plus détaillée des identifiants SNDS est disponible :**
+- ***Une description plus détaillée des identifiants SNDS est disponible :***
 	- *Dans la fiche [Identifiants des bénéficiaires](../../fiches/fiche_beneficiaire.md),*
 	- *Dans le guide [SNDS, ce qu'il faut savoir de Santé Publique France](../../formation_snds/Sante_publique_France.md).*
 
-- *Utilisation de l'identifiant `BEN_IDT_ANO` pour avoir la complétude des bénéficiaires d'un régime d'AM : cette utilisation permet de sélectionner des bénéficiaires sans `BEN_NIR_ANO`, via le `BEN_NIR_PSA` (associé à `BEN_RNG_GEM`). La variable `BEN_CDI_NIR` permet alors de vérifier la qualité de l'identifiant.* 
+- ***Utilisation de l'identifiant `BEN_IDT_ANO` pour avoir la complétude des bénéficiaires d'un régime d'AM :***  
+*Cette utilisation permet de sélectionner des bénéficiaires sans `BEN_NIR_ANO`, via le `BEN_NIR_PSA` (associé à `BEN_RNG_GEM`). La variable `BEN_CDI_NIR` permet alors de vérifier la qualité de l'identifiant.* 
 
-- *Problématique des jumeaux de même sexe* : le rang de naissance dans le PMSI (`RNG_NAI`, disponible à partir de 2014) est actuellement de qualité insuffisante pour être utilisé comme variable de chaînage avec le DCIR. En revanche, il est conseillé d'utiliser cette variable pour départager après coup les `NIR_ANO_17` correspondant à des naissances gémellaires de même sexe. (cf. [document de formation PMSI](../../formation_snds/documents_cnam/Formation_PMSI.md) ).
+- ***Problématique des jumeaux de même sexe :***  
+*Le rang de naissance dans le PMSI (`RNG_NAI`, disponible à partir de 2014) est actuellement de qualité insuffisante pour être utilisé comme variable de chaînage avec le DCIR. En revanche, il est conseillé d'utiliser cette variable pour départager après coup les `NIR_ANO_17` correspondant à des naissances gémellaires de même sexe. (cf. [document de formation PMSI](../../formation_snds/documents_cnam/Formation_PMSI.md)).*
 
-- *Pour les accès permanents, les mesures de pseudonymisation impactent le traitement de données sur les identifiants bénéficiaires dans le SNDS* (ex. ne pas renommer la variable `BEN_NIR_ANO` ) : cf. [Consignes à respecter](../../aller_plus_loin/documents_cnam/pseudonymisation.md).
+- ***Pour les accès permanents***, *les mesures de pseudonymisation impactent le traitement de données sur les identifiants bénéficiaires dans le SNDS (ex. ne pas renommer la variable `BEN_NIR_ANO` ) : cf. [Consignes à respecter](../../aller_plus_loin/documents_cnam/pseudonymisation.md).*  
 :::
 
 ### 3.2.3 Le référentiel bénéficiaires IR_BEN_R
@@ -155,20 +161,21 @@ Ce référentiel contient les caractéristiques administratives des bénéficiai
 - Date maximale de traitement `MAX_TRT_DTD` : date la plus récente des prestations perçues par un bénéficiaire, renseignée au 01/01/1600 pour les "non-consommants" (i.e. bénéficiaires n'ayant perçu aucune prestation depuis le 01/01/2013),
 - La date d’insertion dans le référentiel `BEN_DTE_INS` est alimentée à 01/01/1600 si le bénéficiaire est inséré avant 2012,
 - Dernière date de mise à jour (changement d’adresse, etc…) `BEN_DTE_MAJ`,
-- Pour distinguer la qualité du bénéficiaire des soins (assuré, conjoint ayant droit, enfant, fictif, etc.) : `BEN_QAF_COD` (qualité du bénéficiaire) ou `BEN_CDI_NIR` (NIR fictif[^7]) [^7]:Un « faux » NIR, dit fictif, est renseigné dans le SNDS pour certaines prestations, comme les rémunérations forfaitaires des PS, ou afin de garantir l’anonymat du bénéficiaire (ex : IVG).,
+- Pour distinguer la qualité du bénéficiaire des soins (assuré, conjoint ayant droit, enfant, fictif, etc.) : `BEN_QAF_COD` (qualité du bénéficiaire) ou `BEN_CDI_NIR` (NIR fictif)  
+*Un « faux » NIR, dit fictif, est renseigné dans le SNDS pour certaines prestations, comme les rémunérations forfaitaires des PS, ou afin de garantir l’anonymat du bénéficiaire (ex : IVG)*,
 - Le sexe `BEN_SEX_COD`,
 - L’année de naissance `BEN_NAI_ANN` : forcée à 1600 lorsqu’elle est inconnue,
 - Le mois de naissance `BEN_NAI_MOI` (identifiant potentiel->  accessible selon avis [CNIL](../../glossaire/CNIL.md)),
 - La commune de résidence du bénéficiaire `BEN_RES_COM` (identifiant potentiel -> accessible selon avis [CNIL](../../glossaire/CNIL.md)) : elle remonte des bases «adresses» locales des organismes d’AM et contient la commune / le département de la dernière situation connue du destinataire de règlement (adresse de l’ouvreur de droit ou du bénéficiaire si connue). La commune est un code Insee sur 3 caractères et doit toujours être associée au code département `BEN_RES_DPT`,
 - Date de décès `BEN_DCD_DTE` (identifiant potentiel -> accessible selon avis [CNIL](../../glossaire/CNIL.md)).
-	- Cette table est constituée d'une ligne par pseudonyme `BEN_NIR_PSA`||`BEN_RNG_GEM` ( i.e. plusieurs lignes possibles par `BEN_NIR_ANO`). 
-	- Cette table évolue dans le temps car elle correspond aux bénéficiaires de la table `ER_PRS_F`, i.e. aux bénéficiaires ayant eu au moins une consommation de soins depuis le 01/01/2013. A titre d’illustration, en septembre 2022, la table `ER_PRS_F` du DCIR contient les données mise à disposition entre le 01/02/2013 et la date de dernier chargement du SNDS. 
+- Cette table est constituée d'une ligne par pseudonyme `BEN_NIR_PSA`||`BEN_RNG_GEM` ( i.e. plusieurs lignes possibles par `BEN_NIR_ANO`). 
+- Cette table évolue dans le temps car elle correspond aux bénéficiaires de la table `ER_PRS_F`, i.e. aux bénéficiaires ayant eu au moins une consommation de soins depuis le 01/01/2013. A titre d’illustration, en septembre 2022, la table `ER_PRS_F` du DCIR contient les données mise à disposition entre le 01/02/2013 et la date de dernier chargement du SNDS. 
 
-**Note : Toutes les dates manquantes (ou mois ou année) du DCIR sont renseignées au 01/01/1600.**
+>**Note : Toutes les dates manquantes (ou mois ou année) du DCIR sont renseignées au 01/01/1600.**
 
 
 ::: tip Pour aller plus loin :
-*Il existe également une table archivée du référentiel bénéficiaire* : `IR_BEN_R_ARC`. Cette table est identique au référentiel en cours. Elle contient tous les pseudonymes `BEN_NIR_PSA`||`BEN_RNG_GEM` des bénéficiaires avec un remboursement de soins avant le 01/01/2013 (cette archive évolue, elle est basée sur les données disponibles dans la table ER_PRS_F).
+*Il existe également une table archivée du référentiel bénéficiaire* : `IR_BEN_R_ARC`. Cette table est identique au référentiel en cours. Elle contient tous les pseudonymes `BEN_NIR_PSA`||`BEN_RNG_GEM` des bénéficiaires avec un remboursement de soins avant le 01/01/2013 (cette archive évolue, elle est basée sur les données disponibles dans la table `ER_PRS_F`).
 :::
 
 #### 3.2.3.2 Régimes d’affiliation à l’assurance maladie
@@ -176,7 +183,7 @@ L’organisme d’affiliation est celui auquel le bénéficiaire est administrat
 
 **Chaque régime va avoir des modalités de gestion et de prise en charge différentes qui vont se traduire par des différences plus ou moins importantes dans les données du SNDS**. Au fil des années, ce système se simplifie et les modalités de gestion des différents régimes tendent à s'aligner sur celles du [RG](../../glossaire/RG.md).
 
-Notamment, dans les études épidémiologiques, l'organisme d'affiliation `ORG_AFF_BEN` permet de s'assurer que toutes les données essentielles aux analyses sont disponibles sur la période d'étude. Par exemple, pour une analyse de survie sur des données de 2017, les patients affiliés au [RSI](../../glossaire/RSI.md) ou à une [SLM](../../glossaire/SLM.md) non infogérée seront exclus de l'analyse car ces régimes renseignent très mal l'information de décès.
+Dans les études épidémiologiques, l'organisme d'affiliation `ORG_AFF_BEN` permet de s'assurer que toutes les données essentielles aux analyses sont disponibles sur la période d'étude. Par exemple, pour une analyse de survie sur des données de 2017, les patients affiliés au [RSI](../../glossaire/RSI.md) ou à une [SLM](../../glossaire/SLM.md) non infogérée seront exclus de l'analyse car ces régimes renseignent très mal l'information de décès.
 
 Les 2 et 3 premiers caractères de la variable `ORG_AFF_BEN` permettent d'identifier les principaux régimes :
 
@@ -190,8 +197,8 @@ Les 2 et 3 premiers caractères de la variable `ORG_AFF_BEN` permettent d'identi
 ::: tip Pour aller plus loin :
 - Le guide [SNDS, ce qu'il faut savoir](../../formation_snds/Sante_publique_France.md) de Santé publique France détaille très précisément les différents régimes d'affiliation et la montée en charge des données de santé associées.
 - Fiche [SLM](../../fiches/sections_locales_mutualistes.md)
-- Pour travailler sur les données avant 2015, il faut prendre en compte l’historique de montée en charge de chaque régime en terme de transmission des données au SNDS (notamment les remboursements des soins de ville, les informations médicales (type [ALD](../../glossaire/ALD.md)) des bénéficiaires ou l’information sur le décès (hors causes médicales)). Par exemple :
-	- *Avant 2010* : il est conseillé de travailler uniquement sur le [RG](../../glossaire/RG.md).
+- Pour travailler sur les données avant 2015, il faut prendre en compte l’historique de montée en charge de chaque régime en terme de transmission des données au SNDS (notamment les remboursements des soins de ville, les informations médicales (type [ALD](../../glossaire/ALD.md)) des bénéficiaires ou l’information sur le décès (hors causes médicales)).  
+*Par exemple : Avant 2010, il est conseillé de travailler uniquement sur le [RG](../../glossaire/RG.md).*
 - Pour l’utilisation de la date de décès : [RG](../../glossaire/RG.md) (hors [SLM](../../glossaire/SLM.md)) et [MSA](../../glossaire/MSA.md) à partir de 2010, [SLM](../../glossaire/SLM.md) infogérées et [RSI](../../glossaire/RSI.md) à partir de 2016, autres [SLM](../../glossaire/SLM.md) et petits régimes (dates variables).
 :::
 
