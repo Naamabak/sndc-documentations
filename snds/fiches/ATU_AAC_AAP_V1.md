@@ -89,14 +89,14 @@ Le code NXXXX00 est attribué aux spécialités bénéficiant d’une ATU nomina
 Ce nombre peut être fractionnaire.
 - **Date d’administration**:  
 La date d’administration peut être calculée à partir du délai entre la date d’entrée du séjour (`EXE_SOI_DTD`) et la date d’administration (`DAT_DELAI`). Les variables `ADM_MOIS` et `ADM_ANN` donne accès directement au mois et à l’année de la date d’administration.
--  Nombre de séjours impliqués (`SEJ_NBR`, non disponible en SSR) :
+-  **Nombre de séjours impliqués (`SEJ_NBR`, non disponible en SSR)** :
 En MCO, entre 2012 et 2018, les administrations réalisées ou programmées dans le cadre d’une même prise en charge sur plusieurs séjours ont été répétées sur chacun des séjours (i.e. que plusieurs résumés de séjours – numéros RSA – sont associés au même numéro administratif de séjour et répété sur chaque RSA ; par exemple dans le cas de séances de chimiothérapie). 
 A partir de 2019 en MCO, il n’y a plus de répétition des administrations sur plusieurs RSA, i.e. la variable `SEJ_NBR` est toujours égale à 1. 
 En HAD, la variable `SEJ_NBR` est toujours égale à 1. 
 En SSR, la variable n’existe pas.
--  Prix d’achat multiplié par le nombre d’administrations (`ACH_PRI_ADM`) :
+-  **Prix d’achat multiplié par le nombre d’administrations (`ACH_PRI_ADM`)** :
 En cas de financement par un laboratoire, le prix d’achat du traitement doit être renseigné à 0 euro.
-- Variables de jointures de chaque champs avec les tables de séjours/séquences : `ETA_NUM` et `RSA_NUM` en MCO (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md), 
+- **Variables de jointures de chaque champs avec les tables de séjours/séquences** : `ETA_NUM` et `RSA_NUM` en MCO (Cf. [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md), 
 `ETA_NUM_EPMSI`, `RHAD_NUM`, `SEQ_SEJ`, `SSEQ_NUM` en HAD (Cf. [Requête type dans le PMSI-HAD](../fiches/pmsi_had.md), 
 `ETA_NUM`, `RHA_NUM` et `RHS_NUM` en SSR (Cf. [Requête type dans le PMSI-SSR](../fiches/pmsi_ssr.md)). 
 
