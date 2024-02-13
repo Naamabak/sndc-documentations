@@ -1,6 +1,6 @@
 ---
 tags:
-    - Professionnel de Santé
+    - Professionnel de santé
 ---
 
 # Référentiel des Professionnels de Santé: DA\_PRA\_R simplifié
