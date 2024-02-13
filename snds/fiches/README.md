@@ -19,7 +19,7 @@ Des tags sont indiqués sur chaque fiche. Trois niveaux de tags sont disponibles
 2. la ou les bases utilisé(es) :
 - PMSI
 - DCIR/DCIRS
-- Référentiels de bénéficiaires
+- Référentiels bénéficiaires
 
 3. la présence de programme(s) :
 - Fiche-programme. 
