@@ -14,6 +14,7 @@ Des tags sont indiqués sur chaque fiche. Trois niveaux de tags sont disponibles
 - Régime / Organisme
 - Professionnel de santé
 - Aides financiaires de l'état
+- Initiation au SNDS
 - Généralités SNDS  
   
 2. la ou les bases utilisé(es) :
