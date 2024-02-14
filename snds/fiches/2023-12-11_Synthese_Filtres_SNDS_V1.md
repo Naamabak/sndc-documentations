@@ -1,3 +1,14 @@
+---
+tags:
+  - Initiation au SNDS
+  - Régime / Organisme
+  - Généralités SNDS
+  - PMSI
+  - DCIR/DCIRS
+  - Référentiels des bénéficiaires
+  - Fiche-programme
+---
+
 # Filtres recommandés dans le SNDS - synthèse
 
 Cette fiche a pour objectif de regrouper tous les filtres recommandés des requêtes types sur les tables principales du SNDS. Elle est construite à partir des supports de [Formation DCIR](../formation_snds/documents_cnam/Formation_demex.md) et [Formation PMSI](../formation_snds/documents_cnam/Formation_PMSI.md). 
