@@ -1,3 +1,13 @@
+---
+tags:
+  - Initiation au SNDS
+  - Généralités SNDS
+  - PMSI
+  - DCIR/DCIRS
+  - Référentiels des bénéficiaires
+  - Fiche-programme
+---
+
 # Graphique pour parcourir le SNDS
 
 ## Graphique pour Parcourir le SNDS
