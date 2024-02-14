@@ -1,7 +1,7 @@
 ---
 tags:
     - Généralité SNDS
-    - Diagnostics
+    - Etablissements et Structures
     - PMSI
     - Fiche-programme
 ---
