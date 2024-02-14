@@ -1,4 +1,12 @@
-# L'Allocation Adulte handicappé
+---
+tags:
+  - Régime / Organisme
+  - Référentiels de bénéficiaires 
+  - DCIR/DCIRS
+  - Fiche-programme
+---
+
+# L'Allocation Adulte handicapé
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 L'allocation aux adultes handicapés (AAH) est une aide financière accordée sur décision de la commission des droits et de l'autonomie des personnes handicapées (CDAPH). 
