@@ -398,12 +398,13 @@ Tableau 4. Variables codes d'actes, quantités et prix unitaires des tables d'ac
 
 | Tables affinées                                            | Variable Code | Variable Quantité                                                                                                            | Variable Prix unitaire                                                            |
 |------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Pharmacie de ville ER_PHA_F                                | PHA_PRS_C13   | PHA_ACT_QSN                                                                                                                  | PHA_ACT_PRU                                                                       |
-| Pharmacie hospitalière (rétrocession et en sus) ER_UCD_F   | UCD_UCD_COD   | UCD_DLV_NBR                                                                                                                  | UCD_FAC_PRU                                                                       |
-| Actes techniques médicaux (ville et hospitaliers) ER_CAM_F | CAM_PRS_IDE   | une ligne = 1(signe de la quantité dans la table prestations)et prendre en compte le code activité et la phase de traitement | CAM_ACT_PRU                                                                       |
-| Biologie (ville et hospitalière) ER_BIO_F                  | BIO_PRS_IDE   | BIO_ACT_QSN                                                                                                                  | PRS.BSE_REM_PRU * BIO.BTF_TAR_COF                                                 |
-| Dispositifs médicaux (ville et hospitaliers) ER_TIP_F      | TIP_PRS_IDE   | TIP_ACT_QSN                                                                                                                  | TIP_ACT_PRU  mais il est recommandé d’utiliser le prix des tables de référentiels |
+| Pharmacie de ville `ER_PHA_F`                                | `PHA_PRS_C13`   | `PHA_ACT_QSN`                                                                                                                  | `PHA_ACT_PRU`                                                                       |
+| Pharmacie hospitalière (rétrocession et en sus) `ER_UCD_F`   | `UCD_UCD_COD`   | `UCD_DLV_NBR`                                                                                                                  | `UCD_FAC_PRU`                                                                       |
+| Actes techniques médicaux (ville et hospitaliers) `ER_CAM_F` | `CAM_PRS_IDE`   | une ligne = 1 acte (pas de variable quantité) | `CAM_ACT_PRU`                                                                       |
+| Biologie (ville et hospitalière) `ER_BIO_F`                  | `BIO_PRS_IDE`   | `BIO_ACT_QSN`                                                                                                                  | `PRS.BSE_REM_PRU` * `BIO.BTF_TAR_COF`                                                 |
+| Dispositifs médicaux (ville et hospitaliers) `ER_TIP_F`      | `TIP_PRS_IDE`   | `TIP_ACT_QSN`                                                                                                                  | `TIP_ACT_PRU`  mais il est recommandé d’utiliser le prix des tables de référentiels |
 
+>**NB:** Pour la table affinée `ER_CAM_F`, il est conseillé de prendre en compte les variables `CAM_ACT_COD` (code activité) et `CAM_TRT_PHA` (phase de traitement) qui participe à la définition et la quantité de l'acte avec `CAM_PRS_IDE` (cf. section 3.3.3.3).
 
 ### 3.3.3.1 Pharmacie ER_PHA_F
 La table `ER_PHA_F` fournit des informations sur la pharmacie de ville détaillées sous la [nomenclature CIP](../../fiches/medicament.md). 
@@ -412,14 +413,14 @@ Elle contient en plus des variables classiques des tables affinées :
 
 * le top déconditionnement : `PHA_DEC_TOP` 
 	* = 0 si le médicament n'est pas déconditionné ou 
-	* = 1 si le médicament est déconditionné (i.e. délivré en unité thérapeutique, comme le comprimé)
-les quantités et prix unitaires en cas de déconditionnement : `PHA_DEC_QSU` et `PHA_DEC_PRU`
-* les quantités et prix unitaires en cas de déconditionnement : `PHA_DEC_QSU` et `PHA_DEC_PRU`
+	* = 1 si le médicament est déconditionné (i.e. délivré en unité thérapeutique, comme le comprimé).  
+Les quantités et prix unitaires en cas de déconditionnement : `PHA_DEC_QSU` et `PHA_DEC_PRU`
+* les quantités et prix unitaires sans déconditionnement : `PHA_ACT_QSU` et `PHA_ACT_PRU`
 
 ::: tip Pour aller plus loin :
-- [Base de données publique des médicaments]( https://base-donnees-publique.medicaments.gouv.fr/).
-- Avant le 01/10/2014, le code [CIP](../../glossaire/CIP.md) était initialement codé sur 7 caractères (PHA_PRS_IDE). Pour utiliser un historique de données plus ancien, il faut également utiliser le code [CIP](../../glossaire/CIP.md) 7 (notamment pour les années 2006 et 2007 où les codes [CIP](../../glossaire/CIP.md) 13 sont presque tous manquants).
-- Les traitements peuvent également être classés selon la classification internationale anatomique, thérapeutique et chimique [ATC](https://www.whocc.no/).
+- *[Base de données publique des médicaments]( https://base-donnees-publique.medicaments.gouv.fr/).*
+- *Avant le 01/10/2014, le code [CIP](../../glossaire/CIP.md) était initialement codé sur 7 caractères (PHA_PRS_IDE). Pour utiliser un historique de données plus ancien, il faut également utiliser le code [CIP](../../glossaire/CIP.md) 7 (notamment pour les années 2006 et 2007 où les codes [CIP](../../glossaire/CIP.md) 13 sont presque tous manquants).*
+- *Les traitements peuvent également être classés selon la classification internationale anatomique, thérapeutique et chimique [ATC](https://www.whocc.no/).*  
 :::
 
 #### 3.3.3.2 Médicaments en sus ou rétrocédés ER_UCD_F
@@ -435,7 +436,7 @@ Le codage affiné d'un acte [CCAM](../../glossaire/CCAM.md) est composé des var
 - `CAM_ACT_COD` : le code activité (1 = intervenant principal, 4 = anesthésiste),
 - `CAM_TRT_PHA` : la phase de traitement (concerne moins de 20 codes [CCAM](../../glossaire/CCAM.md)).
 
-Pour compter les actes affinés [CCAM](../../glossaire/CCAM.md), il est nécessaire de tenir compte du code activité et du code phase de traitement** afin de ne compter l’acte qu’une seule fois et non plusieurs fois (par exemple, une fois au titre de l’acte chirurgical, en activité 1, et une fois au titre de l’anesthésie pour cet acte, en activité 4). 
+Pour compter les actes affinés [CCAM](../../glossaire/CCAM.md), il est nécessaire de **tenir compte du code activité et du code phase de traitement** afin de ne compter l’acte qu’une seule fois et non plusieurs fois (par exemple, une fois au titre de l’acte chirurgical, en activité 1, et une fois au titre de l’anesthésie pour cet acte, en activité 4). 
 Il n'existe pas de variable quantité dans cette table car **1 ligne = 1 acte**. Cependant, il faut utiliser la variable `PRS_ACT_QTE` pour avoir le signe de la prestation (positif = remboursement, nul = non valorisé ou négatif = régularisation).
 
 #### 3.3.3.4 Biologie ER_BIO_F
@@ -480,7 +481,7 @@ Le recueil de l'activité des établissements de santé du champs [MCO](../../gl
 
 - l’hospitalisation complète (dont l’hospitalisation de semaine) ou hospitalisation avec hébergement,
 - l’hospitalisation à temps partiel (dont l’hospitalisation de jour et de nuit, l’anesthésie et la chirurgie ambulatoire et les séances) ou hospitalisation sans hébergement,
-- les consultations et actes externes des ES [ex-DG](../../glossaire/ex-DG.md).
+- les actes et consultations externes des ES [ex-DG](../../glossaire/ex-DG.md).
 
 Les tables du PMSI MCO se divisent en 2 groupes :
 - **Les tables des séjours** : ensemble des hospitalisations avec ou sans nuitée (11 tables pour les ES [ex-DG](../../glossaire/ex-DG.md) et [ex-OQN](../../glossaire/ex-OQN.md) ; 11 tables pour les ES [ex-DG](../../glossaire/ex-DG.md) uniquement et 8 tables pour les ES [ex-OQN](../../glossaire/ex-OQN.md) uniquement) ;
@@ -512,11 +513,10 @@ Les tables principales en lien avec les séjours des ES [ex-DG](../../glossaire/
 * Table B (`T_MCOaaB`) : **table des séjours**
 Cette table contient une ligne par séjour et contient :
 	* **Informations médicales** : le diagnostic principal ([DP](../../glossaire/DP.md)) et relié (DR) du séjour (DGN_PAL et DGN_REL). Le [DP](../../glossaire/DP.md) est le problème de santé qui a mobilisé l'essentiel de l'effort de soins. Le DR est renseigné uniquement quand le [DP](../../glossaire/DP.md) est un code en "Z", i.e. un code technique, non un diagnostic. 
-	* **Informations de groupage et de valorisation** : le [GHM](../../glossaire/GHM.md) GRG_GHM et le [GHS](../../glossaire/GHS.md) GHS_NUM (mais il est préconisé de travailler avec les tables spécifiques liées à la valorisation).
-En MCO, une partie importante du financement des ES repose sur la classification médico-économique des séjours. La notion de groupage fait référence au regroupement des séjours en Groupe Homogène de Malades ([GHM](../../glossaire/GHM.md)). Chaque séjour est inclus dans un seul [GHM](../../glossaire/GHM.md) en fonction des informations médico-administratives renseignées. Au GHM est associé un tarif, appelé Groupe Homogène de Séjour ([GHS](../../glossaire/GHS.md)), dépendant principalement du [GHM](../../glossaire/GHM.md) et du secteur d'activité (public ou privé).
-
-* **Autres informations sur le séjour** : les modes d'entrée / provenance et mode de sortie / destination (urgence, domicile, transfert, décès, etc.) `ENT_MOD` / `ENT_PRV` et `SOR_MOD` / `SOR_DES`, la durée du séjour `SEJ_NBJ` (attention, cette variable correspond au nombre de nuitées), etc.
-* **Informations sur les bénéficiaires** : âge `AGE_ANN`, sexe `COD_SEX`, code géographique de résidence `BDI_COD` ou code postal de résidence (`COD_POST` depuis 2020)
+	* **Informations de groupage et de valorisation** : le [GHM](../../glossaire/GHM.md) GRG_GHM et le [GHS](../../glossaire/GHS.md) GHS_NUM (mais il est préconisé de travailler avec les tables spécifiques liées à la valorisation).  
+	En MCO, une partie importante du financement des ES repose sur la classification médico-économique des séjours. La notion de groupage fait référence au regroupement des séjours en Groupe Homogène de Malades ([GHM](../../glossaire/GHM.md)). Chaque séjour est inclus dans un seul [GHM](../../glossaire/GHM.md) en fonction des informations médico-administratives renseignées. Au GHM est associé un tarif, appelé Groupe Homogène de Séjour ([GHS](../../glossaire/GHS.md)), dépendant principalement du [GHM](../../glossaire/GHM.md) et du secteur d'activité (public ou privé).  
+	* **Autres informations sur le séjour** : les modes d'entrée / provenance et mode de sortie / destination (urgence, domicile, transfert, décès, etc.) `ENT_MOD` / `ENT_PRV` et `SOR_MOD` / `SOR_DES`, la durée du séjour `SEJ_NBJ` (attention, cette variable correspond au nombre de nuitées), etc.  
+	* **Informations sur les bénéficiaires** : âge `AGE_ANN`, sexe `COD_SEX`, code géographique de résidence `BDI_COD` ou code postal de résidence (`COD_POST` depuis 2020)
 
 * Table UM (`T_MCOaaUM`) : **table des unités médicales**
 Un séjour peut être constitué de différentes prises en charges réalisées dans des unités médicales (UM) différentes (`UM_TYP`). Un passage dans une UM est remonté dans le PMSI par un Résumé d'Unité Médicale ([RUM](../../glossaire/RUM.md)). A chaque [RUM](../../glossaire/RUM.md) est associé un diagnostic principal `DGN_PAL` et relié `DGN_REL`.
