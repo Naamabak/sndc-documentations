@@ -1,3 +1,13 @@
+---
+tags:
+  - Bénéficiaires
+  - Prestations
+  - Aides fiancières de l'état
+  - Régime / Organisme
+  - Généralités SNDS
+  - DCIR/DCIRS
+---
+
 # Indemnités journalières
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
