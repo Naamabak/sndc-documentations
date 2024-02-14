@@ -481,7 +481,7 @@ Le recueil de l'activité des établissements de santé du champs [MCO](../../gl
 
 - l’hospitalisation complète (dont l’hospitalisation de semaine) ou hospitalisation avec hébergement,
 - l’hospitalisation à temps partiel (dont l’hospitalisation de jour et de nuit, l’anesthésie et la chirurgie ambulatoire et les séances) ou hospitalisation sans hébergement,
-- les consultations et actes externes des ES [ex-DG](../../glossaire/ex-DG.md).
+- les actes et consultations externes des ES [ex-DG](../../glossaire/ex-DG.md).
 
 Les tables du PMSI MCO se divisent en 2 groupes :
 - **Les tables des séjours** : ensemble des hospitalisations avec ou sans nuitée (11 tables pour les ES [ex-DG](../../glossaire/ex-DG.md) et [ex-OQN](../../glossaire/ex-OQN.md) ; 11 tables pour les ES [ex-DG](../../glossaire/ex-DG.md) uniquement et 8 tables pour les ES [ex-OQN](../../glossaire/ex-OQN.md) uniquement) ;
@@ -513,11 +513,10 @@ Les tables principales en lien avec les séjours des ES [ex-DG](../../glossaire/
 * Table B (`T_MCOaaB`) : **table des séjours**
 Cette table contient une ligne par séjour et contient :
 	* **Informations médicales** : le diagnostic principal ([DP](../../glossaire/DP.md)) et relié (DR) du séjour (DGN_PAL et DGN_REL). Le [DP](../../glossaire/DP.md) est le problème de santé qui a mobilisé l'essentiel de l'effort de soins. Le DR est renseigné uniquement quand le [DP](../../glossaire/DP.md) est un code en "Z", i.e. un code technique, non un diagnostic. 
-	* **Informations de groupage et de valorisation** : le [GHM](../../glossaire/GHM.md) GRG_GHM et le [GHS](../../glossaire/GHS.md) GHS_NUM (mais il est préconisé de travailler avec les tables spécifiques liées à la valorisation).
-En MCO, une partie importante du financement des ES repose sur la classification médico-économique des séjours. La notion de groupage fait référence au regroupement des séjours en Groupe Homogène de Malades ([GHM](../../glossaire/GHM.md)). Chaque séjour est inclus dans un seul [GHM](../../glossaire/GHM.md) en fonction des informations médico-administratives renseignées. Au GHM est associé un tarif, appelé Groupe Homogène de Séjour ([GHS](../../glossaire/GHS.md)), dépendant principalement du [GHM](../../glossaire/GHM.md) et du secteur d'activité (public ou privé).
-
-* **Autres informations sur le séjour** : les modes d'entrée / provenance et mode de sortie / destination (urgence, domicile, transfert, décès, etc.) `ENT_MOD` / `ENT_PRV` et `SOR_MOD` / `SOR_DES`, la durée du séjour `SEJ_NBJ` (attention, cette variable correspond au nombre de nuitées), etc.
-* **Informations sur les bénéficiaires** : âge `AGE_ANN`, sexe `COD_SEX`, code géographique de résidence `BDI_COD` ou code postal de résidence (`COD_POST` depuis 2020)
+	* **Informations de groupage et de valorisation** : le [GHM](../../glossaire/GHM.md) GRG_GHM et le [GHS](../../glossaire/GHS.md) GHS_NUM (mais il est préconisé de travailler avec les tables spécifiques liées à la valorisation).  
+	En MCO, une partie importante du financement des ES repose sur la classification médico-économique des séjours. La notion de groupage fait référence au regroupement des séjours en Groupe Homogène de Malades ([GHM](../../glossaire/GHM.md)). Chaque séjour est inclus dans un seul [GHM](../../glossaire/GHM.md) en fonction des informations médico-administratives renseignées. Au GHM est associé un tarif, appelé Groupe Homogène de Séjour ([GHS](../../glossaire/GHS.md)), dépendant principalement du [GHM](../../glossaire/GHM.md) et du secteur d'activité (public ou privé).  
+	* **Autres informations sur le séjour** : les modes d'entrée / provenance et mode de sortie / destination (urgence, domicile, transfert, décès, etc.) `ENT_MOD` / `ENT_PRV` et `SOR_MOD` / `SOR_DES`, la durée du séjour `SEJ_NBJ` (attention, cette variable correspond au nombre de nuitées), etc.  
+	* **Informations sur les bénéficiaires** : âge `AGE_ANN`, sexe `COD_SEX`, code géographique de résidence `BDI_COD` ou code postal de résidence (`COD_POST` depuis 2020)
 
 * Table UM (`T_MCOaaUM`) : **table des unités médicales**
 Un séjour peut être constitué de différentes prises en charges réalisées dans des unités médicales (UM) différentes (`UM_TYP`). Un passage dans une UM est remonté dans le PMSI par un Résumé d'Unité Médicale ([RUM](../../glossaire/RUM.md)). A chaque [RUM](../../glossaire/RUM.md) est associé un diagnostic principal `DGN_PAL` et relié `DGN_REL`.
