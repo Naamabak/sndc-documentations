@@ -298,7 +298,7 @@ Cet acte peut générer plusieurs lignes de prestations, i.e. plusieurs lignes d
 - L'**acte de base** (`BSE_PRS_NAT`), associé ou non à un **complément d'acte** (`CPL_PRS_NAT` et `CPL_MAJ_TOP`=1 ou =0), sur la même ligne de prestation,
 - Souvent associé à des **majorations** (ex : majoration nourrisson) ou à des [**participations forfaitaires**](../../glossaire/PF.md) (`CPL_PRS_NAT` et `CPL_MAJ_TOP`=2 ; la nature de ce complément est précisée via `CPL_AFF_COD`). Ces prestations sont remontées sur différentes lignes car elles ont un code propre, différent de l’acte de base associé.
 
-`1 acte de base = 1 patient + 1 PS + 1 date = 1 ou plusieurs lignes de remboursements`
+>**1 acte de base = 1 patient + 1 PS + 1 date = 1 ou plusieurs lignes de remboursements**
 
 #### 3.3.2.4 Montants et quantités
 Les dépenses d'une prestation sont détaillées précisément dans le SNDS :
