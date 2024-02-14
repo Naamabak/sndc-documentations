@@ -404,7 +404,7 @@ Tableau 4. Variables codes d'actes, quantités et prix unitaires des tables d'ac
 | Biologie (ville et hospitalière) `ER_BIO_F`                  | `BIO_PRS_IDE`   | `BIO_ACT_QSN`                                                                                                                  | `PRS.BSE_REM_PRU` * `BIO.BTF_TAR_COF`                                                 |
 | Dispositifs médicaux (ville et hospitaliers) `ER_TIP_F`      | `TIP_PRS_IDE`   | `TIP_ACT_QSN`                                                                                                                  | `TIP_ACT_PRU`  mais il est recommandé d’utiliser le prix des tables de référentiels |
 
->**NB:** Pour la table affinée `ER_CAM_F`, il est conseillé de prendre en compte les variables `CAM_ACT_COD` (code activité) et `CAM_TRT_PHA` (phase de traitement) qui participe à la définition de l'acte (1 ligne = 1 acte) avec `CAM_PRS_IDE`.
+>**NB:** Pour la table affinée `ER_CAM_F`, il est conseillé de prendre en compte les variables `CAM_ACT_COD` (code activité) et `CAM_TRT_PHA` (phase de traitement) qui participe à la définition et la quantité de l'acte avec `CAM_PRS_IDE` (cf. section 3.3.3.3).
 
 ### 3.3.3.1 Pharmacie ER_PHA_F
 La table `ER_PHA_F` fournit des informations sur la pharmacie de ville détaillées sous la [nomenclature CIP](../../fiches/medicament.md). 
@@ -413,14 +413,14 @@ Elle contient en plus des variables classiques des tables affinées :
 
 * le top déconditionnement : `PHA_DEC_TOP` 
 	* = 0 si le médicament n'est pas déconditionné ou 
-	* = 1 si le médicament est déconditionné (i.e. délivré en unité thérapeutique, comme le comprimé)
-les quantités et prix unitaires en cas de déconditionnement : `PHA_DEC_QSU` et `PHA_DEC_PRU`
-* les quantités et prix unitaires en cas de déconditionnement : `PHA_DEC_QSU` et `PHA_DEC_PRU`
+	* = 1 si le médicament est déconditionné (i.e. délivré en unité thérapeutique, comme le comprimé).  
+Les quantités et prix unitaires en cas de déconditionnement : `PHA_DEC_QSU` et `PHA_DEC_PRU`
+* les quantités et prix unitaires sans déconditionnement : `PHA_ACT_QSU` et `PHA_ACT_PRU`
 
 ::: tip Pour aller plus loin :
-- [Base de données publique des médicaments]( https://base-donnees-publique.medicaments.gouv.fr/).
-- Avant le 01/10/2014, le code [CIP](../../glossaire/CIP.md) était initialement codé sur 7 caractères (PHA_PRS_IDE). Pour utiliser un historique de données plus ancien, il faut également utiliser le code [CIP](../../glossaire/CIP.md) 7 (notamment pour les années 2006 et 2007 où les codes [CIP](../../glossaire/CIP.md) 13 sont presque tous manquants).
-- Les traitements peuvent également être classés selon la classification internationale anatomique, thérapeutique et chimique [ATC](https://www.whocc.no/).
+- *[Base de données publique des médicaments]( https://base-donnees-publique.medicaments.gouv.fr/).*
+- *Avant le 01/10/2014, le code [CIP](../../glossaire/CIP.md) était initialement codé sur 7 caractères (PHA_PRS_IDE). Pour utiliser un historique de données plus ancien, il faut également utiliser le code [CIP](../../glossaire/CIP.md) 7 (notamment pour les années 2006 et 2007 où les codes [CIP](../../glossaire/CIP.md) 13 sont presque tous manquants).*
+- *Les traitements peuvent également être classés selon la classification internationale anatomique, thérapeutique et chimique [ATC](https://www.whocc.no/).*  
 :::
 
 #### 3.3.3.2 Médicaments en sus ou rétrocédés ER_UCD_F
@@ -436,7 +436,7 @@ Le codage affiné d'un acte [CCAM](../../glossaire/CCAM.md) est composé des var
 - `CAM_ACT_COD` : le code activité (1 = intervenant principal, 4 = anesthésiste),
 - `CAM_TRT_PHA` : la phase de traitement (concerne moins de 20 codes [CCAM](../../glossaire/CCAM.md)).
 
-Pour compter les actes affinés [CCAM](../../glossaire/CCAM.md), il est nécessaire de tenir compte du code activité et du code phase de traitement** afin de ne compter l’acte qu’une seule fois et non plusieurs fois (par exemple, une fois au titre de l’acte chirurgical, en activité 1, et une fois au titre de l’anesthésie pour cet acte, en activité 4). 
+Pour compter les actes affinés [CCAM](../../glossaire/CCAM.md), il est nécessaire de **tenir compte du code activité et du code phase de traitement** afin de ne compter l’acte qu’une seule fois et non plusieurs fois (par exemple, une fois au titre de l’acte chirurgical, en activité 1, et une fois au titre de l’anesthésie pour cet acte, en activité 4). 
 Il n'existe pas de variable quantité dans cette table car **1 ligne = 1 acte**. Cependant, il faut utiliser la variable `PRS_ACT_QTE` pour avoir le signe de la prestation (positif = remboursement, nul = non valorisé ou négatif = régularisation).
 
 #### 3.3.3.4 Biologie ER_BIO_F
