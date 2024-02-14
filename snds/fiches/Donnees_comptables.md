@@ -1,8 +1,8 @@
 ---
 tags:
   - Dépenses
-  - Prestations
-  - DCIR/DCIRS
+  - Généralités SNDS
+  - Fiche-programme
 ---
 
 # Table de données comptables du DCIR (ER\_CPT\_F)

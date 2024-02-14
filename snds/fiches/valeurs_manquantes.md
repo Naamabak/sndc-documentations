@@ -1,7 +1,7 @@
 ---
 tags:
-    - Généralité SNDS
-    - Fiche-programme
+  - Généralités SNDS
+  - Fiche-programme
 ---
 
 # Valeurs manquantes dans les requêtes SNDS

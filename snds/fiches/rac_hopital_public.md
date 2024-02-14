@@ -1,3 +1,10 @@
+---
+tags:
+  - Dépenses
+  - PMSI
+  - DCIR/DCIRS
+---
+
 # Reste à charge après AMO en établissements de santé publics
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 

@@ -1,3 +1,12 @@
+---
+tags:
+  - Bénéficiaires
+  - Prestations
+  - Etablissements et Structures 
+  - Généralités SNDS
+  - Référentiels de bénéficiaires
+---
+
 # Les résidents en EHPAD
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 

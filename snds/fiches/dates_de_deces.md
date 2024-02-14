@@ -2,9 +2,11 @@
 tags:
 - Bénéficiaires
 - Régime / Organisme
+- Initiation au SNDS
 - DCIR/DCIRS
 - Référentiels de bénéficiaires
 - PMSI  
+- Fiche-programme
 ---
 
 # Dates de décès: recueil et fiabilité
