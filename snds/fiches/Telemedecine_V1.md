@@ -1,3 +1,10 @@
+---
+tags:
+    - Prestations
+    - DCIR/DCIRS 
+    - Fiche-programme
+---
+
 # Télémédecine
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
