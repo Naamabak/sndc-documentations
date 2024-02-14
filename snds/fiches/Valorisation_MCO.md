@@ -1,3 +1,11 @@
+---
+tags:
+  - Etablissements et Structures
+  - Dépenses
+  - PMSI
+  - Fiche-programme
+---
+
 # Valorisation de l’activité MCO dans le PMSI
 
 Cette fiche explique comment valoriser l’activité des séjours hospitaliers de [MCO](../glossaire/MCO.md), selon les perspectives base de remboursement (BR) et remboursement Assurance Maladie Obligatoire (AMO). 
