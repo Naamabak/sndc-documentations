@@ -4,10 +4,13 @@
 ## 2.1. Notre système de santé
 ### 2.1.1 Présentation générale
 En France, le système de santé  est composé de **3 grands secteurs d’activité** :
-* Soins **réalisés en ville** :
+
+1. Soins **réalisés en ville** :  
+
 Les professionnels de santé libéraux ou salariés exercent, soit individuellement dans des cabinets, soit en groupe ou de manière coordonnée en maison de santé ou en centre de santé. Les professionnels de santé peuvent être des médecins généralistes ou spécialistes, des chirurgiens-dentistes, des pharmaciens, des sage-femmes, des infirmiers, des rééducateurs, etc.
 
-* Soins **réalisés en établissements de santé (ES)** :
+2. Soins **réalisés en établissements de santé (ES)** :
+
 Ces établissements (toutes activités confondues) sont répartis selon trois catégories de <u>statut juridique</u> :
   * Les **hôpitaux publics** : centres hospitaliers régionaux (CHR), centre hospitaliers universitaires (CHU), centres hospitaliers (CH), etc. correspond à **61,5%** des lits en 2019 (cf. [Fiche 01 – Les grandes catégories d’établissements de santé](https://drees.solidarites-sante.gouv.fr/publications/panoramas-de-la-drees/les-etablissements-de-sante-edition-2021)),
   * Les **établissements privés d’intérêt collectif**, notamment les centres de lutte contre le cancer correspond à **14,5%** des lits en 2019(cf. [Fiche 01 – Les grandes catégories d’établissements de santé](https://drees.solidarites-sante.gouv.fr/publications/panoramas-de-la-drees/les-etablissements-de-sante-edition-2021)),
@@ -27,16 +30,18 @@ Il existe également des **USLD, devenues ES-SLD** : Unités de Soins de Longue 
 
 Certains établissements de santé autorisés en [MCO](../../glossaire/MCO.md) ont également des activités de médecine d’urgence avec des services d’urgence, des Services d’Aide Médicale Urgente (SAMU) ou des Services Mobiles d’Urgence et de Réanimation (SMUR).
 
-* Soins *réalisés en établissements ou services médico-sociaux (ESMS)* :
+3. Soins **réalisés en établissements ou services médico-sociaux (ESMS)** :
+
 Ils apportent un accompagnement et une prise en charge des personnes « fragiles », en situation de précarité, d’exclusion, de handicap ou de dépendances. 
-Les **établissements médico-sociaux** regroupent notamment :
+
+D'abord, les **établissements médico-sociaux** regroupent :
 * Des Établissements d’Hébergement pour Personnes Agées Dépendantes (EHPAD)
 * Des structures pour personnes handicapées : Foyers d’Accueil Médicalisé (FAM), Maisons d’Accueil Spécialisées (MAS), Instituts Thérapeutiques, Educatifs et Pédagogiques (ITEP), …
 * Des structures pour les personnes en état de dépendance : Centres de Soins, d’Accompagnement et de Prévention en Addictologie (CSAPA), Centres d’Accueil et d’Accompagnement à la Réduction des risques pour Usagers de Drogues (CAARUD)…
 
-Les **services médico-sociaux** sont très diversifiés ; ils comprennent par exemple des services d’aide et de soins à domicile : les services de soins infirmiers à domicile (SSIAD) qui permettent la surveillance à domicile ainsi que des soins d’hygiène et paramédicaux. A bien différencier de l’hospitalisation à domicile où les patients sont hospitalisés.
+Ensuite, les **services médico-sociaux** sont très diversifiés ; ils comprennent par exemple des services d’aide et de soins à domicile : les services de soins infirmiers à domicile (SSIAD) qui permettent la surveillance à domicile ainsi que des soins d’hygiène et paramédicaux. A bien différencier de l’hospitalisation à domicile où les patients sont hospitalisés.
 
-* Enfin, il est important de mentionner que certains soins peuvent être réalisés via la *télémédecine* : Elle comprend entre autres la téléconsultation, la téléexpertise ou la télésurveillance et permet de réaliser les pratiques médicales à distance, facilitées par les nouvelles technologies de l’information et de la communication.
+>Enfin, il est important de mentionner que certains soins, selon les catégories, peuvent être réalisés via la *télémédecine* : Elle comprend entre autres la téléconsultation, la téléexpertise ou la télésurveillance et permet de réaliser les pratiques médicales à distance, facilitées par les nouvelles technologies de l’information et de la communication.
 
 ### 2.1.2 Le système de remboursement des soins et les modes de financement des établissements de santé
 En France, la sécurité sociale existe depuis 1945 (ordonnances du 4 et 19 octobre 1945) et a pour mission de protéger les Français contre tous les risques de la vie. Elle est subdivisée en 3 grands régimes (2 grands régimes depuis le 1er janvier 2018) et des régimes spéciaux, couvrant chacun une ou plusieurs catégories socioprofessionnelles spécifiques et se caractérisant par des modalités de gestion et de prise en charge différentes.
@@ -51,7 +56,8 @@ Tableau 1. Les différents régimes de la sécurité sociale
 | **Autres régimes spéciaux (au nombre de 27 en 2021)**                             | Régime spécifique des marins, des mines, SNCF, RATP, etc.                                                                                                                                                                   | Régimes spéciaux : 2%                 |
 
 
-Source : Tuppin P, et al. Value of a national administrative database to guide public decisions: From the système national d’information interrégimes de l’Assurance Maladie (SNIIRAM) to the système national des données de santé (SNDS) in France. Rev DÉpidémiologie Santé Publique. 2017 Oct;65:S149–67
+*Source : Tuppin P, et al. Value of a national administrative database to guide public decisions: From the système national d’information interrégimes de l’Assurance Maladie (SNIIRAM) to the système national des données de santé (SNDS) in France. Rev DÉpidémiologie Santé Publique. 2017 Oct;65:S149–67*  
+
 La sécurité sociale se compose de 5 branches :
 * La branche famille,
 * La branche retraite,
@@ -89,18 +95,19 @@ Ces soins sont remboursés selon un pourcentage variable (pouvant aller jusqu’
 * Les régimes complémentaires :
 Ces régimes (mutuelles, assurances privées, etc.) peuvent prendre en charge ce qui n’est pas remboursé par l’assurance maladie (ticket modérateur, franchises, forfaits hospitaliers, etc.), les dépassements d’honoraire, ou bien encore des soins non remboursés par l’assurance maladie. La prise en charge partielle ou totale est dépendante du contrat souscrit avec le régime complémentaire.
 
-* Les financeurs publics : l’Etat
-L'Etat finance notamment le système de Complémentaire Santé Solidaire (C2S) et l’Aide Médicale de l'Etat ([AME](../../glossaire/AME.md)).
+* Les financeurs publics : l’Etat  
+
+L'Etat finance notamment le système de Complémentaire Santé Solidaire ([C2S](../../glossaire/C2S.md)) et l’Aide Médicale de l'Etat ([AME](../../glossaire/AME.md)).
   * Avant le 1er novembre 2019 *:
     * CMU complémentaire ([CMU-C](../../glossaire/CMUC.md)) : remboursement total des frais de santé pour les personnes ayant des revenus inférieurs à un seuil défini.
     * Aide à la Complémentaire Santé ([ACS](../../glossaire/ACS.md)) : remboursement des frais de santé à un coût minimal pour les personnes ayant des revenus légèrement supérieurs aux bénéficiaires de la [CMU-C](../../glossaire/CMUC.md) mais toujours inférieurs à un seuil dépendant du seuil de pauvreté.
   * Après le 1er novembre 2019 *: 
-    * CMU-C](../../glossaire/CMUC.md) et [ACS](../../glossaire/ACS.md) remplacées par la Complémentaire Santé Solidaire (C2S).
+    * [CMU-C](../../glossaire/CMUC.md) et [ACS](../../glossaire/ACS.md) remplacées par la Complémentaire Santé Solidaire ([C2S](../../glossaire/C2S.md)).
 Pour les personnes les plus défavorisées (revenus mensuels inférieurs à un seuil défini dépendant du seuil de pauvreté), des aides pour une complémentaire santé sont possibles pour avoir accès à un remboursement total des frais de santé.
     * Aide Médicale de l’Etat ([AME](../../glossaire/AME.md)) :
 Permet un accès aux soins des personnes en situation irrégulière selon la réglementation sur le séjour en France et est attribuée sous conditions de résidence et de ressources.
 
-Les demandes d’inscription à la C2S et l’[AME](../../glossaire/AME.md) sont à réaliser auprès de l’assurance maladie.
+Les demandes d’inscription à la [C2S](../../glossaire/C2S.md) et l’[AME](../../glossaire/AME.md) sont à réaliser auprès de l’assurance maladie.
 
 * Les ménages : reste à charge
 
@@ -114,13 +121,19 @@ Chaque année, la Loi de Financement de la Sécurité Sociale ([LFSS](../../glos
 * Autres prises en charge (dont Fonds d'Intervention Régionale (FIR)).
 
 #### 2.1.2.3 Financement des établissements de santé
-Comme inscrit dans la [LFSS](../../glossaire/LFSS.md) de 2004, les établissements de santé [MCO](../../glossaire/MCO.md) et [HAD](../../glossaire/HAD.md) ([ex-DG](../../glossaire/ex-DG.html et [ex-OQN](../../glossaire/ex-OQN.md)) sont désormais financés selon le même modèle, la Tarification A l’Activité ([T2A](../../glossaire/T2A.md)). Ce modèle repose sur un principe de mesure de la nature et du volume des activités réalisées. La facturation des séjours des établissements de santé (ES) et des actes externes des ES [ex-DG](../../glossaire/ex-DG.md) s’appuie sur la production PMSI MCO et PMSI HAD.
+Comme inscrit dans la [LFSS](../../glossaire/LFSS.md) de 2004, les établissements de santé [MCO](../../glossaire/MCO.md) et [HAD](../../glossaire/HAD.md) ([ex-DG](../../glossaire/ex-DG.md) et [ex-OQN](../../glossaire/ex-OQN.md)) sont désormais financés selon le même modèle, la Tarification A l’Activité ([T2A](../../glossaire/T2A.md)). Ce modèle repose sur un principe de mesure de la nature et du volume des activités réalisées. La facturation des séjours des établissements de santé (ES) et des actes externes des ES [ex-DG](../../glossaire/ex-DG.md) s’appuie sur la production PMSI MCO et PMSI HAD.
 
 Tableau 2. Ventilation de l’ONDAM concernant les établissements de santé
-| MCO | HAD |SSR  |  RIP |
+| MCO | HAD |SSR | RIP |
 |---|---|---|---|
-|**ODMCO, Objectif de Dépense de MCO divisé en trois enveloppes financières** : 1. La part tarif : prestations des séjours hospitaliers (Groupe Homogène de Séjours : [GHS](https://documentation-snds.health-data-hub.fr/snds/glossaire/GHS.html)) ainsi que des Actes et Consultations Externes (ACE) des ES [ex-DG](https://documentation-snds.health-data-hub.fr/snds/glossaire/ex-DG.html). 2. La liste en sus : dépenses des spécialités (médicaments et dispositifs médicaux implantables) facturables en sus des hospitalisations. Ces deux premiers points sont financés selon l’activité ([T2A](https://documentation-snds.health-data-hub.fr/snds/glossaire/T2A.html)). 3. Les forfaits annuels : finance en partie les activités d’urgence et coordination, prélèvements d’organes, greffes d’organes|**ODMCO, Objectif de Dépense de MCO**. 1. La part tarif : journées d’hospitalisation à domicile (Groupe Homogène de Tarifs : GHT). 2. Les médicaments sur la liste en sus. Ces deux points sont financés selon l’activité ([T2A](https://documentation-snds.health-data-hub.fr/snds/glossaire/T2A.html))| **Jusqu'en 2016** : ODAM, Objectif de Dépenses de l’Assurance Maladie : 1. Établissements publics ou privés à but non lucratif : DAF, Dotation Annuelle de Financement ; financement alloué par la région (ARS) en dotation. 2. Cliniques privés ou certains établissements privés à but non lucratif : OQN, Objectif Quantifié National; financement alloué à l’activité. |**Jusqu'en 2021** : ODAM, Objectif des Dépenses de l’Assurance Maladie. 1. Établissements publics ou privés à but non lucratif : DAF, Dotation Annuelle de Financement; financement alloué par la région (ARS) en dotation. 2. Cliniques privés ou certains établissements privés à but non lucratif : OQN, Objectif Quantifié National; financement alloué à l’activité.|
-|**MIGAC, Mission d’Intérêt Général et d’Aide à la Contractualisation** : Financement d’activités non tarifées à l’activité (enseignement, recherche, SAMU/SMUR …) à l’aide de dotations| -  |**A partir de 2017** : ODSSR, Objectif de Dépense de SSR. Le nouveau modèle de financement des établissements SSR est mixte et repose sur des recettes directement liées à l’activité assorties de compartiments complémentaires. Il est composé :1. D’une part activité : permet de prendre en compte l’activité réalisée sur l’année en cours. 2. D’une part forfaitaire : base de ressources minimales permettant de mettre en œuvre des stratégies pluriannuelles et de lisser les aléas de revenus liés à l’activité. 3. Des compartiments complémentaires : « Plateaux techniques spécialisés », « molécules onéreuses », « Missions d’intérêt général (MIG) » etc.Le déploiement progressif de cette réforme est prévu de début 2017 à fin 2022.|**A partir de 2022** : Les nouveaux modes de financement comprendront une dotation à la file active, une dotation à la qualité du codage et une dotation populationnelle.|
+|**ODMCO, Objectif de Dépense de MCO divisé en trois enveloppes financières**:|**ODMCO, Objectif de Dépense de MCO:** | **Jusqu'en 2016 : ODAM, Objectif de Dépenses de l’Assurance Maladie**|**Jusqu'en 2021** : ODAM, Objectif des Dépenses de l’Assurance Maladie**|  
+|**1.** La part tarif : prestations des séjours hospitaliers (Groupe Homogène de Séjours : [GHS](https://documentation-snds.health-data-hub.fr/snds/glossaire/GHS.html)) ainsi que des Actes et Consultations Externes (ACE) des ES [ex-DG](https://documentation-snds.health-data-hub.fr/snds/glossaire/ex-DG.html). | **1.** La part tarif : journées d’hospitalisation à domicile (Groupe Homogène de Tarifs : GHT). | **1.** Établissements publics ou privés à but non lucratif : DAF, Dotation Annuelle de Financement ; financement alloué par la région (ARS) en dotation. | **1** Établissements publics ou privés à but non lucratif : DAF, Dotation Annuelle de Financement; financement alloué par la région (ARS) en dotation. |  
+|**2.** La liste en sus : dépenses des spécialités (médicaments et dispositifs médicaux implantables) facturables en sus des hospitalisations. Ces deux premiers points sont financés selon l’activité ([T2A](https://documentation-snds.health-data-hub.fr/snds/glossaire/T2A.html)). | **2.** Les médicaments sur la liste en sus. Ces deux points sont financés selon l’activité ([T2A](https://documentation-snds.health-data-hub.fr/snds/glossaire/T2A.html)) | **2.** Cliniques privés ou certains établissements privés à but non lucratif : OQN, Objectif Quantifié National; financement alloué à l’activité. | **2.** Cliniques privés ou certains établissements privés à but non lucratif : OQN, Objectif Quantifié National; financement alloué à l’activité.|  
+|**3.** Les forfaits annuels : finance en partie les activités d’urgence et coordination, prélèvements d’organes, greffes d’organes| | | |  
+|**MIGAC, Mission d’Intérêt Général et d’Aide à la Contractualisation** : Financement d’activités non tarifées à l’activité (enseignement, recherche, SAMU/SMUR …) à l’aide de dotations| |**A partir de 2017 : ODSSR, Objectif de Dépense de SSR.** Le nouveau modèle de financement des établissements SSR est mixte et repose sur des recettes directement liées à l’activité assorties de compartiments complémentaires. Le déploiement progressif de cette réforme est prévu de début 2017 à fin 2022. Il est composé :| **A partir de 2022** : Les nouveaux modes de financement comprendront une dotation à la file active, une dotation à la qualité du codage et une dotation populationnelle. |
+| | | **1.** D’une part activité : permet de prendre en compte l’activité réalisée sur l’année en cours.| | 
+| | | **2.** D’une part forfaitaire : base de ressources minimales permettant de mettre en œuvre des stratégies pluriannuelles et de lisser les aléas de revenus liés à l’activité. | |
+| | | **3.** Des compartiments complémentaires : « Plateaux techniques spécialisés », « molécules onéreuses », « Missions d’intérêt général (MIG) » etc.| |
 
 La rémunération à l’acte ([NGAP](../../glossaire/NGAP.md), [CCAM](../../glossaire/CCAM.md)) des professionnels de santé libéraux intervenant lors des séjours dans les ES privés [ex-OQN](../../glossaire/ex-OQN.md) n’est pas modifiée. 
 
@@ -206,11 +219,13 @@ Les informations présentes sur le certificat de décès et disponibles dans la 
 ### 2.2.5 Autres produits
 #### 2.2.5.1 Nomenclatures de santé pour le codage et la facturation
 
-Les nomenclatures utilisées dans le cadre du SNDS sont gérées et mises à jour régulièrement par différentes structures :
-* Gérées et maintenues par la [Cnam](../../glossaire/Cnam.md) et l'[ATIH](../../glossaire/ATIH.md) :
-  * Actes médico-techniques : Classification Commune des Actes Médicaux ([CCAM](../../glossaire/CCAM.md))
-[Cnam](https://www.ameli.fr/accueil-de-la-ccam/index.php) : version utilisée pour la facturation (DCIR)
-[ATIH](https://www.atih.sante.fr/ccam-descriptive-usage-pmsi-2022) : version utilisée pour la description et la facturation (PMSI)
+Les nomenclatures utilisées dans le cadre du SNDS sont gérées et mises à jour régulièrement par différentes structures :  
+
+**Gérées et maintenues par la [Cnam](../../glossaire/Cnam.md) et l'[ATIH](../../glossaire/ATIH.md) :**
+
+* Actes médico-techniques : Classification Commune des Actes Médicaux ([CCAM](../../glossaire/CCAM.md))  
+  * [Cnam](https://www.ameli.fr/accueil-de-la-ccam/index.php) : version utilisée pour la facturation (DCIR)  
+  * [ATIH](https://www.atih.sante.fr/ccam-descriptive-usage-pmsi-2022) : version utilisée pour la description et la facturation (PMSI)  
 * Médicaments : 
   * Code Identifiant de Présentation ([CIP](../../glossaire/CIP.md)) : médicaments remboursables aux assurés sociaux et agréés aux collectivités (DCIR).
   * Unité Commune de Dispensation ([UCD](../../glossaire/UCD.md)) : médicaments rétrocédés ou facturables en sus des [GHS](../../glossaire/GHS.md), des [GHPC](../../glossaire/GHPC.md) ou des [GME](../../glossaire/GME.md) par les établissements de santé (PMSI et DCIR).
@@ -221,7 +236,8 @@ Les nomenclatures utilisées dans le cadre du SNDS sont gérées et mises à jou
   * Liste de DMI issue de la [LPP](../../glossaire/LPP.md)
 [DMI ATIH](https://www.atih.sante.fr/dispositifs-medicaux-pris-en-charge-en-sus/) 
 
-* Gérées et maintenues par la [Cnam](../../glossaire/Cnam.md) :
+**Gérées et maintenues par la [Cnam](../../glossaire/Cnam.md) :**
+
   * Actes de biologie : Nomenclature des Actes de Biologie Médicale ([NABM](../../glossaire/NABM.md))
 [Cnam](http://www.codage.ext.cnamts.fr/codif/nabm/index_presentation.php?p_site=AMELI/)
   * Actes généraux des professionnels de santé (hors [CCAM](../../glossaire/CCAM.md) et hors [NABM](../../glossaire/NABM.md)) : 
@@ -231,43 +247,41 @@ Les nomenclatures utilisées dans le cadre du SNDS sont gérées et mises à jou
   * Normes encadrant les échanges informatiques de données entre ES et assurance maladie(Norme B2-Noémie) : 
 [Cnam](https://www.ameli.fr/assure/documentation-technique/norme-b2)
 
-* Gérée et maintenue par l’[OMS](../../glossaire/OMS.md) :
+**Gérée et maintenue par l’[OMS](../../glossaire/OMS.md) :**
+
   * Médicaments : classifications Anatomique, Thérapeutique et Chimique (ATC)
 [OMS](https://www.whocc.no/atc_ddd_index/)
 
-* Gérée et maintenue par l’[OMS](../../glossaire/OMS.md) et l'[ATIH](../../glossaire/ATIH.md) :
-  * Maladies, signes, symptômes, circonstances sociales et causes externes de maladies ou de blessures : Classification Internationale des Maladies, 10ème version ([CIM](../../glossaire/CIM.md)-10), qui est modifiée et complétée par l'[ATIH](../../glossaire/ATIH.md) dans la version utilisée dans le PMSI
-    * [OMS](https://icd.who.int/browse10/2019/en#/)
-    * [ATIH](https://www.atih.sante.fr/cim-10-fr-2022-usage-pmsi)
+**Gérée et maintenue par l’[OMS](../../glossaire/OMS.md) et l'[ATIH](../../glossaire/ATIH.md) :**
+
+Maladies, signes, symptômes, circonstances sociales et causes externes de maladies ou de blessures : Classification Internationale des Maladies, 10ème version ([CIM](../../glossaire/CIM.md)-10), qui est modifiée et complétée par l'[ATIH](../../glossaire/ATIH.md) dans la version utilisée dans le PMSI  
+* [OMS](https://icd.who.int/browse10/2019/en#/)
+* [ATIH](https://www.atih.sante.fr/cim-10-fr-2022-usage-pmsi)
 
 #### 2.2.5.2 Référentiels
 
 Les principaux référentiels du SNDS sont énumérés ici et les liens renvoient vers des fiches présentant leurs caractéristiques. 
-* Référentiel des bénéficiaires **`IR_BEN_R`** : contient des informations socio-démographiques des bénéficiaires. Ce référentiel dispose d’une version actuelle (`IR_BEN_R`) portant sur les bénéficiaires ayant eu au moins une consommation depuis le 01/01/2013 et une version archivée (`IR_BEN_R_ARC`) portant sur les bénéficiaires ayant eu au moins une consommation avant le 01/01/2013. [Référentiel bénéficiaires](../../tables/.sources/BENEFICIAIRE/IR_BEN_R.md)
+* [Référentiel bénéficiaires](../../tables/.sources/BENEFICIAIRE/IR_BEN_R.md) **`IR_BEN_R`** : contient des informations socio-démographiques des bénéficiaires. Ce référentiel dispose d’une version actuelle (`IR_BEN_R`) portant sur les bénéficiaires ayant eu au moins une consommation depuis le 01/01/2013 et une version archivée (`IR_BEN_R_ARC`) portant sur les bénéficiaires ayant eu au moins une consommation avant le 01/01/2013.  
 
-* Référentiel médicalisé des bénéficiaires **`IR_IMB_R`** : contient des informations médicalisées (exonération pour [ALD](../../glossaire/ALD.md), maladie professionnelle, etc.). [Référentiel médicalisé](../../tables/.sources/DCIR_DCIRS/IR_IMB_R.md)
+* [Référentiel médicalisé](../../tables/.sources/DCIR_DCIRS/IR_IMB_R.md) des bénéficiaires **`IR_IMB_R`** : contient des informations médicalisées (exonération pour [ALD](../../glossaire/ALD.md), maladie professionnelle, etc.).  
 
-* Référentiel des médicaments **`IR_PHA_R`** : permet d'avoir des informations sur les médicaments délivrés en officine (identification via les classifications ATC, [CIP](../../glossaire/CIP.md) et [UCD](../../glossaire/UCD.md), la composition, la date de mise sur le marché, le nom du laboratoire, etc.).
-
-La mise à jour mensuelle à partir des parutions au Journal Officiel est effectuée par le « département d’Etudes sur les pathologies & les patients » de la [Cnam](../../glossaire/Cnam.md). Une description détaillée du référentiel est disponible dans le communiqué du 24/01/2012.
-  * [Référentiel médicaments](../../fiches/medicament.md)
+* [Référentiel des médicaments](../../fiches/medicament.md) **`IR_PHA_R`** : permet d'avoir des informations sur les médicaments délivrés en officine (identification via les classifications ATC, [CIP](../../glossaire/CIP.md) et [UCD](../../glossaire/UCD.md), la composition, la date de mise sur le marché, le nom du laboratoire, etc.).  
+*La mise à jour mensuelle à partir des parutions au Journal Officiel est effectuée par le « département d’Etudes sur les pathologies & les patients » de la [Cnam](../../glossaire/Cnam.md). Une description détaillée du référentiel est disponible dans le communiqué du 24/01/2012.*  
 
 * Référentiel des actes de biologie **`IR_BIO_R`** : contient l’historique complet des modifications de tarifs des actes de biologie médicale (identification des actes via la classification [NABM](../../glossaire/NABM.md)).
 
-* Référentiel d’établissements **`BE_IDE_R`** : permet d’avoir des informations concernant les établissements sanitaires et médico-sociaux grâce au numéro FINESS. Ce référentiel couvre les établissements de santé ([ex-DG](../../glossaire/ex-DG.md) et [ex-OQN](../../glossaire/ex-OQN.md)) et les ESMS mais également les centres de santé, PMI, les centres dentaires, …
-[Référentiel d’établissements](../../fiches/ref_etab.md)
+* [Référentiel d’établissements](../../fiches/ref_etab.md) **`BE_IDE_R`** : permet d’avoir des informations concernant les établissements sanitaires et médico-sociaux grâce au numéro FINESS. Ce référentiel couvre les établissements de santé ([ex-DG](../../glossaire/ex-DG.md) et [ex-OQN](../../glossaire/ex-OQN.md)) et les ESMS mais également les centres de santé, PMI, les centres dentaires, …
 
-* Référentiel des bénéficiaires de soins en établissement ou service médico-social (ESMS) **`IR_ESM_R`** : permet l’identification de bénéficiaires pris en charge par un service ou résidant ou ayant résidé dans un ESMS (EHPAD, autres ESMS, etc.), selon différentes caractéristiques. A noter que les patients hospitalisés en ES-SLD sont également référencés dans ce référentiel.
-[Référentiel bénéficiaires soins médico-sociaux](../../fiches/IR_ESM_R.md)
+* [Référentiel des bénéficiaires de soins en établissement ou service médico-social](../../fiches/IR_ESM_R.md) (ESMS) **`IR_ESM_R`** : permet l’identification de bénéficiaires pris en charge par un service ou résidant ou ayant résidé dans un ESMS (EHPAD, autres ESMS, etc.), selon différentes caractéristiques. A noter que les patients hospitalisés en ES-SLD sont également référencés dans ce référentiel.
 
-* Référentiel des Professionnels de Santé `DA_PRA_R` : contient des informations sur l’activité des Professionnels de Santé ([PS](../../glossaire/PS.md)) (mode d’exercice, différents cabinets, etc.). 
-[Référentiel professionnels de santé](../../fiches/DA_PRA_R.md)
+* [Référentiel des professionnels de santé](../../fiches/DA_PRA_R.md) `DA_PRA_R` : contient des informations sur l’activité des Professionnels de Santé ([PS](../../glossaire/PS.md)) (mode d’exercice, différents cabinets, etc.). 
 
-Seuls les référentiels `IR_PHA_R` et `IR_BIO_R` sont disponibles et téléchargeables au format CSV dans le [dictionnaire interactif](https://health-data-hub.shinyapps.io/dico-snds/) (onglet "recherche dans les nomenclatures").
+>Seuls les référentiels `IR_PHA_R` et `IR_BIO_R` sont disponibles et téléchargeables au format CSV dans le [dictionnaire interactif](https://health-data-hub.shinyapps.io/dico-snds/) (onglet "recherche dans les nomenclatures").
 
 #### 2.2.5.3 Autres sources
 
-**Catalogue du SNDS**
+**Catalogue du SNDS**  
+
 Des bases de données seront accessibles via la plateforme du Health Data Hub ([HDH](../../glossaire/HDH.md)), en plus de la base principale du SNDS qui inclut Vaccin-covid et SI-DEP. Ces bases de données seront listées dans le [catalogue du SNDS](https://www.health-data-hub.fr/catalogue-de-donnees).
 Suivant l'arrêté du 12 mai 2022, les bases suivantes feront parties du catalogue de données disponibles :
 
@@ -299,24 +313,28 @@ L’ajout de données provenant des Maisons Départementales des Personnes Handi
 ### 2.3.4 PMSI SSR (séjours)
 ![image](/files/HDH/2022-12-12_HDH_PMSI_SSR_MLP-2.0.png)
 
-Il est prévu une suppression du FPP dans le PMSI à partir de 2023 : le codage de la Manifestation Morbide Principale (MPP) et de l’Affection Etiologique (AE) est maintenu.
+>Il est prévu une suppression du FPP dans le PMSI à partir de 2023.  
+Les codages de la Manifestation Morbide Principale (MPP) et de l’Affection Etiologique (AE) sont maintenus.
 ### 2.3.5 PMSI PSY (RIM-P) (séjours ou actes externes (EDGAR))
 ![image](/files/HDH/2022-12-12_HDH_PMSI_PSY_MLP-2.0.png)
 
 ## 2.4. Avantages et limites de ces données
 * **Avantages :**
-  * Données exhaustives sur les hospitalisations et les consommations de soins remboursées.
+  * Données exhaustives sur les hospitalisations et les consommations de soins remboursées.  
   * Données exhaustives pour les montants remboursés par l'assurance maladie.
   * Le chaînage de plusieurs données permet de suivre le parcours de soins ville/hôpital de chaque individu.
   * La profondeur des données permet de créer des cohortes avec de longues périodes de suivi sans perdus de vue.
   * Données collectées de manière prospective et de manière identique : pas de biais de mémorisation, variables standardisées et préexistantes au recueil de données.
+
 * **Limites :**
   * Peu de données cliniques, en particulier sur les soins et prestations réalisés en ville.
   * Aucun résultat d’examen (analyse biologique, imagerie, etc.).
   * Pas de données sur la consommation effective par les patients des médicaments (seulement sur la délivrance), ni sur l’utilisation effective des dispositifs médicaux (en ville).
-
-  * L’utilisation du [PMSI](../../glossaire/PMSI.md) pour la facturation hospitalière génère des biais de production des données. Par exemple, le codage des diagnostics associés ([DA](../../glossaire/DA.md)) peut ne pas être exhaustif (il est même parfois limité aux pathologies inscrites à la liste des complications et morbidités associées ([CMA](../../glossaire/CMA.md)). Autre exemple, le codage des actes [CCAM](../../glossaire/CCAM.md) peut ne pas être exhaustif (certains actes non classants et à visée diagnostique peuvent ne pas être codés (radiographie de thorax, ponction lombaire, électrocardiogramme, etc.)).
-  * Pas d’information sur la situation socio-économique du patient (niveau d’étude, chômage, etc.). Le FDep ne caractérise que très indirectement le patient car il caractérise sa commune de résidence ; il est à utiliser avec précaution pour les communes très peuplées et présentant une hétérogénéité populationnelle (ex : zones résidentielles favorisées limitrophes de quartiers politique de la ville (QPV)). 
+  * L’utilisation du [PMSI](../../glossaire/PMSI.md) pour la facturation hospitalière génère des biais de production des données.  
+    * Par exemple, le codage des diagnostics associés ([DA](../../glossaire/DA.md)) peut ne pas être exhaustif (il est même parfois limité aux pathologies inscrites à la liste des complications et morbidités associées ([CMA](../../glossaire/CMA.md)).  
+    * Autre exemple, le codage des actes [CCAM](../../glossaire/CCAM.md) peut ne pas être exhaustif (certains actes non classants et à visée diagnostique peuvent ne pas être codés (radiographie de thorax, ponction lombaire, électrocardiogramme, etc.)).
+  * Pas ou peu d’information sur la situation socio-économique du patient (niveau d’étude, chômage, etc.). (cf. [la fiche sur les indices de précarité dans le SNDS](../../fiches/precarite.md))  
+Par exemple, le FDep ne caractérise que très indirectement le patient car il caractérise sa commune de résidence ; il est à utiliser avec précaution pour les communes très peuplées et présentant une hétérogénéité populationnelle (ex : zones résidentielles favorisées limitrophes de quartiers politique de la ville (QPV)). 
 
 ## 2.5. Responsabilité individuelle en terme de sécurité des données de santé
 Le SNDS contient des données de santé individuelles et à ce titre, le traitement de ces données est régi par plusieurs textes réglementaires afin de protéger les libertés et droits fondamentaux des personnes :
