@@ -559,10 +559,10 @@ mais cette fois le montant payé associé à un code affiné est proportionnel �
 
 ## Références
 
-- Guide de facturation des médicaments rétrocédés : https://www.ameli.fr/sites/default/files/Documents/5229/document/facturation-medicaments-retrocedes_assurance-maladie.pdf
-- Guide de facturation des médicaments, produits et prestations de la liste en sus : https://www.ameli.fr/sites/default/files/Documents/5230/document/produits-prestations-facturables-en-sus_assurance-maladie.pdf
-- Outils KWIKLY - Le Katalogue SNIIRAM-SNDS V3 des Données individuelles bénéficiaires.xlsxm : CNAM
-- Formation DCIR DCIRS CNAM
+- [Guide](https://www.ameli.fr/sites/default/files/Documents/5229/document/facturation-medicaments-retrocedes_assurance-maladie.pdf) de facturation des médicaments rétrocédés par les établissements de santé
+- [Guide](https://www.ameli.fr/sites/default/files/Documents/5230/document/produits-prestations-facturables-en-sus_assurance-maladie.pdf) de facturation des médicaments, produits et prestations facturables en sus des prestations d'hospitalisation par les établissements de santé privés 
+- Outils [KWIKLY](https://documentation-snds.health-data-hub.fr/snds/aller_plus_loin/documents_cnam/kwikly.html) - Le Katalogue des données SNIIRAM-SNDS
+- Formation DCIR/DCIRS de la Cnam disponible [ici](https://documentation-snds.health-data-hub.fr/snds/formation_snds/documents_cnam/Formation_demex.html)
 
 
 ::: tip Crédits
