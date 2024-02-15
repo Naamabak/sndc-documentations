@@ -99,7 +99,7 @@ La CNAM publie chaque année une fiche de résultats statistiques pour chacune d
 ## Références
 
 ::: tip Crédit
-Le contenu original de cette fiche est tiré du document [Méthode médicale Cartographie](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/etudes-en-sante-publique/cartographie-des-pathologies-et-des-depenses/methode.php) disponible sur le site Ameli.  
+Le contenu original de cette fiche est tiré du document [Méthode médicale Cartographie](https://assurance-maladie.ameli.fr/etudes-et-donnees/par-theme/pathologies/cartographie-assurance-maladie/methode-cartographie-pathologies-depenses-assurance-maladie) disponible sur le site Ameli.  
 Les codes SQL SAS ont été reconstitués par Claire-Lise Dubost (DREES).
 :::
 
