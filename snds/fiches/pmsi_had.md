@@ -9,6 +9,8 @@ tags:
 # Requête type dans le PMSI-HAD
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+<TagLinks />
+
 ---
 ## Table des matières
 

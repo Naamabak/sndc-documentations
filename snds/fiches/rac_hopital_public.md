@@ -8,6 +8,8 @@ tags:
 # Reste à charge après AMO en établissements de santé publics
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+<TagLinks />
+
 Cette fiche explique comment calculer le montant du reste à charge après Assurance maladie obligatoire (AMO) pour un séjour en établissement de santé public à partir du PMSI.
 
 Les explications sont déclinées par spécialité hospitalière :

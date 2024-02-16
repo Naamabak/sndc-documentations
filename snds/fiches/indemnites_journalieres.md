@@ -11,6 +11,8 @@ tags:
 # Indemnités journalières
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+<TagLinks />
+
 L'abréviation IJ pour indemnités journalières sera utilisée pour cette fiche.
 
 ## IJ dans le RG - cas du salarié

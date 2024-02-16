@@ -9,7 +9,7 @@ tags:
 # Requête type dans le PMSI-SSR
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
----
+<TagLinks />
 
 
 ## Table des matières

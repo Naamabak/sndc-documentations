@@ -12,6 +12,8 @@ tags:
 # Dates de décès: recueil et fiabilité
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+<TagLinks />
+
 L'objectif de cette note est de documenter la fiabilité de la date de décès des individus et de proposer une méthodologie de recueil de la date la plus sûre.
 
 ## Repérage des dates de décès

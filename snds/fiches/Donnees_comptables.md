@@ -8,6 +8,8 @@ tags:
 # Table de données comptables du DCIR (ER\_CPT\_F)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+<TagLinks />
+
 Cette fiche a pour but de décrire la table de données comptables du DCIR, **ER_CPT_F**. Cette table retrace l'ensemble des dépenses engagées par les caisses d'assurance maladie et inscrites à leur comptabilité. Son champ est toutefois restreint, coïncidant avec celui du DCIR : par exemple, les montants de séjours en hôpital public (qui transitent uniquement par le PMSI) ne sont pas inclus. 
 
 Les montants de la table comptable ER_CPT_F cumulent les *montants remboursés* trouvés dans les tables ER_CPT_F (pour la part dite "légale" ou "commune") et ER_ARO_F (pour les parts "supplémentaires" accordés aux bénéficiaires de la Complémentaire santé solidaire ou du régime d'Alsace-Moselle).

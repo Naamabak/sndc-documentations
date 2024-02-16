@@ -9,6 +9,8 @@ tags:
 # L'Allocation Adulte handicapé
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+<TagLinks />
+
 L'allocation aux adultes handicapés (AAH) est une aide financière accordée sur décision de la commission des droits et de l'autonomie des personnes handicapées (CDAPH). 
 Une partie des conditions à remplir pour bénéficier de cette prestation est étudiée par la maison départementale des personnes âgées (MDPH). L’AAH peut être attribuée si : 
 * le taux d’incapacité est supérieur ou égal à 80 % ; 

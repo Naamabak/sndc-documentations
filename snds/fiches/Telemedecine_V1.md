@@ -8,6 +8,8 @@ tags:
 # Télémédecine
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+<TagLinks />
+
 La télémédecine est une pratique médicale effectuée par un médecin à distance en mobilisant des technologies de l’information et de la communication.
 
 La télémédecine est constituée de 6 types de prestations :
