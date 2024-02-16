@@ -468,7 +468,7 @@ Le fonctionnement général est identique pour les autres tables d'actes affiné
 
 - Pharmacie hospitalière - `ER_UCD_R` : 
     * Il est conseillé d'utiliser cette table pour étudier la rétrocession hospitalière.
-    * [Les médicaments en sus](https://documentation-snds.health-data-hub.fr/snds/fiches/medicaments_de_la_liste_en_sus.html#presentation) des hospitalisations sont en doublons dans le PMSI.
+    * [Les médicaments en sus](../../fiches/medicaments_de_la_liste_en_sus.md) des hospitalisations sont en doublons dans le PMSI.
 
 - Biologie - `ER_BIO_R` :
     * La biologie réalisée dans des ES est en doublon dans le PMSI.
