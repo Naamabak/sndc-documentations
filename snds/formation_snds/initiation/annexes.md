@@ -2,8 +2,8 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 Les fiches de la documentation résumant les informations disponibles dans le SNDS:
-- L'[Historique des données du SNDS](../../fiches/historique_donnees.html)
-- Le [Graphique pour Parcourir le SNDS](../../fiches/Fiche_GPS_Heva.html) développé par HEVA
+- L'[Historique des données du SNDS](../../fiches/historique_donnees.md)
+- Le [Graphique pour Parcourir le SNDS](../../fiches/Fiche_GPS_Heva.md) développé par HEVA
 
 ## 5.1 Outils et documentations disponibles
 
