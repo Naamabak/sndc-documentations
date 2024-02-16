@@ -11,6 +11,8 @@ tags:
 
 # Filtres recommandés dans le SNDS - synthèse
 
+<TagLinks />
+
 Cette fiche a pour objectif de regrouper tous les filtres recommandés des requêtes types sur les tables principales du SNDS. Elle est construite à partir des supports de [Formation DCIR](../formation_snds/documents_cnam/Formation_demex.md) et [Formation PMSI](../formation_snds/documents_cnam/Formation_PMSI.md). 
 
 Afin de présenter des requêtes qui s’adaptent facilement aux différentes variantes des langages de bases de données,  il a été choisi d’utiliser le système de gestion de base de données MySQL (système le plus utilisé aujourd’hui).
