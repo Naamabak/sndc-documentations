@@ -10,6 +10,8 @@ tags:
 # Les résidents en EHPAD
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+<TagLinks />
+
 Cette fiche présente les **spécificités de la prise en charge des soins des personnes âgées résidant en établissement** et les précautions à mettre en oeuvre lors de l'exploitation du SNDS.
 
 ## Les établissements d'hébergement pour personnes âgées 
