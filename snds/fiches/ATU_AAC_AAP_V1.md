@@ -9,6 +9,8 @@ tags:
 
 # Médicaments en accès dérogatoire
 
+<TagLinks />
+
 Apparus il y a plus de 25 ans, l’accès dérogatoire à un médicament est un dispositif permettant à un patient en situation d’impasse thérapeutique de bénéficier d’un médicament non autorisé en France dans une indication donnée. Pour bénéficier d’un accès dérogatoire quatre conditions doivent être réunies :  
 1. La maladie est grave, rare ou invalidante,  
 2. il n’existe pas de traitement approprié disponible,  
