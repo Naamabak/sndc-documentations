@@ -8,6 +8,8 @@ tags:
 
 # Valorisation de l’activité HAD dans le PMSI
 
+<TagLinks />
+
 Cette fiche explique comment valoriser l’activité des séjours hospitaliers en [HAD](../glossaire/HAD.md), selon les perspectives base de remboursement (BR) et remboursement Assurance Maladie Obligatoire (AMO). 
 
 Il est nécessaire de savoir identifier un séjour en HAD avant de pouvoir le valoriser : cf. fiche [Requête type dans le PMSI-HAD](../fiches/pmsi_had.md).
