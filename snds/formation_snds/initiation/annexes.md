@@ -1,31 +1,21 @@
 # 5. Annexes
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-## Synthèse des informations disponibles
-
-**Tableau 5. Synthèse des informations disponibles et sélectionnées dans ce guide, sur les caractéristiques bénéficiaires et les principaux types de soins**
-
-<p style="text-align: center;">
-<object data="/files/HDH/202212_HDH_synthèse_information_disponible_MPL-2.0.pdf" type="application/pdf" width="500px" height="450px">
-    <embed src="/files/HDH/202212_HDH_synthèse_information_disponible_MPL-2.0.pdf" type="application/pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/HDH/202212_HDH_synthèse_information_disponible_MPL-2.0.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
-</p>
-
+Les fiches de la documentation résumant les informations disponibles dans le SNDS:
+- L'[Historique des données du SNDS](../../fiches/historique_donnees.md)
+- Le [Graphique pour Parcourir le SNDS](../../fiches/Fiche_GPS_Heva.md) développé par HEVA
 
 ## 5.1 Outils et documentations disponibles
 
-La liste des outils et documentations SNDS, pour une aide fonctionnelle essentiellement, mais aussi technique, est disponible sur le site de la [documentation collaborative](https://documentation-snds.health-data-hub.fr) sur le site du HDH], à la section [Pour aller plus loin](../../aller_plus_loin/) :
+La liste des outils et documentations SNDS, pour une aide fonctionnelle essentiellement, mais aussi technique, est disponible sur le site de la [documentation collaborative](https://documentation-snds.health-data-hub.fr) sur le site du HDH, à la section [Pour aller plus loin](../../aller_plus_loin/) :
 
 Le [glossaire](../../glossaire/) pour aborder les différentes notions et concepts en santé ou en lien avec l'organisation du SNDS.
-
 
 Les **dictionnaires** des données :
 
 * [Dictionnaire interactif](https://health-data-hub.shinyapps.io/dico-snds/) produit par la Drees et maintenu par le [HDH](../../glossaire/HDH.md) 
 - [Kwikly Cnam](../../aller_plus_loin/documents_cnam/kwikly.md)
-- Portail SNDS de la Cnam (via accès permanent ou accès sur projet via le portail) : onglet "Dictionnaire"
+- [Portail](https://auth.sniiram.ameli.fr/) SNDS de la Cnam (accès uniquement si accès permanent ou sur projet): onglet "Dictionnaire"
 
 Les **nomenclatures des variables ou tables de valeurs** ne sont pas abordées dans ce guide, cependant :
 * Elles se retrouvent dans la colonne "Nomenclature" du [Dictionnaire interactif](https://health-data-hub.shinyapps.io/dico-snds/), associées à la variable concernée (téléchargeable en format CSV) ;

@@ -468,11 +468,11 @@ Le fonctionnement général est identique pour les autres tables d'actes affiné
 
 - Pharmacie hospitalière - `ER_UCD_R` : 
     * Il est conseillé d'utiliser cette table pour étudier la rétrocession hospitalière.
-    * Les médicaments en sus des hospitalisations sont en doublons dans le PMSI.
+    * [Les médicaments en sus](../../fiches/medicaments_de_la_liste_en_sus.md) des hospitalisations sont en doublons dans le PMSI.
 
 - Biologie - `ER_BIO_R` :
     * La biologie réalisée dans des ES est en doublon dans le PMSI.
-    * Le prix unitaire correspond au prix de l’acte agrégé B dans la table ER_PRS_F (variable BSE_REM_PRU), associé au coefficient de l'acte affiné (variable BTF_TAR_COF).
+    * Le prix unitaire correspond au prix de l’acte agrégé B dans la table `ER_PRS_F` (variable `BSE_REM_PRU`), associé au coefficient de l'acte affiné (variable `BTF_TAR_COF`).
 
 - Dispositifs médicaux - `ER_TIP_R` :
     * Les dispositifs utilisés en ES sont en doublons dans le PMSI.
@@ -571,10 +571,11 @@ WHERE SUBSTR(MED.UCD_UCD_COD, 7, 7) IN ('9409535', '9419723') ;
 - Fiche [Requête type dans le PMSI-MCO](../../fiches/requete_type_pmsi_mco.md)
 Avec un exemple de [programme SAS sur la sélection de séjours MCO à partir des codes diagnostics (DP/DR ou DAS)](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/pmsi_mco_select_sejours_par_diag.sas).
 
-- **Sélection sur le Groupe Homogène de Malades, [GHM](../../glossaire/GHM.md) ** :
+- **Sélection sur le Groupe Homogène de Malades, [GHM](../../glossaire/GHM.md)** :
 Cette notion nécessite de comprendre le système de financement à l'activité ([T2A](../../glossaire/T2A.md)) des ES. Le [GHM](../../glossaire/GHM.md) est la catégorie élémentaire de la classification médico-économique propre au PMSI MCO. Il lui est associé un tarif ou Groupe Homogène de Séjours ([GHS](../../glossaire/GHS.md)). Le tarif du [GHS](../../glossaire/GHS.md) est différent en fonction du secteur ex-DG ou ex-OQN de l'ES. 
 
-- Il est également possible d'identifier les [traitements administrés en ES faisant l'objet d'autorisation temporaire d'utilisation (ATU) et de recommandation temporaire d'utilisation (RTU). Dispositifs réformés au 01/07/2021 en accès précoce (AAP) et accès compassionnel (CPC)](https://solidarites-sante.gouv.fr/soins-et-maladies/medicaments/professionnels-de-sante/autorisation-de-mise-sur-le-marche/article/autorisation-d-acces-precoce-autorisation-d-acces-compassionnel-et-cadre-de)
+- Il est également possible d'identifier les [traitements administrés en ES faisant l'objet d'autorisation temporaire d'utilisation (ATU) et de recommandation temporaire d'utilisation (RTU)](https://solidarites-sante.gouv.fr/soins-et-maladies/medicaments/professionnels-de-sante/autorisation-de-mise-sur-le-marche/article/autorisation-d-acces-precoce-autorisation-d-acces-compassionnel-et-cadre-de). Ces dispositifs ont été réformés au 01/07/2021 en accès précoce (AAP) et accès compassionnel (CPC). Vous trouverez une fiche dans la documentation intitulée *Médicaments en accès dérogatoire*.
+
 - Identification des séjours après passage par un service des urgences : utilisation des variables mode d'entrée (`ENT_MCO` = '8' de la table B) et provenance (`ENT_PRV` in ('5', 'U') de la table B) et du premier type d'autorisation d'UM correspondant à une unité d'hospitalisation de courte durée (`AUT_TYP1_UM` LIKE '07%' de la table UM).
 La réforme du financement des structures des urgences et des structures mobiles d'urgence et de réanimation aura un impact sur les remontées d'information dans le PMSI 2022.
 :::
@@ -619,18 +620,18 @@ LEFT JOIN fh
 
 ::: tip : Pour aller plus loin :
 
-- Fiche [Dépenses des ES dans le SNDS](../../fiches/etablissements_sante.md)
+- **Fiches disponibles:**
+    - [Dépenses des ES dans le SNDS](../../fiches/etablissements_sante.md)
+    - [Dépenses des ES de santé publics dans le PMSI](../../fiches/depenses_hopital_public.md)
+    - [Dépenses des ES de santé privés dans le DCIR](../../fiches/fiche_etab_prives.md)
+    
+**NB**: pour les ES ex-OQN, il est conseillé d'utiliser les données DCIR pour réaliser une valorisation très précise de l'activité hospitalière car ils facturent directement les séjours à l'Assurance Maladie.  
 
-- Fiche [Dépenses des ES de santé publics dans le PMSI](../../fiches/depenses_hopital_public.md)
+- **Avant 2011** pour les ES ex-DG, et pour les ES ex-OQN, il est possible de réaliser une valorisation précise des hospitalisations dans le PMSI en recalculant les différents montants (tarif du séjour avec les seuils journaliers, facturations en sus et suppléments). Cette option est complexe car elle nécessite de connaître les principes de la [tarification à l'activité](https://solidarites-sante.gouv.fr/IMG/pdf/Presentation_des_grands_lignes_de_la_reforme.pdf).
 
-- Pour les ES ex-OQN, il est conseillé d'utiliser les données DCIR pour réaliser une valorisation très précise de l'activité hospitalière. 
-    - Fiche [Dépenses des ES de santé privés dans le DCIR](../../fiches/fiche_etab_prives.md)
+- Hors objectifs de suivi des dépenses, il est possible d'avoir une première valorisation simple des séjours selon une **perspective Assurance Maladie Obligatoire** (par exemple pour les modèles d'impact budgétaire) en utilisant les [tarifs des GHS, publiés chaque année par l'ATIH](https://www.atih.sante.fr/tarifs-mco-et-had), et leurs modulations temporelles, associés aux facturations en sus. 
 
-- Avant 2011 pour les ES ex-DG, et pour les ES ex-OQN, il est possible de réaliser une valorisation précise des hospitalisations dans le PMSI en recalculant les différents montants (tarif du séjour avec les seuils journaliers, facturations en sus et suppléments). Cette option est complexe car elle nécessite de connaître les principes de la [tarification à l'activité](https://solidarites-sante.gouv.fr/IMG/pdf/Presentation_des_grands_lignes_de_la_reforme.pdf).
-
-- Hors objectifs de suivi des dépenses, il est possible d'avoir une première valorisation simple des séjours selon une perspective Assurance Maladie Obligatoire (par exemple pour les modèles d'impact budgétaire) en utilisant les [tarifs des GHS, publiés chaque année par l'ATIH](https://www.atih.sante.fr/tarifs-mco-et-had), et leurs modulations temporelles, associés aux facturations en sus. 
-
-- Hors objectifs de suivi des dépenses, il est possible d'avoir une première valorisation simple des séjours selon une perspective collective/perspective de dépense totale (par exemple pour les modèles coût-efficacité) en utilisant les données des [Etudes Nationales de Coûts sanitaire en MCO (ENC)](https://www.atih.sante.fr/enc-mco/documentation). 
+- Hors objectifs de suivi des dépenses, il est possible d'avoir une première valorisation simple des séjours selon une **perspective collective/perspective de dépense totale** (par exemple pour les modèles coût-efficacité) en utilisant les données des [Etudes Nationales de Coûts sanitaire en MCO (ENC)](https://www.atih.sante.fr/enc-mco/documentation). 
 :::
 
 ### 4.4.4 ACE en MCO (PMSI)
@@ -680,7 +681,7 @@ FROM cslt_ACE_2019
 WHERE VALO <> '0' ;
 ```
 
-Il est également possible de valorisation l'ensemble des prises en charge réalisées pour un passage en ACE (permet notamment de prendre en compte des majorations liées à une consultation) via la table VALOACE, disponible à partir de 2013. Cette table donne des informations détaillées de valorisation (montants de base de remboursement et montants remboursés par l'AM en fonction des grands types de prestations d'ACE comme les différents forfaits de passages aux urgences, de dialyse, les forfaits techniques, les actes CAM, les dispositifs médicaux ou les traitements médicamenteux) :
+Il est également possible de valoriser l'ensemble des prises en charge réalisées pour un passage en ACE (permet notamment de prendre en compte des majorations liées à une consultation) via la table `VALOACE`, disponible à partir de 2013. Cette table donne des informations détaillées de valorisation (montants de base de remboursement et montants remboursés par l'AM en fonction des grands types de prestations d'ACE comme les différents forfaits de passages aux urgences, de dialyse, les forfaits techniques, les actes CAM, les dispositifs médicaux ou les traitements médicamenteux) :
 
 ```sql
 SELECT SUM(MNT_REMB) AS montant_tot_rembourse
@@ -694,11 +695,11 @@ AND CONCAT(ETA_NUM, SEQ_NUM) IN
 
 ::: tip Pour aller plus loin : 
 
-- Les passages aux urgences des ES ex-DG non suivis d'une hospitalisation sont repérables dans les tables ACE T_MCOaaFBSTC via le code activité "forfait d'accueil et de traitement des urgences" (ACT_COD = 'ATU').
+- Les passages aux urgences des ES ex-DG non suivis d'une hospitalisation sont repérables dans les tables ACE `T_MCOaaFBSTC` via le code activité "forfait d'accueil et de traitement des urgences" (`ACT_COD` = 'ATU').
 
-- Les passages aux urgences des ES ex-OQN non suivis d'une hospitalisation sont repérables dans la table T_MCOaaFB via le code activité "forfait d'accueil et de traitement des urgences" (ACT_COD = 'ATU'). 
+- Les passages aux urgences des ES ex-OQN non suivis d'une hospitalisation sont repérables dans la table `T_MCOaaFB` via le code activité "forfait d'accueil et de traitement des urgences" (`ACT_COD` = 'ATU'). 
 
-La réforme du financement des structures des urgences et des structures mobiles d'urgence et de réanimation aura un impact sur les remontées d'information dans le PMSI 2022.
+**NB**: La réforme du financement des structures des urgences et des structures mobiles d'urgence et de réanimation a eu un impact sur les remontées d'information dans le PMSI 2022.
 
-- La table de valorisation des ACE (`VALOACE`) n'est disponible qu'à partir de 2013. Pour les années antérieures, il est possible de valoriser les ACE en se référant aux [règles utilisées par l'ATIH](https://www.scansante.fr/sites/www.scansante.fr/files/content/237/guide_lecture_pmsi_mco_depuis_2008_0.zip) (par exemple, pour 2011, suivre la méthode de valorisation indiquée dans le document guide_lecture_mat2a_mco_dgf_2011_stc.pdf, tableaux 50 à 59).
+- La table de valorisation des ACE (`VALOACE`) n'est disponible qu'à partir de 2013. Pour les années antérieures, il est possible de valoriser les ACE en se référant aux [règles utilisées par l'ATIH](https://www.scansante.fr/sites/www.scansante.fr/files/content/237/guide_lecture_pmsi_mco_depuis_2008_0.zip) (par exemple, pour 2011, suivre la méthode de valorisation indiquée dans le document *guide_lecture_mat2a_mco_dgf_2011_stc.pdf*, tableaux 50 à 59).
 :::

@@ -20,7 +20,7 @@ Différentes informations sur les montants sont indiquées :
 - le montant remboursé
 - le [taux de remboursement](https://www.ameli.fr/rhone/assure/remboursements/rembourse/tableau-recapitulatif-taux-remboursement/tableau-recapitulatif-taux-remboursement)
 - les [participations forfaitaires](https://www.ameli.fr/rhone/assure/remboursements/reste-charge/participation-forfaitaire-1-euro) et [franchises médicales](https://www.ameli.fr/rhone/assure/remboursements/reste-charge/franchise-medicale)
-- les participations supplémentaires prises en charge par le public ([CMU-C](../glossaire/CMUC.md), [AME](../glossaire/AME.md), etc.)
+- les participations supplémentaires prises en charge par le public ([C2S](../glossaire/C2S.md) (anciennement [CMU-C](../glossaire/CMUC.md)), [AME](../glossaire/AME.md), etc.)
 
 ### Exemple schématique des différents montants 
 ![ex_montants_sdv](/files/HEVA/2019-07-16_HEVA_ex_montants_sdv_dcir_MPL-2.0.png)
