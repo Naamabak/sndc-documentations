@@ -8,6 +8,8 @@ tags:
 
 # Valorisation de l’activité MCO dans le PMSI
 
+<TagLinks />
+
 Cette fiche explique comment valoriser l’activité des séjours hospitaliers de [MCO](../glossaire/MCO.md), selon les perspectives base de remboursement (BR) et remboursement Assurance Maladie Obligatoire (AMO). 
 
 Il est nécessaire de savoir identifier un séjour en MCO avant de pouvoir le valoriser : cf. fiche [Requête type dans le PMSI-MCO](../fiches/requete_type_pmsi_mco.md). 
