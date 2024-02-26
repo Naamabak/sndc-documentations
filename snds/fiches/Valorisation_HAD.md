@@ -113,7 +113,7 @@ Ces dépenses sont prises en charge à 100% par l’AM.
   - Montant lié à la majoration au parcours de soin (`MAJ_MNT_PS`)
   - Montant à facturer au titre du ticket modérateur (`FAC_MNT_TM`)
   - Montant à facturer au titre du forfait journalier (`FAC_MNT_FJ`)
-  - Variables de jointures : `ETA_NUM_EPMSI`, `RHAD_NUM` (Cf. [Requête type dans le PMSI-HAD](../fiches/pmsi_had.md).
+  - Variables de jointures : `ETA_NUM_EPMSI`, `RHAD_NUM` (Cf. [Requête type dans le PMSI-HAD](../fiches/pmsi_had.md)).
 
 #### ES ex-OQN
 
