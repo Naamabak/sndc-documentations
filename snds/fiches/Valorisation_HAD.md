@@ -189,7 +189,7 @@ AND C.DAT_RET = '0' AND C.COH_NAI_RET = '0' AND C.COH_SEX_RET = '0' ;
 Valorisation des hospitalisations en ES ex-DG :
 CREATE TABLE valo_public_sejours_HAD_2022 AS
 SELECT sej.*, 
-                                        /* Variables de montants qui regroupent la part tarif et la part liste en sus */
+  /* Variables de montants qui regroupent la part tarif et la part liste en sus */
 STC.REM_BAS_MNT as valo_BR,
 STC.TOT_MNT_AM as valo_AMO
 FROM table_sejours_HAD_2022 AS sej 
@@ -203,7 +203,7 @@ WHERE STC.FAC_SEJ_AM = '1' ;
 Valorisation des hospitalisations en ES ex-OQN :
 CREATE TABLE valo_prive_sejours_HAD_2022 AS
 SELECT sej.*, 
-                                        /* Variables de montants qui regroupent la part tarif et la part liste en sus */
+  /* Variables de montants qui regroupent la part tarif et la part liste en sus */
 SUM(FA.PH_BRM, FC.hon_brm) AS valo_BR,
 SUM(FA.PH_AMO_MNR, FA.HON_AM_MNR) AS valo_AMO
 FROM table_sejours_HAD_2022 AS sej 
