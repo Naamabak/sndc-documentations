@@ -228,7 +228,7 @@ WHERE B.GRG_GHM NOT LIKE ‘90%’
 Valorisation des hospitalisations en ES ex-DG :
 CREATE TABLE valo_public_sejours_MCO_2022 AS
 SELECT sej.*, 
-                                        /* Variables de montants avec l’exhaustivité des éléments de valorisation */
+  /* Variables de montants avec l’exhaustivité des éléments de valorisation */
 VALO.MT_TOT_BR as valo_BR,
 VALO.MT_TOT_AM as valo_AMO
 FROM table_sejours_MCO_2022 AS sej 
@@ -242,7 +242,7 @@ WHERE VALO.VALO <> '0' OR VALO.VALO IS NULL;
 Valorisation des hospitalisations en ES ex-OQN :
 CREATE TABLE valo_prive_sejours_MCO_2022 AS
 SELECT sej.*, 
-                                        /* Variables de montants qui regroupent la part tarif et la part liste en sus */
+  /* Variables de montants qui regroupent la part tarif et la part liste en sus */
 SUM(FA.PH_BRM, FC.hon_brm) AS valo_BR,
 SUM(FA.PH_AMO_MNR, FA.HON_AM_MNR) AS valo_AMO
 FROM table_sejours_MCO_2022 AS sej 
