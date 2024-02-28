@@ -27,7 +27,7 @@
         href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tags"
         >schéma SNDS</a
       >
-      Nous vous prions de bien vouloir nous excuser pour toute gêne occasionnée.
+      test.
     </div>
   </div>
 </template>
