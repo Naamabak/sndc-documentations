@@ -11,7 +11,7 @@ tags:
 
 La Direction de la recherche, des études, de l’évaluation et des statistiques (DREES) a mis au point une [base simplifiée des dépenses de santé et des restes à charge](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/la-base-rac-sur-les-depenses-et-les-restes-charge-en-sante-apres) à partir du Système national des données de santé (SNDS).
 Cette base a permis de produire plusieurs Études et Résultats sur le sujet des restes à charge en France.   
-L'ensemble des [programmes](https://gitlab.com/DREES_code/public/outils/restes-a-charge-snds/-/tree/main/pipeline_baserac) permettant de construire la base RAC, ainsi que la [documentation associée](https://gitlab.com/DREES_code/public/outils/restes-a-charge-snds/-/tree/main/documentation), ont été mis en open source sur le gitlab de la DREES.
+L'ensemble des [programmes](https://git.drees.fr/drees_code_public/outils/restes-a-charge-snds/-/tree/main/baserac?ref_type=heads) permettant de construire la base RAC, ainsi que la [documentation associée](https://git.drees.fr/drees_code_public/outils/restes-a-charge-snds/-/tree/main/documentation?ref_type=heads), ont été mis en open source sur le gitlab de la DREES.
 
 ## Présentation de la base RAC
 
@@ -50,7 +50,7 @@ autres établissements à but non lucratif) ont été extraites du DCIRS.
 
 La base RAC comprend une ligne par individu et par poste de soins, pour l’année sur laquelle elle est indexée. La ventilation des dépenses par poste de soins résulte du regroupement des prestations en grandes catégories de soins, en fonction de la nature de chaque prestation, du professionnel exécutant et du lieu d'exécution. La base RAC contient des informations sur les caractéristiques individuelles des consommants (âge, sexe, lieu de résidence, statut ALD, statut CMU-C et statut ACS), ainsi que des indicateurs de dépense et de remboursement (montant de la dépense, base de remboursement, dépense remboursée par l’AMO, RAC AMO avec distinction de la partie opposable et de la liberté tarifaire).
 
-Pour le détail concernant le champ et les sources, se référer aux publications de référence, ainsi qu'à la [présentation plus détaillée de la base RAC](https://gitlab.com/DREES_code/public/outils/restes-a-charge-snds/-/tree/main/documentation/presentation_generale.md) qui accompagne la mise à disposition des programmes en *open source*.
+Pour le détail concernant le champ et les sources, se référer aux publications de référence, ainsi qu'à la [présentation plus détaillée de la base RAC](https://git.drees.fr/drees_code_public/outils/restes-a-charge-snds/-/blob/main/documentation/presentation_generale.md?ref_type=heads) qui accompagne la mise à disposition des programmes en *open source*.
 
 ## Publications de référence
 
@@ -68,14 +68,18 @@ DREES, Études et Résultats, 1180.](https://drees.solidarites-sante.gouv.fr/sit
 réadaptation et en psychiatrie. 
 DREES, Études et Résultats, 1192.](https://drees.solidarites-sante.gouv.fr/sites/default/files/2021-05/ER1192.pdf) 
 
+-	**Bithorel, P.-L., Reduron, V.** (2023, mai). 
+[ Dépenses de santé et restes à charge pour les patients : comment expliquer les disparités entre départements ?  
+DREES, Études et Résultats, 1265.](https://drees.solidarites-sante.gouv.fr/sites/default/files/2024-01/ER1265MAJ190124.pdf) 
+
 
 ## Programmes de la base RAC et documentation détaillée
 
-L'ensemble des [programmes](https://gitlab.com/DREES_code/public/outils/restes-a-charge-snds/-/tree/main/pipeline_baserac) permettant de construire la base RAC, ainsi que la [documentation associée](https://gitlab.com/DREES_code/public/outils/restes-a-charge-snds/-/tree/main/documentation), ont été mis en *open source* sur le gitlab de la DREES.
+L'ensemble des [programmes](https://git.drees.fr/drees_code_public/outils/restes-a-charge-snds/-/tree/main/baserac?ref_type=heads) permettant de construire la base RAC, ainsi que la [documentation associée](https://git.drees.fr/drees_code_public/outils/restes-a-charge-snds/-/tree/main/documentation?ref_type=heads), ont été mis en *open source* sur le gitlab de la DREES.
 
 Les programmes mis en ligne ont été élaborés pour le traitement des données sources des années 2016 et 2017 et permettent de reconstituer la base RAC pour chacune de ces deux années. Des jeux de données simulées sont fournis avec les programmes afin de les tester. Ces données respectent la structure du SNDS mais ne sont en aucun cas d'authentiques données de santé.
 
 
 ::: tip Crédits
-Cette fiche a été rédigée par Noémie Courtejoie (DREES) et Raphaële Adjerad (DREES)
+Cette fiche a été rédigée par Noémie Courtejoie (DREES) et Raphaële Adjerad (DREES), mise à jour par Pierre-Louis Bithorel (DREES) en mars 2023.
 :::
