@@ -24,13 +24,7 @@ Si besoin est, les experts SNDS du Health Data Hub peuvent aider à la relecture
 Si une relecture appelle une [correction](../Guide_contribution/Modifier_une_fiche.md), le contributeur est invité à modifier sa contribution et la soumettre à nouveau en suivant la même procédure. 
 
 ### Validation et fusion 
-Enfin, après avoir été relue et approuvée, la contribution doit être validée en assignant une des personnes ci-dessous: 
-- Lorien Benda (HDH, ID gitlab : @lbenda)
-- Pierre-Alain Jachiet (HAS, ID gitlab : @pajachiet),
-- Olivier de Fresnoye (HDH, ID gitlab : @ofrsn), 
-- Tim Vlaar (HDH, ID gitlab : @tim.vlaar), 
-- Salma El Oualydy (HDH, ID gitlab : @salmael) 
-- Maeva Kos (HDH, ID gitlab : @maevakos)
+Enfin, après avoir été relue et approuvée, la contribution sera validée par les maintainers qui suivent régulièrement les nouveaux tickets et merge requests.
 
 ## Discuter avec la communauté
 ### Via gitlab
