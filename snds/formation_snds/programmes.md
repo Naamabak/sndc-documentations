@@ -60,3 +60,17 @@ Ces programmes sont présents dans le dossier Santé publique France du dépôt 
 * Programme de [sélection des remboursements de médicaments dans le DCIR archivé et le DCIR](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/dcir_prestations_medicaments.sas)
 * Programme de [sélection des hospitalisations MCO en fonction des DP ou DR ou DAS incluant des variables relatives au patient, au séjour et à l'établissement de santé](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/pmsi_mco_select_sejours_par_diag.sas)
 * Programme de [sélection des affections de longue durée (ALD)](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/Sante_publique_France/ald_select_par_code_cim.sas)
+
+### Centre DRUGS SAFER, CHU Bordeaux 
+
+Le CHU de Bordeaux héberge son propre [dépôt de programmes SNDS appelé Outils SNDS](https://gitlab.com/Drugs-Safe-R/Outils_SNDS).
+
+Les programmes mises à disposition en SAS sont destinés à être utilisés sur le portail SNDS de la CNAM.
+
+En 2023, ont été publiés : 
+
+- Une partie **Extraction** concernant les médicaments, les séjours, les ALD, les actes et les dispositifs médicaux.
+
+- Une partie **Référentiel** permettant de constituer un référentiel de patients avec un identifiant unique. 
+
+
