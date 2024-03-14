@@ -24,7 +24,7 @@ La **réforme de l’Assurance maladie du 13 août 2004** a instauré dans le sy
 
 Ces majorations de ticket modérateur sont entrées en vigueur à partir de janvier 2006. Elles concernent les **actes et consultations réalisées par les médecins**, qui sont remboursées à un taux de remboursement inférieur si elles sont hors parcours de soins coordonnés.
 
-Pour être dans le parcours de soins coordonnés, le médecin réalisant les actes ou consultations doit être :
+Pour être dans le parcours de soins coordonnés, le médecin réalisant les actes ou consultations doit être:
 
 - soit le **médecin traitant** ;
 
@@ -67,11 +67,11 @@ Dans l'exemple d'un acte technique médical à 44 euros, la majoration est plafo
 
 ![Image](/files/DREES/Majorations_hors_parcours_de__soins_img6_hors_limite.png)
 
-Le reste à charge global est donc de 30,80 euros, soit une majoration de 10,60 euros et un ticket modérateur classique (légal) de 13,20 euros :
+Le reste à charge global est donc de 23,80 euros, soit une majoration de 10,60 euros et un ticket modérateur classique (légal) de 13,20 euros :
 
 ![Image](/files/DREES/Majorations_hors_parcours_de__soins_img7_hors_limite.png)
 
-NB : A la mise en place de la réforme, la majoration était de 10 % de la base de remboursement, le taux de remboursement passant de 70 % dans le parcours à 60 % hors parcours.
+>**NB:** A la mise en place de la réforme, la majoration était de 10 % de la base de remboursement, le taux de remboursement passant de 70 % dans le parcours à 60 % hors parcours.
 
 ### Prélèvement en cas de tiers-payant
 
@@ -102,11 +102,11 @@ Dans la table er_prs_f du DCIR, la variable `PRS_PDS_QCP` (Qualificatif du parco
 
 Les codes qui indiquent l'application d'une majoration sont `22`, `23`, `24`et `26`. Ces modalités correspondent aux différents cas prévus dans la réglementation (absence de médecin traitant, ...). Les autres codes indiquent le respect du parcours de soins coordonnés ; ces codes se répartissent selon les différents cas prévus par la réglementation ("Accès direct", urgence, "Hors résidence", ...).
 
-Dans la table er_prs_f du DCIR, la variable `PRS_PDS_QTP` (Qualificatif du parcours de soins transmis) indique l'information transmise par le médecin ayant réalisé les soins. C'est donc l'information que reçoivent les caisses d'Assurance maladie de la part des médecins, attestant par exemple que le patient a bien été adressé par son médecin traitant.
+Dans la table **er_prs_f** du DCIR, la variable `PRS_PDS_QTP` (Qualificatif du parcours de soins transmis) indique l'information transmise par le médecin ayant réalisé les soins. C'est donc l'information que reçoivent les caisses d'Assurance maladie de la part des médecins, attestant par exemple que le patient a bien été adressé par son médecin traitant.
 
 ### Majoration du ticket modérateur
 
-Dans la table er_prs_f du DCIR, plusieurs variables doivent être mobilisées pour suivre les majorations : 
+Dans la table **er_prs_f** du DCIR, plusieurs variables doivent être mobilisées pour suivre les majorations : 
 - `RGO_MIN_TAU` (Taux de remboursement modulé hors parcours de soins),
 - `RGO_MOD_MNT` (Montant de la majoration de la participation de l'assuré),
 - `PRS_TYP_MAJ` (Type de majoration),
@@ -129,9 +129,9 @@ En cas de prélèvement direct, la majoration est déduite du montant de rembour
 Dans le DCIR, la variable `BSE_REM_MNT` reflète bien la majoration du ticket modérateur. La variable `RGO_REM_TAU` indique bien le taux de remboursement minoré.
 
 `RGO_FTA_COD` n'indique pas un forçage (d'après son libellé), ce qui voudrait dire une opération manuelle d'un technicien en caisse d'assurance maladie. Elle indique le type de majoration du ticket modérateur : `1` pour le prélèvement direct sans plafonnement, `2` ou `5` pour le prélèvement direct avec plafonnement, `3` pour le prélèvement différé sans plafonnement, `4` ou `6` pour le prélèvement différé avec plafonnement.
-`RGO_FTA_COD` ne porte que sur la prestation de base (comme la variable `BSE_PRS_NAT`) et devrait s'appeler `BSE_FTA_COD`. La variable `CPL_FTA_COD` porte sur le complément ou majoration (CPL_PRS_NAT). 
+A noter que `RGO_FTA_COD` ne porte que sur la prestation de base (comme la variable `BSE_PRS_NAT`). La variable `CPL_FTA_COD` porte sur le complément ou majoration (`CPL_PRS_NAT`). 
 
-`RGO_MOD_MNT` indique le montant de majoration du ticket modérateur. RGO_MOD_MNT` globalise prestation de base et complément/majoration. Si le soin n'était pas hors parcours, le montant remboursé par l'Assurance maladie au patient ne serait pas `BSE_REM_MNT + CPL_REM_MNT` mais `BSE_REM_MNT + CPL_REM_MNT + RGO_MOD_MNT`. 
+`RGO_MOD_MNT` indique le montant de majoration du ticket modérateur. `RGO_MOD_MNT` globalise prestation de base et complément/majoration. Si le soin n'était pas hors parcours, le montant remboursé par l'Assurance maladie au patient serait `BSE_REM_MNT + CPL_REM_MNT` mais hors parcours de soins coordonnés le montant est `BSE_REM_MNT + CPL_REM_MNT + RGO_MOD_MNT`. 
 
 Les variables `RGO_MIN_TAU` et `RGO_THE_TAU` indiquent des éléments de calcul **avant plafonnement éventuel** : respectivement le taux de remboursement après majoration (30%) et avant majoration (70%). 
 
@@ -147,7 +147,7 @@ En cas de plafonnement, le taux RGO_REM_TAU diminue mais `RGO_MIN_TAU` et `RGO_T
 
 
 
-NB : Dans la table er_aro_f du DCIR, `ARO_MIN_TAU`, `ARO_MOD_MNT` et `ARO_FTA_COD` donnent les mêmes informations que `RGO_MIN_TAU`, `RGO_MOD_MNT` et `RGO_FTA_COD` dans la table er_prs_f, pour les prises en charge des majorations par la CSS ou plus rarement l'Aide médicale d'Etat (AME). Les montants de la variable `ARO_MOD_MNT` sont négatifs (typiquement - 10,60 euros), un montant opposé à `RGO_MOD_MNT` dans er_prs_f pour la même clef9 qui fait que la majoration est nulle pour le patient (ARO_REM_MNT complète la prise en charge à 100% garantie par la CSS). Toujours dans le même exemple, si le patient bénéficie de la CSS, on voit cette ligne dans la table er_aro_f : un monant de CSS de 18,55 euros vient compléter la prise en charge à 100% de la consultation (7,95 de CSS classique et 10,60 de prise en chage de la majoration).
+**NB :** Dans la table **er_aro_f** du DCIR, `ARO_MIN_TAU`, `ARO_MOD_MNT` et `ARO_FTA_COD` donnent les mêmes informations que `RGO_MIN_TAU`, `RGO_MOD_MNT` et `RGO_FTA_COD` dans la table **er_prs_f**, pour les prises en charge des majorations par la CSS ou plus rarement l'Aide médicale d'Etat (AME). Les montants de la variable `ARO_MOD_MNT` sont négatifs (typiquement -10,60 euros), un montant opposé à `RGO_MOD_MNT` dans **er_prs_f** pour la même clef9 qui fait que la majoration est nulle pour le patient (`ARO_REM_MNT` complète la prise en charge à 100% garantie par la CSS). Toujours dans le même exemple, si le patient bénéficie de la CSS, on voit cette ligne dans la table **er_aro_f**: un montant de CSS de 18,55 euros vient compléter la prise en charge à 100% de la consultation (7,95 de CSS classique et 10,60 de prise en chage de la majoration).
 
 | ARO_MOD_MNT | ARO_REM_MNT | ARO_REM_TAU | ARO_FTA_COD |
 | ----------- | ----------- | ----------- | ----------- |
@@ -156,11 +156,11 @@ NB : Dans la table er_aro_f du DCIR, `ARO_MIN_TAU`, `ARO_MOD_MNT` et `ARO_FTA_CO
 
 ### Différé
 
-En cas de prélèvement différé, le montant de majoration est récupéré la facturation au patient d'une prestation `TMT` (*Majoration hors parcours de soins*, code PS5 1957), au prochain remboursement sans tiers payant du patient.
+En cas de prélèvement différé, le montant de majoration est récupéré via la facturation au patient d'une prestation `TMT` (*Majoration hors parcours de soins*, code PS5 1957), au prochain remboursement sans tiers payant du patient.
    
-Dans le DCIR, il y a donc deux lignes, la ligne initiale de l'acte ou de la consultation, et une ligne dédiée à la facturation ultérieure d'une prestation TMT. 
+Dans le DCIR, il y a donc deux lignes, la ligne initiale de l'acte ou de la consultation, et une ligne dédiée à la facturation ultérieure d'une prestation `TMT`. 
    
-Le remboursement initial est sans majoration. Les variables `BSE_REM_MNT` et `RGO_REM_TAU` ot donc les mêmes valeurs que dans le parcours de sois. Toutefois, la trace de la majoration à prélever ultérieurement est présente pour information : on a `PRS_TYP_MAJ == 'T'`, et `PRS_MNT_MAJ` indique le montant en euros de majoration à prélever. `RGO_MIN_TAU` indique le taux de remboursement virtuel une fois que la majoration sera prélevée (majoritairement 30%, mais un taux plus élevé en cas de plafonnement).
+Le remboursement initial est sans majoration. Les variables `BSE_REM_MNT` et `RGO_REM_TAU` ont donc les mêmes valeurs que dans le parcours de soins coordonnés. Toutefois, la trace de la majoration à prélever ultérieurement est présente pour information : on a `PRS_TYP_MAJ == 'T'`, et `PRS_MNT_MAJ` indique le montant en euros de majoration à prélever. `RGO_MIN_TAU` indique le taux de remboursement virtuel une fois que la majoration sera prélevée (majoritairement 30%, mais un taux plus élevé en cas de plafonnement).
 
 | BSE_REM_BSE | BSE_REM_MNT | RGO_REM_TAU | PRS_TYP_MAJ | RGO_MIN_TAU | PRS_MNT_MAJ |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -364,7 +364,7 @@ ER_ARO_F = tbl(conn, 'ER_ARO_F') %>%
   stat_finale <- rbind(stat_majo_2, stat_majo_dir, stat_majo_aro) 
 ```
 
-## Réglementation :
+## Réglementation
 
 - Pages de l'Assurance maladie sur la majoration du ticket modérateur hors parcours de soins coordonnés :
   
@@ -382,15 +382,12 @@ ER_ARO_F = tbl(conn, 'ER_ARO_F') %>%
   
   - https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006185483
 
-## Bibliographie rapide :
+## Bibliographie rapide
 
 - https://www.irdes.fr/Publications/Qes/Qes124.pdf
 
 - https://www.cairn.info/revue-francaise-des-affaires-sociales-2007-1-page-109.htm
 
----
-
-tip Crédits  
+:::tip Crédits  
 Cette fiche a été rédigée par Vincent Reduron (DREES).
-
----
+:::
