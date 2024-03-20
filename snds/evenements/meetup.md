@@ -2,7 +2,7 @@
 sidebarDepth: 3
 ---
 
-# Meetup SNDS
+# Meetup SNDS XXXXXX
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 Les Meetups SNDS sont des séminaires durant lesquels sont présentés des travaux sur le SNDS. 
