@@ -94,8 +94,9 @@ LEFT JOIN ER_ETE_F as ETE
     AND PRS.PRS_ORD_NUM = ETE.PRS_ORD_NUM
     AND PRS.REM_TYP_AFF = ETE.REM_TYP_AFF
 /* Exclusion de l’activité des ES ex-DG (ACE et séjours) */
-/* Pour les ES ex-DG qui ne pratiquent pas la facturation directe (données transmises pour information, non exhaustives) */
-WHERE PRS.DPN_QLF NOT IN (71, 72) AND PRS.PRS_DPN_QLP <> 71
+/* Pour les ES ex-DG qui ne pratiquent pas la facturation directe (données transmises pour information, non exhaustives)  
+(DPN_QLF = 72 et PRS_DPN_QLP = 72 représentent environ 2000-3000 par an. Ce sont les forfaits journaliers complémentaires pris en charge par un organisme complémentaire ou une mutuelle santé. Les forfaits journaliers exonérés dans le cadre du C2S, pris en charge par le régime obligatoire ne sont pas dans cette catégorie.) */
+WHERE PRS.DPN_QLF NOT IN (71, 72) AND PRS.PRS_DPN_QLP NOT IN (71,72)
 /* Pour les ES ex-DG en facturation directe (données non exhaustives) */
 AND ( ETE.ETE_IND_TAA <> 1 OR ETE.ETE_IND_TAA IS NULL )
 /* Sélection sur la période de soins */
@@ -171,11 +172,11 @@ Pour travailler sur les séjours en HAD, il est recommandé d’exclure les sous
 `WHERE GHT_NUM <> '99' ;`
 
 
-Et d’exclure les séjours associés à des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours :
+Et d’exclure les séjours associés à des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours :  
 
 
-Table `T_HADaaC`, variables disponibles depuis 2005 : ` NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' `
-Table `T_HADaaC`, variables disponibles depuis 2013 : `COH_NAI_RET = '0' AND COH_SEX_RET = '0' `
+Table `T_HADaaC`, variables disponibles depuis 2005 : ` NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' `  
+Table `T_HADaaC`, variables disponibles depuis 2013 : `COH_NAI_RET = '0' AND COH_SEX_RET = '0' `  
 
 Dans ce champ d’activité, les ES APHP, APHM et HCL n’ont pas remonté leur activité en double sur leur FINESS géographique.
 
@@ -186,25 +187,25 @@ Dans ce champ d’activité, les ES APHP, APHM et HCL n’ont pas remonté leur 
 
 Pour travailler sur les séjours en SMR, il est recommandé d’appliquer systématiquement plusieurs filtres aux requêtes :
 
-- Exclure les `RHA` qui ne seront pas valorisés, i.e. avec une erreur de groupage :
+- Exclure les `RHA` qui ne seront pas valorisés, i.e. avec une erreur de groupage :  
 Table `T_SSRaaB`, variable `GRG_GME` disponible depuis 2013 : `GRG_GME NOT LIKE '90%'`
-- Ou exclure les séjours ou parties de séjours qui ne seront pas valorisés, i.e. avec une erreur de groupage :
+- Ou exclure les séjours ou parties de séjours qui ne seront pas valorisés, i.e. avec une erreur de groupage :  
 Table `T_SSRaaGME` disponible depuis 2012 :` GME_COD NOT LIKE '90%'`
-- Exclure les « faux » `RHA` générés automatiquement pour les besoins de facturation (déjà exclus via les filtres précédents) :
+- Exclure les « faux » `RHA` générés automatiquement pour les besoins de facturation (déjà exclus via les filtres précédents) :  
 Table `T_SSRaaB`, variable `TYP_GEN_RHA` disponible depuis 2015 : `TYP_GEN_RHA IN ('0', '4')`
 - Exclure les `RHA` de l’année précédente (i.e. `RHA` répétés dans le PMSI de l’année N pour les séjours non clos et non valorisés en N-1) :   
 Table `T_SSRaaB` : `RIGHT(MOI_ANN, 4) = annee `
-- Exclure les séjours associés à des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours : 
-Table `T_SSRaaC`, variables disponibles depuis 2005 : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' `
+- Exclure les séjours associés à des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours :   
+Table `T_SSRaaC`, variables disponibles depuis 2005 : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' `  
 Table `T_SSRaaC`, variables disponibles depuis 2013 : `COH_NAI_RET = '0' AND COH_SEX_RET = '0'`
 
 Dans ce champ d’activité, les ES APHP, APHM et HCL n’ont pas remonté leur activité en double sur leur FINESS géographique.
 
 #### Activité externe
 
-Pour travailler sur l’activité externe en SMR (disponible avec le chaînage des bénéficiaires à partir de 2013), il est recommandé d’exclure les ACE associés à des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours : 
+Pour travailler sur l’activité externe en SMR (disponible avec le chaînage des bénéficiaires à partir de 2013), il est recommandé d’exclure les ACE associés à des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours :  
 
-Table `T_SSRaaCSTC` : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND IAS_RET = '0' AND ENT_DAT_RET = '0'`
+Table `T_SSRaaCSTC` : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND IAS_RET = '0' AND ENT_DAT_RET = '0'`  
 
 Les ES APHP, APHM et HCL n’ont pas remonté leur activité en double sur leur FINESS géographique.
 
@@ -214,13 +215,13 @@ Les ES APHP, APHM et HCL n’ont pas remonté leur activité en double sur leur 
 
 Pour travailler sur les séjours en psychiatrie, il est recommandé d’appliquer systématiquement plusieurs filtres aux requêtes :
 
-- Exclure les séquences indiquées comme « sortie d’essai » jusqu’en 2016 car elles ne sont pas considérées comme des hospitalisations :
-Table `T_RIPaaRSA` : `SEQ_IND <> 'E'`
-- Exclure les « faux » RPSA générés automatiquement pour les besoins de facturation :
-Table `T_RIPaaRSA`, variable `TYP_GEN_RSA` disponible depuis 2015 : `TYP_GEN_RSA = '0'`
-- Exclure les séjours associés à des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours : 
-Table `T_RIPaaC`, variables disponibles depuis 2007 : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' `
-Table `T_RIPaaC`, variables disponibles depuis 2013 : `COH_NAI_RET = '0' AND COH_SEX_RET = '0'`
+- Exclure les séquences indiquées comme « sortie d’essai » jusqu’en 2016 car elles ne sont pas considérées comme des hospitalisations :  
+Table `T_RIPaaRSA` : `SEQ_IND <> 'E'`  
+- Exclure les « faux » RPSA générés automatiquement pour les besoins de facturation :  
+Table `T_RIPaaRSA`, variable `TYP_GEN_RSA` disponible depuis 2015 : `TYP_GEN_RSA = '0'`  
+- Exclure les séjours associés à des clés de chainage incorrectes sur les informations des bénéficiaires via les variables codes retours :   
+Table `T_RIPaaC`, variables disponibles depuis 2007 : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' `  
+Table `T_RIPaaC`, variables disponibles depuis 2013 : `COH_NAI_RET = '0' AND COH_SEX_RET = '0'`  
 
 ::: tip Crédits
 Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.  
