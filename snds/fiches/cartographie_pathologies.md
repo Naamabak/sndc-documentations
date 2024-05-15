@@ -22,7 +22,7 @@ Elle consiste à identifier :
 * les patients qui n’ont pas ces pathologies chroniques repérées ou évènements de santé mais ont eu des hospitalisations ponctuelles ;
 * et ceux qui ne sont dans aucune de ces situations.
 
-La cartographie couvre environ **57 millions de bénéficiaires du régime général** ([SLM](../glossaire/SLM.md) comprises) ayant eu recours à des soins remboursés dans l’année. 
+La cartographie couvre les bénéficiaires de l'ensemble des régimes d'assurance maladie ayant eu recours à des soins remboursés dans l’année. 
 
 Les algorithmes d'identification utilisent les informations suivantes :
 * diagnostics mentionnés dans le **PMSI à la suite d'une hospitalisation** ;
