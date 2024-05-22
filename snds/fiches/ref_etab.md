@@ -164,6 +164,8 @@ Cette table est disponible sur le portail dans le répertoire `RFCOMMUN.DATASANT
 Elle dispose d'une variable `finess8` permettant de faire le lien directement avec les tables
 du SNDS. 
 
+Cette table, par comparaison avec la table BREF, propose des libellés de raison sociale avec des lettres accentuées non en erreur et liste un plus grand nombre d’identifiants Finess. Sachant qu’il y a ponctuellement dans les tables du Snds (er_prs_f, er_ete_f) des identifiants Finess utiles pour la gestion (par exemple établissements étrangers frontaliers), il peut être efficace d’augmenter la table Atlasanté avec le complément de la table BERF.
+
 ### Le référentiel FINESSGEO de l'ATIH
 
 Dans le répertoire nomenclatures générales de la plateforme ATIH on trouve le référentiel `finessgeo` qui contient les variables suivantes:
