@@ -69,12 +69,14 @@ Cette fiche a été intialement rédigée par Anne Cuerq à partir des référen
 
 :::tip Mises à jour de la fiche 
 
-<mark>07.12.2020</mark>
+<mark>07/12/2020</mark>
+
 Suite à l'intégration des données de causes médicales de décès pour les années 2006 à 2012 + 2016, les deux images de la section "Historique de l'information et des régimes dans les bases du SNDS" ont été modifiées et rechargées (date de chargement des données : 07/09/2020).
 
 Pour plus d'informations sur l'intégration des causes médicales de décès dans le SNDS, vous pouvez vous reporter à la [documentation rédigée par la Cnam (Laurence De Roquefeuil et départements DEMSI, DATAD et DFID), avec l’aide de Grégoire Rey, Karim Bounebache et Claire Imbaud (INSERM – CépiDc)](../formation_snds/documents_cnam/guide_cepidc/Avant_propos.md), et Lisa Cahour pour le graphique de disponibilités des données selon les années et régimes.
 
 <mark>04/06/2024</mark>
+
 Contribution d'Albert Vuagnat pour le tableau : Régimes disponibles et années de présence dans les tables.
 
 :::
