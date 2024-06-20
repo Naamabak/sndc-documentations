@@ -102,28 +102,28 @@ Les codes cités ci-après prennent les valeurs suivantes dans les tables de val
 - Le libellé du code de tarification `ESM_TAR_COD`se trouve dans la table de valeurs **IR_MFT_V** (mode de fixation tarifaire)
 
 ::: details  Codes et libellés `ESM_TAR_COD`
-| ESM_TAR_COD (MFT_COD) | Libellé (MFT_LIB)  |  Commentaire (MFT_COM)                                                         |
+| ESM_TAR_COD (MFT_COD) | Libellé (MFT_LIB)                                                       |
 |--------------|----------------------------------------------------------------------|
-| 1            | TARIF.LIBRE OU SANS TARIF.|                                           |
-| 3            | PJ/DOTATION GLOBALE FIXES PAR ARH . POUR ETABLISSEMENTS PUBLICS |                                                   |
-| 5            |  PJ/FORFAITS FIXES PAR PREFECTURE POUR ETABS. PUB. , PRIV.ET MEDI-SOC           |
-| 9            |   TARIF/FORFAIT FIXES PAR CONSEIL GENERAL ET AUTORITE PREFECTORALE|                                          |
-| 40           | ARS TG HAS PUI |     |
-| 41           | ARS TG HAS NPUI |    |
-| 42           | TARIF GLOBAL NON HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR |  |
-| 43           | TARIF GLOBAL NON HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR |  |
-| 44           | TARIF PARTIEL HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR  |   |
-| 45           | TARIF PARTIEL HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR  |   |
-| 46           | TARIF PARTIEL NON HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR | |
-| 47           | TARIF PARTIEL NON HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR | |
-| 48           | EHPA, DOT GLOBALE DE SOINS, HABILITE AIDE SOCIALE   |                 |
-| 49           | EHPA, DOT GLOBALE DE SOINS, NON HABILITE AIDE SOCIALE |               |
-| 50           | PETITE UNITE VIE, FORFAITS SOINS, HABILITE AIDE SOCIALE |             |
-| 51           | PETITE UNITE VIE, FORFAITS SOINS, NON HABILITE AIDE SOCIALE |          |
-| 52           | LOGEMENT FOYER, FORFAITS SOINS, HABILITE AIDE SOCIALE   |             |
-| 54           | TARIF AM SSIAD    |                                                   |
-| 57           | ARS/ARS PCD DOT. GLOBALISEE |                                         |
-| 58           | ARS PJ GLOB. HORS CPOM   |                                            |
+| 1            | TARIF.LIBRE OU SANS TARIF.                                        |
+| 3            | PJ/DOTATION GLOBALE FIXES PAR ARH . POUR ETABLISSEMENTS PUBLICS                                                    |
+| 5            |  PJ/FORFAITS FIXES PAR PREFECTURE POUR ETABS. PUB. , PRIV.ET MEDI-SOC      
+| 9            |   TARIF/FORFAIT FIXES PAR CONSEIL GENERAL ET AUTORITE PREFECTORALE                                       |
+| 40           | ARS TG HAS PUI |     
+| 41           | ARS TG HAS NPUI |    
+| 42           | TARIF GLOBAL NON HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR   |
+| 43           | TARIF GLOBAL NON HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR   |
+| 44           | TARIF PARTIEL HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR     |
+| 45           | TARIF PARTIEL HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR     |
+| 46           | TARIF PARTIEL NON HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR  |
+| 47           | TARIF PARTIEL NON HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR  |
+| 48           | EHPA, DOT GLOBALE DE SOINS, HABILITE AIDE SOCIALE                  |
+| 49           | EHPA, DOT GLOBALE DE SOINS, NON HABILITE AIDE SOCIALE               |
+| 50           | PETITE UNITE VIE, FORFAITS SOINS, HABILITE AIDE SOCIALE              |
+| 51           | PETITE UNITE VIE, FORFAITS SOINS, NON HABILITE AIDE SOCIALE          |
+| 52           | LOGEMENT FOYER, FORFAITS SOINS, HABILITE AIDE SOCIALE           |
+| 54           | TARIF AM SSIAD                                                  |
+| 57           | ARS/ARS PCD DOT. GLOBALISEE                                         |
+| 58           | ARS PJ GLOB. HORS CPOM                                            |
 
 Les codes 40, 42, 44 et 46 indiquent une PUI (pharmacie à usage intérieur).
 
