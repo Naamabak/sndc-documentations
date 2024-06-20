@@ -57,6 +57,45 @@ Le motif d’entrée n’est aujourd’hui renseigné que pour les bénéficiair
 ##	Utilisateurs concernés par la mise à disposition de ce référentiel
 Ce référentiel est accessible sur le portail Snds aux profils nationaux, avec parfois certaines restrictions sur la restitution de certaines dates, restrictions détaillées dans le descriptif de la table ci-après.
 
+##	Descriptif de la table 
+
+Le tableau suivant présente le desriptif de la table **IR_ESM_R**.
+Parmi ces variables, 4 d'entre elles ne seront renseignées qu’à partir de début 2022 pour les patients en EHPAD ou en USLD. Elles sont déjà renseignées pour les autres. Il s'agit des variables : `BEN_RNG_GEM`, `BEN_ORI_DPT`, `ESM_PRV_COD`, `PEC_DIS_LIB`.
+
+Les variables dates sont restituées en format AAAAMM ou AAAAMMJJ selon le profil d’accès de l'utilisateur au portail SNDS.
+
+
+::: details  Descriptif de la table **IR_ESM_R**
+
+| Variable cible | Type | Longueur | Format      | Libellé                                                                                                                                                |
+|----------------|------|----------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ASS_NIR_ANO    | Char | 17       | $17.        | Nir assuré pseudonymisé                                                                                                                                |
+| BEN_NIR_ANO    | Char | 17       | $17.        | Nir du bénéficiaire pseudonymisé                                                                                                                       |
+| BEN_NIR_PSA    | Char | 17       | $17.        | pseudo NIR pseudonymisé du bénéficiaire                                                                                                                |
+| BEN_RNG_GEM    | Num  | 8        | 1.          | Rang gémellaire                                                                                                                                        |
+| BEN_SEX_COD    | Num  | 8        | 2.          | Code sexe du bénéficiaire                                                                                                                              |
+| BEN_NAI_ANN    | Char | 4        | $4.         | Année de naissance du bénéficiaire                                                                                                                     |
+| BEN_DCD_AME    | Char | 6        | $6.         | Date de décès du bénéficiaire année-mois AAAAMM                                                                                                        |
+| BEN_DCD_DTE    | Num  | 8        | DATETIME20. | Date de décès du bénéficiaire AAAAMMJJ                                                                                                                 |
+| BEN_ORI_DPT    | Char | 3        | VARCHAR2    | Code du département d'origine du bénéficiaire                                                                                                          |
+| PEC_DEB_AME    | Char | 6        | $6.         | Date de début de prise en charge du bénéficiaire année-mois AAAAMM                                                                                     |
+| PEC_DEB_DTE    | Num  | 8        | DATETIME20. | Date de début de prise en charge du bénéficiaire complète AAAAMMJJ                                                                                     |
+| PEC_FIN_AME    | Char | 6        | $6.         | Date de fin de prise en charge du bénéficiaire année-mois AAAAMM                                                                                       |
+| PEC_FIN_DTE    | Num  | 8        | DATETIME20. | Date de fin de prise en charge du bénéficiaire complète AAAAMMJJ                                                                                       |
+| ESM_PRV_COD    | Num  | 8        | 3.          | Code du motif d'entrée/provenance du bénéficiaire                                                                                                      |
+| DST_MTF_COD    | Num  | 10       | 11.         | Code du motif de sortie/destination du bénéficiaire                                                                                                    |
+| PEC_DIS_COD    | Char | 3        | VARCHAR2(3) | Code de la discipline                                                                                                                                  |
+| PEC_DIS_LIB    | Char | 60       | 60.         | Libellé de la discipline                                                                                                                               |
+| ESM_DOM_COD    | Char | 1        | 1.          | Domicile du patient ou pas (=O/N)                                                                                                                      |
+| ESM_FIN_ANO    | Char | 10       | $10.        | Numéro FINESS de l'établissement + clé (crypté ou pas, voir notice)                                                                                    |
+| ESM_DPT_COD    | Num  | 3        | 3.          | Code du département du service ESMS consommé : 2 premiers caractères du FINESS si métropole, ou 2 preiers et 4ème caractère du FINESS si DROM ou Corse |
+| ESM_CAT_COD    | Char | 3        | $3.         | Code de la catégorie de l'établissement ou du service médico-social                                                                                    |
+| ESM_CAP_COD    | Num  | 8        | 5.          | Nombre de places dans l'établissement ou service                                                                                                       |
+| ESM_TAR_COD    | Char | 2        | $2.         | Code de tarification de l'établissement                                                                                                                |
+:::
+
+
+
 ##	Signification des codes
 Les codes cités ci-après prennent les valeurs suivantes dans les tables de valeurs d’ORAVAL citées :
 
@@ -186,43 +225,6 @@ Cette donnée est à « N » sinon.
 NB : les rares valeurs 0 et 9 désignent des bénéficiaires dont le sexe est inconnu. 
 :::
  
-##	Descriptif de la table 
-
-Le tableau suivant présente le desriptif de la table **IR_ESM_R**.
-Parmi ces variables, 4 d'entre elles ne seront renseignées qu’à partir de début 2022 pour les patients en EHPAD ou en USLD. Elles sont déjà renseignées pour les autres. Il s'agit des variables : `BEN_RNG_GEM`, `BEN_ORI_DPT`, `ESM_PRV_COD`, `PEC_DIS_LIB`.
-
-Les variables dates sont restituées en format AAAAMM ou AAAAMMJJ selon le profil d’accès de l'utilisateur au portail SNDS.
-
-
-::: details  Descriptif de la table **IR_ESM_R**
-
-| Variable cible | Type | Longueur | Format      | Libellé                                                                                                                                                |
-|----------------|------|----------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ASS_NIR_ANO    | Char | 17       | $17.        | Nir assuré pseudonymisé                                                                                                                                |
-| BEN_NIR_ANO    | Char | 17       | $17.        | Nir du bénéficiaire pseudonymisé                                                                                                                       |
-| BEN_NIR_PSA    | Char | 17       | $17.        | pseudo NIR pseudonymisé du bénéficiaire                                                                                                                |
-| BEN_RNG_GEM    | Num  | 1        | 1.          | Rang gémellaire                                                                                                                                        |
-| BEN_SEX_COD    | Num  | 8        | 2.          | Code sexe du bénéficiaire                                                                                                                              |
-| BEN_NAI_ANN    | Char | 4        | $4.         | Année de naissance du bénéficiaire                                                                                                                     |
-| BEN_DCD_AME    | Char | 6        | $6.         | Date de décès du bénéficiaire année-mois AAAAMM                                                                                                        |
-| BEN_DCD_DTE    | Num  | 8        | DATETIME20. | Date de décès du bénéficiaire AAAAMMJJ                                                                                                                 |
-| BEN_ORI_DPT    | Char | 3        | VARCHAR2    | Code du département d'origine du bénéficiaire                                                                                                          |
-| PEC_DEB_AME    | Char | 6        | $6.         | Date de début de prise en charge du bénéficiaire année-mois AAAAMM                                                                                     |
-| PEC_DEB_DTE    | Num  | 8        | DATETIME20. | Date de début de prise en charge du bénéficiaire complète AAAAMMJJ                                                                                     |
-| PEC_FIN_AME    | Char | 6        | $6.         | Date de fin de prise en charge du bénéficiaire année-mois AAAAMM                                                                                       |
-| PEC_FIN_DTE    | Num  | 8        | DATETIME20. | Date de fin de prise en charge du bénéficiaire complète AAAAMMJJ                                                                                       |
-| ESM_PRV_COD    | Num  | 4        | 3.          | Code du motif d'entrée/provenance du bénéficiaire                                                                                                      |
-| DST_MTD_COD    | Num  | 10       | 11.         | Code du motif de sortie/destination du bénéficiaire                                                                                                    |
-| PEC_DIS_COD    | Char | 3        | VARCHAR2(3) | Code de la discipline                                                                                                                                  |
-| PEC_DIS_LIB    | Char | 60       | 60.         | Libellé de la discipline                                                                                                                               |
-| ESM_DOM_COD    | Char | 1        | 1.          | Domicile du patient ou pas (=O/N)                                                                                                                      |
-| ESM_FIN_ANO    | Char | 10       | $10.        | Numéro FINESS de l'établissement + clé (crypté ou pas, voir notice)                                                                                    |
-| ESM_DPT_COD    | Num  | 3        | 3.          | Code du département du service ESMS consommé : 2 premiers caractères du FINESS si métropole, ou 2 preiers et 4ème caractère du FINESS si DROM ou Corse |
-| ESM_CAT_COD    | Char | 3        | $3.         | Code de la catégorie de l'établissement ou du service médico-social                                                                                    |
-| ESM_CAP_COD    | Num  | 8        | 5.          | Nombre de places dans l'établissement ou service                                                                                                       |
-| ESM_TAR_COD    | Char | 2        | $2.         | Code de tarification de l'établissement                                                                                                                |
-:::
-
 
 ## Références
 ::: tip Ressources
