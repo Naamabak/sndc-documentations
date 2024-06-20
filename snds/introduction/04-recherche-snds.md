@@ -18,7 +18,7 @@ Ces appariements peuvent être de deux types :
 
 Ces exemples sont extraits de panoramas plus complets présentés sur le [site du SNDS](https://www.snds.gouv.fr/SNDS/Publications-par-thematique) et sur [le site de l'Assurance Maladie](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php).
 
-::: tip **Ecosystème du SNDS**  
+::: tip Ecosystème du SNDS  
 La  cartographie de l'écosystème  SNDS, disponible à travers ce [lien](https://ecosysteme-snds.health-data-hub.fr/), permet de visualiser de manière interactive les publications scientifiques portant sur le SNDS. Elle est alimentée par les données de PubMed, LiSSa et HAL, et est mise à jour régulièrement.  
 ::: 
 
