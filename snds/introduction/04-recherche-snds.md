@@ -18,6 +18,10 @@ Ces appariements peuvent être de deux types :
 
 Ces exemples sont extraits de panoramas plus complets présentés sur le [site du SNDS](https://www.snds.gouv.fr/SNDS/Publications-par-thematique) et sur [le site de l'Assurance Maladie](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php).
 
+::: tip **Ecosystème du SNDS**  
+La  cartographie de l'écosystème  SNDS, disponible à travers ce [lien](https://ecosysteme-snds.health-data-hub.fr/), permet de visualiser de manière interactive les publications scientifiques portant sur le SNDS. Elle est alimentée par les données de PubMed, LiSSa et HAL, et est mise à jour régulièrement.  
+::: 
+
 ### Pathologies et parcours de soin
 
 - _First hospitalization for heart failure in France in 2009: Patient characteristics and 30-day follow-up_, Tuppin P, Cuerq A, de Peretti C, Fagot-Campagna A, Danchin N, Juillière Y, Alla F, Allemand H, Bauters C, Drici MD, Hagège A, Jondeau G, Jourdain P, Leizorovicz A, Paccaud _F. Arch Cardiovasc_ Dis. 2013 Nov ; 106(11) : 570-85
