@@ -92,7 +92,7 @@ Les codes 40, 42, 44 et 46 indiquent une PUI (pharmacie à usage intérieur).
 Les codes 40 à 47 correspondent aux cas de forfait global, les autres codes à des forfaits partiels. Il est possible, à partir du code de tarification, de savoir si l’établissement fonctionne avec une dotation globale (modalités 3, 9, 34, 48, 49, 57) ou pas (les autres codes tarification).
 :::
 
--	Le libellé du code de la catégorie de l’établissement ou du service médico-social `ESM_CAT_COD`se trouve dans la table de valeurs IR_CET_D (catégorie d’établissement) 
+-	Le libellé du code de la catégorie de l’établissement ou du service médico-social `ESM_CAT_COD`se trouve dans la table de valeurs **IR_CET_D** (catégorie d’établissement) 
 
 ::: details  Codes et libellés `ESM_CAT_COD`
 
@@ -139,7 +139,7 @@ Cette donnée est à « N » sinon.
 - Le statut juridique de l’établissement (Public hospitalier, Public non hospitalier, Privé commercial, Privé non commercial) n’est pas disponible.
 
 
--	Le libellé du code de provenance du bénéficiaire `ESM_PRV_COD`, dont la table de valeurs est ZO_PRV_V (possibilités de provenance), n’est renseigné que pour les bénéficiaires d’un ESMS hors EHPAD ou USLD.
+-	Le libellé du code de provenance du bénéficiaire `ESM_PRV_COD`, dont la table de valeurs est **ZO_PRV_V** (possibilités de provenance), n’est renseigné que pour les bénéficiaires d’un ESMS hors EHPAD ou USLD.
 
 ::: details  Codes et libellés `ESM_PRV_COD`
 
@@ -152,7 +152,7 @@ Cette donnée est à « N » sinon.
 | 5 | CHANGEMENT DE LA MODALITE DE PRISE EN CHARGE          |
 :::
 
-- Le libellé du code du motif de sortie du résident `DST_MTF_COD`se trouve dans la table de valeurs ES_MTS_V (motifs de sortie) dans CONSOPAT
+- Le libellé du code du motif de sortie du résident `DST_MTF_COD`se trouve dans la table de valeurs **ES_MTS_V** (motifs de sortie) dans CONSOPAT
 
 ::: details  Codes et libellés `DST_MTF_COD`
 
@@ -188,13 +188,13 @@ NB : les rares valeurs 0 et 9 désignent des bénéficiaires dont le sexe est in
  
 ##	Descriptif de la table 
 
-Le tableau suivant présente le desriptif de la table IR_ESM_R.
+Le tableau suivant présente le desriptif de la table **IR_ESM_R**.
 Parmi ces variables, 4 d'entre elles ne seront renseignées qu’à partir de début 2022 pour les patients en EHPAD ou en USLD. Elles sont déjà renseignées pour les autres. Il s'agit des variables : `BEN_RNG_GEM`, `BEN_ORI_DPT`, `ESM_PRV_COD`, `PEC_DIS_LIB`.
 
 Les variables dates sont restituées en format AAAAMM ou AAAAMMJJ selon le profil d’accès de l'utilisateur au portail SNDS.
 
 
-::: details  Descriptif de la table IR_ESM_R
+::: details  Descriptif de la table **IR_ESM_R**
 
 | Variable cible | Type | Longueur | Format      | Libellé                                                                                                                                                |
 |----------------|------|----------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
