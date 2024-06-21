@@ -102,12 +102,13 @@ Les codes cités ci-après prennent les valeurs suivantes dans les tables de val
 - Le libellé du code de tarification `ESM_TAR_COD`se trouve dans la table de valeurs **IR_MFT_V** (mode de fixation tarifaire)
 
 ::: details  Codes et libellés `ESM_TAR_COD`
-| ESM_TAR_COD (MFT_COD) | Libellé (MFT_LIB) |  Commentaire (MFT_COM)                                                      |
+
+| ESM_TAR_COD (MFT_COD) | Libellé (MFT_LIB) |  Commentaire (MFT_COM) |
 |--------------|----------------------------------------------------------------------|
-| 1            | TARIF.LIBRE OU SANS TARIF.  | tarification libre, speciale ou sans tarification  |                                    
+| 1            | TARIF.LIBRE OU SANS TARIF.  | tarification libre, speciale ou sans tarification|                                    
 | 3            | PJ/DOTATION GLOBALE FIXES PAR ARH . POUR ETABLISSEMENTS PUBLICS |  ETABLISSEMENTS DE SANTE PUBLICS |                                                
-| 5            |  PJ/FORFAITS FIXES PAR PREFECTURE POUR ETABS. PUB. , PRIV.ET MEDI-SOC | ETABLISSEMENTS SOCIAUX PUBLICS ET PRIVES SERVANT DES PRESTATIONS RELEVANT DE LA COMPETENCE DE L ETAT SOCIALE (CAT CENTRE DE REEDUCATION PROFESSIONNEL, CENTRE D HEBERGEMENT ET DE READAPTATION SOCIALE) - ETABLISSEMENTS  MEDICO-SOCIAUX PUBLICS ET PRIVES RELEVANT DE L ARTICLE L 162.241 DU CODE DE LA SS (IMP, IME, IMPRO, CMPP CENTRE D EDUCATION SPECIALE ET DE SOINS A DOMICILE, CENTRE DE PLACEMENT  |     
-| 9            |   TARIF/FORFAIT FIXES PAR CONSEIL GENERAL ET AUTORITE PREFECTORALE                                       |  ETABLISSEMENTS D HEBERGEMENT MEDICALISE POUR PERSONNES AGEES  PUBLICS, PSPH,  PRIVES HABILITES  AIDE SOCIALE  - FOYER D HEBERGEMENT EXPERIMENTAL A DOUBLE TARIFICATION VISE PAR LA CIRCULAIRE DU 14 FEVRIER 1986.|
+| 5            |  PJ/FORFAITS FIXES PAR PREFECTURE POUR ETABS. PUB. , PRIV.ET MEDI-SOC | ETABLISSEMENTS SOCIAUX PUBLICS ET PRIVES SERVANT DES PRESTATIONS RELEVANT DE LA COMPETENCE DE L ETAT SOCIALE (CAT CENTRE DE REEDUCATION PROFESSIONNEL, CENTRE D HEBERGEMENT ET DE READAPTATION SOCIALE) - ETABLISSEMENTS  MEDICO-SOCIAUX PUBLICS ET PRIVES RELEVANT DE L ARTICLE L 162.241 DU CODE DE LA SS (IMP, IME, IMPRO, CMPP CENTRE D EDUCATION SPECIALE ET DE SOINS A DOMICILE, CENTRE DE PLACEMENT |     
+| 9            |   TARIF/FORFAIT FIXES PAR CONSEIL GENERAL ET AUTORITE PREFECTORALE |  ETABLISSEMENTS D HEBERGEMENT MEDICALISE POUR PERSONNES AGEES  PUBLICS, PSPH,  PRIVES HABILITES  AIDE SOCIALE  - FOYER D HEBERGEMENT EXPERIMENTAL A DOUBLE TARIFICATION VISE PAR LA CIRCULAIRE DU 14 FEVRIER 1986.|
 | 40           | ARS TG HAS PUI | Convention ARS/conseil general, Tarif global, habilite a l?aide sociale, avec pharmacie a usage interieur |   
 | 41           | ARS TG HAS NPUI | Convention ARS/conseil general, Tarif global, habilite a l?aide sociale, sans pharmacie a usage interieur |   
 | 42           | ARS NHAS PUI  | Convention ARS/conseil general, Tarif global, non habilite a l?aide sociale, avec pharmacie a usage interieur|
@@ -116,7 +117,7 @@ Les codes cités ci-après prennent les valeurs suivantes dans les tables de val
 | 45           |ARS TP HAS NPUI   |Convention ARS/conseil general, Tarif Partiel, habilite a l?aide sociale, sans pharmacie a usage interieur|
 | 46           |ARS TP NHAS PUI  |Convention ARS/conseil general, Tarif Partiel, non habilite a l?aide sociale, avec pharmacie a usage interieur|
 | 47           | ARS TP NHAS NPUI |Convention ARS/conseil general, Tarif Partiel, non habilite a l?aide sociale, sans pharmacie a usage interieur|
-| 48           | ARS PCG EHPA DGS HAS                |Convention ARS/conseil general/EHPA, dotation globale de soins, habilite aide sociale|
+| 48           | ARS PCG EHPA DGS HAS |Convention ARS/conseil general/EHPA, dotation globale de soins, habilite aide sociale|
 | 49           |ARS PCG EHPA DGS NHAS |Convention ARS/conseil general/EHPA, dotation globale de soins, non habilite aide sociale|
 | 50           | ARS PCG PUV FS HAS             |Convention ARS/conseil general/Petite unite de vie, forfaits de soins, habilite aide sociale|
 | 51           |ARS PCG PUV FS NHAS        |Convention ARS/conseil general/Petite unite de vie, forfaits de soins, non habilite aide sociale|
