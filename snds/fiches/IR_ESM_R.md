@@ -102,28 +102,25 @@ Les codes cités ci-après prennent les valeurs suivantes dans les tables de val
 - Le libellé du code de tarification `ESM_TAR_COD`se trouve dans la table de valeurs **IR_MFT_V** (mode de fixation tarifaire)
 
 ::: details  Codes et libellés `ESM_TAR_COD`
-| ESM_TAR_COD (MFT_COD) | Libellé (MFT_LIB)                                                       |
+| ESM_TAR_COD (MFT_COD) | Libellé (MFT_LIB) |  Commentaire (MFT_COM)                                                      |
 |--------------|----------------------------------------------------------------------|
-| 1            | TARIF.LIBRE OU SANS TARIF.                                        |
-| 3            | PJ/DOTATION GLOBALE FIXES PAR ARH . POUR ETABLISSEMENTS PUBLICS                                                    |
-| 5            |  PJ/FORFAITS FIXES PAR PREFECTURE POUR ETABS. PUB. , PRIV.ET MEDI-SOC      
-| 9            |   TARIF/FORFAIT FIXES PAR CONSEIL GENERAL ET AUTORITE PREFECTORALE                                       |
-| 40           | ARS TG HAS PUI |     
-| 41           | ARS TG HAS NPUI |    
-| 42           | TARIF GLOBAL NON HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR   |
-| 43           | TARIF GLOBAL NON HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR   |
-| 44           | TARIF PARTIEL HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR     |
-| 45           | TARIF PARTIEL HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR     |
-| 46           | TARIF PARTIEL NON HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR  |
-| 47           | TARIF PARTIEL NON HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR  |
-| 48           | EHPA, DOT GLOBALE DE SOINS, HABILITE AIDE SOCIALE                  |
-| 49           | EHPA, DOT GLOBALE DE SOINS, NON HABILITE AIDE SOCIALE               |
-| 50           | PETITE UNITE VIE, FORFAITS SOINS, HABILITE AIDE SOCIALE              |
-| 51           | PETITE UNITE VIE, FORFAITS SOINS, NON HABILITE AIDE SOCIALE          |
-| 52           | LOGEMENT FOYER, FORFAITS SOINS, HABILITE AIDE SOCIALE           |
-| 54           | TARIF AM SSIAD                                                  |
-| 57           | ARS/ARS PCD DOT. GLOBALISEE                                         |
-| 58           | ARS PJ GLOB. HORS CPOM                                            |
+| 1            | TARIF.LIBRE OU SANS TARIF.  | tarification libre, speciale ou sans tarification  |                                    
+| 3            | PJ/DOTATION GLOBALE FIXES PAR ARH . POUR ETABLISSEMENTS PUBLICS |  ETABLISSEMENTS DE SANTE PUBLICS |                                                
+| 5            |  PJ/FORFAITS FIXES PAR PREFECTURE POUR ETABS. PUB. , PRIV.ET MEDI-SOC | ETABLISSEMENTS SOCIAUX PUBLICS ET PRIVES SERVANT DES PRESTATIONS RELEVANT DE LA COMPETENCE DE L ETAT SOCIALE (CAT CENTRE DE REEDUCATION PROFESSIONNEL, CENTRE D HEBERGEMENT ET DE READAPTATION SOCIALE) - ETABLISSEMENTS  MEDICO-SOCIAUX PUBLICS ET PRIVES RELEVANT DE L ARTICLE L 162.241 DU CODE DE LA SS (IMP, IME, IMPRO, CMPP CENTRE D EDUCATION SPECIALE ET DE SOINS A DOMICILE, CENTRE DE PLACEMENT  |     
+| 9            |   TARIF/FORFAIT FIXES PAR CONSEIL GENERAL ET AUTORITE PREFECTORALE                                       |  ETABLISSEMENTS D HEBERGEMENT MEDICALISE POUR PERSONNES AGEES  PUBLICS, PSPH,  PRIVES HABILITES  AIDE SOCIALE  - FOYER D HEBERGEMENT EXPERIMENTAL A DOUBLE TARIFICATION VISE PAR LA CIRCULAIRE DU 14 FEVRIER 1986.|
+| 40           | ARS TG HAS PUI | Convention ARS/conseil general, Tarif global, habilite a l?aide sociale, avec pharmacie a usage interieur |   
+| 41           | ARS TG HAS NPUI | Convention ARS/conseil general, Tarif global, habilite a l?aide sociale, sans pharmacie a usage interieur |   
+| 42           | ARS NHAS PUI  | Convention ARS/conseil general, Tarif global, non habilite a l?aide sociale, avec pharmacie a usage interieur|
+| 43           | ARS TG NHAS NPUI |Convention ARS/conseil general, Tarif global, non habilite a l?aide sociale, sans pharmacie a usage interieur|
+| 44           | ARS TP HAS PUI   |Convention ARS/conseil general, Tarif Partiel, habilite a l?aide sociale, avec pharmacie a usage interieur|
+| 45           |ARS TP HAS NPUI   |Convention ARS/conseil general, Tarif Partiel, habilite a l?aide sociale, sans pharmacie a usage interieur|
+| 46           |ARS TP NHAS PUI  |Convention ARS/conseil general, Tarif Partiel, non habilite a l?aide sociale, avec pharmacie a usage interieur|
+| 47           | ARS TP NHAS NPUI |Convention ARS/conseil general, Tarif Partiel, non habilite a l?aide sociale, sans pharmacie a usage interieur|
+| 48           | ARS PCG EHPA DGS HAS                |Convention ARS/conseil general/EHPA, dotation globale de soins, habilite aide sociale|
+| 49           |ARS PCG EHPA DGS NHAS |Convention ARS/conseil general/EHPA, dotation globale de soins, non habilite aide sociale|
+| 50           | ARS PCG PUV FS HAS             |Convention ARS/conseil general/Petite unite de vie, forfaits de soins, habilite aide sociale|
+| 51           |ARS PCG PUV FS NHAS        |Convention ARS/conseil general/Petite unite de vie, forfaits de soins, non habilite aide sociale|
+
 
 Les codes 40, 42, 44 et 46 indiquent une PUI (pharmacie à usage intérieur).
 
