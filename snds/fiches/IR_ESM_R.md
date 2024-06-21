@@ -104,7 +104,7 @@ Les codes cités ci-après prennent les valeurs suivantes dans les tables de val
 ::: details  Codes et libellés `ESM_TAR_COD`
 
 | ESM_TAR_COD (MFT_COD) | Libellé (MFT_LIB) |  Commentaire (MFT_COM) |
-|--------------|----------------------------------------------------------------------|
+|--------------|------------------------------|----------------------------------------|
 | 1            | TARIF.LIBRE OU SANS TARIF.  | tarification libre, speciale ou sans tarification|                                    
 | 3            | PJ/DOTATION GLOBALE FIXES PAR ARH . POUR ETABLISSEMENTS PUBLICS |  ETABLISSEMENTS DE SANTE PUBLICS |                                                
 | 5            |  PJ/FORFAITS FIXES PAR PREFECTURE POUR ETABS. PUB. , PRIV.ET MEDI-SOC | ETABLISSEMENTS SOCIAUX PUBLICS ET PRIVES SERVANT DES PRESTATIONS RELEVANT DE LA COMPETENCE DE L ETAT SOCIALE (CAT CENTRE DE REEDUCATION PROFESSIONNEL, CENTRE D HEBERGEMENT ET DE READAPTATION SOCIALE) - ETABLISSEMENTS  MEDICO-SOCIAUX PUBLICS ET PRIVES RELEVANT DE L ARTICLE L 162.241 DU CODE DE LA SS (IMP, IME, IMPRO, CMPP CENTRE D EDUCATION SPECIALE ET DE SOINS A DOMICILE, CENTRE DE PLACEMENT |     
