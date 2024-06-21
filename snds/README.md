@@ -17,6 +17,10 @@ Elle résulte d'une mise en commun de documents et travaux par plusieurs organis
 - les Agences régionales de santé - [ARS](https://www.ars.sante.fr/)
 - Santé publique France - [SpF](https://www.santepubliquefrance.fr/)
 - la Direction de la Sécurité Sociale - [DSS](https://solidarites-sante.gouv.fr/ministere/organisation/organisation-des-directions-et-services/article/organisation-de-la-direction-de-la-securite-sociale-dss)
+- l'Agence Technique de l'Information sur l'Hospitalisation - [ATIH](https://www.atih.sante.fr/)
+- le Centre d'épidémiologie sur les causes médicales de décès - [CépiDC](https://www.cepidc.inserm.fr/)
+- l'Institut national de la santé et de la recherche médicale - [Inserm](https://www.inserm.fr/)
+- la Haute Autorité de Santé - [HAS](https://www.has-sante.fr/)
 
 ## Organisation
 
@@ -26,6 +30,7 @@ La documentation est organisée en 9 sections :
 - [Glossaire](glossaire/README.md) contient des fiches explicitant des concepts importants, utilisées comme références ailleurs ;
 - [Se former au SNDS](formation_snds/README.md) contient de nombreuses ressources pour se former au SNDS ;
 - [Pour aller plus loin](aller_plus_loin/README.md) liste de nombreuses ressources externes ou à télécharger ;
+- [Open Data](open_data/README.md) liste non exhaustive des données en open data sur le thème de la santé ; 
 - [Évènements passés et à venir](evenements/README.md) contient des enregistrements des évènements passés ;
 - [Tables](tables/README.md) est un dictionnaire des tables et variables ;
 - [Contribuer](contribuer/README.md) est un guide de contribution à cette documentation ;
@@ -34,7 +39,7 @@ La documentation est organisée en 9 sections :
 Chacune de ces sections correspond à un dossier sur [GitLab](https://gitlab.com/healthdatahub/documentation-snds), avec un [dossier supplémentaire](https://gitlab.com/healthdatahub/documentation-snds/-/tree/master/files) pour les fichiers et images.
 
 ## Contribuer
-Le [guide de contribution](contribuer/README.md) reprend les différents modes de contribution à la documentation. Des documents peuvent également être déposés dans la [boite aux lettres](https://gitlab.com/healthdatahub/documentation-snds/-/tree/master/Boite_aux_lettres), ces derniers seront intégrés à la documentation par le Health Data Hub.
+Le [guide de contribution](contribuer/README.md) reprend les différents modes de contribution à la documentation. Des documents peuvent également être envoyés par mail à l'adresse <opensource@health-data-hub.fr> ou déposés dans la [boite aux lettres](https://gitlab.com/healthdatahub/documentation-snds/-/tree/master/Boite_aux_lettres), ces derniers seront intégrés à la documentation par le Health Data Hub.
 
 ## Citation
 

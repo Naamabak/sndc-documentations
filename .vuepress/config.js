@@ -280,21 +280,26 @@ module.exports = {
         text: "Outils SNDS",
         items: [
           {
-            text: "Forum d'entraide",
-            link: "https://entraide.health-data-hub.fr/",
-          },
-          {
             text: "Dictionnaire des variables",
             link: "https://health-data-hub.shinyapps.io/dico-snds/",
+          },
+          {
+            text: "Forum d'entraide",
+            link: "https://entraide.health-data-hub.fr/",
           },
           {
             text: "Meetup",
             link: "https://www.meetup.com/fr-FR/Health-Data-Hub/",
           },
-          { text: "Open SNDS", link: "https://open-snds.has-sante.fr" },
+          { text: "Open SNDS",
+            link: "https://open-snds.has-sante.fr" },
           {
             text: "Cartographie de l'écosystème",
             link: "https://ecosysteme-snds.health-data-hub.fr/",
+          },
+          {
+            text: "Bibliothèque Ouverte d'Algorithmes en Santé (BOAS)",
+            link: "https://www.health-data-hub.fr/bibliotheque-ouverte-algorithmes-sante/",
           },
         ],
       },

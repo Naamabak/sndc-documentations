@@ -3,10 +3,10 @@
 
 ## Historique
 Le projet de la documentation collaborative a démarré en [février 2019](https://gitlab.com/healthdatahub/formation/documentation-snds/-/commit/5c7086aa52624c3a1c59234064f78d3a82a4b03a) à l'initiative de la Drees, de la Cnam et de l'INDS devenu le Health Data Hub.
-Il est actuellement le fruit de contributions de plusieurs auteurs, et est maintenu par l'équipe Open Source du Health Data Hub.
+Il est actuellement le fruit de contributions de plusieurs auteurs, et est maintenu par le Health Data Hub.
 
 ## Gouvernance
-Trois niveaux de gouvernance ont été établis dans le cadre de la documentation collaborative. Une gouvernance stratégique où les grands axes de la documentation sont discutés entre tous les partenaires. La gouvernance opérationnelle met en place les actions définies par la gouvernance stratégique et veille à mobiliser la communauté des contributeurs et à remonter les sujets importants au niveau de la gouvernance stratégique.
+Deux niveaux de gouvernance ont été établis dans le cadre de la documentation collaborative. Une gouvernance stratégique où les grands axes de la documentation sont discutés entre tous les partenaires. La gouvernance opérationnelle met en place les actions définies par la gouvernance stratégique et veille à mobiliser la communauté des contributeurs et à remonter les sujets importants au niveau de la gouvernance stratégique.
 
 ## Auteurs
 La documentation étant collaborative, différents [auteurs/mainteneurs](https://gitlab.com/healthdatahub/documentation-snds/-/graphs/master) participent au projet. 
@@ -33,6 +33,11 @@ La documentation résulte d'une mise en commun de documents et travaux par plusi
 - les Agences régionales de santé - [ARS](https://www.ars.sante.fr/)
 - Santé publique France - [SpF](https://www.santepubliquefrance.fr/)
 - La direction de la sécurité sociale - [DSS](https://www.securite-sociale.fr/)
+- l'Agence Technique de l'Information sur l'Hospitalisation - [ATIH](https://www.atih.sante.fr/)
+- le Centre d'épidémiologie sur les causes médicales de décès - [CépiDC](https://www.cepidc.inserm.fr/)
+- l'Institut national de la santé et de la recherche médicale - [Inserm](https://www.inserm.fr/)
+- la Haute Autorité de Santé - [HAS](https://www.has-sante.fr/)
+
 
 ## Mentions légales et politique de confidentialité
 Les mentions légales sont disponibles dans cette [fiche](mentions_legales.md).
