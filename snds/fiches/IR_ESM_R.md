@@ -132,14 +132,14 @@ Les codes 40 à 47 correspondent aux cas de forfait global, les autres codes à 
 
 ::: details  Codes et libellés `ESM_CAT_COD`
 
-| ESM_CAT_COD        | Libellé                                                   |Restitution du FINESS   |
-|--------------|-----------------------------------------------------------------|------------------------|
+| ETB_CAT_COD        | Libellé (ETB_CAT_LIB)|                                              |Restitution du FINESS   |
+|--------------|-------------------|----------------------------------------------|------------------------|
 | 183          | I.M.E.                                                          | non cryptée            |
 | 188          | ET.ENFANTS POLY-HANDICAPES                                      | non cryptée            |
 | 194          | INSTITUT DEFICIENTS VISUELS                                     | non cryptée            |
 | 195          | INSTITUT DEFICIENTS AUDITIFS                                    | non cryptée            |
 | 200          | Maison de retraite (obsolète)                                   | cryptée                |
-| 202          | RÉsidence autonomie                                             | cryptée                |
+| 202          |LOGEMENT-FOYER POUR PERSONNES AGEES                                           | cryptée                |
 | 207          | CTRE JOUR PERS.AGEES                                            | non cryptée            |
 | 209          | SCE POLYVALENT AIDE, SOINS DOMICILE (S.P.A.S.A.D.)              | non cryptée            |
 | 238          | CENTRE D’ACCUEIL FAMILIAL SPÉCIALISÉ                            | cryptée                |
@@ -147,22 +147,20 @@ Les codes 40 à 47 correspondent aux cas de forfait global, les autres codes à 
 | 252          | FOYER HÉBERGEMENT ADULTES HANDICAPÉS                            | cryptée                |
 | 253          | FOYER ACCUEIL POLYVALENT ADULTES HANDICAPÉS                     | cryptée                |
 | 255          | MAISON D’ACCUEIL SPÉCIALISÉE (M.A.S.)                           | cryptée                |
-| 354          | SERVICE SOINS INFIRMIERS DOMICILE (S.S.I.A.D.)                  | non cryptée            |
-| 362          | Établissement de soins longue durÉe                             | cryptée                |
-| 370          | ETABT EXPÉRIMENTAL PR PERSONNES HANDICAPÉES                     | cryptée                |
+| 354          |SERVICE DE SOINS A DOMICILE                | non cryptée            |
+| 362          | Établissement de soins longue durée                             | cryptée                         |
 | 377          | ETABT EXPÉRIMENTAL PR ENFANCE HAND.                             | cryptée                |
 | 379          | ETABT EXPÉRIMENTAL PR ADULTES HAND.                             | cryptée                |
 | 381          | ETABT EXPÉRIMENTAL PR PERSONNES AGEES                           | cryptée                |
-| 382          | FOYER DE VIE POUR ADULTES HANDICAPÉS                            | cryptée                |
+| 382          | FOYER OCCUPATIONNEL POUR ADULTES HANDICAPES                           | cryptée                |
 | 390          | ÉTABLISSEMENT D’ACCUEIL TEMPORAIRE ENFANTS HANDICAPÉS           | cryptée                |
 | 395          | ÉTABLISSEMENT D’ACCUEIL TEMPORAIRE ADULTES HANDICAPÉS           | cryptée                |
 | 396          | FOYER HÉBERGEMENT ENFANTS ET ADOLESCENTS HANDICAPÉS             | cryptée                |
-| 437          | FOYER ACCUEIL MÉDICALISÉ ADULTES HANDICAPÉS (F.A.M.)            | cryptée                |
+| 437          | FOYER (A DOUBLE TARIFICATION) POUR ADULTES HANDICAPES LOURDS       | cryptée                |
 | 446          | SERVICE D’ACCOMPAGNEMENT A LA VIE SOCIALE (S.A.V.S.)            | non cryptée            |
-| 448          | ÉTABLISSEMENT ACCUEIL MÉDICALISÉ PERSONNES HANDICAPÉES (E.A.M.) | cryptée                |
-| 500          | EHPAD                                                           | cryptée                |
-| 501          | EHPA AVEC AM                                                    | cryptée                |
-| 502          | EHPA SANS AM                                                    | cryptée                |
+| 500          | EHPAD convention tripartite                                                          | cryptée                |
+| 501          | EHPAD sans convention tripartite                                                   | cryptée                |
+
 
 
 Pour certaines catégories d'établissement, les numéros FINESS des ESMS sont cryptés car il s'agit d'établissements proposant des séjours et pouvant désigner l’adresse du bénéficiaire.
