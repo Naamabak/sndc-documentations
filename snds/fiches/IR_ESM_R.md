@@ -133,7 +133,7 @@ Les codes 40 à 47 correspondent aux cas de forfait global, les autres codes à 
 ::: details  Codes et libellés `ESM_CAT_COD`
 
 | ETB_CAT_COD        | Libellé (ETB_CAT_LIB)|                                              |Restitution du FINESS   |
-|--------------|-------------------|----------------------------------------------|------------------------|
+|--------------|-----------------------------------------------------------------|------------------------|
 | 183          | I.M.E.                                                          | non cryptée            |
 | 188          | ET.ENFANTS POLY-HANDICAPES                                      | non cryptée            |
 | 194          | INSTITUT DEFICIENTS VISUELS                                     | non cryptée            |
