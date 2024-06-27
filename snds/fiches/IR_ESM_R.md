@@ -57,35 +57,71 @@ Le motif d’entrée n’est aujourd’hui renseigné que pour les bénéficiair
 ##	Utilisateurs concernés par la mise à disposition de ce référentiel
 Ce référentiel est accessible sur le portail Snds aux profils nationaux, avec parfois certaines restrictions sur la restitution de certaines dates, restrictions détaillées dans le descriptif de la table ci-après.
 
+##	Descriptif de la table 
+
+Le tableau suivant présente le desriptif de la table **IR_ESM_R**.
+Parmi ces variables, 4 d'entre elles ne seront renseignées qu’à partir de début 2022 pour les patients en EHPAD ou en USLD. Elles sont déjà renseignées pour les autres. Il s'agit des variables : `BEN_RNG_GEM`, `BEN_ORI_DPT`, `ESM_PRV_COD`, `PEC_DIS_LIB`.
+
+Les variables dates sont restituées en format AAAAMM ou AAAAMMJJ selon le profil d’accès de l'utilisateur au portail SNDS.
+
+
+::: details  Descriptif de la table **IR_ESM_R**
+
+| Variable cible | Type | Longueur | Format      | Libellé                                                                                                                                                |
+|----------------|------|----------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ASS_NIR_ANO    | Char | 17       | $17.        | Nir assuré pseudonymisé                                                                                                                                |
+| BEN_NIR_ANO    | Char | 17       | $17.        | Nir du bénéficiaire pseudonymisé                                                                                                                       |
+| BEN_NIR_PSA    | Char | 17       | $17.        | pseudo NIR pseudonymisé du bénéficiaire                                                                                                                |
+| BEN_RNG_GEM    | Num  | 8        | 1.          | Rang gémellaire                                                                                                                                        |
+| BEN_SEX_COD    | Num  | 8        | 2.          | Code sexe du bénéficiaire                                                                                                                              |
+| BEN_NAI_ANN    | Char | 4        | $4.         | Année de naissance du bénéficiaire                                                                                                                     |
+| BEN_DCD_AME    | Char | 6        | $6.         | Date de décès du bénéficiaire année-mois AAAAMM                                                                                                        |
+| BEN_DCD_DTE    | Num  | 8        | DATETIME20. | Date de décès du bénéficiaire AAAAMMJJ                                                                                                                 |
+| BEN_ORI_DPT    | Char | 3        | VARCHAR2    | Code du département d'origine du bénéficiaire                                                                                                          |
+| PEC_DEB_AME    | Char | 6        | $6.         | Date de début de prise en charge du bénéficiaire année-mois AAAAMM                                                                                     |
+| PEC_DEB_DTE    | Num  | 8        | DATETIME20. | Date de début de prise en charge du bénéficiaire complète AAAAMMJJ                                                                                     |
+| PEC_FIN_AME    | Char | 6        | $6.         | Date de fin de prise en charge du bénéficiaire année-mois AAAAMM                                                                                       |
+| PEC_FIN_DTE    | Num  | 8        | DATETIME20. | Date de fin de prise en charge du bénéficiaire complète AAAAMMJJ                                                                                       |
+| ESM_PRV_COD    | Num  | 8        | 3.          | Code du motif d'entrée/provenance du bénéficiaire                                                                                                      |
+| DST_MTF_COD    | Num  | 10       | 11.         | Code du motif de sortie/destination du bénéficiaire                                                                                                    |
+| PEC_DIS_COD    | Char | 3        | VARCHAR2(3) | Code de la discipline                                                                                                                                  |
+| PEC_DIS_LIB    | Char | 60       | 60.         | Libellé de la discipline                                                                                                                               |
+| ESM_DOM_COD    | Char | 1        | 1.          | Domicile du patient ou pas (=O/N)                                                                                                                      |
+| ESM_FIN_ANO    | Char | 10       | $10.        | Numéro FINESS de l'établissement + clé (crypté ou pas, voir notice)                                                                                    |
+| ESM_DPT_COD    | Num  | 3        | 3.          | Code du département du service ESMS consommé : 2 premiers caractères du FINESS si métropole, ou 2 preiers et 4ème caractère du FINESS si DROM ou Corse |
+| ESM_CAT_COD    | Char | 3        | $3.         | Code de la catégorie de l'établissement ou du service médico-social                                                                                    |
+| ESM_CAP_COD    | Num  | 8        | 5.          | Nombre de places dans l'établissement ou service                                                                                                       |
+| ESM_TAR_COD    | Char | 2        | $2.         | Code de tarification de l'établissement                                                                                                                |
+:::
+
+
+
 ##	Signification des codes
 Les codes cités ci-après prennent les valeurs suivantes dans les tables de valeurs d’ORAVAL citées :
 
 - Le libellé du code de tarification `ESM_TAR_COD`se trouve dans la table de valeurs **IR_MFT_V** (mode de fixation tarifaire)
 
 ::: details  Codes et libellés `ESM_TAR_COD`
-| ESM_TAR_COD   | Libellé                                                              |
-|--------------|----------------------------------------------------------------------|
-| 1            | TARIF.LIBRE OU SANS TARIF.                                           |
-| 3            | ARS ETS PUBLICS DG                                                   |
-| 5            | ARS : ETS MEDICO-SOCIAUX NON FINANCES PAR DOTATION GLOBALE           |
-| 9            | ARS, PCD HAS DG, FORF.                                               |
-| 34           | ARS/DG                                                               |
-| 40           | TARIF GLOBAL HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR      |
-| 41           | TARIF GLOBAL HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR      |
-| 42           | TARIF GLOBAL NON HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR  |
-| 43           | TARIF GLOBAL NON HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR  |
-| 44           | TARIF PARTIEL HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR     |
-| 45           | TARIF PARTIEL HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR     |
-| 46           | TARIF PARTIEL NON HABILITE AIDE SOCIALE, AVEC PHARMA USAGE INTERIEUR |
-| 47           | TARIF PARTIEL NON HABILITE AIDE SOCIALE, SANS PHARMA USAGE INTERIEUR |
-| 48           | EHPA, DOT GLOBALE DE SOINS, HABILITE AIDE SOCIALE                    |
-| 49           | EHPA, DOT GLOBALE DE SOINS, NON HABILITE AIDE SOCIALE                |
-| 50           | PETITE UNITE VIE, FORFAITS SOINS, HABILITE AIDE SOCIALE              |
-| 51           | PETITE UNITE VIE, FORFAITS SOINS, NON HABILITE AIDE SOCIALE          |
-| 52           | LOGEMENT FOYER, FORFAITS SOINS, HABILITE AIDE SOCIALE                |
-| 54           | TARIF AM SSIAD                                                       |
-| 57           | ARS/ARS PCD DOT. GLOBALISEE                                          |
-| 58           | ARS PJ GLOB. HORS CPOM                                               |
+
+| ESM_TAR_COD (MFT_COD) | Libellé (MFT_LIB) |  Commentaire (MFT_COM) |
+|--------------|------------------------------|----------------------------------------|
+| 1            | TARIF.LIBRE OU SANS TARIF.  | tarification libre, speciale ou sans tarification|                                    
+| 3            | PJ/DOTATION GLOBALE FIXES PAR ARH . POUR ETABLISSEMENTS PUBLICS |  ETABLISSEMENTS DE SANTE PUBLICS |                                                
+| 5            |  PJ/FORFAITS FIXES PAR PREFECTURE POUR ETABS. PUB. , PRIV.ET MEDI-SOC | ETABLISSEMENTS SOCIAUX PUBLICS ET PRIVES SERVANT DES PRESTATIONS RELEVANT DE LA COMPETENCE DE L ETAT SOCIALE (CAT CENTRE DE REEDUCATION PROFESSIONNEL, CENTRE D HEBERGEMENT ET DE READAPTATION SOCIALE) - ETABLISSEMENTS  MEDICO-SOCIAUX PUBLICS ET PRIVES RELEVANT DE L ARTICLE L 162.241 DU CODE DE LA SS (IMP, IME, IMPRO, CMPP CENTRE D EDUCATION SPECIALE ET DE SOINS A DOMICILE, CENTRE DE PLACEMENT |     
+| 9            |   TARIF/FORFAIT FIXES PAR CONSEIL GENERAL ET AUTORITE PREFECTORALE |  ETABLISSEMENTS D HEBERGEMENT MEDICALISE POUR PERSONNES AGEES  PUBLICS, PSPH,  PRIVES HABILITES  AIDE SOCIALE  - FOYER D HEBERGEMENT EXPERIMENTAL A DOUBLE TARIFICATION VISE PAR LA CIRCULAIRE DU 14 FEVRIER 1986.|
+| 40           | ARS TG HAS PUI | Convention ARS/conseil general, Tarif global, habilite a l?aide sociale, avec pharmacie a usage interieur |   
+| 41           | ARS TG HAS NPUI | Convention ARS/conseil general, Tarif global, habilite a l?aide sociale, sans pharmacie a usage interieur |   
+| 42           | ARS NHAS PUI  | Convention ARS/conseil general, Tarif global, non habilite a l?aide sociale, avec pharmacie a usage interieur|
+| 43           | ARS TG NHAS NPUI |Convention ARS/conseil general, Tarif global, non habilite a l?aide sociale, sans pharmacie a usage interieur|
+| 44           | ARS TP HAS PUI   |Convention ARS/conseil general, Tarif Partiel, habilite a l?aide sociale, avec pharmacie a usage interieur|
+| 45           |ARS TP HAS NPUI   |Convention ARS/conseil general, Tarif Partiel, habilite a l?aide sociale, sans pharmacie a usage interieur|
+| 46           |ARS TP NHAS PUI  |Convention ARS/conseil general, Tarif Partiel, non habilite a l?aide sociale, avec pharmacie a usage interieur|
+| 47           | ARS TP NHAS NPUI |Convention ARS/conseil general, Tarif Partiel, non habilite a l?aide sociale, sans pharmacie a usage interieur|
+| 48           | ARS PCG EHPA DGS HAS |Convention ARS/conseil general/EHPA, dotation globale de soins, habilite aide sociale|
+| 49           |ARS PCG EHPA DGS NHAS |Convention ARS/conseil general/EHPA, dotation globale de soins, non habilite aide sociale|
+| 50           | ARS PCG PUV FS HAS             |Convention ARS/conseil general/Petite unite de vie, forfaits de soins, habilite aide sociale|
+| 51           |ARS PCG PUV FS NHAS        |Convention ARS/conseil general/Petite unite de vie, forfaits de soins, non habilite aide sociale|
+
 
 Les codes 40, 42, 44 et 46 indiquent une PUI (pharmacie à usage intérieur).
 
@@ -96,14 +132,14 @@ Les codes 40 à 47 correspondent aux cas de forfait global, les autres codes à 
 
 ::: details  Codes et libellés `ESM_CAT_COD`
 
-| ESM_CAT_COD        | Libellé                                                   |Restitution du FINESS   |
+| ETB_CAT_COD        | Libellé (ETB_CAT_LIB)|                                             Restitution du FINESS   |
 |--------------|-----------------------------------------------------------------|------------------------|
 | 183          | I.M.E.                                                          | non cryptée            |
 | 188          | ET.ENFANTS POLY-HANDICAPES                                      | non cryptée            |
 | 194          | INSTITUT DEFICIENTS VISUELS                                     | non cryptée            |
 | 195          | INSTITUT DEFICIENTS AUDITIFS                                    | non cryptée            |
 | 200          | Maison de retraite (obsolète)                                   | cryptée                |
-| 202          | RÉsidence autonomie                                             | cryptée                |
+| 202          |LOGEMENT-FOYER POUR PERSONNES AGEES                                           | cryptée                |
 | 207          | CTRE JOUR PERS.AGEES                                            | non cryptée            |
 | 209          | SCE POLYVALENT AIDE, SOINS DOMICILE (S.P.A.S.A.D.)              | non cryptée            |
 | 238          | CENTRE D’ACCUEIL FAMILIAL SPÉCIALISÉ                            | cryptée                |
@@ -111,22 +147,20 @@ Les codes 40 à 47 correspondent aux cas de forfait global, les autres codes à 
 | 252          | FOYER HÉBERGEMENT ADULTES HANDICAPÉS                            | cryptée                |
 | 253          | FOYER ACCUEIL POLYVALENT ADULTES HANDICAPÉS                     | cryptée                |
 | 255          | MAISON D’ACCUEIL SPÉCIALISÉE (M.A.S.)                           | cryptée                |
-| 354          | SERVICE SOINS INFIRMIERS DOMICILE (S.S.I.A.D.)                  | non cryptée            |
-| 362          | Établissement de soins longue durÉe                             | cryptée                |
-| 370          | ETABT EXPÉRIMENTAL PR PERSONNES HANDICAPÉES                     | cryptée                |
+| 354          |SERVICE DE SOINS A DOMICILE                | non cryptée            |
+| 362          | Établissement de soins longue durée                             | cryptée                         |
 | 377          | ETABT EXPÉRIMENTAL PR ENFANCE HAND.                             | cryptée                |
 | 379          | ETABT EXPÉRIMENTAL PR ADULTES HAND.                             | cryptée                |
 | 381          | ETABT EXPÉRIMENTAL PR PERSONNES AGEES                           | cryptée                |
-| 382          | FOYER DE VIE POUR ADULTES HANDICAPÉS                            | cryptée                |
+| 382          | FOYER OCCUPATIONNEL POUR ADULTES HANDICAPES                           | cryptée                |
 | 390          | ÉTABLISSEMENT D’ACCUEIL TEMPORAIRE ENFANTS HANDICAPÉS           | cryptée                |
 | 395          | ÉTABLISSEMENT D’ACCUEIL TEMPORAIRE ADULTES HANDICAPÉS           | cryptée                |
 | 396          | FOYER HÉBERGEMENT ENFANTS ET ADOLESCENTS HANDICAPÉS             | cryptée                |
-| 437          | FOYER ACCUEIL MÉDICALISÉ ADULTES HANDICAPÉS (F.A.M.)            | cryptée                |
+| 437          | FOYER (A DOUBLE TARIFICATION) POUR ADULTES HANDICAPES LOURDS       | cryptée                |
 | 446          | SERVICE D’ACCOMPAGNEMENT A LA VIE SOCIALE (S.A.V.S.)            | non cryptée            |
-| 448          | ÉTABLISSEMENT ACCUEIL MÉDICALISÉ PERSONNES HANDICAPÉES (E.A.M.) | cryptée                |
-| 500          | EHPAD                                                           | cryptée                |
-| 501          | EHPA AVEC AM                                                    | cryptée                |
-| 502          | EHPA SANS AM                                                    | cryptée                |
+| 500          | EHPAD convention tripartite                                                          | cryptée                |
+| 501          | EHPAD sans convention tripartite                                                   | cryptée                |
+
 
 
 Pour certaines catégories d'établissement, les numéros FINESS des ESMS sont cryptés car il s'agit d'établissements proposant des séjours et pouvant désigner l’adresse du bénéficiaire.
@@ -186,43 +220,6 @@ Cette donnée est à « N » sinon.
 NB : les rares valeurs 0 et 9 désignent des bénéficiaires dont le sexe est inconnu. 
 :::
  
-##	Descriptif de la table 
-
-Le tableau suivant présente le desriptif de la table **IR_ESM_R**.
-Parmi ces variables, 4 d'entre elles ne seront renseignées qu’à partir de début 2022 pour les patients en EHPAD ou en USLD. Elles sont déjà renseignées pour les autres. Il s'agit des variables : `BEN_RNG_GEM`, `BEN_ORI_DPT`, `ESM_PRV_COD`, `PEC_DIS_LIB`.
-
-Les variables dates sont restituées en format AAAAMM ou AAAAMMJJ selon le profil d’accès de l'utilisateur au portail SNDS.
-
-
-::: details  Descriptif de la table **IR_ESM_R**
-
-| Variable cible | Type | Longueur | Format      | Libellé                                                                                                                                                |
-|----------------|------|----------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ASS_NIR_ANO    | Char | 17       | $17.        | Nir assuré pseudonymisé                                                                                                                                |
-| BEN_NIR_ANO    | Char | 17       | $17.        | Nir du bénéficiaire pseudonymisé                                                                                                                       |
-| BEN_NIR_PSA    | Char | 17       | $17.        | pseudo NIR pseudonymisé du bénéficiaire                                                                                                                |
-| BEN_RNG_GEM    | Num  | 1        | 1.          | Rang gémellaire                                                                                                                                        |
-| BEN_SEX_COD    | Num  | 8        | 2.          | Code sexe du bénéficiaire                                                                                                                              |
-| BEN_NAI_ANN    | Char | 4        | $4.         | Année de naissance du bénéficiaire                                                                                                                     |
-| BEN_DCD_AME    | Char | 6        | $6.         | Date de décès du bénéficiaire année-mois AAAAMM                                                                                                        |
-| BEN_DCD_DTE    | Num  | 8        | DATETIME20. | Date de décès du bénéficiaire AAAAMMJJ                                                                                                                 |
-| BEN_ORI_DPT    | Char | 3        | VARCHAR2    | Code du département d'origine du bénéficiaire                                                                                                          |
-| PEC_DEB_AME    | Char | 6        | $6.         | Date de début de prise en charge du bénéficiaire année-mois AAAAMM                                                                                     |
-| PEC_DEB_DTE    | Num  | 8        | DATETIME20. | Date de début de prise en charge du bénéficiaire complète AAAAMMJJ                                                                                     |
-| PEC_FIN_AME    | Char | 6        | $6.         | Date de fin de prise en charge du bénéficiaire année-mois AAAAMM                                                                                       |
-| PEC_FIN_DTE    | Num  | 8        | DATETIME20. | Date de fin de prise en charge du bénéficiaire complète AAAAMMJJ                                                                                       |
-| ESM_PRV_COD    | Num  | 4        | 3.          | Code du motif d'entrée/provenance du bénéficiaire                                                                                                      |
-| DST_MTD_COD    | Num  | 10       | 11.         | Code du motif de sortie/destination du bénéficiaire                                                                                                    |
-| PEC_DIS_COD    | Char | 3        | VARCHAR2(3) | Code de la discipline                                                                                                                                  |
-| PEC_DIS_LIB    | Char | 60       | 60.         | Libellé de la discipline                                                                                                                               |
-| ESM_DOM_COD    | Char | 1        | 1.          | Domicile du patient ou pas (=O/N)                                                                                                                      |
-| ESM_FIN_ANO    | Char | 10       | $10.        | Numéro FINESS de l'établissement + clé (crypté ou pas, voir notice)                                                                                    |
-| ESM_DPT_COD    | Num  | 3        | 3.          | Code du département du service ESMS consommé : 2 premiers caractères du FINESS si métropole, ou 2 preiers et 4ème caractère du FINESS si DROM ou Corse |
-| ESM_CAT_COD    | Char | 3        | $3.         | Code de la catégorie de l'établissement ou du service médico-social                                                                                    |
-| ESM_CAP_COD    | Num  | 8        | 5.          | Nombre de places dans l'établissement ou service                                                                                                       |
-| ESM_TAR_COD    | Char | 2        | $2.         | Code de tarification de l'établissement                                                                                                                |
-:::
-
 
 ## Références
 ::: tip Ressources
