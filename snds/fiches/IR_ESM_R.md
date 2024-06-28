@@ -134,7 +134,7 @@ Il est possible, à partir du code de tarification, de savoir si l’établissem
 
 ### Le libellé du code de la catégorie de l’établissement ou du service médico-social `ESM_CAT_COD`
 
-Il se trouve dans la table de valeurs **IR_CET_D**,  bibliothèque ORAVAL (catégorie d’établissement). Ci-après la catégorie d'établissement la plus fine; deux autres types de catégories, non retranscrits ici, sont également disponibles dans IR_CET_D.
+Il se trouve dans la table de valeurs **IR_CET_D**,  bibliothèque ORAVAL (catégorie d’établissement). Ci-après l'ensemble des différents types de catégories d'établissements de la plus fine (`ETB_CAT_COD`) à la plus agrégée/générale (`ETB_CAT_RG3`).
 
 ::: details Codes et libellés ESM_CAT_COD
 
