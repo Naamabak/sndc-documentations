@@ -161,12 +161,12 @@ Il se trouve dans la table de valeurs **IR_CET_D**,  bibliothèque ORAVAL (caté
 |--------------|-----------------|-------------|--------------|----------|-----------|---------|---------------|
 |173 | POUPONNIERE A CARACTERE SANITAIRE | 1112 | ETABLISSEMENTS D ENFANTS A CARACTERE SANITAIRE | 11  | ETABLISSEMENTS HOSPITALIERS | 1 | ETABLISSEMENTS RELEVANT DE LA LOI HOSPITALIERE |
 |175|FOYER DE L ENFANCE |  4501 | ETABLISSEMENT DE L AIDE A L ENFANCE | 45 | ETABLISSEMENTS ET SERVICES SOCIAUX CONCOURANT A LA PROTECTION DE L ENFANCE | 2 | ETABLISSEMENTS RELEVANT DE LA LOI SOCIALE |
-| 183          | I.M.E.                                                          | non cryptée            |
-| 188          | ET.ENFANTS POLY-HANDICAPES                                      | non cryptée            |
-| 194          | INSTITUT DEFICIENTS VISUELS                                     | non cryptée            |
-| 195          | INSTITUT DEFICIENTS AUDITIFS                                    | non cryptée            |
-| 200          | Maison de retraite (obsolète)                                   | cryptée                |
-| 202          |LOGEMENT-FOYER POUR PERSONNES AGEES                                           | cryptée                |
+| 183          | I.M.E.                                                          |             |
+| 188          | ET.ENFANTS POLY-HANDICAPES                                      |             |
+| 194          | INSTITUT DEFICIENTS VISUELS                                     |            |
+| 195          | INSTITUT DEFICIENTS AUDITIFS                                    |           |
+| 200          | Maison de retraite (obsolète)                                   |              |
+| 202          |LOGEMENT-FOYER POUR PERSONNES AGEES                                 |
 | 207          | CTRE JOUR PERS.AGEES                                            | non cryptée            |
 | 209          | SCE POLYVALENT AIDE, SOINS DOMICILE (S.P.A.S.A.D.)              | non cryptée            |
 | 238          | CENTRE D’ACCUEIL FAMILIAL SPÉCIALISÉ                            | cryptée                |
