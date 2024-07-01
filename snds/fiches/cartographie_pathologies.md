@@ -117,7 +117,7 @@ La répartition est la suivante :
 Les trois grands postes de dépenses sont les suivants :  
 * les soins de ville ; 
 * les soins hospitaliers en établissements de santé (publics ou privés) ;  
-* les prestations en espèces ([indemnités journalières](../indemnites_journalieres.md), [accidents du travail](../accident_travail.md), maladies professionnelles, maternité, congé paternité ou d'adoption et les pensions d’invalidité).  
+* les prestations en espèces ([indemnités journalières](../fiches/indemnites_journalieres.md), [accidents du travail](../fiches/accident_travail.md), maladies professionnelles, maternité, congé paternité ou d'adoption et les pensions d’invalidité).  
 
 
 ::: warning Dépenses au niveau individuel  
