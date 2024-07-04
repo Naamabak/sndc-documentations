@@ -30,9 +30,8 @@ En effet, l'exploitation du SNDS suivant ces algorithmes permet de repérer les 
 À noter : plusieurs pathologies, traitements chroniques ou épisodes de soins peuvent être repérés chez une même personne.
 
 
-::: tip Citation  
-Un article décrivant la méthode et les principaux résultats a été publié: [RACHAS, Antoine, GASTALDI-MÉNAGER, Christelle, DENIS, Pierre, et al. The economic burden of disease in France from the National Health Insurance Perspective: the healthcare expenditures and conditions mapping used to prepare the French social security funding act and the public health act. Medical care, 2022.](https://doi.org/10.1097/MLR.0000000000001745)
-::: 
+**Pour citer la cartographie des pathologies :** 
+Un article décrivant la méthode et les principaux résultats a été publié: [RACHAS, Antoine, GASTALDI-MÉNAGER, Christelle, DENIS, Pierre, et al. The economic burden of disease in France from the National Health Insurance Perspective: the healthcare expenditures and conditions mapping used to prepare the French social security funding act and the public health act. Medical care, 2022.](https://doi.org/10.1097/MLR.0000000000001745)   
 
 
 ### Champ des données
@@ -60,11 +59,7 @@ La CNAM précise bien dans la description de sa méthodologie que l'objet de cet
 
 Plusieurs versions de la cartographie ont été développées. Une nouvelle version est produite chaque année. 
 
-
-**Sur le portail Cnam, la version la plus ancienne actuellement disponible est la G4 jusqu’à la G10 actuellement (juillet 2023)**
-
-
-À chaque nouvelle version de la cartographie, l’ensemble des programmes est exécuté pour chaque année de la période. Ainsi, au sein d’une même version de la cartographie, les résultats sont comparables d’une année à l’autre car issus d’une même méthode. En revanche, les données qui proviennent de versions différentes ne peuvent pas être comparées car elles peuvent présenter des différences de méthode.
+**À chaque nouvelle version de la cartographie, l’ensemble des programmes est exécuté pour chaque année de la période. Ainsi, au sein d’une même version de la cartographie, les résultats sont comparables d’une année à l’autre car issus d’une même méthode.** En revanche, les données qui proviennent de versions différentes ne peuvent pas être comparées car elles peuvent présenter des différences de méthode.
 
 
 ::: tip Depuis la version G8  
@@ -146,23 +141,25 @@ Les données de la cartographie sont mises à disposition des utilisateurs autor
 ### Tables
 
 
-::: danger Pour la version G10  
+::: danger Pour la version G11  
+---
 :::
 
 
 Quatre tables par année, contenant 1 ligne par identifiant (`BEN_IDT_ANO`), sont disponibles dans la librairie ORAMEPS : 
 | **Table** | **Description** |
 | --- | --- |
-| CRTO_CT_IDE_20aa_G10 | Identifiants des bénéficiaires inclus |
-| CRTO_CT_IND_20aa_G10 | Variables socio-démographiques, top pathologies, et multiples regroupements |
-| CRTO_CT_DEP_20aa_G10 | Dépenses remboursées et remboursables par poste de dépenses, eux même regroupés en 3 grands postes (soins de ville, hôpital et prestations en espèces) |
-| CRTO_CT_RES_20aa_G10 | Informations sur le lieu de résidence (taux de chômage, taux de pauvreté, coefficient de [l'accessibilité potentiel localisé](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/lindicateur-daccessibilite-potentielle-localisee-apl) aux médecins généralistes correspondant à la commune…) |
+| CRTO_CT_IDE_20aa_G11 | Identifiants des bénéficiaires inclus |
+| CRTO_CT_IND_20aa_G11 | Variables socio-démographiques, top pathologies, et multiples regroupements |
+| CRTO_CT_DEP_20aa_G11 | Dépenses remboursées et remboursables par poste de dépenses, eux même regroupés en 3 grands postes (soins de ville, hôpital et prestations en espèces). Ces dépenses ne correspondent pas aux dépenses affectées à chaque pathologie, qui ne sont pas disponible au niveau individuel. |
+| CRTO_CT_RES_20aa_G11 | Informations sur le lieu de résidence (taux de chômage, taux de pauvreté, coefficient de [l'accessibilité potentiel localisé](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/lindicateur-daccessibilite-potentielle-localisee-apl) aux médecins généralistes correspondant à la commune…). Les informations ne sont pas disponibles pour toutes les années et tous les niveaux géographiques. |
 
 
 ### Requête
 
 
-::: danger Pour la version G10  
+::: danger Pour la version G11  
+---
 :::
 
 
@@ -174,14 +171,15 @@ Pour faire appel aux tables en utilisant **%connectora**, il faut préciser le l
 proc sql;  
     %connectora;  
         create table CRTO as select * from connection to oracle (  
-        select * from mepsgp_030.CRTO_CT_DEP_G8_2019  
+        select * from mepsgp_030.CRTO_CT_DEP_G11_2019  
         );  
     disconnect from oracle;  
 quit;  
 ```
   
 ::: tip Crédit  
-Fiche MAJ en juin 2024 en utilisant : 
+Fiche MAJ en juillet 2024 en utilisant : 
 * [Méthode de la cartographie des pathologies et des dépenses de l'Assurance Maladie](https://www.assurance-maladie.ameli.fr/etudes-et-donnees/par-theme/pathologies/cartographie-assurance-maladie/methode-cartographie-pathologies-depenses-assurance-maladie#text_164994) où se trouvent l’ensemble des informations et détails sur la méthodologie, les top pathologies, les dépenses, etc.
 * le communiqué de la version G10 de la cartographie de la Cnam (document disponible pour les utilisateurs ayant accès au portail de la Cnam)  
+* Relecture par Antoine Rachas (Cnam)
 :::
