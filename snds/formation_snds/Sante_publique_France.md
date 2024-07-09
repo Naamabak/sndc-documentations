@@ -1,15 +1,15 @@
-# Documents Sante publique France
+# Documents Santé publique France
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 Documents publiés par [Santé publique France](../glossaire/SpF.md) sur ce site.
 
-## SNDS, ce qu'il faut savoir
+## Guide d'utilisation du SNDS pour la surveillance et l'observation épidémiologiques
 
 ::: tip
-Télécharger [SNDS, ce qu'il faut savoir](/files/Sante_publique_France/2023_07_GUIDE_SNDS_SpFrance_MPL-2.0.pdf) [Sante publique France - MPL-2.0], mise à jour de juillet 2023.
+Télécharger le [Guide d'utilisation du SNDS](/files/Sante_publique_France/GUIDE_SNDS_SpFrance_MPL-2.0.pdf) [Santé publique France - MPL-2.0], mise à jour de juillet 2024.
 :::
 
-Le document "SNDS, ce qu’il faut savoir" se veut une aide à l’utilisation des données du DCIR, du PMSI (MCO, SSR, HAD, RIMP) et des causes médicales de décès sur le portail SNDS. 
+Le document "Guide d'utilisation du SNDS" se veut une aide à l’utilisation des données du DCIR, du PMSI (MCO, SMR, HAD, PSY) et des causes médicales de décès sur le portail SNDS. 
 
 Il a été élaboré à partir de documents déjà existants (communiqués ou documents de formation du portail SNDS, questions/réponses des forums…) et de l’expérience des utilisateurs de Santé publique France dans le cadre de leurs missions. 
 
@@ -21,7 +21,7 @@ Le document (non exhaustif) traite des sujets suivants :
 - Table des prestations (ER_PRS_F)
 - Référentiel médicalisé (IR_IMB_R)
 - Autres tables du DCIR
-- PMSI 
+- PMSI
 - Causes médicales de décès 
 
 Des annexes permettent de connaître l’évolution de la complétude et de la qualité de certaines variables du SNDS.
