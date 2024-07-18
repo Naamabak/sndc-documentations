@@ -65,39 +65,39 @@ const sidebar = {
     {
       title: "OMOP-CDM",
       path: "/standards/OMOP-CDM/",
-    }
+    },
     {
       title: "FHIR",
       path: "/standards/FHIR/",
-    }
+    },
     {
       title: "SNOMED-CT",
       path: "/standards/SNOMED-CT/",
-    }
+    },
     {
       title: "BEACON",
       path: "/standards/BEACON/",
-    }
+    },
     {
       title: "CDA",
       path: "/standards/CDA/",
-    }
+    },
     {
       title: "OSIRIS",
       path: "/standards/OSIRIS/",
-    }
+    },
     {
       title: "CIM11",
       path: "/standards/CIM11/",
-    }
+    },
     {
       title: "LOINC",
       path: "/standards/LOINC/",
-    }
+    },
     {
       title: "ICHI",
       path: "/standards/ICHI/",
-    }
+    },
     {
       title: "À propos",
       path: "/A_propos/",
