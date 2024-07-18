@@ -57,6 +57,57 @@ const sidebar = {
     },
   ],
 
+  "/standards/": [
+    {
+      title: "I2B2",
+      path: "/standards/I2B2/",
+    },
+    {
+      title: "OMOP-CDM",
+      path: "/standards/OMOP-CDM/",
+    },
+    {
+      title: "FHIR",
+      path: "/standards/FHIR/",
+    },
+    {
+      title: "SNOMED-CT",
+      path: "/standards/SNOMED-CT/",
+    },
+    {
+      title: "BEACON",
+      path: "/standards/BEACON/",
+    },
+    {
+      title: "CDA",
+      path: "/standards/CDA/",
+    },
+    {
+      title: "OSIRIS",
+      path: "/standards/OSIRIS/",
+    },
+    {
+      title: "CIM11",
+      path: "/standards/CIM11/",
+    },
+    {
+      title: "LOINC",
+      path: "/standards/LOINC/",
+    },
+    {
+      title: "ICHI",
+      path: "/standards/ICHI/",
+    },
+    {
+      title: "À propos",
+      path: "/A_propos/",
+      children: [
+        "/A_propos/mentions_legales.md",
+        "/A_propos/politique_de_confidentialite.md",
+      ],
+    },
+  ],
+
   "/snds/": [
     {
       title: "Introduction",
@@ -269,10 +320,6 @@ module.exports = {
     editLinks: true,
     nav: [
       {
-        text: "SNDS OMOP",
-        link: "/omop/",
-      },
-      {
         text: "SNDS",
         link: "/snds/",
       },
@@ -302,6 +349,14 @@ module.exports = {
             link: "https://www.health-data-hub.fr/bibliotheque-ouverte-algorithmes-sante/",
           },
         ],
+      },
+      {
+        text: "SNDS OMOP",
+        link: "/omop/",
+      },
+      {
+        text: "Standards de données",
+        link: "/standards/",
       },
     ],
     sidebar: sidebar,
