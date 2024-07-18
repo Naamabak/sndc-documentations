@@ -1,3 +1,3 @@
 # SNOMED-CT  
 
-* ... à venir prochainement ...*
+*... à venir prochainement ...*
