@@ -269,10 +269,6 @@ module.exports = {
     editLinks: true,
     nav: [
       {
-        text: "SNDS OMOP",
-        link: "/omop/",
-      },
-      {
         text: "SNDS",
         link: "/snds/",
       },
@@ -302,6 +298,14 @@ module.exports = {
             link: "https://www.health-data-hub.fr/bibliotheque-ouverte-algorithmes-sante/",
           },
         ],
+      },
+      {
+        text: "SNDS OMOP",
+        link: "/omop/",
+      },
+      {
+        text: "Standards de données",
+        link: "/standards/",
       },
     ],
     sidebar: sidebar,
