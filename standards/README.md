@@ -9,4 +9,5 @@ Ces fiches ont fait l’objet d’une collaboration avec les équipes Veltys, et
 Avis à nos lecteurs et contributeurs : vos retours et remarques sont les bienvenus, notamment concernant les mises à jour de ces standards et terminologies, afin de pouvoir les maintenir pertinents au fil du temps.  
 
 Bonne lecture !  
-L’équipe du Health Data Hub
+
+L’équipe du Health Data Hub  
