@@ -10,7 +10,7 @@
 **Domaines d’application :** i2b2 est utilisée dans les domaines cliniques ainsi qu'en génomique dans le cadre de recherches cliniques et translationnelles, en particulier pour l’exploration et l’identification de cohortes de patients.
 
 
-**Maturité / Utilisation :** La version actuelle d’i2b2 est la v1.7.13 sortie en 2022 et est utilisée par plus de 250 institutions dans le monde (aux États-Unis dans de nombreuses universités, en France dans plusieurs établissements de santé, par des entreprises privées, etc. voir l'élément _« Utilisation sur le marché »_ en partie [4. Valorisation](#4.-valorisation)).
+**Maturité / Utilisation :** La version actuelle d’i2b2 est la v1.7.13 sortie en 2022 et est utilisée par plus de 250 institutions dans le monde (aux États-Unis dans de nombreuses universités, en France dans plusieurs établissements de santé, par des entreprises privées, etc. voir l'élément _« Utilisation sur le marché »_ en partie 4. Valorisation).
 
 
 ## 1. Général
@@ -20,7 +20,7 @@
 
 
   - **Pays d'origine :** États-Unis
-  - **Consortium d’origine :** NIH (_National Institutes of Health_)<sup id="a1">[1](#f1)  
+  - **Consortium d’origine :** NIH (_National Institutes of Health_)[^1]  
   - **Type de standard :** Schéma de données
  
   - **Description :**
@@ -33,7 +33,7 @@
     - Cellules optionnelles (i2b2 Optional Cell)
       - _File Repository (CRC)_ : contient de gros fichiers de données (images radiologiques, séquences génétiques, ...)
       - _Identity Management_ : gère les données sensibles des patients, en accord avec la réglementation _HIPAA (Health Insurance Portability and Accountability Act_)
-    - Une application _Web Client_ qui permet d’interroger, d’analyser et d’afficher les données du i2b2 Hive en communiquant avec les cellules i2b2 (on parle aussi du _« Query & Analysis Tool »_, voir l’élément _« Outils compatibles »_ en partie [5. Utilisation](#5.-utilisation)).
+    - Une application _Web Client_ qui permet d’interroger, d’analyser et d’afficher les données du i2b2 Hive en communiquant avec les cellules i2b2 (on parle aussi du _« Query & Analysis Tool »_, voir l’élément _« Outils compatibles »_ en partie 5. Utilisation).
     - Une application _Workbench_ qui réalise les mêmes analyses que le _Web Client_ d’une façon plus approfondie
    
     ![Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)](/files_and_images/i2b2_fig_1.png)
