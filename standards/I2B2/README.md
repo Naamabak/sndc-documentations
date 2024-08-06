@@ -20,11 +20,9 @@
 
 
   - **Pays d'origine :** États-Unis
-  - **Consortium d’origine :** NIH (_National Institutes of Health_)[^1]  
-  [^1] : Voir : [Our History – i2b2 tranSMART Foundation](https://i2b2transmart.org/home/our-history/)
-  - **Type de standard :** Schéma de données
- 
-  - **Description :**
+  - **Consortium d’origine :** NIH (_National Institutes of Health_)[^1]   
+  - **Type de standard :** Schéma de données  
+  - **Description :**  
     - i2b2 (_Informatics for Integrating Biology & the Bedside_), créée en 2004 par la _Harvard Medical School_, est une plateforme de recherche clinique qui permet d'organiser et de transformer des données cliniques orientées patient. Elle est optimisée pour la recherche génomique clinique. La plateforme i2b2, ou logiciel (_« i2b2 Software »_), est constituée de plusieurs cellules communicantes via des services web XML, qui forment le i2b2 _Hive_ (voir Figure 1) :
     - Cellules centrales (i2b2 _Core Cell_) :
       - _Project Management_ : gère la configuration et la maintenance du Hive, les projets, les utilisateurs et la sécurité
@@ -35,15 +33,16 @@
       - _File Repository (CRC)_ : contient de gros fichiers de données (images radiologiques, séquences génétiques, ...)
       - _Identity Management_ : gère les données sensibles des patients, en accord avec la réglementation _HIPAA (Health Insurance Portability and Accountability Act_)
     - Une application _Web Client_ qui permet d’interroger, d’analyser et d’afficher les données du i2b2 Hive en communiquant avec les cellules i2b2 (on parle aussi du _« Query & Analysis Tool »_, voir l’élément _« Outils compatibles »_ en partie 5. Utilisation).
-    - Une application _Workbench_ qui réalise les mêmes analyses que le _Web Client_ d’une façon plus approfondie
+    - Une application _Workbench_ qui réalise les mêmes analyses que le _Web Client_ d’une façon plus approfondie  
+  - **Organisme en charge :** _i2b2 tranSMART Foundation_  
+
+ [^1]: Voir : [Our History – i2b2 tranSMART Foundation](https://i2b2transmart.org/home/our-history/)
    
    <p align="center">
-   <img src="../files_and_images/i2b2_fig_1.png" width="700px"/>    
+   <img src="../files_and_images/i2b2/i2b2_fig_1.png" width="700px"/>    
+
    _Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)_
-   </p>
-
-  - **Organisme en charge :** _i2b2 tranSMART Foundation_
-
+   </p>  
 
 ### Application :    
   - **Domaines d’application en santé :** La plateforme i2b2 est principalement utilisée en recherche clinique et translationnelle dans les domaines cliniques et en génomique.
@@ -87,26 +86,26 @@
 
 
 ### Description technique du schéma de données :
-  - **La structure d'i2b2** consiste en un schéma en étoile (voir Figure 2 ci-dessous) composé d’une table de faits (qui contient les observations du modèle ; ex : diagnostics, procédures, résultats de tests, etc.) et de 6 tables de dimension (qui contiennent des informations descriptives sur les faits à travers la définition d'entités ; ex : un patient, un concept, ...).
-
-<p align="center">
-   <img src="../files_and_images/i2b2_fig_2.png" width="600px"/>    
-   _Figure 2 : Schéma en étoile d’i2b2, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)_
-</p>
-
-
+  - **La structure d'i2b2** consiste en un schéma en étoile (voir Figure 2 ci-dessous) composé d’une table de faits (qui contient les observations du modèle ; ex : diagnostics, procédures, résultats de tests, etc.) et de 6 tables de dimension (qui contiennent des informations descriptives sur les faits à travers la définition d'entités ; ex : un patient, un concept, ...).  
   - **Liste des tables du schéma de données :**
     - Table de faits (observation_fact) : Elle contient les observations sur un patient collectées lors d’une visite. Une visite peut être divisée en plusieurs lignes pour recenser différentes observations (voir l'exemple dans le Tableau 1 ci-dessous).  
-<p align="center">
-    ![Tableau 1](../files_and_images/i2b2_tab_1.png)   
-    _Tableau 1 : Exemple d’enregistrement dans la table observation_fact, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)_ 
-</p>  
     - Table de dimension Patient (patient_dimension) : cette table contient les informations démographiques sur les patients (identifiant du patient, sexe, âge, date de naissance, statut marital, code postal, etc.).
     - Table de dimension Visite (visit_dimension) : cette table contient les informations sur les différentes visites au cours desquelles les observations ont été collectées. Ces sessions peuvent impliquer le patient directement (exemple : visite chez un médecin) ou indirectement (exemple : tests réalisés sur un tube sanguin)
     - Table de dimension Concept (concept_dimension) : cette table contient les concepts (diagnostics, procédures, médicaments, tests de laboratoire, etc.). Tous les types de données peuvent être stockés en tant que concepts (données démographiques et génétiques)
     - Table de dimension Prestataire (provider_dimension) : cette table contient les informations relatives aux médecins ou prestataires de soins au sein d’une institution (position du prestataire au sein de l'institution, etc.).
     - Table de dimension Modificateur (modifier_dimension) : cette table contient tous les modificateurs. Un modificateur permet de préciser un concept (fréquence, voie d’administration, etc.). Par exemple, « systolique », « diastolique » et « position » sont des modificateurs pour le concept de pression artérielle.
 
+<p align="center">
+   <img src="../files_and_images/i2b2/i2b2_fig_2.png" width="600px"/>    
+
+   *Figure 2 : Schéma en étoile d’i2b2, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)*
+</p>  
+
+<p align="center">
+    <img src="../files_and_images/i2b2/i2b2_tab_1.png"/>     
+</p>  
+
+*Tableau 1 : Exemple d’enregistrement dans la table observation_fact, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)*
 
 ### Niveau de généralisation (facilité de remplissage des champs du standard) :
   - **Note :** 0,8 / 1. Cette note combine plusieurs sous-critères.
@@ -183,14 +182,15 @@ La couche applicative reste ancienne dans son architecture et les technologies i
 Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schémas de données suivants : PCORnet, OMOP-CDM, i2b2 et Sentinel.
 
   - L'objectif est d'avoir un outil d'accès unifié à ces données permettant aux chercheurs d'accéder à un réseau plus large de patients et à des données variées (EHR, demandes de remboursement, données issues des essais cliniques, ...).
-  - Le projet consiste à mapper chacun de ces schémas de données vers le modèle intermédiaire BRIDG v3.2 (voir Figure 3 ci-dessous). Ce modèle a été choisi comme modèle intermédiaire car il a été mappé dans une première étape à FHIR et CDISC SDTM.
+  - Le projet consiste à mapper chacun de ces schémas de données vers le modèle intermédiaire BRIDG v3.2 (voir Figure 3 ci-dessous). Ce modèle a été choisi comme modèle intermédiaire car il a été mappé dans une première étape à FHIR et CDISC SDTM.  
+ 
+Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP.
 
 <p align="center">
-   <img src="../files_and_images/i2b2_fig_3.png" width="700px"/>    
+   <img src="../files_and_images/i2b2/i2b2_fig_3.png" width="700px"/>    
+
    _Figure 3 : Procédure de mapping, Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)_
-</p>
- 
-  Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP.
+</p>   
 
 
 ### Communication avec d'autres standards (inter typologies de standards) :
@@ -215,8 +215,13 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
   - La plateforme i2b2 utilise plusieurs terminologies standards pour représenter ses concepts (voir Tableau 2 ci-dessous) :
     - CIM-9 ou CIM-10 pour les maladies
     - LOINC pour les tests de laboratoire
-    - NDC (National Drug Codes : nomenclature des médicaments aux États-Unis) pour les médicaments
-
+    - NDC (National Drug Codes : nomenclature des médicaments aux États-Unis) pour les médicaments  
+  - Cependant, il est possible d’utiliser d’autres terminologies grâce au concept EAV ((Entity-Attribute-Value), voir l'élément « Flexibilité du standard, personnalisation » ci-après). Il est par exemple possible de combiner l'utilisation de codes SNOMED-CT et LOINC. En effet, il est relativement simple de passer d’un modèle EAV à un autre (par exemple, d’i2b2 vers OMOP) ; les enjeux concernent principalement le mapping vers les terminologies standards
+  - Points d’attention :
+    - Les terminologies dans i2b2, qui permettent de capturer la signification d’une observation, se trouvent dans un schéma dédié et nécessitent d’alimenter des tables de métadonnées spécifiques
+    - i2b2 ne fournit pas de terminologie standard - hormis pour le jeu de données d’exemple, ou le contexte de réseaux spécifiques : c’est à l’intégrateur de données de déterminer les terminologies (locales et standards) qu’il utilisera et de les implémenter dans l’application
+      - Cette implémentation est relativement simple mais nécessite une courbe d’apprentissage
+      - Par ailleurs, dans le contexte d’un EDS hospitalier, les terminologies locales peuvent être de grandes dimensions, ce qui complique l’implémentation et rend la tâche de mapping vers les standards complexe et chronophage
 
 **Tableau 2 : Quelques terminologies standard utilisées dans i2b2**
 
@@ -230,16 +235,7 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 | Labs         | LOINC                           |
 | Vital Signs  | LOINC                           |
 
-
   _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+Common+Data+Model+Documentation)_
-
-
-  - Cependant, il est possible d’utiliser d’autres terminologies grâce au concept EAV ((Entity-Attribute-Value), voir l'élément « Flexibilité du standard, personnalisation » ci-après). Il est par exemple possible de combiner l'utilisation de codes SNOMED-CT et LOINC. En effet, il est relativement simple de passer d’un modèle EAV à un autre (par exemple, d’i2b2 vers OMOP) ; les enjeux concernent principalement le mapping vers les terminologies standards
-  - Points d’attention :
-    - Les terminologies dans i2b2, qui permettent de capturer la signification d’une observation, se trouvent dans un schéma dédié et nécessitent d’alimenter des tables de métadonnées spécifiques
-    - i2b2 ne fournit pas de terminologie standard - hormis pour le jeu de données d’exemple, ou le contexte de réseaux spécifiques : c’est à l’intégrateur de données de déterminer les terminologies (locales et standards) qu’il utilisera et de les implémenter dans l’application
-      - Cette implémentation est relativement simple mais nécessite une courbe d’apprentissage
-      - Par ailleurs, dans le contexte d’un EDS hospitalier, les terminologies locales peuvent être de grandes dimensions, ce qui complique l’implémentation et rend la tâche de mapping vers les standards complexe et chronophage
 
 
 ### Flexibilité du standard, personnalisation :
@@ -266,15 +262,14 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
     **(b)** Le faible niveau de normalisation  
     **(c)** L’absence de tables larges  
  
-  - Le schéma de données i2b2 n’est pas normalisé, c’est-à-dire qu’il ne contient pas de table de dimension pour toutes les entités. Par exemple, il ne contient pas de table de dimension pour le statut marital (voir Figure 4 ci-dessous). Par conséquent, le niveau de redondance d’information est élevé.
+  - Le schéma de données i2b2 n’est pas normalisé, c’est-à-dire qu’il ne contient pas de table de dimension pour toutes les entités. Par exemple, il ne contient pas de table de dimension pour le statut marital (voir Figure 4 ci-dessous). Par conséquent, le niveau de redondance d’information est élevé.  
+  - Le schéma de données i2b2 ne contient que 10 tables (132 champs). Par ailleurs, la plupart des requêtes utilisent seulement deux jointures principales entre les tables observations_fact, patient_dimension et concept_dimension. En effet, les tables patient_dimension et concept_dimension contiennent la plupart des critères d’analyse (l’âge des patients, le sexe, les maladies, etc.). Enfin, le schéma des données ne contient pas de relations physiques entre les tables, c’est-à-dire qu’il ne définit pas de clés étrangères. Cela réduit la complexité du modèle, mais ne permet pas d’utiliser de mécanisme interne de base de données pour vérifier l’intégrité référentielle.  
 
 <p align="center">
-   <img src="../files_and_images/i2b2_fig_4.png" width="900px"/>    
-   _Figure 4 : Exemple de redondance d’information, Source : Traitement Veltys4_1
+   <img src="../files_and_images/i2b2/i2b2_fig_4.png" width="900px"/>    
+
+   _Figure 4 : Exemple de redondance d’information, Source : Traitement Veltys4_
 </p>
-
-
-  - Le schéma de données i2b2 ne contient que 10 tables (132 champs). Par ailleurs, la plupart des requêtes utilisent seulement deux jointures principales entre les tables observations_fact, patient_dimension et concept_dimension. En effet, les tables patient_dimension et concept_dimension contiennent la plupart des critères d’analyse (l’âge des patients, le sexe, les maladies, etc.). Enfin, le schéma des données ne contient pas de relations physiques entre les tables, c’est-à-dire qu’il ne définit pas de clés étrangères. Cela réduit la complexité du modèle, mais ne permet pas d’utiliser de mécanisme interne de base de données pour vérifier l’intégrité référentielle.
 
 
 ### Contraintes d’implémentation :
@@ -386,13 +381,13 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 ### Outils compatibles :
 
   Les outils compatibles avec i2b2 sont les suivants :
-  - « Query & Analysis Tool » (on parle aussi de l’application Web Client) : Outil de requêtage pour identifier des cohortes de patients (voir Figure 5 ci-dessous)
+  - « Query & Analysis Tool » (on parle aussi de l’application Web Client) : Outil de requêtage pour identifier des cohortes de patients (voir Figure 5 ci-dessous)  
 
 <p align="center">
-  ![Figure 5](../files_and_images/i2b2_fig_5.png)  
+  <img src="../files_and_images/i2b2/i2b2_fig_5.png"/>    
+
   _Figure 5 : Page d’accueil du « Query & Analysis Tool, Source : démonstration du Web Client_
 </p>
-
 
   - Plug-ins associés au « Query & Analysis Tool » :
     - « ExportXLS » : Permet d’exporter sous forme de fichier .csv ou .xls les concepts sélectionnés et observés sur un ensemble de patients, sous forme de tableau (voir Figure 6 ci-dessous)  
@@ -404,20 +399,23 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
     - « CARE – Concept Observation Tally Demographics Histograms » : Permet de générer des histogrammes comparatifs des répartitions démographiques pour un sous-ensemble de patients par rapport aux patients de ce sous-ensemble associés à plusieurs observations d'un concept spécifié.
     - « Communicator Tool » : Permet d'interagir directement avec les objets standard de Cell Communicator depuis la plateforme
  
-    <p align="center">
-    ![Figure 6](../files_and_images/i2b2_fig_6.png)  
-    _Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)_
-    </p>
+<p align="center">
+  <img src="../files_and_images/i2b2/i2b2_fig_6.png"/>
 
-    <p align="center">
-    ![Figure 7](../files_and_images/i2b2_fig_7.png)  
-    _Figure 7 : Exemple d’utilisation du plug-in Demographics, Source : démonstration du Web Client (1 Patient Set)_
-    </p>  
-
-  - SHRINE : outil qui permet de relier les systèmes i2b2 provenant de différents sites ou établissements avant l'utilisation du « Query & Analysis Tool » (voir Figure 8 ci-dessous). Cet outil permet ainsi de compter le nombre de patients qui vérifient certains critères dans les établissements participants. Les chercheurs l’utilisent pour inclure un nombre suffisant de patients dans leurs études.
+  _Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)_
+</p>
 
 <p align="center">
-  <img src="../files_and_images/i2b2_fig_8.png" width="300px"/>    
+  <img src="../files_and_images/i2b2/i2b2_fig_7.png"/>
+
+  _Figure 7 : Exemple d’utilisation du plug-in Demographics, Source : démonstration du Web Client (1 Patient Set)_
+</p>  
+
+  - SHRINE : outil qui permet de relier les systèmes i2b2 provenant de différents sites ou établissements avant l'utilisation du « Query & Analysis Tool » (voir Figure 8 ci-dessous). Cet outil permet ainsi de compter le nombre de patients qui vérifient certains critères dans les établissements participants. Les chercheurs l’utilisent pour inclure un nombre suffisant de patients dans leurs études.  
+
+<p align="center">
+  <img src="../files_and_images/i2b2/i2b2_fig_8.png" width="300px"/>    
+
   _Figure 8 : La fédération de systèmes i2b2 par SHRINE, Source : [Software – i2b2 tranSMART Foundation](https://i2b2transmart.org/software/)_
 </p>
 
@@ -426,7 +424,6 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
     - La plateforme i2b2 est utilisée dans une approche « sidecar » : le logiciel stocke une copie des données patient issues de l'EHR et exécute des requêtes sur ces données pour un usage secondaire de recherche (en parallèle de l'EHR qui continue d'être utilisé pour un usage clinique)
     - SMART on FHIR permet de transformer un EHR (ou bien son « sidecar » dans le cas d'i2b2) en une plateforme de type « App store pour la santé » où les utilisateurs ont accès à de nombreuses applications.
     - L'implémentation de SMART on FHIR à partir d'i2b2 permet ainsi (1) de faciliter le déploiement d'applications SMART, (2) d'avoir un mécanisme additionnel d'accès et de requêtage de la plateforme i2b2 et (3) de migrer les données depuis l'EHR, en passant par la réplication dans i2b2 jusqu'à une base FHIR-compatible.
-
 
 ### Décrire les étapes nécessaires pour la standardisation :
 
@@ -443,9 +440,11 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
     **c.** Il est possible de chiffrer certains champs pour gérer la confidentialité des données (Patient Notes, Observation_Blob)  
 
 La Figure 9 ci-dessous illustre les étapes décrites précédemment.  
+
 <p align="center">
-![Figure 9](../files_and_images/i2b2_fig_9.png)  
-_Figure 9 : Processus ETL utilisé pour charger les données dans i2b2, Source : Schéma réalisé par Veltys_
+  <img src="../files_and_images/i2b2/i2b2_fig_9.png"/>
+
+  _Figure 9 : Processus ETL utilisé pour charger les données dans i2b2, Source : Schéma réalisé par Veltys_
 </p>
 
 ### Existence d’extensions certifiées : plusieurs extensions existent :
@@ -458,8 +457,9 @@ _Figure 9 : Processus ETL utilisé pour charger les données dans i2b2, Source :
 La page d'aide du i2b2 « Query & Analysis Tool » contient des exemples de requêtes qui sont accessibles dans la version de démonstration de l’outil12 (voir Figure 10 ci-dessous).
 
 <p align="center">
-![Figure 10](../files_and_images/i2b2_fig_10.png)
-_Figure 10 : Extrait de la page d’aide de l’outil « Query & Analysis Tool », Source : démonstration du Web Client_
+  <img src="../files_and_images/i2b2/i2b2_fig_10.png"/>
+
+  _Figure 10 : Extrait de la page d’aide de l’outil « Query & Analysis Tool », Source : démonstration du Web Client_
 </p>
 
 
@@ -527,8 +527,7 @@ _Figure 10 : Extrait de la page d’aide de l’outil « Query & Analysis Tool �
 ## Annexes
 
 
-### Annexe n°1 : Analyse quantitative de la littérature sur i2b2 et extrait de la liste des publications
-
+### Annexe n°1 : Analyse quantitative de la littérature sur i2b2 et extrait de la liste des publications  
 
 Sur PubMed (PubMed), on réalise une requête générale sur FHIR. La recherche du mot-clé « i2b2 » renvoie 439 résultats.Voici ci-dessous un extrait de la liste des publications obtenues en résultat :
 
