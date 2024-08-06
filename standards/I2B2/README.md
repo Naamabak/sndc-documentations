@@ -39,7 +39,7 @@
    
    <p align="center">
    <img src="../files_and_images/i2b2_fig_1.png" width="700px"/>    
-   *Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)*
+   _Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)_
    </p>
 
   - **Organisme en charge :** _i2b2 tranSMART Foundation_
@@ -90,20 +90,17 @@
   - **La structure d'i2b2** consiste en un schéma en étoile (voir Figure 2 ci-dessous) composé d’une table de faits (qui contient les observations du modèle ; ex : diagnostics, procédures, résultats de tests, etc.) et de 6 tables de dimension (qui contiennent des informations descriptives sur les faits à travers la définition d'entités ; ex : un patient, un concept, ...).
 
 <p align="center">
-   <img src="../files_and_images/i2b2_fig_2.png" width="900px"/>    
-   *Figure 2 : Schéma en étoile d’i2b2, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)*
+   <img src="../files_and_images/i2b2_fig_2.png" width="500px"/>    
+   _Figure 2 : Schéma en étoile d’i2b2, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)_
 </p>
 
 
   - **Liste des tables du schéma de données :**
-    - Table de faits (observation_fact) : Elle contient les observations sur un patient collectées lors d’une visite. Une visite peut être divisée en plusieurs lignes pour recenser différentes observations (voir l'exemple dans le Tableau 1 ci-dessous).
-
+    - Table de faits (observation_fact) : Elle contient les observations sur un patient collectées lors d’une visite. Une visite peut être divisée en plusieurs lignes pour recenser différentes observations (voir l'exemple dans le Tableau 1 ci-dessous).  
 <p align="center">
     ![Tableau 1](../files_and_images/i2b2_tab_1.png)   
-    *Tableau 1 : Exemple d’enregistrement dans la table observation_fact, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)* 
-</p>
-
-
+    _Tableau 1 : Exemple d’enregistrement dans la table observation_fact, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)_ 
+</p>  
     - Table de dimension Patient (patient_dimension) : cette table contient les informations démographiques sur les patients (identifiant du patient, sexe, âge, date de naissance, statut marital, code postal, etc.).
     - Table de dimension Visite (visit_dimension) : cette table contient les informations sur les différentes visites au cours desquelles les observations ont été collectées. Ces sessions peuvent impliquer le patient directement (exemple : visite chez un médecin) ou indirectement (exemple : tests réalisés sur un tube sanguin)
     - Table de dimension Concept (concept_dimension) : cette table contient les concepts (diagnostics, procédures, médicaments, tests de laboratoire, etc.). Tous les types de données peuvent être stockés en tant que concepts (données démographiques et génétiques)
@@ -190,7 +187,7 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 
 <p align="center">
    <img src="../files_and_images/i2b2_fig_3.png" width="700px"/>    
-   *Figure 3 : Procédure de mapping, Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)*
+   _Figure 3 : Procédure de mapping, Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)_
 </p>
  
   Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP.
@@ -273,7 +270,7 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 
 <p align="center">
    <img src="../files_and_images/i2b2_fig_4.png" width="900px"/>    
-   *Figure 4 : Exemple de redondance d’information, Source : Traitement Veltys*
+   _Figure 4 : Exemple de redondance d’information, Source : Traitement Veltys4_1
 </p>
 
 
@@ -394,7 +391,7 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 
 <p align="center">
   ![Figure 5](../files_and_images/i2b2_fig_5.png)  
-  *Figure 5 : Page d’accueil du « Query & Analysis Tool, Source : démonstration du Web Client*
+  _Figure 5 : Page d’accueil du « Query & Analysis Tool, Source : démonstration du Web Client_
 </p>
 
 
@@ -403,7 +400,7 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 
 <p align="center">
     ![Figure 6](../files_and_images/i2b2_fig_6.png)  
-    *Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)*
+    _1Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)_
 </p>
 
     - « Timeline » : Permet de créer une représentation visuelle du moment où les concepts sélectionnés sont observés dans un ensemble de patients
@@ -411,7 +408,7 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 
 <p align="center">
     ![Figure 7](../files_and_images/i2b2_fig_7.png )  
-    *Figure 7 : Exemple d’utilisation du plug-in Demographics, Source : démonstration du Web Client (1 Patient Set)*
+    _Figure 7 : Exemple d’utilisation du plug-in Demographics, Source : démonstration du Web Client (1 Patient Set)_
 </p>
 
     - « Demographics (2 Patient Sets) – Simple Counts» : Permet de comparer les informations démographiques de 2 ensembles de patients
@@ -423,8 +420,8 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
   - SHRINE : outil qui permet de relier les systèmes i2b2 provenant de différents sites ou établissements avant l'utilisation du « Query & Analysis Tool » (voir Figure 8 ci-dessous). Cet outil permet ainsi de compter le nombre de patients qui vérifient certains critères dans les établissements participants. Les chercheurs l’utilisent pour inclure un nombre suffisant de patients dans leurs études.
 
 <p align="center">
-  <img src="../files_and_images/i2b2_fig_8.png" width="700px"/>    
-  *Figure 8 : La fédération de systèmes i2b2 par SHRINE, Source : [Software – i2b2 tranSMART Foundation"](https://i2b2transmart.org/software/)*
+  <img src="../files_and_images/i2b2_fig_8.png" width="400px"/>    
+  _Figure 8 : La fédération de systèmes i2b2 par SHRINE, Source : [Software – i2b2 tranSMART Foundation"](https://i2b2transmart.org/software/)_
 </p>
 
   - tranSMART : suite d'outils d'exploration et de visualisation de données, d'analyses génomiques et d'ETL développés par des industries pharmaceutiques pour des avancées en recherche translationnelle
@@ -451,7 +448,7 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 La Figure 9 ci-dessous illustre les étapes décrites précédemment.  
 <p align="center">
 ![Figure 9](../files_and_images/i2b2_fig_9.png)  
-*Figure 9 : Processus ETL utilisé pour charger les données dans i2b2, Source : Schéma réalisé par Veltys*
+_Figure 9 : Processus ETL utilisé pour charger les données dans i2b2, Source : Schéma réalisé par Veltys_
 </p>
 
 ### Existence d’extensions certifiées : plusieurs extensions existent :
@@ -465,7 +462,7 @@ La page d'aide du i2b2 « Query & Analysis Tool » contient des exemples de requ
 
 <p align="center">
 ![Figure 10](../files_and_images/i2b2_fig_10.png)
-*Figure 10 : Extrait de la page d’aide de l’outil « Query & Analysis Tool », Source : démonstration du Web Client*
+_Figure 10 : Extrait de la page d’aide de l’outil « Query & Analysis Tool », Source : démonstration du Web Client_
 </p>
 
 
