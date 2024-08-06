@@ -38,7 +38,8 @@
     - Une application _Workbench_ qui réalise les mêmes analyses que le _Web Client_ d’une façon plus approfondie
    
    <p align="center">
-   <img src="../files_and_images/i2b2_fig_1.png" width="200px"/>  
+   <img src="../files_and_images/i2b2_fig_1.png" width="900px"/>  
+
    Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)
    </p>
 
