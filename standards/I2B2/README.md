@@ -37,8 +37,9 @@
     - Une application _Web Client_ qui permet d’interroger, d’analyser et d’afficher les données du i2b2 Hive en communiquant avec les cellules i2b2 (on parle aussi du _« Query & Analysis Tool »_, voir l’élément _« Outils compatibles »_ en partie 5. Utilisation).
     - Une application _Workbench_ qui réalise les mêmes analyses que le _Web Client_ d’une façon plus approfondie
    
-    ![Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)](../files_and_images/i2b2_fig_1.png)
-
+   <p align="center">
+    ![Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)](<img src="../files_and_images/i2b2_fig_1.png" width="100px"/>)
+   </p>
 
   - **Organisme en charge :** _i2b2 tranSMART Foundation_
 
@@ -95,7 +96,7 @@
     - Table de faits (observation_fact) : Elle contient les observations sur un patient collectées lors d’une visite. Une visite peut être divisée en plusieurs lignes pour recenser différentes observations (voir l'exemple dans le Tableau 1 ci-dessous).
 
 
-    ![Tableau 1 : Exemple d’enregistrement dans la table observation_fact](https://example.com/image.jpg "Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)")
+    ![Tableau 1 : Exemple d’enregistrement dans la table observation_fact, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)](../files_and_images/i2b2_tab_1.png)
 
 
     - Table de dimension Patient (patient_dimension) : cette table contient les informations démographiques sur les patients (identifiant du patient, sexe, âge, date de naissance, statut marital, code postal, etc.).
