@@ -406,13 +406,13 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
  
     <p align="center">
     ![Figure 6](../files_and_images/i2b2_fig_6.png)  
-    _1Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)_
+    _Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)_
     </p>
 
     <p align="center">
-    ![Figure 7](../files_and_images/i2b2_fig_7.png )  
+    ![Figure 7](../files_and_images/i2b2_fig_7.png)  
     _Figure 7 : Exemple d’utilisation du plug-in Demographics, Source : démonstration du Web Client (1 Patient Set)_
-    </p>
+    </p>  
 
   - SHRINE : outil qui permet de relier les systèmes i2b2 provenant de différents sites ou établissements avant l'utilisation du « Query & Analysis Tool » (voir Figure 8 ci-dessous). Cet outil permet ainsi de compter le nombre de patients qui vérifient certains critères dans les établissements participants. Les chercheurs l’utilisent pour inclure un nombre suffisant de patients dans leurs études.
 
