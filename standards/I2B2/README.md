@@ -90,7 +90,7 @@
   - **La structure d'i2b2** consiste en un schéma en étoile (voir Figure 2 ci-dessous) composé d’une table de faits (qui contient les observations du modèle ; ex : diagnostics, procédures, résultats de tests, etc.) et de 6 tables de dimension (qui contiennent des informations descriptives sur les faits à travers la définition d'entités ; ex : un patient, un concept, ...).
 
 <p align="center">
-   <img src="../files_and_images/i2b2_fig_2.png" width="500px"/>    
+   <img src="../files_and_images/i2b2_fig_2.png" width="600px"/>    
    _Figure 2 : Schéma en étoile d’i2b2, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)_
 </p>
 
@@ -385,7 +385,6 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 
 ### Outils compatibles :
 
-
   Les outils compatibles avec i2b2 sont les suivants :
   - « Query & Analysis Tool » (on parle aussi de l’application Web Client) : Outil de requêtage pour identifier des cohortes de patients (voir Figure 5 ci-dessous)
 
@@ -396,32 +395,30 @@ Le projet Common Data Model Harmonization (CDMH) vise à harmoniser les 4 schém
 
 
   - Plug-ins associés au « Query & Analysis Tool » :
-    - « ExportXLS » : Permet d’exporter sous forme de fichier .csv ou .xls les concepts sélectionnés et observés sur un ensemble de patients, sous forme de tableau (voir Figure 6 ci-dessous)
-
-<p align="center">
-    ![Figure 6](../files_and_images/i2b2_fig_6.png)  
-    _1Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)_
-</p>
-
+    - « ExportXLS » : Permet d’exporter sous forme de fichier .csv ou .xls les concepts sélectionnés et observés sur un ensemble de patients, sous forme de tableau (voir Figure 6 ci-dessous)  
     - « Timeline » : Permet de créer une représentation visuelle du moment où les concepts sélectionnés sont observés dans un ensemble de patients
-    - « Demographics (1 Patient Set) – Simple Counts » : Permet d’afficher les informations démographiques pour un ensemble de patients (voir Figure 7 ci-dessous)
-
-<p align="center">
-    ![Figure 7](../files_and_images/i2b2_fig_7.png )  
-    _Figure 7 : Exemple d’utilisation du plug-in Demographics, Source : démonstration du Web Client (1 Patient Set)_
-</p>
-
+    - « Demographics (1 Patient Set) – Simple Counts » : Permet d’afficher les informations démographiques pour un ensemble de patients (voir Figure 7 ci-dessous)  
     - « Demographics (2 Patient Sets) – Simple Counts» : Permet de comparer les informations démographiques de 2 ensembles de patients
     - « WISE (Working Items Sharing Enhancement) – Searcher » : Permet de faciliter la recherche d'éléments ou d'objets dans le panneau Workplace du Web Client i2b2
     - « CARE (Cohort Analysis & Refinement Expeditor) – Concept Demographics Histograms » : Permet de générer des histogrammes comparatifs des répartitions démographiques pour un sous-ensemble de patients par rapport aux patients de ce sous-ensemble associés à des concepts spécifiques.
     - « CARE – Concept Observation Tally Demographics Histograms » : Permet de générer des histogrammes comparatifs des répartitions démographiques pour un sous-ensemble de patients par rapport aux patients de ce sous-ensemble associés à plusieurs observations d'un concept spécifié.
     - « Communicator Tool » : Permet d'interagir directement avec les objets standard de Cell Communicator depuis la plateforme
  
+    <p align="center">
+    ![Figure 6](../files_and_images/i2b2_fig_6.png)  
+    _1Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)_
+    </p>
+
+    <p align="center">
+    ![Figure 7](../files_and_images/i2b2_fig_7.png )  
+    _Figure 7 : Exemple d’utilisation du plug-in Demographics, Source : démonstration du Web Client (1 Patient Set)_
+    </p>
+
   - SHRINE : outil qui permet de relier les systèmes i2b2 provenant de différents sites ou établissements avant l'utilisation du « Query & Analysis Tool » (voir Figure 8 ci-dessous). Cet outil permet ainsi de compter le nombre de patients qui vérifient certains critères dans les établissements participants. Les chercheurs l’utilisent pour inclure un nombre suffisant de patients dans leurs études.
 
 <p align="center">
-  <img src="../files_and_images/i2b2_fig_8.png" width="400px"/>    
-  _Figure 8 : La fédération de systèmes i2b2 par SHRINE, Source : [Software – i2b2 tranSMART Foundation"](https://i2b2transmart.org/software/)_
+  <img src="../files_and_images/i2b2_fig_8.png" width="300px"/>    
+  _Figure 8 : La fédération de systèmes i2b2 par SHRINE, Source : [Software – i2b2 tranSMART Foundation](https://i2b2transmart.org/software/)_
 </p>
 
   - tranSMART : suite d'outils d'exploration et de visualisation de données, d'analyses génomiques et d'ETL développés par des industries pharmaceutiques pour des avancées en recherche translationnelle
