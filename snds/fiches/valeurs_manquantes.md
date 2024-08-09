@@ -4,6 +4,13 @@ tags:
   - Fiche-programme
 ---
 
+:::tip Crédits
+
+Cette fiche a été rédigée par Albert Vuagnat - DREES
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 # Valeurs manquantes dans les requêtes SNDS
 
 <TagLinks />
@@ -73,15 +80,5 @@ quit;
 
 
 
-
-
-
-:::tip Crédits
-
-
-Cette fiche a été rédigée par Albert Vuagnat - DREES
-
-
-:::
 
 
