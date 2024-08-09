@@ -8,6 +8,14 @@ tags:
     - Référentiels bénéficiaires
 ---
 
+::: tip Crédits
+Le contenu original de cette fiche provient du document [Historique des données du SNDS](/files/INDS/historique_donnees/2019_INDS_Historique-des-données-SNDS_MPL-2.0.pptx) [INDS - 2019 - MPL-2.0].
+
+Cette fiche a été intialement rédigée par Anne Cuerq à partir des références (1) et (2), avec des contributions de Tim Vlaar à partir des références (3) et (4).
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 # Historique des données du SNDS
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
@@ -61,11 +69,6 @@ Le PMSI enregistre l’ensemble des séjours hospitaliers en France quel que soi
 
 (4) *Tableaux de chargement du DCIR de la documentation du portail SNDS de la CNAM*
 
-::: tip Crédits
-Le contenu original de cette fiche provient du document [Historique des données du SNDS](/files/INDS/historique_donnees/2019_INDS_Historique-des-données-SNDS_MPL-2.0.pptx) [INDS - 2019 - MPL-2.0].
-
-Cette fiche a été intialement rédigée par Anne Cuerq à partir des références (1) et (2), avec des contributions de Tim Vlaar à partir des références (3) et (4).
-:::
 
 :::tip Mises à jour de la fiche 
 
