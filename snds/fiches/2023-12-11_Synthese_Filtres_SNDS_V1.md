@@ -9,6 +9,12 @@ tags:
   - Fiche-programme
 ---
 
+::: tip Crédits
+Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 # Filtres recommandés dans le SNDS - synthèse
 
 <TagLinks />
@@ -223,6 +229,3 @@ Table `T_RIPaaRSA`, variable `TYP_GEN_RSA` disponible depuis 2015 : `TYP_GEN_RSA
 Table `T_RIPaaC`, variables disponibles depuis 2007 : `NIR_RET = '0' AND NAI_RET = '0' AND SEX_RET = '0' AND SEJ_RET = '0' AND FHO_RET = '0' AND PMS_RET = '0' AND DAT_RET = '0' `  
 Table `T_RIPaaC`, variables disponibles depuis 2013 : `COH_NAI_RET = '0' AND COH_SEX_RET = '0'`  
 
-::: tip Crédits
-Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.  
-:::
