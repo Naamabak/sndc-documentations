@@ -6,6 +6,12 @@ tags:
   - Fiche-programme
 ---
 
+::: tip Crédits  
+Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 # Valorisation de l’activité HAD dans le PMSI
 
 <TagLinks />
@@ -233,7 +239,3 @@ Il est possible de suivre les montants par période de suivi (ex. à l’année)
 
 Il est possible d’obtenir le montant total facturé en ajoutant le montant de reste à charge (RAC) AMO au montant AMO pour les ES publics. La fiche [Reste à charge après AMO en établissements de santé publics](../fiches/rac_hopital_public.md) décrit les modalités de calcul du RAC. 
 
-
-::: tip Crédits  
-Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
-:::
