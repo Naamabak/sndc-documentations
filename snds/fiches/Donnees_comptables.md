@@ -4,6 +4,11 @@ tags:
   - Généralités SNDS
   - Fiche-programme
 ---
+::: tip Crédits
+Cette fiche a été rédigée par Vincent Reduron (DREES).
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
 
 # Table de données comptables du DCIR (ER\_CPT\_F)
 <!-- SPDX-License-Identifier: MPL-2.0 -->
@@ -378,5 +383,4 @@ disconnect from oracle;
 quit;
 ```
 
->Cette fiche a été rédigée par Vincent Reduron (DREES).
 
