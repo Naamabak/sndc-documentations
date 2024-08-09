@@ -3,6 +3,16 @@ tags:
     - Bénéficiaires
     - Etablissements et Structures
 ---
+::: tip Crédits
+
+Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est [téléchargeable ici](/files/Cnam/20210429_Cnam_IR_ESM_R_sansprofils_MPL-2.0.docx) dans sa version d'origine.
+
+Il a été initialement publié sur le portail SNDS de la Cnam le 29 avril 2021.
+
+Dernière MAJ : 27/06/2024 (à partir du dictionnaire disponible sur le portail de la Cnam)  
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
 
 # Référentiel des bénéficiaires de soins médico-sociaux 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
@@ -376,5 +386,7 @@ Ce document a été rédigé par la Cnam et a été converti en Markdown pour ê
 Il a été initialement publié sur le portail SNDS de la Cnam le 29 avril 2021.
 
 Dernière MAJ : 27/06/2024 (à partir du dictionnaire disponible sur le portail de la Cnam)  
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
  
