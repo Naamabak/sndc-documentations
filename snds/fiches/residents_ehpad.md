@@ -7,6 +7,13 @@ tags:
   - Référentiels de bénéficiaires
 ---
 
+::: tip Crédits
+Le contenu original de cette fiche a été rédigé par Claire-Lise DUBOST.
+Cette fiche s'appuie notamment sur la présentation partagée par la CNAM lors d'un comité utilisateurs partenaires intitulé « RESIDEHPAD_Comite_PMSI_DCIR_19-06-2018.pdf » et que l'on retrouve sur le portail BO.
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 # Les résidents en EHPAD
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
@@ -99,7 +106,3 @@ Différentes utilisations sont possibles. Elle permet notamment :
 Les tables EHPAD ne sont accessibles qu’aux utilisateurs SNIIRAM des caisses nationales de régimes, de la CNSA et des ARS via les mêmes profils que pour accéder à DCIR.
 
 
-::: tip Crédits
-Le contenu original de cette fiche a été rédigé par Claire-Lise DUBOST.
-Cette fiche s'appuie notamment sur la présentation partagée par la CNAM lors d'un comité utilisateurs partenaires intitulé « RESIDEHPAD_Comite_PMSI_DCIR_19-06-2018.pdf » et que l'on retrouve sur le portail BO.
-:::
