@@ -6,6 +6,16 @@ tags:
     - DCIR/DCIRS
 ---
 
+::: tip Crédits  
+Cette fiche a été rédigée par Noémie Courtejoie (DREES).
+
+Quelques modifications apportées suite à la contribution de Guillaume Desjeux.
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
+
+
 # Médicaments de la liste en sus 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
@@ -218,12 +228,5 @@ Ces filtres s’appliquent aux tables `FHSTC` et `FH`.
 Les remboursements des médicaments de la liste en sus **des établissements de santé privés à but lucratif** se trouvent également dans le DCIR.  
 Ils sont regroupés sous le code prestation 3320 dans la table prestation [ER_PRS_F](../tables/DCIR/ER_PRS_F.md). Le détail des remboursements par code UCD se trouve dans la table affinée [ER_UCD_F](../tables/DCIR/ER_UCD_F.md) (variable `UCD_UCD_COD`) en posant le filtre `UCD_TOP_UCD`=1 (la modalité 0 correspond aux rétrocessions). On trouve dans [ER_UCD_F](../tables/DCIR/ER_UCD_F.md) les variables `UCD_TTF_MNT` (le montant TTC facturé) et `UCD_DLV_NBR` (le nombre d'unités délivrées). Dans le DCIRS, il faut considérer la table NS_UCD_F, dans laquelle on retrouve les mêmes variables que dans le DCIR.  
 Pour plus de détail concernant la table affinée UCD, se reporter à la [page dédiées aux dépenses dans les tables affinées](../fiches/tables_affinees.md). 
-
-
-::: tip Crédits  
-Cette fiche a été rédigée par Noémie Courtejoie (DREES).
-
-Quelques modifications apportées suite à la contribution de Guillaume Desjeux.
-:::
 
 

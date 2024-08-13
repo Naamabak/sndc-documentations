@@ -6,6 +6,13 @@ tags:
     - PMSI
 ---
 
+::: tip Crédits
+Cette fiche a été rédigée par Noémie Courtejoie (DREES).
+La partie hôpitaux privés a été complétée par Sandrine Colas (IQVIA).
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 # Dispositifs médicaux implantables en sus du GHS 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
@@ -107,9 +114,4 @@ Pour vérifier l'appartenance à la liste en sus :
 - pour les données de l’année N, on ne conserve que les dispositifs dont l’année de pose est égale à N, N-1 ou N-2
 :::
 
-## Références
 
-::: tip Crédits
-Cette fiche a été rédigée par Noémie Courtejoie (DREES).
-La partie hôpitaux privés a été complétée par Sandrine Colas (IQVIA).
-:::

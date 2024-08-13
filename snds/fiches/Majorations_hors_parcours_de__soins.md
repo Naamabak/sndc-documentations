@@ -6,6 +6,12 @@ tags:
   - DCIR/DCIRS
 ---
 
+:::tip Crédits  
+Cette fiche a été rédigée par Vincent Reduron (DREES).
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 # Majorations du ticket modérateur hors parcours de soins coordonnés
 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
@@ -387,7 +393,3 @@ ER_ARO_F = tbl(conn, 'ER_ARO_F') %>%
 - https://www.irdes.fr/Publications/Qes/Qes124.pdf
 
 - https://www.cairn.info/revue-francaise-des-affaires-sociales-2007-1-page-109.htm
-
-:::tip Crédits  
-Cette fiche a été rédigée par Vincent Reduron (DREES).
-:::

@@ -5,6 +5,12 @@ tags:
     - PMSI
 ---
 
+::: tip Crédits
+Cette fiche a été rédigée par *Arnaud Lecoules* (DREES) 
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 # Chaînage Mère-enfant
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
@@ -96,9 +102,3 @@ Si on désire se limiter aux **séjours d'enfants nés vivants**, il faut rajout
 |**JQGD012**|Accouchement céphalique unique par voie naturelle, chez une multipare|
 |**JQGD013**|Accouchement unique le siège par voie naturelle avec grande extraction, chez une primipare|
 
-
-## Références
-
-::: tip Crédits
-Cette fiche a été rédigée par *Arnaud Lecoules* (DREES) 
-:::

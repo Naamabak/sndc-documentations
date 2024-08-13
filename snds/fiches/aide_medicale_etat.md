@@ -7,6 +7,12 @@ tags:
    - Fiche-programme
 ---
 
+::: tip Crédits
+Cette fiche a été rédigée par Catherine BISQUAY (ARS Ile-de-France) & Céline LEROY (ARS Normandie)
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 # Aide Médicale d'Etat
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
@@ -125,6 +131,4 @@ La variable `ARO_REM_TYP` prend la modalite 7 pour les bénéficaires de l'AME.
 
 - Site de l'[Assurance Maladie](https://www.ameli.fr/assure/droits-demarches/situations-particulieres/situation-irreguliere-ame).
 
-::: tip Crédits
-Cette fiche a été rédigée par Catherine BISQUAY (ARS Ile-de-France) & Céline LEROY (ARS Normandie)
-:::
+
