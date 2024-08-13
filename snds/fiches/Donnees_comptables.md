@@ -4,16 +4,20 @@ tags:
   - Généralités SNDS
   - Fiche-programme
 ---
+
+
+# Table de données comptables du DCIR (ER\_CPT\_F)
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+<TagLinks />
+
+
 ::: tip Crédits
 Cette fiche a été rédigée par Vincent Reduron (DREES).
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
 
-# Table de données comptables du DCIR (ER\_CPT\_F)
-<!-- SPDX-License-Identifier: MPL-2.0 -->
-
-<TagLinks />
 
 Cette fiche a pour but de décrire la table de données comptables du DCIR, **ER_CPT_F**. Cette table retrace l'ensemble des dépenses engagées par les caisses d'assurance maladie et inscrites à leur comptabilité. Son champ est toutefois restreint, coïncidant avec celui du DCIR : par exemple, les montants de séjours en hôpital public (qui transitent uniquement par le PMSI) ne sont pas inclus. 
 
