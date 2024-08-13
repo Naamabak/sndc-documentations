@@ -6,15 +6,18 @@ tags:
   - Fiche-programme
 ---
 
+
+# Valorisation de l’activité MCO dans le PMSI
+
+<TagLinks />
+
+
 ::: tip Crédits  
 Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.  
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 ::: 
 
-# Valorisation de l’activité MCO dans le PMSI
-
-<TagLinks />
 
 Cette fiche explique comment valoriser l’activité des séjours hospitaliers de [MCO](../glossaire/MCO.md), selon les perspectives base de remboursement (BR) et remboursement Assurance Maladie Obligatoire (AMO). 
 
