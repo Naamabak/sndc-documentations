@@ -5,15 +5,20 @@ tags:
     - DCIR/DCIRS
     - PMSI
 ---
+
+# Le numéro FINESS dans le SNDS
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+<TagLinks />
+
+
 ::: tip Crédits
 Cette fiche a été rédigée par Kristel JACQUIER (DSS) , Marlène Bernard (ATIH) et Albert Vuagnat (DREES)
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
-# Le numéro FINESS dans le SNDS
-<!-- SPDX-License-Identifier: MPL-2.0 -->
 
-<TagLinks />
+
 
 Tous les établissements sanitaires et sociaux sont enregistrés dans le répertoire Finess (fichier national des établissements sanitaires et sociaux).
 

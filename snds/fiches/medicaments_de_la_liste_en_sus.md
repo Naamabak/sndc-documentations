@@ -6,6 +6,13 @@ tags:
     - DCIR/DCIRS
 ---
 
+
+# Médicaments de la liste en sus 
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+<TagLinks />
+
+
 ::: tip Crédits  
 Cette fiche a été rédigée par Noémie Courtejoie (DREES).
 
@@ -14,12 +21,6 @@ Quelques modifications apportées suite à la contribution de Guillaume Desjeux.
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
 
-
-
-# Médicaments de la liste en sus 
-<!-- SPDX-License-Identifier: MPL-2.0 -->
-
-<TagLinks />
 
 Dans une première partie, nous présentons les médicaments facturés en sus des tarifs des séjours hospitaliers.   
 Dans une seconde partie, nous expliquons comment extraire du PMSI les dépenses associées aux médicaments de la liste en sus.

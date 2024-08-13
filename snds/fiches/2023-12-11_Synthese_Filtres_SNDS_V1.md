@@ -9,15 +9,15 @@ tags:
   - Fiche-programme
 ---
 
+# Filtres recommandés dans le SNDS - synthèse
+
+<TagLinks />
+
 ::: tip Crédits
 Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
-
-# Filtres recommandés dans le SNDS - synthèse
-
-<TagLinks />
 
 Cette fiche a pour objectif de regrouper tous les filtres recommandés des requêtes types sur les tables principales du SNDS. Elle est construite à partir des supports de [Formation DCIR](../formation_snds/documents_cnam/Formation_demex.md) et [Formation PMSI](../formation_snds/documents_cnam/Formation_PMSI.md). 
 

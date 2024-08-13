@@ -6,6 +6,13 @@ tags:
     - PMSI
 ---
 
+
+# Dispositifs médicaux implantables en sus du GHS 
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+<TagLinks />
+
+
 ::: tip Crédits
 Cette fiche a été rédigée par Noémie Courtejoie (DREES).
 La partie hôpitaux privés a été complétée par Sandrine Colas (IQVIA).
@@ -13,10 +20,6 @@ La partie hôpitaux privés a été complétée par Sandrine Colas (IQVIA).
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
 
-# Dispositifs médicaux implantables en sus du GHS 
-<!-- SPDX-License-Identifier: MPL-2.0 -->
-
-<TagLinks />
 
 Dans une première partie, nous présentons les dispositifs médicaux implantables (DMI) facturés en sus des [GHS](../glossaire/GHS.md) en MCO.  
 Dans une seconde partie, nous expliquons comment extraire les dépenses associées à ces dispositifs à partir du PMSI MCO.  

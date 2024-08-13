@@ -7,16 +7,19 @@ tags:
    - Fiche-programme
 ---
 
+
+# Aide Médicale d'Etat
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+<TagLinks />
+
+
 ::: tip Crédits
 Cette fiche a été rédigée par Catherine BISQUAY (ARS Ile-de-France) & Céline LEROY (ARS Normandie)
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
 
-# Aide Médicale d'Etat
-<!-- SPDX-License-Identifier: MPL-2.0 -->
-
-<TagLinks />
 
 L'Aide Médicale de l'État (AME) est destinée à permettre l'accès aux soins des personnes en situation irrégulière en France. 
 Elle est attribuée sous conditions de résidence et de ressources.

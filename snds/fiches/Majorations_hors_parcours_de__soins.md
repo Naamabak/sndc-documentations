@@ -6,17 +6,20 @@ tags:
   - DCIR/DCIRS
 ---
 
-:::tip Crédits  
-Cette fiche a été rédigée par Vincent Reduron (DREES).
-
-*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
-:::
 
 # Majorations du ticket modérateur hors parcours de soins coordonnés
 
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 <TagLinks />
+
+
+:::tip Crédits  
+Cette fiche a été rédigée par Vincent Reduron (DREES).
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 
 ## Définitions
 
