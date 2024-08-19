@@ -16,6 +16,7 @@ Le **Kwikly** est un fichier Excel sur plusieurs onglets décrivant les variable
 - Référentiel Bénéficiaires
 - Référentiel Médicalisé
 - Tables des dépistages Covid-19
+- La liste des tables de valeurs
 
 :::tip Historique des mises à jour  
 - 19.08.2024 : Mise à jour (version 2024.1) avec intégration PMSI 2023 et la table des dépistages Covid-19. 
