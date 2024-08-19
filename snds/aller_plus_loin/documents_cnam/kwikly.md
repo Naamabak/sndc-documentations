@@ -3,7 +3,7 @@
 
 Katalogue des données SNIIRAM-SNDS
 
-> Télécharger le Kwikly en suivant ce [lien](/files/Cnam/KWIKLY_Katalogue_Sniiram_SNDS_v2023-1.xlsm) [CNAM - 2023-1 - MPL-2.0]. 
+> Télécharger le Kwikly en suivant ce [lien](/files/Cnam/Kwikly/KWIKLY_-_Katalogue_Sniiram_SNDS_v2024-1.xlsm) [CNAM - 2024-1 - MPL-2.0]. 
 :::
 
 
@@ -11,12 +11,15 @@ Le **Kwikly** est un fichier Excel sur plusieurs onglets décrivant les variable
 - DCIR
 - PMSI
 - DCIRS
-- Cartographie
 - Causes de décès
+- Cartographie
 - Référentiel Bénéficiaires
 - Référentiel Médicalisé
+- Tables des dépistages Covid-19
+- La liste des tables de valeurs
 
-:::tip Historique des mises à jour
+:::tip Historique des mises à jour  
+- 19.08.2024 : Mise à jour (version 2024.1) avec intégration PMSI 2023 et la table des dépistages Covid-19. 
 - 09.08.2023 : Mise à jour (version 2023.1) avec intégration du PMSI 2022.
 - 31.07.2022 : Mise à jour (version 2022.1) avec intégration du PMSI 2021 et ajout d'une variable `Table de valeur (ORAVAL)` pour le DCIR permettant de connaître la table de valeur de telle ou telle variable sous ORAVAL (si disponible).
 - 07.09.2021 : Mise à jour (version 3.2) avec l’ajout de deux nouvelles tables :
