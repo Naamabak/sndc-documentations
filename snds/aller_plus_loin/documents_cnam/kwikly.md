@@ -3,7 +3,7 @@
 
 Katalogue des données SNIIRAM-SNDS
 
-> Télécharger le Kwikly en suivant ce [lien](/files/Cnam/Kwikly/KWIKLY_-_Katalogue_Sniiram_SNDS_v2024-1.xlsm) [CNAM - 20234-1 - MPL-2.0]. 
+> Télécharger le Kwikly en suivant ce [lien](/files/Cnam/Kwikly/KWIKLY_-_Katalogue_Sniiram_SNDS_v2024-1.xlsm) [CNAM - 2024-1 - MPL-2.0]. 
 :::
 
 
