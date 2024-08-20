@@ -1,8 +1,32 @@
-« Forfaits de remboursement CSS » de prise en charge spécifique des soins dentaires prothétiques, de l’orthodontie, de l’optique et des audioprothèses
+---
+tags:
+  - Bénéficiaires
+  - Prestations
+  - Dépenses
+  - DCIR/DCIRS
+---
 
-#Contexte
+
+# Forfaits de remboursement de la complémentaire santé solidaire (CSS)
+
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+<TagLinks />
+
+
+:::tip Crédits  
+Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les comptes de la santé.
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
+
+##Contexte
+
 En général, la complémentaire santé solidaire (CSS) prend en charge les soins à hauteur de la base de remboursement de la Sécurité sociale (BRSS) :
+
 [schméa]
+
 Les médecins et auxiliaires médicaux ne peuvent pas appliquer de dépassements d'honoraires aux bénéficiaires de CSS.
 Par exception, la CSS rembourse également une partie du « dépassement » lié à la liberté tarifaire :
   - les soins dentaires prothétiques, 
@@ -16,8 +40,11 @@ Les montants de ces prises en charge sont « forfaitaires » au sens où ils ne 
   - l’[arrêté du 29 octobre 2019](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039296524/) pour l’optique médicale,
   - l’[arrêté du 27 décembre 2018](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037880126) pour les aides auditives.
 Avant 2019, ces forfaits faisant partie des garanties de la couverture maladie universelle complémentaire (CMU-C). En 2019, deux réformes concomitantes les ont fait évoluer : la CSS s’est substituée à la CMU-C (et à l’Aide à la complémentaire santé) et le « 100 % santé » a été instauré. Les forfaits de remboursement se sont adaptés au cadre instauré par le 100 % santé (offre structurée par paniers pour les soins dentaires prothétiques, l’optique et les audioprothèses). A cette occasion, ils ont aussi été étendus et revalorisés (voir le [rapport de la Cour des comptes](https://www.vie-publique.fr/files/rapport/pdf/285961.pdf#p=20) sur le 100% santé).
-#Dans le SNDS
-##Des codes nature prestations spécifiques aux forfaits
+
+##Dans le SNDS
+
+###Des codes nature prestations spécifiques aux forfaits
+
 Les forfaits de remboursement sont versés avec des codes nature prestation [en norme PS5](https://documentation-snds.health-data-hub.fr/snds/fiches/prestation.html#definition) spécifiques.
   - pour les soins dentaires prothétiques, 5201, 5202, 5203 et 5205,
   - pour l’orthopédie dento-faciale, 5204 et 5206,
@@ -30,7 +57,9 @@ Les forfaits de remboursement de la CSS sont donc traités comme une prestation 
   - la prestation de base, pour la dépense jusqu’à hauteur de la BRSS, 
   - un forfait pour la dépense au-delà de la BRSS. 
 Ces deux prestations se trouvent sur des lignes distinctes, c’est-à-dire deux lignes n’ayant pas la même clef de jointure à 9 variables propre au DCIR.
-##Soins dentaires prothétiques
+
+###Soins dentaires prothétiques
+
 Les forfaits de remboursement de la CSS peuvent s’appliquer aux prothèses deux [paniers de soins dentaires](https://www.ameli.fr/val-de-marne/assure/remboursements/rembourse/soins-protheses-dentaires-optique-audition/soins-dentaires-comprendre-le-100-sante#text_133080)  : le panier 100 % Santé et le panier à tarifs maîtrisés. Si le bénéficiaire opte pour un de ces deux paniers, un forfait de remboursement est versé, annulant (panier 100 % Santé ) ou limitant (panier à tarifs maîtrisés) son reste à charge.
 Dans le DCIR, on trouve systématiquement deux prestations :
   - l’une pour la prestation de base, avec une nature de prestations de soins prothétiques (1412 par exemple) 
@@ -98,7 +127,7 @@ prs_2023 <- tbl(conn, 'ER_PRS_F') %>%
   left_join(IR_NAT_V, by = c("BSE_PRS_NAT" = "PRS_NAT")) %>% 
   collect
 ```
-##Orthopédie dento-faciale
+###Orthopédie dento-faciale
 Les forfaits de remboursement de la CSS viennent compléter le remboursement de l’Assurance maladie sur les **semestres de traitements d’orthodontie**. En effet, les honoraires sont libres et la BRSS ne les couvre que partiellement ([193,50 euros par semestre](https://www.ameli.fr/val-de-marne/assure/remboursements/rembourse/soins-protheses-dentaires-optique-audition/consultations-soins-protheses-dentaires/remboursement-traitements-orthodontie), en 2024). Les remboursements des semestres de traitements par l’Assurance maladie se font soit par semestre soit par trimestre. Le forfait de remboursement est de 270,50 euros pour un semestre de traitement avec multiattaches.
 Comme pour les soins prothétiques, on trouve systématiquement deux prestations dans le DCIR, pour le traitement avec la nature de prestation 1424 (TO) et pour le forfait avec la nature de prestation 5204 ou 5206.
 Ces deux prestations n’ont pas la même clef de jointure à 9 variables, mais sont dans le même **décompte** (voir plus haut).
@@ -119,8 +148,10 @@ Le code R suivant (______) montre que la dépense de CSS en orthodontie en 2023 
 #*------------------------------------------------------
 
 prestas <- c(5204, 5206)
+```
 
-##Aides auditives
+###Aides auditives
+
 La CSS a une réglementation spécifique, transverse aux classes d’aides auditives (classe I alias 100 % Santé et classe II alias prix libres). En effet, depuis 2021, les audioprothésistes doivent proposer aux bénéficiaires de CSS des équipements à un prix maximal de vente spécifique (par exemple 800 € pour les 20 ans et plus en 2024). Le bénéficiaire peut refuser l’appareil au prix maximal de vente spécifique. Dans ce cas, il est remboursé à la même hauteur (par exemple 800 € pour les 20 ans et plus) mais doit financer un reste à charge.
 Le forfait de remboursement est versé avec les natures de prestation 5402 (oreille gauche) et 5403 (oreille droite), sans distinction de la classe I ou II.
 Comme dans le domaine dentaire, on trouve deux prestations distinctes dans le DCIR, rattachées au même **décompte** (voir plus haut). La spécificité est que la prestation de base se retrouve uniquement dans la table er_prs_f et le forfait uniquement dans la table er_aro_f, par exemple :
@@ -135,15 +166,17 @@ Comme dans le domaine dentaire, on trouve deux prestations distinctes dans le DC
   |5402|400 €|
   |5403|400 €|
 Le code R suivant montre que la dépense de CSS en 2023 s’élève à 43 millions d’euros France entière pour les forfaits de remboursement (natures de prestation en 54) et à 14 millions d’euros pour les remboursements de CSS hors forfaits (cas où refuser l’appareil au prix maximal de vente spécifique (natures de prestation en 35) :
-```
 
+```
 # (3) Périmètre forfaits de remboursement CSS orthodontie
 #*------------------------------------------------------
 
 prestas <- c(5402, 5403, 3540, 3586, 3587, 3541, 3588, 3589, 3549, 3550, 3590, 3595)
 
 ```
+
 ##Optique médicale
+
 Les forfaits de remboursement de la CSS s’appliquent uniquement aux équipements de **classe A**, qui est l’offre 100 % Santé. Il y a donc coïncidence entre forfaits de la CSS et dispositif 100 % santé. Les équipements sont remboursés intégralement aux assurés, car soit leur organisme complémentaire soit la CSS (selon les cas) prend en charge :
   - le ticket modérateur, calculé par un taux de remboursement appliqué à la BRSS,
   - le dépassement, qui est plafonné pour que le coût total soit limité au coût fixé par arrêté.
@@ -152,45 +185,13 @@ Exemple d’un verre facturé 50 euros (verre multifocal classe A, sphère, +2,0
 Dans cet exemple, la CSS prend en charge le ticket modérateur (6 euros) et le dépassement via un forfait de remboursement (35 euros). L’ensemble du coût est remboursé à l’assuré, car la prestation de base est de 9 euros (60 % appliqués à 15 euros).
 Apparemment PRS_PAI_MNT correspondant aux vrais prix. Codes en 52 uniquement dans aro.
 55 millions d’euros, 23 pour les verres et 30 pour les montures.
+
 ```
-# (1) Chargement packages 
-#*----------------------------
-
-library(odbc)  ; library(DBI)
-library(dplyr) ; library(dbplyr)
-library(tidyr) ; library(stringr) ; library(purrr)
-
-
-# (2) Connexion au serveur Oracle   
-#*-------------------------------
-
-#drv <- dbDriver("Oracle")
-#conn <- dbConnect(drv, dbname = "IPIAMPR2.WORLD")
-conn <- dbConnect(odbc::odbc(), dsn = "IPIAMPR2")
-Sys.setenv(TZ = "Europe/Paris")
-Sys.setenv(ORA_SDTZ = "Europe/Paris")
-user_id <- dbGetQuery(conn, "SELECT user FROM dual;")[1, 1]
-
-
-# (3) Périmètre forfaits de remboursement CSS orthodontie
-#*------------------------------------------------------
+# (3) Périmètre forfaits de remboursement CSS optique
+#*---------------------------------------------------
 
 prestas <- c(5122, 5123, 5124, 5125, 5126, 5127, 5128, 5129)
 
-
-# (4) Statistiques forfaits de remboursement CSS année 2023
-#*---------------------------------------------------------
-
-# référentiel des natures de prestation
-IR_NAT_V <- tbl(conn, "IR_NAT_V") %>% select(PRS_NAT, PRS_NAT_CB2, PRS_NAT_LIB) 
-
-# versant er_aro_f 
-aro_2023 <- tbl(conn, 'ER_ARO_F') %>% 
-  filter(between(FLX_DIS_DTD, to_date('2023-02-01', 'YYYY-MM-DD'), to_date('2024-01-01', 'YYYY-MM-DD'))) %>%
-  filter(ARO_PRS_NAT %in% prestas, ARO_REM_TYP %in% c(5, 6))  %>% 
-  group_by(ARO_PRS_NAT, ARO_REM_TYP) %>% summarize(mnt_2023 = sum(coalesce(ARO_REM_MNT, 0))) %>% 
-  left_join(IR_NAT_V, by = c("ARO_PRS_NAT" = "PRS_NAT")) %>% 
-  collect
 ```
 
 Tableaurécap 
