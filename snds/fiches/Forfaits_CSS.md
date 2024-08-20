@@ -81,13 +81,18 @@ Les deux prestations se retrouvent sur le même **décompte** : elles ont une va
 Dans l’exemple d’un soin prothétique de _Pose d'une prothèse amovible définitive à châssis métallique, comportant 9 dents_ (code CCAM HBLD435), la BRSS est de 258 euros et le forfait de remboursement de la CSS de 492 euros en 2024. Au total, 750 euros sont pris en charge.
 
   - dans la table er_prs_f, on trouve typiquement les deux lignes suivantes :
+
     |PRS_NAT_REF|BSE_REM_BSE|BSE_REM_MNT|PRS_PAI_MNT|
+    |----|----|----|----|
     |1412|258,00 €|180,60 € |258,00 €|
     |5201|492,00 €|0,00 €|492,00 €|
+
     Le régime de base prend en charge 70 % de la BRSS (180,60 euros) et aucun forfait.
 
   - dans la table er_aro_f :
+
     |ARO_PRS_NAT|ARO_REM_MNT|
+    |----|----|
     |1412|77,40 €|
     |5201|492,00 €|
 
@@ -163,12 +168,14 @@ Par exemple, on peut typiquement voir les lignes suivantes dans les tables du DC
 
   - dans la table er_prs_f :
     |PRS_NAT_REF|BSE_REM_BSE|BSE_REM_MNT|PRS_PAI_MNT|
-    |1424|193.50 €|193.50 €|193.50 €|
-    |5204|270.50 €|0.00 €|270.50 €|
+    |----|----|----|----|
+    |1424|193,50 €|193,50 €|193,50 €|
+    |5204|270,50 €|0,00 €|270,50 €|
 
   - dans la table er_aro_f :
     |ARO_PRS_NAT|ARO_REM_MNT
-    |5204|270.50 €|
+    |----|----|
+    |5204|270,50 €|
 
 Dans cet exemple, le montant total remboursé à l’assuré est de 464 euros. Le remboursement se fait par le versement des deux prestations distinctes, le remboursement classique et le forfait, chacune ayant son tarif propre. 
 5206 n’est formellement pas des forfaits mais remboursements CSS du même montants (270,50 € par exemple) et rencontré dans 0,5 % des cas.
@@ -191,6 +198,7 @@ Comme dans le domaine dentaire, on trouve deux prestations distinctes dans le DC
   - dans la table er_prs_f :
 
     |PRS_NAT_REF|BSE_REM_BSE|BSE_REM_MNT|PRS_PAI_MNT|
+    |----|----|----|----|
     |3588|400 €|400 €|800 €|
     |3589|400 €|400 €|800 €|
 
@@ -200,6 +208,7 @@ Comme dans le domaine dentaire, on trouve deux prestations distinctes dans le DC
 
   - dans la table er_aro_f :
     |ARO_PRS_NAT|ARO_REM_MNT|
+    |----|----|
     |5402|400 €|
     |5403|400 €|
 
