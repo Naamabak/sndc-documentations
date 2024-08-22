@@ -13,28 +13,32 @@ tags:
 
 <TagLinks />
 
-
-:::tip Crédits  
+---
+tip Crédits :
 Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les comptes de la santé.
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
-:::
+---
 
 
 ## Contexte
 
-En général, la complémentaire santé solidaire (CSS) prend en charge les soins à hauteur de la base de remboursement de la Sécurité sociale (BRSS) :
+La complémentaire santé solidaire (C2S) a pour objectif de limiter les restes à charge en santé de ses bénéficiaires.
 
-[schméa]
+Dans le système français, les restes à charges sur des soins remboursables peuvent être de plusieurs types :
+   - tickets modérateurs,
+   - participations spécifiques demandées aux assurés (franchises, participations forfaitaires de 2 euros, forfaits journaliers hospitaliers, forfaits patients urgences),
+   - dépassements d'honoraires,
+   - autres dépassements : part de liberté tarifiaire sur les dispositifs médicaux et sur certains soins dentaires.
 
-Les médecins et auxiliaires médicaux ne peuvent pas appliquer de dépassements d'honoraires aux bénéficiaires de CSS.
-Par exception, la CSS rembourse également une partie du « dépassement » lié à la liberté tarifaire :
+Le ticket modérateur est entièrement pris en charge par la C2S. La participation forfaitaire de 2 euros sur les consultations médicales et la franchise médicale de 1 euro sur l’achat de médicaments ne sont pas facturées aux bénéficiaires de C2S. Les médecins et auxiliaires médicaux ne peuvent pas appliquer de dépassements d'honoraires aux bénéficiaires de C2S.
+
+Une prise en charge forfaitaire des autres dépassements est prévue par la C2S sur :
   - les soins dentaires prothétiques, 
   - l’orthopédie dento-faciale (orthodontie), 
   - l’optique médicale,
-  - les aides auditives (audioprothèses).
-
-Une prise en charge spécifique du dépassement est aussi prévue pour d’autres dispositifs médicaux : cannes, fauteuils roulants et pansements.
+  - les aides auditives (audioprothèses),
+  - diverses autres dispositifs médicaux : cannes, fauteuils roulants et pansements.
 
 Il s’agit de biens médicaux pour lesquels la prise en charge de l’Assurance maladie est relativement limitée par rapport au coût payé par les patients : la part de « dépassement » liée à la liberté tarifaire est plus importante que pour d’autres soins.
 
