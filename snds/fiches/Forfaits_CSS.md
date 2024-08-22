@@ -18,6 +18,7 @@ tip Crédits :
 Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les comptes de la santé.
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+
 ---
 
 
