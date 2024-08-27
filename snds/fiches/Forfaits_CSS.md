@@ -256,7 +256,7 @@ Les forfaits de remboursement de la C2S s’appliquent uniquement aux équipemen
 
 ![Image](/snds/files/DREES/Forfaits_C2S_5.png)
 
-On trouve deux prestations distinctes dans le DCIR, rattachées au même **décompte** (voir plus haut). La prestation de base se retrouve uniquement dans la table er_prs_f et le forfait uniquement dans la table er_aro_f, par exemple :
+On trouve cette fois une seule prestation dans le DCIR (une unique clef de jointure à 9 variables). La prestation de base se retrouve dans la table er_prs_f, la prise en charge du ticket modérateur et le forfait dans la table er_aro_f, avec la même clef de jointure à 9 variables.
 
 Dans l'exemple d’un verre facturé 36 euros (verre multifocal classe A, sphère, +2,00 à +4,00, code LPP 2264884) : le forfait de remboursement de la C2S est fixé à 25,20 euros :
 
@@ -276,8 +276,26 @@ Dans l'exemple d’un verre facturé 36 euros (verre multifocal classe A, sphèr
     |3506|4,32 €|
     |5125|25,20 €|
     
-
 Dans cet exemple, la C2S prend en charge le ticket modérateur (4,32 euros) et le dépassement via un forfait de remboursement (25,20 euros). L’ensemble du prix de vente est ainsi remboursé à l’assuré, en cumulant la prise en charge de base et les remboursements de la C2S.
+
+On trouve maheureusement des cas d'exception, exemple du code LPP 2218559	(verre unifocal classe A, SPH positive et S ≤ 2) dont la BRSS est de 11,25 euros et le forfait 26,25 euros pour un prix de vente de 37,5 euros :
+
+  - dans la table er_prs_f :
+
+    |PRS_NAT_REF|BSE_REM_BSE|BSE_REM_MNT|PRS_PAI_MNT|
+    |----|----|----|----|
+    |3510|11,25 €|6,75 €|37,5 €|
+
+    La nature de prestation 3506 correspond aux motures adultes de classe A. La prise en charge du régime de 
+
+   La variable PRS_PAI_MNT indique le prix de vente de l’équipement (36 €). 
+
+  - dans la table er_aro_f :
+    |ARO_PRS_NAT|ARO_REM_MNT|
+    |----|----|
+    |3510|30,75 €|
+
+Dans cet exemple, la C2S prend en charge le ticket modérateur (4,50 euros) et le dépassement via un forfait de remboursement (26,25 euros). L’ensemble de cette prise en charge est globalisé sur une ligne de la table er_aro_f avec la nature de prestation de l'acte de base (3510).
 
 Le code R suivant (exécuter d'abord le code plus haut pour charger les packages et fonctions) montre que la dépense de forfaits de remboursement de la C2S en 2023 s’élève à 55 millions d’euros France entière, dont 23 millions d’euros pour les verres et 30 millions d’euros pour les montures.
 
