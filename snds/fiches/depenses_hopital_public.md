@@ -10,6 +10,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad (DREES) et Kristel Jacquier (DSS)
+
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.* 
+:::
+
 Cette fiche explique comment retrouver les dépenses des établissements publics dans le PMSI. 
 
 Nous y traitons les dépenses associées aux séjours hospitaliers ainsi qu'aux actes et consultations externes ([ACE](actes_consult_externes.md)).
@@ -262,6 +269,3 @@ Il n'y a pas d'ACE en HAD ni en PSY.
 [Guide méthodo ATIH HAD](https://www.atih.sante.fr/had/documentation#Guides%20m%C3%A9thodologiques)  
 [Guide méthodo ATIH PSY](https://www.atih.sante.fr/psy/documentation#Guides%20m%C3%A9thodologiques)  
 
-::: tip Crédits
-Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad (DREES) et Kristel Jacquier (DSS)
-:::
