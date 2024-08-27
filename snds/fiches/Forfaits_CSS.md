@@ -223,7 +223,7 @@ La Complémentaire santé solidaire a une réglementation spécifique, transvers
 
 Le forfait de remboursement est versé avec les natures de prestation 5402 (oreille gauche) et 5403 (oreille droite). Ces natures de prestation globalisent les classes I et II sans distinction.
 
-Comme dans le domaine dentaire, on trouve deux prestations distinctes dans le DCIR, rattachées au même **décompte** (voir plus haut). La spécificité est que la prestation de base se retrouve uniquement dans la table er_prs_f et le forfait uniquement dans la table er_aro_f, par exemple :
+On trouve cette fois une seule prestation dans le DCIR (une unique clef de jointure à 9 variables). La prestation de base se retrouve dans la table er_prs_f, la prise en charge du ticket modérateur et le forfait dans la table er_aro_f, avec la même clef de jointure à 9 variables, par exemple :
 
   - dans la table er_prs_f :
 
@@ -291,9 +291,9 @@ On trouve maheureusement des cas d'exception, exemple du code LPP 2218559	(verre
    La variable PRS_PAI_MNT indique le prix de vente de l’équipement (36 €). 
 
   - dans la table er_aro_f :
-    |ARO_PRS_NAT|ARO_REM_MNT|
-    |----|----|
-    |3510|30,75 €|
+    |ARO_PRS_NAT|ARO_REM_MNT|ARO_REM_BSE|ARO_REM_PRU|
+    |----|----|----|----|
+    |3510|30,75 €|0 €|_NA_|
 
 Dans cet exemple, la C2S prend en charge le ticket modérateur (4,50 euros) et le dépassement via un forfait de remboursement (26,25 euros). L’ensemble de cette prise en charge est globalisé sur une ligne de la table er_aro_f avec la nature de prestation de l'acte de base (3510).
 
