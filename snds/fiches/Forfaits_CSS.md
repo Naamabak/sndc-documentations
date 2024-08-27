@@ -37,7 +37,7 @@ On a les définitions suivantes :
   - Le dépassement est le reste à charge sur la dépense dépassant la BRSS. 
 
 Exemple de décomposition du prix de vente en BRSS et dépassement (verre de lunette vendu 50 euros avec une BRSS à 15 euros) :
-![Image](/files/DREES/Forfaits_C2S_1.png)
+![Image](/snds/files/DREES/Forfaits_C2S_1.png)
 
 La C2S prend en charge le ticket modérateur de ses bénéficiaires, qui sont aussi exonérés de participations forfaitaires de franchises médicales sur l’achat de médicaments. Les médecins et auxiliaires médicaux ne peuvent pas leur appliquer de dépassements d'honoraires.
 
@@ -84,13 +84,15 @@ Ces deux prestations se trouvent sur des lignes distinctes, c’est-à-dire deux
 
 Les forfaits de remboursement de la C2S s’appliquent aux deux [paniers de soins sur les soins dentaires prothétiques](https://www.ameli.fr/val-de-marne/assure/remboursements/rembourse/soins-protheses-dentaires-optique-audition/soins-dentaires-comprendre-le-100-sante#text_133080) : le panier 100 % Santé et le panier à tarifs maîtrisés. Si le bénéficiaire opte pour un de ces deux paniers, un forfait de remboursement annule (panier 100 % Santé) ou limite (panier à tarifs maîtrisés) son reste à charge.
 
-![Image](/files/DREES/Forfaits_C2S_2.png)
+![Image](/snds/files/DREES/Forfaits_C2S_2.png)
 
 Dans le DCIR, on trouve deux prestations :
   - l’une pour la prestation de base, avec une nature de prestation de soins dentaires prothétiques (1412 par exemple en norme PS5) 
   - l’autre pour le forfait de remboursement, avec une nature de prestation 5201, 5202, 5203 ou 5205 en norme PS5.
 
-Chacune des deux prestations se retrouve à la fois dans la table er_prs_f (table des prestations de base) pour les remboursements du régime de base, et dans la table er_aro_f (table des remboursements supplémentaires) pour les remboursements de la C2S. :warning: Pour chaque prestation, la variable PRS_PAI_MNT n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS. Pour le panier à tarifs maîtrisés, le prix de vente payé par l'assuré dépasse la BRSS, et est donc tronqué das le SNDS.
+Chacune des deux prestations se retrouve à la fois dans la table er_prs_f (table des prestations de base) pour les remboursements du régime de base, et dans la table er_aro_f (table des remboursements supplémentaires) pour les remboursements de la C2S.
+
+:warning: Pour chaque prestation, la variable PRS_PAI_MNT n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS. Pour le panier à tarifs maîtrisés, le prix de vente payé par l'assuré dépasse la BRSS, et est donc tronqué das le SNDS.
 
 Dans l’exemple d’un soin prothétique de _pose d'une prothèse amovible définitive à châssis métallique, comportant 9 dents_ (code CCAM `HBLD435`), la BRSS est de 258 euros et le forfait de remboursement de 492 euros en 2024. Au total, 750 euros sont pris en charge.
 
@@ -183,7 +185,7 @@ Les forfaits de remboursement de la C2S s’appliquent aux **semestres de traite
 
 Pour les traitements d’orthodontie, les honoraires sont libres et la BRSS ne les couvre que partiellement ([193,50 euros par semestre](https://www.ameli.fr/val-de-marne/assure/remboursements/rembourse/soins-protheses-dentaires-optique-audition/consultations-soins-protheses-dentaires/remboursement-traitements-orthodontie), en 2024). Le forfait de remboursement de la C2S est de 270,50 euros pour un semestre de traitement avec multiattaches. Ce montant peut être versé en deux fois (par trimestre), comme pour les remboursements des régimes de base.
 
-![Image](/files/DREES/Forfaits_C2S_3.png)
+![Image](/snds/files/DREES/Forfaits_C2S_3.png)
 
 Comme pour les soins prothétiques, on trouve systématiquement deux prestations dans le DCIR, pour le traitement avec la nature de prestation 1424 (TO) et pour le forfait avec la nature de prestation 5204 ou 5206. Les montants des deux prestations doivent être additionnés pour obtenir la dépense de traitement d’orthodontie prise en charge. :warning: Pour chaque prestation, la variable PRS_PAI_MNT n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS. 
 
@@ -217,7 +219,7 @@ Les forfaits de remboursement de la C2S s’appliquent aux aides auditives de **
 
 La Complémentaire santé solidaire a une réglementation spécifique, transverse aux deux classes d’aides auditives. En effet, depuis 2021, les audioprothésistes doivent proposer aux bénéficiaires de C2S des équipements à un prix maximal de vente spécifique (par exemple 800 € pour les 20 ans et plus en 2024). Si le bénéficiaire opte pour un autre équipement, il est remboursé à la même hauteur (par exemple 800 € pour les 20 ans et plus) mais doit financer un reste à charge car l'équipement peut être plus cher.
 
-![Image](/files/DREES/Forfaits_C2S_4.png)
+![Image](/snds/files/DREES/Forfaits_C2S_4.png)
 
 Le forfait de remboursement est versé avec les natures de prestation 5402 (oreille gauche) et 5403 (oreille droite). Ces natures de prestation globalisent les classes I et II sans distinction.
 
@@ -252,7 +254,7 @@ calcul_montants(prestas)
 
 Les forfaits de remboursement de la C2S s’appliquent uniquement aux équipements de **classe A**, qui est l’offre 100 % Santé. Il y a donc coïncidence entre forfaits de la C2S et financement prévu par le dispositif 100 % santé. 
 
-![Image](/files/DREES/Forfaits_C2S_5.png)
+![Image](/snds/files/DREES/Forfaits_C2S_5.png)
 
 On trouve deux prestations distinctes dans le DCIR, rattachées au même **décompte** (voir plus haut). La prestation de base se retrouve uniquement dans la table er_prs_f et le forfait uniquement dans la table er_aro_f, par exemple :
 
