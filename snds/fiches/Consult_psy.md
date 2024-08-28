@@ -9,6 +9,12 @@ tags:
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
 <TagLinks />
+::: tip Crédits
+
+Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande à destination du CH de Toulon afin de fournir à ce dernier des indicateurs pour alimenter une projet de recherche soumis à un appel à projet interrégional- Recherche en Soins Primaires- RESP_IR.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
 
 Cette fiche vise à proposer une requête permettant de déterminer le nombre de patients ayant consulté en urgence un médecin psychiatre dans le Var. 
 Un professionnel de santé (médecin traitant, généraliste, spécialistes) estime qu’un patient souffrant de troubles psychiatriques importants nécessite de consulter en urgence un médecin psychiatre. 
@@ -97,13 +103,5 @@ proc sql;
 L’ensemble des résultats produits peuvent être consultés [ici](/files/HDH/RequetealaDemande/20220608_Cpsy_CH_Toulon_MPL-2.0.xlsx). 
 
 Les effectifs inférieurs à 11 ne sont pas restitués.
-
-
-## Références  
-:::tip Crédit
-Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande à destination du CH de Toulon afin de fournir à ce dernier des indicateurs pour alimenter une projet de recherche soumis à un appel à projet interrégional- Recherche en Soins Primaires- RESP_IR.
-:::
-
- 
 
 
