@@ -11,6 +11,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par Kristel Jacquier (DSS Ministère) & Céline LEROY (ARS Normandie)
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 L'allocation aux adultes handicapés (AAH) est une aide financière accordée sur décision de la commission des droits et de l'autonomie des personnes handicapées (CDAPH). 
 Une partie des conditions à remplir pour bénéficier de cette prestation est étudiée par la maison départementale des personnes âgées (MDPH). L’AAH peut être attribuée si : 
 * le taux d’incapacité est supérieur ou égal à 80 % ; 
@@ -101,7 +108,4 @@ De manière globale même si ce cumul est possible, on observe dans les faits un
 - [Améliorer la qualité du systeme de santé et maitriser les dépenses. Propositions de l'Assurance Maladie pour 2020](https://assurance-maladie.ameli.fr/sites/default/files/2019-07_rapport-propositions-pour-2020_assurance-maladie.pdf), page 92-125.
 - [Études et Résultats, n°1087, Drees, octobre 2018](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/etudes-et-resultats/article/le-nombre-des-beneficiaires-de-l-allocation-aux-adultes-handicapes-a-double#:~:text=Fin%20d%C3%A9cembre%202017%2C%201%2C13,m%C3%A9dian%20est%20de%2048%20ans.)
 
-::: tip Crédits
-Cette fiche a été rédigée par Kristel Jacquier (DSS Ministère) & Céline LEROY (ARS Normandie)
-:::
 
