@@ -13,6 +13,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits  
+
+Cette fiche a été rédigée par Raphaële Adjerad (DREES) et Kristel Jacquier (DSS).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Il existe plusieurs types d'audioprothèses, aussi appelées "aides auditives". On peut en effet les classer en appareils intra-auriculaires, contours à écouteurs
 déportés ou contours classiques. Cette fiche aborde principalement les dépenses et le prix des aides auditives.
 
@@ -220,6 +227,3 @@ nomenclatures en conséquence. Par exemple, un code mis en place au 1er janvier 
 - Nomenclature LPP sur ameli : [telechargement_lpp](http://www.codage.ext.cnamts.fr/codif/tips//telecharge/index_tele.php?p_site=AMELI)
 - Réforme du 100 % santé en audiologie : [site_ministère_santé](https://solidarites-sante.gouv.fr/systeme-de-sante-et-medico-social/100pourcent-sante/espace-professionnels/les-nouvelles-mesures-audiologie/article/la-reforme-100-sante-audiologie)
 
-::: tip Crédits  
-Cette fiche a été rédigée par Raphaële Adjerad (DREES) et Kristel Jacquier (DSS).
-:::
