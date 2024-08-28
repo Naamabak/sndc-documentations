@@ -14,6 +14,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits  
+
+Cette fiche a été rédigée par Claire-Lise Dubost (DREES) et Pierre-Louis Bithorel, affilié à l'Ined (Institut National d'Etudes Démographiques), et s'appuie notamment sur des informations issus du document [*SNDS, ce qu'il faut savoir*](../formation_snds/Sante_publique_France.md) constitué par Santé Publique France, ainsi que de la note technique *L'indice de désavantage social "FDEP" et son application à DCIR* rédigé en 2014 par la CNAM.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Le SNDS est très riche en informations sur le recours aux soins mais possède peu de variables sociodémographiques sur les bénéficiaires.
 
 Cette fiche présente les différentes variables disponibles, leur qualité et où les trouver.
@@ -189,6 +196,3 @@ Il est également possible de repérer les [détenus](detenus.md) dans le SNDS.
 Depuis le 1er novembre 2019, la [Complémentaire santé solidaire](complementaire_sante_solidaire.md) remplace la CMU-C et l’ACS. Pour en savoir plus sur la [Complémentaire santé solidaire](https://www.ameli.fr/paris/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante).
 :::
 
-::: tip Crédits  
-Cette fiche a été rédigée par Claire-Lise Dubost (DREES) et Pierre-Louis Bithorel, affilié à l'Ined (Institut National d'Etudes Démographiques), et s'appuie notamment sur des informations issus du document [*SNDS, ce qu'il faut savoir*](../formation_snds/Sante_publique_France.md) constitué par Santé Publique France, ainsi que de la note technique *L'indice de désavantage social "FDEP" et son application à DCIR* rédigé en 2014 par la CNAM.
-:::
