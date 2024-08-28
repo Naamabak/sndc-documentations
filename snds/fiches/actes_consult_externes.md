@@ -14,6 +14,19 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Le contenu original de cette fiche provient du document *Les actes et consultations externes dans le SNDS* rédigé par Claire-Lise DUBOST (DREES) en avril 2019.
+
+Cette fiche s'appuie fortement sur les slides de la formation proposée par la CNAM sur les données du PMSI dans le SNDS.
+
+Certaines informations sont également tirées du document [*SNDS, ce qu'il faut savoir*](../formation_snds/Sante_publique_France.md) constitué par Santé Publique France.
+
+La fiche a été mis à jour le 30/01/2024 grâce à une contribution de Guillaume DESJEUX.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## Que regroupent les actes et consultations externes ?
 
 Cette activité ne concerne que les **hôpitaux publics** et les **établissements de santé privés d’intérêt collectif** (ESPIC), c'est à dire les établissements ex-DG (dotation globale).
@@ -329,15 +342,6 @@ _NB: A noter que le référentiel utilisé dans la table des ACE n'est pas ident
 - Fiche partagée dans la publication *Les comptes de la sécurité sociale* publiée sur le portail de la Sécurité Sociale sur les
 [actes et consultations externes à l'hôpital](https://www.securite-sociale.fr/files/live/sites/SSFR/files/medias/CCSS/2015/FICHE_ECLAIRAGE/CCSS-FICHE_ECLAIRAGE-2015-LES_ACTES_ET_CONSULTATIONS_EXTERNES_A_L-HOPITAK.pdf)
 
-::: tip Crédits
-Le contenu original de cette fiche provient du document *Les actes et consultations externes dans le SNDS* rédigé par Claire-Lise DUBOST (DREES) en avril 2019.
-
-Cette fiche s'appuie fortement sur les slides de la formation proposée par la CNAM sur les données du PMSI dans le SNDS.
-
-Certaines informations sont également tirées du document [*SNDS, ce qu'il faut savoir*](../formation_snds/Sante_publique_France.md) constitué par Santé Publique France.
-
-La fiche a été mis à jour le 30/01/2024 grâce à une contribution de Guillaume DESJEUX.
-:::
 
 [^1]: Chiffres tirés de l’éclairage « Les actes et consultations externes à l’hôpital » dans le rapport Les Comptes de la Sécurité Sociale publié par la DSS en 2015   
 
