@@ -11,6 +11,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+La fiche a été rédigée par Kristel JACQUIER (DSS).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Dans le SNDS, les dépenses en optique sont regroupées sous les codes prestations ci-dessous (variable `PRS_NAT_REF`):
 3523, 3524, 3525, 3526, 3527, 3528, 3529, 3530, 3531, 3532, 3533, 3534, 3535, 3536, 3537, 3538, 3539, 3553, 3554, 3555, 3556, 3557, 3581, 3582, 3583, 5101, 5102, 5103, 5104, 5105, 5106, 5107
 
@@ -116,8 +123,4 @@ grâce à la création de variables quantifiant la quantité de verres et de mon
 (on définit une ligne de la table prestation par l'ensemble des variables que l'on sélectionne dans cette table lors de la jointure,
 ainsi on groupe les quantités `TIP_ACT_QSN` par le montant payé `PRS_PAI_MNT`). 
 
-## Références
 
-::: tip Crédits
-La fiche a été rédigée par Kristel JACQUIER (DSS).
-:::
