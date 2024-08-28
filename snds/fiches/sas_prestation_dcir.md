@@ -12,6 +12,15 @@ tags:
 
 <TagLinks />
 
+:::tip Crédits
+
+Cette fiche a été créée par la direction DATA de Santé publique France
+
+Cette fiche provient du document [Requêtes types dans la table prestations du DCIR](/files/Sante_publique_France/2018_04_SpF_requetes-types-prestations-DCIR_MPL-2.0.docx) datant d'avril 2018
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Cette fiche décrit une requête type de sélection de prestations impliquant une table d'actes affinés de codage avec sélection de données concernant les bénéficiaires.
 
 
@@ -101,12 +110,3 @@ Le programme SAS est accessible dans le dépôt **programme-snds**, dossier [**S
 * dcir_prestations_medicaments.sas
 * dcir_infos_socio_eco_referentiels.sas
 
-## Références
-
-:::tip Crédits
-Cette fiche a été créée par la direction DATA de Santé publique France
-:::
-
-:::tip Mise à jour
-Cette fiche provient du document [Requêtes types dans la table prestations du DCIR](/files/Sante_publique_France/2018_04_SpF_requetes-types-prestations-DCIR_MPL-2.0.docx) datant d'avril 2018
-:::
