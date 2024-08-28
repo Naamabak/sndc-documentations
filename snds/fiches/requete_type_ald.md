@@ -11,6 +11,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été créée par la direction DATA de Santé publique France
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Cette fiche a pour objectif de décrire les informations disponibles dans le SNDS concernant les pathologies exonérantes (avec un focus sur les ALD).  
 Elle propose également une requête type de sélection d'affections de longue durée.
 
@@ -98,10 +105,6 @@ Le programme SAS est accessible dans le dépôt **programme-snds**, dossier [**S
 * ald_select_par_code_cim.sas
 
 ## Références
-
-::: tip Crédits
-Cette fiche a été créée par la direction DATA de Santé publique France
-:::
 
 ::: tip Mise à jour
 Cette fiche se base sur une version originale datant du 30/04/2018 et a été mise à jour le 30/10/2020
