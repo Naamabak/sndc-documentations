@@ -9,6 +9,17 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est [téléchargeable ici](/files/Cnam/20210621_Cnam_Communique-IR_VAC_F_Miseajour_sansprofils_MPL-2.0.docx) dans sa version d'origine.
+
+Il a été initialement publié sur le portail SNDS de la Cnam le 18 juin 2021. 
+
+Il a été mis à jour le 29 juin 2021 avec l'ajout de deux nouvelles variables liées à l'injection (`ETB_VAC_CAT` et `ETB_VAC_FIN`).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 *Mise à disposition de la table IR_VAC_F des patients vaccinés contre le Covid-19 (18 Juin 2021)*
 
 
@@ -75,16 +86,6 @@ Le référentiel des centres de vaccination, disponible sur [data.gouv.fr](https
 
 
 Les variables sur les dates de prescription et d’injection en jour/mois/année ainsi que les numéros de PS (prescripteur / exécutant) sont soit non restituées, soit restituées (en clair ou cryptées) selon le profil d’accès de l'utilisateur au portail SNDS. 
-
-    
-## Références
-::: tip Ressources
-Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est [téléchargeable ici](/files/Cnam/20210621_Cnam_Communique-IR_VAC_F_Miseajour_sansprofils_MPL-2.0.docx) dans sa version d'origine.
-
-Il a été initialement publié sur le portail SNDS de la Cnam le 18 juin 2021. 
-
-Il a été mis à jour le 29 juin 2021 avec l'ajout de deux nouvelles variables liées à l'injection (`ETB_VAC_CAT` et `ETB_VAC_FIN`).
-:::
 
 
 
