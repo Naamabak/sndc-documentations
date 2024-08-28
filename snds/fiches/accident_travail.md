@@ -10,6 +10,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par Raphaël Lardeux (DREES).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Cette fiche présente la prise en charge des accidents du travail par la branche AT/MP de la Sécurité sociale à partir des explications disponibles sur le site [Ameli](https://www.ameli.fr/assure/droits-demarches/maladie-accident-hospitalisation/accident/accident-travail-trajet), puis propose une manière de suivre des trajectoires d'indemnisation suite à un accident du travail avec incapacité permanente dans le SNDS et dans l'EDP Santé.
 
 ## Définition
@@ -110,10 +117,6 @@ Cette méthode ne permet pas de commenter le stock de rentes d'incapacité dès 
 | 80 à 100% | 23 206  |
 
 
-
-::: tip Crédits
-Cette fiche a été rédigée par Raphaël Lardeux (DREES).
-:::
 
 ## Références
 
