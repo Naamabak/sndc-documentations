@@ -10,6 +10,18 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Le contenu de cette fiche s'appuie fortement sur les présentations faites par la CNAM lors des formations au DCIR-DCIRS. 
+Elle a été rédigée par [HEVA](https://hevaweb.com/fr/#!/).
+
+La partie sur le DAMIR s'appuie sur le support de formation DAMIR. Elle a été rédigée par Kristel JACQUIER (DSS).
+
+La partie sur le DCIRS a été rédigée par Raphaële Adjerad (DREES).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## DCIR
 ### Quels indicateurs de dépenses sont disponibles ?
 
@@ -293,13 +305,3 @@ La notion de nature de prestation n’existe pas dans le DCIR. La condition à p
 Ainsi, la variable `FLT_REM_MNT` (montant versé remboursé) dans le DAMIR correspond à la somme entre `BSE_REM_MNT` (montant remboursé de l’acte de base) et `CPL_REM_MNT` (montant remboursé du complément d’acte ou majoration) dans le DCIR. 
 
 
-## Références
-
-::: tip Crédit
-Le contenu de cette fiche s'appuie fortement sur les présentations faites par la CNAM lors des formations au DCIR-DCIRS. 
-Elle a été rédigée par [HEVA](https://hevaweb.com/fr/#!/).
-
-La partie sur le DAMIR s'appuie sur le support de formation DAMIR. Elle a été rédigée par Kristel JACQUIER (DSS).
-
-La partie sur le DCIRS a été rédigée par Raphaële Adjerad (DREES).
-:::
