@@ -9,6 +9,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par Noémie Courtejoie (DREES) et Raphaële Adjerad (DREES), mise à jour par Pierre-Louis Bithorel (DREES) en mars 2023.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 La Direction de la recherche, des études, de l’évaluation et des statistiques (DREES) a mis au point une [base simplifiée des dépenses de santé et des restes à charge](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/la-base-rac-sur-les-depenses-et-les-restes-charge-en-sante-apres) à partir du Système national des données de santé (SNDS).
 Cette base a permis de produire plusieurs Études et Résultats sur le sujet des restes à charge en France.   
 L'ensemble des [programmes](https://git.drees.fr/drees_code_public/outils/restes-a-charge-snds/-/tree/main/baserac?ref_type=heads) permettant de construire la base RAC, ainsi que la [documentation associée](https://git.drees.fr/drees_code_public/outils/restes-a-charge-snds/-/tree/main/documentation?ref_type=heads), ont été mis en open source sur le gitlab de la DREES.
@@ -80,6 +87,3 @@ L'ensemble des [programmes](https://git.drees.fr/drees_code_public/outils/restes
 Les programmes mis en ligne ont été élaborés pour le traitement des données sources des années 2016 et 2017 et permettent de reconstituer la base RAC pour chacune de ces deux années. Des jeux de données simulées sont fournis avec les programmes afin de les tester. Ces données respectent la structure du SNDS mais ne sont en aucun cas d'authentiques données de santé.
 
 
-::: tip Crédits
-Cette fiche a été rédigée par Noémie Courtejoie (DREES) et Raphaële Adjerad (DREES), mise à jour par Pierre-Louis Bithorel (DREES) en mars 2023.
-:::
