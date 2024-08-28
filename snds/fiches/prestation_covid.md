@@ -9,6 +9,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est [téléchargeable ici](/files/Cnam/20210628_Fiche_Thematique_Prestations_COVID_MPL-2.0.docx) dans sa version d'origine.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Suite à la crise COVID-19, de nombreuses actions ont dû être menées dans les  bases du SNDS afin de pouvoir mettre en œuvre les actions préconisées par le gouvernement. En voici les étapes, récapitulées pour trois catégories de prestations, présentées en nomenclature codée B2 (lettre clé) et PS5 (sur 4 chiffres, présente dans le SNDS).
 
 ## Les téléconsultations
@@ -190,11 +197,4 @@ Il est important d’indiquer cette condition dans la requête afin de pouvoir r
 | K        | 1312                | 5                      | 0 et pse_spe_cod = 38 | Prélèvement médecins biologiste |
 
 
-
-
-
-## Références
-::: tip Ressources
-Ce document a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches. Il est [téléchargeable ici](/files/Cnam/20210628_Fiche_Thematique_Prestations_COVID_MPL-2.0.docx) dans sa version d'origine.
-:::
 
