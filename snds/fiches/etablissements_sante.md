@@ -11,6 +11,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits  
+
+Cette fiche a été rédigée par Raphaële Adjerad (DREES) et Kristel Jacquier (DSS).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 L'objectif de la fiche est de décrire où trouver les informations sur les trois types d'établissements de santé : 
 **publics, privés et les établissements du secteur médico-social**.
 
@@ -125,10 +132,6 @@ dans la table de prestations centrale comme mentionné ci-dessus). Une jointure 
 permet d’avoir les libellés des différents établissements.
 **L’information sur ces séjours n’est pas exhaustive et doit être traitée avec précaution**. 
 
-
-::: tip Crédits  
-Cette fiche a été rédigée par Raphaële Adjerad (DREES) et Kristel Jacquier (DSS).
-:::
 
 
 *Sources* 
