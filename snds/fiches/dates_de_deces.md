@@ -14,6 +14,15 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits  
+
+Cette fiche a été rédigée par Claire IMBAUD (CépiDc - INSERM), et complété par Anne CUERQ à partir du document "SNDS, ce qu'il faut savoir" publié par Santé publique France.  
+
+La version actualisée de ce guide est disponible [ici](https://www.santepubliquefrance.fr/docs/guide-d-utilisation-du-systeme-national-des-donnees-de-sante).  
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 L'objectif de cette note est de documenter la fiabilité de la date de décès des individus et de proposer une méthodologie de recueil de la date la plus sûre.
 
 ## Repérage des dates de décès
@@ -99,9 +108,4 @@ L’évolution du nombre de personnes décédées par régime et par an est disp
 
 ![Graphique2](/files/Sante_publique_France/Images_Guide-SNDS-SpF/graphique_2_spfguidesnds.png)  
 
-## Référence  
 
-::: tip Crédits  
-Cette fiche a été rédigée par Claire IMBAUD (CépiDc - INSERM), et complété par Anne CUERQ à partir du document "SNDS, ce qu'il faut savoir" publié par Santé publique France.  
-La version actualisée de ce guide est disponible [ici](https://www.santepubliquefrance.fr/docs/guide-d-utilisation-du-systeme-national-des-donnees-de-sante).  
-:::
