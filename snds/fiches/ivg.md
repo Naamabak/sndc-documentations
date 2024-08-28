@@ -12,6 +12,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par **Annick Vilain** (DREES) [(Études et Résultats)](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/etudes-et-resultats/article/224-300-interruptions-volontaires-de-grossesse-en-2018). Elle a été mise à jour par **Elodie Baril** (Ined) et **Pierre-Louis Bithorel** (Ined).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Les IVG peuvent être réalisées en établissement de santé de façon médicamenteuse ou chirurgicale, et en cabinet libéral ou en centre de santé, centre de planification et d’éducation familiale, de façon médicamenteuse uniquement.  
 Les IVG **hospitalières** sont comptabilisées dans le [PMSI](../glossaire/PMSI.md) et les IVG réalisées **hors établissement** sont comptabilisées dans la table des prestations du [DCIR](../glossaire/DCIR.md).  
 ## Les IVG en établissement hospitalier
@@ -106,8 +113,3 @@ WHERE (t2.CPL_MAJ_TOP<2 & t2.PRS_NAT_REF=3329 & t2.EXE_SOI_AMD LIKE '2018%'
 N'hésitez pas à également consulter le programme [NORMANDIE_IVG_territo.sas](https://gitlab.com/healthdatahub/programmes-snds/-/blob/master/ARS/P%C3%A9rinatalit%C3%A9/NORMANDIE_IVG_territo.sas) partagé par l'ARS Normandie permettant d'estimer le nombre d'IVG en hôpital et en soins de ville pour sa région (adaptable à d'autres départements ou à la France entière).
 
 
-## Références
-
-::: tip Crédits
-Cette fiche a été rédigée par **Annick Vilain** (DREES) [(Études et Résultats)](https://drees.solidarites-sante.gouv.fr/etudes-et-statistiques/publications/etudes-et-resultats/article/224-300-interruptions-volontaires-de-grossesse-en-2018). Elle a été mise à jour par **Elodie Baril** (Ined) et **Pierre-Louis Bithorel** (Ined).
-:::
