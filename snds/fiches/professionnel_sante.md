@@ -9,6 +9,14 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche provient d'un document créé par la Cnam - MPL-2.0
+[Fiche publiée](/files/Cnam/2019-10_Cnam_Professionnels-sante_MLP-2.0.pdf)
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## Préambule
 Pour commencer, posons quelques éléments de définitions : 
 
@@ -277,9 +285,4 @@ Les autres profils (y compris le 117 pour les extractions de données DCIR) prop
 Il est également recommandé de ne pas sortir de petits effectifs.**
 
 
-## Références
 
-::: tip Crédits
-Cette fiche provient d'un document créé par la Cnam - MPL-2.0
-[Fiche publiée](/files/Cnam/2019-10_Cnam_Professionnels-sante_MLP-2.0.pdf)
-:::
