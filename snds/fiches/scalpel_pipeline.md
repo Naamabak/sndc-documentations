@@ -9,6 +9,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été initialement rédigée par Matthieu Doutreligne, DREES en s'appuyant sur la documentation de [SCALPEL](https://github.com/X-DataInitiative/SCALPEL-Flattening). Merci à Arnaud Lecoules (DREES) pour les schémas d'aplatissement.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Le SNDS est issu de la fusion de différentes bases de données médico-administratives (SNIIRAM, PMSI, CépiDC, ...). La plupart de ces sources ont pour but premier la facturation. Malgré la richesse de ces données, la structure brute du SNDS est donc hétérogène et peu adaptée à l'analyse.
 
 La quasi totalité des études portant sur le SNDS commence par appliquer des filtres de qualité puis par réunir les informations d'intérêts dans les différents produits du SNDS. Ces démarches sont coûteuses en temps, en ressources de calculs et peuvent être implémentées différemment d'une étude à l'autre.
@@ -89,9 +96,6 @@ Nous utilisons quelques règles classiques de qualité de la donnée dans le SND
   - **HAD** :
     - `{NIR_RET, SEJ_RET, FHO_RET, PMS_RET, DAT_RET} = "0"`, supprime les lignes pour lesquelles l'identifiant du séjour, la date ou l'identifiant du patient sont en erreur.
 
-::: tip Crédits
-Cette fiche a été initialement rédigée par Matthieu Doutreligne, DREES en s'appuyant sur la documentation de [SCALPEL](https://github.com/X-DataInitiative/SCALPEL-Flattening). Merci à Arnaud Lecoules (DREES) pour les schémas d'aplatissement.
-:::
 
 
 [^1]: E. Bacry et al., « SCALPEL3: a scalable open-source library for healthcare claims databases », [arXiv:1910.07045](http://arxiv.org/abs/1910.07045) [cs], oct. 2019.
