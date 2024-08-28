@@ -10,6 +10,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigé par Emmanuel STRANADICA (Health Data Hub), les graphiques proviennent du support de cours Initiation au PMSI à travers le SNDS et est la propriété de la Cnam
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Le Programme de Médicalisation des Systèmes d'Information a été créé en 1983 et a été rendu obligatoire pour tous les établissements de santé en 1991.
 Initialement, celui-ci avait été créé uniquement pour mesurer l'activité médico-économique hospitalière des établissements MCO (médecine chirurgicale obstétrique).
 3 autres PMSI ont ensuite été créés et sont venus s'ajouter à celui-ci:
@@ -105,9 +112,5 @@ Un séjour est identifié par les clés de jointure suivantes :
 - Le numéro FINESS d'inscription e-PMSI : ETA_NUM_e-PMSI
 - Le numéro séquentiel du séjour : RIP_NUM
 
-## Références
 
-::: tip Crédits
-Cette fiche a été rédigé par Emmanuel STRANADICA (Health Data Hub), les graphiques proviennent du support de cours Initiation au PMSI à travers le SNDS et est la propriété de la Cnam
-:::
 
