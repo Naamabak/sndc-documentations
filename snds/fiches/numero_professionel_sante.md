@@ -9,6 +9,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Fiche réalisée en 2019 par Catherine Bisquay (ARS île de France) [document source](/files/ARS/IDF/2019_ARSIF_Numero-Professionnel-Sante_MPL-2.0.docx)
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Le numéro du professionnel de santé ([PS](../glossaire/PS.md)) est le numéro sous lequel un professionnel de santé libéral va liquider ses prestations ou prescrire des actes.
 
 ## Accès au numéro en clair ou crypté
@@ -175,9 +182,6 @@ Dans le portail SNDS, ces tables, dont le nom commence par DENB\_PS ou DNB\_PS, 
 Elles sont disponibles par année et par zone géographique (bassin de vie, commune, zone urbaine sensible (ZUS), zone franche urbaine (ZFU), IRIS et quartier prioritaire de la politique de la ville (QPV).
 
 ## Références
-::: tip Crédits
-Fiche réalisée en 2019 par Catherine Bisquay (ARS île de France) [document source](/files/ARS/IDF/2019_ARSIF_Numero-Professionnel-Sante_MPL-2.0.docx)
-:::
 
 ::: tip Autre ressource
 La Cnam a publié en octobre 2019 une [fiche sur la thématique des professionnels de santé](/files/Cnam/2019-10_Cnam_Professionnels-sante_MLP-2.0.pdf).
