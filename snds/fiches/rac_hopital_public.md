@@ -10,6 +10,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad (DREES) et Kristel Jacquier (DSS)
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Cette fiche explique comment calculer le montant du reste à charge après Assurance maladie obligatoire (AMO) pour un séjour en établissement de santé public à partir du PMSI.
 
 Les explications sont déclinées par spécialité hospitalière :
@@ -672,10 +679,5 @@ Le coût total du séjour correspond au montant remboursé par l’AMO (*cf.* fi
 - [ATIH - Manuel d'utilisation du logiciel VisualValo SSR](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwj2rJaj-OTlAhU2D2MBHWvqAHMQFjAAegQIABAH&url=https%3A%2F%2Fwww.atih.sante.fr%2Fplateformes-de-transmission-et-logiciels%2Flogiciels-espace-de-telechargement%2Ftelecharger%2Fgratuit%2F9797%2F2100&usg=AOvVaw3JFAfMc9byZDL3-VO5C0Yj)
 - Supports de formation de la CNAM sur le DCIRS et le PMSI
 
-
-::: tip Crédits
-
-Cette fiche a été rédigée par Noémie Courtejoie (DREES), Raphaële Adjerad (DREES) et Kristel Jacquier (DSS)
-:::
 
 
