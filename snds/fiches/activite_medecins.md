@@ -10,6 +10,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par Maxime Bergeat (DREES) en septembre 2022 et s'appuie sur un travail mené début 2022 pour comptabiliser l'activité des médecins en France.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## Contexte
 
 [Des statistiques internationales](https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_PROC#) sur l'utilisation des services de santé sont mises à disposition par Eurostat et l'OCDE. Pour comptabiliser le nombre de consultations par an et par habitant en France, les données du DCIR sont utilisées pour comptabiliser l'activité en médecine de ville. On ajoute ensuite l'activité réalisée en établissement de santé (estimée grâce à la [Statistique annuelle des établissements](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/00-la-statistique-annuelle-des-etablissements-sae)) et on ramène l'activité médicale à la population française (calculée à partir des données du [Recensement de la population de l'Insee](https://www.insee.fr/fr/statistiques/serie/001641584), pour calculer le nombre de consultations par an et par habitant. 
@@ -165,8 +172,5 @@ Cette requête permet alors d'étudier l'activité en médecine libérale de vil
 
 - Les spécifications permettant de définir le champ des médecins libéraux et des prestations retenues pour comptabiliser leur activité sont issues des spécifications utilisées pour calculer [l'indicateur d'Accessibilité Potentielle Localisée](https://drees.solidarites-sante.gouv.fr/sites/default/files/2021-09/ER1206.pdf).
 
-::: tip Crédits
-Cette fiche a été rédigée par Maxime Bergeat (DREES) en septembre 2022 et s'appuie sur un travail mené début 2022 pour comptabiliser l'activité des médecins en France.
-:::
 
 
