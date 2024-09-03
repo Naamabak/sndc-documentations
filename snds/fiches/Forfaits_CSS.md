@@ -15,26 +15,28 @@ tags:
 
 ---
 tip Crédits :
-Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les comptes de la santé.
+
+Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les [comptes de la santé](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/les-comptes-de-la-sante).
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 
 ---
 
 
-## Contexte
+## Une prise en charge au delà de la BRSS 
 
 La complémentaire santé solidaire (C2S) a pour objectif de limiter les **restes à charge** en santé de ses bénéficiaires.
 
-Dans le système français, les restes à charges sur des soins remboursables par l'Assurance maladie peuvent être de plusieurs types :
+Dans le système français, les restes à charges en santé peuvent être de plusieurs types :
    - tickets modérateurs,
    - participations spécifiques demandées aux assurés (franchises, participations forfaitaires de 2 euros, forfaits journaliers hospitaliers, forfaits patients urgences),
-   - dépassements : dépassements d'honoraires et part de liberté tarifiaire sur les dispositifs médicaux et sur certains soins dentaires.
+   - dépassements : dépassements d'honoraires et part de liberté tarifiaire sur les dispositifs médicaux et sur certains soins dentaires ;
+   - soins non remboursables par l'Assurance maladie.
 
+On utilise les définitions suivantes dans cette fiche :
+  - Le "ticket modérateur" est le reste à charge jusqu'à hauteur de la BRSS. 
+  - Le "dépassement" est le reste à charge sur la dépense dépassant la BRSS.
 La base de remboursement de la Sécurité sociale (BRSS) correspond au montant reconnu par l'Assurance maladie comme remboursable, sur lequel s'applique éventuellement un taux de remboursement.
-On a les définitions suivantes :
-  - Le ticket modérateur est le reste à charge jusqu'à hauteur de la BRSS. 
-  - Le dépassement est le reste à charge sur la dépense dépassant la BRSS. 
 
 Exemple de décomposition du prix de vente en BRSS et dépassement (verre de lunette vendu 50 euros avec une BRSS à 15 euros) :
 ![Image](/snds/files/DREES/Forfaits_C2S_1.png)
@@ -47,16 +49,16 @@ La vocation des **forfaits de remboursement** de la C2S est de prendre en charge
   - l’optique médicale,
   - les aides auditives (audioprothèses),
 
-Lors de l'achat par un bénéficiaire d'un de ces soins, un forfait de remboursement lui est versé pour compléter la prise en charge sur la partie de dépense dépassant la BRSS. En effet, la BRSS est limitée par rapport au prix de vente réel payé par les patients : la part de « dépassement » liée à la liberté tarifaire est plus importante que pour d’autres soins.
+Lors de l'achat par un bénéficiaire d'un de ces soins, un forfait de remboursement lui est versé pour compléter la prise en charge sur la partie de dépense dépassant la BRSS. En effet, la BRSS est inférieure au prix de vente réel payé par les patients : la part de « dépassement » liée à la liberté tarifaire est plus importante que pour d’autres soins.
 
-Cette part de « dépassement » liée à la liberté tarifaire est prise en charge de façon « forfaitaires » : les montants proportionnels à la dépense, mais fixés par arrêté. Les montants en vigueur en 2024 sont définis dans les textes suivants :
+Cette part de « dépassement » liée à la liberté tarifaire est prise en charge de façon « forfaitaire » : les montants ne sont pas proportionnels à la dépense, mais fixés par arrêté :
   - l’[arrêté du 23 février 2024](https://www.legifrance.gouv.fr/loda/id/LEGIARTI000049194469/2024-02-25/) pour les soins dentaires prothétiques et l’orthopédie dento-faciale (orthodontie), 
   - l’[arrêté du 29 octobre 2019](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039296524/) pour l’optique médicale,
   - l’[arrêté du 27 décembre 2018](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037880126) pour les aides auditives.
 
-Avant 2019, ces forfaits faisant partie des garanties de la couverture maladie universelle complémentaire (CMU-C). En 2019, la C2S s’est substituée à la CMU-C (et à l’Aide à la complémentaire santé) et le « 100 % santé » a été instauré. Les forfaits de remboursement se sont adaptés au cadre instauré par le 100 % santé (offre structurée par paniers pour les soins dentaires prothétiques, l’optique et les audioprothèses). A cette occasion, ils ont aussi été étendus et revalorisés (voir le [rapport de la Cour des comptes](https://www.vie-publique.fr/files/rapport/pdf/285961.pdf#p=20) sur le 100% santé).
+Avant 2019, ces forfaits faisaient partie des garanties de la couverture maladie universelle complémentaire (CMU-C). En 2019, la C2S s’est substituée à la CMU-C (et à l’Aide à la complémentaire santé) et le « 100 % santé » a été instauré. Les forfaits de remboursement se sont adaptés au cadre instauré par le 100 % santé (offre structurée par paniers pour les soins dentaires prothétiques, l’optique et les audioprothèses). A cette occasion, ils ont aussi été étendus et revalorisés (voir le [rapport de la Cour des comptes](https://www.vie-publique.fr/files/rapport/pdf/285961.pdf#p=20) sur le 100% santé).
 
-La C2S rembourse aussi la part de liberté tarifaire sur d'autres dispositifs médicaux : cannes, fauteuils roulants et pansements.
+La C2S rembourse aussi la part de liberté tarifaire sur d'autres dispositifs médicaux, notamment les cannes, fauteuils roulants et pansements.
 
 ## Dans le SNDS
 
@@ -78,7 +80,6 @@ Les forfaits de remboursement de la C2S sont donc traités comme une prestation 
   - la prestation de base, pour la dépense jusqu’à hauteur de la BRSS, 
   - un forfait pour la dépense au-delà de la BRSS.
 
-Ces deux prestations se trouvent sur des lignes distinctes, c’est-à-dire deux lignes n’ayant pas la même clef de jointure à 9 variables propre au DCIR. Sur la première, la base de remboursement indiquée est la BRSS ; sur la seconde, le montant du forfait de remboursement.
 
 ### Soins dentaires prothétiques
 
@@ -90,9 +91,11 @@ Dans le DCIR, on trouve deux prestations :
   - l’une pour la prestation de base, avec une nature de prestation de soins dentaires prothétiques (1412 par exemple en norme PS5) 
   - l’autre pour le forfait de remboursement, avec une nature de prestation 5201, 5202, 5203 ou 5205 en norme PS5.
 
-Chacune des deux prestations se retrouve à la fois dans la table er_prs_f (table des prestations de base) pour les remboursements du régime de base, et dans la table er_aro_f (table des remboursements supplémentaires) pour les remboursements de la C2S.
+Chacune des deux prestations se retrouve à la fois dans la table er_prs_f (table des prestations de base) pour les remboursements du régime de base, et dans la table er_aro_f (table des remboursements supplémentaires) pour les remboursements de la C2S. La clef de jointure à 9 variables du DCIR permet de faire le lien. 
 
-:warning: Pour chaque prestation, la variable PRS_PAI_MNT n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS. Pour le panier à tarifs maîtrisés, le prix de vente payé par l'assuré dépasse la BRSS, et est donc tronqué das le SNDS.
+Les deux prestations se retrouvent sur le même **décompte** : elles ont une valeur identique pour les 7 variables qui identifient un décompte unique dans la table er_dct_f (FLX_DIS_DTD, FLX_EMT_NUM, FLX_EMT_ORD, FLX_EMT_TYP, FLX_TRT_DTD, ORG_CLE_NUM et DCT_ORD_NUM). En effet, elles sont gérées simultanément par les caisses.
+
+:warning: Pour chaque prestation, la variable PRS_PAI_MNT n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS.
 
 Dans l’exemple d’un soin prothétique de _pose d'une prothèse amovible définitive à châssis métallique, comportant 9 dents_ (code CCAM `HBLD435`), la BRSS est de 258 euros et le forfait de remboursement de 492 euros en 2024. Au total, 750 euros sont pris en charge.
 
@@ -115,8 +118,6 @@ Dans l’exemple d’un soin prothétique de _pose d'une prothèse amovible déf
   Les 77,40 euros couvrent le ticket modérateur associé à la prestation 1412 (30 % de la BRSS). La ligne correspondant à ce montant a la même clef de jointure à 9 variables que la ligne de nature 1412 de la table er_prs_f.
 
   Les 492 euros correspondent au barème du forfait. La ligne correspondant à ce montant a la même clef de jointure à 9 variables que la ligne de nature 5201 de la table er_prs_f.
-
-NB : Les deux prestations se retrouvent sur le même **décompte** : elles ont une valeur identique pour les 7 variables qui identifient un décompte unique dans la table er_dct_f (FLX_DIS_DTD, FLX_EMT_NUM, FLX_EMT_ORD, FLX_EMT_TYP, FLX_TRT_DTD, ORG_CLE_NUM et DCT_ORD_NUM).
 
 Le code R suivant montre que la dépense de forfaits de remboursement C2S en soins dentaires prothétiques en 2023 s’élève à 550 millions d’euros France entière. La part afférente aux deux paniers possibles (100 % Santé et tarifs maîtrisés) pourrait être calculée grâce aux codes CCAM, par jointure avec la table er_cam_f.
 
@@ -183,13 +184,17 @@ calcul_montants(prestas)
 
 Les forfaits de remboursement de la C2S s’appliquent aux **semestres de traitements d’orthodontie**. 
 
-Pour les traitements d’orthodontie, les honoraires sont libres et la BRSS ne les couvre que partiellement ([193,50 euros par semestre](https://www.ameli.fr/val-de-marne/assure/remboursements/rembourse/soins-protheses-dentaires-optique-audition/consultations-soins-protheses-dentaires/remboursement-traitements-orthodontie), en 2024). Le forfait de remboursement de la C2S est de 270,50 euros pour un semestre de traitement avec multiattaches. Ce montant peut être versé en deux fois (par trimestre), comme pour les remboursements des régimes de base.
+Pour l'ensemble des assurés de manière générale, les honoraires de traitements d’orthodontie sont libres et la BRSS ne les couvre que partiellement ([193,50 euros par semestre](https://www.ameli.fr/val-de-marne/assure/remboursements/rembourse/soins-protheses-dentaires-optique-audition/consultations-soins-protheses-dentaires/remboursement-traitements-orthodontie), en 2024). 
+
+Pour les bénéficiaires de C2S, le forfait de remboursement vient compléter la BRSS. Dans l'exemple d'un semestre de traitement avec multiattaches, il est en 2024 de 270,50 euros. Ce montant peut être versé en deux fois (par trimestre), comme pour les remboursements des régimes de base. 
 
 ![Image](/snds/files/DREES/Forfaits_C2S_3.png)
 
-Comme pour les soins prothétiques, on trouve systématiquement deux prestations dans le DCIR, pour le traitement avec la nature de prestation 1424 (TO) et pour le forfait avec la nature de prestation 5204 ou 5206. Les montants des deux prestations doivent être additionnés pour obtenir la dépense de traitement d’orthodontie prise en charge. :warning: Pour chaque prestation, la variable PRS_PAI_MNT n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS. 
+Comme pour les soins prothétiques, on trouve systématiquement deux prestations dans le DCIR, pour le traitement avec la nature de prestation 1424 (TO) et pour le forfait avec la nature de prestation 5204 ou 5206. Les montants des deux prestations doivent être additionnés pour obtenir la dépense de traitement d’orthodontie prise en charge. 
 
 Ces deux prestations n’ont pas la même clef de jointure à 9 variables, mais sont dans le même **décompte** (voir plus haut).
+
+:warning: Pour chaque prestation, la variable PRS_PAI_MNT n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS. 
 
 Par exemple, on peut typiquement voir les lignes suivantes dans les tables du DCIR :
 
@@ -215,13 +220,13 @@ calcul_montants(prestas)
 
 ### Aides auditives
 
-Les forfaits de remboursement de la C2S s’appliquent aux aides auditives de **classe I (100 % Santé)**  et **classe II (prix libres)**. 
+Les forfaits de remboursement de la C2S s’appliquent aux aides auditives de **classe I (100 % Santé)** et de **classe II (prix libres)**. 
 
 La Complémentaire santé solidaire a une réglementation spécifique, transverse aux deux classes d’aides auditives. En effet, depuis 2021, les audioprothésistes doivent proposer aux bénéficiaires de C2S des équipements à un prix maximal de vente spécifique (par exemple 800 € pour les 20 ans et plus en 2024). Si le bénéficiaire opte pour un autre équipement, il est remboursé à la même hauteur (par exemple 800 € pour les 20 ans et plus) mais doit financer un reste à charge car l'équipement peut être plus cher.
 
 ![Image](/snds/files/DREES/Forfaits_C2S_4.png)
 
-Le forfait de remboursement est versé avec les natures de prestation 5402 (oreille gauche) et 5403 (oreille droite). Ces natures de prestation globalisent les classes I et II sans distinction.
+Le forfait de remboursement est versé avec les natures de prestation 5402 (oreille gauche) et 5403 (oreille droite). Malheureusement, ces natures de prestation globalisent les classes I et II sans distinction. A priori, on pourrait trouver la classe de l'équipement par jointure avec la table er_tip_f, ce qui est plus compliqué.
 
 On trouve cette fois une seule prestation dans le DCIR (une unique clef de jointure à 9 variables). La prestation de base se retrouve dans la table er_prs_f, la prise en charge du ticket modérateur et le forfait dans la table er_aro_f, avec la même clef de jointure à 9 variables, par exemple :
 
@@ -278,7 +283,7 @@ Dans l'exemple d’un verre facturé 36 euros (verre multifocal classe A, sphèr
     
 Dans cet exemple, la C2S prend en charge le ticket modérateur (4,32 euros) et le dépassement via un forfait de remboursement (25,20 euros). L’ensemble du prix de vente est ainsi remboursé à l’assuré, en cumulant la prise en charge de base et les remboursements de la C2S.
 
-On trouve maheureusement des cas d'exception, exemple du code LPP 2218559	(verre unifocal classe A, SPH positive et S ≤ 2) dont la BRSS est de 11,25 euros et le forfait 26,25 euros pour un prix de vente de 37,5 euros :
+On trouve malheureusement des cas d'exception, exemple du code LPP 2218559	(verre unifocal classe A, SPH positive et S ≤ 2) dont la BRSS est de 11,25 euros et le forfait 26,25 euros pour un prix de vente de 37,5 euros :
 
   - dans la table er_prs_f :
 
