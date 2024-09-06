@@ -5,6 +5,6 @@ le DR est une information, une précision qui fait partie du <link-previewer hre
 
 Le diagnostic relié ne peut exister que si le diagnostic principal est un diagnostic du chapitre 21 de la CIM (codes en Z qui regroupent les motifs de prise en charge du type « séance de chimiothérapie ») et s'il s'agit d'une maladie chronique ou de longue durée. Son rôle est d'améliorer la précision documentaire du codage en indiquant la pathologie à l'origine du motif de prise en charge que représente le code « Z ».  
 
-# Référence
+# Références
 - [Page](https://fr.wikipedia.org/wiki/Programme_de_m%C3%A9dicalisation_des_syst%C3%A8mes_d%27information) wikipédia  
 - - Plus d'informations dans le [glossaire](https://www.atih.sante.fr/glossaire) et sur le [site](https://www.atih.sante.fr/) de l'ATIH
