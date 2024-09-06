@@ -5,7 +5,7 @@ Documents publiés par [Santé publique France](../glossaire/SpF.md) sur ce site
 
 ## SNDS, ce qu'il faut savoir
 
-::: tip
+::: Guide de SPF
 Télécharger [SNDS, ce qu'il faut savoir](/files/Sante_publique_France/2024_07_GUIDE_SNDS_SpFrance_MPL-2.0.pdf) [Sante publique France - MPL-2.0], mise à jour de juillet 2024.
 :::
 

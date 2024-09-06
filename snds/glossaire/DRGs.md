@@ -11,6 +11,6 @@ Pour la France, le manuel des GHM est mis à jour annuellement et est téléchar
 # Références
 
 - [Page wikipedia](https://en.wikipedia.org/wiki/Diagnosis-related_group)
-- [Fiche](https://solidarites-sante.gouv.fr/professionnels/gerer-un-etablissement-de-sante-medico-social/financement/financement-des-etablissements-de-sante-10795/financement-des-etablissements-de-sante-glossaire/article/diagnosis-related-groups-drgs) sur le site internet du ministère
+- [Fiche](https://solidarites-sante.gouv.fr/professionnels/gerer-un-etablissement-de-sante-medico-social/financement/financement-des-etablissements-de-sante-10795/financement-des-etablissements-de-sante-glossaire/article/diagnosis-related-groups-drgs) sur le site internet du ministère  
 - Plus d'informations sur le [site](https://www.atih.sante.fr/manuel-des-ghm-version-11-version-complete) de l'ATIH 
 - [Statistiques](https://www.scansante.fr/applications/statistiques-activite-MCO-par-GHM) de l'activité par GHM sur le site ScanSante

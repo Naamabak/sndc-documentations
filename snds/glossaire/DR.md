@@ -7,4 +7,4 @@ Le diagnostic relié ne peut exister que si le diagnostic principal est un diagn
 
 # Références
 - [Page](https://fr.wikipedia.org/wiki/Programme_de_m%C3%A9dicalisation_des_syst%C3%A8mes_d%27information) wikipédia  
-- - Plus d'informations dans le [glossaire](https://www.atih.sante.fr/glossaire) et sur le [site](https://www.atih.sante.fr/) de l'ATIH
+- Plus d'informations dans le [glossaire](https://www.atih.sante.fr/glossaire) et sur le [site](https://www.atih.sante.fr/) de l'ATIH
