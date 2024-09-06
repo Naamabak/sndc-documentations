@@ -8,6 +8,11 @@ tags:
     - Référentiels bénéficiaires
 ---
 
+# Historique des données du SNDS
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+<TagLinks />
+
 ::: tip Crédits
 Le contenu original de cette fiche provient du document [Historique des données du SNDS](/files/INDS/historique_donnees/2019_INDS_Historique-des-données-SNDS_MPL-2.0.pptx) [INDS - 2019 - MPL-2.0].
 
@@ -15,11 +20,6 @@ Cette fiche a été intialement rédigée par Anne Cuerq à partir des référen
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
-
-# Historique des données du SNDS
-<!-- SPDX-License-Identifier: MPL-2.0 -->
-
-<TagLinks />
 
 Cette présentation illustre l'historique de la disponibilité d'informations relatives :
 - aux bénéficiaires de soins,
