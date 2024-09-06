@@ -1,6 +1,10 @@
 # Tables
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
+::: warning
+Cette partie est actuellement en cours de mise-à-jour.
+:::
+
 Cette partie décrit les tables du SNDS et leurs schémas. 
 
 Les informations structurées de cette section sont générées automatiquement à partir du [schema formalisé du SNDS](https://gitlab.com/healthdatahub/schema-snds), qui alimente également le [dictionnaire interactif](https://health-data-hub.shinyapps.io/dico-snds/).
