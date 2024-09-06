@@ -14,9 +14,13 @@ tags:
 <TagLinks />
 
 ::: tip Crédits
-Le contenu original de cette fiche provient du document [Historique des données du SNDS](/files/INDS/historique_donnees/2019_INDS_Historique-des-données-SNDS_MPL-2.0.pptx) [INDS - 2019 - MPL-2.0].
 
-Cette fiche a été intialement rédigée par Anne Cuerq à partir des références (1) et (2), avec des contributions de Tim Vlaar à partir des références (3) et (4).
+Le contenu original de cette fiche provient du document [Historique des données du SNDS](/files/INDS/historique_donnees/2019_INDS_Historique-des-données-SNDS_MPL-2.0.pptx) [INDS - 2019 - MPL-2.0].  
+
+**Autorat et mises-à-jour**
+- Rédigée par Anne Cuerq à partir des références (1) et (2), avec des contributions de Tim Vlaar à partir des références (3) et (4) (cf. section références).  
+- *07/12/2020* - MAJ des deux images de la section "Historique de l'information et des régimes dans les bases du SNDS" suite à l'intégration des données de causes médicales de décès pour les années 2006 à 2012 + 2016. Plus d'informations dans la [documention](../formation_snds/documents_cnam/guide_cepidc/Avant_propos.md) de la Cnam et du CépiDC. NB : Graphique de disponibilités des données selon les années et régimes par Lisa Cahour.  
+- *04/06/2024* - Contribution d'Albert Vuagnat pour le tableau : Régimes disponibles et années de présence dans les tables.  
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
@@ -69,17 +73,3 @@ Le PMSI enregistre l’ensemble des séjours hospitaliers en France quel que soi
 
 (4) *Tableaux de chargement du DCIR de la documentation du portail SNDS de la CNAM*
 
-
-:::tip Mises à jour de la fiche 
-
-<mark>07/12/2020</mark>
-
-Suite à l'intégration des données de causes médicales de décès pour les années 2006 à 2012 + 2016, les deux images de la section "Historique de l'information et des régimes dans les bases du SNDS" ont été modifiées et rechargées (date de chargement des données : 07/09/2020).
-
-Pour plus d'informations sur l'intégration des causes médicales de décès dans le SNDS, vous pouvez vous reporter à la [documentation rédigée par la Cnam (Laurence De Roquefeuil et départements DEMSI, DATAD et DFID), avec l’aide de Grégoire Rey, Karim Bounebache et Claire Imbaud (INSERM – CépiDc)](../formation_snds/documents_cnam/guide_cepidc/Avant_propos.md), et Lisa Cahour pour le graphique de disponibilités des données selon les années et régimes.
-
-<mark>04/06/2024</mark>
-
-Contribution d'Albert Vuagnat pour le tableau : Régimes disponibles et années de présence dans les tables.
-
-:::
