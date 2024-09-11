@@ -12,8 +12,6 @@ Le modèle OMOP-CDM est utilisé pour des études cliniques observationnelles f�
 **Maturité / Utilisation** :
 La version la plus récente est la v6.0 (avril 2023), mais les versions v5.3 et v5.4 sont plus couramment utilisées car elles sont compatibles avec les outils OHDSI. OMOP-CDM est largement adopté à l'international, notamment en Europe (réseau EHDEN), aux États-Unis, en Corée du Sud et en Chine.
 
-
-
 ## 1.Général
 
 ### Présentation
@@ -23,8 +21,6 @@ La version la plus récente est la v6.0 (avril 2023), mais les versions v5.3 et 
   - **Consortium d’origine** :
 *Food and Drug Administration (FDA)*,  standard développé 2008[^1]
 
-
-
   - **Type de standard** :
 Schéma de données
 
@@ -33,8 +29,6 @@ OMOP-CDM est un schéma de données qui facilite l'interopérabilité entre diff
 
   - **Organisme en charge** :
 OHDSI[^2]
-
-
 
 
  ### Application
@@ -153,8 +147,8 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 
 ### Modalités d'accès et distribution des solutions basées sur ce standard** :
 
- - Le modèle OMOP-CDM est open source publié sous la **licence Apache 2.0**[^13] ;
- - Les outils OHDSI compatibles avec OMOP-CDM sont **open source** sous la **licence Apache 2.0[^14] et accessibles en ligne** ;
+ - Le modèle OMOP-CDM est open source publié sous la **licence Apache 2.0** [^13] ;
+ - Les outils OHDSI compatibles avec OMOP-CDM sont **open source** sous la **licence Apache 2.0 et accessibles en ligne**[^14] ;
 L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence** : certains vocabulaires peuvent être utilisés **gratuitement et librement** tandis que d’autres nécessitent une **licence payante** ;
    - Par exemple, pour utiliser **SNOMED-CT**, une licence est requise : la licence est gratuite dans les pays membres de SNOMED International mais payante pour les utilisateurs des pays non-membres[^15]. Cependant, depuis juin 2022, un accord entre OHDSI et SNOMED International permet aux utilisateurs d’OMOP-CDM d’utiliser SNOMED-CT dans le cadre de la création du modèle et de l’utilisation des outils associés[^16] (mais pas pour des usages en dehors du cadre d’OMOP-CDM, sauf s’ils disposent d’une licence par ailleurs).
    - Dans l'**outil Athena**, l'utilisation du moteur de recherche est libre mais le téléchargement des vocabulaires nécessite une inscription gratuite[^17]. Sur la page de téléchargement, les licences pré-requises sont listées, le cas échéant.
@@ -239,7 +233,7 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
 
    
 
-- Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP[^33][^34].
+- Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP[^33,34].
 
 
 ### Communication avec d'autres standards (inter typologies de standards) :
@@ -524,7 +518,7 @@ _Source : [OHDSI - Data Quality Dashboard
    <img src="../files_and_images/omop_cdm/omop_Fig_4.png" width=""/>    
 
 
-   *Tableau 5 : Deuxième exemple de sortie du Data Quality Dashboard
+   Tableau 5 : Deuxième exemple de sortie du Data Quality Dashboard
 , Source : [Data Data Quality Dashboard](https://data.ohdsi.org/DataQualityDashboard/)*
 </p>  
 
@@ -557,9 +551,6 @@ _Source : [OHDSI - Data Quality Dashboard
 [^74]: Voir GitHub : GitHub - EHDEN/CdmInspection: R Package to support quality control inspection of an OMOP-CDM instance
 
 
-
-
-
 ## 5.Utilisation
  ### Simplicité d'usage :
   - La simplicité d'usage peut être définie à partir de plusieurs critères.
@@ -571,7 +562,7 @@ _Source : [OHDSI - Data Quality Dashboard
    - Forum OHDSI[^20]
 
 ### Outils de mapping :
-   - **Mapping sémantique : Usagi**[^76][^77], (outil OHDSI) fait des suggestions de mapping basées sur la similarité textuelle entre les libellés des codes sources et ceux des codes standards
+   - **Mapping sémantique : Usagi**[^76,77], (outil OHDSI) fait des suggestions de mapping basées sur la similarité textuelle entre les libellés des codes sources et ceux des codes standards
 
 - Outils compatibles :
   - Outils développés par OHDSI :
