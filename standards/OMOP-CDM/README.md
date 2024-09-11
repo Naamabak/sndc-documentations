@@ -147,8 +147,8 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 
 ### Modalités d'accès et distribution des solutions basées sur ce standard** :
 
- - Le modèle OMOP-CDM est open source publié sous la **licence Apache 2.0** [^13] ;
- - Les outils OHDSI compatibles avec OMOP-CDM sont **open source** sous la **licence Apache 2.0 et accessibles en ligne**[^14] ;
+ - Le modèle OMOP-CDM est open source publié sous la **licence Apache 2.0**[^13];
+ - Les outils OHDSI compatibles avec OMOP-CDM sont **open source** sous la **licence Apache 2.0 et accessibles en ligne**[^14];
 L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence** : certains vocabulaires peuvent être utilisés **gratuitement et librement** tandis que d’autres nécessitent une **licence payante** ;
    - Par exemple, pour utiliser **SNOMED-CT**, une licence est requise : la licence est gratuite dans les pays membres de SNOMED International mais payante pour les utilisateurs des pays non-membres[^15]. Cependant, depuis juin 2022, un accord entre OHDSI et SNOMED International permet aux utilisateurs d’OMOP-CDM d’utiliser SNOMED-CT dans le cadre de la création du modèle et de l’utilisation des outils associés[^16] (mais pas pour des usages en dehors du cadre d’OMOP-CDM, sauf s’ils disposent d’une licence par ailleurs).
    - Dans l'**outil Athena**, l'utilisation du moteur de recherche est libre mais le téléchargement des vocabulaires nécessite une inscription gratuite[^17]. Sur la page de téléchargement, les licences pré-requises sont listées, le cas échéant.
@@ -188,9 +188,6 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
 
 [^25] : Voir la liste des outils qui supportent la v5.4 : OMOP CDM v5.4. OHDSI fait la distinction entre le legacy support (c’est-à-dire les outils qui supportent la version précédente, v5.3) et le feature support (c’est-à-dire les outils qui supportent les nouveaux champs de la v5.4). Dans certains cas, les pages GitHub des outils concernés sont plus à jour que la page OHDSI, c’est le cas du DataQualityDashboard et d’Achilles, qui supportent tous les deux la v5.4 d’après leurs pages respectives :  https://github.com/OHDSI/DataQualityDashboard, GitHub - OHDSI/Achilles: Automated Characterization of Health Information at Large-scale Longitudinal Evidence Systems (ACHILLES) - descriptive statistics about a OMOP CDM database  
 
-[^26]: Les nouvelles versions contiennent les suggestions, remarques et souhaits des utilisateurs et membres envoyés via leur page de signalement de problèmes.
-
-
 ### Existence de financements pour standardisation :
   - **EHDEN** dispose d'un **fond pour soutenir les efforts de standardisation et de normalisation** des données à travers l'Europe[^27]. Il y a eu 3 types d'appels à projets :
    - Covid : appel à projet pour permettre aux organisations détenant des données de patients atteints du Covid de bénéficier d'une aide pour les convertir vers un format standardisé[^28]
@@ -198,12 +195,10 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
    - **Normal** : appel à projet pour les institutions détenant des données de santé pour qu'elles bénéficient d'un financement de départ pour des conversions vers OMOP-CDM[^29]
  - Le premier appel à projet de financement a eu lieu en septembre 2019[^30]. Toutefois, ces derniers **sont terminés depuis octobre 2022**. Depuis, EHDEN est devenue une **entité à but non lucratif**.
 
+[^26]: Les nouvelles versions contiennent les suggestions, remarques et souhaits des utilisateurs et membres envoyés via leur page de signalement de problèmes.
 [^27]:  Voir le site d’EHDEN dédié : Harmonisation Fund – ehden.eu
-
 [^28]: Voir les détails ici : Got COVID-19 patient data? Want to collaborate? IMI’s EHDEN project can help you standardise it.
-
 [^29]:  Voir les détails ici : Small and Medium-sized Enterprise Certification Open Call Description
-
 [^30]:  Voir les détails ici : Data Partner Pilot Call Description | Ehden.eu
 
 
@@ -216,7 +211,6 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
 
 
   [^31]: Voir la page HL7 décrivant le projet : HL7.FHIR.US.CDMH\IG Home Page et le rapport final « Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation », U.S Food & Drug Administration, NIH, The Office of the National Coordinator for Health Information Technology, 2020
-
   [^32]: Voir la page d’implémentation : Reference Implementations | Biomedical Research Integrated Domain Group
 
 
@@ -226,9 +220,8 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
    <img src="../files_and_images/omop_cdm/omop_Fig_2.png" width=""/>    
 
 
-   Figure 2 : Procédure de mapping
-, Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation
-](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)*
+   Figure 2 : Procédure de mapping, Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation
+](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)
 </p>  
 
    
@@ -260,20 +253,12 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
 
 
 [^33]: Voir l’article de Klann JG, Joss MAH, Embree K, Murphy SN (2019) « Data model harmonization for the All Of Us Research Program: Transforming i2b2 data into the OMOP common data model ». PLoS ONE (2019) : Data model harmonization for the All Of Us Research Program: Transforming i2b2 data into the OMOP common data model | PLOS ONE
-
-
 [^34]:  Voir le GitHub : GitHub - i2b2-omop/i2o-transform: PCORnet Ontology to OMOP - beta!
-
 [^35]: Voir la page internet : OMOPonFHIR
-
 [^36]: Voir l’article de Ji H, Kim S, Yi S, Hwang H, Kim JW, Yoo S. « Converting clinical document architecture documents to the common data model for incorporating health information exchange data in observational health studies: CDA to CDM ». J Biomed Inform. 2020 Jul : Converting clinical document architecture documents to the common data model for incorporating health information exchange data in observational health studies: CDA to CDM
-
 [^37]: À savoir les caractéristiques du patient et de la visite d’une part ; le diagnostic, les médicaments administrés, les résultats de tests et la raison pour laquelle le professionnel de santé a envoyé ce patient vers un autre professionnel d’autre part. 
-
 [^38]: Voir : H. Abedtash, J.D. Duke, « CCD2OMOP: An Interoperable Extract-Transform-Load Package to Support the Implementation of OHDSI Software Tools Across Non-OMOP- based Electronic Health Records », OHDSI Symp., 2016. (Converting clinical document architecture documents to the common data model for incorporating health information exchange data in observational health studies: CDA to CDM - ScienceDirect), H. Abedtash, « An interoperable electronic medical record-based platform for personalized predictive analytics », 2017. (https://www.proquest.com/openview/12559a6b4b653b4a5f0a9c6dee43009c/1?pq-origsite=gscholar&cbl=18750)
-
 [^39]: Voir la FAQ OHDSI : OMOP CDM Frequently Asked Questions
-
 [^40]:  Voir l’outil Athena : https://athena.ohdsi.org/search-terms/terms?invalidReason=Valid&standardConcept=Standard&page=1&pageSize=15&query=
 
 
@@ -339,29 +324,15 @@ Aucune contrainte d’implémentation mais il est **recommandé** de disposer d�
   - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 2 ci-dessous.
 
 [^41]: Voir l’article de Garza M, Del Fiol G, Tenenbaum J, Walden A, Zozus MN. « Evaluating common data models for use with a longitudinal community registry ». J Biomed Inform (2016) : Evaluating common data models for use with a longitudinal community registry
-
 [^42]: Voir l’article de Biedermann, P., Ong, R., Davydov, A. et al. « Standardizing registry data to the OMOP Common Data Model: experience from three pulmonary hypertension databases ». BMC Med Res Methodol (2021) : https://doi.org/10.1186/s12874-021-01434-3
-
 [^43]: Les tables, relations et champs ont été comptés à partir des fichiers ddl présents dans le GitHub OMOP-CDM : https://github.com/OHDSI/CommonDataModel/tree/v5.4.0/inst
-
 [^44]: Voir le GitHub : GitHub - OHDSI/WebAPI: OHDSI WebAPI contains all OHDSI services that can be called from OHDSI applications
-
 [^45]: Voir l’article d’Antoine Lamer, Nicolas Depas, Matthieu Doutreligne, Adrien Parrot, David Verloop, Marguerite-Marie Defebvre, Grégoire Ficheur, Emmanuel Chazard, Jean-Baptiste Beuscart, « Transforming French Electronic Health Records into the Observational Medical Outcome Partnership's Common Data Model: A Feasibility Study » (2020) : Transforming French Electronic Health Records into the Observational Medical Outcome Partnership's Common Data Model: A Feasibility Study
-
-[^46]: Les critères de l’extraction sont les suivants : données de 2014 à 2017 pour les patients résidant dans le Valenciennois-Quercitain de 75 ans et plus au 1er janvier 2014. Les données extraites concernent : les caractéristiques des patients, les données sur les séjours en ambulatoire, sur les séjours d’hospitalisation complète et sur les séjours en unité psychiatrique (issues du PMSI) ainsi que les consommations de soins de ville et de médicaments (issues du SNIIRAM). 
-
+[^46]: Les critères de l’extraction sont les suivants : données de 2014 à 2017 pour les patients résidant dans le Valenciennois-Quercitain de 75 ans et plus au 1er janvier 2014. Les données extraites concernent : les caractéristiques des patients, les données sur les séjours en ambulatoire, sur les séjours d’hospitalisation complète et sur les séjours en unité psychiatrique (issues du PMSI) ainsi que les consommations de soins de ville et de médicaments (issues du SNIIRAM).
 [^47]:  Certains codes CIP13 n’ont pas pu être mappés car ils contenaient des informations sur les formulations de médicaments et niveaux de dosage non contenus dans la terminologie intermédiaire utilisée dans le mapping.
-
-
 [^48]: Il s’agit d’un mapping de la version française vers la version internationale.
-
 [^49]:  Dont 85,15 % de mapping exact et 14,79 % incluant une perte partielle. La perte d’information est due au fait que la CIM-10 est plus précise dans certains cas que la ICD-10. 
-
 [^50]:  Voir l’article de Voss EA, Makadia R, Matcho A, et al. « Feasibility and utility of applications of the common data model to multiple, disparate observational health databases ». Journal of the American Medical Informatics Association (2015) : http://europepmc.org/article/MED/25670757
-
-
-
-
 
     
  **Tableau 2 : Pourcentage de codes mappés selon la terminologie source**
@@ -425,21 +396,13 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
      - Il ressort de cette analyse qu'**OMOP-CDM est le schéma de données qui satisfait le plus grand nombre de critères pour ce cas d'usage**. Par conséquent, dans le cas d'études basées sur des données longitudinales issues d'*EHR*, OMOP-CDM est le schéma de données le plus adapté d'après cette méthodologie.
 
 [^51]: La différence dans le pourcentage de termes mappés s’explique par un nombre élevé de codes incorrects dans l’une des 6 bases de données.
-
 [^52]: Les codes READ sont un système de terminologie clinique qui a été largement utilisé en médecine générale au Royaume-Uni jusqu'en 2018.
-
 [^53]: Les codes de médicaments n’ayant pas été mappés (depuis les terminologies suivantes : Standard Charge Code, NDC, Multilex, Immunzations) se réfèrent à des dispositifs médicaux et/ou des produits en vente libre.
-
 [^54]: Voir l’article de Vaclav Papez, Maxim Moinat, Stefan Payralbe, Folkert W Asselbergs, R Thomas Lumbers, Harry Hemingway, Richard Dobson, Spiros Denaxas, « Transforming and evaluating electronic health record disease phenotyping algorithms using the OMOP common data model: a case study in heart failure », JAMIA Open (2021) : Transforming and evaluating electronic health record disease phenotyping algorithms using the OMOP common data model: a case study in heart failure | JAMIA Open | Oxford Academic
-
 [^55]: Voir la liste des SGBDRs dans le GitHub : https://github.com/OHDSI/CommonDataModel/tree/v5.4.0/inst/ddl/5.4 
-
 [^56]: Voir la page internet : EHDEN Academy 
-
 [^57]:  Voir la page YouTube : OHDSI - YouTube 
-
 [^58]:  Voir syllabus Coursera : Clinical Data Models and Data Quality Assessments Course by University of Colorado System | Coursera 
-
 [^59]:  Voir en « Annexe n°1 » et suivantes la requête PubMed et la liste des publications obtenues en résultat.
 
  ### Adoption du standard :
@@ -459,27 +422,19 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
    - **MIRACUM** (*Medical Informatics in Research and Care in University Medicine*)[^62] : un des 4 consortiums fondés par le Ministère fédéral allemand de l'Éducation et de la Recherche (dans le cadre de la *Medical Informatics Initiative*) afin de développer des centres d'intégration de la donnée (« data integration centers ») dans les hôpitaux universitaires allemands.
 
 [^60]: Voir :  EHDEN
-
 [^61]: Voir la revue sur l’utilisation d’OMOP de Reinecke I, Zoch M, Reich C, Sedlmayr M, Bathelt F. « The Usage of OHDSI OMOP - A Scoping Review ». Stud Health Technol Inform : IOS Press Ebooks - The Usage of OHDSI OMOP – A Scoping Review 
-
 [^62]: Voir l’article de Maier C, Lang L, Storf H, Vormstein P, Bieber R, Bernarding J, Herrmann T, Haverkamp C, Horki P, Laufer J, Berger F, Höning G, Fritsch HW, Schüttler J, Ganslandt T, Prokosch HU, Sedlmayr M. « Towards Implementation of OMOP in a German University Hospital Consortium ». Appl Clin Inform (2018) : Towards Implementation of OMOP in a German University Hospital Consortium
-
 [^63]: Voir : https://www.miracum.org/#
-
 [^64]:  Voir la carte et la liste de l’ensemble des consortiums européens utilisant OMOP-CDM : National Nodes in the OHDSI Europe Chapter.
-
 [^65]:  Espagne, Italie, Royaume-Uni, Belgique, Portugal, Allemagne, Pays-Bas, France, Finlande, Croatie, Hongrie, Grèce, Serbie, Turquie, Suède, Suisse, République Tchèque, Israël, Norvège, Danemark, Bulgarie, Ukraine, Monténégro, Luxembourg, Irlande, Estonie, Géorgie, Bosnie Herzégovine, Autriche, voir la source : Data Partners – ehden.eu
-
 [^66]:  Le projet a été lancé en 2018 pour une durée de 5 ans et son financement est assuré principalement par la IMI (Innovative Medicines Initative).
-
 [^67]: Voir la page internet : Big Data Platform - PIONEER - European Network of Excellence for Big Data in Prostate Cancer 
 
 
 <p align="center">
    <img src="../files_and_images/omop_cdm/omop_Fig_3.png" width=""/>    
 
-   *Carte 1 : Liste des pays du réseau EHDEN
-et nombre de partenaires données (Data partners) associés en 2020, Source : [Data Partners – ehden.eu](https://www.ehden.eu/datapartners/)*
+   Carte 1 : Liste des pays du réseau EHDEN et nombre de partenaires données (Data partners) associés en 2020, Source : [Data Partners – ehden.eu](https://www.ehden.eu/datapartners/)
 </p>  
 
    - Hors Europe : États-Unis41, Corée du Sud et Singapour[^68], Chine[^60]
@@ -518,8 +473,7 @@ _Source : [OHDSI - Data Quality Dashboard
    <img src="../files_and_images/omop_cdm/omop_Fig_4.png" width=""/>    
 
 
-   Tableau 5 : Deuxième exemple de sortie du Data Quality Dashboard
-, Source : [Data Data Quality Dashboard](https://data.ohdsi.org/DataQualityDashboard/)*
+   Tableau 5 : Deuxième exemple de sortie du Data Quality Dashboard, Source : [Data Data Quality Dashboard](https://data.ohdsi.org/DataQualityDashboard/)
 </p>  
 
 
@@ -529,7 +483,7 @@ _Source : [OHDSI - Data Quality Dashboard
    <img src="../files_and_images/omop_cdm/omop_Fig_5.png" width=""/>    
 
 
-   *Figure 3 : Exemple de sortie d’ACHILLES, Source : [Software Tools – OHDSI](https://www.ohdsi.org/software-tools/)*
+  Figure 3 : Exemple de sortie d’ACHILLES, Source : [Software Tools – OHDSI](https://www.ohdsi.org/software-tools/)
 </p>  
 
   
@@ -537,17 +491,11 @@ _Source : [OHDSI - Data Quality Dashboard
   - **CDMInspection**[^74] est un package R qui reprend une partie des résultats des tests issus d'ACHILLES et du Data Quality Dashboard. Il permet de générer un rapport PDF sur la qualité des données qui peut ensuite être partagé.
 
   [^68]:  Voir l’article de Tan HX, Teo DCH, Lee D, Kim C, Neo JW, Sung C, Chahed H, Ang PS, Tan DSY, Park RW, Dorajoo SR. « Applying the OMOP Common Data Model to Facilitate Benefit-Risk Assessments of Medicinal Products Using Real-World Data from Singapore and South Korea ». Healthc Inform Res : Applying the OMOP Common Data Model to Facilitate Benefit-Risk Assessments of Medicinal Products Using Real-World Data from Singapore and South Korea
-
   [^69]: Voir la liste complète de toutes les PME certifiées EHDEN en Europe : Business Directory – ehden.eu
-
   [^70]: Cegedim a OMOPisé la base de données de santé en vie réelle THIN (qui contient des données européennes issues d’EHR) : THIN® : The Health Improvement Network - Cegedim Health Data
-  
   [^71]: Voir la description des travaux sur le BPE Data Model : https://www.bordeauxpharmacoepi.eu/expertise/#capacites-tech
-
  [^72]:  Voir l’outil Data Quality Dashboard (DQD) : OHDSI - Data Quality Dashboard
-
  [^73]:  Voir GitHub : GitHub - OHDSI/Achilles: Automated Characterization of Health Information at Large-scale Longitudinal Evidence Systems (ACHILLES) - descriptive statistics about a OMOP CDM database
-
 [^74]: Voir GitHub : GitHub - EHDEN/CdmInspection: R Package to support quality control inspection of an OMOP-CDM instance
 
 
@@ -578,28 +526,16 @@ _Source : [OHDSI - Data Quality Dashboard
  - Possibilité d’utiliser l’API i2b2 avec l’ontologie ACT-OMOP pour interroger les tables OMOP-CDM dès mars 2023[^85]
 
 [^75]: L’article qualifie le temps de prise en main de la manière suivante pour les 4 schémas de données : « Little » (pour Sentinel et PCORnet) et « Some » (OMOP-CDM et CDISC SDTM).
-
 [^76]:  Voir le GitHub : GitHub - OHDSI/Usagi: Usagi is an application to help create mappings between coding systems and the Vocabulary standard concepts.
-
 [^77]:  Voir Usagi : Usagi 
-
 [^78]:  Voir le GitHub : GitHub - OHDSI/WhiteRabbit: WhiteRabbit is a small application that can be used to analyse the structure and contents of a database as preparation for designing an ETL. It comes with RabbitInAHat, an application for interactive design of an ETL to the OMOP Common Data Model with the help of the the scan report generated by White Rabbit.
-
 [^79]: Voir Rabbit-In-a-Hat : Rabbit in a Hat
-
 [^80]: Voir GitHub : GitHub - OHDSI/Hades: Health Analytics Data-to-Evidence Suite (HADES): A collection of R packages for performing analytics against the Common Data Model.
-
 [^81]: Voir GitHub : GitHub - OHDSI/FeatureExtraction: An R package for generating features (covariates) for a cohort using data in the Common Data Model.
-
 [^82]: Voir le GitHub dédié à CohortDiagnostics : GitHub - OHDSI/CohortDiagnostics: An R package for performing various cohort diagnostics.
-
 [^83]:  Voir le GitHub dédié au package CDM : GitHub - OHDSI/CommonDataModel: Definition and DDLs for the OMOP Common Data Model (CDM)
-
 [^84]: Voir le GitHub dédié à ARES : GitHub - OHDSI/Ares: A Research Exploration System
-
 [^85]:  Voir : https://community.i2b2.org/wiki/display/getstarted/%5BDRAFT%5D+OMOP#:~:text=Utilizing%20i2b2%27s%20reusable%20application%20programming%20interface%20%28API%29%20to,to%20query%20OMOP%20tables%20using%20the%20i2b2%20interface.
-
-
 
 
 ### Décrire les étapes nécessaires pour la standardisation :
@@ -631,9 +567,7 @@ La Figure 4 ci-dessous illustre les étapes décrites précédemment en spécifi
    <img src="../files_and_images/omop_cdm/omop_Fig_6.png" width=""/>    
 
 
-   *Figure 4 : Schéma du processus ETL détaillé avec les outils OHDSI
-, Source : [Schéma réalisé par Veltys
-]()*
+   Figure 4 : Schéma du processus ETL détaillé avec les outils OHDSI, Source : [Schéma réalisé par Veltys]
 </p>  
 
 
