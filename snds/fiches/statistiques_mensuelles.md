@@ -8,6 +8,14 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été publiée en septembre 2019.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
+
 Statistiques de dépenses par type de risque, publiées chaque mois par l'Assurance maladie. 
 
 ## Périmètre
