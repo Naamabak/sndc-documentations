@@ -651,7 +651,7 @@ La Figure 4 ci-dessous illustre les étapes décrites précédemment en spécifi
 
 # Annexes
 
- ###Annexe n°1 : Analyse quantitative de la littérature sur OMOP-CDM et des thématiques associées à partir de PubMed
+ ### Annexe n°1 : Analyse quantitative de la littérature sur OMOP-CDM et des thématiques associées à partir de PubMed
 
 Première étape : Sur PubMed (PubMed), on réalise une première requête générale sur OMOP-CDM. La recherche du mot-clé « OMOP » renvoie 236 résultats. À partir des résultats obtenus, on identifie plusieurs groupes de thématiques. Pour chacune d’entre elles, le nombre d’articles associés est comptabilisé en réalisant des sous-requêtes.
 
@@ -667,7 +667,7 @@ La liste des publications obtenues en sortie de chacune de ces requêtes est dé
 
 
 
-###Annexe n°2 : Extrait de la liste des publications obtenues en résultat de la requête « Médicaments »
+### Annexe n°2 : Extrait de la liste des publications obtenues en résultat de la requête « Médicaments »
 
 1. Trifirò G, Coloma PM, Rijnbeek PR, Romio S, Mosseveld B, Weibel D, Bonhoeffer J, Schuemie M, van der Lei J, Sturkenboom M. Combining multiple healthcare databases for postmarketing drug and vaccine safety surveillance: why and how? J Intern Med. 2014 Jun;275(6):551-61. doi: 10.1111/joim.12159. PMID: 24635221.
 2. Dimitriadis VK, Gavriilidis GI, Natsiavas P. Pharmacovigilance and Clinical Environment: Utilizing OMOP-CDM and OHDSI Software Stack to Integrate EHR Data. Stud Health Technol Inform. 2021 May 27;281:555-559. doi: 10.3233/SHTI210232. PMID: 34042637.
