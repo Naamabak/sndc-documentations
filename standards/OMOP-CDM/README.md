@@ -1,7 +1,7 @@
 # OMOP-CDM  
 
 
-###SYNTHÈSE
+### SYNTHÈSE
 
 **Description et type de standard** :
 OMOP-CDM (Observational Medical Outcomes Partnership - Common Data Model) est un modèle relationnel de données développé par la FDA (*Food and Drug Administration*) en 2008 et actuellement maintenu par OHDSI (*Observational Health Data Sciences and Informatics*). Ce schéma de données standardise la structure et la sémantique des bases de données de santé pour faciliter l’interopérabilité et l’analyse des données de santé.
@@ -117,7 +117,7 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 <p align="center">
    <img src="../files_and_images/omop_cdm/omop_Fig_1.png" width=""/>
 
-   _Figure 1 : Liste des tables contenues dans la v5.4 d'OMOP-CDM, Source  : [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/)
+   Figure 1 : Liste des tables contenues dans la v5.4 d'OMOP-CDM, Source  : [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/)
 </p>
 
 
@@ -145,7 +145,7 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 - (2) Sur le deuxième point, la facilité à réaliser le mapping syntaxique est difficile à évaluer de manière générale (se référer aux éléments d'évaluation de l'intensité de la perte de données au mapping de la partie 3. Technique ; cf. l’élément « Intensité de la perte de données au mapping»)
 
 
-##2.Gouvernance
+## 2.Gouvernance
 
 ### Libre accès aux schémas de données : Oui[^12]
 
@@ -232,7 +232,7 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
    <img src="../files_and_images/omop_cdm/omop_Fig_2.png" width=""/>    
 
 
-   *Figure 2 : Procédure de mapping
+   Figure 2 : Procédure de mapping
 , Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation
 ](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)*
 </p>  
