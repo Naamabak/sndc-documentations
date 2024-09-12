@@ -15,6 +15,8 @@ tags:
 
 Cette fiche a été créée par la direction DATA de Santé publique France
 
+Cette fiche se base sur une version originale datant du 30/04/2018 et a été mise à jour le 30/10/2020
+
 *À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
 
@@ -104,9 +106,4 @@ Lorsqu'une exonération est créée, la date de mise à jour n'est pas renseign�
 Le programme SAS est accessible dans le dépôt **programme-snds**, dossier [**Sante_publique_France**](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master/Sante_publique_France).
 * ald_select_par_code_cim.sas
 
-## Références
-
-::: tip Mise à jour
-Cette fiche se base sur une version originale datant du 30/04/2018 et a été mise à jour le 30/10/2020
-:::
 
