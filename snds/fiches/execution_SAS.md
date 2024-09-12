@@ -9,6 +9,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche provient d'un [document publié](../files/Cnam/2019-10_Cnam_Recommandations-SAS_MPL-2.0.pdf) par la Cnam en octobre 2019.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## Introduction
 
 Pour éviter tout abus lors de la création des programmes SAS sur le portail SNDS, certaines règles sont à suivre. Ces règles permettent une bonne exécution de l'ensemble des programmes SAS des utilisateurs sans blocage au niveau des serveurs.
@@ -64,8 +71,4 @@ Une demande d'augmentation de la taille de sasdata1 peut être faite auprès de 
 
 Un fichier "*Bonnes Pratiques SAS_V1.6.doc*" est également disponible sur le portail, ce fichier contient des informations complémentaires à cette fiche.
 
-## Références
 
-::: tip Crédits
-Cette fiche provient d'un [document publié](../files/Cnam/2019-10_Cnam_Recommandations-SAS_MPL-2.0.pdf) par la Cnam en octobre 2019
-:::

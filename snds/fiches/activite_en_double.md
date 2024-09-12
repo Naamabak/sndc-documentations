@@ -11,6 +11,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par Albert VUAGNAT (DREES) et complétée par Naby Dia (HDH)
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## Contexte
 
 À la demande des services régionaux de tutelle (ARH, puis ARS), l’Assistance publique – Hôpitaux de Marseille (AP-HM), les Hospices Civils de Lyon (HCL), l’Assistance publique – Hôpitaux de Paris (AP-HP) ont transmis leurs fichiers d’activité PMSI en double, d’une part avec le numéro Finess (`ETA_NUM`) de l’entité juridique (qui reçoit le financement) et d’autre part avec le numéro Finess de l’établissement où la prise en charge a effectivement eu lieu, ceci afin de permettre des analyses territoriales de l’activité eu égard à l’étendue géographique de ces structures multi-sites, au sein d’importantes agglomérations. 
@@ -172,6 +179,3 @@ run;
 
 ```
 
-::: tip Crédits
-Cette fiche a été rédigée par Albert VUAGNAT (DREES) et complétée par Naby Dia (HDH)
-:::

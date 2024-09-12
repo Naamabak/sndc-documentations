@@ -13,6 +13,15 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par Emeline HEYNDRICKX-GALLIN.  
+
+Les ressources suivantes ont été utilisées : [Ameli](https://www.ameli.fr/assure/remboursements/indemnites-journalieres), [site du Service Public](https://www.service-public.fr/particuliers/vosdroits/F3053), [MSA](http://www.msa.fr/lfy/sante/ij-amexa) et [le régime des indépendants](https://www.secu-independants.fr/sante/indemnites-journalieres/).  
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 L'abréviation IJ pour indemnités journalières sera utilisée pour cette fiche.
 
 ## IJ dans le RG - cas du salarié
@@ -189,7 +198,4 @@ Il s’agit de la variable `RGO_ASU_NAT` dans la table `ER_PRS_F`.
 |40 | AT/MP|
 
 
-::: tip Crédits
-Cette fiche a été rédigée par Emeline HEYNDRICKX-GALLIN.  
-Les ressources suivantes ont été utilisées : [Ameli](https://www.ameli.fr/assure/remboursements/indemnites-journalieres), [site du Service Public](https://www.service-public.fr/particuliers/vosdroits/F3053), [MSA](http://www.msa.fr/lfy/sante/ij-amexa) et [le régime des indépendants](https://www.secu-independants.fr/sante/indemnites-journalieres/).  
-:::
+

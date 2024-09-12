@@ -9,6 +9,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche provient d'un [document publié](/files/Cnam/2019-10_Cnam_Appariement_MPL-2.0.pdf) par la Cnam en Octobre 2019.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## Définition
 
 Un appariement consiste à associer des données externes au SNDS, via des informations communes sur les bénéficiaires, les [professionnels de santé](../glossaire/PS.md), ou autres. 
@@ -116,8 +123,4 @@ Le 100% est donc difficilement atteignable.
 La qualité des données initiale est donc primordiale pour un appariement indirect réussi.
 
 
-## Références
 
-::: tip Crédits
-Cette fiche provient d'un [document publié](/files/Cnam/2019-10_Cnam_Appariement_MPL-2.0.pdf) par la Cnam en Octobre 2019.
-:::

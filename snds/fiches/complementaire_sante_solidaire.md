@@ -12,6 +12,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits  
+
+Cette fiche a été rédigée par Céline Leroy (ARS) et Kristel Jacquier (DSS).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 A partir du 1er novembre 2019, l'[ACS](../fiches/acs.md) et la [CMU-C](../fiches/cmu_c.md) ont fusionné pour former 
 la [Complémentaire Santé Solidaire](https://www.complementaire-sante-solidaire.gouv.fr/).
 On distingue la C2S et la C2SP selon que les bénéficiaires participent ou non au paiement de sa complémentaire.
@@ -97,7 +104,4 @@ Sinon elle signifie "sans objet".
 - Présentation de Céline Leroy au comité utilisateurs SNDS 
 - Comité partenaires DCIR/PMSI de la CNAM des 9 mars et 16 novembre 2020
 
-::: tip Crédits  
-Cette fiche a été rédigée par Céline Leroy (ARS) et Kristel Jacquier (DSS).
-:::
 

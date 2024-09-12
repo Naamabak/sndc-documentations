@@ -11,6 +11,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été créée par la direction DATA de Santé publique France
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 La fiche décrit une requête type de sélection de séjours hospitaliers dans les tables du PMSI-MCO à partir des diagnostics principaux (DP), des diagnostics reliés (DR) et/ou des diagnostics associés significatifs (DAS).  
 Des variables relatives au patient, au séjour et à l'établissement sont restituées en sortie.  
 
@@ -161,10 +168,6 @@ Le programme SAS est accessible dans le dépôt **programme-snds**, dossier [**S
 * pmsi_mco_select_sejours_par_diag.sas
 
 ## Références
-
-:::tip Crédits
-Cette fiche a été créée par la direction DATA de Santé publique France
-:::
 
 :::tip Mise à jour
 Cette fiche se base sur une version originale datant du 29/04/2019 et a été mise à jour le 08/06/2020.

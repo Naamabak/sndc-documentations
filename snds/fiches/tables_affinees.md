@@ -10,6 +10,14 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Le contenu de cette fiche s'appuie fortement sur les présentations faites par la CNAM lors des formations au DCIR-DCIRS. 
+Elle a été rédigée par Kristel Jacquier (DSS) et Raphaële Adjerad (DREES).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Certains actes de la table centrale des prestations (`ER_PRS_F` dans le DCIR et `NS_PRS_F` dans le DCIRS) donnent lieu
 à un acte affiné. On appelle **acte affiné**, toute prestation à un niveau plus fin que le code prestation (`PRS_NAT`). 
 Il peut s'agir par exemple d'un code CIP ou d'un code CCAM.
@@ -564,10 +572,4 @@ mais cette fois le montant payé associé à un code affiné est proportionnel �
 - Outils [KWIKLY](https://documentation-snds.health-data-hub.fr/snds/aller_plus_loin/documents_cnam/kwikly.html) - Le Katalogue des données SNIIRAM-SNDS
 - Formation DCIR/DCIRS de la Cnam disponible [ici](https://documentation-snds.health-data-hub.fr/snds/formation_snds/documents_cnam/Formation_demex.html)
 
-
-::: tip Crédits
-Le contenu de cette fiche s'appuie fortement sur les présentations faites par la CNAM lors des formations au DCIR-DCIRS. 
-Elle a été rédigée par Kristel Jacquier (DSS) et Raphaële Adjerad (DREES).
-
-:::
 

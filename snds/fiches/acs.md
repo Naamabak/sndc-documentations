@@ -12,6 +12,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits 
+
+Cette fiche a été rédigée par Raphaële ADJERAD (DREES), relue par Claire-Lise DUBOST (DREES), Kristel JACQUIER (DSS) et Romain LOISEAU (DREES)
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Cette fiche aborde une variable parmi l'ensemble des variables socio-démographiques, pour une description plus globale se référer à la [fiche sur les variables socio-démographiques](../fiches/variables_sociodemo.md). 
 
 ## Définition 
@@ -111,9 +118,6 @@ différence entre le comptage à partir de la table des prestations ou la table 
 L'effectif donné par le Fonds CMU est  un effectif pris au 31/12/2016.
 
 
-::: tip Crédits  
-Cette fiche a été rédigée par Raphaële ADJERAD (DREES), relue par Claire-Lise DUBOST (DREES), Kristel JACQUIER (DSS) et Romain LOISEAU (DREES)
-:::
 
 ## Références
 

@@ -12,6 +12,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA. 
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## Graphique pour Parcourir le SNDS
 
 Le Graphique pour Parcourir le SNDS (GPS) est un outil de visualisation développé par la société [Heva](https://hevaweb.com/fr). Il a pour objectif d’aider à appréhender la complexité de structure du SNDS (cf. [schéma relationnel du SNDS](../formation_snds/initiation/schema_relationnel_snds.md) et d’aider à localiser les informations d’un parcours de soins bénéficiaires. Cet outil permet d’identifier les différentes sources de données ([DCIR](../glossaire/DCIR.md)  et [PMSI](../glossaire/PMSI.md)) et les tables à utiliser dans la confection des requêtes pour travailler sur le SNDS.
@@ -62,7 +69,4 @@ Vous pouvez télécharger le fichier Excel suivant pour plus d'explications : [f
 Cette fiche est une mise à jour de l'ancienne version : Graphique pour Parcourir le Sniiram  
 ![GPS](/files/HEVA/2019-06-18_HEVA_graph_parcourir_sniiram_MPL-2.0.jpg)
 
-::: tip Crédits  
-Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.  
-:::
 

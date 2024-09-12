@@ -8,6 +8,18 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Ce document a été initialement publié sur le portail SNDS de la Cnam en décembre 2019. 
+
+Il a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches.
+
+Il est [téléchargeable ici](/files/Cnam/SNDS_Fiches_Thematiques_SLM-Mutuelles_MLP_2.0.docx) dans sa version d'origine.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
+
 ## Notions préalables sur les organismes de liquidation / d’affiliation 
 
 On note SLM la Section Locale Mutualiste, c’est-à-dire une mutuelle complémentaire qui propose à ses adhérents affiliés au régime général, un service de gestion de la part obligatoire remboursée par la sécurité sociale. 
@@ -109,10 +121,3 @@ Un tableau de suivi des codifications des SLM est disponible
 :::
 
 
-## Références
-::: tip Ressources
-Ce document a été initialement publié sur le portail SNDS de la Cnam en décembre 2019. 
-
-Il a été rédigé par la Cnam et a été converti en Markdown pour être publié ici, et servir plus facilement de ressources pour d'autres fiches.
-Il est [téléchargeable ici](/files/Cnam/SNDS_Fiches_Thematiques_SLM-Mutuelles_MLP_2.0.docx) dans sa version d'origine.
-:::

@@ -8,6 +8,15 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée à partir d'un document rédigé par la CNAM.
+
+Version : Juillet 2021
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Un référentiel simplifié des Professionnels de Santé, permettant de regrouper l’activité de tous les cabinets d’un [PS](../glossaire/PS.md) sur son N° PS de chaînage statistique, est mis à disposition des utilisateurs SNDS accédant aux données individuelles bénéficiaires exhaustives dans la bibliothèque ORAVUE. Vous trouverez la liste des variables en fin de communiqué. La vue disponible sur le portail est une extraction de la DA_PRA_R sur son périmètre SNDS.
 
 ## Période de chargement du référentiel
@@ -117,8 +126,3 @@ Définition des codes de classification des laboratoires.
 | 09                         | CENTRE TRANSFUSION SANGUINE (LABO PRIVE)  |
 
 
-::: tip Auteur et version
-Cette fiche a été rédigée à partir d'un document rédigé par la CNAM.
-
-Version : Juillet 2021
-:::

@@ -14,6 +14,16 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Fiche MAJ en juillet 2024 en utilisant : 
+* [Méthode de la cartographie des pathologies et des dépenses de l'Assurance Maladie](https://www.assurance-maladie.ameli.fr/etudes-et-donnees/par-theme/pathologies/cartographie-assurance-maladie/methode-cartographie-pathologies-depenses-assurance-maladie#text_164994) où se trouvent l’ensemble des informations et détails sur la méthodologie, les top pathologies, les dépenses, etc.
+* le communiqué de la version G10 de la cartographie de la Cnam (document disponible pour les utilisateurs ayant accès au portail de la Cnam)  
+* Relecture par Antoine Rachas (Cnam)
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 
 ## Présentation
 
@@ -177,9 +187,4 @@ proc sql;
 quit;  
 ```
   
-::: tip Crédit  
-Fiche MAJ en juillet 2024 en utilisant : 
-* [Méthode de la cartographie des pathologies et des dépenses de l'Assurance Maladie](https://www.assurance-maladie.ameli.fr/etudes-et-donnees/par-theme/pathologies/cartographie-assurance-maladie/methode-cartographie-pathologies-depenses-assurance-maladie#text_164994) où se trouvent l’ensemble des informations et détails sur la méthodologie, les top pathologies, les dépenses, etc.
-* le communiqué de la version G10 de la cartographie de la Cnam (document disponible pour les utilisateurs ayant accès au portail de la Cnam)  
-* Relecture par Antoine Rachas (Cnam)
-:::
+

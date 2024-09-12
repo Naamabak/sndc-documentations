@@ -10,6 +10,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits 
+
+Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande par le Health Data Hub afin d’accompagner une économiste de la santé de l’Université Paris Dauphine souhaitant déposer un projet mobilisant des données du SNDS et ayant besoin de documenter la population potentiellement concernée par son projet de recherche.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Cette fiche vise à proposer les éléments nécessaires à la construction d'indicateurs sur la thématique des ayants-droits, à partir des données du SNDS.
 
 Le statut d’ayant droit est défini par le fait de ne pas avoir de droit ouvert à son propre nom, mais sous le compte d’un assuré (exemple : enfant ayant-droit de l’un de ses 2 parents, ou des 2). A noter que depuis le 1er janvier 2016, dans le cadre de la mise en place de la Protection Universelle Maladie dite [PUMa](https://solidarites-sante.gouv.fr/affaires-sociales/securite-sociale/article/la-mise-en-place-de-la-protection-universelle-maladie), les modalités d’affiliation ont évolué. La PUMa garantit en effet à toute personne (majeure ou de plus de 16 ans) qui travaille ou réside en France, un droit à la prise en charge des frais de santé. L'individu est alors son propre assuré et le statut d’ayants-droits ne concerne plus que les enfants.
@@ -88,10 +95,4 @@ Clé de lecture :
 - Ce nombre est en baisse de 8,4% par rapport à l’année précédente.
 - Parmi ces 2 224 200 personnes, 89% sont des femmes.
 
-
-## Références
-
-:::tip Crédits
-Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande par le Health Data Hub afin d’accompagner une économiste de la santé de l’Université Paris Dauphine souhaitant déposer un projet mobilisant des données du SNDS et ayant besoin de documenter la population potentiellement concernée par son projet de recherche.
-:::
 

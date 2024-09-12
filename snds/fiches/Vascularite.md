@@ -11,6 +11,15 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande pour l’association [France Vascularite](https://www.health-data-hub.fr/france-vascularites). 
+
+L’objectif était que cette dernière dispose d’indicateurs pour estimer la population concernée par ces pathologies et leurs principales caractéristiques.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Cette fiche vise à proposer une méthode d’identification de la population prise en charge pour vascularite en France en 2020 et à présenter les caractéristiques de cette populatoin en terme de volumétrie, âge, sexe et répartition régionale.
 
 Les vascularites sont des maladies rares auto-immunes se caractérisant par une inflammation de la paroi des vaisseaux sanguins. 
@@ -101,11 +110,4 @@ L’ensemble des résultats produits peuvent être consultés [ici](/files/HDH/R
 
 Les effectifs inférieurs à 50 ne sont pas restitués.
 
-
-## Références
-
-:::tip Crédit
-Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande pour l’association [France Vascularite](https://www.health-data-hub.fr/france-vascularites). 
-L’objectif était que cette dernière dispose d’indicateurs pour estimer la population concernée par ces pathologies et leurs principales caractéristiques.
-:::
 

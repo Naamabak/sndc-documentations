@@ -10,6 +10,15 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche provient en partie d'un [document publié](/files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
+- https://www.france-mvo.fr/wp-content/uploads/2019/10/CIP-GS1-Guide-de-lecture-du-DataMatrix-sur-les-medicaments.pdf
+- https://www.cipmedicament.org/wp-content/uploads/2020/04/CIP-ACL-n%C2%B028-Les-Cahiers-CIP-ACL-Harmonisation-des-libell%C3%A9s-des-m%C3%A9dicaments-hom%C3%A9opathiques-%C3%A0-nom-commun.pdf
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## Identification des médicaments
 ### Code CIP
 
@@ -167,12 +176,6 @@ quit;
 ![schema 3](/files/Cnam/images_ciblage_medicaments/Medicaments_schema3.png)
 
 ## Références
-
-::: tip Crédits
-Cette fiche provient en partie d'un [document publié](/files/Cnam/2019-10_Cnam_Programmes-SAS-Medicaments_MPL-2.0.doc) créé par la Cnam en octobre 2019.
-- https://www.france-mvo.fr/wp-content/uploads/2019/10/CIP-GS1-Guide-de-lecture-du-DataMatrix-sur-les-medicaments.pdf
-- https://www.cipmedicament.org/wp-content/uploads/2020/04/CIP-ACL-n%C2%B028-Les-Cahiers-CIP-ACL-Harmonisation-des-libell%C3%A9s-des-m%C3%A9dicaments-hom%C3%A9opathiques-%C3%A0-nom-commun.pdf
-:::
 
 ::: tip Exemple d'utilisation
 Les requêtes présentées dans cette fiche rédigée par la Cnam peuvent par exemple servir à produire [ce type de résultats](/files/HDH/RequetealaDemande/202207_VYV_MPL-2.0.xlsx). Il s’agit d’éléments qui ont été produits dans le cadre de l’expérimentation du service de requête à la demande pour le groupe VYV et suite à un partenariat entre le HDH et le [datalab Normandie](https://www.datalab-normandie.fr/). L’objectif était que ce dernier dispose de la volumétrie des personnes, résidantes en Normandie, et ayant eu au moins une délivrance de médicaments donnés afin d’alimenter des travaux de modélisation de donnée de dispersion de pollens allergènes, d’aménagement botanique du territoire et de consommation de soins relatifs aux allergies.

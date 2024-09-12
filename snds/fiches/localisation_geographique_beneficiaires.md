@@ -11,6 +11,17 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Le contenu de cette fiche est rédigé par Claire-Lise Dubost (DREES).
+
+Il s'inspire notamment de la note technique rédigée en 2014 par Pierre-Olivier Blotière (CNAM), ainsi que de codes fournis par les ARS.
+
+Il a été complété par Alice Bergonzoni (DREES) et ses travaux sur la correction du code commune. Pour plus d'informations, contacter la DREES.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 La localisation géographique du bénéficiaire dans le SNDS est possible grâce aux variables indiquant le **département** et la **commune de résidence**. 
 Il n’existe pas de niveau de localisation plus fin.
 Ces variables sont mises à disposition dans plusieurs tables du SNDS, dans des formats différents, avec parfois des informations contradictoires ou à corriger.
@@ -313,10 +324,4 @@ IF dept="974" THEN region="04-La Réunion";
 IF dept="976" THEN region="06-Mayotte";
 ```
 
-## Références
 
-::: tip Crédit
-Le contenu de cette fiche est rédigé par Claire-Lise Dubost (DREES).
-Il s'inspire notamment de la note technique rédigée en 2014 par Pierre-Olivier Blotière (CNAM), ainsi que de codes fournis par les ARS.
-Il a été complété par Alice Bergonzoni (DREES) et ses travaux sur la correction du code commune. Pour plus d'informations, contacter la DREES.
-:::

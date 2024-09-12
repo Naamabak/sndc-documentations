@@ -10,6 +10,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 La télémédecine est une pratique médicale effectuée par un médecin à distance en mobilisant des technologies de l’information et de la communication.
 
 La télémédecine est constituée de 6 types de prestations :
@@ -268,6 +275,4 @@ AND (TRIM(F.ACT_COD) IN ('TCP', 'TC', 'TCG', 'TDT', 'RQT', 'CRT', 'RQD', 'TSA', 
 La quasi-totalité des actes de télémédecine remontent dans la table `T_MCOaaFCSTC`, table des honoraires en ACE. Quelques rares actes mal codés peuvent remonter dans la table `T_MCOaaFBSTC`, table des prestations en ACE.
 
 
-::: tip Crédits
-Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
-:::
+

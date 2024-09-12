@@ -11,6 +11,17 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande par le Health Data Hub et dans le cadre d’un partenariat avec le [Quotidien du Médecin](https://www.health-data-hub.fr/quotidien-du-medecin).
+
+L'objectif était que ce dernier dispose d’indicateurs afin d’alimenter un article sur la thématique des téléconsultations.
+
+L'article a été publié le 09/09/2022 sur le site du [Quotidien du médecin](https://www.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/qui-profite-le-boom-des-consultations-distance).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+::: 
+
 
 Cette fiche vise à proposer les éléments nécessaires à la construction d'indicateurs sur la thématique des téléconsultations, à partir des données du SNDS.
 
@@ -108,12 +119,4 @@ L’ensemble des résultats produits peuvent être consultés [ici](/files/HDH/R
 Les effectifs inférieurs à 11 ne sont pas restitués.
 
 
-
-## Références  
-::: tip Crédit
-Cette fiche a été réalisée dans le cadre de l'expérimentation du service de requête à la demande par le Health Data Hub et dans le cadre d’un partenariat avec le [Quotidien du Médecin](https://www.health-data-hub.fr/quotidien-du-medecin).
-L'objectif était que ce dernier dispose d’indicateurs afin d’alimenter un article sur la thématique des téléconsultations.
-L'article a été publié le 09/09/2022 sur le site du [Quotidien du médecin](https://www.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/qui-profite-le-boom-des-consultations-distance).
-
-::: 
 

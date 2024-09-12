@@ -11,6 +11,15 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été initialement rédigée par Céline Leroy, ARS Normandie.
+
+MAJ: 08/2020, 01/2024  
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Lorsque l'on parle de détenus, on considère l'ensemble des individus mis sous main de justice et non seulement les individus sous écrou. 
 
 Il s'agit des individus:
@@ -294,14 +303,5 @@ exemple d'extraction des médicaments de ville chez les détenus (pour illustrat
 
 DCIR exploitation ARS NORMANDIE (données detenus Normands)
 
-
- 
- 
- 
-::: tip Crédits
-Cette fiche a été initialement rédigée par Céline Leroy, ARS Normandie.
-
-MAJ: 08/2020, 01/2024  
-:::
 
 

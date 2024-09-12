@@ -10,6 +10,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée par Kristel JACQUIER (DSS) et Raphaële ADJERAD (DREES).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 L'objectif de la fiche est de reconstituer les dépenses des établissements de santé privés. 
 
 Les séjours en établissements privés sont facturés directement à l’Assurance Maladie ce qui garantit l’exhaustivité des remontées d’information sur ce champ.  
@@ -130,6 +137,3 @@ Vous pouvez donc vous reporter à la fiche [Dépenses de soins de ville dans le 
 
 - Statistique mensuelle des cliniques privées, 2010, portail de la CNAM
 
-::: tip Crédits
-Cette fiche a été rédigée par Kristel JACQUIER (DSS) et Raphaële ADJERAD (DREES).
-:::

@@ -13,6 +13,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+ 
+Cette fiche a été rédigée par Vincent Reduron (DREES).
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 Parmi les prestations de santé remboursées par l'Assurance maladie, la LPP (liste des produits et prestations) est un champ à la fois hétérogène et méconnu. Cette fiche propose de la définir, de la décrire puis de donner des pistes pour le requêtage dans le SNDS. En général, la LPP est connue pour l'optique et les audioprothèses ; cette fiche a pour objectif de donner des informations de contexte approfondies sur la LPP dans son ensemble.
 
 La LPP *liste* littéralement quels produits et prestations sont remboursables par l'Assurance maladie, en ce qui concerne les **dispositifs médicaux**. 
@@ -386,6 +393,3 @@ Dans le portail SNDS, il y a le datamart *AMOS – LPP*.
 - Portail SNDS / Documentation / Bibliothèque de requêtes SAS / Maitrise médicalisée / Maitrise médicalisée 2019
 :::
 
-::: tip Crédits  
-Cette fiche a été rédigée par Vincent Reduron (DREES).
-:::

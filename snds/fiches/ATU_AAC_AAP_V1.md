@@ -11,6 +11,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.  
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+::: 
+
 Apparus il y a plus de 25 ans, l’accès dérogatoire à un médicament est un dispositif permettant à un patient en situation d’impasse thérapeutique de bénéficier d’un médicament non autorisé en France dans une indication donnée. Pour bénéficier d’un accès dérogatoire quatre conditions doivent être réunies :  
 1. La maladie est grave, rare ou invalidante,  
 2. il n’existe pas de traitement approprié disponible,  
@@ -189,6 +196,4 @@ Ce programme peut être adapté à l’HAD et au SSR en adaptant simplement les 
 - Identification des [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.md).
 - Vigilance dans le cas des dénombrements d’administrations de médicaments à la fois en accès précoce et sur liste en sus. Il existe des cas particuliers de certains médicaments qui sont retrouvés à la fois dans les tables MED et MEDATU/MEDAPAC. Cf. les recommandations de la fiche [Médicaments de la liste en sus](../fiches/medicaments_de_la_liste_en_sus.md).
 
-::: tip Crédits  
-Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.  
-:::  
+

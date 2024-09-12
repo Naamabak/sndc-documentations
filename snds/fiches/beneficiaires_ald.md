@@ -16,6 +16,19 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+Le contenu original de cette fiche provient du document [2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx](/files/DREES/2019-04-08_DREES-ARS_Beneficiaires-ALD/2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx)) rédigé par Kristel JACQUIER (DREES), Claire-Lise DUBOST (DREES), Céline LEROY (ARS).
+
+Cette fiche s'appuie fortement sur la présentation partagée par la CNAM lors d'un comité utilisateurs partenaires intitulé « Referentiel_médicalisé_IR_IMB_R_présentationCNAM » et que l'on retrouve sur le portail BO.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
+::: tip Autre source
+La Cnam a publié en octobre 2019 une [fiche sur les ALD](/files/Cnam/2019-10_Cnam_Programmes-SAS-ALD_MPL-2.0.doc).
+:::
+
+
 ## Le dispositif des ALD
 
 Le dispositif des affections de longue durée (ALD) permet la prise en charge des patients ayant une maladie chronique comportant un traitement prolongé et une thérapeutique particulièrement coûteuse. 
@@ -344,16 +357,6 @@ Quelques exemples d'ALD non exonérantes : Hypertension artérielle, Hypothyroï
 
 - Point de repère CNAM sur les  
 [bénéficaires du dispositif des ALD](https://assurance-maladie.ameli.fr/sites/default/files/2016-06_beneficiaires-ald-2014-evolutions-depuis-2005_points-de-repere-46_assurance-maladie.pdf)
-
-::: tip Crédits
-Le contenu original de cette fiche provient du document [2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx](/files/DREES/2019-04-08_DREES-ARS_Beneficiaires-ALD/2019-04-08_DREES-ARS_Bénéficiaires-ALD_MPL-2.0.docx)) rédigé par Kristel JACQUIER (DREES), Claire-Lise DUBOST (DREES), Céline LEROY (ARS).
-
-Cette fiche s'appuie fortement sur la présentation partagée par la CNAM lors d'un comité utilisateurs partenaires intitulé « Referentiel_médicalisé_IR_IMB_R_présentationCNAM » et que l'on retrouve sur le portail BO.
-:::
-
-::: tip Autre source
-La Cnam a publié en octobre 2019 une [fiche sur les ALD](/files/Cnam/2019-10_Cnam_Programmes-SAS-ALD_MPL-2.0.doc).
-:::
 
 
 [^2] : L'absence du motif d'exonération au titre de l'ALD peut être dû à la présence d'un autre motif d'exonération qui a primé dans le codage. 

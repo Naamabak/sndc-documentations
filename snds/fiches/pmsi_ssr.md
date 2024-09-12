@@ -11,6 +11,13 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 
 ## Table des matières
   - [1 Rappel des concepts de fonctionnement du PMSI-SSR](#1-rappel-des-concepts-de-fonctionnement-du-pmsi-ssr)
@@ -363,5 +370,3 @@ Des informations administratives sur le bénéficiaire et les données d'activit
 - [Rappel des bonnes pratiques SAS sur le portail SNDS](../fiches/execution_SAS.md).
 
 
-\- tip Crédits
-Cette fiche a été rédigée en collaboration entre le Health Data Hub et la société HEVA.

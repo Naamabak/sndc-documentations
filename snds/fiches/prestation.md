@@ -10,6 +10,14 @@ tags:
 
 <TagLinks />
 
+::: tip Crédits
+
+Cette fiche provient d'un document créé par la Cnam - MPL-2.0
+[Fiche publiée](/files/Cnam/2019-10_Cnam_Programmes-SAS-Nature-Prestation_MPL-2.0.doc)
+
+*À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+:::
+
 ## Définition
 Les prestations concernent tous les actes et prescriptions de soins, pour lesquels un remboursement, effectué par l’Assurance Maladie, est présent dans le SNDS. 
 
@@ -93,9 +101,3 @@ quit;
 ```
 
 
-## Références
-
-::: tip Crédits
-Cette fiche provient d'un document créé par la Cnam - MPL-2.0
-[Fiche publiée](/files/Cnam/2019-10_Cnam_Programmes-SAS-Nature-Prestation_MPL-2.0.doc)
-:::
