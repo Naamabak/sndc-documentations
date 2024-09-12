@@ -15,6 +15,8 @@ tags:
 
 Cette fiche a été créée par la direction DATA de Santé publique France
 
+Cette fiche se base sur une version originale datant du 29/04/2019 et a été mise à jour le 08/06/2020.
+
 *À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
 
@@ -167,8 +169,3 @@ Par exemple :
 Le programme SAS est accessible dans le dépôt **programme-snds**, dossier [**Sante_publique_France**](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master/Sante_publique_France)
 * pmsi_mco_select_sejours_par_diag.sas
 
-## Références
-
-:::tip Mise à jour
-Cette fiche se base sur une version originale datant du 29/04/2019 et a été mise à jour le 08/06/2020.
-:::
