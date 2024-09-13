@@ -123,7 +123,7 @@ Rinaldi et al. (*2021*)[^11] décrivent l'utilisation de SNOMED-CT pour l'étude
    <img src="../files_and_images/snomed_ct/snomed_Fig_2.png" width="700px"/>    
 
 
-   Figure 2 : Hiérarchies et relations dans le modèle SNOMED CT, Source : [ SNOMED CT Starter Guide][^12](https://confluence.ihtsdotools.org/display/DOCSTART/4.+SNOMED+CT+Basics)_
+   Figure 2 : Hiérarchies et relations dans le modèle SNOMED CT, Source : [ SNOMED CT Starter Guide](https://confluence.ihtsdotools.org/display/DOCSTART/4.+SNOMED+CT+Basics)[^12]
    </p>  
 
 
@@ -282,11 +282,10 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
    <img src="../files_and_images/snomed_ct/snomed_Fig_5.png" width="700px"/>    
 
 
-   Figure 1 : Alignement entre SNOMED CT et la CIM-11, Source : [ Rodrigues et al. (2015)]()
+   Carte 1 :Membres et affiliés de SNOMED International en 2023, Source : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
    </p>  
 
-
-     - Le double mapping consistant au mapping de SNOMED CT à la CIM-10 (1) puis de la CIM-10 à la CIM-11 (2) permet de relier SNOMED CT à la CIM-11.
+   - Le double mapping consistant au mapping de SNOMED CT à la CIM-10 (1) puis de la CIM-10 à la CIM-11 (2) permet de relier SNOMED CT à la CIM-11.
 - **Mapping entre SNOMED CT et CIM-O** :
     - La CIM-O est une extension de la CIM pour l'oncologie.
     - Le mapping de SNOMED CT à la CIM-O est publié par *SNOMED International* et disponible dans « SNOMED International Mapping Tool » (voir l'élément « *Outils compatibles* » en partie 5. Utilisation).
@@ -318,11 +317,6 @@ Rodrigues et al. (2017)  décrivent les difficultés de mapping entre ICHI et SN
    - La terminologie SNOMED CT peut être utilisée par FHIR de 2 façons[^50] :
       - En liant une **ressource FHIR à un ensemble de concepts** de la SNOMED CT
      - En liant une **ressource FHIR à un type de relation** (attribut) de la SNOMED CT
-
-
-
-
-
 
 
 
@@ -421,7 +415,7 @@ Rodrigues et al. (2017)  décrivent les difficultés de mapping entre ICHI et SN
 
 
   <p align="center">
-   <img src="../files_and_images/snomed_ct/snomed_Fig_15.png" width="700px"/>    
+   <img src="../files_and_images/snomed_ct/snomed_Fig_5.png" width="700px"/>    
 
 
    Carte 1 : 
@@ -441,8 +435,6 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 ### 5.Utilisation
 - **Simplicité d'usage** :
      - **Note : 1 / 1** en raison de l’accès à des ressources officielles de formation (voir l’élément « Accessibilité à des ressources de formation » en partie 4. Valorisation).
-
-
      - La recherche de la signification d'un SCTID est simple[^65], notamment pour les débutants, avec l'utilisation des nouveaux outils comme SNOMED CT Concept Lookup. De manière générale, l'utilisation des outils d'aide au codage et des outils compatibles permet de simplifier l'utilisation de SNOMED CT[^66] (voir les éléments *« Outils d’implémentation / aide au codage »* et *« Outils compatibles » * ci-dessous).
 
 
@@ -467,11 +459,7 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
    Figure 6 :SNOMED CT Browser, Source : [SNOMED CT Browser ]()
    </p>  
 
-
-
      - SNOMED CT Concept Lookup35: affiche la description du concept, ses traductions éventuelles, ses attributs, ses parents et enfants directs (voir la Figure 7 ci-dessous)
-
-
 
 
  <p align="center">
@@ -507,8 +495,6 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 
 <p align="center">
    <img src="../files_and_images/snomed_ct/snomed_Fig_8.png" width="700px"/>    
-
-
    Figure 8 : Structure d'un SCTID d'extension 
 « 5281000124103 |Persistent asthma (disorder)|, Source : [4.1 Namespaces ](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.1+Namespaces)
    </p> 
