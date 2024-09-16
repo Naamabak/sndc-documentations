@@ -93,11 +93,11 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 [^3]: Il existe peu d’analyses sur les domaines d’application en santé d’OMOP-CDM. Une analyse quantitative à partir de mots-clés identifiés dans la littérature sur PubMed : PubMed a été réalisée par Veltys en avril 2023. Un article traitant de plusieurs thématiques peut être comptabilisé plusieurs fois dans notre analyse. Voir en « Annexe n°1 » la méthodologie, les requêtes utilisées et un extrait de la liste des publications obtenues en résultat.
  [^4]: Le processus est décrit ici : Transformer le SNDS au format OMOP : Contexte
    [^5]: Les scripts sont disponibles ici : Health Data Hub / BOAS - Bibliothèque Ouverte d’Algorithmes en Santé / HDH / SNDS_OMOP · GitLab
-[^6] : Voir le paragraphe dédié aux outils dans la section “4. Valorisation”
-[^7] : Voir la liste des concepts présents dans l’outil Athena : https://athena.ohdsi.org/search-terms/terms?domain=Type+Concept&page=1&pageSize=15&query=
-[^8] : C’est le cas de la table NOTE par exemple (voir l’élément « Description technique du schéma de données » dans la partie 1. Général ci-dessous, et la Figure 1 : Liste des tables contenues dans la v5.4 d'OMOP-CDM).
-   [^9] : Voir les spécifications officielles de la version 5.4 : OMOP CDM v5.4
-[^10] : Voir le chapitre 5 dans The Book of OHDSI, en particulier la section 5.2.2 Concept Names qui traite de la traduction des nomenclatures : Chapter 5 Standardized Vocabularies | The Book of OHDSI  
+[^6]: Voir le paragraphe dédié aux outils dans la section “4. Valorisation”
+[^7]: Voir la liste des concepts présents dans l’outil Athena : https://athena.ohdsi.org/search-terms/terms?domain=Type+Concept&page=1&pageSize=15&query=
+[^8]: C’est le cas de la table NOTE par exemple (voir l’élément « Description technique du schéma de données » dans la partie 1. Général ci-dessous, et la Figure 1 : Liste des tables contenues dans la v5.4 d'OMOP-CDM).
+   [^9]: Voir les spécifications officielles de la version 5.4 : OMOP CDM v5.4
+[^10]: Voir le chapitre 5 dans The Book of OHDSI, en particulier la section 5.2.2 Concept Names qui traite de la traduction des nomenclatures : Chapter 5 Standardized Vocabularies | The Book of OHDSI  
 [^11]:  Voir le GitHub officiel d’OHDSI (ohdsi - Observational Health Data Sciences and Informatics) et la documentation associée (OMOP CDM v5.3)
 [^12]:  Voir la documentation sur l’OMOPisation du SNDS par le Health Data Hub : Le modèle OMOP
 
@@ -156,12 +156,12 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
 ### Processus de prise de **décision sur le standard** :
   - Il existe **plusieurs groupes de travail** d'OHDSI sur différentes thématiques[^18] :
 
-[^13] : Voir la licence : https://github.com/OHDSI/CommonDataModel/blob/main/LICENSE
-[^14] :  Voir la licence de WhiteRabbit : license - OHDSI/WhiteRabbit 
-[^15] :  Voir : Get SNOMED CT
-[^16] : Voir le détail de la collaboration entre OHDSI et SNOMED International : https://www.snomed.org/news/snomed-international-and-international-health-research-network-ohdsi-collaborate?lang=fr.
-[^17] :  Voir la page d’authentification qui s’affiche lorsque l’on souhaite accéder au téléchargement : Login or register to access 
-[^18] :  Voir la liste des groupes de travail d’OHDSI : Workgroups Template – OHDSI
+[^13]: Voir la licence : https://github.com/OHDSI/CommonDataModel/blob/main/LICENSE
+[^14]:  Voir la licence de WhiteRabbit : license - OHDSI/WhiteRabbit 
+[^15]:  Voir : Get SNOMED CT
+[^16]: Voir le détail de la collaboration entre OHDSI et SNOMED International : https://www.snomed.org/news/snomed-international-and-international-health-research-network-ohdsi-collaborate?lang=fr.
+[^17]:  Voir la page d’authentification qui s’affiche lorsque l’on souhaite accéder au téléchargement : Login or register to access 
+[^18]:  Voir la liste des groupes de travail d’OHDSI : Workgroups Template – OHDSI
 
 
 
@@ -180,13 +180,13 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
 
 [^19]:  Voir le formulaire à remplir pour rejoindre un groupe de travail : https://forms.office.com/Pages/ResponsePage.aspx?id=lAAPoyCRq0q6TOVQkCOy1ZyG6Ud_r2tKuS0HcGnqiQZUOVJFUzBFWE1aSVlLN0ozR01MUVQ4T0RGNyQlQCN0PWcu&wdLOR=c6BE271AA-FD1E-4D54-9520-B12409DE247E
 
-[^20] : Voir le GitHub officiel d’OMOP-CDM : OMOP Common Data Model
-[^21] : Voir la liste des forums d’OHDSI : OHDSI Forums
-[^22] : Voir la publication du forum OHDSI : CDM v6.0 Release - General - OHDSI Forums
-[^23] :  Voir : https://github.com/OHDSI/CommonDataModel/releases/tag/v5.3.0
-[^24] : Voir : https://github.com/OHDSI/CommonDataModel/releases/tag/v5.4.0
+[^20]: Voir le GitHub officiel d’OMOP-CDM : OMOP Common Data Model
+[^21]: Voir la liste des forums d’OHDSI : OHDSI Forums
+[^22]: Voir la publication du forum OHDSI : CDM v6.0 Release - General - OHDSI Forums
+[^23]:  Voir : https://github.com/OHDSI/CommonDataModel/releases/tag/v5.3.0
+[^24]: Voir : https://github.com/OHDSI/CommonDataModel/releases/tag/v5.4.0
 
-[^25] : Voir la liste des outils qui supportent la v5.4 : OMOP CDM v5.4. OHDSI fait la distinction entre le legacy support (c’est-à-dire les outils qui supportent la version précédente, v5.3) et le feature support (c’est-à-dire les outils qui supportent les nouveaux champs de la v5.4). Dans certains cas, les pages GitHub des outils concernés sont plus à jour que la page OHDSI, c’est le cas du DataQualityDashboard et d’Achilles, qui supportent tous les deux la v5.4 d’après leurs pages respectives :  https://github.com/OHDSI/DataQualityDashboard, GitHub - OHDSI/Achilles: Automated Characterization of Health Information at Large-scale Longitudinal Evidence Systems (ACHILLES) - descriptive statistics about a OMOP CDM database  
+[^25]: Voir la liste des outils qui supportent la v5.4 : OMOP CDM v5.4. OHDSI fait la distinction entre le legacy support (c’est-à-dire les outils qui supportent la version précédente, v5.3) et le feature support (c’est-à-dire les outils qui supportent les nouveaux champs de la v5.4). Dans certains cas, les pages GitHub des outils concernés sont plus à jour que la page OHDSI, c’est le cas du DataQualityDashboard et d’Achilles, qui supportent tous les deux la v5.4 d’après leurs pages respectives :  https://github.com/OHDSI/DataQualityDashboard, GitHub - OHDSI/Achilles: Automated Characterization of Health Information at Large-scale Longitudinal Evidence Systems (ACHILLES) - descriptive statistics about a OMOP CDM database  
 
 ### Existence de financements pour standardisation :
   - **EHDEN** dispose d'un **fond pour soutenir les efforts de standardisation et de normalisation** des données à travers l'Europe[^27]. Il y a eu 3 types d'appels à projets :
@@ -381,7 +381,7 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
          - Data Engineers : maîtrisant Java, R, Docker
 
 
-##4.Valorisation
+## 4.Valorisation
  ### Accessibilité à des ressources de formation :
   - GitHub d’OHDSI[^10]
   - EHDEN Academy[^56]
@@ -649,7 +649,7 @@ La Figure 4 ci-dessous illustre les étapes décrites précédemment en spécifi
 46. UCD : Unité Commune de Dispensation  
 
 
-# Annexes
+## Annexes
 
  ### Annexe n°1 : Analyse quantitative de la littérature sur OMOP-CDM et des thématiques associées à partir de PubMed
 
