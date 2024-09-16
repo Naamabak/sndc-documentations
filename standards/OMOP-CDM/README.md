@@ -349,7 +349,7 @@ Aucune contrainte d’implémentation mais il est **recommandé** de disposer d�
 - Vaclav Papez et al. (2021) ont présenté la transformation des données de 3 EHRs au Royaume-Uni pour les cas d’insuffisance cardiaque<sup>54</sup>. Les résultats suivants sont obtenus :
   - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 3 ci-dessous.
 
- **Tableau 3 :  Pourcentage de codes mappés selon la terminologie source **
+ **Tableau 3 :  Pourcentage de codes mappés selon la terminologie source**
 
 | Terminologies | Pourcentage de codes mappés    |
 |--------------|---------------------------------|
@@ -543,7 +543,7 @@ _Source : [OHDSI - Data Quality Dashboard
 
  - **Processus standard d'OMOPisation** (ETL) :
    1. ***Conception du mapping syntaxique*** : deux outils ont été développés par OHDSI pour aider l’utilisateur à réaliser cette étape :
-      **a.** **WhiteRabbit**[^77] produit un rapport d’analyse des données sources qui contient toutes les informations nécessaires pour construire l'ETL (sur les tables, les champs, les valeurs). Ce rapport servira de référence pour la conception de l’ETL, en conjonction avec l’outil Rabbit-In-a-Hat ;  
+     **a.**  **WhiteRabbit**[^77] produit un rapport d’analyse des données sources qui contient toutes les informations nécessaires pour construire l'ETL (sur les tables, les champs, les valeurs). Ce rapport servira de référence pour la conception de l’ETL, en conjonction avec l’outil Rabbit-In-a-Hat ;  
 
       **b.** **Rabbit-In-a-Hat**[^78] reprend les résultats de WhiteRabbit et les affiche dans une interface graphique où l’utilisateur peut réaliser des connexions (flèches) entre les variables et tables sources et et les tables d’OMOP-CDM. L’outil génère ensuite une documentation de l’ETL à partir des connexions ainsi établies
    2.***Conception du mapping sémantique*** : lorsque  les vocabulaires utilisés dans les données sources ont déjà été mappés vers des vocabulaires standards autorisés dans OMOP-CDM, les mappings correspondants se trouvent déjà dans les tables de vocabulaires téléchargeables sur le portail ATHENA. Dans le cas contraire, le mapping doit être créé entre les vocabulaires sources et
@@ -555,7 +555,7 @@ _Source : [OHDSI - Data Quality Dashboard
 
    4.**Contrôle qualité** : La qualité est contrôlée de manière itérative en réalisant des tests puis des corrections tant que cela est nécessaire.
 
-     **a.**Les tests suivants peuvent par exemple être réalisés : revue du document décrivant le design de l’ETL, du code et des *mappings*, comparer manuellement les données sources et finales sur un échantillon, répliquer une étude déjà réalisée sur les données sources à partir des données issues de l’ETL, etc.
+     **a.** Les tests suivants peuvent par exemple être réalisés : revue du document décrivant le design de l’ETL, du code et des *mappings*, comparer manuellement les données sources et finales sur un échantillon, répliquer une étude déjà réalisée sur les données sources à partir des données issues de l’ETL, etc.
      
      **b.** La qualité du mapping peut également être évaluée avec les outils OHDSI (ACHILLES[^72], *Data Quality Dashboard*)
 
