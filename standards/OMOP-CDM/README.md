@@ -109,7 +109,7 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 
 
 <p align="center">
-   <img src="../files_and_images/omop_cdm/omop_Fig_1.png" width=""/>
+   <img src="../files_and_images/omop_cdm/omop_fig_1.png" width=""/>
 
    Figure 1 : Liste des tables contenues dans la v5.4 d'OMOP-CDM, Source  : [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/)
 </p>
@@ -217,7 +217,7 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
 
 
 <p align="center">
-   <img src="../files_and_images/omop_cdm/omop_Fig_2.png" width=""/>    
+   <img src="../files_and_images/omop_cdm/omop_fig_2.png" width=""/>    
 
 
    Figure 2 : Procédure de mapping, Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation
@@ -432,7 +432,7 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
 
 
 <p align="center">
-   <img src="../files_and_images/omop_cdm/omop_Fig_3.png" width=""/>    
+   <img src="../files_and_images/omop_cdm/omop_fig_3.png" width=""/>    
 
    Carte 1 : Liste des pays du réseau EHDEN et nombre de partenaires données (Data partners) associés en 2020, Source : [Data Partners – ehden.eu](https://www.ehden.eu/datapartners/)
 </p>  
@@ -470,7 +470,7 @@ _Source : [OHDSI - Data Quality Dashboard
 
 
 <p align="center">
-   <img src="../files_and_images/omop_cdm/omop_Fig_4.png" width=""/>    
+   <img src="../files_and_images/omop_cdm/omop_fig_4.png" width=""/>    
 
 
    Tableau 5 : Deuxième exemple de sortie du Data Quality Dashboard, Source : [Data Data Quality Dashboard](https://data.ohdsi.org/DataQualityDashboard/)
@@ -480,7 +480,7 @@ _Source : [OHDSI - Data Quality Dashboard
   - **ACHILLES**[^73] (outil OHDSI) est un package R qui produit des statistiques descriptives permettant de caractériser la base de données OMOP-CDM (voir Figure 3).
 
 <p align="center">
-   <img src="../files_and_images/omop_cdm/omop_Fig_5.png" width=""/>    
+   <img src="../files_and_images/omop_cdm/omop_fig_5.png" width=""/>    
 
 
   Figure 3 : Exemple de sortie d’ACHILLES, Source : [Software Tools – OHDSI](https://www.ohdsi.org/software-tools/)
@@ -564,7 +564,7 @@ _Source : [OHDSI - Data Quality Dashboard
 La Figure 4 ci-dessous illustre les étapes décrites précédemment en spécifiant les outils OHDSI qui peuvent être utilisés pour chaque étape :
 
 <p align="center">
-   <img src="../files_and_images/omop_cdm/omop_Fig_6.png" width=""/>    
+   <img src="../files_and_images/omop_cdm/omop_fig_6.png" width=""/>    
 
 
    Figure 4 : Schéma du processus ETL détaillé avec les outils OHDSI, Source : [Schéma réalisé par Veltys]
