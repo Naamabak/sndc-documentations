@@ -501,8 +501,8 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 
       
        
-    - Les extensions locales sont disponibles dans le navigateur SNOMED CT[^90] et sont **maintenues et mises à jour par les NRC** (National Release Center)[^31].
-    - En juin 2023, il existe des extensions locales pour les pays suivants : **Argentine, Australie, Autriche, Belgique, Canada, Danemark, Estonie, Finlande, Irlande, Pays-Bas, Nouvelle-Zélande, Norvège, Suède, Suisse, Etats-Unis et Uruguay.**
+- Les extensions locales sont disponibles dans le navigateur SNOMED CT[^90] et sont **maintenues et mises à jour par les NRC** (National Release Center)[^31].
+- En juin 2023, il existe des extensions locales pour les pays suivants : **Argentine, Australie, Autriche, Belgique, Canada, Danemark, Estonie, Finlande, Irlande, Pays-Bas, Nouvelle-Zélande, Norvège, Suède, Suisse, Etats-Unis et Uruguay.**
 
 
 [^21]: Voir les différentes modalités d’accès à SNOMED CT : [Modalité d’accès à la SNOMED CT](https://industriels.esante.gouv.fr/sites/default/files/media/document/Note_information_ANS_-_Modalites_acces_SNOMED_CT.pdf)
