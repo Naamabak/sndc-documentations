@@ -182,7 +182,7 @@
 [^41]: Voir : https://github.com/data2health/data-harmonization/wiki/CDM-FHIR-Transformation.
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/FHIR_fig_1.png"/>
+  <img src="../files_and_images/FHIR/FHIR_fig_1.png"/>
   _Figure 1 : Procédure de mapping, Source : Rapport final CDMH (2020)_
 </p>    
 
@@ -409,14 +409,14 @@ FHIR ne définit pas de **technologie de stockage ni de traitement de données**
 [^107]: Quelques solutions populaires : CureLogix (https://curelogix.com/fhir-adapter/) et Firely ([FHIR Facade | FHIR integrations for existing systems](https://fire.ly/products/fhir-facade/)). L’utilisateur peut aussi construire son propre Adapter/Facade FHIR.
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/FHIR_fig_2.png"/>
+  <img src="../files_and_images/FHIR/FHIR_fig_2.png"/>
   _Figure 2 : Le système cible initie la demande d’information (exemple a), Source : vidéo HL7 de la présentation de Christiaan Knaap (Firely)[^106], schéma Veltys_
 </p>
  
   *Dans cet exemple, on suppose que le système cible choisit d’implémenter les actions GET et POST mais de ne pas implémenter les actions qui modifient les ressources (il s’agit d’une architecture en écriture seule).*
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/FHIR_fig_3.png"/>
+  <img src="../files_and_images/FHIR/FHIR_fig_3.png"/>
   _Figure 3 : Le système source partage l’information (exemple b)_
 </p>
 
@@ -424,7 +424,7 @@ FHIR ne définit pas de **technologie de stockage ni de traitement de données**
     - **Exemple d’architecture n°2 : Mise en place d’un serveur FHIR générique** qui implémente l’ensemble des fonctionnalités FHIR (API, stockage des ressources, gestion de stockage, support de tous les ressources, voir Figure 4).
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/FHIR_fig_4.png"/>
+  <img src="../files_and_images/FHIR/FHIR_fig_4.png"/>
   _Figure 4 : Serveur FHIR générique (exemple c)_
 </p>
  
@@ -448,7 +448,7 @@ FHIR ne définit pas de **technologie de stockage ni de traitement de données**
   - La documentation officielle de FHIR est très riche et contient notamment de nombreux **exemples commentés de requêtes FHIR XML et JSON**, en particulier dans la page dédiée aux développeurs[^11,112],  (voir Figure 5). Une comparaison des formats XML et JSON (éléments, syntaxes, etc.) est également accessible[^113].
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/FHIR_fig_5.png"/>
+  <img src="../files_and_images/FHIR/FHIR_fig_5.png"/>
   _Figure 5 : Exemple de ressource FHIR en langage XML (ressource Patient),Source:https://hl7.org/fhir/summary.html_
 </p>
 
