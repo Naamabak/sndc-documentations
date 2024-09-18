@@ -47,7 +47,7 @@
 Ainsi que les sources suivantes pour des descriptions de l’architecture CDA dans les versions les plus récentes : https://wiki.ohie.org/display/SUB/Introduction+to+Clinical+Document+Architecture (page wiki de l’initiative OpenHIE) et la présentation du *Public Health Informatics Institute* (organisation qui accompagne les établissements de santé à tirer parti des systèmes d’information pour répondre aux besoins en matière de santé publique aux États-Unis) : https://phii.org/sites/default/files/resource/files/HL7 CDA Introduction.pdf
 
 <p align="center">
-  <img src="../files_and_images/cda/Cda_fig_1.png" width="700px"/>    
+  <img src="../files_and_images/cda/CDA_fig_1.png" width="700px"/>    
   _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
 </p>
 
@@ -202,7 +202,7 @@ Ainsi que les sources suivantes pour des descriptions de l’architecture CDA da
     - **Niveau 2 (CDA R2 N3)** : l'en-tête et le corps du document sont structurés, le corps du document (*StructuredBody*) contenant des « Sections » obligatoires dans lesquelles les données contenues dans les « Entrées » sont contraintes. Un exemple de contrainte de niveau 3 serait un « Résumé de sortie » avec une section « Médicaments » et des valeurs RxNORM pour chaque médicament.
 
 <p align="center">
-  <img src="../files_and_images/cda/Cda_fig_1.png" width="700px"/>    
+  <img src="../files_and_images/cda/CDA_fig_1.png" width="700px"/>    
   _Figure 2 : Les composants des 3 niveaux d'implémentation du standard, Source : [What is HL7® CDA™?](http://iehr.eu/knowledge/what-is-hl7-cda/)– iEHR.eu_
 </p>
 
@@ -300,7 +300,7 @@ Ainsi que les sources suivantes pour des descriptions de l’architecture CDA da
 [^54]: Voir : [Electronic cross-border health services - European Commission](https://health.ec.europa.eu/ehealth-digital-health-and-care/electronic-cross-border-health-services_en) 
 
 <p align="center">
-  <img src="../files_and_images/cda/Cda_carte_1.png" width="700px"/>    
+  <img src="../files_and_images/cda/CDA_carte_1.png" width="700px"/>    
   _Carte 1 : Implémentation de l'IPS CDA en date d'octobre 2018, Source : Blog HL7_
 </p>  
 
@@ -334,7 +334,7 @@ Ainsi que les sources suivantes pour des descriptions de l’architecture CDA da
       - Dans FHIR, la signification est directement définie par la ressource : les profils sont uniquement utilisés pour définir les extensions, mais ils ne permettent pas de définir les éléments principaux.
 
 <p align="center">
-  <img src="../files_and_images/cda/Cda_fig_3.png" width="700px"/>    
+  <img src="../files_and_images/cda/CDA_fig_3.png" width="700px"/>    
   _Figure 3 : Exemple d'une instance CDA XML, Source : Modèles de contenus CDA (v3.2), Agence du Numérique en Santé_[^59]
 </p>  
 
@@ -357,7 +357,7 @@ Ainsi que les sources suivantes pour des descriptions de l’architecture CDA da
 [^63]: Voir : [HL7 C-CDA Viewer (Backbeach Software)](https://backbeachsoftware.com.au/challenge/index.htm)
 
 <p align="center">
-  <img src="../files_and_images/cda/Cda_fig_4.png" width="700px"/>    
+  <img src="../files_and_images/cda/CDA_fig_4.png" width="700px"/>    
   _Figure 4 : Aperçu de l’interface de l’outil HL7 C-CDA Viewer, Source : HL7 C-CDA Viewer_
 </p>  
 
