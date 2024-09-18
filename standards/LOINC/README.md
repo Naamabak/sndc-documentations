@@ -129,7 +129,7 @@
 [^22]: Voir : [2 - Major Parts of a LOINC term](https://loinc.org/kb/users-guide/major-parts-of-a-loinc-term/)  
 
 <p align="center">
-  <img src="../files_and_images/loinc/Loinc_fig_1.png"/>
+  <img src="../files_and_images/loinc/LOINC_fig_1.png"/>
   _Figure 1 : Décomposition d'un concept LOINC, Source : Nikiema et al. (2021),  Six attributs sont obligatoires (rectangles aux bords arrondis), quatre attributs sont optionnels (ovales) pour affiner la description de trois attributs obligatoires. Chaque concept LOINC a une classe qui correspond au type d'analyse du test (microbiologie, allergie, hématologie, etc.)._[^23]
 </p>
 
@@ -330,7 +330,7 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
 [^67]: Voir : [Adopters Archive – LOINC](https://loinc.org/adopters/)
 
 <p align="center">
-  <img src="../files_and_images/loinc/Loinc_carte_1.png"/>
+  <img src="../files_and_images/loinc/LOINC_carte_1.png"/>
   _Carte 1 : Pays de provenance des utilisateurs de LOINC, Source : [LOINC is a Growing Global Community](https://loinc.org/get-started/a-global-community/),Les pays identifiés sur la carte comptabilisent au minimum une implémentation de LOINC._
 </p>
 
@@ -365,7 +365,7 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
 [^73]: Voir : [LOINC Mailing List](https://loinc.org/mailing-list/)
 
 <p align="center">
-  <img src="../files_and_images/loinc/Loinc_fig_2.png"/>
+  <img src="../files_and_images/loinc/LOINC_fig_2.png"/>
   _Figure 2 : Aperçu de l'outil « SearchLOINC », Source : Outil « SearchLOINC », mot clé « Blood »_
 </p>
 
@@ -374,12 +374,12 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
     - La différence est qu'il est possible de choisir un axe de recherche (appelé « hiérarchie ») parmi les six dimensions des termes LOINC : *component* (voir Figure 3 ci-dessous), *property, time, system* (voir Figure 4 ci-dessous), *scale ou method* (voir l'élément « *Type de granularité* » en partie 1. Général).
 
 <p align="center">
-  <img src="../files_and_images/loinc/Loinc_fig_3.png"/>
+  <img src="../files_and_images/loinc/LOINC_fig_3.png"/>
   _Figure 3 : Aperçu de l'outil « Hierarchy Browser » – hiérarchie : component, Source : Outil « Hierarchy Browser », mot clé « Blood », hiérarchie « component »_
 </p>
 
 <p align="center">
-  <img src="../files_and_images/loinc/Loinc_fig_3.png"/>
+  <img src="../files_and_images/loinc/LOINC_fig_3.png"/>
   _Figure 4 : Aperçu de l'outil « Hierarchy Browser » – hiérarchie : system, Source : Outil « Hierarchy Browser », mot clé « Blood », hiérarchie « system »_
 </p>
 
