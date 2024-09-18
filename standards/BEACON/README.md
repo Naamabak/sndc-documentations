@@ -27,7 +27,7 @@
 [^5]: La découverte de données, ou *data discovery*, est un processus qui consiste à agréger les données et à les visualiser afin de détecter des *patterns*. Un exemple d’outil de *data discovery* appliqué à la génomique et développé par *Genomics England* (société britannique créée et détenue par le Ministère de la Santé et des Affaires sociales du Royaume-Uni pour gérer le projet « 100 000 génomes » :[Data Discovery - Genomics England Research Environment User Guide](https://re-docs.genomicsengland.co.uk/data_discovery/)
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/Beacon_fig_1.png" width="700px"/>    
+  <img src="../files_and_images/BEACON/Beacon_fig_1.png" width="700px"/>    
   _Figure 1 : Exemple schématique d’une requête Beacon jusqu’à la v1,Source : [GA4GH Beacon project](https://beacon-project.io/)_
 </p>  
 
@@ -39,7 +39,7 @@
     - Information sur les **cohortes**
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/Beacon_fig_2.png" width="700px"/>    
+  <img src="../files_and_images/BEACON/Beacon_fig_2.png" width="700px"/>    
   _Figure 2 : Exemple schématique d’une requête Beacon (v2),Source : [GA4GH Beacon project](https://beacon-project.io/)_
 </p>  
 
@@ -56,7 +56,7 @@
 [^8]: En principe, il est possible d’adopter différents modèles en utilisant le même *Framework* (ex : « Imaging Beacon »,[About the Precision Imaging Beacon](https://www.nottingham.ac.uk/research/beacons-of-excellence/precision-imaging/about/index.aspx)). Cependant, dans le contexte actuel de Beacon v2, les deux éléments sont considérés interdépendants et seront probablement mis à jour en même temps pour les principales versions. Voir : https://docs.genomebeacons.org/what-is-beacon-v2/?h=beacon
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/Beacon_fig_3.png" width="700px"/>    
+  <img src="../files_and_images/BEACON/Beacon_fig_3.png" width="700px"/>    
   _Figure 3 : Illustration du Framework et du Modèle Beacon,Source : Rambla et al. (2022)[^2]_
 </p>  
 
@@ -65,7 +65,7 @@
       - Des **instances beacon** peuvent également être combinées à travers des **Beacon Aggregator** : il s’agit d’interfaces d’accès uniques dans lesquelles les instances beacon individuelles ne sont cependant ni nécessairement harmonisées, ni nécessairement averties de leur intégration dans l’agrégateur[^10].
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/Beacon_fig_4.png" width="700px"/>    
+  <img src="../files_and_images/BEACON/Beacon_fig_4.png" width="700px"/>    
   _Figure 4 : Exemple d’un réseau Beacon,Source : [Beacon Networks and Aggregators - Beacon v2 Documentation](https://docs.genomebeacons.org/networks/
 </p>  
 
@@ -86,7 +86,7 @@
     - L'interface Beacon+[^15] de Progenetix permet par exemple d'afficher la fréquence de l'augmentation et de la diminution du nombre de copies dans 22 autosomes (voir Figure 5).
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/Beacon_fig_5.png" width="700px"/>    
+  <img src="../files_and_images/BEACON/Beacon_fig_5.png" width="700px"/>    
   _Figure 5 : Illustration des résultats obtenus à l'aide de la plateforme Beacon Progenetix,Source : [Progenetix](https://progenetix.org/), Kon et al. (2013)[^16]
 </p>
 
@@ -218,7 +218,7 @@ Les liens entre ces entités sont illustrés dans le schéma ci-dessous (voir Fi
 [^44]: Voir le contenu de l’entité Analyses : [analyses defaultSchema - Beacon v2 Documentation](https://docs.genomebeacons.org/schemas-md/analyses_defaultSchema/) et le GitHub associé : https://github.com/ga4gh-beacon/beacon-v2/tree/main/models/json/beacon-v2-default-model/analyses
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/Beacon_fig_6.png" width="700px"/>    
+  <img src="../files_and_images/BEACON/Beacon_fig_6.png" width="700px"/>    
   _Figure 6 : Modèle Beacon,Source : Beacon v2 documentation[^37]
 </p>
 
@@ -337,7 +337,7 @@ Le Modèle et le *Framework* sont décrits aux formats YAML et JSON mais les mod
 [^59]: Voir : [GitHub - ga4gh-beacon/beacon-verifier: Tool to verify that a Beacon implementation follows the specification](https://github.com/ga4gh-beacon/beacon-verifier)
 
 <p align="center">
-  <img src="../files_and_images/omop_cdm/Beacon_fig_7.png" width="700px"/>    
+  <img src="../files_and_images/BEACON/Beacon_fig_7.png" width="700px"/>    
   _Figure 7 : Fonctionnement de l'outil Beacon (vérifier),Source : GitHub du Beacon vérifier[^60]
 </p>
 
