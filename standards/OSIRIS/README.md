@@ -80,13 +80,15 @@
 
 <p align="center">
   <img src="../files_and_images/osiris/OSIRIS_fig_1.png" width="700px"/>    
-  _[Figure 1 : Modèle de données cliniques (OSIRIS), Source : Guérin et al. (2021)_
 </p>  
+
+_[Figure 1 : Modèle de données cliniques (OSIRIS), Source : Guérin et al. (2021)_
 
 <p align="center">
   <img src="../files_and_images/osiris/OSIRIS_fig_2.png" width="700px"/>    
-  _[Figure 2 : exemple des interactions entre les concepts du modèle clinique, Source : Description du Modèle de Données Cliniques (version 1.0, 2021)_
 </p>  
+
+_[Figure 2 : exemple des interactions entre les concepts du modèle clinique, Source : Description du Modèle de Données Cliniques (version 1.0, 2021)_
 
   - Dans le modèle de données omiques (voir Figure 3), tous les concepts sont liés au *TumorPathologyEvent*. Les concepts du modèle sont les suivants :
     - Définition du contexte de l'analyse : technologie de séquençage, paramètres de l'analyse, etc.
@@ -95,8 +97,9 @@
 
 <p align="center">
   <img src="../files_and_images/osiris/OSIRIS_fig_3.png" width="700px"/>    
-  _[Figure 3 : Modèle de données omiques (OSIRIS), Source : Guérin et al. (2021)_
 </p>
+
+_[Figure 3 : Modèle de données omiques (OSIRIS), Source : Guérin et al. (2021)_
 
   - Les extensions du modèle contiennent d'autres composantes (voir l'élément « *Flexibilité du standard, personnalisation* » en partie 3. Technique et l'élément « *Existence d’extensions certifiées* » en partie 5. Utilisation).
 
@@ -141,8 +144,9 @@
 
 <p align="center">
   <img src="../files_and_images/osiris/OSIRIS_fig_4.png" width="700px"/>    
-  _[Figure 4 : Méthodologie d'élaboration de la première version d'OSIRIS, Source : Guérin et al. (2021)_
 </p>
+
+_[Figure 4 : Méthodologie d'élaboration de la première version d'OSIRIS, Source : Guérin et al. (2021)_
 
   - La procédure de contribution aux concepts (nouvelles extensions ou mise à jour de concepts existants) est décrite dans le GitHub[^15] : la procédure est libre, les utilisateurs peuvent proposer des modifications (*via* une *pull request*) qui seront examinées par le groupe OSIRIS.
   - Des **suggestions de modifications** ou des **bogues** peuvent également être signalés dans le *repository* GitHub dédié[^16]
@@ -182,8 +186,9 @@
 
 <p align="center">
   <img src="../files_and_images/osiris/OSIRIS_fig_5.png" width="700px"/>    
-  _[Figure 5 : Schéma d’intercommunication d'OSIRIS avec des sources de données et avec d’autres standards internationaux, Source : Guérin et al. (2021)_
 </p>
+
+_[Figure 5 : Schéma d’intercommunication d'OSIRIS avec des sources de données et avec d’autres standards internationaux, Source : Guérin et al. (2021)_
 
 - **Communication avec d'autres standards (inter typologies de standards) :**
   - OSIRIS utilise plusieurs terminologies nationales et internationales, dont la CIM-10 pour les maladies, sa variante dédiée à l'oncologie (CIM-O-3), la CCAM pour les actes médicaux, LOINC pour les concepts génomiques[^3] (voir Tableau 1 ci-dessous).
@@ -219,13 +224,15 @@ Source: Guérin et al. (2021)
 
 <p align="center">
   <img src="../files_and_images/osiris/OSIRIS_fig_6.png" width="700px"/>    
-  _[Figure 6 : Exemple de relations « parent » - « enfants » entre les événements carcinologiques, Source : Description du Modèle de Données Cliniques (version 1.0, 2021)_
 </p>
+
+_[Figure 6 : Exemple de relations « parent » - « enfants » entre les événements carcinologiques, Source : Description du Modèle de Données Cliniques (version 1.0, 2021)_
 
 <p align="center">
   <img src="../files_and_images/osiris/OSIRIS_fig_7.png" width="700px"/>    
-  _[Figure 7 : Extrait du schéma de données OSIRIS (table TumorPathologyEvent), Source : Schéma de données OSIRIS_[^20]
 </p>
+
+_[Figure 7 : Extrait du schéma de données OSIRIS (table TumorPathologyEvent), Source : Schéma de données OSIRIS_[^20]_
 
 - **Complexité du modèle** :
   - **Note : 0,4 / 1**
@@ -324,8 +331,9 @@ Source: Guérin et al. (2021)
 
 <p align="center">
   <img src="../files_and_images/osiris/OSIRIS_fig_8.png" width="700px"/>    
-  _[Figure 8 : Modèle de données de l’extension Radiothérapie, Source : https://github.com/siric-osiris/OSIRIS/tree/MED-OSIRIS/documentation_
 </p>
+
+_[Figure 8 : Modèle de données de l’extension Radiothérapie, Source : https://github.com/siric-osiris/OSIRIS/tree/MED-OSIRIS/documentation_
 
 - **Bibliothèque de requêtes types :** Non.
 
