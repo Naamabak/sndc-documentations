@@ -15,7 +15,7 @@ Il est [téléchargeable ici](/files/Cnam/2020-10_Cnam_Documentation_utilisateur
 
 Ce document constitue la version 4 du guide utilisateurs sur les causes médicales de décès.
 Par rapport à la version précédente (datée du 15 juin 2018), cette version 4 est enrichie :
-- des résultats de l’appariement des données de 2006 à 2012 et de 2016 selon l’appariement indirect avec les référentiels bénéficiaires (Cf. [Chapitre II](2-Chap2CausesDeces.md)),  
+- des résultats de l’appariement des données de 2006 à 2012 et de 2016 selon l’appariement indirect avec les référentiels bénéficiaires (Cf. Chapitre II),  
 - des nouvelles tables de valeurs, des tables de valeurs modifiées, des variables ajoutées ou supprimées (Cf. Chapitre IV) 
 
 
