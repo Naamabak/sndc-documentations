@@ -19,7 +19,7 @@ Le contenu original de cette fiche provient du document [Historique des données
 
 **Autorat et mises-à-jour**
 - Rédigée par Anne Cuerq à partir des références (1) et (2), avec des contributions de Tim Vlaar à partir des références (3) et (4) (cf. section références).  
-- *07/12/2020* - MAJ des deux images de la section "Historique de l'information et des régimes dans les bases du SNDS" suite à l'intégration des données de causes médicales de décès pour les années 2006 à 2012 + 2016. Plus d'informations dans la [documention](../formation_snds/documents_cnam/guide_cepidc/Avant_propos.md) de la Cnam et du CépiDC. NB : Graphique de disponibilités des données selon les années et régimes par Lisa Cahour.  
+- *07/12/2020* - MAJ des deux images de la section "Historique de l'information et des régimes dans les bases du SNDS" suite à l'intégration des données de causes médicales de décès pour les années 2006 à 2012 + 2016. Plus d'informations dans la [documention](../formation_snds/documents_cnam/guide_cepidc/README.md) de la Cnam et du CépiDC. NB : Graphique de disponibilités des données selon les années et régimes par Lisa Cahour.  
 - *04/06/2024* - Contribution d'Albert Vuagnat pour le tableau : Régimes disponibles et années de présence dans les tables.  
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
