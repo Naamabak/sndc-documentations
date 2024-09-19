@@ -1,5 +1,3 @@
-### Benchmark « standards de données de santé »
-
 # Fiche d’identité : Osiris
 
 ## SYNTHÈSE :
@@ -79,13 +77,13 @@
 [^8]: Voir le GitHub : https://github.com/siric-osiris/OSIRIS/tree/master/documentation
 
 <p align="center">
-  <img src="../files_and_images/osiris/OSIRIS_fig_1.png" width="700px"/>    
+  <img src="../files_and_images/osiris/OSIRIS_fig_1.png" width="550px"/>    
 </p>  
 
 _[Figure 1 : Modèle de données cliniques (OSIRIS), Source : Guérin et al. (2021)_
 
 <p align="center">
-  <img src="../files_and_images/osiris/OSIRIS_fig_2.png" width="700px"/>    
+  <img src="../files_and_images/osiris/OSIRIS_fig_2.png" width="550px"/>    
 </p>  
 
 _[Figure 2 : exemple des interactions entre les concepts du modèle clinique, Source : Description du Modèle de Données Cliniques (version 1.0, 2021)_
@@ -96,7 +94,7 @@ _[Figure 2 : exemple des interactions entre les concepts du modèle clinique, So
     - Différents types d'altération sont pris en compte dans le modèle : nombre de copies, fusions, expression de gènes, mutations somatiques. La flexibilité du modèle permet d'ajouter de nouvelles données omiques dans le modèle (ex : épigénétique, protéomique).
 
 <p align="center">
-  <img src="../files_and_images/osiris/OSIRIS_fig_3.png" width="700px"/>    
+  <img src="../files_and_images/osiris/OSIRIS_fig_3.png" width="550px"/>    
 </p>
 
 _[Figure 3 : Modèle de données omiques (OSIRIS), Source : Guérin et al. (2021)_
@@ -143,7 +141,7 @@ _[Figure 3 : Modèle de données omiques (OSIRIS), Source : Guérin et al. (2021
 [^14]: Voir : https://fhir.arkhn.com/osiris/
 
 <p align="center">
-  <img src="../files_and_images/osiris/OSIRIS_fig_4.png" width="700px"/>    
+  <img src="../files_and_images/osiris/OSIRIS_fig_4.png" width="550px"/>    
 </p>
 
 _[Figure 4 : Méthodologie d'élaboration de la première version d'OSIRIS, Source : Guérin et al. (2021)_
@@ -185,7 +183,7 @@ _[Figure 4 : Méthodologie d'élaboration de la première version d'OSIRIS, Sour
 [^19]: Voir le guide d’installation Docker pour déployer l’instance i2b2/SHRINE : [GitHub - CARPEM/SHRINEDocker: A Docker version of SHRINE/i2b2](https://github.com/CARPEM/SHRINEDocker)
 
 <p align="center">
-  <img src="../files_and_images/osiris/OSIRIS_fig_5.png" width="700px"/>    
+  <img src="../files_and_images/osiris/OSIRIS_fig_5.png" width="550px"/>    
 </p>
 
 _[Figure 5 : Schéma d’intercommunication d'OSIRIS avec des sources de données et avec d’autres standards internationaux, Source : Guérin et al. (2021)_
@@ -229,7 +227,7 @@ Source: Guérin et al. (2021)
 _[Figure 6 : Exemple de relations « parent » - « enfants » entre les événements carcinologiques, Source : Description du Modèle de Données Cliniques (version 1.0, 2021)_
 
 <p align="center">
-  <img src="../files_and_images/osiris/OSIRIS_fig_7.png" width="700px"/>    
+  <img src="../files_and_images/osiris/OSIRIS_fig_7.png" width="550px"/>    
 </p>
 
 _[Figure 7 : Extrait du schéma de données OSIRIS (table TumorPathologyEvent), Source : Schéma de données OSIRIS_[^20]_
@@ -330,7 +328,7 @@ _[Figure 7 : Extrait du schéma de données OSIRIS (table TumorPathologyEvent), 
   - Il existe **plusieurs extensions du modèle OSIRIS :** il s'agit des modèles d'imagerie, de radiomique et de radiothérapie (voir Figure 8 ci-dessous pour la radiothérapie), qui permettent de traiter et d'intégrer les données spécifiques concernées[^25].
 
 <p align="center">
-  <img src="../files_and_images/osiris/OSIRIS_fig_8.png" width="700px"/>    
+  <img src="../files_and_images/osiris/OSIRIS_fig_8.png" width="550px"/>    
 </p>
 
 _[Figure 8 : Modèle de données de l’extension Radiothérapie, Source : https://github.com/siric-osiris/OSIRIS/tree/MED-OSIRIS/documentation_
