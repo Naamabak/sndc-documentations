@@ -42,10 +42,11 @@
  [^11]: Voir une démonstration du web client : [i2b2 Web Client](https://www.i2b2.org/webclient/)    
  [^12]: En mai 2017, i2b2 et tranSMART Foundations ont fusionné pour intégrer les deux plateformes dominantes utilisées dans la recherche clinique et translationnelle pour faire avancer la médecine de précision dans le monde.
    
-   <p align="center">
+<p align="center">
    <img src="../files_and_images/i2b2/i2b2_fig_1.png" width="700px"/>    
-   _Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)_
-   </p>  
+</p>  
+
+_Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)_
 
 ### Application :    
   - **Domaines d’application en santé :** La plateforme i2b2 est principalement utilisée en recherche clinique et translationnelle dans les domaines cliniques et en génomique[^13].
@@ -99,8 +100,9 @@
 
 <p align="center">
    <img src="../files_and_images/i2b2/i2b2_fig_2.png" width="600px"/>    
-   *Figure 2 : Schéma en étoile d’i2b2, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)*
 </p>  
+
+*Figure 2 : Schéma en étoile d’i2b2, Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/2.+Quick+Start+Guide)*
 
 <p align="center">
     <img src="../files_and_images/i2b2/i2b2_tab_1.png"/>    
@@ -169,6 +171,7 @@ La couche applicative reste ancienne dans son architecture et les technologies i
   - **Maturité :**
     - **Note : 0,5 / 1**
     - Cette note combine plusieurs sous-critères. Elle s’explique par :
+
       **a)** La publication d’une version stable  
       **b)** La fréquence moyenne faible de mise à jour des versions principales  
       **c)** L’âge élevé du standard  
@@ -204,11 +207,12 @@ Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scrip
 
 <p align="center">
    <img src="../files_and_images/i2b2/i2b2_fig_3.png" width="700px"/>    
-   _Figure 3 : Procédure de mapping, Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)_
 </p>  
 
+_Figure 3 : Procédure de mapping, Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)_
+
 ### Communication avec d'autres standards (inter typologies de standards) :
-  - Klann _et al._[^42] (2016) ont développé, au sein d’un réseau de 12 établissements aux États-Unis, un processus permettant de générer une base de données PCORnet _CDM_ directement à partir de systèmes i2b2 déjà existants.  
+  - Klann _et al._[^42] (2016) ont développé, au sein d’un réseau de 12 établissements aux États-Unis, un processus permettant de générer une base de données **PCORnet** **_CDM_** directement à partir de systèmes i2b2 déjà existants.  
     - Cette méthodologie a pu être validée par 8 des 12 sites concernés, ce qui a permis de constituer un réseau de 10 millions de patients.
     - La méthodologie est efficace : elle construit un réseau qui peut s’appuyer sur les fonctionnalités analytiques d'i2b2 et de PCORnet, sans avoir à développer un processus ETL supplémentaire. Les 8 établissements peuvent en effet :
       - Exécuter des requêtes fédérées dans SHRINE (voir « _Outils compatibles_ » en partie 4. Valorisation)
@@ -247,7 +251,7 @@ Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scrip
 | Labs         | LOINC                           |
 | Vital Signs  | LOINC                           |
 
-  _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+Common+Data+Model+Documentation)_
+_Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+Common+Data+Model+Documentation)_
 
  [^38]: Voir la page HL7 décrivant le projet : [HL7.FHIR.US.CDMH\IG Home Page](https://build.fhir.org/ig/HL7/cdmh/) et le rapport final « *Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation* », U.S Food & Drug Administration, NIH, *The Office of the National Coordinator for Health Information Technology*, 2020 ([Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)
  [^39]: Voir la page d’implémentation : [Reference Implementations | Biomedical Research Integrated Domain Group](https://bridgmodel.nci.nih.gov/implementation)  
@@ -287,8 +291,9 @@ Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scrip
 
 <p align="center">
    <img src="../files_and_images/i2b2/i2b2_fig_4.png" width="900px"/>    
-   _Figure 4 : Exemple de redondance d’information, Source : Traitement Veltys_
 </p>
+
+_Figure 4 : Exemple de redondance d’information, Source : Traitement Veltys_
 
 ### Contraintes d’implémentation :
   - La plateforme i2b2 n’impose pas de contrainte d’implémentation. L'un des trois SGBDs suivants peut être utilisé[^48] :
@@ -409,8 +414,9 @@ Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scrip
 
 <p align="center">
   <img src="../files_and_images/i2b2/i2b2_fig_5.png"/>    
-  _Figure 5 : Page d’accueil du " Query & Analysis Tool ", Source : démonstration du Web Client([i2b2 WebClient](https://www.i2b2.org/webclient/))_
 </p>
+
+_Figure 5 : Page d’accueil du " Query & Analysis Tool ", Source : démonstration du Web Client([i2b2 WebClient](https://www.i2b2.org/webclient/))_
 
   - _Plug-ins_ associés au « _Query & Analysis Tool_ » :
     - **« _ExportXLS_ »** : Permet d’exporter sous forme de fichier .csv ou .xls les concepts sélectionnés et observés sur un ensemble de patients, sous forme de tableau (voir Figure 6 ci-dessous)  
@@ -424,20 +430,23 @@ Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scrip
  
 <p align="center">
   <img src="../files_and_images/i2b2/i2b2_fig_6.png"/>
-  _Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client ([i2b2 WebClient](https://www.i2b2.org/webclient/)) (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)_
 </p>
+
+_Figure 6 : Exemple d’utilisation du plug-in ExportXLS, Source : démonstration du Web Client ([i2b2 WebClient](https://www.i2b2.org/webclient/)) (pour la population Femmes sur les concepts pression partielle en CO2 dans le sang et opérations sur le système cardiovasculaire)_
 
 <p align="center">
   <img src="../files_and_images/i2b2/i2b2_fig_7.png"/>
-  _Figure 7 : Exemple d’utilisation du plug-in Demographics (1 Patient Set) (pour la population Femmes), Source : démonstration du Web Client ([i2b2 WebClient](https://www.i2b2.org/webclient/))_
 </p>  
+
+_Figure 7 : Exemple d’utilisation du plug-in Demographics (1 Patient Set) (pour la population Femmes), Source : démonstration du Web Client ([i2b2 WebClient](https://www.i2b2.org/webclient/))_
 
   - **SHRINE**[^4] : outil qui permet de relier les systèmes i2b2 provenant de différents sites ou établissements avant l'utilisation du « _Query & Analysis Tool_ » (voir Figure 8 ci-dessous). Cet outil permet ainsi de compter le nombre de patients qui vérifient certains critères dans les établissements participants. Les chercheurs l’utilisent pour inclure un nombre suffisant de patients dans leurs études[^72].  
 
 <p align="center">
   <img src="../files_and_images/i2b2/i2b2_fig_8.png" width="300px"/>    
-  _Figure 8 : La fédération de systèmes i2b2 par SHRINE, Source : [Software – i2b2 tranSMART Foundation](https://i2b2transmart.org/software/)_
 </p>
+
+_Figure 8 : La fédération de systèmes i2b2 par SHRINE, Source : [Software – i2b2 tranSMART Foundation](https://i2b2transmart.org/software/)_
 
   - **tranSMART**[^4] : suite d'outils d'exploration et de visualisation de données, d'analyses génomiques et d'ETL développés par des industries pharmaceutiques pour des avancées en recherche translationnelle
   - **Wagholikar _et al._**[^73] (2017) ont développé une interface permettant d'implémenter SMART on FHIR à partir d'une plateforme i2b2 :
@@ -463,8 +472,9 @@ La Figure 9 ci-dessous illustre les étapes décrites précédemment.
 
 <p align="center">
   <img src="../files_and_images/i2b2/i2b2_fig_9.png"/>
-  _Figure 9 : Processus ETL utilisé pour charger les données dans i2b2, Source : Schéma réalisé par Veltys_
 </p>
+
+_Figure 9 : Processus ETL utilisé pour charger les données dans i2b2, Source : Schéma réalisé par Veltys_
 
 ### Existence d’extensions certifiées : plusieurs extensions existent :
   - **i2b2-_quickstart_ :**[^69] facilite l'installation de la plateforme i2b2
@@ -476,8 +486,9 @@ La page d'aide du i2b2 « _Query & Analysis Tool_ » contient des exemples de re
 
 <p align="center">
   <img src="../files_and_images/i2b2/i2b2_fig_10.png"/>
-  _Figure 10 : Extrait de la page d’aide de l’outil « Query & Analysis Tool », Source : démonstration du Web Client([i2b2 WebClient](https://www.i2b2.org/webclient/))_
 </p>
+
+_Figure 10 : Extrait de la page d’aide de l’outil « Query & Analysis Tool », Source : démonstration du Web Client([i2b2 WebClient](https://www.i2b2.org/webclient/))_
 
 ### Lisible par un humain : Oui
   - Les données dans i2b2 sont présentées sous format tabulaire, le nom des tables et des variables est compréhensible et renseigne directement sur leur contenu.
