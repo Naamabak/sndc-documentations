@@ -28,8 +28,9 @@
 
 <p align="center">
   <img src="../files_and_images/beacon/Beacon_fig_1.png" width="700px"/>    
-  _Figure 1 : Exemple schématique d’une requête Beacon jusqu’à la v1,Source : [GA4GH Beacon project](https://beacon-project.io/)_
 </p>  
+
+_Figure 1 : Exemple schématique d’une requête Beacon jusqu’à la v1,Source : [GA4GH Beacon project](https://beacon-project.io/)_
 
   - La nouvelle version du protocole Beacon (**v2**) permet des requêtes plus riches (voir Figure 2)[^3] :
     - **Ajout de nouvelles options de requêtage pour des métadonnées biologiques ou techniques** en utilisant des **filtres** (ex : code identifiant une maladie spécifique, sexe, âge[^6])
@@ -40,8 +41,9 @@
 
 <p align="center">
   <img src="../files_and_images/beacon/Beacon_fig_2.png" width="700px"/>    
-  _Figure 2 : Exemple schématique d’une requête Beacon (v2),Source : [GA4GH Beacon project](https://beacon-project.io/)_
 </p>  
+
+_Figure 2 : Exemple schématique d’une requête Beacon (v2),Source : [GA4GH Beacon project](https://beacon-project.io/)_
 
   - La **spécification Beacon v2** est composée de deux éléments interdépendants (voir Figure 3 pour une illustration)[^3] :
     - _**Le Framework Beacon**_ : décrit la structure globale des requêtes API et des réponses, des paramètres, des composants communs, etc. Dans ce *Framework*, les options des requêtes sont distinguées des réponses associées. Il existe plusieurs types de réponses possibles (aussi appelées : Beacon « *Flavours* », voir Figure 3 ci-dessous)[^7] :
@@ -57,8 +59,9 @@
 
 <p align="center">
   <img src="../files_and_images/beacon/Beacon_fig_3.png" width="700px"/>    
-  _Figure 3 : Illustration du Framework et du Modèle Beacon,Source : Rambla et al. (2022)[^2]_
 </p>  
+
+_Figure 3 : Illustration du Framework et du Modèle Beacon,Source : Rambla et al. (2022)[^2]_
 
   - Les **instances beacon** peuvent être combinées de différentes manières :
       - Un **réseau Beacon** est une combinaison de plusieurs instances beacon individuelles dans une même interface, potentiellement issues de plusieurs institutions ou producteurs de données différents[^9]. Dans un réseau Beacon, l’accès est uniformisé à travers une interface personnalisée (voir Figure 4), et éventuellement grâce à un alignement des paramètres des instances (ex : filtres harmonisés).
@@ -66,8 +69,9 @@
 
 <p align="center">
   <img src="../files_and_images/beacon/Beacon_fig_4.png" width="700px"/>    
-  _Figure 4 : Exemple d’un réseau Beacon,Source : [Beacon Networks and Aggregators - Beacon v2 Documentation](https://docs.genomebeacons.org/networks/
 </p>  
+
+*Figure 4 : Exemple d’un réseau Beacon,Source : [Beacon Networks and Aggregators - Beacon v2 Documentation](https://docs.genomebeacons.org/networks/*
 
   - **Organisme en charge** : *Global Alliance for Genomics and Health* (GA4GH)
 
@@ -87,8 +91,9 @@
 
 <p align="center">
   <img src="../files_and_images/beacon/Beacon_fig_5.png" width="700px"/>    
-  _Figure 5 : Illustration des résultats obtenus à l'aide de la plateforme Beacon Progenetix,Source : [Progenetix](https://progenetix.org/), Kon et al. (2013)[^16]
 </p>
+
+*Figure 5 : Illustration des résultats obtenus à l'aide de la plateforme Beacon Progenetix,Source : [Progenetix](https://progenetix.org/), Kon et al. (2013)[^16]*
 
 [^10]: Dans le cadre des développements liés à la médecine personnalisée, l’utilisation des données génomiques est envisagée pour prédire l’évolution de la santé des individus dans un objectif de prévention et de prise en charge individualisée. Voir l’article de Prins BP, Leitsalu L, Pärna K, Fischer K, Metspalu A, Haller T, Snieder H. « *Advances in Genomic Discovery and Implications for Personalized Prevention and Medicine: Estonia as Example* ». J Pers Med. 2021 Apr: [Advances in Genomic Discovery and Implications for Personalized Prevention and Medicine: Estonia as Example - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8145318/)
 [^11]: Voir : [Other implementations - Beacon v2 Documentation](https://docs.genomebeacons.org/other-implementations/) et [Progenetix](https://progenetix.org/)
@@ -219,8 +224,9 @@ Les liens entre ces entités sont illustrés dans le schéma ci-dessous (voir Fi
 
 <p align="center">
   <img src="../files_and_images/beacon/Beacon_fig_6.png" width="700px"/>    
-  _Figure 6 : Modèle Beacon,Source : Beacon v2 documentation[^37]
 </p>
+
+*Figure 6 : Modèle Beacon,Source : Beacon v2 documentation[^37]*
 
 - **Technologie de stockage et traitement de données et niveau d'adoption de la technologie** :
 Le standard n’impose pas de technologie de stockage ou de traitement des données.
@@ -338,8 +344,9 @@ Le Modèle et le *Framework* sont décrits aux formats YAML et JSON mais les mod
 
 <p align="center">
   <img src="../files_and_images/beacon/Beacon_fig_7.png" width="700px"/>    
-  _Figure 7 : Fonctionnement de l'outil Beacon (vérifier),Source : GitHub du Beacon vérifier[^60]
 </p>
+
+*Figure 7 : Fonctionnement de l'outil Beacon (vérifier),Source : GitHub du Beacon vérifier[^60]*
 
   - Outils d'aide à l'implémentation contenus dans le logiciel B2RI (*Beacon v2 Reference Implementation*)[^60] :
     - BFF *Validator (Beacon Friendly Format Validator)* : outil qui vérifie l'alignement entre la structure des données source et le Modèle JSON et, en cas de validation, qui crée un code JSON en sortie.
