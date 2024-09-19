@@ -1,5 +1,3 @@
-## Benchmark « standards de données de santé »
-
 # fiche d’identité : beacon
 
 ## SYNTHÈSE :
@@ -27,7 +25,7 @@
 [^5]: La découverte de données, ou *data discovery*, est un processus qui consiste à agréger les données et à les visualiser afin de détecter des *patterns*. Un exemple d’outil de *data discovery* appliqué à la génomique et développé par *Genomics England* (société britannique créée et détenue par le Ministère de la Santé et des Affaires sociales du Royaume-Uni pour gérer le projet « 100 000 génomes » :[Data Discovery - Genomics England Research Environment User Guide](https://re-docs.genomicsengland.co.uk/data_discovery/)
 
 <p align="center">
-  <img src="../files_and_images/beacon/Beacon_fig_1.png" width="700px"/>    
+  <img src="../files_and_images/beacon/Beacon_fig_1.png" width="500px"/>    
 </p>  
 
 _Figure 1 : Exemple schématique d’une requête Beacon jusqu’à la v1,Source : [GA4GH Beacon project](https://beacon-project.io/)_
@@ -40,7 +38,7 @@ _Figure 1 : Exemple schématique d’une requête Beacon jusqu’à la v1,Source
     - Information sur les **cohortes**
 
 <p align="center">
-  <img src="../files_and_images/beacon/Beacon_fig_2.png" width="700px"/>    
+  <img src="../files_and_images/beacon/Beacon_fig_2.png" width="500px"/>    
 </p>  
 
 _Figure 2 : Exemple schématique d’une requête Beacon (v2),Source : [GA4GH Beacon project](https://beacon-project.io/)_
@@ -58,7 +56,7 @@ _Figure 2 : Exemple schématique d’une requête Beacon (v2),Source : [GA4GH Be
 [^8]: En principe, il est possible d’adopter différents modèles en utilisant le même *Framework* (ex : « Imaging Beacon »,[About the Precision Imaging Beacon](https://www.nottingham.ac.uk/research/beacons-of-excellence/precision-imaging/about/index.aspx)). Cependant, dans le contexte actuel de Beacon v2, les deux éléments sont considérés interdépendants et seront probablement mis à jour en même temps pour les principales versions. Voir : https://docs.genomebeacons.org/what-is-beacon-v2/?h=beacon
 
 <p align="center">
-  <img src="../files_and_images/beacon/Beacon_fig_3.png" width="700px"/>    
+  <img src="../files_and_images/beacon/Beacon_fig_3.png" width="400px"/>    
 </p>  
 
 _Figure 3 : Illustration du Framework et du Modèle Beacon,Source : Rambla et al. (2022)[^2]_
@@ -68,7 +66,7 @@ _Figure 3 : Illustration du Framework et du Modèle Beacon,Source : Rambla et al
       - Des **instances beacon** peuvent également être combinées à travers des **Beacon Aggregator** : il s’agit d’interfaces d’accès uniques dans lesquelles les instances beacon individuelles ne sont cependant ni nécessairement harmonisées, ni nécessairement averties de leur intégration dans l’agrégateur[^10].
 
 <p align="center">
-  <img src="../files_and_images/beacon/Beacon_fig_4.png" width="700px"/>    
+  <img src="../files_and_images/beacon/Beacon_fig_4.png" width="500px"/>    
 </p>  
 
 *Figure 4 : Exemple d’un réseau Beacon,Source : [Beacon Networks and Aggregators - Beacon v2 Documentation](https://docs.genomebeacons.org/networks/*
@@ -137,7 +135,7 @@ _Figure 3 : Illustration du Framework et du Modèle Beacon,Source : Rambla et al
 
   (e) Une couverture relativement faible des domaines d’application (voir l’élément « *Domaine d'application en santé* » en partie 1. Général)
 
-En raison de la flexibilité du standard et des terminologies, la spécification **peut être facilement généralisée et utilisée dans d'autres domaines d'application** (voir les éléments « *Flexibilité du standard, personnalisation *» et « *Flexibilité dans les choix des terminologies* » en partie 3. Technique).
+En raison de la flexibilité du standard et des terminologies, la spécification **peut être facilement généralisée et utilisée dans d'autres domaines d'application** (voir les éléments « *Flexibilité du standard, personnalisation* » et « *Flexibilité dans les choix des terminologies* » en partie 3. Technique).
 
 ## 2. Gouvernance
 
@@ -200,7 +198,7 @@ JAMIA Open, 3(3), 472–486. [The case for open science: rare diseases](https://
 
 - **Complexité du modèle** :
 
-Ce Modèle par défaut comporte les 7 entités suivantes qui sont liées par 12 relations et contiennent les termes suivants[^36,37] :
+Ce Modèle par défaut comporte les 7 entités suivantes qui sont liées par 12 relations et contiennent les termes suivants[^36][^37] :
 
   - Les entités **Datasets** et **Cohorts** (les collections) : Contiennent un regroupement de variants d'une même base de données (dans _**Datasets**_[^38] : date de création, conditions d’utilisation, description, identifiant, nom, version, etc.) ou d’individus appartenant à la même population d’étude (dans _**Cohorts**[^38] : design_ de la cohorte, taille, type, identifiant, critères d’inclusion, nom, etc.).
   - L'entité _**Genomic variation**_[^40] : Contient les informations sur les altérations génomiques uniques (ex : position dans le génome, altérations des séquences, type, fréquence dans la population, etc.)
@@ -223,7 +221,7 @@ Les liens entre ces entités sont illustrés dans le schéma ci-dessous (voir Fi
 [^44]: Voir le contenu de l’entité Analyses : [analyses defaultSchema - Beacon v2 Documentation](https://docs.genomebeacons.org/schemas-md/analyses_defaultSchema/) et le GitHub associé : https://github.com/ga4gh-beacon/beacon-v2/tree/main/models/json/beacon-v2-default-model/analyses
 
 <p align="center">
-  <img src="../files_and_images/beacon/Beacon_fig_6.png" width="700px"/>    
+  <img src="../files_and_images/beacon/Beacon_fig_6.png" width="500px"/>    
 </p>
 
 *Figure 6 : Modèle Beacon,Source : Beacon v2 documentation[^37]*
@@ -357,19 +355,19 @@ Le Modèle et le *Framework* sont décrits aux formats YAML et JSON mais les mod
 
   Pour implémenter une instance Beacon locale, deux éléments sont nécessaires :
 
-  1) Une base de données contenant les données biologiques
+  1)Une base de données contenant les données biologiques
 
-  2) Une API REST qui permet d'envoyer des requêtes et de recevoir des réponses de manière standardisée
+  2)Une API REST qui permet d'envoyer des requêtes et de recevoir des réponses de manière standardisée
 
   À cette fin, B2RI[^23] (*Beacon v2 Reference Implementation*) fournit ces deux éléments essentiels ainsi qu'un ensemble d'outils permettant de « *beaconiser* » les données. En particulier, B2RI contient 4 composantes :
 
-  1) Un ensemble d'outils d'extraction, de transformation et de chargement des métadonnées (méthodologie de séquençage, outils de bio-informatique, etc.), des données phénotypiques et des variants génomiques dans une base de données
+  1)Un ensemble d'outils d'extraction, de transformation et de chargement des métadonnées (méthodologie de séquençage, outils de bio-informatique, etc.), des données phénotypiques et des variants génomiques dans une base de données
 
   2)La base de données (une instance MongoDB)
 
-  3) L'API REST Beacon v2
+  3)L'API REST Beacon v2
 
-  4) Un exemple de base de données (données synthétiques)
+  4)Un exemple de base de données (données synthétiques)
 
   Pour utiliser B2RI, il faut suivre les étapes suivantes :
 
