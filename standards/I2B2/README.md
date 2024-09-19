@@ -27,7 +27,7 @@
       - **_Identity Management_**[^10] : gère les données sensibles des patients, en accord avec la réglementation _HIPAA (Health Insurance Portability and Accountability Act_)
     - **Une application _Web Client_**[^11] qui permet d’interroger, d’analyser et d’afficher les données du i2b2 Hive en communiquant avec les cellules i2b2 (on parle aussi du _« Query & Analysis Tool »_, voir l’élément _« Outils compatibles »_ en partie 5. Utilisation).
     - **Une application _Workbench_** qui réalise les mêmes analyses que le _Web Client_ d’une façon plus approfondie  
-  - **Organisme en charge :**[^1,12] _i2b2 tranSMART Foundation_  
+  - **Organisme en charge :**[^1][^12] _i2b2 tranSMART Foundation_  
 
  [^1]: Voir :[Our History – i2b2 tranSMART Foundation](https://i2b2transmart.org/home/our-history/)
  [^2]: I2b2 est un NBCB (*National Center for Biomedical Computing*), un programme développé par le NIH (*National Institutes of Health*) aux États-Unis ayant pour objectif de participer au développement d’une infrastructure informatique universelle pour accélérer le progrès de la recherche biomédicale. 
@@ -43,7 +43,7 @@
  [^12]: En mai 2017, i2b2 et tranSMART Foundations ont fusionné pour intégrer les deux plateformes dominantes utilisées dans la recherche clinique et translationnelle pour faire avancer la médecine de précision dans le monde.
    
 <p align="center">
-   <img src="../files_and_images/i2b2/i2b2_fig_1.png" width="700px"/>    
+   <img src="../files_and_images/i2b2/i2b2_fig_1.png" width="55000px"/>    
 </p>  
 
 _Figure 1 : Structure du i2b2 Hive, Source : [i2b2 Community Wiki](https://community.i2b2.org/wiki/)_
@@ -206,7 +206,7 @@ Le projet **_Common Data Model Harmonization_** (CDMH)[^38] vise à harmoniser l
 Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP[^40][^41].
 
 <p align="center">
-   <img src="../files_and_images/i2b2/i2b2_fig_3.png" width="700px"/>    
+   <img src="../files_and_images/i2b2/i2b2_fig_3.png" width="600px"/>    
 </p>  
 
 _Figure 3 : Procédure de mapping, Source : [Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation](https://aspe.hhs.gov/sites/default/files/private/pdf/259016/CDMH-Final-Report-14August2020.pdf)_
@@ -443,7 +443,7 @@ _Figure 7 : Exemple d’utilisation du plug-in Demographics (1 Patient Set) (pou
   - **SHRINE**[^4] : outil qui permet de relier les systèmes i2b2 provenant de différents sites ou établissements avant l'utilisation du « _Query & Analysis Tool_ » (voir Figure 8 ci-dessous). Cet outil permet ainsi de compter le nombre de patients qui vérifient certains critères dans les établissements participants. Les chercheurs l’utilisent pour inclure un nombre suffisant de patients dans leurs études[^72].  
 
 <p align="center">
-  <img src="../files_and_images/i2b2/i2b2_fig_8.png" width="300px"/>    
+  <img src="../files_and_images/i2b2/i2b2_fig_8.png" width="200px"/>    
 </p>
 
 _Figure 8 : La fédération de systèmes i2b2 par SHRINE, Source : [Software – i2b2 tranSMART Foundation](https://i2b2transmart.org/software/)_
