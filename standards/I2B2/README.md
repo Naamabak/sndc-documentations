@@ -151,7 +151,7 @@ La couche applicative reste ancienne dans son architecture et les technologies i
 ### Libre accès aux schémas de données : Oui[^27]
 
 ### Modalités d'accès et distribution des solutions basées sur ce standard :
-  - Les composantes du logiciel i2b2 (« _Software_ ») sont open source publiées sous la licence libre Mozilla Public License, version 2.0[^27,28],  : il s'agit des cellules centrales du _Hive_ i2b2, des applications _Web Client et Workbench_. Des données de démonstration ainsi que de la documentation sont également disponibles en téléchargement.
+  - Les composantes du logiciel i2b2 (« _Software_ ») sont open source publiées sous la licence libre Mozilla Public License, version 2.0[^27][^28],  : il s'agit des cellules centrales du _Hive_ i2b2, des applications _Web Client et Workbench_. Des données de démonstration ainsi que de la documentation sont également disponibles en téléchargement.
   - Les différents composants du logiciel i2b2 sont disponibles en téléchargement pour Windows ou pour Mac[^29]
 
 ### Processus de prise de décision sur le standard :
@@ -203,7 +203,7 @@ Le projet **_Common Data Model Harmonization_** (CDMH)[^38] vise à harmoniser l
   - L'objectif est d'avoir un outil d'accès unifié à ces données permettant aux chercheurs d'accéder à un réseau plus large de patients et à des données variées (_EHR_, demandes de remboursement, données issues des essais cliniques, ...).
   - Le projet consiste à mapper chacun de ces schémas de données vers le modèle intermédiaire BRIDG v3.2[^39] (voir Figure 3 ci-dessous). Ce modèle a été choisi comme modèle intermédiaire car il a été mappé dans une première étape à FHIR et CDISC SDTM.  
  
-Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP[^40,41].
+Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP[^40][^41].
 
 <p align="center">
    <img src="../files_and_images/i2b2/i2b2_fig_3.png" width="700px"/>    
@@ -229,7 +229,7 @@ _Figure 3 : Procédure de mapping, Source : [Common Data Model Harmonization (CD
       Cette difficulté est également retrouvée avec le modèle OMOP.
 
 ### Flexibilité dans les choix des terminologies :
-  - La plateforme i2b2 utilise plusieurs terminologies standards pour représenter ses concepts (voir Tableau 2 ci-dessous)[^43,44] :
+  - La plateforme i2b2 utilise plusieurs terminologies standards pour représenter ses concepts (voir Tableau 2 ci-dessous)[^43][^44] :
     - CIM-9 ou CIM-10 pour les maladies
     - LOINC pour les tests de laboratoire
     - NDC (_National Drug Codes_ : nomenclature des médicaments aux États-Unis) pour les médicaments  
