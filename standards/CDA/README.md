@@ -1,5 +1,3 @@
-### Benchmark « standards de données de santé »
-
 # Fiche d’identité : CDA
 
 ## SYNTHÈSE :
@@ -302,7 +300,7 @@ _Figure 2 : Les composants des 3 niveaux d'implémentation du standard, Source :
 [^54]: Voir : [Electronic cross-border health services - European Commission](https://health.ec.europa.eu/ehealth-digital-health-and-care/electronic-cross-border-health-services_en) 
 
 <p align="center">
-  <img src="../files_and_images/cda/CDA_carte_1.png" width="700px"/>    
+  <img src="../files_and_images/cda/CDA_carte_1.png" width="500px"/>    
 </p>  
 
 _Carte 1 : Implémentation de l'IPS CDA en date d'octobre 2018, Source : Blog HL7_
@@ -337,7 +335,7 @@ _Carte 1 : Implémentation de l'IPS CDA en date d'octobre 2018, Source : Blog HL
       - Dans FHIR, la signification est directement définie par la ressource : les profils sont uniquement utilisés pour définir les extensions, mais ils ne permettent pas de définir les éléments principaux.
 
 <p align="center">
-  <img src="../files_and_images/cda/CDA_fig_3.png" width="700px"/>    
+  <img src="../files_and_images/cda/CDA_fig_3.png" width="550px"/>    
 </p>  
 
 _Figure 3 : Exemple d'une instance CDA XML, Source : Modèles de contenus CDA (v3.2), Agence du Numérique en Santé_[^59]_
