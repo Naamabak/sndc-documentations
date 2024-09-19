@@ -25,7 +25,7 @@ Afin de vous permettre d’associer la consommation de soins de ces personnes à
 
 ## Méthode d’appariement indirect des données de 2013 à 2015
 Pour réaliser cet appariement, les informations du référentiel des bénéficiaires du SNDS IR_BEN_R ont été enrichies par la date de fin de séjour hospitalier pour motif de décès et le département de l’établissement géographique où a eu lieu ce séjour, provenant du PMSI ou des remboursements de soins de DCIR pour les années 2013 à 2015.
-Le procédé utilisé pour rechercher ces informations supplémentaires est décrit en [Annexe 1](5-Annexe1-CausesDeces.md) de ce guide.
+Le procédé utilisé pour rechercher ces informations supplémentaires est décrit en Annexe 1 de ce guide.
 
 En effet, pour chacune des années 2013 à 2015, lorsque la date de décès est renseignée dans le référentiel IR_BEN_R et lorsque le patient est décédé au cours d’un séjour hospitalier, la date de fin de séjour est égale à la date de décès ou s’en écarte d’un jour dans plus de 99 % des cas.
 
@@ -60,13 +60,13 @@ On va alors remplacer la date de décès de la table IR_BEN_R par la date de fin
 
 Vous pourrez retrouver facilement les personnes appariées dans cette seconde étape (près de 36 000 en 2013, environ 30 500 en 2014 et en 2015) car leur identifiant `ben_idt_ano` se trouvera dans les informations sur les causes de décès d’une part, leur  date de décès sera égale au 1er janvier 1600 dans la table IR_BEN_R d’autre part. 
 Il est techniquement impossible de charger la date de fin de séjour hospitalier dans la table IR_BEN_R car les temps de traitement informatiques nécessaires à cette alimentation seraient colossaux. 
-Si vous souhaitez retrouver la date de fin de séjour et le département de l’établissement hospitalier dans le PMSI ou DCIR, vous pouvez vous reporter à l’[annexe 1](5-Annexe1-CausesDeces.md) de ce guide.
+Si vous souhaitez retrouver la date de fin de séjour et le département de l’établissement hospitalier dans le PMSI ou DCIR, vous pouvez vous reporter à l’annexe 1 de ce guide.
  
 
 ::: warning Attention
 Les données qui ont été appariées au cours de la seconde étape correspondent à des personnes décédées à l’hôpital et dont la date de décès n’est pas alimentée dans le référentiel IR_BEN_R. La raison principale de cette absence d’alimentation dans IR_BEN_R est que, pour des raisons de norme d’échange des données, le régime ou l’organisme de sécurité sociale de ces personnes ne transmet pas la date de décès au SNDS.
 
-Si vous réalisez des études sur ces personnes, vous devez garder présent à l’esprit que la totalité des décès provenant de leur régime ou organisme de sécurité sociale n’a pas pu être appariée avec les données du CépiDc, d’une part parce qu’elles ne sont pas toutes décédées à l’hôpital, d’autre part parce que la date de fin d’hospitalisation pour cause de décès n’a pas toujours pu être trouvée (Cf. [annexe 1](5-Annexe1-CausesDeces.md) ).
+Si vous réalisez des études sur ces personnes, vous devez garder présent à l’esprit que la totalité des décès provenant de leur régime ou organisme de sécurité sociale n’a pas pu être appariée avec les données du CépiDc, d’une part parce qu’elles ne sont pas toutes décédées à l’hôpital, d’autre part parce que la date de fin d’hospitalisation pour cause de décès n’a pas toujours pu être trouvée (Cf. annexe 1 ).
 
 Au total, sur l’ensemble des deux étapes d’appariement, la proportion de décès appariés survenus à l’hôpital risque d’être surévaluée par rapport à celle de l’ensemble des décès. La variable sur le lieu de décès, contenue dans les données du CépiDc, devrait vous permettre de mesurer la différence entre la proportion de décès appariés survenus à l’hôpital et la proportion correspondante dans l’ensemble des décès.
 :::
