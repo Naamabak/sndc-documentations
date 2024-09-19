@@ -183,8 +183,9 @@
 
 <p align="center">
   <img src="../files_and_images/fhir/FHIR_fig_1.png"/>
-  _Figure 1 : Procédure de mapping, Source : Rapport final CDMH (2020)_
 </p>    
+
+_Figure 1 : Procédure de mapping, Source : Rapport final CDMH (2020)_
 
   - Wagholikar et *al.*[^42] (2017) ont développé une interface permettant d'implémenter SMART *on* FHIR à partir d'une plateforme i2b2 :
     - La plateforme i2b2 est utilisée dans une **approche « sidecar »** : le logiciel stocke une copie des données patient issues de l'*EHR* et exécute des requêtes sur ces données pour un usage secondaire de recherche (en parallèle de l'*EHR* qui continue d'être utilisé pour un usage clinique)
@@ -410,24 +411,27 @@ FHIR ne définit pas de **technologie de stockage ni de traitement de données**
 
 <p align="center">
   <img src="../files_and_images/fhir/FHIR_fig_2.png"/>
-  _Figure 2 : Le système cible initie la demande d’information (exemple a), Source : vidéo HL7 de la présentation de Christiaan Knaap (Firely)[^106], schéma Veltys_
 </p>
- 
-  *Dans cet exemple, on suppose que le système cible choisit d’implémenter les actions GET et POST mais de ne pas implémenter les actions qui modifient les ressources (il s’agit d’une architecture en écriture seule).*
+
+_Figure 2 : Le système cible initie la demande d’information (exemple a), Source : vidéo HL7 de la présentation de Christiaan Knaap (Firely)[^106], schéma Veltys_
+
+*Dans cet exemple, on suppose que le système cible choisit d’implémenter les actions GET et POST mais de ne pas implémenter les actions qui modifient les ressources (il s’agit d’une architecture en écriture seule).*
 
 <p align="center">
   <img src="../files_and_images/fhir/FHIR_fig_3.png"/>
-  _Figure 3 : Le système source partage l’information (exemple b)_
 </p>
+
+_Figure 3 : Le système source partage l’information (exemple b)_
 
   *Dans cet exemple, le système source partage l’information et le système cible s’occupe des opérations de stockage, de modification et de résolution des conflits.*
     - **Exemple d’architecture n°2 : Mise en place d’un serveur FHIR générique** qui implémente l’ensemble des fonctionnalités FHIR (API, stockage des ressources, gestion de stockage, support de tous les ressources, voir Figure 4).
 
 <p align="center">
   <img src="../files_and_images/fhir/FHIR_fig_4.png"/>
-  _Figure 4 : Serveur FHIR générique (exemple c)_
 </p>
  
+ _Figure 4 : Serveur FHIR générique (exemple c)_
+
   *Dans cet exemple, le serveur FHIR générique s’occupe de l’ensemble des opérations (stockage, résolution de conflits, contrôle d’accès, etc.). Il peut aussi router l’information entre différents systèmes.*
 
   - **Etape 3** : Concevoir et développer le **processus de mapping** entre les formats natifs (ex : un SGBDR) et les ressources FHIR. Pour réaliser cette étape, l’utilisateur peut utiliser un FHIR Adapter/Facade ou bien développer sa propre solution de mapping.
@@ -449,8 +453,9 @@ FHIR ne définit pas de **technologie de stockage ni de traitement de données**
 
 <p align="center">
   <img src="../files_and_images/fhir/FHIR_fig_5.png"/>
-  _Figure 5 : Exemple de ressource FHIR en langage XML (ressource Patient),Source:https://hl7.org/fhir/summary.html_
 </p>
+
+_Figure 5 : Exemple de ressource FHIR en langage XML (ressource Patient),Source:https://hl7.org/fhir/summary.html_
 
 - **Lisible par un humain : Oui**
   - Chaque ressource peut contenir un **résumé** lisible par un humain en format XHTML[^114]. Ce résumé, s'il est rempli, contient les informations cliniques et *business* essentielles de la ressource. Par exemple, pour la ressource *MedicationRequest*, le résumé peut inclure des informations sur le patient, le prescripteur et le médicament.
