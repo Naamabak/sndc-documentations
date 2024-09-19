@@ -29,7 +29,7 @@ Les couples {`ben_nir_psa` ; `ben_rng_gem`} du référentiel IR_BEN_R et, le cas
 ## Recherche des informations dans le référentiel médicalisé IR_IMB_R et DCIR
 
 - Pour les décès appariés avec le SNDS (`dcd_idt_top` = 1 dans la table des circonstances et de la cause initiale du décès KI_CCI_R), vous recherchez tous les couples {`ben_nir_psa` ;`ben_rng_gem`} associés à leur identifiant `ben_idt_ano` dans le référentiel IR_BEN_R. 
-Si le champ `ben_idt_ano` ne figure pas dans IR_BEN_R, vous le recherchez dans le référentiel archivé IR_BEN_R_ARC (Cf. [Annexe 2](6-Annexe2-CausesDeces.md)).
+Si le champ `ben_idt_ano` ne figure pas dans IR_BEN_R, vous le recherchez dans le référentiel archivé IR_BEN_R_ARC.
 Vous appariez donc la table KI_CCI_R et le référentiel IR_BEN_R + IR_BEN_R_ARC à l’aide de l’identifiant `ben_idt_ano` et vous constituez une table de correspondance entre les champs `ben_idt_ano`, `ben_nir_psa` et `ben_rng_gem`. 
 Vous devez veiller à ce que cette table de correspondance ne contienne qu’une seule ligne par couple {`ben_nir_psa` ; `ben_rng_gem`}, afin de ne pas dupliquer les données de consommation de soins ou les données médicalisées que vous allez rechercher ensuite ;
 - pour les couples {`ben_nir_psa` ; `ben_rng_gem`} de votre table de correspondance, vous allez rechercher les informations que vous souhaitez dans le référentiel IR_IMB_R ou DCIR ;
