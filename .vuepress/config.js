@@ -150,16 +150,6 @@ const sidebar = {
             {
               title: "Guide causes médicales de décès",
               path: "/snds/formation_snds/documents_cnam/guide_cepidc/",
-              children: [
-                "/snds/formation_snds/documents_cnam/guide_cepidc/Avant_propos",
-                "/snds/formation_snds/documents_cnam/guide_cepidc/0-IntroductionCausesDeces",
-                "/snds/formation_snds/documents_cnam/guide_cepidc/1-Chap1CausesDeces",
-                "/snds/formation_snds/documents_cnam/guide_cepidc/2-Chap2CausesDeces",
-                "/snds/formation_snds/documents_cnam/guide_cepidc/3-Chap3CausesDeces",
-                "/snds/formation_snds/documents_cnam/guide_cepidc/4-Chap4CausesDeces",
-                "/snds/formation_snds/documents_cnam/guide_cepidc/5-Annexe1-CausesDeces",
-                "/snds/formation_snds/documents_cnam/guide_cepidc/6-Annexe2-CausesDeces",
-              ],
             },
             {
               title: "Guides pédagogiques",
