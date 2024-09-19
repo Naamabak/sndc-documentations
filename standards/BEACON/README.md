@@ -1,4 +1,4 @@
-# fiche d’identité : beacon
+# fiche d’identité : BEACON
 
 ## SYNTHÈSE :
 
