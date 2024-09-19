@@ -48,8 +48,9 @@ Ainsi que les sources suivantes pour des descriptions de l’architecture CDA da
 
 <p align="center">
   <img src="../files_and_images/cda/CDA_fig_1.png" width="700px"/>    
-  _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
 </p>
+
+_Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
 
 - **Application** :
   - **Domaine d'application en santé : Documents cliniques** (synthèse médicale, lettre de sortie, lettre de liaison, CR d'examens de biologie médicale, CR d'imagerie, etc.)[^5].
@@ -203,8 +204,9 @@ Ainsi que les sources suivantes pour des descriptions de l’architecture CDA da
 
 <p align="center">
   <img src="../files_and_images/cda/CDA_fig_1.png" width="700px"/>    
-  _Figure 2 : Les composants des 3 niveaux d'implémentation du standard, Source : [What is HL7® CDA™?](http://iehr.eu/knowledge/what-is-hl7-cda/)– iEHR.eu_
 </p>
+
+_Figure 2 : Les composants des 3 niveaux d'implémentation du standard, Source : [What is HL7® CDA™?](http://iehr.eu/knowledge/what-is-hl7-cda/)– iEHR.eu_
 
   - Ainsi, il existe une **grande variété de documents CDA**, depuis la simple image jusqu'à des documents beaucoup plus complexes. Pour limiter cette variété de documents, il est possible de créer des profils : à partir des éléments de base du standard, les profils définissent et contraignent les options (éléments requis et optionnels, nomenclatures à utiliser, etc.). Les profils CDA sont définis dans les guides d'implémentation[^35] (voir l'élément « *Existence d'extensions certifiées* » en partie 5. Utilisation et l'exemple de C-CDA).
 
@@ -301,8 +303,9 @@ Ainsi que les sources suivantes pour des descriptions de l’architecture CDA da
 
 <p align="center">
   <img src="../files_and_images/cda/CDA_carte_1.png" width="700px"/>    
-  _Carte 1 : Implémentation de l'IPS CDA en date d'octobre 2018, Source : Blog HL7_
 </p>  
+
+_Carte 1 : Implémentation de l'IPS CDA en date d'octobre 2018, Source : Blog HL7_
 
 - **Fournisseurs de service ayant l'expertise en France** :
   - Plusieurs éditeurs de logiciels : Evolucare[^55], Enovacom[^56], Maincare[^57], Softway Medical[^58], etc. (tous les éditeurs du secteur de la santé devant produire des documents pour alimenter le DMP).
@@ -335,8 +338,9 @@ Ainsi que les sources suivantes pour des descriptions de l’architecture CDA da
 
 <p align="center">
   <img src="../files_and_images/cda/CDA_fig_3.png" width="700px"/>    
-  _Figure 3 : Exemple d'une instance CDA XML, Source : Modèles de contenus CDA (v3.2), Agence du Numérique en Santé_[^59]
 </p>  
+
+_Figure 3 : Exemple d'une instance CDA XML, Source : Modèles de contenus CDA (v3.2), Agence du Numérique en Santé_[^59]_
 
 - *Existence d'une communauté en ligne et degré d'activité : Integrating the Healthcare Enterprise (IHE) a décrit des Profils dans plusieurs domaine (PCC, PALM, QRPH, etc.), spécifiant les sections et entrées de la majorité des concepts ; le CI-SIS notamment s'appuie sur les profils IHE pour les documents CDA.*
 
@@ -358,8 +362,9 @@ Ainsi que les sources suivantes pour des descriptions de l’architecture CDA da
 
 <p align="center">
   <img src="../files_and_images/cda/CDA_fig_4.png" width="700px"/>    
-  _Figure 4 : Aperçu de l’interface de l’outil HL7 C-CDA Viewer, Source : HL7 C-CDA Viewer_
 </p>  
+
+_Figure 4 : Aperçu de l’interface de l’outil HL7 C-CDA Viewer, Source : HL7 C-CDA Viewer_
 
   - DrChrono : *EHR*, permettant l'import et l'export de documents au format C-CDA[^54].
 
