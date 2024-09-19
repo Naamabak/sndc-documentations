@@ -5,7 +5,7 @@ Les informations sur les causes médicales de décès sont restituées dans deux
 - la table des circonstances et de la cause initiale du décès KI_CCI_R,
 - la table de l’ensemble des causes de décès KI_ECD_R.
 
-Les données contenues dans chaque table sont présentées dans le [chapitre IV](4-Chap4CausesDeces.md) de ce guide. 
+Les données contenues dans chaque table sont présentées dans le chapitre IV de ce guide. 
 
 Lorsqu’un décès, identifié par son code `dcd_idt_enc`, a pu être apparié avec les données de santé, les tables KI_CCI_R et KI_ECD_R contiennent :
 - l’identifiant `ben_idt_ano` du bénéficiaire,
