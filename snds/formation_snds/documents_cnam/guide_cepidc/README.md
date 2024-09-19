@@ -4,9 +4,9 @@
 Cette section renvoie vers la documentation du [CépiDC](../../../glossaire/CepiDC.md) à l’attention des utilisateurs concernant l’intégration des causes médicales de décès dans le Système National des Données de Santé (SNDS).
 
 ::: tip Liens de téléchargement
-* [Documentation](../../../files/Cnam/CepiDC/202403_Documentation_utilisateurs_causes_de_deces_dans_SNDS_V5_F.pdf) à l’attention des utilisateurs concernant
+* [Documentation](/files/Cnam/CepiDC/202403_Documentation_utilisateurs_causes_de_deces_dans_SNDS_V5_F.pdf) à l’attention des utilisateurs concernant
  l’intégration des causes médicales de décès dans le Système National des Données de Santé - Version 5
-* [Documentation](../../../files/Cnam/CepiDC/202403_V0_documentation_variables_CepiDc_SNDS_F.xlsx) des tables et variables des causes de décès dans le SNDS
+* [Documentation](/files/Cnam/CepiDC/202403_V0_documentation_variables_CepiDc_SNDS_F.xlsx) des tables et variables des causes de décès dans le SNDS
 :::
 
 ## Mises-à-jour
