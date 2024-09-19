@@ -47,7 +47,7 @@ Pour les accès permanents, la table `ER_PRS_F` couvre la période de mise à di
 En revanche, la remontée des informations suivantes est différente selon les régimes et selon les années : 
 * Statut vital (date de décès) du bénéficiaire : disponible exhaustivement pour le [RG](../../glossaire/RG.md) et la [MSA](../../glossaire/MSA.md) depuis 2009 ou les [SLM](../../glossaire/SLM.md) infogérés à partir de septembre 2015. Le [RSI](../../glossaire/RSI.md) ayant été intégré en janvier 2018 au régime général, les données concernant le décès remontent de façon robuste depuis janvier 2020 (fin de la transition).
 
-* Les causes médicales de décès : données chaînées aux données du SNDS à plus de 80% pour les années de 2013 à 2017 (disponibilités au 01/09/2022). Le taux d'appariement pour toutes les années est disponible dans la [documentation collaborative](../documents_cnam/guide_cepidc/0-IntroductionCausesDeces.md).
+* Les causes médicales de décès : données chaînées aux données du SNDS à plus de 80% pour les années de 2013 à 2017 (disponibilités au 01/09/2022). Le taux d'appariement pour toutes les années est disponible dans la [documentation collaborative](../documents_cnam/guide_cepidc/README.md).
 
 * Hébergements ou prises en charge en ESMS (`IR_ESM_R`) : les données d'hébergement en EHPAD ou en USLD et de la prise en charge dans les autres ESMS montent en charge progressivement. Cependant, en 2022, cette table n'est pas encore exhaustive. Ses informations les plus anciennes datent d'octobre 2013.
     
