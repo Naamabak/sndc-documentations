@@ -134,7 +134,7 @@
     - L'historique des principales versions de FHIR est le suivant[^31] :
       - La **version actuelle** est la **version R5** (Release 5, v5.0.0) sortie le 26 mars 2023 : cette version est *trial use*, c'est un développement de la version R4 (qui incorpore également les changements de la version 4B). Il est prévu que la prochaine version soit *normative*. L’ANS (Agence du Numérique en Santé) ne recommande pas l’utilisation de R5, sauf sur un sujet ou R5 apporte de nombreuses améliorations, afin de ne pas compromettre l’interopérabilité au sein de l’écosystème qui utilise actuellement principalement la version R4.
       - La version **précédente** est la version **R4B** (Release 4B, v4.3.0) sortie le 28 mai 2022 : cette version comporte des changements pour quelques modules seulement de la R4, mais demeure compatible avec le reste de la spécification. Les utilisateurs qui n'utilisent pas ces modules peuvent donc continuer à utiliser la version R4.
-      - La version antérieure est la version **R4** (Release 4, v4.0.1) sortie le 27 décembre 2018 : il s'agit de la dernière version *normative*, son utilisation est recommandée par l'ANS[32]. C’est la version la plus utilisée en France et en Europe.
+      - La version antérieure est la version **R4** (Release 4, v4.0.1) sortie le 27 décembre 2018 : il s'agit de la dernière version *normative*, son utilisation est recommandée par l'ANS[^32]. C’est la version la plus utilisée en France et en Europe.
       - Entre 2014 et 2017, on observe qu'en moyenne, une version majeure sortait tous les ans. À partir de la R3, **le délai de mise à jour s'allonge** : 2 ans entre la R3 et la R4, plus de 4 ans entre la R4 et la R5.
 
 - **Maturité** :
@@ -182,7 +182,7 @@
 [^41]: Voir : https://github.com/data2health/data-harmonization/wiki/CDM-FHIR-Transformation.
 
 <p align="center">
-  <img src="../files_and_images/fhir/FHIR_fig_1.png"/>
+  <img src="../files_and_images/fhir/FHIR_fig_1.png" width="550px"/>
 </p>    
 
 _Figure 1 : Procédure de mapping, Source : Rapport final CDMH (2020)_
@@ -318,7 +318,7 @@ FHIR ne définit pas de **technologie de stockage ni de traitement de données**
       - **Apple** (application Santé / *Healthcare*[^73])
       - **Amazon** (*FHIR Works on AWS*[^74])
       - **IBM** (*Merative*[^75] anciennement *IBM Watson Health*[^76])
-    - En France, des acteurs majeurs de la santé utilisent le format de transfert FHIR. C'est le cas d'éditeurs comme Doctolib[^77], Oracle[^78], Enovacom[^79] et Vidal[^80], d'établissements comme l'AP-HP[^81], l’Institut Curie, le centre Léon Bérard, l'Institut Bergonié et l'INCa[^38,82].
+    - En France, des acteurs majeurs de la santé utilisent le format de transfert FHIR. C'est le cas d'éditeurs comme Doctolib[^77], Oracle[^78], Enovacom[^79] et Vidal[^80], d'établissements comme l'AP-HP[^81], l’Institut Curie, le centre Léon Bérard, l'Institut Bergonié et l'INCa[^38)[^82].
 
 - *Fournisseurs de service ayant l'expertise en France* (voir l'élément « **Adoption du standard** » en partie 4. Valorisation) :
   - *Les éditeurs de logiciels* suivants : Doctolib[^77], Oracle[^78], Enovacom[^79], Vidal[^80]
@@ -449,13 +449,13 @@ _Figure 3 : Le système source partage l’information (exemple b)_
   - Les **profils** permettent de définir la manière dont les extensions doivent être utilisées (mais il est également possible de définir des extensions en dehors des profils)[^109]. Pour faciliter l'implémentation du standard, HL7 a établi la **liste des profils les plus importants ou les plus utiles** (en termes de cas d'usage)[^110].
 
 - **Bibliothèque de requêtes types** :
-  - La documentation officielle de FHIR est très riche et contient notamment de nombreux **exemples commentés de requêtes FHIR XML et JSON**, en particulier dans la page dédiée aux développeurs[^11,112],  (voir Figure 5). Une comparaison des formats XML et JSON (éléments, syntaxes, etc.) est également accessible[^113].
+  - La documentation officielle de FHIR est très riche et contient notamment de nombreux **exemples commentés de requêtes FHIR XML et JSON**, en particulier dans la page dédiée aux développeurs[^11][^112],  (voir Figure 5). Une comparaison des formats XML et JSON (éléments, syntaxes, etc.) est également accessible[^113].
 
 <p align="center">
-  <img src="../files_and_images/fhir/FHIR_fig_5.png"/>
+  <img src="../files_and_images/fhir/FHIR_fig_5.png" width="400px"/>
 </p>
 
-_Figure 5 : Exemple de ressource FHIR en langage XML (ressource Patient),Source:https://hl7.org/fhir/summary.html_
+_Figure 5 : Exemple de ressource FHIR en langage XML (ressource Patient),Source : https://hl7.org/fhir/summary.html_
 
 - **Lisible par un humain : Oui**
   - Chaque ressource peut contenir un **résumé** lisible par un humain en format XHTML[^114]. Ce résumé, s'il est rempli, contient les informations cliniques et *business* essentielles de la ressource. Par exemple, pour la ressource *MedicationRequest*, le résumé peut inclure des informations sur le patient, le prescripteur et le médicament.
