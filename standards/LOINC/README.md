@@ -130,8 +130,9 @@
 
 <p align="center">
   <img src="../files_and_images/loinc/LOINC_fig_1.png"/>
-  _Figure 1 : Décomposition d'un concept LOINC, Source : Nikiema et al. (2021),  Six attributs sont obligatoires (rectangles aux bords arrondis), quatre attributs sont optionnels (ovales) pour affiner la description de trois attributs obligatoires. Chaque concept LOINC a une classe qui correspond au type d'analyse du test (microbiologie, allergie, hématologie, etc.)._[^23]
 </p>
+
+_Figure 1 : Décomposition d'un concept LOINC, Source : Nikiema et al. (2021),  Six attributs sont obligatoires (rectangles aux bords arrondis), quatre attributs sont optionnels (ovales) pour affiner la description de trois attributs obligatoires. Chaque concept LOINC a une classe qui correspond au type d'analyse du test (microbiologie, allergie, hématologie, etc.)._[^23]
 
   - **Utilisation dans plusieurs langues** :
     - La terminologie originale est en anglais.
@@ -331,8 +332,9 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
 
 <p align="center">
   <img src="../files_and_images/loinc/LOINC_carte_1.png"/>
-  _Carte 1 : Pays de provenance des utilisateurs de LOINC, Source : [LOINC is a Growing Global Community](https://loinc.org/get-started/a-global-community/),Les pays identifiés sur la carte comptabilisent au minimum une implémentation de LOINC._
 </p>
+
+_Carte 1 : Pays de provenance des utilisateurs de LOINC, Source : [LOINC is a Growing Global Community](https://loinc.org/get-started/a-global-community/),Les pays identifiés sur la carte comptabilisent au minimum une implémentation de LOINC._
 
 - **Fournisseurs de service ayant l'expertise en France :**
   - En France, l'entreprise Technidata SAS est identifiée de par LOINC comme ayant une expertise[^66].
@@ -366,8 +368,9 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
 
 <p align="center">
   <img src="../files_and_images/loinc/LOINC_fig_2.png"/>
-  _Figure 2 : Aperçu de l'outil « SearchLOINC », Source : Outil « SearchLOINC », mot clé « Blood »_
 </p>
+
+_Figure 2 : Aperçu de l'outil « SearchLOINC », Source : Outil « SearchLOINC », mot clé « Blood »_
 
   - _**« Hierarchy Browser »**_[^29] :
     -  Nouvel outil complémentaire à *SearchLOINC*
@@ -375,13 +378,15 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
 
 <p align="center">
   <img src="../files_and_images/loinc/LOINC_fig_3.png"/>
-  _Figure 3 : Aperçu de l'outil « Hierarchy Browser » – hiérarchie : component, Source : Outil « Hierarchy Browser », mot clé « Blood », hiérarchie « component »_
 </p>
+
+_Figure 3 : Aperçu de l'outil « Hierarchy Browser » – hiérarchie : component, Source : Outil « Hierarchy Browser », mot clé « Blood », hiérarchie « component »_
 
 <p align="center">
   <img src="../files_and_images/loinc/LOINC_fig_3.png"/>
-  _Figure 4 : Aperçu de l'outil « Hierarchy Browser » – hiérarchie : system, Source : Outil « Hierarchy Browser », mot clé « Blood », hiérarchie « system »_
 </p>
+
+_Figure 4 : Aperçu de l'outil « Hierarchy Browser » – hiérarchie : system, Source : Outil « Hierarchy Browser », mot clé « Blood », hiérarchie « system »_
 
   - L'outil « _**RELMA**_ » (*Regenstrief LOINC Mapping Assistant*)[^74] peut être téléchargé gratuitement et installé en local :
     - Permet la recherche des termes LOINC dans toute langue disponible
