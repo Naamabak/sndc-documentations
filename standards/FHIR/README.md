@@ -1,5 +1,3 @@
-## Benchmark « standards de données de santé »
-
 # Fiche d'identité : FHIR
 
 ### SYNTHÈSE :
@@ -410,7 +408,7 @@ FHIR ne définit pas de **technologie de stockage ni de traitement de données**
 [^107]: Quelques solutions populaires : CureLogix (https://curelogix.com/fhir-adapter/) et Firely ([FHIR Facade | FHIR integrations for existing systems](https://fire.ly/products/fhir-facade/)). L’utilisateur peut aussi construire son propre Adapter/Facade FHIR.
 
 <p align="center">
-  <img src="../files_and_images/fhir/FHIR_fig_2.png"/>
+  <img src="../files_and_images/fhir/FHIR_fig_2.png width="500px""/>
 </p>
 
 _Figure 2 : Le système cible initie la demande d’information (exemple a), Source : vidéo HL7 de la présentation de Christiaan Knaap (Firely)[^106], schéma Veltys_
@@ -418,7 +416,7 @@ _Figure 2 : Le système cible initie la demande d’information (exemple a), Sou
 *Dans cet exemple, on suppose que le système cible choisit d’implémenter les actions GET et POST mais de ne pas implémenter les actions qui modifient les ressources (il s’agit d’une architecture en écriture seule).*
 
 <p align="center">
-  <img src="../files_and_images/fhir/FHIR_fig_3.png"/>
+  <img src="../files_and_images/fhir/FHIR_fig_3.png" width="500px"/>
 </p>
 
 _Figure 3 : Le système source partage l’information (exemple b)_
@@ -427,7 +425,7 @@ _Figure 3 : Le système source partage l’information (exemple b)_
     - **Exemple d’architecture n°2 : Mise en place d’un serveur FHIR générique** qui implémente l’ensemble des fonctionnalités FHIR (API, stockage des ressources, gestion de stockage, support de tous les ressources, voir Figure 4).
 
 <p align="center">
-  <img src="../files_and_images/fhir/FHIR_fig_4.png"/>
+  <img src="../files_and_images/fhir/FHIR_fig_4.png" width="500px"/>
 </p>
  
  _Figure 4 : Serveur FHIR générique (exemple c)_
