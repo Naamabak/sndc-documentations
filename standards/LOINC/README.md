@@ -1,5 +1,3 @@
-### Benchmark « standards de données de santé »
-
 # Fiche d’identité : Loinc
 
 ## SYNTHÈSE :
@@ -129,7 +127,7 @@
 [^22]: Voir : [2 - Major Parts of a LOINC term](https://loinc.org/kb/users-guide/major-parts-of-a-loinc-term/)  
 
 <p align="center">
-  <img src="../files_and_images/loinc/LOINC_fig_1.png"/>
+  <img src="../files_and_images/loinc/LOINC_fig_1.png width="550px""/>
 </p>
 
 _Figure 1 : Décomposition d'un concept LOINC, Source : Nikiema et al. (2021),  Six attributs sont obligatoires (rectangles aux bords arrondis), quatre attributs sont optionnels (ovales) pour affiner la description de trois attributs obligatoires. Chaque concept LOINC a une classe qui correspond au type d'analyse du test (microbiologie, allergie, hématologie, etc.)._[^23]
@@ -331,7 +329,7 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
 [^67]: Voir : [Adopters Archive – LOINC](https://loinc.org/adopters/)
 
 <p align="center">
-  <img src="../files_and_images/loinc/LOINC_carte_1.png"/>
+  <img src="../files_and_images/loinc/LOINC_carte_1.png width="550px""/>
 </p>
 
 _Carte 1 : Pays de provenance des utilisateurs de LOINC, Source : [LOINC is a Growing Global Community](https://loinc.org/get-started/a-global-community/),Les pays identifiés sur la carte comptabilisent au minimum une implémentation de LOINC._
