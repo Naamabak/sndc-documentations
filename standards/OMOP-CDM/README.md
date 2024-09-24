@@ -226,7 +226,7 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
 
    
 
-- Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP[^33,34].
+- Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP[^33,34] .
 
 
 ### Communication avec d'autres standards (inter typologies de standards) :
@@ -346,7 +346,7 @@ Aucune contrainte d’implémentation mais il est **recommandé** de disposer d�
 | Multilex, Immunizations       | 38,9 %         |
 
 
-- Vaclav Papez et al. (2021) ont présenté la transformation des données de 3 EHRs au Royaume-Uni pour les cas d’insuffisance cardiaque<sup>54</sup>. Les résultats suivants sont obtenus :
+- Vaclav Papez et al. (2021) ont présenté la transformation des données de 3 EHRs au Royaume-Uni pour les cas d’insuffisance cardiaque[^54]. Les résultats suivants sont obtenus :
   - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 3 ci-dessous.
 
  **Tableau 3 :  Pourcentage de codes mappés selon la terminologie source**
