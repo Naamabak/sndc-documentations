@@ -35,7 +35,7 @@ Maturité / Utilisation : La version actuelle est disponible sur le portail de l
  <p align="center">
    <img src="../files_and_images/ichi/ichi_fig_1.png" width="700px"/>    
 
- Figure 1 :Catégories d’interventions contenues dans ICHI, Source : [ICHI](https://mitel.dimi.uniud.it/ichi/)
+ **Figure 1 :Catégories d’interventions contenues dans ICHI**, Source : [ICHI](https://mitel.dimi.uniud.it/ichi/)
    </p>    
    
 
@@ -86,7 +86,7 @@ Maturité / Utilisation : La version actuelle est disponible sur le portail de l
   -  ICHI permet de coder des **actes sur des individus et des actions de santé publique**[^10]. Un exemple d'action de santé publique est donné dans la Figure 3 : il s'agit d'une intervention visant à éduquer les parents au sujet des comportements à avoir auprès de leurs enfants. Cette intervention (codée VEJ.PM.ZZ) fait partie du chapitre 4 (interventions sur les comportements liés à la santé) et du bloc lié au mode de vie (VE)  
 
 
-  Figure 2 : Décomposition d’un code ICHI, Source : [ICHI](https://mitel.dimi.uniud.it/ichi/)
+  **Figure 2 : Décomposition d’un code ICHI**, Source : [ICHI](https://mitel.dimi.uniud.it/ichi/)
    </p> 
 
        
@@ -97,7 +97,7 @@ Maturité / Utilisation : La version actuelle est disponible sur le portail de l
 
 
 
- Figure 3 : Description du code ICHI VEJ.PM.ZZ, Source : [ICHI](https://mitel.dimi.uniud.it/ichi/)
+ **Figure 3 : Description du code ICHI VEJ.PM.ZZ**, Source : [ICHI](https://mitel.dimi.uniud.it/ichi/)
    </p>  
 
 
@@ -165,7 +165,7 @@ La version précédente est la version **Alpha** sortie en 2015. Cette version c
 
 
 
- Figure 4 : Exemple d'utilisation combinée des classifications de la famille de l'OMS (WHO-FIC : ICHI, CIF et CIM-11), Source : [Fortune et al. (2018)[^15]](https://pubmed.ncbi.nlm.nih.gov/29342077/)
+ **Figure 4 : Exemple d'utilisation combinée des classifications de la famille de l'OMS (WHO-FIC : ICHI, CIF et CIM-11)**, Source : [Fortune et al. (2018)[^15]](https://pubmed.ncbi.nlm.nih.gov/29342077/)
    </p> 
 
  - Rodrigues et al. (2017)[^16] décrivent les **difficultés de mapping** entre **ICHI** et **SNOMED-CT** :
@@ -193,8 +193,8 @@ encore en développement, nous n'avons pas identifié de communication avec d'au
 
 
 
- Figure 5 : Exemple de codes ICHI 
-pour des interventions réalisées en même temps, Source : [Guide de référence version Beta-3](https://www.who.int/standards/classifications/international-classification-of-health-interventions)
+ **Figure 5 : Exemple de codes ICHI 
+pour des interventions réalisées en même temps**, Source : [Guide de référence version Beta-3](https://www.who.int/standards/classifications/international-classification-of-health-interventions)
    </p> 
   
  - En cas d'interventions combinées (avec un « + », voir Figure 6) : les codes extension peuvent également être utilisés si nécessaire 
@@ -204,8 +204,8 @@ pour des interventions réalisées en même temps, Source : [Guide de référenc
 
 
 
- Figure 6 :Exemple de codes ICHI 
-pour des interventions combinées, Source : [Guide de référence version Beta-3](https://www.who.int/standards/classifications/international-classification-of-health-interventions)
+ **Figure 6 :Exemple de codes ICHI 
+pour des interventions combinées**, Source : [Guide de référence version Beta-3](https://www.who.int/standards/classifications/international-classification-of-health-interventions)
    </p> 
                                                        
            
@@ -286,7 +286,7 @@ Les codes ICHI sont compréhensibles par l’humain en consultant l'arborescence
 
 
 
- Figure 7 : Extrait de l'arborescence ICHI, Source : [ICHI](https://mitel.dimi.uniud.it/ichi/)
+ **Figure 7 : Extrait de l'arborescence ICHI**, Source : [ICHI](https://mitel.dimi.uniud.it/ichi/)
    </p> 
 
 
