@@ -58,10 +58,7 @@ NB : l’incarnation française de la CIM-11 est coordonnée par l’ANS dans so
 
 
 
-  **Figure 1 : Chapitres présents dans la CIM-11**
-
-
-, Source : [Interface de navigation de l'OMS]()</p>  
+  **Figure 1 : Chapitres présents dans la CIM-11**, Source : [Interface de navigation de l'OMS]()</p>  
 
 
 
@@ -129,8 +126,7 @@ Dans l'ensemble, environ **83% des médecins ont par conséquent une expérience
 
 
 
-  **Figure 2 : Niveaux et structure hiérarchique de la CIM-11**
-, Source : [ Interface de navigation  ]()
+  **Figure 2 : Niveaux et structure hiérarchique de la CIM-11**, Source : [ Interface de navigation  ]()
 </p>  
 
 
@@ -147,8 +143,7 @@ Dans l'ensemble, environ **83% des médecins ont par conséquent une expérience
 
 
 
-  **Figure 3 : Pluri-classification d’une maladie**
-, Source : [CD-11 Education Tool Unit 1 ]()
+  **Figure 3 : Pluri-classification d’une maladie**, Source : [CD-11 Education Tool Unit 1 ]()
 </p>  
 
 
@@ -233,8 +228,7 @@ L'API (en ligne et en local) et l'outil de codage sont également distribués so
 
 
 
-   **Figure 4 : Alignement entre la CIM-11 et SNOMED CT**
-, Source : [Rodrigues et al. (2015)]()
+   **Figure 4 : Alignement entre la CIM-11 et SNOMED CT**, Source : [Rodrigues et al. (2015)]()
    </p>  
 
 
