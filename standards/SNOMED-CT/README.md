@@ -40,7 +40,7 @@
    <img src="../files_and_images/snomed_ct/snomed_Fig_1.png" width="700px"/>    
 
 
-   Figure 1 : Les trois composantes de la SNOMED CT, Source : [ SNOMED Internationa][^12](https://www.snomed.org/five-step-briefing?lang=fr)
+   **Figure 1 : Les trois composantes de la SNOMED CT**, Source : [ SNOMED Internationa][^12](https://www.snomed.org/five-step-briefing?lang=fr)
    </p>  
 
 
@@ -123,7 +123,7 @@ Rinaldi et al. (*2021*)[^11] décrivent l'utilisation de SNOMED-CT pour l'étude
    <img src="../files_and_images/snomed_ct/snomed_Fig_2.png" width="700px"/>    
 
 
-   Figure 2 : Hiérarchies et relations dans le modèle SNOMED CT, Source : [ SNOMED CT Starter Guide](https://confluence.ihtsdotools.org/display/DOCSTART/4.+SNOMED+CT+Basics)[^12]
+   **Figure 2 : Hiérarchies et relations dans le modèle SNOMED CT**, Source : [ SNOMED CT Starter Guide](https://confluence.ihtsdotools.org/display/DOCSTART/4.+SNOMED+CT+Basics)[^12]
    </p>  
 
 
@@ -148,7 +148,7 @@ Rinaldi et al. (*2021*)[^11] décrivent l'utilisation de SNOMED-CT pour l'étude
    <img src="../files_and_images/snomed_ct/snomed_Fig_3.png" width="700px"/>    
 
 
-  Figure 3 : Exemple de la structure hiérarchique de la SNOMED CT, Source : [SNOMED CT Browser]()
+  **Figure 3 : Exemple de la structure hiérarchique de la SNOMED CT**, Source : [SNOMED CT Browser]()
    </p>  
 
 
@@ -178,30 +178,30 @@ Rinaldi et al. (*2021*)[^11] décrivent l'utilisation de SNOMED-CT pour l'étude
    - Documentation pour la mise en place de best practices[^20]
    
 
-[^1] : SNOMED International est une organisation à but non lucratif créée en 2007 sous le nom d’International Health Terminology Standards Developement Organization. Les 9 membres fondateurs étaient l'Australie, le Canada, le Danemark, la Lituanie, la Suède, les Pays-Bas, la Nouvelle-Zélande, le Royaume-Uni et les États-Unis. Voir : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr) 
+[^1]: SNOMED International est une organisation à but non lucratif créée en 2007 sous le nom d’International Health Terminology Standards Developement Organization. Les 9 membres fondateurs étaient l'Australie, le Canada, le Danemark, la Lituanie, la Suède, les Pays-Bas, la Nouvelle-Zélande, le Royaume-Uni et les États-Unis. Voir : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr) 
 [^2] : SNOMED CT naît en 2002 de la fusion entre SNOMED Reference Terminology (RT) la CTV3 (Clinical Terms Version 3). Voir : [Overview of SNOMED CT.](https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html#:~:text=SNOMED%20CT%20originated%20from%20the,to%20describe%20morphology%20and%20anatomy.&text=Under%20Dr.,the%20growing%20needs%20of%20medicine)
-[^3] :  Voir : [5-Step briefing | SNOMED International](https://www.snomed.org/five-step-briefing?lang=fr) 
-[^4] :  Voir le modèle logique de la SNOMED CT : https://confluence.ihtsdotools.org/display/DOCSTART/5.+SNOMED+CT+Logical+Model 
-[^5] :  Voir : https://browser.ihtsdotools.org/?perspective=full&conceptId1=174036004&edition=MAIN/2023-05-31&release=&languages=en 
-[^6] : Voir : https://confluence.ihtsdotools.org/display/DOCSTART/6.+SNOMED+CT+Concept+Model#:~:text=SNOMED%20C%20attributes%20(or%20relationship,more%20branches%20of%20the%20hierarchy 
-[^7] : Les six premières applications correspondent aux six principales hiérarchies de la SNOMED CT. Voir la partie 6 « SNOMED CT Concept Model » du starter guide : https://confluence.ihtsdotools.org/display/DOCSTART/6.+SNOMED+CT+Concept+Model#:~:text=SNOMED%20CT%20attributes%20(or%20relationship,more%20branches%20of%20the%20hierarchy. 
-[^8] : Voir la répartition des concepts par hiérarchie : https://www.snomed.org/_files/ugd/900274_e395a31129f346bf81220fa8216b871b.pdf?lang=fr
-[^9] :  Ce point regroupe 13 des 19 hiérarchies. Pour plus de précisions, consulter la partie 6 du starter guide.
-[^10] : Voir : https://www.snomed.org/_files/ugd/900274_8a849a3565054d14a4c94cf1062331a3.pdf 
-[^11] : Voir l’article de Rinaldi E, Saas J, Thun S. « Use of LOINC and SNOMED CT with FHIR for Microbiology Data ». Stud Health Technol Inform. 2021 : [Use of LOINC and SNOMED CT with FHIR for Microbiology Data](https://pubmed.ncbi.nlm.nih.gov/34042889/) 
-[^12] :  Voir : [4. SNOMED CT Basics](https://confluence.ihtsdotools.org/display/DOCSTART/4.+SNOMED+CT+Basics) 
-[^13] :  Voir les attributs de la hiérarchie Clinical Finding pour plus d’exemples d’utilisation des attributs : [Clinical Finding Defining Attributes](https://confluence.ihtsdotools.org/display/DOCEG/Clinical+Finding+Defining+Attributes). Une liste d’attributs existe pour chaque hiérarchie. 
-[^14] :  Voir : [7. SNOMED CT Expression](https://confluence.ihtsdotools.org/display/DOCSTART/7.+SNOMED+CT+Expressions) 
-[^15] : Voir : [Our releases | SNOMED International](https://www.snomed.org/releases?lang=fr) et [4.4.1 National Editions](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.4.1+National+Editions) 
-[^16] : Le guide d’introduction existe en quatre versions :
+[^3]:  Voir : [5-Step briefing | SNOMED International](https://www.snomed.org/five-step-briefing?lang=fr) 
+[^4]:  Voir le modèle logique de la SNOMED CT : https://confluence.ihtsdotools.org/display/DOCSTART/5.+SNOMED+CT+Logical+Model 
+[^5]:  Voir : https://browser.ihtsdotools.org/?perspective=full&conceptId1=174036004&edition=MAIN/2023-05-31&release=&languages=en 
+[^6]: Voir : https://confluence.ihtsdotools.org/display/DOCSTART/6.+SNOMED+CT+Concept+Model#:~:text=SNOMED%20C%20attributes%20(or%20relationship,more%20branches%20of%20the%20hierarchy 
+[^7]: Les six premières applications correspondent aux six principales hiérarchies de la SNOMED CT. Voir la partie 6 « SNOMED CT Concept Model » du starter guide : https://confluence.ihtsdotools.org/display/DOCSTART/6.+SNOMED+CT+Concept+Model#:~:text=SNOMED%20CT%20attributes%20(or%20relationship,more%20branches%20of%20the%20hierarchy. 
+[^8]: Voir la répartition des concepts par hiérarchie : https://www.snomed.org/_files/ugd/900274_e395a31129f346bf81220fa8216b871b.pdf?lang=fr
+[^9]:  Ce point regroupe 13 des 19 hiérarchies. Pour plus de précisions, consulter la partie 6 du starter guide.
+[^10]: Voir : https://www.snomed.org/_files/ugd/900274_8a849a3565054d14a4c94cf1062331a3.pdf 
+[^11]: Voir l’article de Rinaldi E, Saas J, Thun S. « Use of LOINC and SNOMED CT with FHIR for Microbiology Data ». Stud Health Technol Inform. 2021 : [Use of LOINC and SNOMED CT with FHIR for Microbiology Data](https://pubmed.ncbi.nlm.nih.gov/34042889/) 
+[^12]:  Voir : [4. SNOMED CT Basics](https://confluence.ihtsdotools.org/display/DOCSTART/4.+SNOMED+CT+Basics) 
+[^13]:  Voir les attributs de la hiérarchie Clinical Finding pour plus d’exemples d’utilisation des attributs : [Clinical Finding Defining Attributes](https://confluence.ihtsdotools.org/display/DOCEG/Clinical+Finding+Defining+Attributes). Une liste d’attributs existe pour chaque hiérarchie. 
+[^14]:  Voir : [7. SNOMED CT Expression](https://confluence.ihtsdotools.org/display/DOCSTART/7.+SNOMED+CT+Expressions) 
+[^15]: Voir : [Our releases | SNOMED International](https://www.snomed.org/releases?lang=fr) et [4.4.1 National Editions](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.4.1+National+Editions) 
+[^16]: Le guide d’introduction existe en quatre versions :
 la version anglaise : [SNOMED CT Starter Guide](https://confluence.ihtsdotools.org/display/DOCSTART/SNOMED+CT+Starter+Guide)
 la version allemande : https://confluence.ihtsdotools.org/display/DOCSTARTDE?preview=/61153991/87039892/doc_StarterGuide_de_INT_20190611.pdf 
 la version espagnole : https://confluence.ihtsdotools.org/display/DOCSTARTES?preview=/61154093/72060549/doc_GuíadeIntroducciónaSNOMEDCT_Current-es_INT_20180820.pdf 
 la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?preview=/81268875/94405747/doc_StarterGuide_PT_20190807.pdf 
-[^17] : Voir : https://confluence.ihtsdotools.org/display/IMP/Implementation+Process 
-[^18] : Voir : [Example EMR EHR Requirements Guide](https://confluence.ihtsdotools.org/display/DOCREQTS) 
-[^19] :  Voir : https://confluence.ihtsdotools.org/ioprs/SNOMED CT-where-to-start/starter-guide-for-new-members 
-[^20] : Voir la section « Best practice guidance » : https://www.implementation.snomed.org/implementation-library 
+[^17]: Voir : https://confluence.ihtsdotools.org/display/IMP/Implementation+Process 
+[^18]: Voir : [Example EMR EHR Requirements Guide](https://confluence.ihtsdotools.org/display/DOCREQTS) 
+[^19]:  Voir : https://confluence.ihtsdotools.org/ioprs/SNOMED CT-where-to-start/starter-guide-for-new-members 
+[^20]: Voir la section « Best practice guidance » : https://www.implementation.snomed.org/implementation-library 
 
 
 
@@ -282,7 +282,7 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
    <img src="../files_and_images/snomed_ct/snomed_Fig_5.png" width="700px"/>    
 
 
-   Carte 1 :Membres et affiliés de SNOMED International en 2023, Source : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
+   **Carte 1 :Membres et affiliés de SNOMED International en 2023**, Source : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
    </p>  
 
    - Le double mapping consistant au mapping de SNOMED CT à la CIM-10 (1) puis de la CIM-10 à la CIM-11 (2) permet de relier SNOMED CT à la CIM-11.
@@ -418,8 +418,8 @@ Rodrigues et al. (2017)  décrivent les difficultés de mapping entre ICHI et SN
    <img src="../files_and_images/snomed_ct/snomed_Fig_5.png" width="700px"/>    
 
 
-   Carte 1 : 
- Membres et affiliés de SNOMED International en 2023, Source : [ Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
+   **Carte 1 : 
+ Membres et affiliés de SNOMED International en 2023**, Source : [ Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
    </p>  
 
 
@@ -456,7 +456,7 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
    <img src="../files_and_images/snomed_ct/snomed_Fig_6.png" width="700px"/>    
 
 
-   Figure 6 :SNOMED CT Browser, Source : [SNOMED CT Browser ]()
+   **Figure 6 :SNOMED CT Browser**, Source : [SNOMED CT Browser ]()
    </p>  
 
      - SNOMED CT Concept Lookup35: affiche la description du concept, ses traductions éventuelles, ses attributs, ses parents et enfants directs (voir la Figure 7 ci-dessous)
@@ -466,7 +466,7 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
    <img src="../files_and_images/snomed_ct/snomed_Fig_7.png" width="700px"/>    
 
 
-   Figure 7 : SNOMED CT Concept Lookup, Source : [SNOMED CT Concept Lookup]()
+   **Figure 7 : SNOMED CT Concept Lookup**, Source : [SNOMED CT Concept Lookup]()
    </p> 
 
 
@@ -495,88 +495,88 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 
 <p align="center">
    <img src="../files_and_images/snomed_ct/snomed_Fig_8.png" width="700px"/>    
-   Figure 8 : Structure d'un SCTID d'extension 
+   **Figure 8 : Structure d'un SCTID d'extension**
 « 5281000124103 |Persistent asthma (disorder)|, Source : [4.1 Namespaces ](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.1+Namespaces)
    </p>                                                                   
 
       
        
-    - Les extensions locales sont disponibles dans le navigateur SNOMED CT[^90] et sont **maintenues et mises à jour par les NRC** (National Release Center)[^31].
-    - En juin 2023, il existe des extensions locales pour les pays suivants : **Argentine, Australie, Autriche, Belgique, Canada, Danemark, Estonie, Finlande, Irlande, Pays-Bas, Nouvelle-Zélande, Norvège, Suède, Suisse, Etats-Unis et Uruguay.**
+- Les extensions locales sont disponibles dans le navigateur SNOMED CT[^90] et sont **maintenues et mises à jour par les NRC** (National Release Center)[^31].
+- En juin 2023, il existe des extensions locales pour les pays suivants : **Argentine, Australie, Autriche, Belgique, Canada, Danemark, Estonie, Finlande, Irlande, Pays-Bas, Nouvelle-Zélande, Norvège, Suède, Suisse, Etats-Unis et Uruguay.**
 
 
-[^21] : Voir les différentes modalités d’accès à SNOMED CT : [Modalité d’accès à la SNOMED CT](https://industriels.esante.gouv.fr/sites/default/files/media/document/Note_information_ANS_-_Modalites_acces_SNOMED_CT.pdf)
-[^22] : Voir : [Get SNOMED CT](https://www.snomed.org/get-snomed?lang=fr)
-[^23] : Voir la liste des pays membres de SNOMED International et ses utilisateurs affiliés : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
-[^24] : Un NRC sert d’intermédiaire entre SNOMED International et les utilisateurs de SNOMED CT au sein d’un pays. SNOMED International impose à chacun de ses pays membres de définir un NRC. Au sein d’un pays, un NRC est responsable de recevoir les mises à jour mensuelles de la version internationale de SNOMED CT, de la rendre disponible à tous ses licenciés et d’en promouvoir le déploiement ; voir : 2. [What Is a National Release Center?](https://confluence.ihtsdotools.org/pages/viewpage.action?pageId=26837051)
-[^25] : Voir : [MLDS](https://mlds.ihtsdotools.org/#/landing) pour une demande d’utilisation de SNOMED CT
-[^26] : Voir le contrat de licence d’affiliation : https://www.snomed.org/_files/ugd/900274_689013e9e0c74d23892abe9caee02612.pdf
-[^27] : Voir : [NRC SNOMED CT | Portail Industriels](https://industriels.esante.gouv.fr/produits-et-services/cgts-centre-de-gestion-des-terminologies-de-sante/nrc-snomed-ct)
-[^28] : Voir les modalités pour la prise de contact avec l’ANS : [Contactez-nous | Portail Industriels](https://industriels.esante.gouv.fr/contactez-nous)
-[^29] : Voir : [Software and tools | SNOMED International](https://www.snomed.org/software-tools?lang=fr#:~:text=Open%20source%20software%20development,Apache%20v2%20open%20source%20license)
-[^30] : Voir le calendrier des publications : [Our releases | SNOMED International](https://www.snomed.org/releases)
-[^31] : Voir : [3. NRC responsibilities](https://confluence.ihtsdotools.org/display/DOCNRCG/3.+NRC+responsibilities)
-[^32] : Les membres de SNOMED International et les autres utilisateurs autorisés peuvent effectuer une demande de modification ou d’ajout à SNOMED CT : voir [Change or add to SNOMED CT](https://www.snomed.org/change-or-add?lang=fr) et le guide de conseils pour effectuer la demande : https://www.snomed.org/_files/ugd/900274_84a209ac4e524e32a71c2b64d9350b3b.pdf
-[^33] : Voir : [Get involved | SNOMED International](https://www.snomed.org/get-involved?lang=fr)
-[^34] : Voir : [IHTSDO Browser](https://browser.ihtsdotools.org/)
-[^35] : Voir : [SNOMED CT Concept Lookup](https://lookup.snomedtools.org)
-[^36] : Voir : [SNOMED International · GitHub](https://github.com/IHTSDO)
-[^37] : La page [SNOMED CT maps](https://www.snomed.org/maps?lang=fr) détaille les mappings de SNOMED CT avec les autres standards : CPT, GMDN, CIM-10, CIM-O, MedDRA et Orphanet.
-[^38] : Pour accéder à l’outil de mapping : https://prod-mapping.ihtsdotools.org/#/
-[^39] : Voir l’article de Rodrigues JM, Robinson D, Della Mea V, Campbell J, Rector A, Schulz S, Brear H, Üstün B, Spackman K, Chute CG, Millar J, Solbrig H, Brand Persson K. « [Semantic Alignment between ICD-11 and SNOMED CT](https://pubmed.ncbi.nlm.nih.gov/26262160/) ». Stud Health Technol Inform. 2015 : Semantic Alignment between ICD-11 and SNOMED CT
+[^21]: Voir les différentes modalités d’accès à SNOMED CT : [Modalité d’accès à la SNOMED CT](https://industriels.esante.gouv.fr/sites/default/files/media/document/Note_information_ANS_-_Modalites_acces_SNOMED_CT.pdf)
+[^22]: Voir : [Get SNOMED CT](https://www.snomed.org/get-snomed?lang=fr)
+[^23]: Voir la liste des pays membres de SNOMED International et ses utilisateurs affiliés : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
+[^24]: Un NRC sert d’intermédiaire entre SNOMED International et les utilisateurs de SNOMED CT au sein d’un pays. SNOMED International impose à chacun de ses pays membres de définir un NRC. Au sein d’un pays, un NRC est responsable de recevoir les mises à jour mensuelles de la version internationale de SNOMED CT, de la rendre disponible à tous ses licenciés et d’en promouvoir le déploiement ; voir : 2. [What Is a National Release Center?](https://confluence.ihtsdotools.org/pages/viewpage.action?pageId=26837051)
+[^25]: Voir : [MLDS](https://mlds.ihtsdotools.org/#/landing) pour une demande d’utilisation de SNOMED CT
+[^26]: Voir le contrat de licence d’affiliation : https://www.snomed.org/_files/ugd/900274_689013e9e0c74d23892abe9caee02612.pdf
+[^27]: Voir : [NRC SNOMED CT | Portail Industriels](https://industriels.esante.gouv.fr/produits-et-services/cgts-centre-de-gestion-des-terminologies-de-sante/nrc-snomed-ct)
+[^28]: Voir les modalités pour la prise de contact avec l’ANS : [Contactez-nous | Portail Industriels](https://industriels.esante.gouv.fr/contactez-nous)
+[^29]: Voir : [Software and tools | SNOMED International](https://www.snomed.org/software-tools?lang=fr#:~:text=Open%20source%20software%20development,Apache%20v2%20open%20source%20license)
+[^30]: Voir le calendrier des publications : [Our releases | SNOMED International](https://www.snomed.org/releases)
+[^31]: Voir : [3. NRC responsibilities](https://confluence.ihtsdotools.org/display/DOCNRCG/3.+NRC+responsibilities)
+[^32]: Les membres de SNOMED International et les autres utilisateurs autorisés peuvent effectuer une demande de modification ou d’ajout à SNOMED CT : voir [Change or add to SNOMED CT](https://www.snomed.org/change-or-add?lang=fr) et le guide de conseils pour effectuer la demande : https://www.snomed.org/_files/ugd/900274_84a209ac4e524e32a71c2b64d9350b3b.pdf
+[^33]: Voir : [Get involved | SNOMED International](https://www.snomed.org/get-involved?lang=fr)
+[^34]: Voir : [IHTSDO Browser](https://browser.ihtsdotools.org/)
+[^35]: Voir : [SNOMED CT Concept Lookup](https://lookup.snomedtools.org)
+[^36]: Voir : [SNOMED International · GitHub](https://github.com/IHTSDO)
+[^37]: La page [SNOMED CT maps](https://www.snomed.org/maps?lang=fr) détaille les mappings de SNOMED CT avec les autres standards : CPT, GMDN, CIM-10, CIM-O, MedDRA et Orphanet.
+[^38]: Pour accéder à l’outil de mapping : https://prod-mapping.ihtsdotools.org/#/
+[^39]: Voir l’article de Rodrigues JM, Robinson D, Della Mea V, Campbell J, Rector A, Schulz S, Brear H, Üstün B, Spackman K, Chute CG, Millar J, Solbrig H, Brand Persson K. « [Semantic Alignment between ICD-11 and SNOMED CT](https://pubmed.ncbi.nlm.nih.gov/26262160/) ». Stud Health Technol Inform. 2015 : Semantic Alignment between ICD-11 and SNOMED CT
 [^40] : Voir l’article : Jean Marie RODRIGUES, Sukil KIM, Béatrice ROMBERT PAVIOT, Jae Jin LEE and Syed ALJUNID « How to Link SNOMED CT Procedure and WHO International Classification of Health Interventions (ICHI) », 2017 : https://books.google.fr/books?hl=fr&lr=&id=2UXiDgAAQBAJ&oi=fnd&pg=PA40&dq=ichi+who&ots=bijydMBOYK&sig=yi3eYUPL5Gd6X19OQhEjiI206BU&redir_esc=y#v=onepage&q=ichi%20who&f=false
-[^41] : Voir : Procedure, General[https://confluence.ihtsdotools.org/display/DOCEG/Procedure%2C+General]
-[^42] : Voir : [SNOMED International – LOINC](https://loinc.org/collaboration/snomed-international/)
-[^43] : Remplir le formulaire de demande pour accéder au mapping de 2017 : [Request Form for LOINC/SNOMED CT Expression Association and Map Sets File](https://loinc.org/snomed-file-request/)
-[^44] : Voir : [LOINC and SNOMED CT: LOINC Extension - What this means for NHS and Unified Test List - Termlex](https://termlex.com/loinc-and-snomed-for-nhs-and-unified-test-list/)
-[^45] : Voir : https://termlex.com/loinc-SNOMED CT-extension-why-what-and-how/
-[^46] : La terminologie CPT (Current Procedural Terminology) est la nomenclature la plus largement utilisée et acceptée aux États-Unis pour le codage des services et procédures médicales.
-[^47] : GMDN (Global Medical Device Nomenclature) est une liste de noms génériques utilisés pour identifier tous les dispositifs médicaux.
-[^48] : MedDRA (Medical Dictionary for Regulatory Activities) est une terminologie médicale utilisée pour l'enregistrement, la documentation et la surveillance de la sécurité des produits médicaux.
-[^49] : L'ontologie des maladies rares d'Orphanet est un vocabulaire structuré pour les maladies rares dérivé de la base de données Orphanet, capturant les relations entre les maladies, les gènes et d'autres caractéristiques pertinentes.
-[^50] : Voir : https://www.hl7.org/fhir/mappings.html
-[^51] : Voir les attributs associés aux Procedures : [Procedure, General](https://confluence.ihtsdotools.org/display/DOCEG/Procedure%2C+General)
+[^41]: Voir : Procedure, General[https://confluence.ihtsdotools.org/display/DOCEG/Procedure%2C+General]
+[^42]: Voir : [SNOMED International – LOINC](https://loinc.org/collaboration/snomed-international/)
+[^43]: Remplir le formulaire de demande pour accéder au mapping de 2017 : [Request Form for LOINC/SNOMED CT Expression Association and Map Sets File](https://loinc.org/snomed-file-request/)
+[^44]: Voir : [LOINC and SNOMED CT: LOINC Extension - What this means for NHS and Unified Test List - Termlex](https://termlex.com/loinc-and-snomed-for-nhs-and-unified-test-list/)
+[^45]: Voir : https://termlex.com/loinc-SNOMED CT-extension-why-what-and-how/
+[^46]: La terminologie CPT (Current Procedural Terminology) est la nomenclature la plus largement utilisée et acceptée aux États-Unis pour le codage des services et procédures médicales.
+[^47]: GMDN (Global Medical Device Nomenclature) est une liste de noms génériques utilisés pour identifier tous les dispositifs médicaux.
+[^48]: MedDRA (Medical Dictionary for Regulatory Activities) est une terminologie médicale utilisée pour l'enregistrement, la documentation et la surveillance de la sécurité des produits médicaux.
+[^49]: L'ontologie des maladies rares d'Orphanet est un vocabulaire structuré pour les maladies rares dérivé de la base de données Orphanet, capturant les relations entre les maladies, les gènes et d'autres caractéristiques pertinentes.
+[^50]: Voir : https://www.hl7.org/fhir/mappings.html
+[^51]: Voir les attributs associés aux Procedures : [Procedure, General](https://confluence.ihtsdotools.org/display/DOCEG/Procedure%2C+General)
 
 
-[^52] : Il est également possible d’utiliser un concept post-coordonné pour définir un attribut précisant un concept. Voir le guide de démarrage pour des détails et des précisions supplémentaires.
-[^53] : Voir l’article de Elkin PL, Brown SH, Husser CS, Bauer BA, Wahner-Roedler D, Rosenbloom ST, Speroff T. « Evaluation of the content coverage of SNOMED CT: ability of SNOMED clinical terms to represent clinical problem lists ». Mayo Clin Proc. 2006 : [Evaluation of the content coverage of SNOMED CT: ability of SNOMED clinical terms to represent clinical problem lists](https://pubmed.ncbi.nlm.nih.gov/16770974/)
-[^54] : Voir l’article de Block LJ, Wong ST, Handfield S, Hart R, Currie LM. « Comparison of terminology mapping methods for nursing wound care knowledge representation ». Int J Med Inform. 2021 : [Comparison of terminology mapping methods for nursing wound care knowledge representation](https://pubmed.ncbi.nlm.nih.gov/34358804/)
-[^55] : Le comparison mapping fonctionne sur un principe similaire à celui d’un double mapping : (1) le rapprochement d’un terme de la terminologie source à un terme d’une autre terminologie (ex : CIM-10, ICHI, etc.) déjà mappé avec SNOMED CT et (2) l’utilisation du mapping entre cette terminologie intermédiaire et SNOMED CT.
-[^56] : Voir : [SNOMED CT Archives](https://www.nlm.nih.gov/healthit/snomedct/archive.html)
-[^57] : Voir les cours disponibles : [SNOMED CT Course Catalogue](https://courses.ihtsdotools.org). Certains cours sont gratuits pour tous et d'autres seulement pour les membres de SNOMED International.
-[^58] : Voir : [SNOMED CT E-Learning Platform](https://elearning.ihtsdotools.org). La création d’un compte est parfois nécessaire pour accéder à certains contenus
-[^59] : Voir l’article de Chang E, Mostafa J. « The use of SNOMED CT, 2013-2020: a literature review ». J Am Med Inform Assoc. 2021 : [Melanoma Registry Underreporting in the Veterans Health Administration](https://pubmed.ncbi.nlm.nih.gov/30766224/)
-[^60] : Voir l’article de Reed SG, Adibi SS, Coover M, Gellin RG, Wahlquist AE, AbdulRahiman A, Hamil LH, Walji MF, O'Neill P, Kalenderian E. « [Does use of an electronic health record with dental diagnostic system terminology promote dental students' critical thinking? » J Dent Educ. 2015 : Does use of an electronic health record with dental diagnostic system terminology promote dental students' critical thinking?](https://pubmed.ncbi.nlm.nih.gov/26034034/)
-[^61] : Voir l’article de Souvignet J, Declerck G, Trombert-Paviot B, Asfari H, Jaulent MC, Bousquet C. « Semantic Queries Expedite MedDRA Terms Selection Thanks to a Dedicated User Interface: A Pilot Study on Five Medical Conditions ». Front Pharmacol. 2019 : [Semantic Queries Expedite MedDRA Terms Selection Thanks to a Dedicated User Interface: A Pilot Study on Five Medical Conditions](https://pubmed.ncbi.nlm.nih.gov/30792654/)
-[^62] : Voir l’article de Thun S, Dewenter H. « ICD-11, ICHI und SNOMED CT – was bedeuten die Systematiken für E-Health-Anwendungen? [ICD-11, ICHI and SNOMED CT-What do the standards mean for eHealth applications?]. » Bundesgesundheitsblatt Gesundheitsforschung Gesundheitsschutz. 2018 : [ICD-11, ICHI and SNOMED CT-What do the standards mean for eHealth applications?](https://pubmed.ncbi.nlm.nih.gov/29846742/)
-[^63] : Voir : https://digital.nhs.uk/services/terminology-and-classifications/SNOMED CT
-[^64] : Voir : [Interopérabilité sémantique : la France choisit la SNOMED CT pour la description des localisations anatomiques | Agence du Numérique en Santé](https://esante.gouv.fr/espace-presse/interoperabilite-semantique-la-france-choisit-la-snomed-ct-pour-la-description-des-localisations-anatomiques)
-[^65] : Voir : https://www.snomed.org/news/new-tool-makes-it-easy-for-non-SNOMED CT-users-to-retrieve-the-SNOMED CT-concepts-associated-with-a-given-code?lang=fr
-[^66] : Voir : [Implementation tooling](https://www.implementation.snomed.org/implementation-tooling)
-[^67] : Voir : [SNOMED International - YouTube](https://www.youtube.com/@snomedct/videos)
-[^68] : S’inscrire ici : [SNOMED International (trading name of IHTSDO)](https://snomed.us1.list-manage.com/subscribe?u=b93335bd637a47672825e5981&id=f8cd235af3)
-[^69] : Voir : [Discussions](https://confluence.ihtsdotools.org/display/DEV/Discussions)
-[^70] : Voir : [SNOMED International](https://ihtsdo.freshdesk.com/support/home)
-[^71] : Voir : [Browsers | Implementation](https://www.implementation.snomed.org/browsers)
-[^72] : [OHDSI Athena](https://athena.ohdsi.org/search-terms/start)
-[^73] : Voir : [SNOMED CT - Summary | NCBO BioPortal](https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=summary)
-[^74] : [C-DAC’s Toolkit For SNOMED CT](https://cdac.in/index.aspx?id=hi_hs_medinfo_csno_overview)
-[^75] : Voir : [UMLS Terminology Services](https://uts.nlm.nih.gov/uts/)
-[^76] : Voir : https://terminologie.nictiz.nl/art-decor/SNOMED CT
-[^77] : Voir : [Shrimp Licence Agreement](https://ontoserver.csiro.au/shrimp/licence.html)
-[^78] : Voir : [Snowray](https://snowray.app)
-[^79] : Voir : [InfoClinic STOM Browser](http://stom.infoclinic.co/)
-[^80] : Voir : [West Coast Informatics SNOMED CT Browser](https://snomed.westcoastinformatics.com/terminology-ui/index.htm)
-[^81] : Voir : https://www.implementation.snomed.org/authoring-tools
-[^82] : Voir : [SnomedSearchDemo](https://ihtsdo.github.io/snomed-ui-examples/)
-[^83] : Voir : [Snap2SNOMED](https://snap.snomedtools.org)
-[^84] : Voir : [Mapping Tool](https://mapping.ihtsdotools.org/#/)
-[^85] : Voir : [Traitement du langage naturel pour la santé – Extraire des données de santé – Amazon Comprehend Medical](https://aws.amazon.com/fr/comprehend/medical/)
-[^86] : Voir : [Reference Set and Translation Service](https://refset.ihtsdotools.org/#/directory). D’autres outils de traduction sont référencés sur le site de SNOMED International : https://www.implementation.snomed.org/translation-tools
-[^87] : Voir : [Snolytical - SNOMED CT Data Analytics Demonstrator](https://github.com/IHTSDO/health-data-analytics)
-[^88] : Voir : https://confluence.ihtsdotools.org/display/DOCEXTPG?preview=/57815405/180922901/doc_ExtensionsPracticalGuide_Current-en-US_INT_20230523.pdf
-[^89] : Voir : [4.1 Namespaces](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.1+Namespaces)
-[^90] : Voir : [IHTSDO Browser](https://browser.ihtsdotools.org/)
+[^52]: Il est également possible d’utiliser un concept post-coordonné pour définir un attribut précisant un concept. Voir le guide de démarrage pour des détails et des précisions supplémentaires.
+[^53]: Voir l’article de Elkin PL, Brown SH, Husser CS, Bauer BA, Wahner-Roedler D, Rosenbloom ST, Speroff T. « Evaluation of the content coverage of SNOMED CT: ability of SNOMED clinical terms to represent clinical problem lists ». Mayo Clin Proc. 2006 : [Evaluation of the content coverage of SNOMED CT: ability of SNOMED clinical terms to represent clinical problem lists](https://pubmed.ncbi.nlm.nih.gov/16770974/)
+[^54]: Voir l’article de Block LJ, Wong ST, Handfield S, Hart R, Currie LM. « Comparison of terminology mapping methods for nursing wound care knowledge representation ». Int J Med Inform. 2021 : [Comparison of terminology mapping methods for nursing wound care knowledge representation](https://pubmed.ncbi.nlm.nih.gov/34358804/)
+[^55]: Le comparison mapping fonctionne sur un principe similaire à celui d’un double mapping : (1) le rapprochement d’un terme de la terminologie source à un terme d’une autre terminologie (ex : CIM-10, ICHI, etc.) déjà mappé avec SNOMED CT et (2) l’utilisation du mapping entre cette terminologie intermédiaire et SNOMED CT.
+[^56]: Voir : [SNOMED CT Archives](https://www.nlm.nih.gov/healthit/snomedct/archive.html)
+[^57]: Voir les cours disponibles : [SNOMED CT Course Catalogue](https://courses.ihtsdotools.org). Certains cours sont gratuits pour tous et d'autres seulement pour les membres de SNOMED International.
+[^58]: Voir : [SNOMED CT E-Learning Platform](https://elearning.ihtsdotools.org). La création d’un compte est parfois nécessaire pour accéder à certains contenus
+[^59]: Voir l’article de Chang E, Mostafa J. « The use of SNOMED CT, 2013-2020: a literature review ». J Am Med Inform Assoc. 2021 : [Melanoma Registry Underreporting in the Veterans Health Administration](https://pubmed.ncbi.nlm.nih.gov/30766224/)
+[^60]: Voir l’article de Reed SG, Adibi SS, Coover M, Gellin RG, Wahlquist AE, AbdulRahiman A, Hamil LH, Walji MF, O'Neill P, Kalenderian E. « [Does use of an electronic health record with dental diagnostic system terminology promote dental students' critical thinking? » J Dent Educ. 2015 : Does use of an electronic health record with dental diagnostic system terminology promote dental students' critical thinking?](https://pubmed.ncbi.nlm.nih.gov/26034034/)
+[^61]: Voir l’article de Souvignet J, Declerck G, Trombert-Paviot B, Asfari H, Jaulent MC, Bousquet C. « Semantic Queries Expedite MedDRA Terms Selection Thanks to a Dedicated User Interface: A Pilot Study on Five Medical Conditions ». Front Pharmacol. 2019 : [Semantic Queries Expedite MedDRA Terms Selection Thanks to a Dedicated User Interface: A Pilot Study on Five Medical Conditions](https://pubmed.ncbi.nlm.nih.gov/30792654/)
+[^62]: Voir l’article de Thun S, Dewenter H. « ICD-11, ICHI und SNOMED CT – was bedeuten die Systematiken für E-Health-Anwendungen? [ICD-11, ICHI and SNOMED CT-What do the standards mean for eHealth applications?]. » Bundesgesundheitsblatt Gesundheitsforschung Gesundheitsschutz. 2018 : [ICD-11, ICHI and SNOMED CT-What do the standards mean for eHealth applications?](https://pubmed.ncbi.nlm.nih.gov/29846742/)
+[^63]: Voir : https://digital.nhs.uk/services/terminology-and-classifications/SNOMED CT
+[^64]: Voir : [Interopérabilité sémantique : la France choisit la SNOMED CT pour la description des localisations anatomiques | Agence du Numérique en Santé](https://esante.gouv.fr/espace-presse/interoperabilite-semantique-la-france-choisit-la-snomed-ct-pour-la-description-des-localisations-anatomiques)
+[^65]: Voir : https://www.snomed.org/news/new-tool-makes-it-easy-for-non-SNOMED CT-users-to-retrieve-the-SNOMED CT-concepts-associated-with-a-given-code?lang=fr
+[^66]: Voir : [Implementation tooling](https://www.implementation.snomed.org/implementation-tooling)
+[^67]: Voir : [SNOMED International - YouTube](https://www.youtube.com/@snomedct/videos)
+[^68]: S’inscrire ici : [SNOMED International (trading name of IHTSDO)](https://snomed.us1.list-manage.com/subscribe?u=b93335bd637a47672825e5981&id=f8cd235af3)
+[^69]: Voir : [Discussions](https://confluence.ihtsdotools.org/display/DEV/Discussions)
+[^70]: Voir : [SNOMED International](https://ihtsdo.freshdesk.com/support/home)
+[^71]: Voir : [Browsers | Implementation](https://www.implementation.snomed.org/browsers)
+[^72]: [OHDSI Athena](https://athena.ohdsi.org/search-terms/start)
+[^73]: Voir : [SNOMED CT - Summary | NCBO BioPortal](https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=summary)
+[^74]: [C-DAC’s Toolkit For SNOMED CT](https://cdac.in/index.aspx?id=hi_hs_medinfo_csno_overview)
+[^75]: Voir : [UMLS Terminology Services](https://uts.nlm.nih.gov/uts/)
+[^76]: Voir : https://terminologie.nictiz.nl/art-decor/SNOMED CT
+[^77]: Voir : [Shrimp Licence Agreement](https://ontoserver.csiro.au/shrimp/licence.html)
+[^78]: Voir : [Snowray](https://snowray.app)
+[^79]: Voir : [InfoClinic STOM Browser](http://stom.infoclinic.co/)
+[^80]: Voir : [West Coast Informatics SNOMED CT Browser](https://snomed.westcoastinformatics.com/terminology-ui/index.htm)
+[^81]: Voir : https://www.implementation.snomed.org/authoring-tools
+[^82]: Voir : [SnomedSearchDemo](https://ihtsdo.github.io/snomed-ui-examples/)
+[^83]: Voir : [Snap2SNOMED](https://snap.snomedtools.org)
+[^84]: Voir : [Mapping Tool](https://mapping.ihtsdotools.org/#/)
+[^85]: Voir : [Traitement du langage naturel pour la santé – Extraire des données de santé – Amazon Comprehend Medical](https://aws.amazon.com/fr/comprehend/medical/)
+[^86]: Voir : [Reference Set and Translation Service](https://refset.ihtsdotools.org/#/directory). D’autres outils de traduction sont référencés sur le site de SNOMED International : https://www.implementation.snomed.org/translation-tools
+[^87]: Voir : [Snolytical - SNOMED CT Data Analytics Demonstrator](https://github.com/IHTSDO/health-data-analytics)
+[^88]: Voir : https://confluence.ihtsdotools.org/display/DOCEXTPG?preview=/57815405/180922901/doc_ExtensionsPracticalGuide_Current-en-US_INT_20230523.pdf
+[^89]: Voir : [4.1 Namespaces](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.1+Namespaces)
+[^90]: Voir : [IHTSDO Browser](https://browser.ihtsdotools.org/)
 
 
 
