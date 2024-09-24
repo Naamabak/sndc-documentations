@@ -40,7 +40,7 @@
    <img src="../files_and_images/snomed_ct/snomed_Fig_1.png" width="700px"/>    
 
 
-   Figure 1 : Les trois composantes de la SNOMED CT, Source : [ SNOMED Internationa][^12](https://www.snomed.org/five-step-briefing?lang=fr)
+   **Figure 1 : Les trois composantes de la SNOMED CT**, Source : [ SNOMED Internationa][^12](https://www.snomed.org/five-step-briefing?lang=fr)
    </p>  
 
 
@@ -123,7 +123,7 @@ Rinaldi et al. (*2021*)[^11] décrivent l'utilisation de SNOMED-CT pour l'étude
    <img src="../files_and_images/snomed_ct/snomed_Fig_2.png" width="700px"/>    
 
 
-   Figure 2 : Hiérarchies et relations dans le modèle SNOMED CT, Source : [ SNOMED CT Starter Guide](https://confluence.ihtsdotools.org/display/DOCSTART/4.+SNOMED+CT+Basics)[^12]
+   **Figure 2 : Hiérarchies et relations dans le modèle SNOMED CT**, Source : [ SNOMED CT Starter Guide](https://confluence.ihtsdotools.org/display/DOCSTART/4.+SNOMED+CT+Basics)[^12]
    </p>  
 
 
@@ -148,7 +148,7 @@ Rinaldi et al. (*2021*)[^11] décrivent l'utilisation de SNOMED-CT pour l'étude
    <img src="../files_and_images/snomed_ct/snomed_Fig_3.png" width="700px"/>    
 
 
-  Figure 3 : Exemple de la structure hiérarchique de la SNOMED CT, Source : [SNOMED CT Browser]()
+  **Figure 3 : Exemple de la structure hiérarchique de la SNOMED CT**, Source : [SNOMED CT Browser]()
    </p>  
 
 
@@ -282,7 +282,7 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
    <img src="../files_and_images/snomed_ct/snomed_Fig_5.png" width="700px"/>    
 
 
-   Carte 1 :Membres et affiliés de SNOMED International en 2023, Source : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
+   **Carte 1 :Membres et affiliés de SNOMED International en 2023**, Source : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
    </p>  
 
    - Le double mapping consistant au mapping de SNOMED CT à la CIM-10 (1) puis de la CIM-10 à la CIM-11 (2) permet de relier SNOMED CT à la CIM-11.
@@ -418,8 +418,8 @@ Rodrigues et al. (2017)  décrivent les difficultés de mapping entre ICHI et SN
    <img src="../files_and_images/snomed_ct/snomed_Fig_5.png" width="700px"/>    
 
 
-   Carte 1 : 
- Membres et affiliés de SNOMED International en 2023, Source : [ Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
+   **Carte 1 : 
+ Membres et affiliés de SNOMED International en 2023**, Source : [ Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
    </p>  
 
 
@@ -456,7 +456,7 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
    <img src="../files_and_images/snomed_ct/snomed_Fig_6.png" width="700px"/>    
 
 
-   Figure 6 :SNOMED CT Browser, Source : [SNOMED CT Browser ]()
+   **Figure 6 :SNOMED CT Browser**, Source : [SNOMED CT Browser ]()
    </p>  
 
      - SNOMED CT Concept Lookup35: affiche la description du concept, ses traductions éventuelles, ses attributs, ses parents et enfants directs (voir la Figure 7 ci-dessous)
@@ -466,7 +466,7 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
    <img src="../files_and_images/snomed_ct/snomed_Fig_7.png" width="700px"/>    
 
 
-   Figure 7 : SNOMED CT Concept Lookup, Source : [SNOMED CT Concept Lookup]()
+   **Figure 7 : SNOMED CT Concept Lookup**, Source : [SNOMED CT Concept Lookup]()
    </p> 
 
 
@@ -495,7 +495,7 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 
 <p align="center">
    <img src="../files_and_images/snomed_ct/snomed_Fig_8.png" width="700px"/>    
-   Figure 8 : Structure d'un SCTID d'extension 
+   **Figure 8 : Structure d'un SCTID d'extension**
 « 5281000124103 |Persistent asthma (disorder)|, Source : [4.1 Namespaces ](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.1+Namespaces)
    </p>                                                                   
 
