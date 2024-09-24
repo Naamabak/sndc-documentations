@@ -16,7 +16,7 @@
 **Maturité / Utilisation** : SNOMED-CT est mise à jour tous les mois. L'usage de la nomenclature est largement répandu dans le monde : en juin 2023, 47 pays (ex : Etats-Unis, Allemagne, Inde, Australie, Argentine, etc.) ont adopté SNOMED-CT, en tant que membres de SNOMED International, et environ 30 000 licences d'affiliation ont été délivrées à des individus et à des organisations (voir l'élément « Adoption du standard » en partie 4. Valorisation).  
 
 
-## 1.General
+## 1. General
 
 ### Présentation :
   - **Pays d'origine**: International[^1]
