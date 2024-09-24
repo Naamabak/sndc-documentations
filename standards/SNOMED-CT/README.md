@@ -16,7 +16,7 @@
 **Maturité / Utilisation** : SNOMED-CT est mise à jour tous les mois. L'usage de la nomenclature est largement répandu dans le monde : en juin 2023, 47 pays (ex : Etats-Unis, Allemagne, Inde, Australie, Argentine, etc.) ont adopté SNOMED-CT, en tant que membres de SNOMED International, et environ 30 000 licences d'affiliation ont été délivrées à des individus et à des organisations (voir l'élément « Adoption du standard » en partie 4. Valorisation).  
 
 
-## 1. General
+## 1.General
 
 ### Présentation :
   - **Pays d'origine**: International[^1]
@@ -205,7 +205,7 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
 
 
 
-## 2. Gouvernance
+## 2.Gouvernance
 - **Modalités d'accès et distribution des solutions basées sur ce standard** :
    - La consultation de SNOMED CT est accessible à tous, via un **accès gratuit en ligne** (voir l'élément « Ressources d’accès à la terminologie et liens associés » ci-dessous)[^21] .
    - Cependant, **l'utilisation et l'implémentation** de **SNOMED CT** dans les établissements de santé nécessitent le téléchargement du standard, conditionné par **l'adhésion à SNOMED International** ou **l'acquisition d'une licence d'affiliation**[^22] :
@@ -264,7 +264,7 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
 
 
 
- ## 3. Technique
+ ## 3.Technique
 - **Capacité de traduction vers un autre standard (intra types de standards)** :
    - **Mapping entre SNOMED CT et la Classification internationale des maladies** (CIM) (CIM-10 et CIM-11) :
        - **Mapping entre SNOMED CT et la CIM-10** :
