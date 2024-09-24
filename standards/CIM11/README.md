@@ -142,7 +142,7 @@ Dans l'ensemble, environ **83% des médecins ont par conséquent une expérience
 
 
 <p align="center">
-   <img src="../files_and_images/cim11/cim11_fig_2.png" width="600px"/>    
+   <img src="../files_and_images/cim11/cim11_fig_3.png" width="600px"/>    
 
 
 
@@ -234,10 +234,7 @@ L'API (en ligne et en local) et l'outil de codage sont également distribués so
 
 
    **Figure 4 : Alignement entre la CIM-11 et SNOMED CT**
-, Source : [Rodrigues et al. (2015)
-
-
-]()
+, Source : [Rodrigues et al. (2015)]()
    </p>  
 
 
