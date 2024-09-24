@@ -149,7 +149,7 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 
  - Le modèle OMOP-CDM est open source publié sous la **licence Apache 2.0**[^13];
  - Les outils OHDSI compatibles avec OMOP-CDM sont **open source** sous la **licence Apache 2.0 et accessibles en ligne**[^14];
-L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence** : certains vocabulaires peuvent être utilisés **gratuitement et librement** tandis que d’autres nécessitent une **licence payante** ;
+ - L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence** : certains vocabulaires peuvent être utilisés **gratuitement et librement** tandis que d’autres nécessitent une **licence payante** ;  
    - Par exemple, pour utiliser **SNOMED-CT**, une licence est requise : la licence est gratuite dans les pays membres de SNOMED International mais payante pour les utilisateurs des pays non-membres[^15]. Cependant, depuis juin 2022, un accord entre OHDSI et SNOMED International permet aux utilisateurs d’OMOP-CDM d’utiliser SNOMED-CT dans le cadre de la création du modèle et de l’utilisation des outils associés[^16] (mais pas pour des usages en dehors du cadre d’OMOP-CDM, sauf s’ils disposent d’une licence par ailleurs).
    - Dans l'**outil Athena**, l'utilisation du moteur de recherche est libre mais le téléchargement des vocabulaires nécessite une inscription gratuite[^17]. Sur la page de téléchargement, les licences pré-requises sont listées, le cas échéant.
 
@@ -191,7 +191,7 @@ L’utilisation de chaque vocabulaire est soumise aux **conditions de sa licence
 ### Existence de financements pour standardisation :
   - **EHDEN** dispose d'un **fond pour soutenir les efforts de standardisation et de normalisation** des données à travers l'Europe[^27]. Il y a eu 3 types d'appels à projets :
    - Covid : appel à projet pour permettre aux organisations détenant des données de patients atteints du Covid de bénéficier d'une aide pour les convertir vers un format standardisé[^28]
-   - **PME** : appel à projet pour que les PME puissent demander une formation et une certification pour convertir les données de santé au modèle OMOP-CDM<[^29] (voir la liste des PME ayant reçu la certification dans l'élément *« Fournisseurs de service ayant l'expertise en France »* en partie 4. Valorisation).
+   - **PME** : appel à projet pour que les PME puissent demander une formation et une certification pour convertir les données de santé au modèle OMOP-CDM[^29] (voir la liste des PME ayant reçu la certification dans l'élément *« Fournisseurs de service ayant l'expertise en France »* en partie 4. Valorisation).
    - **Normal** : appel à projet pour les institutions détenant des données de santé pour qu'elles bénéficient d'un financement de départ pour des conversions vers OMOP-CDM[^29]
  - Le premier appel à projet de financement a eu lieu en septembre 2019[^30]. Toutefois, ces derniers **sont terminés depuis octobre 2022**. Depuis, EHDEN est devenue une **entité à but non lucratif**.
 
@@ -574,7 +574,7 @@ La Figure 4 ci-dessous illustre les étapes décrites précédemment en spécifi
 
 ### Existence d’extensions certifiées :
 
- future v6.1 en préparation permettra d'ajouter une extension oncologie à OMOP-CDM[^88]. Toutefois, cette extension ne contiendrait pas de données -omiques.
+ La future v6.1 en préparation permettra d'ajouter une extension oncologie à OMOP-CDM[^88]. Toutefois, cette extension ne contiendrait pas de données -omiques.
 
 ### Bibliothèque de requêtes types :
   - **ATLAS**[^89] permet de construire des cohortes complexes composées de multiples éléments tels que des diagnostics, des médicaments, des procédures, des mesures, des observations et des visites, et des requêtes peuvent être développées à partir des vocabulaires standardisés ou des concepts sources. Au sein de ces cohortes définies, ATLAS fournit d'autres fonctionnalités telles que la caractérisation clinique (résumés descriptifs, estimation du taux d'incidence), l'estimation de l'effet au niveau de la population (y compris les modèles de cohortes comparatives utilisant l'appariement des scores de propension) et la prédiction au niveau du patient.
@@ -598,7 +598,7 @@ La Figure 4 ci-dessous illustre les étapes décrites précédemment en spécifi
 
 
 
-# Glossaire des acronymes
+## Glossaire des acronymes
 
 
 1. ACHILLES : Automated Characterization of Health Information at Large-scale Longitudinal Evidence Systems  
