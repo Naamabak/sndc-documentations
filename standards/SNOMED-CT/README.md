@@ -601,7 +601,7 @@ SNOMED CT attribue un code numérique (SCTID) associé à une description (voir 
 
 
 
-### Glossaire des acronymes
+## Glossaire des acronymes
 1. AMA : American Medical Organisation
 2. ANS : Agence du Numérique en Santé
 3. CI-SIS : Cadre d'Interopérabilité des Systèmes d'Information de Santé
@@ -632,103 +632,3 @@ SNOMED CT attribue un code numérique (SCTID) associé à une description (voir 
 28. SNOMED CT : Systematized NOMenclature of MEDicine – Clinical Terms
 29. TRAG : Terminology Release Advisory Group
 30. VTSL : Veterinary Terminology Services Laboratory
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

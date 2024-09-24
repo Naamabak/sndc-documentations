@@ -5,9 +5,11 @@
 ### SYNTHÈSE :
 
 
-Description et type de standard : ICHI est un système de classification des codes d'interventions médicales et fait partie des classifications de référence du Réseau de la famille des classifications internationales de l'OMS (WHO-FIC Network) au même titre que la CIM (Classification Internationale des Maladies) et la CIF (Classification Internationale du Fonctionnement).
-Domaines d’application : ICHI est utilisée pour décrire les diagnostics, la santé mentale ou encore les soins paramédicaux.
-Maturité / Utilisation : La version actuelle est disponible sur le portail de l’OMS[^1], les mises à jour sont régulières. Un version de travail beta 3 date d’octobre 2020. Cette nomenclature est encore peu utilisée, et nous n'identifions pas de pays l'ayant mise en place en mai 2023.
+**Description et type de standard** : ICHI est un système de classification des codes d'interventions médicales et fait partie des classifications de référence du Réseau de la famille des classifications internationales de l'OMS (WHO-FIC Network) au même titre que la CIM (Classification Internationale des Maladies) et la CIF (Classification Internationale du Fonctionnement).
+
+**Domaines d’application** : ICHI est utilisée pour décrire les diagnostics, la santé mentale ou encore les soins paramédicaux.
+
+**Maturité / Utilisation** : La version actuelle est disponible sur le portail de l’OMS[^1], les mises à jour sont régulières. Un version de travail beta 3 date d’octobre 2020. Cette nomenclature est encore peu utilisée, et nous n'identifions pas de pays l'ayant mise en place en mai 2023.
 
 
 
@@ -24,7 +26,7 @@ Maturité / Utilisation : La version actuelle est disponible sur le portail de l
            - ***Target*** : la cible de l'intervention (il s'agit en partie des catégories issues de la CIF, voir le paragraphe ci-dessous : elles peuvent concerner une partie du corps, une activité de la vie quotidienne, des éléments de l'environnement, des comportements liés à la santé)
            - ***Action*** : l'action réalisée sur la cible (action de diagnostic, action thérapeutique, action de gestion et d'organisation, action de prévention)
            - ***Means*** : méthodes et processus par lesquels l'action est réalisée (type d'approche, technique, méthode, échantillon)
-           - Les interventions sont regroupées en **27 catégories** d’interventions regroupées en **4 grandes catégories** définies par la cible de l'intervention (voir Figure 1)[^6] :
+      - Les interventions sont regroupées en **27 catégories** d’interventions regroupées en **4 grandes catégories** définies par la cible de l'intervention (voir Figure 1)[^6] :
           - **Interventions sur les fonctions organiques et les structures anatomiques** : système nerveux et fonctions mentales, système visuel, oreille et mastoïde, système hématopoïétique et lymphatique, système endocrinien, système circulatoire, système respiratoire, système digestif, système tégumentaire, système musculosquelettique, système génito-urinaire, autres systèmes et fonctions corporels non-spécifiés
           - **Interventions sur les activités et la participation** : apprentissage et application des connaissances, tâches et exigences générales, communication, mobilité, entretien personnel, vie domestique, relations et interactions avec autrui, grands domaines de la vie, vie communautaire, sociale et civique
           - **Interventions sur l’environnement** : produits et systèmes techniques, environnement naturel et changements apportés par l'homme à l'environnement, soutiens et relations, attitudes, services, systèmes et politiques
@@ -76,15 +78,11 @@ Maturité / Utilisation : La version actuelle est disponible sur le portail de l
       - **Type de granularité** :
           - Les codes ICHI (codes racine ou *stem code*[^9]) sont des **codes alphanumériques** de 2 ou 7 caractères sous la forme XX ou XXX.XX.XX (voir Figure 2). Les codes avec 2 caractères correspondent à des « regroupements d’interventions » (*exemple : KA désigne la bouche et le pharynx et KAA.AD.AA désigne la biopsie de la lèvre*). Pour les codes à 7 caractères, les 3 premiers identifient la cible, les 2 suivants identifient l’action réalisée et les 2 derniers identifient la méthode utilisée
          - Les codes extension (voir l'élément *« Flexibilité du standard, personnalisation »* en partie 3. Technique) sont des codes alphanumériques de **3 à 7 caractères** sous la forme XXXX.XX, XXXXX.XX ou XXXXXX[^4] 
-        
-
+         - ICHI permet de coder des **actes sur des individus et des actions de santé publique**[^10]. Un exemple d'action de santé publique est donné dans la Figure 3 : il s'agit d'une intervention visant à éduquer les parents au sujet des comportements à avoir auprès de leurs enfants. Cette intervention (codée VEJ.PM.ZZ) fait partie du chapitre 4 (interventions sur les comportements liés à la santé) et du bloc lié au mode de vie (VE) 
 
 
 <p align="center">
    <img src="../files_and_images/ichi/ichi_fig_2.png" width="700px"/>    
-
-  -  ICHI permet de coder des **actes sur des individus et des actions de santé publique**[^10]. Un exemple d'action de santé publique est donné dans la Figure 3 : il s'agit d'une intervention visant à éduquer les parents au sujet des comportements à avoir auprès de leurs enfants. Cette intervention (codée VEJ.PM.ZZ) fait partie du chapitre 4 (interventions sur les comportements liés à la santé) et du bloc lié au mode de vie (VE)  
-
 
   **Figure 2 : Décomposition d’un code ICHI**, Source : [ICHI](https://mitel.dimi.uniud.it/ichi/)
    </p> 
@@ -129,13 +127,13 @@ Un guide de référence ICHI a été publié à la sortie de la version Beta-3 e
 - **Maturité du standard** :
     - **Fréquence de mise à jour** :
         - La version de travail **Beta-3** sortie en octobre 2020 contenait environ 7 000 interventions2. Il s’agissait d’une version ayant vocation à recueillir les retours des utilisateurs.
-        - ICHI est **encore en développement**[^14], **le portail ICHI de l’OMS affiche des mises à jour régulières**.
-La version précédente est la version **Alpha** sortie en 2015. Cette version contenait 5 800 interventions[^7] (Voir l'élément dans « *Illustration concrète : exemple d’utilisation sur un cas simple* » en partie 1. Général).
+        - ICHI est **encore en développement**[^14], **le portail ICHI de l’OMS affiche des mises à jour régulières**.  
+        - La version précédente est la version **Alpha** sortie en 2015. Cette version contenait 5 800 interventions[^7] (Voir l'élément dans « *Illustration concrète : exemple d’utilisation sur un cas simple* » en partie 1. Général).
     - **Niveau de maturité** :
         - **Note : 0,2 / 1**
         - Cette note s’explique par le fait que la version stable n’ayant pas encore été publiée, le standard n’est pas utilisé en production dans le monde, ni a fortiori adopté officiellement.
-    - **Existence de financements pour standardisation** : *La classification étant encore en développement, elle n'a pas encore fait l'objet de financement pour la standardisation.*
-    - **Ressources d’accès à la terminologie et liens associés** :
+- **Existence de financements pour standardisation** : *La classification étant encore en développement, elle n'a pas encore fait l'objet de financement pour la standardisation.*
+- **Ressources d’accès à la terminologie et liens associés** :
          - Moteur de recherche pour parcourir le contenu[^4]
          - Guide d’utilisation du moteur de recherche[^11]
          - Guide de référence[^2]
@@ -253,8 +251,7 @@ En mai 2023, nous n'identifions pas de fournisseurs de service ayant l'expertise
 
 
 ## 5.Utilisation
-- **Simplicité d'usage** :
-   - **Note : 0 / 1** en raison de l’absence d’accès à des ressources officielles de formation (voir l’élément « *Accessibilité à des ressources de formation* » en partie 4. Valorisation), malgré l’existence du guide de référence de la version Beta-3[^2] qui est détaillé et donne notamment des recommandations pour identifier le code racine pertinent, c'est-à-dire pour choisir la cible, l'action et le moyen les plus adaptés à l'intervention concernée
+- **Simplicité d'usage** : **Note : 0 / 1** en raison de l’absence d’accès à des ressources officielles de formation (voir l’élément « *Accessibilité à des ressources de formation* » en partie 4. Valorisation), malgré l’existence du guide de référence de la version Beta-3[^2] qui est détaillé et donne notamment des recommandations pour identifier le code racine pertinent, c'est-à-dire pour choisir la cible, l'action et le moyen les plus adaptés à l'intervention concernée
 
 
 - **Existence d'une communauté en ligne et degré d'activité** :
@@ -323,7 +320,7 @@ Les codes ICHI sont compréhensibles par l’humain en consultant l'arborescence
 
 
 
-### Glossaire des acronymes
+## Glossaire des acronymes
 
 
 1. **ATIH** : Agence technique de l'information sur l'hospitalisation
