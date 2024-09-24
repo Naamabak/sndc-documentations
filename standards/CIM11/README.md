@@ -18,7 +18,7 @@ NB : l’incarnation française de la CIM-11 est coordonnée par l’ANS dans so
 
 
 
-### 1.Général
+## 1.Général
 - **Présentation** :
      - **Pays d’origine** : International
      - **Consortium d’origine** : Organisation Mondiale de la Santé (OMS)[^2]
@@ -172,7 +172,7 @@ Dans l'ensemble, environ **83% des médecins ont par conséquent une expérience
 
 
 
-  ### 2.Gouvernance
+  ## 2.Gouvernance
 - **Modalités d'accès et distribution des solutions basées sur ce standard** :
     - La CIM-11 est accessible à tous, via un accès gratuit en ligne ou en téléchargement[^19]
     - Elle est distribuée sous la licence « ***Creative Commons Attribution-NoDerivs 3.0 IGO*** »[^1]. Il n'est pas autorisé d'apporter des modifications à la classification[^30] :  
@@ -208,7 +208,7 @@ L'API (en ligne et en local) et l'outil de codage sont également distribués so
    - Outil d'aide au codage[^11]
 
 
-### 3.Technique
+## 3.Technique
 - **En France, utilisation depuis 2015 de deux versions de la CIM-10 :**
   - **CIM-10 OMS pour les causes médicales de décès et ALD**
   - **CIM-10 française pour le PMSI : [version 2015](https://www.atih.sante.fr/cim-10-fr-2015-usage-pmsi) et [version 2023](https://www.atih.sante.fr/cim-10-fr-2023-usage-pmsi)**
@@ -228,7 +228,7 @@ L'API (en ligne et en local) et l'outil de codage sont également distribués so
 
 
 <p align="center">
-   <img src="../files_and_images/cim11/cim11_fig_4.png" width="700px"/>    
+   <img src="../files_and_images/cim11/cim11_fig_4.png" width="400px"/>    
 
 
 
@@ -324,7 +324,7 @@ La CIM-11 ne présente pas de contrainte d'implémentation.
 
 
 
-  ### 4.Valorisation
+  ## 4.Valorisation
 
 
 - **Accessibilité à des ressources de formation** :
@@ -342,7 +342,7 @@ La CIM-11 ne présente pas de contrainte d'implémentation.
          - Le codage par les cliniciens utilisant la CIM-10 est plus rapide et cohérent que ceux utilisant la CIM-11
          - Ces résultats s'expliquent par une plus grande familiarité avec la CIM-10 actuellement utilisée et une plus grande complexité pratique d'utilisation de la CIM-11
          - Malgré cela, les cliniciens jugent la classification CIM-11 plus complète et utile que la CIM-10.
- - Des **exemples de transition de la CIM-10 à la CIM-11 au Koweït[^20] et au Kenya[^51]** mettent en lumière la **simplification** du codage et une amélioration de la **fiabilité** des données apportées par l'utilisation de la CIM-11.
+ - Des **exemples de transition de la CIM-10 à la CIM-11 au Koweït[^20] et au Kenya[^52]** mettent en lumière la **simplification** du codage et une amélioration de la **fiabilité** des données apportées par l'utilisation de la CIM-11.
 
 
 - **Adoption du standard** :
@@ -409,7 +409,7 @@ En mai 2023, nous n'avons pas identifié de fournisseurs de service[^58] ayant l
 
 
 
-### 5.Utilisation
+## 5.Utilisation
 - **Simplicité d'usage** :
    - **Complexité d’utilisation liée au mélange entre une classification statistique et un langage international, en revanche les outils sont simple à installer et consulter**
    - Le guide d'implémentation[^8] décrit la CIM-11 comme : « **facile à installer et à utiliser en ligne et hors-ligne** car elle utilise un logiciel hôte gratuit », notamment en raison du fait qu'elle est à présent entièrement numérique
