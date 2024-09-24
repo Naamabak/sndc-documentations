@@ -13,7 +13,8 @@
 
 
  A date, la France n’utilise pas encore la CIM-11 car l’implémentation en pratique n’est pas immédiate : il faut au préalable effectuer des changements dans les outils/logiciels de codage ou de recueil de l'information, un mapping entre les versions des classifications CIM, etc. Aussi aujourd'hui la CIM-10 est-elle largement plus utilisée - et ce, au moins pour les 3 ans à venir.
-NB : l’incarnation française de la CIM-11 est coordonnée par l’ANS dans son rôle de Centre collaborateur de l’OMS français pour la famille des Classifications Internationales.
+
+ NB : l’incarnation française de la CIM-11 est coordonnée par l’ANS dans son rôle de Centre collaborateur de l’OMS français pour la famille des Classifications Internationales.
 
 
 
@@ -117,7 +118,7 @@ Dans l'ensemble, environ **83% des médecins ont par conséquent une expérience
                - **2A20.0 : Leucémie myéloïde chronique, ABL1-BCR positif. Ce niveau contient 4 types de leucémie (2A20.00, 2A20.01, 2A20.02, 2A20.03).**
                - **Le code 2A20.0Y (qui est un stem code) est utilisé lorsque la leucémie que l’on cherche à décrire ne correspond à aucun de ces quatre types de leucémie.**
            - **Les stem codes sont conçus pour que l’utilisateur n'ait besoin que d’un seul code pour décrire de manière précise l’affection du patient.** **Les niveaux supérieurs ne sont pas censés être utilisés pour le codage.**
-               - ** En pratique pour le codage des causes de décès et la détermination de la cause initiale de décès, il faut parfois aller plus loin que le stem code (code racine), et mobiliser  des extensions, en complément. **   
+               - **En pratique pour le codage des causes de décès et la détermination de la cause initiale de décès, il faut parfois aller plus loin que le stem code (code racine), et mobiliser  des extensions, en complément.**   
 
 
 <p align="center">
@@ -211,11 +212,10 @@ L'API (en ligne et en local) et l'outil de codage sont également distribués so
 
 - **Capacité de traduction vers un autre standard (intra types de standards)** :
    - Sur la CIM-10 OMS (version utilisée par la CNAM et par le CépiDC, mais non par l’ATIH qui utilise la CIM-10 FR) :
-      - La CIM-11 est **partiellement alignée avec la CIM-10*
-* : elle contient la **CIM-O** (extension **oncologie**) dans le nœud « CIM-O » du chapitre « extensions » de la version accessible via les API de juin 2018 ou dans le nœud « Histopathologie » de la version en ligne d'avril 2019
-      - Par ailleurs, un **mapping entre la CIM-10 et la CIM-11** a été réalisé par l'OMS
-           - A ce jour, encore incomplet : l’OMS travaille à ce sujet, dans le cadre de groupes de travail spécifiques - *Task Force mapping*
-           - Chaque élément de la CIM-10 se retrouve dans la CIM-11, cependant, en raison d'évolutions dans le domaine médical et de la restructuration de la nomenclature, un élément de la CIM-10 peut ne plus avoir de code unique dans la CIM-11 et peut avoir été déplacé dans de nouveaux chapitres.[^32]  
+      - La CIM-11 est **partiellement alignée avec la CIM-10** : elle contient la **CIM-O** (extension **oncologie**) dans le nœud « CIM-O » du chapitre « extensions » de la version accessible via les API de juin 2018 ou dans le nœud « Histopathologie » de la version en ligne d'avril 2019  
+      - Par ailleurs, un **mapping entre la CIM-10 et la CIM-11** a été réalisé par l'OMS  
+           - A ce jour, encore incomplet : l’OMS travaille à ce sujet, dans le cadre de groupes de travail spécifiques - *Task Force mapping*  
+           - Chaque élément de la CIM-10 se retrouve dans la CIM-11, cependant, en raison d'évolutions dans le domaine médical et de la restructuration de la nomenclature, un élément de la CIM-10 peut ne plus avoir de code unique dans la CIM-11 et peut avoir été déplacé dans de nouveaux chapitres.[^32]   
 
 
   - **L’alignement avec SNOMED-CT est plus difficile** à cause des structures et des niveaux de granularité différents. Il y a eu plusieurs efforts pour mapper SNOMED-CT et la CIM-11 (y compris en utilisant des méthodes de *machine learning*)[^33]
@@ -281,13 +281,13 @@ La CIM-11 ne présente pas de contrainte d'implémentation.
     - 144 823 mappings de la CIM-11 avec les 75 terminologies intégrées à HeTOP ont été effectués
     - SNOMED-CT, MeSH (*Medical Subject Headings*) et NCIT (*NCI Thesaurus*) sont les terminologies ayant le plus de mappings avec la CIM-11
     - La qualité du mapping est globalement très bonne :
-        - **La précision atteint 98 % et le *recall 66 %* **
+        - **La précision atteint 98 % et le recall 66 %**
         - 82 % des mappings sont évalués comme « correspondances exactes »
         - Seuls 2 % des mappings sont évalués comme « faux »
   - Cependant, en raison de la précision des concepts de la CIM-11 et des limites technologiques, la couverture de l'outil de mapping est relativement faible (47,76% des codes de la CIM-11 ont été mappés à au moins un concept)
 
 
-  - Même si la CIM-11 est utilisée pour les statistiques de mortalité et de morbidité par les pays membres de l'OMS dès 2022, des **versions antérieures de la CIM sont encore utilisées** dans les établissements de santé. Xu et al. (2022)[^46] donnent l'exemple de l'utilisation de la CIM-10-CM (CIM-10 avec modifications, autorisées par l'OMS) utilisée aux Etats-Unis. Un **mapping entre la CIM-10-CM et la CIM-11** est donc nécessaire pour assurer l'interopérabilité des données de santé. Deux méthodes de mapping sont possibles (voir Figure 5) :
+- Même si la CIM-11 est utilisée pour les statistiques de mortalité et de morbidité par les pays membres de l'OMS dès 2022, des **versions antérieures de la CIM sont encore utilisées** dans les établissements de santé. Xu et al. (2022)[^46] donnent l'exemple de l'utilisation de la CIM-10-CM (CIM-10 avec modifications, autorisées par l'OMS) utilisée aux Etats-Unis. Un **mapping entre la CIM-10-CM et la CIM-11** est donc nécessaire pour assurer l'interopérabilité des données de santé. Deux méthodes de mapping sont possibles (voir Figure 5) :
    - Méthode 1 : Mapping de la CIM-10-CM à SNOMED CT puis à la CIM-11
    - Méthode 2 : Mapping de la CIM-10-CM à la CIM-10 puis à la CIM-11 
 
@@ -339,7 +339,7 @@ La CIM-11 ne présente pas de contrainte d'implémentation.
  - Des **exemples de transition de la CIM-10 à la CIM-11 au Koweït[^20] et au Kenya[^52]** mettent en lumière la **simplification** du codage et une amélioration de la **fiabilité** des données apportées par l'utilisation de la CIM-11.
 
 
-- **Adoption du standard** :
+- **Adoption du standard** :  
 Adoption officielle :
   - Depuis l'entrée en vigueur de la CIM-11 en 2022, les pays sont encouragés à initier son implémentation.
   - Cependant, l'OMS anticipe que la **transition** pourra prendre du temps[^53] :
@@ -351,9 +351,9 @@ Adoption officielle :
 
 
  - Perspectives d’implémentation opérationnelle en France :
-  - CépiDc : codage des causes médicales de décès
-  - ATIH : codage PMSI des 4 champs
-  - CNAM : codage des affections longues durées (ALD)
+   - CépiDc : codage des causes médicales de décès
+   - ATIH : codage PMSI des 4 champs
+   - CNAM : codage des affections longues durées (ALD)
 
 
 
@@ -560,7 +560,7 @@ Compte tenu de sa récente entrée en vigueur, la communauté en ligne relative 
 
 
 
-### Glossaire des acronymes
+## Glossaire des acronymes
 
 
 1. ANACoD : ANAlysing mortality levels and Causes Of Deaths

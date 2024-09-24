@@ -16,7 +16,7 @@
 **Maturité / Utilisation** : SNOMED-CT est mise à jour tous les mois. L'usage de la nomenclature est largement répandu dans le monde : en juin 2023, 47 pays (ex : Etats-Unis, Allemagne, Inde, Australie, Argentine, etc.) ont adopté SNOMED-CT, en tant que membres de SNOMED International, et environ 30 000 licences d'affiliation ont été délivrées à des individus et à des organisations (voir l'élément « Adoption du standard » en partie 4. Valorisation).  
 
 
-## 1.General
+## 1.Général
 
 ### Présentation :
   - **Pays d'origine**: International[^1]
@@ -40,7 +40,7 @@
    <img src="../files_and_images/snomed_ct/snomed_Fig_1.png" width="700px"/>    
 
 
-   **Figure 1 : Les trois composantes de la SNOMED CT**, Source : [ SNOMED Internationa][^12](https://www.snomed.org/five-step-briefing?lang=fr)
+   **Figure 1 : Les trois composantes de la SNOMED CT**, Source : [SNOMED International](https://www.snomed.org/five-step-briefing?lang=fr)[^12]
    </p>  
 
 
@@ -178,8 +178,8 @@ Rinaldi et al. (*2021*)[^11] décrivent l'utilisation de SNOMED-CT pour l'étude
    - Documentation pour la mise en place de best practices[^20]
    
 
-[^1]: SNOMED International est une organisation à but non lucratif créée en 2007 sous le nom d’International Health Terminology Standards Developement Organization. Les 9 membres fondateurs étaient l'Australie, le Canada, le Danemark, la Lituanie, la Suède, les Pays-Bas, la Nouvelle-Zélande, le Royaume-Uni et les États-Unis. Voir : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr) 
-[^2] : SNOMED CT naît en 2002 de la fusion entre SNOMED Reference Terminology (RT) la CTV3 (Clinical Terms Version 3). Voir : [Overview of SNOMED CT.](https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html#:~:text=SNOMED%20CT%20originated%20from%20the,to%20describe%20morphology%20and%20anatomy.&text=Under%20Dr.,the%20growing%20needs%20of%20medicine)
+[^1]: SNOMED International est une organisation à but non lucratif créée en 2007 sous le nom d’International Health Terminology Standards Developement Organization. Les 9 membres fondateurs étaient l'Australie, le Canada, le Danemark, la Lituanie, la Suède, les Pays-Bas, la Nouvelle-Zélande, le Royaume-Uni et les États-Unis. Voir : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)  
+[^2]: SNOMED CT naît en 2002 de la fusion entre SNOMED Reference Terminology (RT) la CTV3 (Clinical Terms Version 3). Voir : [Overview of SNOMED CT.](https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html#:~:text=SNOMED%20CT%20originated%20from%20the,to%20describe%20morphology%20and%20anatomy.&text=Under%20Dr.,the%20growing%20needs%20of%20medicine)
 [^3]:  Voir : [5-Step briefing | SNOMED International](https://www.snomed.org/five-step-briefing?lang=fr) 
 [^4]:  Voir le modèle logique de la SNOMED CT : https://confluence.ihtsdotools.org/display/DOCSTART/5.+SNOMED+CT+Logical+Model 
 [^5]:  Voir : https://browser.ihtsdotools.org/?perspective=full&conceptId1=174036004&edition=MAIN/2023-05-31&release=&languages=en 
@@ -495,8 +495,9 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 
 <p align="center">
    <img src="../files_and_images/snomed_ct/snomed_Fig_8.png" width="700px"/>    
-   **Figure 8 : Structure d'un SCTID d'extension**
-« 5281000124103 |Persistent asthma (disorder)|, Source : [4.1 Namespaces ](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.1+Namespaces)
+   
+   **Figure 8 : Structure d'un SCTID d'extension** 
+« 5281000124103 |Persistent asthma (disorder)|, Source : [4.1 Namespaces](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.1+Namespaces)
    </p>                                                                   
 
       
@@ -524,7 +525,7 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 [^37]: La page [SNOMED CT maps](https://www.snomed.org/maps?lang=fr) détaille les mappings de SNOMED CT avec les autres standards : CPT, GMDN, CIM-10, CIM-O, MedDRA et Orphanet.
 [^38]: Pour accéder à l’outil de mapping : https://prod-mapping.ihtsdotools.org/#/
 [^39]: Voir l’article de Rodrigues JM, Robinson D, Della Mea V, Campbell J, Rector A, Schulz S, Brear H, Üstün B, Spackman K, Chute CG, Millar J, Solbrig H, Brand Persson K. « [Semantic Alignment between ICD-11 and SNOMED CT](https://pubmed.ncbi.nlm.nih.gov/26262160/) ». Stud Health Technol Inform. 2015 : Semantic Alignment between ICD-11 and SNOMED CT
-[^40] : Voir l’article : Jean Marie RODRIGUES, Sukil KIM, Béatrice ROMBERT PAVIOT, Jae Jin LEE and Syed ALJUNID « How to Link SNOMED CT Procedure and WHO International Classification of Health Interventions (ICHI) », 2017 : https://books.google.fr/books?hl=fr&lr=&id=2UXiDgAAQBAJ&oi=fnd&pg=PA40&dq=ichi+who&ots=bijydMBOYK&sig=yi3eYUPL5Gd6X19OQhEjiI206BU&redir_esc=y#v=onepage&q=ichi%20who&f=false
+[^40] : Voir l’article : Jean Marie RODRIGUES, Sukil KIM, Béatrice ROMBERT PAVIOT, Jae Jin LEE and Syed ALJUNID « How to Link SNOMED CT Procedure and WHO International Classification of Health Interventions (ICHI) », 2017 : [lien](https://books.google.fr/books?hl=fr&lr=&id=2UXiDgAAQBAJ&oi=fnd&pg=PA40&dq=ichi+who&ots=bijydMBOYK&sig=yi3eYUPL5Gd6X19OQhEjiI206BU&redir_esc=y#v=onepage&q=ichi%20who&f=false)
 [^41]: Voir : Procedure, General[https://confluence.ihtsdotools.org/display/DOCEG/Procedure%2C+General]
 [^42]: Voir : [SNOMED International – LOINC](https://loinc.org/collaboration/snomed-international/)
 [^43]: Remplir le formulaire de demande pour accéder au mapping de 2017 : [Request Form for LOINC/SNOMED CT Expression Association and Map Sets File](https://loinc.org/snomed-file-request/)
@@ -600,7 +601,7 @@ SNOMED CT attribue un code numérique (SCTID) associé à une description (voir 
 
 
 
-### Glossaire des acronymes
+## Glossaire des acronymes
 1. AMA : American Medical Organisation
 2. ANS : Agence du Numérique en Santé
 3. CI-SIS : Cadre d'Interopérabilité des Systèmes d'Information de Santé
@@ -631,103 +632,3 @@ SNOMED CT attribue un code numérique (SCTID) associé à une description (voir 
 28. SNOMED CT : Systematized NOMenclature of MEDicine – Clinical Terms
 29. TRAG : Terminology Release Advisory Group
 30. VTSL : Veterinary Terminology Services Laboratory
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
