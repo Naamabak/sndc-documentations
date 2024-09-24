@@ -117,7 +117,7 @@ Un guide de référence ICHI a été publié à la sortie de la version Beta-3 e
 
 
 
-### 2.Gouvernance
+## 2.Gouvernance
 - **Modalités d'accès et distribution des solutions basées sur ce standard** :
    - ICHI est accessible en ligne gratuitement[^1]
    - Sous la même licence que la CIM-11 : Creative Commons Attribution-NoDerivs 3.0 IGO[^12]
@@ -141,7 +141,7 @@ La version précédente est la version **Alpha** sortie en 2015. Cette version c
          - Guide de référence[^2]
 
 
-  #### 3.Technique
+  ## 3.Technique
 
 
 - **Capacité de traduction vers un autre standard (intra types de standards)** :
@@ -165,7 +165,7 @@ La version précédente est la version **Alpha** sortie en 2015. Cette version c
 
 
 
- **Figure 4 : Exemple d'utilisation combinée des classifications de la famille de l'OMS (WHO-FIC : ICHI, CIF et CIM-11)**, Source : [Fortune et al. (2018)[^15]](https://pubmed.ncbi.nlm.nih.gov/29342077/)
+ **Figure 4 : Exemple d'utilisation combinée des classifications de la famille de l'OMS (WHO-FIC : ICHI, CIF et CIM-11)**, Source : [Fortune et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/29342077/)[^15]
    </p> 
 
  - Rodrigues et al. (2017)[^16] décrivent les **difficultés de mapping** entre **ICHI** et **SNOMED-CT** :
@@ -292,7 +292,7 @@ Les codes ICHI sont compréhensibles par l’humain en consultant l'arborescence
 
 [^1]: Voir : [International Classification of Health Interventions (ICHI)](https://www.who.int/standards/classifications/international-classification-of-health-interventions). Le réseau WHO-FIC contient notamment trois nomenclatures de référence que sont la CIM (Classification Internationale des Maladies), la CIF (Classification Internationale du Fonctionnement) et ICHI ainsi que des nomenclatures dérivées.
 [^2]: Voir : [International Classification of Health Interventions (ICHI)](https://www.who.int/standards/classifications/international-classification-of-health-interventions). Le réseau WHO-FIC contient notamment trois nomenclatures de référence que sont la CIM (Classification Internationale des Maladies), la CIF (Classification Internationale du Fonctionnement) et ICHI ainsi que des nomenclatures dérivées.
-[^3] : Voir le guide de référence de la version Beta-3 d’ICHI : https://mitel.dimi.uniud.it/ichi/docs/ICHI Beta-3 Reference Guide.pdf
+[^3]: Voir le guide de référence de la version Beta-3 d’ICHI : https://mitel.dimi.uniud.it/ichi/docs/ICHI Beta-3 Reference Guide.pdf
 [^4]: Voir : [Classifications](https://www.who.int/standards/classifications). Ce réseau contient notamment trois nomenclatures de référence que sont la CIM, la CIF (Classification Internationale du Fonctionnement) et ICHI (International Classification of Health Interventions) ainsi que des nomenclatures dérivées.
 [^5]: Voir le moteur de recherche de ICHI Beta-3 : [ICHI](https://mitel.dimi.uniud.it/ichi/)
 [^6]: Ces catégories incluent notamment les catégories de la CIF, voir la version française du guide de référence de la classification CIF (2001) : [Classification internationale du fonctionnement, du handicap et de la santé: CIF](https://apps.who.int/iris/bitstream/handle/10665/42418/9242545422_fre.pdf)
