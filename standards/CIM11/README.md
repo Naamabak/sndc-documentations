@@ -47,7 +47,7 @@ NB : l’incarnation française de la CIM-11 est coordonnée par l’ANS dans so
              - Le nœud « *Health Devices, Equipment and Supplies* » de la section « X » contient **ICMD**[^13] (*International Classification of Medical Devices*) et la section « V » contient le **WHODAS 2.0**[^14] (*WHO Disability Assessment Schedule 2.0*) qui repose sur la CIF au niveau des concepts[^15]. En effet, Il couvre les 6 domaines suivants issus de la CIF : les fonctions cognitives, la mobilité, les soins personnels, les interactions avec d’autres personnes, les activités de la vie quotidienne et la participation
 
 
-      - Les chapitres et sections suivants n'étaient pas inclus dans les précédentes versions de la CIM[^16].
+             - Les chapitres et sections suivants n'étaient pas inclus dans les précédentes versions de la CIM[^16].
         - Certains chapitres ont été nouvellement individualisés en CIM-11, mais contiennent des codes d’ores et déjà écrits en CIM-10 : chapitre 4 (Maladies du système immunitaire), Chapitre 7 (Troubles du cycle veille-sommeil), Chapitre 17 (Affections liées à la santé sexuelle) ;
         - D’autres en revanche sont entièrement innovants, contenant des codes qui n'étaient pas dans le périmètre CIM-10 : chapitre 26 (Affections de médecine traditionnelle – Module I), Section « V »  (Section supplémentaire pour l'évaluation du fonctionnement), Section « X » (Codes d'extension).
 
@@ -66,7 +66,7 @@ NB : l’incarnation française de la CIM-11 est coordonnée par l’ANS dans so
 
 
 
-       - La CIM-11 est constituée de 3 composantes[^15] (innovation structurelle principale de la CIM-11) : (1) la « **fondation** » est l'ensemble structuré et hiérarchisé (réseau relationnel) de termes (« vocabulaire ») ; (2) le **modèle conceptuel** organise ces termes ; (3) les **linéarisations** (ou *tabular lists*) sont des extraits de données (jeux de valeurs) issues de la « fondation » organisés pour décrire spécifiquement un domaine.
+ - La CIM-11 est constituée de 3 composantes[^15] (innovation structurelle principale de la CIM-11) : (1) la « **fondation** » est l'ensemble structuré et hiérarchisé (réseau relationnel) de termes (« vocabulaire ») ; (2) le **modèle conceptuel** organise ces termes ; (3) les **linéarisations** (ou *tabular lists*) sont des extraits de données (jeux de valeurs) issues de la « fondation » organisés pour décrire spécifiquement un domaine.
 Par exemple, dans la fondation, l'infection par le VIH est à la fois une maladie du système immunitaire, une maladie infectieuse, une maladie sexuellement transmissible. Dans la linéarisation de morbi-mortalité[^18], le VIH est prioritairement et uniquement classée dans les maladies infectieuses
 
 
@@ -135,7 +135,7 @@ Dans l'ensemble, environ **83% des médecins ont par conséquent une expérience
 
 
                 
-  - Une entité peut être classée dans différentes catégories de la CIM-11 et donc avoir plusieurs entités « parents » (voir Figure 3). Cette parentalité multiple est l'une des principales nouveautés de la CIM-11. La **classification la plus importante** est identifiée comme **classification « primaire »** et la ou les autres comme **« secondaires »**. Les classifications secondaires sont grisées dans la nomenclature.
+- Une entité peut être classée dans différentes catégories de la CIM-11 et donc avoir plusieurs entités « parents » (voir Figure 3). Cette parentalité multiple est l'une des principales nouveautés de la CIM-11. La **classification la plus importante** est identifiée comme **classification « primaire »** et la ou les autres comme **« secondaires »**. Les classifications secondaires sont grisées dans la nomenclature.
       - Par exemple, dans l’image ci-dessous, la maladie codée « 2B70 » a pour parent primaire « Néoplasmes » et pour parent secondaire « Maladies du système digestif ». Le code apparaît deux fois mais celui correspondant au parent secondaire est grisé contrairement à l’autre. Le code 2B70 non grisé est la classification primaire.
 
 
@@ -243,7 +243,7 @@ L'API (en ligne et en local) et l'outil de codage sont également distribués so
 
 
 
-     - Un **mapping entre SNOMED-CT** et la **CIM-10**[^35] est disponible sur le portail Athena d'OHDSI qui permet de mapper indirectement les concepts entre CIM-11 et SNOMED-CT en utilisant un double-mapping :
+- Un **mapping entre SNOMED-CT** et la **CIM-10**[^35] est disponible sur le portail Athena d'OHDSI qui permet de mapper indirectement les concepts entre CIM-11 et SNOMED-CT en utilisant un double-mapping :
         - 1) Trouver les correspondances CIM-10 pour un concept SNOMED-CT (un concept SNOMED-CT peut correspondre à plusieurs concepts CIM-10, il existe environ 1 000 concepts CIM-10 non-mappés à SNOMED-CT à ce jour)
         - 2) Utiliser le mapping CIM-10 vers CIM-11
 
@@ -315,7 +315,7 @@ La CIM-11 ne présente pas de contrainte d'implémentation.
   Les résultats montrent que la **méthode 2 est plus performante**.
 
 
-  - Enfin, les discussions récentes en 2023[^47] dans le cadre de l’OMS ont permis au groupe de travail sur l’alignement des terminologies de mettre en avant les avancées en termes de mapping entre ICHI et la CIM-11. Également, le groupe de travail a évoqué leurs avancées sur l’alignement entre la CIM-10 et CIM-11.
+- Enfin, les discussions récentes en 2023[^47] dans le cadre de l’OMS ont permis au groupe de travail sur l’alignement des terminologies de mettre en avant les avancées en termes de mapping entre ICHI et la CIM-11. Également, le groupe de travail a évoqué leurs avancées sur l’alignement entre la CIM-10 et CIM-11.
 
 
 
@@ -390,9 +390,9 @@ Adoption officielle :
 
 
 
-        - Eurostat a lancé en 2023 une *Task Force ICD 11* for mortality coding afin d’établir les marges de diffusion des données européennes de mortalité en lien avec le passage à la CIM-11 et suivre l’avancée des implémentations.
-        - Chaque année, Eurostat demande aux États membres leurs perspectives d’implémentation de la CIM-11 pour le codage de la mortalité
-        - Sur les répondants à l’enquête, seulement 3 pays prévoient d’implémenter la CIM-11 avant 2027, 8 en 2027, 5 en 2028 et 7 après
+- Eurostat a lancé en 2023 une *Task Force ICD 11* for mortality coding afin d’établir les marges de diffusion des données européennes de mortalité en lien avec le passage à la CIM-11 et suivre l’avancée des implémentations.
+- Chaque année, Eurostat demande aux États membres leurs perspectives d’implémentation de la CIM-11 pour le codage de la mortalité
+- Sur les répondants à l’enquête, seulement 3 pays prévoient d’implémenter la CIM-11 avant 2027, 8 en 2027, 5 en 2028 et 7 après
 
 
   - Lorsque la CIM-11 sera adoptée **en France de manière officielle**, les utilisateurs cibles seront les suivants[^15] :
@@ -456,11 +456,11 @@ Compte tenu de sa récente entrée en vigueur, la communauté en ligne relative 
 
 
   
-   - **DORIS**[67] (voir Figure 7) : logiciel en ligne développé par l'OMS qui aide à trouver la cause sous-jacente du décès à partir des certificats de décès. Il se présente sous la forme d’un formulaire à remplir.
+- **DORIS**[^67] (voir Figure 7) : logiciel en ligne développé par l'OMS qui aide à trouver la cause sous-jacente du décès à partir des certificats de décès. Il se présente sous la forme d’un formulaire à remplir.
 
 
 <p align="center">
-   <img src="../files_and_images/cim11/cim11_fig_7.png" width="700px"/>    
+   <img src="../files_and_images/cim11/cim11_fig_8.png" width="700px"/>    
 
 
 
