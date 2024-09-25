@@ -12,7 +12,7 @@
 
 - **Présentation** :
   - **Pays d’origine** : États-Unis[^1].
-  - **Consortium d’origine** : *Regenstrief Insitute*[^1,2].
+  - **Consortium d’origine** : *Regenstrief Insitute*[^1][^2].
   - **Type de standard** : Nomenclature
   - **Description** :
     - LOINC (*Logical Observation Identifiers Names and Codes*) est un standard international créé en 1994 permettant d'**identifier les mesures, les observations et les documents du domaine de la santé**[^3]. A l'origine, LOINC ne contenait que les observations des tests de laboratoire. En 1996, la terminologie s'est étendue et intègre les observations cliniques[^4].
@@ -175,7 +175,7 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
     - Comité Laboratoire (*Laboratory LOINC Committee*)
     - Comité Soins infirmiers (*Nursing Committee*)
     - Comité Radiologie (*Radiology Committee*)
-  - Plusieurs **groupes de travail** existent et font des recommandations au Comité LOINC :
+  - Plusieurs **groupes de travail** existent et font des recommandations au Comité LOINC[^36] :
     - « _**Consumer Names**_ » émet des recommandations pour la création et l'utilisation des « *consumer names* »[^37].
     - « _**Sorting out Panels, Groups, and Value sets**_ » définit les objectifs spécifiques de chacun des projets LOINC développés au cours du temps (panels, groupes, jeux de valeurs)[^38].
   - Ces deux groupes de travail ne sont plus ouverts à de nouveaux participants mais il est possible d'entrer en contact avec LOINC, soit pour indiquer ses domaines de compétences afin d'intégrer de futurs groupes de travail, soit pour poser des questions, faire des remarques et/ou des suggestions[^39].
@@ -248,7 +248,7 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
     - La version préliminaire du *mapping* entre la version 2.15 de LOINC et la 4e édition datant de 2005 de CPT a été créée par *Intermountain Health Care* (IHC).
     - Il contient les *mappings* les plus courants (plus de 2 000) fournis par les personnes utilisant LOINC et CPT dans leurs systèmes locaux.
     - Les *mappings* ont été examinés par le *Regenstrief Institute* et par l'*American Medical Association* (AMA), qui produit CPT, pour en évaluer la précision.
-    - Pour accéder au *mapping* il faut disposer d'une licence CPT[^49,53].
+    - Pour accéder au *mapping* il faut disposer d'une licence CPT[^49][^53].
   - *Mapping* entre LOINC et NABM :
     - L’alignement des codes LOINC et NABM est disponible sur le portail BIOLOINC. En 2021, 783 codes NABM étaient alignés vers le jeu de valeurs LOINC Biologie.
 
@@ -256,7 +256,7 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
   - Certains codes LOINC (*Document Ontology*) sont utilisés dans CDA (*Clinical Document Architecture*) et dans C-CDA (*Consolidated Clinical Document Architecture*) pour décrire le type de documents cliniques (ex : résumé de sortie, notes médicales de consultations, de suivi, etc.)[^54]
   - La terminologie LOINC a été *mappée* aux ressources FHIR (*CodeSystem, ValueSet, ConceptMap*)  : cela permet d'avoir accès au contenu de la terminologie LOINC directement à partir de l'API FHIR, et de faciliter l'usage de LOINC dans l'écosystème FHIR.
   - Les codes LOINC peuvent être utilisés dans les images et les rapports **DICOM** pour représenter les mesures et les observations.[^55]
-  - Les codes LOINC sont utilisés dans les schémas de données **OMOP-CDM**[^54] et **i2b2**[^57] pour les tests de laboratoire et les observations cliniques.
+  - Les codes LOINC sont utilisés dans les schémas de données **OMOP-CDM**[^56] et **i2b2**[^57] pour les tests de laboratoire et les observations cliniques.
 
 [^48]: Voir : [SNOMED International – LOINC](https://loinc.org/collaboration/snomed-international/)
 [^49]: Remplir le formulaire de demande pour accéder au *mapping* de 2017 : [Request Form for LOINC/SNOMED CT Expression Association and Map Sets File](https://loinc.org/snomed-file-request/)
@@ -313,7 +313,7 @@ Il est possible de contribuer à la traduction de LOINC : [Contact LOINC](https:
 - **Adoption du standard** :
   - *Adoption officielle* :
     - LOINC a été adoptée officiellement par l'*American Clinical Laboratory Association* et le *College of American Pathologists*[^64].
-    - En France, dans le cadre du **CI-SIS** (Cadre d'interopérabilité des systèmes d'information de santé)[^15,65] :
+    - En France, dans le cadre du **CI-SIS** (Cadre d'interopérabilité des systèmes d'information de santé)[^15][^65] :
       - L'utilisation de valeurs LOINC est obligatoire pour la production et l'exploitation de comptes-rendus d'examens dématérialisés de biologie médicale structurés.
       - L'utilisation de LOINC est recommandée pour la transmission par message des informations de biologie médicale.
     - *Utilisation sur le marché :*
