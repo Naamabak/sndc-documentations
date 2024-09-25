@@ -447,7 +447,7 @@ _Figure 3 : Le système source partage l’information (exemple b)_
   - Les **profils** permettent de définir la manière dont les extensions doivent être utilisées (mais il est également possible de définir des extensions en dehors des profils)[^109]. Pour faciliter l'implémentation du standard, HL7 a établi la **liste des profils les plus importants ou les plus utiles** (en termes de cas d'usage)[^110].
 
 - **Bibliothèque de requêtes types** :
-  - La documentation officielle de FHIR est très riche et contient notamment de nombreux **exemples commentés de requêtes FHIR XML et JSON**, en particulier dans la page dédiée aux développeurs[^11][^112],  (voir Figure 5). Une comparaison des formats XML et JSON (éléments, syntaxes, etc.) est également accessible[^113].
+  - La documentation officielle de FHIR est très riche et contient notamment de nombreux **exemples commentés de requêtes FHIR XML et JSON**, en particulier dans la page dédiée aux développeurs[^111][^112],  (voir Figure 5). Une comparaison des formats XML et JSON (éléments, syntaxes, etc.) est également accessible[^113].
 
 <p align="center">
   <img src="../files_and_images/fhir/FHIR_fig_5.png" width="400px"/>
