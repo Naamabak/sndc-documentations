@@ -221,7 +221,7 @@ Les liens entre ces entités sont illustrés dans le schéma ci-dessous (voir Fi
 [^44]: Voir le contenu de l’entité Analyses : [analyses defaultSchema - Beacon v2 Documentation](https://docs.genomebeacons.org/schemas-md/analyses_defaultSchema/) et le GitHub associé : https://github.com/ga4gh-beacon/beacon-v2/tree/main/models/json/beacon-v2-default-model/analyses
 
 <p align="center">
-  <img src="../files_and_images/beacon/Beacon_fig_6.png" width="500px"/>    
+  <img src="../files_and_images/beacon/Beacon_fig_6.png" width="300px"/>    
 </p>
 
 *Figure 6 : Modèle Beacon,Source : Beacon v2 documentation[^37]*
