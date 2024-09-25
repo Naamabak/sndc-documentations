@@ -103,7 +103,7 @@ _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
 - **Modalités d'accès et distribution des solutions basées sur ce standard** :
   - CDA est disponible en **téléchargement gratuitement**[^11], publié sous licence HL7[^12].
   - Cette **licence gratuite** inclut certaines restrictions dans l'utilisation du standard. Pour un usage moins contraint, les utilisateurs peuvent adhérer à HL7.
-    - Plusieurs types d’adhésions HL7 existent, chacune permettant un usage distinct : individual and student membership, organizational membership, gold membership, benefactor membership[^12].
+    - Plusieurs types d’adhésions HL7 existent, chacune permettant un usage distinct : individual and student membership, organizational membership, gold membership, benefactor membership[^13].
 
 - **Processus de prise de décision sur le standard** :
   - Les **deux groupes** suivants collaborent, notamment pour échanger sur la qualité des guides d'implémentation :
@@ -155,7 +155,7 @@ _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
 
 - **Communication avec d'autres standards (inter-typologies de standards)** :
   - Communication entre **CDA et OMOP-CDM** :
-    - Ji et *al.* (2020)[^22]  ont converti des documents CDA utilisés pour renvoyer des patients vers un autre professionnel de santé (« *referral CDA documents* ») au standard OMOP-CDM. Leur étude utilise des documents CDA stockés depuis 10 ans dans un hôpital de Corée du Sud.
+    - Ji et *al.* (2020)[^22] ont converti des documents CDA utilisés pour renvoyer des patients vers un autre professionnel de santé (« *referral CDA documents* ») au standard OMOP-CDM. Leur étude utilise des documents CDA stockés depuis 10 ans dans un hôpital de Corée du Sud.
       - Les correspondances entre les éléments des documents CDA contenus dans l’en-tête et dans le corps du document[^23] vers la structure d’OMOP-CDM sont établies : 9 tables OMOP-CDM ont pu être complétées avec les éléments des documents CDA.
       - Le *mapping* des vocabulaires CDA vers les vocabulaires standardisés d’OMOP-CDM a été effectué : les données ont pu être mappées à 98,6 % pour l’état de santé, 68,8 % pour les médicaments, 35,7 % pour les mesures, 100 % pour les observations et 56,4 % pour les procédures. Les taux relativement faibles observés pour les mesures, les procédures et les médicaments s’expliquent par la faible qualité des données initiales dans les documents CDA ainsi que par l’utilisation de vocabulaires locaux.
     - Abedtash et Duke ont démontré dans une série d’études[^24] la faisabilité et la bonne performance de la conversion de documents CCD basés sur C-CDA vers OMOP-CDM.
@@ -364,7 +364,7 @@ _Figure 3 : Exemple d'une instance CDA XML, Source : Modèles de contenus CDA (v
 
 _Figure 4 : Aperçu de l’interface de l’outil HL7 C-CDA Viewer, Source : HL7 C-CDA Viewer_
 
-  - DrChrono : *EHR*, permettant l'import et l'export de documents au format C-CDA[^54].
+  - DrChrono : *EHR*, permettant l'import et l'export de documents au format C-CDA[^64].
 
 - **Existence d'extensions certifiées** :
   - **Chaque pays produit ses propres “extensions”**:

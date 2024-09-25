@@ -141,7 +141,7 @@ En raison de la flexibilité du standard et des terminologies, la spécification
 
 - **Modalités d'accès et distribution des solutions basées sur ce standard** :
   - **Le standard Beacon v2** est publié sous la licence **Creative Commons Zero v1.0 Universal**[^21]
-  - Le **logiciel B2RI** est publié sous la _**licence GNU General Public License**_ v3.0 et **_Apache License_ v2.0**[^20]
+  - Le **logiciel B2RI** est publié sous la _**licence GNU General Public License**_ v3.0 et **_Apache License_ v2.0**[^22]
 
 - **Gouvernance des évolutions du standard** :
   - Le standard est développé par le groupe de travail **_Discovery_ de la GA4GH**[^23]. Il est possible de rejoindre ce groupe de travail à **différents niveaux d’intervention** : pour apporter son *feedback* sur les documents, participer aux rendez-vous réguliers, rédiger les documents et coder le standard[^24].
@@ -200,7 +200,7 @@ JAMIA Open, 3(3), 472–486. [The case for open science: rare diseases](https://
 
 Ce Modèle par défaut comporte les 7 entités suivantes qui sont liées par 12 relations et contiennent les termes suivants[^36][^37] :
 
-  - Les entités **Datasets** et **Cohorts** (les collections) : Contiennent un regroupement de variants d'une même base de données (dans _**Datasets**_[^38] : date de création, conditions d’utilisation, description, identifiant, nom, version, etc.) ou d’individus appartenant à la même population d’étude (dans _**Cohorts**[^38] : design_ de la cohorte, taille, type, identifiant, critères d’inclusion, nom, etc.).
+  - Les entités **Datasets** et **Cohorts** (les collections) : Contiennent un regroupement de variants d'une même base de données (dans _**Datasets**_[^38] : date de création, conditions d’utilisation, description, identifiant, nom, version, etc.) ou d’individus appartenant à la même population d’étude (dans _**Cohorts**[^39] : design_ de la cohorte, taille, type, identifiant, critères d’inclusion, nom, etc.).
   - L'entité _**Genomic variation**_[^40] : Contient les informations sur les altérations génomiques uniques (ex : position dans le génome, altérations des séquences, type, fréquence dans la population, etc.)
   - L'entité _**Individuals**_[^41] : Contient les détails phénotypiques et cliniques des patients ou des individus sains constituant les groupes de contrôle (ex : maladies, origine ethnique, mode de vie, origine géographique, interventions cliniques, traitements, caractéristiques phénotypiques, sexe, etc.)
   - L'entité _**Biosamples**_[^42] : Contient les détails des échantillons prélevés sur les individus (ex : date de collecte, âge de l’individu à la collecte, diagnostic à partir des marqueurs, diagnostic histologique, progression de la tumeur, etc.)
@@ -233,7 +233,7 @@ Le standard n’impose pas de technologie de stockage ou de traitement des donn�
 Le Modèle et le *Framework* sont décrits aux formats YAML et JSON mais les modalités techniques de mise en place ne sont pas imposées[^37].
 
 - **Compétences techniques et métier nécessaires pour utiliser le standard** :
-  - Pour **mettre en place** la spécification à partir du logiciel B2RI[^23](*Beacon v2 Reference Implementation*), les compétences suivantes sont nécessaires :
+  - Pour **mettre en place** la spécification à partir du logiciel B2RI[^23] (*Beacon v2 Reference Implementation*), les compétences suivantes sont nécessaires :
     - **Compétences techniques** :
       - Système d'exploitation Linux
       - Langages de programmation Python, Perl
@@ -284,7 +284,7 @@ Le Modèle et le *Framework* sont décrits aux formats YAML et JSON mais les mod
   En 2019, **42 organisations internationales** avaient **implémenté l'API Beacon** sur plus de 200 bases de données contenant les données relatives à plus de 100 000 individus anonymisés (voir Figure 7)[^4].
 
   - Le _**Beacon Network**_[^52], réseau de Beacons publics à travers le monde, **a été utilisé 1,5 million de fois** pour des requêtes et constituent à présent une ressource internationale d'envergure pour la découverte de données facilitée.
-  - Les archives génomiques européennes et américaines ont mis en place des instances beacon : la base de données américaine des génotypes et phénotypes[^53](NIH dbGaP), la *European Genome-phenome Archive*[^54] (EGA, au sein du réseau ELIXIR, voir ci-dessous) et la *European Variation Archive*[^55] (EVA).
+  - Les archives génomiques européennes et américaines ont mis en place des instances beacon : la base de données américaine des génotypes et phénotypes[^53] (NIH dbGaP), la *European Genome-phenome Archive*[^54] (EGA, au sein du réseau ELIXIR, voir ci-dessous) et la *European Variation Archive*[^55] (EVA).
   - L'infrastructure européenne **ELIXIR** de bio-informatique a permis la diffusion de l'utilisation de la spécification Beacon en Europe et la constitution d'un **réseau ELIXIR d'utilisateurs de l'API Beacon**[^56] qui comprend notamment les institutions suivantes (voir l'élément « *Processus de prise de décision sur le standard* » en partie 2. Gouvernance) :
     - L'Université de Zurich et l'Institut Suisse de Bio-informatique (SIB : *Swiss Institute of Bioinformatics*) : *Baudisgroup* (Progrenetix Cancer Genomics Beacon+, voir l'élément « *Illustration concrète, exemple d'utilisation sur un cas simple* » en partie 1. Général)
     - L'Institut de génomique à l'Université de Tartu en Estonie
@@ -308,9 +308,10 @@ Le Modèle et le *Framework* sont décrits aux formats YAML et JSON mais les mod
 [^54]: Voir : https://ega-archive.org/beacon/#/
 [^55]: Voir : [EBI GA4GH Beacon](https://www.ebi.ac.uk/eva/?GA4GH)
 [^56]: Voir : [ELIXIR Beacon Network.](https://beacon-network.elixir-europe.org/)
-[^57]: Voir : [ELIXIR France](https://elixir-europe.org/about-us/who-we-are/nodes/france)
 
 - **Fournisseurs de service ayant l'expertise en France** : ELIXIR France[^57], nœud français d'ELIXIR en relation avec le *hub* européen d'ELIXIR à Hinxton.
+
+[^57]: Voir : [ELIXIR France](https://elixir-europe.org/about-us/who-we-are/nodes/france)
 
 ## 5. Utilisation
 
