@@ -421,9 +421,9 @@ _Figure 4 : Aperçu de l’interface de l’outil HL7 C-CDA Viewer, Source : HL7
 35. XML : *Extensible Markup Language*
 36. XSLT : *Extensible Stylesheet Language Transformation*
 
-#Annexes
+#3 Annexes
 
-###Annexe n°1 : Analyse quantitative de la littérature sur CDA et extrait de la liste des publications
+### Annexe n°1 : Analyse quantitative de la littérature sur CDA et extrait de la liste des publications
 
 Sur PubMed (PubMed), on réalise une requête générale sur CDA. La recherche du mot-clé « clinical document architecture cda » renvoie 117 résultats. Voici un extrait de la liste des publications obtenues en résultat :
 
