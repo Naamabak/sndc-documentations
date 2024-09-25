@@ -13,7 +13,8 @@ tags:
 
 ::: tip Crédits
 
-Cette fiche a été rédigée par Albert VUAGNAT (DREES) et complétée par Naby Dia (HDH)
+**Septembre 2022** : cette fiche a été rédigée par Albert VUAGNAT (DREES) et complétée par Naby Dia (HDH).  
+**Septembre 2024** : la section "Autre type de doublons potentiel : la transmission cumulée" a été ajoutée par Albert VUAGNAT.
 
 *À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
@@ -40,7 +41,7 @@ Pour les HCL, la transmission par entité juridique apporte davantage de précis
 
 
 
-### Tableau de la transmission en double dans le PMSI entre 2012 et 2017 pour l’AP-HM, les HCL et l’AP-HP
+### Tableau 1 : Transmission en double dans le PMSI entre 2012 et 2017 pour l’AP-HM, les HCL et l’AP-HP
 
 
 
@@ -179,3 +180,52 @@ run;
 
 ```
 
+## Autre type de doublons potentiel : la transmission cumulée
+
+Cette section traite d’un défaut éventuel de transmission cumulée des fichiers PMSI par les établissements de santé.
+
+### Contexte
+
+Avec la mise en place en 2004 de la tarification à l’activité (MCO et HAD) des établissements de santé, la transmission des données PMSI a évolué :  
+
+* d’une part la transmission par disquette a été remplacée par une télétransmission (via la plateforme e-PMSI de l’Atih) ;  
+* d’autre part, les transmissions successives relatives à l’activité d’une même année civile se doivent de reprendre ce qui avait déjà été transmis et non seulement la période en cours de l’année (semestre, trimestre, mois), constituant des transmissions cumulées.  
+
+Cette nouvelle organisation permet aux établissements : 
+
+* de disposer, en retour de leur transmission des fichiers PMSI, de tableaux de décomptes depuis le début de l’année sans avoir à faire le cumul des différentes périodes ;  
+* un autre intérêt est de permettre de compléter les éventuels manques dans une transmission précédente[^1].  
+
+[^1]: Ce qui est distinct du dispositif Lamda qui est relatif à la correction de manques après la clôture des transmissions pour une année civile.  
+
+### Prise en compte dans les bases de données nationales
+
+Lors de la constitution des bases de données nationales PMSI, la dernière transmission de fichiers effectuée par chaque établissement de santé pour une année civile est prise en considération.  
+
+Du fait de l’organisation antérieure des transmissions sous forme non cumulée, il est vérifié de façon automatique que le volume d’activité des périodes de l’année précédant la dernière transmission de chaque établissement est bien compris dans celle-ci. Si cela devait ne pas être le cas, ces transmissions sont ajoutées à la dernière transmission de l’établissement et l’initiale du numéro séquentiel PMSI transformée en une lettre majuscule. La modification du numéro séquentiel PMSI évite les « collisions » de numéro séquentiels et permet une identification indirecte des transmissions de fichiers ajoutées.  
+
+Avec ces ajouts les bases de données nationales recouvrent l’ensemble de l’activité réalisée. In fine, ces ajouts sont très ponctuels (cf tableau ci-dessous). De façon encore plus rare, ces ajouts effectués sur un critère de volume peuvent résulter en des doublons, à vérifier lors des analyses de parcours de soins.
+
+### Tableau 2 :  Décompte du nombre d’établissements et du nombre de résumés PMSI pour lesquels la dernière transmission de l’année a été complétée de transmissions antérieures de la même année –  Bases de données nationales PMSI (2005-2023)
+
+| Année | MCO - Nb établ. | MCO - Nb RSA | SSR - Nb établ. | SSR - Nb RHA | HAD - Nb établ. | HAD - Nb RAPSS |	RIM-P - Nb établ. |	RIM-P - Nb RPSA | RIM-P - Nb établ. | RIM-P - Nb R3A |
+| :---: | :-------: | :----: | :-------: | :----: | :-------: | :------: |	:-------: |	:-----: | :-------: | ------ |
+| 2005  |	5       |	8858 |	14      |	21250|	1       |	542    |	-         | 	-    |	-       | 	   - |
+| 2006  |	1       |	1003 |	11      |	8495 |	0       | 	-      | 	-      |  	-    | 	-       |  	-    | 
+| 2007  |	0       |	-    |	5       |	3542 |	0       |	-      |	3         |	5255    |	1       |	2185 |
+| 2008  |	6       |	4055 |	0       |	-    |	0       |	-      |	2         |	4561    |	4       |	51952|
+| 2009  |	2       |	2763 |	0       |	-    |	0       |	-      |	3         |	669     |	1       |	6718 |
+| 2010  |	1       |	1026 |	1       |	439  |	0       |	-      |	4         |	2243    |	0       |	-    |
+| 2011  |	4       |	8805 |	0       |	-    |	0       |	- | 	4 | 	1305 | 	0	 | - |
+| 2012  |	2 | 	428 | 	2 | 	1369 | 	4	 | 1305 | 	1 | 	3	 | 0	 | - |
+| 2013 | 	0 | 	- | 	2 | 	3864 | 	0 | 	-	 |  0 | 	- | 	1 | 	31891 |
+| 2014  | 	0	 | -	 | 1 | 	4528 | 	0 | 	-	 | 0	 | - | 	0 | 	-|
+| 2015 | 	0 | 	- | 	0 | 	- | 	0 | 	-	 | 0	 | - | 	0 | 	-|
+|2016 | 	0 | 	-	 | 0	 | - | 	0 | 	- | 	0 | 	- | 	0 | 	-|
+|2017 | 	0 | 	- | 	0 | 	- | 	1 | 	189 | 	0 | 	- | 	0 | 	-|
+|2018 | 	0 | 	- | 	0 | 	- | 	1 | 	170 | 	0	 | -	 | 0 | 	-|
+|2019 | 	0 | 	- | 	0 | 	- | 	0 | 	- | 	0 | 	- | 	0 | 	-|
+|2020 | 	0 | 	- | 	0 | 	- | 	0 | 	- | 	0 | 	- | 	0 | 	- | 
+ | 2021 | 	0 | 	- | 	0 | 	-	 | 0 | 	- | 	0 | 	- | 	0 | 	- | 
+ | 2022 | 	0 | 	- | 	0 | 	- | 	0 | 	- | 	0 | 	- | 	0 | 	- | 
+ | 2023 | 	0 | 	- | 	0 | 	- | 	0 | 	- | 	0 | 	- | 	0 | 	- | 
