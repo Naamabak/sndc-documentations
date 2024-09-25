@@ -182,12 +182,12 @@ _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
   - D'après Dolin et *al.* (2006)[^29] , CDA est **très flexible dans le choix des terminologies** : les champs CDA sont notamment conçus pour pouvoir intégrer des codes de nomenclatures standard (LOINC, CIM, EMDN, SNOMED-CT, etc.)
     - Pour spécifier la terminologie utilisée, il suffit de l'identifier par son code OID (*Object Identifier*)[^30].
  
-        Par exemple pour mesurer les signaux vitaux, il est possible d'utiliser la syntaxe suivante[^31] : ``` 
-        <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
-        ```
- 
-      - Le code LOINC « 8716-3 » désigne les signes vitaux « *Vital signs* »[^32].
-      - « 2.16.840.1.113883.6.1 » est l'OID de la terminologie LOINC[^33].
+        Par exemple pour mesurer les signaux vitaux, il est possible d'utiliser la syntaxe suivante[^31] : 
+``` 
+"<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>"
+```
+    - Le code LOINC « 8716-3 » désigne les signes vitaux « *Vital signs* »[^32].
+    - « 2.16.840.1.113883.6.1 » est l'OID de la terminologie LOINC[^33].
 
 [^28]: Voir : [LOINC Document Ontology](https://loinc.org/document-ontology/)
 [^29]: Voir l’article de Dolin RH, Alschuler L, Boyer S, Beebe C, Behlen FM, Biron PV, Shabo Shvo A. HL7 « *Clinical Document Architecture* », Release 2. J Am Med Inform Assoc. 2006 : [HL7 Clinical Document Architecture, Release 2 - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1380194/)
