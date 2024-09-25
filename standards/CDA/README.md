@@ -182,7 +182,7 @@ _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
   - D'après Dolin et *al.* (2006)[^29] , CDA est **très flexible dans le choix des terminologies** : les champs CDA sont notamment conçus pour pouvoir intégrer des codes de nomenclatures standard (LOINC, CIM, EMDN, SNOMED-CT, etc.)
     - Pour spécifier la terminologie utilisée, il suffit de l'identifier par son code OID (*Object Identifier*)[^30].
  
-        Par exemple pour mesurer les signaux vitaux, il est possible d'utiliser la syntaxe suivante[^31] : "*<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>*"
+        Par exemple pour mesurer les signaux vitaux, il est possible d'utiliser la syntaxe suivante[^31] : *<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>*
  
       - Le code LOINC « 8716-3 » désigne les signes vitaux « *Vital signs* »[^32].
       - « 2.16.840.1.113883.6.1 » est l'OID de la terminologie LOINC[^33].
