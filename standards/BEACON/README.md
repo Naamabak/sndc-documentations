@@ -430,7 +430,7 @@ Le Modèle et le *Framework* sont décrits aux formats YAML et JSON mais les mod
 30. VCF : *Variant Call Format*
 31. YAML : *Yet Another Markup Language*
 
-## ANNEXES
+## Annexes
 
 ### Annexe n°1 : Analyse quantitative de la littérature sur Beacon et liste des publications
 
