@@ -187,9 +187,10 @@ En raison de la flexibilité du standard et des terminologies, la spécification
 - **Flexibilité du standard, personnalisation** :
 
 La spécification Beacon v2 **utilise un Modèle de données extensible** ainsi qu'un *Framework* flexible[^2] :
+
   - La séparation du *Framework* et du Modèle Beacon permet d'adapter le concept Beacon à d'autres disciplines sans s'éloigner de la spécification initiale : **Beacon v2 est agnostique au domaine d'application. En particulier** :
-    - Le *Framework* est agnostique au domaine d'application car il contient uniquement la structure des requêtes API et des réponses.
-    - La spécification Beacon v2 contient un Modèle par défaut qui propose une structure recommandée pour les données génomiques et cliniques, mais qui n'est cependant pas imposée.
+      - Le *Framework* est agnostique au domaine d'application car il contient uniquement la structure des requêtes API et des réponses.
+      - La spécification Beacon v2 contient un Modèle par défaut qui propose une structure recommandée pour les données génomiques et cliniques, mais qui n'est cependant pas imposée.
     - Une instance Beacon peut être implémentée au-dessus d'une architecture existante, comme c'est le cas dans plusieurs exemples d'implémentations (Cafe Variome, OpenCGA, Progenetix, RD-Connect GPAP, voir l'élément « *Adoption du standard* » en partie 4. Valorisation).
 
 [^34]: Voir [Beacon v2 and Beacon networks: A “lingua franca” for federated data discovery in biomedical genomics, and beyond - Rambla - 2022 - Human Mutation - Wiley Online Library](https://www.google.com/url?q=https://onlinelibrary.wiley.com/doi/10.1002/humu.24369&sa=D&source=docs&ust=1726483666264231&usg=AOvVaw3_brQQ5EBe24ODXsSKsJSP)
@@ -198,7 +199,7 @@ JAMIA Open, 3(3), 472–486. [The case for open science: rare diseases](https://
 
 - **Complexité du modèle** :
 
-Ce Modèle par défaut comporte les 7 entités suivantes qui sont liées par 12 relations et contiennent les termes suivants[^36][^37] :
+  Ce Modèle par défaut comporte les 7 entités suivantes qui sont liées par 12 relations et contiennent les termes suivants[^36][^37] :
 
   - Les entités **Datasets** et **Cohorts** (les collections) : Contiennent un regroupement de variants d'une même base de données (dans _**Datasets**_[^38] : date de création, conditions d’utilisation, description, identifiant, nom, version, etc.) ou d’individus appartenant à la même population d’étude (dans _**Cohorts**[^39] : design_ de la cohorte, taille, type, identifiant, critères d’inclusion, nom, etc.).
   - L'entité _**Genomic variation**_[^40] : Contient les informations sur les altérations génomiques uniques (ex : position dans le génome, altérations des séquences, type, fréquence dans la population, etc.)
