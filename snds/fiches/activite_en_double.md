@@ -13,7 +13,8 @@ tags:
 
 ::: tip Crédits
 
-Cette fiche a été rédigée par Albert VUAGNAT (DREES) et complétée par Naby Dia (HDH)
+**Septembre 2022** : cette fiche a été rédigée par Albert VUAGNAT (DREES) et complétée par Naby Dia (HDH).  
+**Septembre 2024** : la section "Autre type de doublons potentiel : la transmission cumulée" a été ajoutée par Albert VUAGNAT.
 
 *À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
