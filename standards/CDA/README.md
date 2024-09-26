@@ -183,12 +183,12 @@ _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
   - D'après Dolin et *al.* (2006)[^29] , CDA est **très flexible dans le choix des terminologies** : les champs CDA sont notamment conçus pour pouvoir intégrer des codes de nomenclatures standard (LOINC, CIM, EMDN, SNOMED-CT, etc.)
     - Pour spécifier la terminologie utilisée, il suffit de l'identifier par son code OID (*Object Identifier*)[^30].
  
-        Par exemple pour mesurer les signaux vitaux, il est possible d'utiliser la syntaxe suivante[^31] : 
+Par exemple pour mesurer les signaux vitaux, il est possible d'utiliser la syntaxe suivante[^31] : 
 ``` 
 "<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>"
 ```
-    - Le code LOINC « 8716-3 » désigne les signes vitaux « *Vital signs* »[^32].
-    - « 2.16.840.1.113883.6.1 » est l'OID de la terminologie LOINC[^33].
+  - Le code LOINC « 8716-3 » désigne les signes vitaux « *Vital signs* »[^32].
+  - « 2.16.840.1.113883.6.1 » est l'OID de la terminologie LOINC[^33].
 
 [^28]: Voir : [LOINC Document Ontology](https://loinc.org/document-ontology/)
 [^29]: Voir l’article de Dolin RH, Alschuler L, Boyer S, Beebe C, Behlen FM, Biron PV, Shabo Shvo A. HL7 « *Clinical Document Architecture* », Release 2. J Am Med Inform Assoc. 2006 : [HL7 Clinical Document Architecture, Release 2 - PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1380194/)
@@ -209,7 +209,7 @@ _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
 
 _Figure 2 : Les composants des 3 niveaux d'implémentation du standard, Source : [What is HL7® CDA™?](http://iehr.eu/knowledge/what-is-hl7-cda/)– iEHR.eu_
 
-    - Ainsi, il existe une **grande variété de documents CDA**, depuis la simple image jusqu'à des documents beaucoup plus complexes. Pour limiter cette variété de documents, il est possible de créer des profils : à partir des éléments de base du standard, les profils définissent et contraignent les options (éléments requis et optionnels, nomenclatures à utiliser, etc.). Les profils CDA sont définis dans les guides d'implémentation[^35] (voir l'élément « *Existence d'extensions certifiées* » en partie 5. Utilisation et l'exemple de C-CDA).
+  - Ainsi, il existe une **grande variété de documents CDA**, depuis la simple image jusqu'à des documents beaucoup plus complexes. Pour limiter cette variété de documents, il est possible de créer des profils : à partir des éléments de base du standard, les profils définissent et contraignent les options (éléments requis et optionnels, nomenclatures à utiliser, etc.). Les profils CDA sont définis dans les guides d'implémentation[^35] (voir l'élément « *Existence d'extensions certifiées* » en partie 5. Utilisation et l'exemple de C-CDA).
 
 - **Complexité du modèle** :
   - CDA se fonde sur le modèle RIM (*Reference Information Model*) publié par HL7 qui est un **modèle complexe et abstrait**[^36]. Cela permet de pouvoir décrire, en théorie, l'ensemble des concepts cliniques existants, quel que soit le degré de granularité. Cette abstraction complexifie toutefois l'usage de la spécification CDA (voir l'élément « *Simplicité d'usage* » en partie 5. Utilisation).
