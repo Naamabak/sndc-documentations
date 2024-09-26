@@ -107,7 +107,8 @@ _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
 
 - **Processus de prise de décision sur le standard** :
   - Les **deux groupes** suivants collaborent, notamment pour échanger sur la qualité des guides d'implémentation :
-    - Le *Structured Documents Group*[^14] est responsable du développement du standard CDA ainsi que de la méthodologie des guides d'implémentation CDA. - Le CDA *Management Group* est responsable de la maintenance et du suivi de la qualité des produits CDA, du respect des principes de gouvernance établis par le *Technical Services Committee* et de l'aide à la résolution des problématiques émergeant entre les groupes de travail ou au sein de ces groupes[^15].
+    - Le *Structured Documents Group*[^14] est responsable du développement du standard CDA ainsi que de la méthodologie des guides d'implémentation CDA.
+    - Le CDA *Management Group* est responsable de la maintenance et du suivi de la qualité des produits CDA, du respect des principes de gouvernance établis par le *Technical Services Committee* et de l'aide à la résolution des problématiques émergeant entre les groupes de travail ou au sein de ces groupes[^15].
   - Les utilisateurs remontent leurs problématiques dans un forum[^16].
 
 - **Maturité du standard** :
@@ -203,12 +204,12 @@ _Figure 1 : Extrait d'un document CDA (Release 1), Source : CI-SIS_
     - **Niveau 2 (CDA R2 N3)** : l'en-tête et le corps du document sont structurés, le corps du document (*StructuredBody*) contenant des « Sections » obligatoires dans lesquelles les données contenues dans les « Entrées » sont contraintes. Un exemple de contrainte de niveau 3 serait un « Résumé de sortie » avec une section « Médicaments » et des valeurs RxNORM pour chaque médicament.
 
 <p align="center">
-  <img src="../files_and_images/cda/CDA_fig_1.png" width="700px"/>    
+  <img src="../files_and_images/cda/CDA_fig_2.png" width="700px"/>    
 </p>
 
 _Figure 2 : Les composants des 3 niveaux d'implémentation du standard, Source : [What is HL7® CDA™?](http://iehr.eu/knowledge/what-is-hl7-cda/)– iEHR.eu_
 
-  - Ainsi, il existe une **grande variété de documents CDA**, depuis la simple image jusqu'à des documents beaucoup plus complexes. Pour limiter cette variété de documents, il est possible de créer des profils : à partir des éléments de base du standard, les profils définissent et contraignent les options (éléments requis et optionnels, nomenclatures à utiliser, etc.). Les profils CDA sont définis dans les guides d'implémentation[^35] (voir l'élément « *Existence d'extensions certifiées* » en partie 5. Utilisation et l'exemple de C-CDA).
+    - Ainsi, il existe une **grande variété de documents CDA**, depuis la simple image jusqu'à des documents beaucoup plus complexes. Pour limiter cette variété de documents, il est possible de créer des profils : à partir des éléments de base du standard, les profils définissent et contraignent les options (éléments requis et optionnels, nomenclatures à utiliser, etc.). Les profils CDA sont définis dans les guides d'implémentation[^35] (voir l'élément « *Existence d'extensions certifiées* » en partie 5. Utilisation et l'exemple de C-CDA).
 
 - **Complexité du modèle** :
   - CDA se fonde sur le modèle RIM (*Reference Information Model*) publié par HL7 qui est un **modèle complexe et abstrait**[^36]. Cela permet de pouvoir décrire, en théorie, l'ensemble des concepts cliniques existants, quel que soit le degré de granularité. Cette abstraction complexifie toutefois l'usage de la spécification CDA (voir l'élément « *Simplicité d'usage* » en partie 5. Utilisation).
@@ -342,9 +343,9 @@ _Carte 1 : Implémentation de l'IPS CDA en date d'octobre 2018, Source : Blog HL
 
 _Figure 3 : Exemple d'une instance CDA XML, Source : Modèles de contenus CDA (v3.2), Agence du Numérique en Santé_[^59]_
 
-- *Existence d'une communauté en ligne et degré d'activité : Integrating the Healthcare Enterprise (IHE) a décrit des Profils dans plusieurs domaine (PCC, PALM, QRPH, etc.), spécifiant les sections et entrées de la majorité des concepts ; le CI-SIS notamment s'appuie sur les profils IHE pour les documents CDA.*
+- **Existence d'une communauté en ligne et degré d'activité** : Integrating the Healthcare Enterprise (IHE) a décrit des Profils dans plusieurs domaine (PCC, PALM, QRPH, etc.), spécifiant les sections et entrées de la majorité des concepts ; le CI-SIS notamment s'appuie sur les profils IHE pour les documents CDA.
 
-- *Outils de mapping :*
+- **Outils de mapping :**
 
   *En mai 2023, nous n'identifions pas d'outils de mapping pour CDA.*
 

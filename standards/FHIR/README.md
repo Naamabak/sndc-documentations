@@ -117,8 +117,9 @@
 ## 2. Gouvernance
 
 - **Modalités d'accès et distribution des solutions basées sur ce standard** :
- - Libre d’usage et gratuit (open source) : **licence CC0**[^28] « *No Rights Reserved* »
- - Des **solutions** ou **services basés sur FHIR** ainsi que des spécifications dérivées peuvent être créées[^28]. Cependant l'utilisation de FHIR ne signifie pas l'approbation du produit par HL7.
+
+    - Libre d’usage et gratuit (open source) : **licence CC0**[^28] « *No Rights Reserved* »
+    - Des **solutions** ou **services basés sur FHIR** ainsi que des spécifications dérivées peuvent être créées[^28]. Cependant l'utilisation de FHIR ne signifie pas l'approbation du produit par HL7.
  
 - **Processus de prise de décision sur le standard** :
   - La gouvernance de FHIR est gérée par deux groupes[^29] :    
@@ -245,12 +246,13 @@ FHIR ne définit pas de **technologie de stockage ni de traitement de données**
 
 - **Sécurité des outils d'exploitation (y compris la compatibilité HDS)** :
 
-**Oui, si les outils respectent les recommandations FHIR pour la sécurité**[^59]. Par exemple, il est recommandé que les outils utilisent HTTPS pour transférer les données et qu'ils ne permettent pas d’accéder aux données sans authentification.
-  - **Exemple d'implémentation n°1** : FHIR Azure *Health Data Service*[^60] est conforme aux recommandations de sécurité :
-    - Il utilise HTTPS et TLS
-    - Il permet de configurer RBAC (Role-Based Access Control)
-    - Il est conforme au RGPD, HIPAA et CCPA
-  - **Exemple d'implémentation n°2** : SMART *on* FHIR (voir l’élément « *Outils compatibles* » en partie 5. Utilisation) est conforme aux recommandations de sécurité :
+  **Oui, si les outils respectent les recommandations FHIR pour la sécurité**[^59]. Par exemple, il est recommandé que les outils utilisent HTTPS pour transférer les données et qu'ils ne permettent pas d’accéder aux données sans authentification.
+
+    - **Exemple d'implémentation n°1** : FHIR Azure *Health Data Service*[^60] est conforme aux recommandations de sécurité :
+      - Il utilise HTTPS et TLS
+      - Il permet de configurer RBAC (Role-Based Access Control)
+      - Il est conforme au RGPD, HIPAA et CCPA
+    - **Exemple d'implémentation n°2** : SMART *on* FHIR (voir l’élément « *Outils compatibles* » en partie 5. Utilisation) est conforme aux recommandations de sécurité :
     - Il utilise HTTPS
     - Il utilise OAuth et OpenID pour l'authentification
     - En particulier, **SMART** *on* **FHIR** présente l'intérêt majeur de proposer des protocoles d'autorisation et d'authentification prêts à l'emploi (à la différence de FHIR pour lequel les protocoles de sécurité doivent être implémentés par l'utilisateur[^59])
@@ -269,7 +271,7 @@ FHIR ne définit pas de **technologie de stockage ni de traitement de données**
   - FHIR n'est pas un protocole de sécurité et **ne définit pas de règles de sécurité**[^59]. Il se trouve sur la 7ème couche de modèle OSI (*application-level standard*), ce qui signifie que l'échange sécurisé doit être implémenté par les couches en amont (HTTPS, TLS, SSL, etc.).
   - Cependant, FHIR énonce des **recommandations pour inciter à l'adoption de protocoles qui permettront un échange sécurisé des données**[^59]. Les recommandations concernent en particulier les éléments suivants : synchronisation des horloges (NTP/ SNTP), communication (HTTPS, TLS), authentification (OAuth, SMART on FHIR), autorisation et contrôle des accès, audit des ressources, signatures électroniques, politiques de management des données (RGPD, HIPAA).
 
--  **Existence de normes de transfert** :
+- **Existence de normes de transfert** :
   - Le **transfert des données** peut être réalisé de deux manières différentes (voir l’élément « *Principaux cas d’usage* » en partie 1. Général) :
     - Transfert par les **messages**[^61]
     - Transfert par une **API** (RESTful si possible)[^62]
@@ -422,7 +424,8 @@ _Figure 2 : Le système cible initie la demande d’information (exemple a), Sou
 _Figure 3 : Le système source partage l’information (exemple b)_
 
   *Dans cet exemple, le système source partage l’information et le système cible s’occupe des opérations de stockage, de modification et de résolution des conflits.*
-    - **Exemple d’architecture n°2 : Mise en place d’un serveur FHIR générique** qui implémente l’ensemble des fonctionnalités FHIR (API, stockage des ressources, gestion de stockage, support de tous les ressources, voir Figure 4).
+
+  - **Exemple d’architecture n°2 : Mise en place d’un serveur FHIR générique** qui implémente l’ensemble des fonctionnalités FHIR (API, stockage des ressources, gestion de stockage, support de tous les ressources, voir Figure 4).
 
 <p align="center">
   <img src="../files_and_images/fhir/FHIR_fig_4.png" width="500px"/>
