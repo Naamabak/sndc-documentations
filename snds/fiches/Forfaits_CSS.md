@@ -13,19 +13,22 @@ tags:
 
 <TagLinks />
 
----
+--- 
+
 tip Crédits :
 
-Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les [comptes de la santé](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/les-comptes-de-la-sante).
+Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les [comptes de la santé](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/les-comptes-de-la-sante) (septembre 2024).
 
-*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
+*A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*  
 
 ---
+
+> La fiche intitulée [CSS Complémentaire Santé Solidaire (C2S)](../fiches/complementaire_sante_solidaire.md) décrit les variables permettant de repérer les bénéficiaires ayant la C2S dans le SNDS.  
 
 
 ## Une prise en charge au delà de la BRSS 
 
-La complémentaire santé solidaire (C2S) a pour objectif de limiter les **restes à charge** en santé de ses bénéficiaires.
+La complémentaire santé solidaire ([C2S](../glossaire/C2S.md)) a pour objectif de limiter les **restes à charge** en santé de ses bénéficiaires.
 
 Dans le système français, les restes à charges en santé peuvent être de plusieurs types :
    - tickets modérateurs,
@@ -56,7 +59,7 @@ Cette part de « dépassement » liée à la liberté tarifaire est prise en cha
   - l’[arrêté du 29 octobre 2019](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039296524/) pour l’optique médicale,
   - l’[arrêté du 27 décembre 2018](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037880126) pour les aides auditives.
 
-Avant 2019, ces forfaits faisaient partie des garanties de la couverture maladie universelle complémentaire (CMU-C). En 2019, la C2S s’est substituée à la CMU-C (et à l’Aide à la complémentaire santé) et le « 100 % santé » a été instauré. Les forfaits de remboursement se sont adaptés au cadre instauré par le 100 % santé (offre structurée par paniers pour les soins dentaires prothétiques, l’optique et les audioprothèses). A cette occasion, ils ont aussi été étendus et revalorisés (voir le [rapport de la Cour des comptes](https://www.vie-publique.fr/files/rapport/pdf/285961.pdf#p=20) sur le 100% santé).
+Avant 2019, ces forfaits faisaient partie des garanties de la couverture maladie universelle complémentaire ([CMU-C](../glossaire/CMUC.md)). En 2019, la C2S s’est substituée à la CMU-C (et à l’Aide à la complémentaire santé) et le « 100 % santé » a été instauré. Les forfaits de remboursement se sont adaptés au cadre instauré par le 100 % santé (offre structurée par paniers pour les soins dentaires prothétiques, l’optique et les audioprothèses). A cette occasion, ils ont aussi été étendus et revalorisés (voir le [rapport de la Cour des comptes](https://www.vie-publique.fr/files/rapport/pdf/285961.pdf#p=20) sur le 100% santé).
 
 La C2S rembourse aussi la part de liberté tarifaire sur d'autres dispositifs médicaux, notamment les cannes, fauteuils roulants et pansements.
 
@@ -64,7 +67,7 @@ La C2S rembourse aussi la part de liberté tarifaire sur d'autres dispositifs m�
 
 ### Des codes nature prestations spécifiques aux forfaits
 
-Les forfaits de remboursement sont versés avec des codes nature prestation spécifiques [en norme PS5](https://documentation-snds.health-data-hub.fr/snds/fiches/prestation.html#definition) :
+Les forfaits de remboursement sont versés avec des codes nature prestation spécifiques [en norme PS5](../fiches/prestation.md) :
   - pour les soins dentaires prothétiques : 5201, 5202, 5203 et 5205,
   - pour l’orthopédie dento-faciale : 5204 et 5206,
   - pour l’optique médicale : 5125, 5126, 5128 pour les montures et 5121, 5122, 5123, 5124, 5127 et 5129 pour les verres,
@@ -74,7 +77,7 @@ Jusqu’à fin 2019, les codes suivants étaient utilisés pour l’optique méd
 
 Jusqu’à janvier 2021, le code 5401 était utilisé pour les aides auditives.
 
-Dans le SNDS, on retrouve les forfaits de remboursement dans la table **er_aro_f** (table des remboursements supplémentaires) du DCIR, comme tous les montants de C2S. Ils sont repérables par la **modalité 6** (_forfait C2S_) dans la variable ARO_REM_TYP (_Type de remboursement supplémentaire_) et par les codes PS5 listés plus haut dans la variable ARO_PRS_NAT.
+Dans le SNDS, on retrouve les forfaits de remboursement dans la table **er_aro_f** (table des remboursements supplémentaires) du DCIR, comme tous les montants de C2S. Ils sont repérables par la **modalité 6** (_forfait C2S_) dans la variable `ARO_REM_TYP` (_Type de remboursement supplémentaire_) et par les codes PS5 listés plus haut dans la variable `ARO_PRS_NAT`.
 
 Les forfaits de remboursement de la C2S sont donc traités comme une prestation spécifique, versée en supplément de la prestation de base. Par exemple, lorsqu’un bénéficiaire de C2S reçoit un soin dentaire prothétique et que les conditions sont réunies, deux prestations sont versées par l’Assurance maladie : 
   - la prestation de base, pour la dépense jusqu’à hauteur de la BRSS, 
@@ -91,15 +94,17 @@ Dans le DCIR, on trouve deux prestations :
   - l’une pour la prestation de base, avec une nature de prestation de soins dentaires prothétiques (1412 par exemple en norme PS5) 
   - l’autre pour le forfait de remboursement, avec une nature de prestation 5201, 5202, 5203 ou 5205 en norme PS5.
 
-Chacune des deux prestations se retrouve à la fois dans la table er_prs_f (table des prestations de base) pour les remboursements du régime de base, et dans la table er_aro_f (table des remboursements supplémentaires) pour les remboursements de la C2S. La clef de jointure à 9 variables du DCIR permet de faire le lien. 
+Chacune des deux prestations se retrouve à la fois dans la table **er_prs_f** (table des prestations de base) pour les remboursements du régime de base, et dans la table **er_aro_f** (table des remboursements supplémentaires) pour les remboursements de la C2S. La clef de jointure à 9 variables du DCIR permet de faire le lien. 
 
-Les deux prestations se retrouvent sur le même **décompte** : elles ont une valeur identique pour les 7 variables qui identifient un décompte unique dans la table er_dct_f (FLX_DIS_DTD, FLX_EMT_NUM, FLX_EMT_ORD, FLX_EMT_TYP, FLX_TRT_DTD, ORG_CLE_NUM et DCT_ORD_NUM). En effet, elles sont gérées simultanément par les caisses.
+Les deux prestations se retrouvent sur le même **décompte** : elles ont une valeur identique pour les 7 variables qui identifient un décompte unique dans la table **er_dct_f** (`FLX_DIS_DTD`, `FLX_EMT_NUM`, `FLX_EMT_ORD`, `FLX_EMT_TYP`, `FLX_TRT_DTD`, `ORG_CLE_NUM` et `DCT_ORD_NUM`). En effet, elles sont gérées simultanément par les caisses.
 
-:warning: Pour chaque prestation, la variable PRS_PAI_MNT n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS.
+::: warning Attention 
+Pour chaque prestation, la variable `PRS_PAI_MNT` n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS.  
+:::
 
 Dans l’exemple d’un soin prothétique de _pose d'une prothèse amovible définitive à châssis métallique, comportant 9 dents_ (code CCAM `HBLD435`), la BRSS est de 258 euros et le forfait de remboursement de 492 euros en 2024. Au total, 750 euros sont pris en charge.
 
-  - dans la table er_prs_f, on trouve les deux lignes suivantes :
+  - dans la table **er_prs_f**, on trouve les deux lignes suivantes :
 
     |PRS_NAT_REF|BSE_REM_BSE|BSE_REM_MNT|PRS_PAI_MNT|
     |----|----|----|----|
@@ -108,18 +113,18 @@ Dans l’exemple d’un soin prothétique de _pose d'une prothèse amovible déf
 
     Le régime de base prend en charge 180,60 euros (70 % de la BRSS).
 
-  - dans la table er_aro_f, on trouve les deux lignes suivantes :
+  - dans la table **er_aro_f**, on trouve les deux lignes suivantes :
 
     |ARO_PRS_NAT|ARO_REM_MNT|
     |----|----|
     |1412|77,40 €|
     |5201|492,00 €|
 
-  Les 77,40 euros couvrent le ticket modérateur associé à la prestation 1412 (30 % de la BRSS). La ligne correspondant à ce montant a la même clef de jointure à 9 variables que la ligne de nature 1412 de la table er_prs_f.
+  Les 77,40 euros couvrent le ticket modérateur associé à la prestation 1412 (30 % de la BRSS). La ligne correspondant à ce montant a la même clef de jointure à 9 variables que la ligne de nature 1412 de la table **er_prs_f**.
 
-  Les 492 euros correspondent au barème du forfait. La ligne correspondant à ce montant a la même clef de jointure à 9 variables que la ligne de nature 5201 de la table er_prs_f.
+  Les 492 euros correspondent au barème du forfait. La ligne correspondant à ce montant a la même clef de jointure à 9 variables que la ligne de nature 5201 de la table **er_prs_f**.
 
-Le code R suivant montre que la dépense de forfaits de remboursement C2S en soins dentaires prothétiques en 2023 s’élève à 550 millions d’euros France entière. La part afférente aux deux paniers possibles (100 % Santé et tarifs maîtrisés) pourrait être calculée grâce aux codes CCAM, par jointure avec la table er_cam_f.
+Le code R suivant montre que la dépense de forfaits de remboursement C2S en soins dentaires prothétiques en 2023 s’élève à 550 millions d’euros France entière. La part afférente aux deux paniers possibles (100 % Santé et tarifs maîtrisés) pourrait être calculée grâce aux codes CCAM, par jointure avec la table **er_cam_f**.
 
 ```
 # (1) Chargement packages 
@@ -194,17 +199,19 @@ Comme pour les soins prothétiques, on trouve systématiquement deux prestations
 
 Ces deux prestations n’ont pas la même clef de jointure à 9 variables, mais sont dans le même **décompte** (voir plus haut).
 
-:warning: Pour chaque prestation, la variable PRS_PAI_MNT n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS. 
+::: Attention
+Pour chaque prestation, la variable `PRS_PAI_MNT` n’indique pas le prix de vente payé par l’assuré (information habituelle de cette variable), mais la BRSS.  
+:::
 
 Par exemple, on peut typiquement voir les lignes suivantes dans les tables du DCIR :
 
-  - dans la table er_prs_f :
+  - dans la table **er_prs_f** :
     |PRS_NAT_REF|BSE_REM_BSE|BSE_REM_MNT|PRS_PAI_MNT|
     |----|----|----|----|
     |1424|193,50 €|193,50 €|193,50 €|
     |5204|270,50 €|0,00 €|270,50 €|
 
-  - dans la table er_aro_f :
+  - dans la table **er_aro_f** :
     |ARO_PRS_NAT|ARO_REM_MNT
     |----|----|
     |5204|270,50 €|
@@ -226,11 +233,11 @@ La Complémentaire santé solidaire a une réglementation spécifique, transvers
 
 ![Image](/snds/files/DREES/Forfaits_C2S_4.png)
 
-Le forfait de remboursement est versé avec les natures de prestation 5402 (oreille gauche) et 5403 (oreille droite). Malheureusement, ces natures de prestation globalisent les classes I et II sans distinction. A priori, on pourrait trouver la classe de l'équipement par jointure avec la table er_tip_f, ce qui est plus compliqué.
+Le forfait de remboursement est versé avec les natures de prestation 5402 (oreille gauche) et 5403 (oreille droite). Malheureusement, ces natures de prestation globalisent les classes I et II sans distinction. A priori, on pourrait trouver la classe de l'équipement par jointure avec la table **er_tip_f**, ce qui est plus compliqué.
 
-On trouve cette fois une seule prestation dans le DCIR (une unique clef de jointure à 9 variables). La prestation de base se retrouve dans la table er_prs_f, la prise en charge du ticket modérateur et le forfait dans la table er_aro_f, avec la même clef de jointure à 9 variables, par exemple :
+On trouve cette fois une seule prestation dans le DCIR (une unique clef de jointure à 9 variables). La prestation de base se retrouve dans la table **er_prs_f**, la prise en charge du ticket modérateur et le forfait dans la table **er_aro_f**, avec la même clef de jointure à 9 variables, par exemple :
 
-  - dans la table er_prs_f :
+  - dans la table **er_prs_f** :
 
     |PRS_NAT_REF|BSE_REM_BSE|BSE_REM_MNT|PRS_PAI_MNT|
     |----|----|----|----|
@@ -241,7 +248,7 @@ On trouve cette fois une seule prestation dans le DCIR (une unique clef de joint
 
    La variable PRS_PAI_MNT indique le prix de vente de l’équipement (800 €), remboursé pour la BRSS par la prestation de base (400 €) et pour le reste par le forfait (400 €). 
 
-  - dans la table er_aro_f :
+  - dans la table **er_aro_f** :
     |ARO_PRS_NAT|ARO_REM_MNT|
     |----|----|
     |5402|400 €|
@@ -260,21 +267,21 @@ Les forfaits de remboursement de la C2S s’appliquent uniquement aux équipemen
 
 ![Image](/snds/files/DREES/Forfaits_C2S_5.png)
 
-On trouve cette fois une seule prestation dans le DCIR (une unique clef de jointure à 9 variables). La prestation de base se retrouve dans la table er_prs_f, la prise en charge du ticket modérateur et le forfait dans la table er_aro_f, avec la même clef de jointure à 9 variables.
+On trouve cette fois une seule prestation dans le DCIR (une unique clef de jointure à 9 variables). La prestation de base se retrouve dans la table **er_prs_f**, la prise en charge du ticket modérateur et le forfait dans la table **er_aro_f**, avec la même clef de jointure à 9 variables.
 
 Dans l'exemple d’un verre facturé 36 euros (verre multifocal classe A, sphère, +2,00 à +4,00, code LPP 2264884) : le forfait de remboursement de la C2S est fixé à 25,20 euros :
 
-  - dans la table er_prs_f :
+  - dans la table **er_prs_f** :
 
     |PRS_NAT_REF|BSE_REM_BSE|BSE_REM_MNT|PRS_PAI_MNT|
     |----|----|----|----|
     |3506|10,80 €|6,48 €|36 €|
 
-    La nature de prestation 3506 correspond aux motures adultes de classe A. La prise en charge du régime de 
+    La nature de prestation 3506 correspond aux montures adultes de classe A. La prise en charge du régime de base est de 6,48 euros (60 % de la BRSS, qui s'élève à 10,80 euros).
 
-   La variable PRS_PAI_MNT indique le prix de vente de l’équipement (36 €). 
+   La variable `PRS_PAI_MNT` indique le prix de vente de l’équipement (36 €). 
 
-  - dans la table er_aro_f :
+  - dans la table **er_aro_f** :
     |ARO_PRS_NAT|ARO_REM_MNT|
     |----|----|
     |3506|4,32 €|
