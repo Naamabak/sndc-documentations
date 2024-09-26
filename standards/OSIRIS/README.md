@@ -146,9 +146,9 @@ _[Figure 3 : Modèle de données omiques (OSIRIS), Source : Guérin et al. (2021
 
 _[Figure 4 : Méthodologie d'élaboration de la première version d'OSIRIS, Source : Guérin et al. (2021)_
 
-  - La procédure de contribution aux concepts (nouvelles extensions ou mise à jour de concepts existants) est décrite dans le GitHub[^15] : la procédure est libre, les utilisateurs peuvent proposer des modifications (*via* une *pull request*) qui seront examinées par le groupe OSIRIS.
-  - Des **suggestions de modifications** ou des **bogues** peuvent également être signalés dans le *repository* GitHub dédié[^16]
-  - Des **questions** peuvent être envoyées à l’adresse contact@siric-osiris.fr[^15]
+    - La procédure de contribution aux concepts (nouvelles extensions ou mise à jour de concepts existants) est décrite dans le GitHub[^15] : la procédure est libre, les utilisateurs peuvent proposer des modifications (*via* une *pull request*) qui seront examinées par le groupe OSIRIS.
+    - Des **suggestions de modifications** ou des **bogues** peuvent également être signalés dans le *repository* GitHub dédié[^16]
+    - Des **questions** peuvent être envoyées à l’adresse contact@siric-osiris.fr[^15]
 
 - **Maturité du standard** :
   - **Fréquence de mise à jour** :
