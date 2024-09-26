@@ -13,13 +13,15 @@ tags:
 
 <TagLinks />
 
-::: tip Crédits :
+--- 
 
-Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les [comptes de la santé](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/les-comptes-de-la-sante). (septembre 2024)
+tip Crédits :
+
+Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les [comptes de la santé](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/les-comptes-de-la-sante) (septembre 2024).
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*  
 
-:::
+---
 
 > La fiche intitulée [CSS Complémentaire Santé Solidaire (C2S)](../fiches/complementaire_sante_solidaire.md) décrit les variables permettant de repérer les bénéficiaires ayant la C2S dans le SNDS.  
 
@@ -275,7 +277,7 @@ Dans l'exemple d’un verre facturé 36 euros (verre multifocal classe A, sphèr
     |----|----|----|----|
     |3506|10,80 €|6,48 €|36 €|
 
-    La nature de prestation 3506 correspond aux montures adultes de classe A. La prise en charge du régime de 
+    La nature de prestation 3506 correspond aux montures adultes de classe A. La prise en charge du régime de base est de 6,48 euros (60 % de la BRSS, qui s'élève à 10,80 euros).
 
    La variable `PRS_PAI_MNT` indique le prix de vente de l’équipement (36 €). 
 
