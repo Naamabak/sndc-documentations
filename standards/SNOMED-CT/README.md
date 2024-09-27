@@ -40,7 +40,7 @@
    <img src="../files_and_images/snomed_ct/snomed_Fig_1.png" width="700px"/>    
 
 
-   **Figure 1 : Les trois composantes de la SNOMED CT**, Source : [SNOMED International](https://www.snomed.org/five-step-briefing?lang=fr)[^12]
+   **Figure 1 : Les trois composantes de la SNOMED CT**, Source : [SNOMED International](https://www.snomed.org/five-step-briefing?lang=fr)[^3]
    </p>  
 
 
