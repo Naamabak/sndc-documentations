@@ -106,10 +106,6 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 
    
 
-### Niveau de généralisation (facilité de remplissage des champs du standard)** :
-- La facilité de remplissage des champs du standard dépend d'une part de **la disponibilité des données sources (1)** et d'autre part de **la facilité à réaliser le mapping syntaxique des données sources (2)**
-
-
 
 <p align="center">
    <img src="../files_and_images/omop_cdm/omop_fig_1.png" width=""/>
