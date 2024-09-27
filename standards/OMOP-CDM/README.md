@@ -185,7 +185,7 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
   - Le projet Common Data Model Harmonization (CDMH)[^31] vise à **harmoniser les 4 schémas de données suivants : PCORnet, OMOP-CDM, i2b2 et Sentinel**.
     - **L'objectif est d'avoir un outil d'accès unifié à ces données permettant aux chercheurs d'accéder à un réseau plus large de patients et à des données variées** (EHR, demandes de remboursement, données issues des essais cliniques, ...)
     - Le projet consiste à **mapper chacun de ces schémas de données (OMOP-CDM compris, v5.1) vers le modèle intermédiaire BRIDG v3.2**[^32] (voir Figure 2 ci-dessous). Ce modèle a été choisi comme modèle intermédiaire car il a été mappé dans une première étape à HL7 FHIR et CDISC SDTM
-    - Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP[^33][^34] .
+  - Il existe un processus de transformation depuis i2b2 vers OMOP-CDM par les scripts SQL développés dans le cadre du projet ARCH-OMOP[^33][^34] .
 
 
   [^31]: Voir la page HL7 décrivant le projet : HL7.FHIR.US.CDMH\IG Home Page et le rapport final « Common Data Model Harmonization (CDMH) and Open Standards for Evidence Generation », U.S Food & Drug Administration, NIH, The Office of the National Coordinator for Health Information Technology, 2020
