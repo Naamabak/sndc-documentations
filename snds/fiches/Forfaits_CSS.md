@@ -13,9 +13,7 @@ tags:
 
 <TagLinks />
 
-:::
-
-tip Crédits
+::: tip Crédits
 
 Cette fiche a été rédigée par la DREES (Vincent Reduron) dans le cadre des travaux sur les [comptes de la santé](https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/les-comptes-de-la-sante) (septembre 2024).
 
@@ -41,8 +39,13 @@ On utilise les définitions suivantes dans cette fiche :
   - Le "dépassement" est le reste à charge sur la dépense dépassant la BRSS.
 La base de remboursement de la Sécurité sociale (BRSS) correspond au montant reconnu par l'Assurance maladie comme remboursable, sur lequel s'applique éventuellement un taux de remboursement.
 
-Exemple de décomposition du prix de vente en BRSS et dépassement (verre de lunette vendu 50 euros avec une BRSS à 15 euros) :
+Exemple de décomposition du prix de vente en BRSS et dépassement (verre de lunette vendu 50 euros avec une BRSS à 15 euros) :  
+
+<p align="center">
+
 ![Image](../files/DREES/Forfaits_C2S_1.png)
+
+</p>  
 
 La C2S prend en charge le ticket modérateur de ses bénéficiaires, qui sont aussi exonérés de participations forfaitaires de franchises médicales sur l’achat de médicaments. Les médecins et auxiliaires médicaux ne peuvent pas leur appliquer de dépassements d'honoraires.
 
@@ -86,9 +89,13 @@ Les forfaits de remboursement de la C2S sont donc traités comme une prestation 
 
 ### Soins dentaires prothétiques
 
-Les forfaits de remboursement de la C2S s’appliquent aux deux [paniers de soins sur les soins dentaires prothétiques](https://www.ameli.fr/val-de-marne/assure/remboursements/rembourse/soins-protheses-dentaires-optique-audition/soins-dentaires-comprendre-le-100-sante#text_133080) : le panier 100 % Santé et le panier à tarifs maîtrisés. Si le bénéficiaire opte pour un de ces deux paniers, un forfait de remboursement annule (panier 100 % Santé) ou limite (panier à tarifs maîtrisés) son reste à charge.
+Les forfaits de remboursement de la C2S s’appliquent aux deux [paniers de soins sur les soins dentaires prothétiques](https://www.ameli.fr/val-de-marne/assure/remboursements/rembourse/soins-protheses-dentaires-optique-audition/soins-dentaires-comprendre-le-100-sante#text_133080) : le panier 100 % Santé et le panier à tarifs maîtrisés. Si le bénéficiaire opte pour un de ces deux paniers, un forfait de remboursement annule (panier 100 % Santé) ou limite (panier à tarifs maîtrisés) son reste à charge.  
+
+<p align="center">
 
 ![Image](../files/DREES/Forfaits_C2S_2.png)
+
+</p>  
 
 Dans le DCIR, on trouve deux prestations :
   - l’une pour la prestation de base, avec une nature de prestation de soins dentaires prothétiques (1412 par exemple en norme PS5) 
@@ -191,9 +198,13 @@ Les forfaits de remboursement de la C2S s’appliquent aux **semestres de traite
 
 Pour l'ensemble des assurés de manière générale, les honoraires de traitements d’orthodontie sont libres et la BRSS ne les couvre que partiellement ([193,50 euros par semestre](https://www.ameli.fr/val-de-marne/assure/remboursements/rembourse/soins-protheses-dentaires-optique-audition/consultations-soins-protheses-dentaires/remboursement-traitements-orthodontie), en 2024). 
 
-Pour les bénéficiaires de C2S, le forfait de remboursement vient compléter la BRSS. Dans l'exemple d'un semestre de traitement avec multiattaches, il est en 2024 de 270,50 euros. Ce montant peut être versé en deux fois (par trimestre), comme pour les remboursements des régimes de base. 
+Pour les bénéficiaires de C2S, le forfait de remboursement vient compléter la BRSS. Dans l'exemple d'un semestre de traitement avec multiattaches, il est en 2024 de 270,50 euros. Ce montant peut être versé en deux fois (par trimestre), comme pour les remboursements des régimes de base.  
+
+<p align="center">
 
 ![Image](../files/DREES/Forfaits_C2S_3.png)
+
+</p>  
 
 Comme pour les soins prothétiques, on trouve systématiquement deux prestations dans le DCIR, pour le traitement avec la nature de prestation 1424 (TO) et pour le forfait avec la nature de prestation 5204 ou 5206. Les montants des deux prestations doivent être additionnés pour obtenir la dépense de traitement d’orthodontie prise en charge. 
 
@@ -229,9 +240,13 @@ calcul_montants(prestas)
 
 Les forfaits de remboursement de la C2S s’appliquent aux aides auditives de **classe I (100 % Santé)** et de **classe II (prix libres)**. 
 
-La Complémentaire santé solidaire a une réglementation spécifique, transverse aux deux classes d’aides auditives. En effet, depuis 2021, les audioprothésistes doivent proposer aux bénéficiaires de C2S des équipements à un prix maximal de vente spécifique (par exemple 800 € pour les 20 ans et plus en 2024). Si le bénéficiaire opte pour un autre équipement, il est remboursé à la même hauteur (par exemple 800 € pour les 20 ans et plus) mais doit financer un reste à charge car l'équipement peut être plus cher.
+La Complémentaire santé solidaire a une réglementation spécifique, transverse aux deux classes d’aides auditives. En effet, depuis 2021, les audioprothésistes doivent proposer aux bénéficiaires de C2S des équipements à un prix maximal de vente spécifique (par exemple 800 € pour les 20 ans et plus en 2024). Si le bénéficiaire opte pour un autre équipement, il est remboursé à la même hauteur (par exemple 800 € pour les 20 ans et plus) mais doit financer un reste à charge car l'équipement peut être plus cher.  
 
-![Image](../files/DREES/Forfaits_C2S_4.png)
+<p align="center">
+
+![Image](../files/DREES/Forfaits_C2S_5.png)
+
+</p>  
 
 Le forfait de remboursement est versé avec les natures de prestation 5402 (oreille gauche) et 5403 (oreille droite). Malheureusement, ces natures de prestation globalisent les classes I et II sans distinction. A priori, on pourrait trouver la classe de l'équipement par jointure avec la table **er_tip_f**, ce qui est plus compliqué.
 
@@ -261,11 +276,15 @@ prestas <- c(5402, 5403)
 calcul_montants(prestas)
 ```
 
-## Optique médicale
+### Optique médicale
 
-Les forfaits de remboursement de la C2S s’appliquent uniquement aux équipements de **classe A**, qui est l’offre 100 % Santé. Il y a donc coïncidence entre forfaits de la C2S et financement prévu par le dispositif 100 % santé. 
+Les forfaits de remboursement de la C2S s’appliquent uniquement aux équipements de **classe A**, qui est l’offre 100 % Santé. Il y a donc coïncidence entre forfaits de la C2S et financement prévu par le dispositif 100 % santé.  
 
-![Image](../files/DREES/Forfaits_C2S_5.png)
+<p align="center">
+
+![Image](../files/DREES/Forfaits_C2S_4.png)
+
+</p>  
 
 On trouve cette fois une seule prestation dans le DCIR (une unique clef de jointure à 9 variables). La prestation de base se retrouve dans la table **er_prs_f**, la prise en charge du ticket modérateur et le forfait dans la table **er_aro_f**, avec la même clef de jointure à 9 variables.
 
