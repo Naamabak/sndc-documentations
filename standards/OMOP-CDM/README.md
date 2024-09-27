@@ -276,17 +276,20 @@ Aucune contrainte d’implémentation mais il est **recommandé** de disposer d�
    - Les paragraphes ci-dessous synthétisent les principaux résultats tirés de ces trois exemples :
      - Lamer et al. (2020) ont analysé la transformation des données françaises issues du SNDS (Système National des Données de Santé) vers OMOP-CDM. Ils ont travaillé sur une extraction du SNDS[^46]. Les résultats suivants sont obtenus pour le mapping :
         - [Mapping sémantique]  
-         - 12 vocabulaires sources n’ont pas pu être mappés mais ils sont conservés dans le champ SOURCE_CONCEPT_ID de la table SOURCE_TO_CONCEPT_MAP
+          - 12 vocabulaires sources n’ont pas pu être mappés mais ils sont conservés dans le champ SOURCE_CONCEPT_ID de la table SOURCE_TO_CONCEPT_MAP
 
-         - Pour les autres vocabulaires sources, le pourcentage de codes mappés est présenté dans le Tableau 1 ci-dessous
+          - Pour les autres vocabulaires sources, le pourcentage de codes mappés est présenté dans le Tableau 1 ci-dessous
 
-      - [Mapping syntaxique] Les données extraites du SNDS ont été mappées à une partie des tables d’OMOP-CDM (uniquement les tables qui concernent les données collectées). Cependant, compte tenu de certaines imprécisions dans les données sources du SNDS, les modifications suivantes ont été appliquées :
-        - Exclusion des données de 109 paires de jumeaux, car le SNDS ne permet pas de distinguer les jumeaux à partir de l’identifiant uniquement
-        - Imputation de valeurs par défaut pour le jour d’hospitalisation lorsqu’il est manquant (par défaut, le premier jour du mois est choisi)
+       - [Mapping syntaxique] Les données extraites du SNDS ont été mappées à une partie des tables d’OMOP-CDM (uniquement les tables qui concernent les données collectées). Cependant, compte tenu de certaines imprécisions dans les données sources du SNDS, les modifications suivantes ont été appliquées :
+         - Exclusion des données de 109 paires de jumeaux, car le SNDS ne permet pas de distinguer les jumeaux à partir de l’identifiant uniquement
+         - Imputation de valeurs par défaut pour le jour d’hospitalisation lorsqu’il est manquant (par défaut, le premier jour du mois est choisi)
 
-    - Voss EA et al. (2015) ont analysé la faisabilité et l'utilité de l'application d'OMOP-CDM à 6 bases de données issues de différents établissements de santé aux États-Unis[^50] :
-      - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 2 ci-dessous.
-
+      - Voss EA et al. (2015) ont analysé la faisabilité et l'utilité de l'application d'OMOP-CDM à 6 bases de données issues de différents établissements de santé aux États-Unis[^50] :
+        - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 2 ci-dessous.
+      - Vaclav Papez et al. (2021) ont présenté la transformation des données de 3 EHRs au Royaume-Uni pour les cas d’insuffisance cardiaque[^54]. Les résultats suivants sont obtenus :
+        - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 3 ci-dessous.
+        - [Mapping syntaxique] Pourcentage d'évènements mappés au total : entre 97,4 % et 100 % (groupement par type d’évènement qui n’est pas présenté dans l’article)
+     - L’article de Ji et al. (2020)[^35] présenté précédemment montre également qu’un taux de réussite relativement faible peut être observé lors du mapping sémantique si les données initiales sont de mauvaise qualité ou qu’elles utilisent des vocabulaires locaux spécifiques.
 
 
 **Tableau 1 : Pourcentage de codes mappés selon la terminologie source**
@@ -322,10 +325,7 @@ Aucune contrainte d’implémentation mais il est **recommandé** de disposer d�
 | Multilex, Immunizations       | 38,9 %         |
 
 
-- Vaclav Papez et al. (2021) ont présenté la transformation des données de 3 EHRs au Royaume-Uni pour les cas d’insuffisance cardiaque[^54]. Les résultats suivants sont obtenus :
-  - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 3 ci-dessous.
-  - [Mapping syntaxique] Pourcentage d'évènements mappés au total : entre 97,4 % et 100 % (groupement par type d’évènement qui n’est pas présenté dans l’article)
-    - L’article de Ji et al. (2020)[^35] présenté précédemment montre également qu’un taux de réussite relativement faible peut être observé lors du mapping sémantique si les données initiales sont de mauvaise qualité ou qu’elles utilisent des vocabulaires locaux spécifiques.
+
 
 
  **Tableau 3 :  Pourcentage de codes mappés selon la terminologie source**
@@ -383,20 +383,19 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
 
  ### Adoption du standard :
   - Adoptions officielles :
-   - En France :
-      - Lauréats EHDEN[^60] : CHU Bordeaux, Bordeaux PharmacoEpi, AP-HP, Cegedim, Health Data Hub, CHU de Montpellier, CHU de Toulouse, CHU de Lille, AP-HM
-  - En Allemagne :
-      - Medical Informatics Initiative (MII)[^61], lancé par le Ministère fédéral allemand de l'Éducation et de la Recherche
-      - Projet pilote de déploiement d’OMOP-CDM dans 8 hôpitaux universitaires allemands [^62] du consortium MIRACUM [^63]
+    - En France :
+       - Lauréats EHDEN[^60] : CHU Bordeaux, Bordeaux PharmacoEpi, AP-HP, Cegedim, Health Data Hub, CHU de Montpellier, CHU de Toulouse, CHU de Lille, AP-HM
+    - En Allemagne :
+       - Medical Informatics Initiative (MII)[^61], lancé par le Ministère fédéral allemand de l'Éducation et de la Recherche
+       - Projet pilote de déploiement d’OMOP-CDM dans 8 hôpitaux universitaires allemands [^62] du consortium MIRACUM [^63]
 
  - Utilisation sur le marché :
    - En Europe :
       - Des consortiums européens travaillent avec OMOP-CDM parmi lesquels[^64] :
-
-       -  **EHDEN**[^59] : réseau constitué de partenaires (ou « Data partners », voir la répartition sur la Carte 1) qui implémentent OMOP-CDM dans 29 pays[^65] ;
-       - **PIONEER** : réseau européen de 32 partenaires dans 9 pays qui développe une plateforme de Big Data sur le cancer de la prostate (les données sont harmonisées au schéma OMOP-CDM[^67] ;
-       - **MIRACUM** (*Medical Informatics in Research and Care in University Medicine*)[^62] : un des 4 consortiums fondés par le Ministère fédéral allemand de l'Éducation et de la Recherche (dans le cadre de la *Medical Informatics Initiative*) afin de développer des centres d'intégration de la donnée (« data integration centers ») dans les hôpitaux universitaires allemands.
-       -  Hors Europe : États-Unis41, Corée du Sud et Singapour[^68], Chine[^60]
+         -  **EHDEN**[^59] : réseau constitué de partenaires (ou « Data partners », voir la répartition sur la Carte 1) qui implémentent OMOP-CDM dans 29 pays[^65] ;
+        - **PIONEER** : réseau européen de 32 partenaires dans 9 pays qui développe une plateforme de Big Data sur le cancer de la prostate (les données sont harmonisées au schéma OMOP-CDM[^67] ;
+        - **MIRACUM** (*Medical Informatics in Research and Care in University Medicine*)[^62] : un des 4 consortiums fondés par le Ministère fédéral allemand de l'Éducation et de la Recherche (dans le cadre de la *Medical Informatics Initiative*) afin de développer des centres d'intégration de la donnée (« data integration centers ») dans les hôpitaux universitaires allemands.
+        -  Hors Europe : États-Unis41, Corée du Sud et Singapour[^68], Chine[^60]
 
 [^60]: Voir :  EHDEN
 [^61]: Voir la revue sur l’utilisation d’OMOP de Reinecke I, Zoch M, Reich C, Sedlmayr M, Bathelt F. « The Usage of OHDSI OMOP - A Scoping Review ». Stud Health Technol Inform : IOS Press Ebooks - The Usage of OHDSI OMOP – A Scoping Review 
@@ -432,8 +431,9 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
 
 **Tableau 4 :  Premier exemple de sortie du Data Quality Dashboard**
 
-|                | Verification            | Validation     | Total                 |                |
+| Verification            | Validation     | Total          |
 |----------------|-------------------------|----------------|------------------------|
+
 |                | Pass  | Fail  | Total | % Pass | Pass | Fail | Total | % Pass | Pass  | Fail | Total | % Pass |
 |----------------|-------|-------|-------|--------|------|------|-------|--------|-------|------|-------|--------|
 | **Plausibility**| 159   | 21    | 180   | 88%    | 283  | 0    | 283   | 100%   | 442   | 21   | 463   | 95%    |
