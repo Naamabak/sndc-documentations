@@ -170,7 +170,7 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
       - Covid : appel à projet pour permettre aux organisations détenant des données de patients atteints du Covid de bénéficier d'une aide pour les convertir vers un format standardisé[^28]
       - **PME** : appel à projet pour que les PME puissent demander une formation et une certification pour convertir les données de santé au modèle OMOP-CDM[^29] (voir la liste des PME ayant reçu la certification dans l'élément *« Fournisseurs de service ayant l'expertise en France »* en partie 4. Valorisation).
       - **Normal** : appel à projet pour les institutions détenant des données de santé pour qu'elles bénéficient d'un financement de départ pour des conversions vers OMOP-CDM[^29]
-      - Le premier appel à projet de financement a eu lieu en septembre 2019[^30]. Toutefois, ces derniers **sont terminés depuis octobre 2022**. Depuis, EHDEN est devenue une **entité à but non lucratif**.
+  - Le premier appel à projet de financement a eu lieu en septembre 2019[^30]. Toutefois, ces derniers **sont terminés depuis octobre 2022**. Depuis, EHDEN est devenue une **entité à but non lucratif**.
 
 [^26]: Les nouvelles versions contiennent les suggestions, remarques et souhaits des utilisateurs et membres envoyés via leur page de signalement de problèmes.
 [^27]:  Voir le site d’EHDEN dédié : Harmonisation Fund – ehden.eu
