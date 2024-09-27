@@ -57,7 +57,6 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 
  - **Typologie de données concernées** :
    - Données observationnelles de différentes sources : elles peuvent provenir des dossiers de santé électroniques (EHR : Electronic Health Record), des demandes de remboursement des soins (claims data), d’une enquête, etc[^7].
-
    - Données textuelles (pas nécessairement structurées[^8])
 
   - **Type de granularité** :
