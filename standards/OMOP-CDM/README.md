@@ -107,20 +107,8 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
 
    
 
-<p align="center">
-   <img src="../files_and_images/omop_cdm/omop_fig_1.png" width=""/>
-
-   **Figure 1 : Liste des tables contenues dans la v5.4 d'OMOP-CDM**, Source  : [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/)
-</p>
-
-
 ### Niveau de généralisation (facilité de remplissage des champs du standard)** :
 - La facilité de remplissage des champs du standard dépend d'une part de **la disponibilité des données sources (1)** et d'autre part de **la facilité à réaliser le mapping syntaxique des données sources (2)**
-
-## 2.Gouvernance
-
-   
-
 
 
 
@@ -278,24 +266,24 @@ Aucune contrainte d’implémentation mais il est **recommandé** de disposer d�
 
 ### Neutralité technologique : Oui, sauf si l’utilisateur veut utiliser les outils OHDSI
    - Le standard OMOP-CDM n’impose aucune technologie, mais les outils développés par OHDSI pour OMOP-CDM nécessitent d'utiliser :
-     - Le langage SQL : *Data Quality Dashboard*, FeatureExtraction, ATLAS, etc.
-     - Le langage de programmation R : HADES packages (FeatureExtraction, CohortDiagnostics, etc), ACHILLES.
-     - Le JRE (environnement d'exécution Java) : WhiteRabbit, WebAPI, Athena, Usagi, etc.
-  - L’utilisation d’un SGBD est recommandée
+      - Le langage SQL : *Data Quality Dashboard*, FeatureExtraction, ATLAS, etc.
+      - Le langage de programmation R : HADES packages (FeatureExtraction, CohortDiagnostics, etc), ACHILLES.
+      - Le JRE (environnement d'exécution Java) : WhiteRabbit, WebAPI, Athena, Usagi, etc.
+   - L’utilisation d’un SGBD est recommandée
 
 ### Sécurité des outils d'exploitation (y compris la compatibilité HDS) :
 
-## Intensité de la perte de données au mapping :
+### Intensité de la perte de données au mapping :
    - La perte de données peut être évaluée sur deux niveaux : sémantique et syntaxique.
    - Aucune revue de littérature n’existe à date permettant d’évaluer l’intensité de la perte de manière générale.
 
-  - Dans les trois exemples ci-dessous, l'intensité de la perte de données est plus forte pour le mapping sémantique que pour le mapping syntaxique en raison des spécificités des terminologies sources utilisées (en termes de précision, de qualité de la donnée initiale, …). Cependant, cette conclusion n’est pas généralisable car elle dépend fortement des données initiales utilisées.
-  - Les paragraphes ci-dessous synthétisent les principaux résultats tirés de ces trois exemples :
-   - Lamer et al. (2020) ont analysé la transformation des données françaises issues du SNDS (Système National des Données de Santé) vers OMOP-CDM. Ils ont travaillé sur une extraction du SNDS[^46]. Les résultats suivants sont obtenus pour le mapping :
-     - [Mapping sémantique]  
-       - 12 vocabulaires sources n’ont pas pu être mappés mais ils sont conservés dans le champ SOURCE_CONCEPT_ID de la table SOURCE_TO_CONCEPT_MAP
+   - Dans les trois exemples ci-dessous, l'intensité de la perte de données est plus forte pour le mapping sémantique que pour le mapping syntaxique en raison des spécificités des terminologies sources utilisées (en termes de précision, de qualité de la donnée initiale, …). Cependant, cette conclusion n’est pas généralisable car elle dépend fortement des données initiales utilisées.
+   - Les paragraphes ci-dessous synthétisent les principaux résultats tirés de ces trois exemples :
+     - Lamer et al. (2020) ont analysé la transformation des données françaises issues du SNDS (Système National des Données de Santé) vers OMOP-CDM. Ils ont travaillé sur une extraction du SNDS[^46]. Les résultats suivants sont obtenus pour le mapping :
+       - [Mapping sémantique]  
+         - 12 vocabulaires sources n’ont pas pu être mappés mais ils sont conservés dans le champ SOURCE_CONCEPT_ID de la table SOURCE_TO_CONCEPT_MAP
 
-      - Pour les autres vocabulaires sources, le pourcentage de codes mappés est présenté dans le Tableau 1 ci-dessous
+        - Pour les autres vocabulaires sources, le pourcentage de codes mappés est présenté dans le Tableau 1 ci-dessous
     - [Mapping syntaxique] Les données extraites du SNDS ont été mappées à une partie des tables d’OMOP-CDM (uniquement les tables qui concernent les données collectées). Cependant, compte tenu de certaines imprécisions dans les données sources du SNDS, les modifications suivantes ont été appliquées :
        - Exclusion des données de 109 paires de jumeaux, car le SNDS ne permet pas de distinguer les jumeaux à partir de l’identifiant uniquement
        - Imputation de valeurs par défaut pour le jour d’hospitalisation lorsqu’il est manquant (par défaut, le premier jour du mois est choisi)
@@ -339,6 +327,9 @@ Aucune contrainte d’implémentation mais il est **recommandé** de disposer d�
 
 - Vaclav Papez et al. (2021) ont présenté la transformation des données de 3 EHRs au Royaume-Uni pour les cas d’insuffisance cardiaque[^54]. Les résultats suivants sont obtenus :
   - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 3 ci-dessous.
+  - [Mapping syntaxique] Pourcentage d'évènements mappés au total : entre 97,4 % et 100 % (groupement par type d’évènement qui n’est pas présenté dans l’article)
+    - L’article de Ji et al. (2020)[^35] présenté précédemment montre également qu’un taux de réussite relativement faible peut être observé lors du mapping sémantique si les données initiales sont de mauvaise qualité ou qu’elles utilisent des vocabulaires locaux spécifiques.
+
 
  **Tableau 3 :  Pourcentage de codes mappés selon la terminologie source**
 
@@ -356,12 +347,9 @@ Aucune contrainte d’implémentation mais il est **recommandé** de disposer d�
 _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+Common+Data+Model+Documentation)_
 
 
-  - [Mapping syntaxique] Pourcentage d'évènements mappés au total : entre 97,4 % et 100 % (groupement par type d’évènement qui n’est pas présenté dans l’article)
 
 
-- L’article de Ji et al. (2020)[^35] présenté précédemment montre également qu’un taux de réussite relativement faible peut être observé lors du mapping sémantique si les données initiales sont de mauvaise qualité ou qu’elles utilisent des vocabulaires locaux spécifiques.
-
-- **Compétences techniques et métier nécessaires pour utiliser le standard** :
+ ### Compétences techniques et métier nécessaires pour utiliser le standard :
   - Compétences médicales pour les alignements de terminologies s’il est nécessaire d’aligner les terminologies
   - Connaissances approfondies des données sources et du format OMOP-CDM
   - Compétences IT :
@@ -381,7 +369,7 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
 
 ### Disponibilité de la documentation scientifique démontrant l'intérêt :
   - En avril 2023, environ 240 articles traitant d’OMOP-CDM **entre 2010 et 2023 sont disponibles sur PubMed**[^59]. La plupart concernent des cas d'implémentation d'OMOP-CDM.
-  - L'article suivant propose une méthodologie d'évaluation des schémas de données, appliquée à OMOP-CDM :
+ - L'article suivant propose une méthodologie d'évaluation des schémas de données, appliquée à OMOP-CDM :
    - Garza et al. (2016)[^40] comparent l'efficacité d'OMOP-CDM (v5.0) par rapport à celle de 3 autres schémas de données (Sentinel v5.0, PCORnet v3.0 et CDISC SDTM v1.4) dans le cas du partage de données longitudinales issues d'EHR ;  
      - L'évaluation est réalisée sur la base de 11 critères classés dans 6 catégories (complétude, intégrité, flexibilité, simplicité, intégration et implémentabilité)
      - Il ressort de cette analyse qu'**OMOP-CDM est le schéma de données qui satisfait le plus grand nombre de critères pour ce cas d'usage**. Par conséquent, dans le cas d'études basées sur des données longitudinales issues d'*EHR*, OMOP-CDM est le schéma de données le plus adapté d'après cette méthodologie.
@@ -399,18 +387,19 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
  ### Adoption du standard :
   - Adoptions officielles :
    - En France :
-     - Lauréats EHDEN[^60] : CHU Bordeaux, Bordeaux PharmacoEpi, AP-HP, Cegedim, Health Data Hub, CHU de Montpellier, CHU de Toulouse, CHU de Lille, AP-HM
- - En Allemagne :
-     - Medical Informatics Initiative (MII)[^61], lancé par le Ministère fédéral allemand de l'Éducation et de la Recherche
-     - Projet pilote de déploiement d’OMOP-CDM dans 8 hôpitaux universitaires allemands [^62] du consortium MIRACUM [^63]
+      - Lauréats EHDEN[^60] : CHU Bordeaux, Bordeaux PharmacoEpi, AP-HP, Cegedim, Health Data Hub, CHU de Montpellier, CHU de Toulouse, CHU de Lille, AP-HM
+  - En Allemagne :
+      - Medical Informatics Initiative (MII)[^61], lancé par le Ministère fédéral allemand de l'Éducation et de la Recherche
+      - Projet pilote de déploiement d’OMOP-CDM dans 8 hôpitaux universitaires allemands [^62] du consortium MIRACUM [^63]
 
  - Utilisation sur le marché :
-  - En Europe :
-     - Des consortiums européens travaillent avec OMOP-CDM parmi lesquels[^64] :
+   - En Europe :
+      - Des consortiums européens travaillent avec OMOP-CDM parmi lesquels[^64] :
 
-      -  **EHDEN**[^59] : réseau constitué de partenaires (ou « Data partners », voir la répartition sur la Carte 1) qui implémentent OMOP-CDM dans 29 pays[^65] ;
-    - **PIONEER** : réseau européen de 32 partenaires dans 9 pays qui développe une plateforme de Big Data sur le cancer de la prostate (les données sont harmonisées au schéma OMOP-CDM[^67] ;
-   - **MIRACUM** (*Medical Informatics in Research and Care in University Medicine*)[^62] : un des 4 consortiums fondés par le Ministère fédéral allemand de l'Éducation et de la Recherche (dans le cadre de la *Medical Informatics Initiative*) afin de développer des centres d'intégration de la donnée (« data integration centers ») dans les hôpitaux universitaires allemands.
+       -  **EHDEN**[^59] : réseau constitué de partenaires (ou « Data partners », voir la répartition sur la Carte 1) qui implémentent OMOP-CDM dans 29 pays[^65] ;
+       - **PIONEER** : réseau européen de 32 partenaires dans 9 pays qui développe une plateforme de Big Data sur le cancer de la prostate (les données sont harmonisées au schéma OMOP-CDM[^67] ;
+       - **MIRACUM** (*Medical Informatics in Research and Care in University Medicine*)[^62] : un des 4 consortiums fondés par le Ministère fédéral allemand de l'Éducation et de la Recherche (dans le cadre de la *Medical Informatics Initiative*) afin de développer des centres d'intégration de la donnée (« data integration centers ») dans les hôpitaux universitaires allemands.
+       -  Hors Europe : États-Unis41, Corée du Sud et Singapour[^68], Chine[^60]
 
 [^60]: Voir :  EHDEN
 [^61]: Voir la revue sur l’utilisation d’OMOP de Reinecke I, Zoch M, Reich C, Sedlmayr M, Bathelt F. « The Usage of OHDSI OMOP - A Scoping Review ». Stud Health Technol Inform : IOS Press Ebooks - The Usage of OHDSI OMOP – A Scoping Review 
@@ -428,8 +417,7 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
    **Carte 1 : Liste des pays du réseau EHDEN et nombre de partenaires données (Data partners) associés en 2020**, Source : [Data Partners – ehden.eu](https://www.ehden.eu/datapartners/)
 </p>  
 
-   - Hors Europe : États-Unis41, Corée du Sud et Singapour[^68], Chine[^60]
-
+   
   ### Fournisseurs de service ayant l'expertise en France :
    - Les PME certifiées par EHDEN qui accompagnent la transition vers OMOP-CDM[^69] : Arkhn, Easter-eggs, Med'Art, Oncodesign, Owkin, Quinten
    - Cegedim[^70]
@@ -437,17 +425,18 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
 
 
 ### Qualité des données :
-**Existence d’un label de qualité : pas de label de qualité** pour une base de données standardisée
-
-Outils de vérification de la qualité des données :
-** *Data Quality Dashboard* **  (outil OHDSI)[^72] : outil open source ayant pour but d’évaluer la qualité des données d’observation. Il y a deux principales sorties :
-Un tableau synthétique affichant sur 4 axes (Plausibilité, Conformité, Complétude et Total) un pourcentage de lignes vérifiant ces critères, ce qui permet d’évaluer la qualité globale des données (voir Tableau 4 ci-dessous).
-Un tableau détaillant les tests de qualité effectués pour les différents axes mentionnés (voir Tableau 5 ci-dessous). Ce tableau contient les résultats des tests et la requête SQL permettant de reproduire le test.
+- **Existence d’un label de qualité : pas de label de qualité** pour une base de données standardisée**
+- Outils de vérification de la qualité des données :
+    - ***Data Quality Dashboard***  (outil OHDSI)[^72] : outil open source ayant pour but d’évaluer la qualité des données d’observation. Il y a deux principales sorties :
+       - Un tableau synthétique affichant sur 4 axes (Plausibilité, Conformité, Complétude et Total) un pourcentage de lignes vérifiant ces critères, ce qui permet d’évaluer la qualité globale des données (voir Tableau 4 ci-dessous).
+       - Un tableau détaillant les tests de qualité effectués pour les différents axes mentionnés (voir Tableau 5 ci-dessous). Ce tableau contient les résultats des tests et la requête SQL permettant de reproduire le test.
+    - **ACHILLES**[^73] (outil OHDSI) est un package R qui produit des statistiques descriptives permettant de caractériser la base de données OMOP-CDM (voir Figure 3).
+    - **CDMInspection**[^74] est un package R qui reprend une partie des résultats des tests issus d'ACHILLES et du Data Quality Dashboard. Il permet de générer un rapport PDF sur la qualité des données qui peut ensuite être partagé.
 
 **Tableau 4 :  Premier exemple de sortie du Data Quality Dashboard**
 
-|                | Verification            |                | Validation             |                | Total                 |                |
-|----------------|-------------------------|----------------|------------------------|----------------|-----------------------|----------------|
+|                | Verification            | Validation     | Total                 |                |
+|----------------|-------------------------|----------------|------------------------|
 |                | Pass  | Fail  | Total | % Pass | Pass | Fail | Total | % Pass | Pass  | Fail | Total | % Pass |
 |----------------|-------|-------|-------|--------|------|------|-------|--------|-------|------|-------|--------|
 | **Plausibility**| 159   | 21    | 180   | 88%    | 283  | 0    | 283   | 100%   | 442   | 21   | 463   | 95%    |
@@ -468,7 +457,7 @@ _Source : [OHDSI - Data Quality Dashboard
 </p>  
 
 
-  - **ACHILLES**[^73] (outil OHDSI) est un package R qui produit des statistiques descriptives permettant de caractériser la base de données OMOP-CDM (voir Figure 3).
+ 
 
 <p align="center">
    <img src="../files_and_images/omop_cdm/omop_fig_5.png" width=""/>    
@@ -479,7 +468,7 @@ _Source : [OHDSI - Data Quality Dashboard
 
   
 
-  - **CDMInspection**[^74] est un package R qui reprend une partie des résultats des tests issus d'ACHILLES et du Data Quality Dashboard. Il permet de générer un rapport PDF sur la qualité des données qui peut ensuite être partagé.
+  
 
   [^68]:  Voir l’article de Tan HX, Teo DCH, Lee D, Kim C, Neo JW, Sung C, Chahed H, Ang PS, Tan DSY, Park RW, Dorajoo SR. « Applying the OMOP Common Data Model to Facilitate Benefit-Risk Assessments of Medicinal Products Using Real-World Data from Singapore and South Korea ». Healthc Inform Res : Applying the OMOP Common Data Model to Facilitate Benefit-Risk Assessments of Medicinal Products Using Real-World Data from Singapore and South Korea
   [^69]: Voir la liste complète de toutes les PME certifiées EHDEN en Europe : Business Directory – ehden.eu
@@ -503,7 +492,7 @@ _Source : [OHDSI - Data Quality Dashboard
 ### Outils de mapping :
    - **Mapping sémantique : Usagi**[^76,77], (outil OHDSI) fait des suggestions de mapping basées sur la similarité textuelle entre les libellés des codes sources et ceux des codes standards
 
-- Outils compatibles :
+### Outils compatibles :
   - Outils développés par OHDSI :
     - **WhiteRabbit [^78] effectue un scan des données sources** et génère un rapport d’informations sur les tables, les variables et leur contenu (noms des tables et variables, type, nombre de lignes, exhaustivité, etc.) ;
     - **Rabbit-In-a-Hat**[^79] permet à l'utilisateur de connecter visuellement les données sources aux tables et colonnes du schéma de données par le biais d'une interface graphique. Il met en forme ces connexions sous forme de tableaux et schémas dans un document Word ;
@@ -514,7 +503,9 @@ _Source : [OHDSI - Data Quality Dashboard
 
    - ***CDM R package***[^83] qui permet de créer dynamiquement la documentation d’OMOP-CDM et les scripts DDL pour instancier le modèle
    - **ARES**[^84] créé pour afficher les résultats provenant d’ACHILLES et Data Quality Dashboard pour supporter les recherches sur la qualité et la caractérisation des données
- - Possibilité d’utiliser l’API i2b2 avec l’ontologie ACT-OMOP pour interroger les tables OMOP-CDM dès mars 2023[^85]
+  - Possibilité d’utiliser l’API i2b2 avec l’ontologie ACT-OMOP pour interroger les tables OMOP-CDM dès mars 2023[^85]
+
+
 
 [^75]: L’article qualifie le temps de prise en main de la manière suivante pour les 4 schémas de données : « Little » (pour Sentinel et PCORnet) et « Some » (OMOP-CDM et CDISC SDTM).
 [^76]:  Voir le GitHub : GitHub - OHDSI/Usagi: Usagi is an application to help create mappings between coding systems and the Vocabulary standard concepts.
@@ -533,22 +524,19 @@ _Source : [OHDSI - Data Quality Dashboard
   - Pour standardiser une base de données au format OMOP-CDM (« OMOPiser »), il faut créer un processus ETL (Extract Transform Load) automatisable qui puisse être exécuté à chaque mise à jour des données source[^86]
 
  - **Processus standard d'OMOPisation** (ETL) :
-   1. ***Conception du mapping syntaxique*** : deux outils ont été développés par OHDSI pour aider l’utilisateur à réaliser cette étape :
-     **a.**  **WhiteRabbit**[^77] produit un rapport d’analyse des données sources qui contient toutes les informations nécessaires pour construire l'ETL (sur les tables, les champs, les valeurs). Ce rapport servira de référence pour la conception de l’ETL, en conjonction avec l’outil Rabbit-In-a-Hat ;  
-
-      **b.** **Rabbit-In-a-Hat**[^78] reprend les résultats de WhiteRabbit et les affiche dans une interface graphique où l’utilisateur peut réaliser des connexions (flèches) entre les variables et tables sources et et les tables d’OMOP-CDM. L’outil génère ensuite une documentation de l’ETL à partir des connexions ainsi établies
-   2.***Conception du mapping sémantique*** : lorsque  les vocabulaires utilisés dans les données sources ont déjà été mappés vers des vocabulaires standards autorisés dans OMOP-CDM, les mappings correspondants se trouvent déjà dans les tables de vocabulaires téléchargeables sur le portail ATHENA. Dans le cas contraire, le mapping doit être créé entre les vocabulaires sources et
-   les vocabulaires standards. L’outil Usagi permet de faciliter cette tâche :
-
-     **a**.**Usagi**[^75] génère des propositions de mapping basées sur la similarité textuelle entre les libellés des codes sources et ceux des codes standards
+   1.***Conception du mapping syntaxique*** : deux outils ont été développés par OHDSI pour aider l’utilisateur à réaliser cette étape :   
+     **a.**  **WhiteRabbit**[^77] produit un rapport d’analyse des données sources qui contient toutes les informations nécessaires pour construire l'ETL (sur les tables, les champs, les valeurs). Ce rapport servira de référence pour la conception de l’ETL, en conjonction avec l’outil Rabbit-In-a-Hat ;         
+     **b.** **Rabbit-In-a-Hat**[^78] reprend les résultats de WhiteRabbit et les affiche dans une interface graphique où l’utilisateur peut réaliser des connexions (flèches) entre les variables et tables sources et et les tables d’OMOP-CDM. L’outil génère ensuite une documentation de l’ETL à partir des connexions ainsi établies
+  
+ 2.***Conception du mapping sémantique*** : lorsque  les vocabulaires utilisés dans les données sources ont déjà été mappés vers des vocabulaires standards autorisés dans OMOP-CDM, les mappings correspondants se trouvent déjà dans les tables de vocabulaires téléchargeables sur le portail ATHENA. Dans le cas contraire, le mapping doit être créé entre les vocabulaires sources et
+   les vocabulaires standards. L’outil Usagi permet de faciliter cette tâche :   
+   **a**.**Usagi**[^75] génère des propositions de mapping basées sur la similarité textuelle entre les libellés des codes sources et ceux des codes standards
 
    3.**Implémentation de l’ETL** : OHDSI ne fait pas de recommandation sur l’implémentation optimale car elle dépend de l’infrastructure, la taille des données, la complexité de l’ETL et l’expertise technique disponible. À titre d’exemple, certains groupes l’ont implémenté en SQL, SAS, C#, Java, Kettle, etc [^87].
 
-   4.**Contrôle qualité** : La qualité est contrôlée de manière itérative en réalisant des tests puis des corrections tant que cela est nécessaire.
-
-     **a.** Les tests suivants peuvent par exemple être réalisés : revue du document décrivant le design de l’ETL, du code et des *mappings*, comparer manuellement les données sources et finales sur un échantillon, répliquer une étude déjà réalisée sur les données sources à partir des données issues de l’ETL, etc.
-     
-     **b.** La qualité du mapping peut également être évaluée avec les outils OHDSI (ACHILLES[^72], *Data Quality Dashboard*)
+   4.**Contrôle qualité** : La qualité est contrôlée de manière itérative en réalisant des tests puis des corrections tant que cela est nécessaire.  
+   **a.** Les tests suivants peuvent par exemple être réalisés : revue du document décrivant le design de l’ETL, du code et des *mappings*, comparer manuellement les données sources et finales sur un échantillon, répliquer une étude déjà réalisée sur les données sources à partir des données issues de l’ETL, etc.     
+   **b.** La qualité du mapping peut également être évaluée avec les outils OHDSI (ACHILLES[^72], *Data Quality Dashboard*)
 
 
 
