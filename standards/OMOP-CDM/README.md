@@ -63,7 +63,7 @@ Analyse de diverses pathologies ( environ 40 publications pour par exemple : mal
     - La granularité du schéma de données est celle de **l’événement clinique** (on parle de « concept » dans le modèle OMOP-CDM : diagnostic, procédure, visite, prise de médicament, etc.). Il s’agit donc de **données individuelles** (chaque ligne concerne un seul patient et un seul événement). Chaque événement clinique a un identifiant patient et une date[^9].
     - Les événements (hors table NOTE) sont représentés sur **deux niveaux** : certaines tables contenant des données cliniques contiennent les champs VISIT_OCCURRENCE_ID et VISIT_DETAIL_ID
         - **Un premier niveau VISIT_OCCURRENCE** : ce niveau décrit l'événement de contact avec le système de santé (séjour hospitalier, visite chez un praticien en ville, à domicile, ...) ;
-        - Un deuxième niveau VISIT_DETAIL : ce niveau décrit les différents enregistrements qui ont lieu au cours d'un même événement de contact avec le système de santé. 
+        - Un **deuxième niveau VISIT_DETAIL** : ce niveau décrit les différents enregistrements qui ont lieu au cours d'un même événement de contact avec le système de santé. 
 
 
  - Utilisation dans plusieurs langues : Oui 
