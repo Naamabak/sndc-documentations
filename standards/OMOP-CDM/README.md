@@ -431,7 +431,7 @@ _Source : [Documentation i2b2](https://community.i2b2.org/wiki/display/BUN/i2b2+
 
 **Tableau 4 :  Premier exemple de sortie du Data Quality Dashboard**
 
-| Verification            | Validation     | Total          |
+| Verification            | Validation     | Total   |       |
 |----------------|-------------------------|----------------|------------------------|
 
 |                | Pass  | Fail  | Total | % Pass | Pass | Fail | Total | % Pass | Pass  | Fail | Total | % Pass |
