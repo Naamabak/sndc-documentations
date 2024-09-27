@@ -165,12 +165,12 @@ Rinaldi et al. (*2021*)[^11] décrivent l'utilisation de SNOMED-CT pour l'étude
 
 
 - **Utilisation dans plusieurs langues** :
-   - Il existe **2 versions internationales*
+   - Il existe ***2 versions internationales*
 ** : une en **anglais** et une **en espagnol**[^15]
    - Il existe également des extensions locales de SNOMED CT, dans la langue du pays associée à l'extension (voir l'élément « Existence d'extensions certifiées » en partie 5. Utilisation).
 
 
-- **Disponibilité de la documentation d'implémentation** :
+### Disponibilité de la documentation d'implémentation :
    - Guide de démarrage (starter guide)[^16]
    - Documentation d'implémentation[^17]
    - Guide d'utilisation de SNOMED CT pour les EHR[^18]
@@ -206,8 +206,8 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
 
 
 ## 2.Gouvernance
-- **Modalités d'accès et distribution des solutions basées sur ce standard** :
-   - La consultation de SNOMED CT est accessible à tous, via un **accès gratuit en ligne** (voir l'élément « Ressources d’accès à la terminologie et liens associés » ci-dessous)[^21] .
+### Modalités d'accès et distribution des solutions basées sur ce standard :
+   - La consultation de SNOMED CT est accessible à tous, via un **accès gratuit en ligne** (voir l'élément « Ressources d’accès à la terminologie et liens associés » ci-dessous)[^21].
    - Cependant, **l'utilisation et l'implémentation** de **SNOMED CT** dans les établissements de santé nécessitent le téléchargement du standard, conditionné par **l'adhésion à SNOMED International** ou **l'acquisition d'une licence d'affiliation**[^22] :
       - Pour un déploiement de SNOMED CT dans un pays membr[^23] de SNOMED International :
            - L'établissement doit enregistrer l'utilisation de SNOMED CT au NRC[^24] (*National Release Center*) du pays
@@ -219,7 +219,7 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
 - Le code source ainsi que les outils et les services développés par SNOMED International sont disponibles sous **la licence open source Apache v2**.
 
 
-- **Processus de prise de décision sur le standard** :
+### Processus de prise de décision sur le standard :
   - Les mises à jour de SNOMED CT sont entreprises par :
       - ***SNOMED International***[^30] pour la version internationale de SNOMED CT
       - Les NRC[^31] (National Release Center) pour les extensions locales (propres à un pays ; voir l'élément « *Existence d'extensions certifiées* » en partie 5. Utilisation)
@@ -229,18 +229,18 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
   - Pour rejoindre l'un de ces groupes de projet ou consultatifs, contacter info@snomed.org
 
 
- - **Maturité du standard** :
-     - Fréquence de mise à jour :
-         - La version internationale anglaise de SNOMED CT est **mise à jour mensuellement** (à la fin du mois)[^30]
-         - La version internationale espagnole de SNOMED CT est **mise à jour deux fois dans l'année** : le 30 avril et le 31 octobre
-         - Pour les extensions locales :
-              - L'extension américaine, l'extension Belgique et l'extension Danemark sont mises à jour aux mois de mars et de septembre
-              - L'extension Autriche, l'extension Irlande, l'extension Nouvelle-Zélande et l'extension Norvège sont mises à jour aux mois d'avril et d'octobre
-              - L'extension Estonie et l'extension Suède sont mises à jour aux mois de mai et novembre
-              - L'extension Suisse est mise à jour aux mois de juin et décembre
-              - L'extension Corée du Sud est mise à jour au mois de décembre
-         - La SNOMED CT n'est **pas versionnée**
-         - **Maturité** :
+ ### Maturité du standard :
+- Fréquence de mise à jour :
+   - La version internationale anglaise de SNOMED CT est **mise à jour mensuellement** (à la fin du mois)[^30]
+   - La version internationale espagnole de SNOMED CT est **mise à jour deux fois dans l'année** : le 30 avril et le 31 octobre
+   - Pour les extensions locales :    
+      - L'extension américaine, l'extension Belgique et l'extension Danemark sont mises à jour aux mois de mars et de septembre
+      - L'extension Autriche, l'extension Irlande, l'extension Nouvelle-Zélande et l'extension Norvège sont mises à jour aux mois d'avril et d'octobre
+      - L'extension Estonie et l'extension Suède sont mises à jour aux mois de mai et novembre
+      - L'extension Suisse est mise à jour aux mois de juin et décembre
+      - L'extension Corée du Sud est mise à jour au mois de décembre
+   - La SNOMED CT n'est **pas versionnée**
+- **Maturité** :  
 **Note : 1 / 1**. Cette note combine plusieurs sous-critères. Elle s’explique par :
 (a) La publication d’une version stable
 (b) La fréquence moyenne élevée de mise à jour des versions mineures
@@ -249,23 +249,23 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
 (e) Son adoption officielle par un ou plusieurs pays ou par une organisation de référence (voir l’élément « *Adoption du standard*  » en partie 4. Valorisation)
 
 
-- **Existence de financements pour standardisation** :
+ ### Existence de financements pour standardisation :
 *En juin 2023, nous n'identifions pas de financements pour la standardisation*.
 
 
-- **Ressources d’accès à la terminologie et liens associés** :
+### Ressources d’accès à la terminologie et liens associés :
   - Le **Navigateur SNOMED CT**[^34] permet :
      - De visualiser le contenu de la SNOMED CT
      - De rechercher des concepts en entrant des mots-clés ou des SCTID
      - D'afficher un diagramme pour visualiser les attributs et les concepts associés (parents, enfants).
      - De choisir l’édition souhaitée (éditions internationales ou extensions ; voir l'élément « *Existence d'extensions certifiées* » en partie 3. Technique)
- - ***SNOMED CT Concept Lookup**[^35] permet de trouver rapidement le concept associé à un identifiant. Il affiche la description du concept, ses traductions éventuelles, ses attributs, ses parents et enfants directs
+ - ***SNOMED CT Concept Lookup***[^35] permet de trouver rapidement le concept associé à un identifiant. Il affiche la description du concept, ses traductions éventuelles, ses attributs, ses parents et enfants directs
  - **GitHub de SNOMED International** avec le code en open source[^36]
 
 
 
  ## 3.Technique
-- **Capacité de traduction vers un autre standard (intra types de standards)** :
+### Capacité de traduction vers un autre standard (intra types de standards) :
    - **Mapping entre SNOMED CT et la Classification internationale des maladies** (CIM) (CIM-10 et CIM-11) :
        - **Mapping entre SNOMED CT et la CIM-10** :
             - Un codage semi-automatisé attribue une classification CIM-10 (version 2016) à un code SNOMED CT[^37].
@@ -312,16 +312,16 @@ Rodrigues et al. (2017)  décrivent les difficultés de mapping entre ICHI et SN
 
 
 
-- **Communication avec d'autres standards (inter typologies de standards)** :
-    - SNOMED CT est utilisée par **OMOP-CDM** pour identifier les résultats des observations cliniques (ex : des diagnostics, des procédures, des symptômes, des historiques familiaux, etc.). En particulier, dans OMOP-CDM, SNOMED CT est considéré comme standard pour les domaines suivants : les maladies, les dispositifs médicaux, les mesures, les observations, les procédures, la localisation anatomique, le statut de la maladie, les prélèvements, la voie d’administration. Il n’est cependant pas standard pour les domaines suivants : les médicaments, les professionnels de santé, les unités, les types de visites, les métadonnées.
-   - La terminologie SNOMED CT peut être utilisée par FHIR de 2 façons[^50] :
-      - En liant une **ressource FHIR à un ensemble de concepts** de la SNOMED CT
-     - En liant une **ressource FHIR à un type de relation** (attribut) de la SNOMED CT
+### Communication avec d'autres standards (inter typologies de standards) :
+- SNOMED CT est utilisée par **OMOP-CDM** pour identifier les résultats des observations cliniques (ex : des diagnostics, des procédures, des symptômes, des historiques familiaux, etc.). En particulier, dans OMOP-CDM, SNOMED CT est considéré comme standard pour les domaines suivants : les maladies, les dispositifs médicaux, les mesures, les observations, les procédures, la localisation anatomique, le statut de la maladie, les prélèvements, la voie d’administration. Il n’est cependant pas standard pour les domaines suivants : les médicaments, les professionnels de santé, les unités, les types de visites, les métadonnées.
+- La terminologie SNOMED CT peut être utilisée par FHIR de 2 façons[^50] :
+   - En liant une **ressource FHIR à un ensemble de concepts** de la SNOMED CT
+   - En liant une **ressource FHIR à un type de relation** (attribut) de la SNOMED CT
 
 
 
-- **Flexibilité du standard, personnalisation** :
-    - **La post-coordination**[^14] rend la nomenclature plus flexible (voir l'élément « *Type de granularité* » en partie 1. Général). En effet, la post-coordination permet **l'ajout de détails** cliniques à un concept, ce qui augmente le niveau de précision de la nomenclature. Pour ajouter des précisions, des **attributs** sont utilisés :
+### Flexibilité du standard, personnalisation :
+- **La post-coordination**[^14] rend la nomenclature plus flexible (voir l'élément « *Type de granularité* » en partie 1. Général). En effet, la post-coordination permet **l'ajout de détails** cliniques à un concept, ce qui augmente le niveau de précision de la nomenclature. Pour ajouter des précisions, des **attributs** sont utilisés :
       - Par exemple, pour post-coordonner « 80146002 |appendectomy| », l'attribut « 260870009 | Priority (attribute[^51])|» peut être utilisé pour préciser la nature d'une intervention (élective ou d'urgence) :
           - Le SCTID « 260870009 » représente l'attribut de priorité (priority)
           - Une appendicectomie d'urgence est alors notée « 80146002 |appendectomy| : 260870009 |priority| = 25876001 |emergency| »
@@ -346,7 +346,7 @@ Rodrigues et al. (2017)  décrivent les difficultés de mapping entre ICHI et SN
 
 
 
-- **Intensité de la perte de données au mapping** :
+### Intensité de la perte de données au mapping :
    - Au sein de la clinique Mayo, Elkin et al. (2006)[^53] ont sélectionné 4 996 descriptions associées aux problèmes les plus courants rencontrés par les patients et ont essayé de les mapper automatiquement à la terminologie SNOMED CT. Parmi ces 4 996 descriptions, **4 568 ont pu être correctement mappées (91.4%)**.
   - Block et al. (2021)[^54] évaluent la qualité de différentes méthodes pour mapper 107 termes relatifs aux soins infirmiers (prodigués aux plaies) à la terminologie SNOMED CT :
      - Le mapping manuel :
@@ -372,34 +372,34 @@ Rodrigues et al. (2017)  décrivent les difficultés de mapping entre ICHI et SN
 
 
 
-- **Existence d’un historique et accessibilité à l’historique** : Un historique des publications est disponible[^56]. Sont notamment téléchargeables **avec une licence** :
-     - Les versions antérieures de l'édition internationale de SNOMED CT (depuis 2007)
-     - Les versions antérieures de l'édition américaine de SNOMED CT (depuis 2011)
-     - Les versions antérieures du mapping de SNOMED CT à la CIM-10 (depuis 2012)
+### Existence d’un historique et accessibilité à l’historique : 
+Un historique des publications est disponible[^56]. Sont notamment téléchargeables **avec une licence** :  
+   - Les versions antérieures de l'édition internationale de SNOMED CT (depuis 2007)
+   - Les versions antérieures de l'édition américaine de SNOMED CT (depuis 2011)
+   - Les versions antérieures du mapping de SNOMED CT à la CIM-10 (depuis 2012)
 
 
 ## 4.Valorisation
-- **Accessibilité à des ressources de formation** :
-    - Cours dispensés par *SNOMED International* en anglais ou en espagnol[^57]
-    - Plateforme de e-learning SNOMED[^58]
+### Accessibilité à des ressources de formation :
+- Cours dispensés par *SNOMED International* en anglais ou en espagnol[^57]
+- Plateforme de e-learning SNOMED[^58]
+
+
+
+### Disponibilité de la documentation scientifique démontrant l'intérêt :
+- Chang et al. (2021)[^59] réalisent une étude de 622 publications scientifiques sur la SNOMED CT. Selon eux, peu d'articles montrent l'effet ou l'impact de l'utilisation de SNOMED CT sur la qualité des soins aux patients :
+   - Reed et al. (2015)[^60], étudiants en médecine dentaire, ont montré que **l'utilisation de SNOMED CT dans un système EHR renforçait les capacités de réflexion critique** des étudiants
+   - Souvignet at al. (2019)[^61] ont mesuré l'utilité indirecte de **SNOMED CT** :
+      - Les auteurs s'appuient sur une interface web qui représente des termes MedDRA (terminologie utilisée dans le domaine pharmaceutique), issus de formulaires, par des concepts SNOMED CT.
+      - L'utilisation de SNOMED CT accélère la sélection des termes MedDRA et a amélioré les capacités de recherche en pharmacovigilance
+- Thun et al. (2018)[^62] expliquent **l'intérêt de l'utilisation de SNOMED CT par rapport** à d'autres nomenclatures internationales comme **ICHI** ou la **CIM** (CIM-10, CIM-11) :
+   - SNOMED CT couvre l'ensemble du domaine médical, contrairement à ICHI et à la CIM
+   - En raison de l'expressivité du contenu de SNOMED CT et de son usage international, les auteurs jugent l'utilisation de SNOMED CT plus probable dans le développement des applications de santé électroniques
 
 
 
 
-- **Disponibilité de la documentation scientifique démontrant l'intérêt** :
-    - Chang et al. (2021)[^59] réalisent une étude de 622 publications scientifiques sur la SNOMED CT. Selon eux, peu d'articles montrent l'effet ou l'impact de l'utilisation de SNOMED CT sur la qualité des soins aux patients :
-        - Reed et al. (2015)[^60], étudiants en médecine dentaire, ont montré que **l'utilisation de SNOMED CT dans un système EHR renforçait les capacités de réflexion critique** des étudiants
-        - Souvignet at al. (2019)[^61] ont mesuré l'utilité indirecte de **SNOMED CT** :
-            - Les auteurs s'appuient sur une interface web qui représente des termes MedDRA (terminologie utilisée dans le domaine pharmaceutique), issus de formulaires, par des concepts SNOMED CT.
-            - L'utilisation de SNOMED CT accélère la sélection des termes MedDRA et a amélioré les capacités de recherche en pharmacovigilance
-    - Thun et al. (2018)[^62] expliquent **l'intérêt de l'utilisation de SNOMED CT par rapport** à d'autres nomenclatures internationales comme **ICHI** ou la **CIM** (CIM-10, CIM-11) :
-         - SNOMED CT couvre l'ensemble du domaine médical, contrairement à ICHI et à la CIM
-         - En raison de l'expressivité du contenu de SNOMED CT et de son usage international, les auteurs jugent l'utilisation de SNOMED CT plus probable dans le développement des applications de santé électroniques
-
-
-
-
-- **Adoption du standard** :
+### Adoption du standard :
    - Adoption officielle :
         - En Angleterre, le NHS[^63] (National Health Service) rend obligatoire l'utilisation de SNOMED CT pour tous les prestataires de soins NHS.
         - En juin 2023, 47 pays sont membres de SNOMED International[^33] (ex : Australie, Canada, Danemark, Lituanie, Suède, Pays-Bas, Nouvelle-Zélande, Royaume-Uni, États-Unis, etc. ; voir la Carte 1 ci-dessous)
@@ -433,23 +433,23 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 
 
 ## 5.Utilisation
-- **Simplicité d'usage** :
-     - **Note : 1 / 1** en raison de l’accès à des ressources officielles de formation (voir l’élément « Accessibilité à des ressources de formation » en partie 4. Valorisation).
-     - La recherche de la signification d'un SCTID est simple[^65], notamment pour les débutants, avec l'utilisation des nouveaux outils comme SNOMED CT Concept Lookup. De manière générale, l'utilisation des outils d'aide au codage et des outils compatibles permet de simplifier l'utilisation de SNOMED CT[^66] (voir les éléments *« Outils d’implémentation / aide au codage »* et *« Outils compatibles » * ci-dessous).
+### Simplicité d'usage :
+- **Note : 1 / 1** en raison de l’accès à des ressources officielles de formation (voir l’élément « Accessibilité à des ressources de formation » en partie 4. Valorisation).
+- La recherche de la signification d'un SCTID est simple[^65], notamment pour les débutants, avec l'utilisation des nouveaux outils comme SNOMED CT Concept Lookup. De manière générale, l'utilisation des outils d'aide au codage et des outils compatibles permet de simplifier l'utilisation de SNOMED CT[^66] (voir les éléments *« Outils d’implémentation / aide au codage »* et *« Outils compatibles » * ci-dessous).
 
 
 
 
-- **Existence d'une communauté en ligne et degré d'activité** :
-     - Vidéos YouTube[^67] de présentation et d'explications de SNOMED CT par SNOMED International
-     - Inscription sur la mailing list[^68] de *SNOMED International* pour être informé de toutes les nouveautés
-     - Forums[^69] de discussion
-     - FAQ[^70] *SNOMED International*
+### Existence d'une communauté en ligne et degré d'activité :
+- Vidéos YouTube[^67] de présentation et d'explications de SNOMED CT par SNOMED International
+- Inscription sur la mailing list[^68] de *SNOMED International* pour être informé de toutes les nouveautés
+- Forums[^69] de discussion
+- FAQ[^70] *SNOMED International*
 
 
-- **Outils d’implémentation / aide au codage** :
-    - ***SNOMED CT Browser***[^34] permet de requêter la terminologie SNOMED CT (voir l'élément « *Ressources d’accès à la terminologie et liens associés »* en partie 2. Gouvernance et la Figure 6 ci-dessous).
-    - D'autres **navigateurs SNOMED CT**[^71] existent et sont listés sur le site officiel de SNOMED International : Athena[^72], BioPortal[^73], CSNOtk[^74], National Library of Medicine SNOMED CT Browser, NHS Digital SNOMED CT Browser[^75], NICTIZ Browser[^76], Shrimp SNOMED CT Browser, SnoChillies Browser[^77], Snowray Terminology Service[^78], Stom Browser, VTSL Terminology Browser[^79], West Coast Terminology Server[^80]
+### Outils d’implémentation / aide au codage :
+- ***SNOMED CT Browser***[^34] permet de requêter la terminologie SNOMED CT (voir l'élément « *Ressources d’accès à la terminologie et liens associés »* en partie 2. Gouvernance et la Figure 6 ci-dessous).
+- D'autres **navigateurs SNOMED CT**[^71] existent et sont listés sur le site officiel de SNOMED International : Athena[^72], BioPortal[^73], CSNOtk[^74], National Library of Medicine SNOMED CT Browser, NHS Digital SNOMED CT Browser[^75], NICTIZ Browser[^76], Shrimp SNOMED CT Browser, SnoChillies Browser[^77], Snowray Terminology Service[^78], Stom Browser, VTSL Terminology Browser[^79], West Coast Terminology Server[^80]
 
 
   <p align="center">
@@ -475,7 +475,7 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 
 
 
-- **Outils compatibles** :
+### Outils compatibles :
   - ***Snap2Snomed***[^83] est un outil fourni par SNOMED International permettant de créer et de maintenir des mappings vers SNOMED CT
   - ***SNOMED International's mapping tool***[^84] est un outil utilisé par l'équipe en charge du contenu de SNOMED CT pour maintenir les mappings depuis SNOMED CT vers d'autres terminologies (CIM, ICPC, etc.)
   - ***Amazon Comprehend Medical***[^85] est un outil permettant de relier des données de santé (procédures, diagnostics, …) à des nomenclatures médicales comme SNOMED CT.
@@ -483,14 +483,14 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
   - ***Health Data analytics***[^87] est un outil de démonstration basé sur des données synthétiques. Il permet de créer des cohortes de patients et de pouvoir les comparer entre elles par exemple pour aider les médecins à la prise de décision (utilisation risquée d'un médicament, ...)
 
 
-- **Existence d'extensions certifiées** :
-    - Il existe des **extensions locales** de SNOMED CT, qui permettent à des pays d'ajouter des éléments à la version internationale de SNOMED CT. Un **mécanisme d'extension**[^88] permet de personnaliser la SNOMED CT pour répondre aux besoins terminologiques d'un pays ou d'une organisation, non-satisfaits par l'édition internationale :
-        - Un « namespace identifier »[^89] est un **code à 7 caractères attribué** à chaque organisation (ex : National Release Centers, organisations locales, etc.) qui met en place une extension.  
-        - Les organisations utilisent ce code pour créer des extensions locales des SCTIDs pour garantir l'unicité des concepts à l'échelle locale comme globale. Un SCTID d'extension (ex : « 5281000124103 ») est composé (voir Figure 8 ci-dessous) :
-            - D'un identifiant d'extension (ex : 528)
-            - Du « *namespace identifier* » (ex : « 1000124 », le « *namespace identifier* » de la *National Library of Medicine*, le NRC des Etats-Unis)
-            - De l'identifiant de partition (ex : 10 « SNOMED CT core module »)
-            - D'une clé de contrôle (ex : 3)
+### Existence d'extensions certifiées :
+- Il existe des **extensions locales** de SNOMED CT, qui permettent à des pays d'ajouter des éléments à la version internationale de SNOMED CT. Un **mécanisme d'extension**[^88] permet de personnaliser la SNOMED CT pour répondre aux besoins terminologiques d'un pays ou d'une organisation, non-satisfaits par l'édition internationale :
+   - Un « namespace identifier »[^89] est un **code à 7 caractères attribué** à chaque organisation (ex : National Release Centers, organisations locales, etc.) qui met en place une extension.  
+   - Les organisations utilisent ce code pour créer des extensions locales des SCTIDs pour garantir l'unicité des concepts à l'échelle locale comme globale. Un SCTID d'extension (ex : « 5281000124103 ») est composé (voir Figure 8 ci-dessous) :
+     - D'un identifiant d'extension (ex : 528)
+     - Du « *namespace identifier* » (ex : « 1000124 », le « *namespace identifier* » de la *National Library of Medicine*, le NRC des Etats-Unis)
+     - De l'identifiant de partition (ex : 10 « SNOMED CT core module »)
+     - D'une clé de contrôle (ex : 3)
 
 
 <p align="center">
@@ -581,13 +581,13 @@ En juin 2023, nous n'identifions pas de fournisseurs de service ayant l'expertis
 
 
 
-- **Bibliothèque de requêtes types** :
+### Bibliothèque de requêtes types :
 *En juin 2023, nous n'identifions pas de bibliothèque de requêtes types.*
 
 
 
 
-- **Lisible par un humain** : Oui
+### Lisible par un humain : Oui
 SNOMED CT attribue un code numérique (SCTID) associé à une description (voir l'élément « *Description* » en partie 1. Général).
 
 
