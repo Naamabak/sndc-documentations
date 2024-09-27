@@ -284,8 +284,8 @@ Aucune contrainte d’implémentation mais il est **recommandé** de disposer d�
         - Exclusion des données de 109 paires de jumeaux, car le SNDS ne permet pas de distinguer les jumeaux à partir de l’identifiant uniquement
         - Imputation de valeurs par défaut pour le jour d’hospitalisation lorsqu’il est manquant (par défaut, le premier jour du mois est choisi)
 
-  - Voss EA et al. (2015) ont analysé la faisabilité et l'utilité de l'application d'OMOP-CDM à 6 bases de données issues de différents établissements de santé aux États-Unis[^50] :
-      - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 2 ci-dessous.
+    - Voss EA et al. (2015) ont analysé la faisabilité et l'utilité de l'application d'OMOP-CDM à 6 bases de données issues de différents établissements de santé aux États-Unis[^50] :
+        - [Mapping sémantique] Pour chacune des terminologies, le pourcentage de codes des terminologies sources mappés vers les vocabulaires standardisés est indiqué dans le Tableau 2 ci-dessous.
 
 
 
