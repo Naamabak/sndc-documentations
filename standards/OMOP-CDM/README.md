@@ -491,13 +491,13 @@ _Source : [OHDSI - Data Quality Dashboard
   - Outils développés par OHDSI :
     - **WhiteRabbit [^78] effectue un scan des données sources** et génère un rapport d’informations sur les tables, les variables et leur contenu (noms des tables et variables, type, nombre de lignes, exhaustivité, etc.) ;
     - **Rabbit-In-a-Hat**[^79] permet à l'utilisateur de connecter visuellement les données sources aux tables et colonnes du schéma de données par le biais d'une interface graphique. Il met en forme ces connexions sous forme de tableaux et schémas dans un document Word ;
-   - **Athena**[^39] est une ressource qui permet de rechercher et de charger des vocabulaires normalisés ;
-   - **HADES**[^80] est une collection de paquets R open source offrant des fonctions qui peuvent être utilisées ensemble pour réaliser une étude d'observation complète, à partir de données dans OMOP-CDM, et aboutir à des estimations et des statistiques, des graphiques et des tableaux. Il contient les package suivants :
-     - ***FeatureExtraction*** [^81] pour générer des caractéristiques pour une cohorte générée à l’aide d’OMOP-CDM
-     - ***CohortDiagnostics***[^82] pour évaluer les phénotypes de cohortes
+    - **Athena**[^39] est une ressource qui permet de rechercher et de charger des vocabulaires normalisés ;
+    - **HADES**[^80] est une collection de paquets R open source offrant des fonctions qui peuvent être utilisées ensemble pour réaliser une étude d'observation complète, à partir de données dans OMOP-CDM, et aboutir à des estimations et des statistiques, des graphiques et des tableaux. Il contient les package suivants :
+       - ***FeatureExtraction*** [^81] pour générer des caractéristiques pour une cohorte générée à l’aide d’OMOP-CDM
+       - ***CohortDiagnostics***[^82] pour évaluer les phénotypes de cohortes
 
-   - ***CDM R package***[^83] qui permet de créer dynamiquement la documentation d’OMOP-CDM et les scripts DDL pour instancier le modèle
-   - **ARES**[^84] créé pour afficher les résultats provenant d’ACHILLES et Data Quality Dashboard pour supporter les recherches sur la qualité et la caractérisation des données
+     - ***CDM R package***[^83] qui permet de créer dynamiquement la documentation d’OMOP-CDM et les scripts DDL pour instancier le modèle
+     - **ARES**[^84] créé pour afficher les résultats provenant d’ACHILLES et Data Quality Dashboard pour supporter les recherches sur la qualité et la caractérisation des données
   - Possibilité d’utiliser l’API i2b2 avec l’ontologie ACT-OMOP pour interroger les tables OMOP-CDM dès mars 2023[^85]
 
 
@@ -518,18 +518,19 @@ _Source : [OHDSI - Data Quality Dashboard
 ### Décrire les étapes nécessaires pour la standardisation :
   - Pour standardiser une base de données au format OMOP-CDM (« OMOPiser »), il faut créer un processus ETL (Extract Transform Load) automatisable qui puisse être exécuté à chaque mise à jour des données source[^86]
 
- - **Processus standard d'OMOPisation** (ETL) :
-   1.***Conception du mapping syntaxique*** : deux outils ont été développés par OHDSI pour aider l’utilisateur à réaliser cette étape :   
+ - **Processus standard d'OMOPisation** (ETL) :   
+
+   1. ***Conception du mapping syntaxique*** : deux outils ont été développés par OHDSI pour aider l’utilisateur à réaliser cette étape :   
      **a.**  **WhiteRabbit**[^77] produit un rapport d’analyse des données sources qui contient toutes les informations nécessaires pour construire l'ETL (sur les tables, les champs, les valeurs). Ce rapport servira de référence pour la conception de l’ETL, en conjonction avec l’outil Rabbit-In-a-Hat ;         
      **b.** **Rabbit-In-a-Hat**[^78] reprend les résultats de WhiteRabbit et les affiche dans une interface graphique où l’utilisateur peut réaliser des connexions (flèches) entre les variables et tables sources et et les tables d’OMOP-CDM. L’outil génère ensuite une documentation de l’ETL à partir des connexions ainsi établies
   
- 2.***Conception du mapping sémantique*** : lorsque  les vocabulaires utilisés dans les données sources ont déjà été mappés vers des vocabulaires standards autorisés dans OMOP-CDM, les mappings correspondants se trouvent déjà dans les tables de vocabulaires téléchargeables sur le portail ATHENA. Dans le cas contraire, le mapping doit être créé entre les vocabulaires sources et
+ 2. ***Conception du mapping sémantique*** : lorsque  les vocabulaires utilisés dans les données sources ont déjà été mappés vers des vocabulaires standards autorisés dans OMOP-CDM, les mappings correspondants se trouvent déjà dans les tables de vocabulaires téléchargeables sur le portail ATHENA. Dans le cas contraire, le mapping doit être créé entre les vocabulaires sources et
    les vocabulaires standards. L’outil Usagi permet de faciliter cette tâche :   
    **a**.**Usagi**[^75] génère des propositions de mapping basées sur la similarité textuelle entre les libellés des codes sources et ceux des codes standards
 
-   3.**Implémentation de l’ETL** : OHDSI ne fait pas de recommandation sur l’implémentation optimale car elle dépend de l’infrastructure, la taille des données, la complexité de l’ETL et l’expertise technique disponible. À titre d’exemple, certains groupes l’ont implémenté en SQL, SAS, C#, Java, Kettle, etc [^87].
+   3. **Implémentation de l’ETL** : OHDSI ne fait pas de recommandation sur l’implémentation optimale car elle dépend de l’infrastructure, la taille des données, la complexité de l’ETL et l’expertise technique disponible. À titre d’exemple, certains groupes l’ont implémenté en SQL, SAS, C#, Java, Kettle, etc [^87].
 
-   4.**Contrôle qualité** : La qualité est contrôlée de manière itérative en réalisant des tests puis des corrections tant que cela est nécessaire.  
+   4. **Contrôle qualité** : La qualité est contrôlée de manière itérative en réalisant des tests puis des corrections tant que cela est nécessaire.  
    **a.** Les tests suivants peuvent par exemple être réalisés : revue du document décrivant le design de l’ETL, du code et des *mappings*, comparer manuellement les données sources et finales sur un échantillon, répliquer une étude déjà réalisée sur les données sources à partir des données issues de l’ETL, etc.     
    **b.** La qualité du mapping peut également être évaluée avec les outils OHDSI (ACHILLES[^72], *Data Quality Dashboard*)
 
