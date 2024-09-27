@@ -41,8 +41,8 @@
    </p>    
    
 
-- **Application** :
-    - **Domaine d’application en santé** : ICHI concerne les champs des **interventions médicales**, chirurgicales, de **santé mentale**, de **soins primaires**, **paramédicales**, de **d'assistance au fonctionnement corporel**, de **rééducation**, de **prévention** et de **santé publique**[^2]. ICHI ne contient pas d'informations sur le professionnel de santé qui réalise l'intervention, ni sur les raisons de l'intervention et ses résultats (qui doivent être classifiées en utilisant respectivement la CIM et la CIF)
+### Application :
+  - **Domaine d’application en santé** : ICHI concerne les champs des **interventions médicales**, chirurgicales, de **santé mentale**, de **soins primaires**, **paramédicales**, de **d'assistance au fonctionnement corporel**, de **rééducation**, de **prévention** et de **santé publique**[^2]. ICHI ne contient pas d'informations sur le professionnel de santé qui réalise l'intervention, ni sur les raisons de l'intervention et ses résultats (qui doivent être classifiées en utilisant respectivement la CIM et la CIF)
 
 
    - **Principaux cas d’usage** : Les principaux cas d'usage identifiés dans le guide de référence sont les suivants[^2] :
@@ -72,8 +72,8 @@
 
 
 
- - **Données** :
-      - **Typologie de données concernées** : Le projet *Hospital Data* mené par l'Union Européenne a mis au jour le nombre élevé de classifications nationales des interventions de santé. Cela a conduit l'OMS à lancer les travaux de construction d'ICHI[^2]. Les données exploitées dans le cadre du projet *Hospital Data* sont similaires à celles qui pourront utiliser ICHI à l'avenir : il s'agit des bases de données nationales d'activité hospitalière (collectées dans un format standardisé dans le cadre du projet)
+ ### Données :
+  - **Typologie de données concernées** : Le projet *Hospital Data* mené par l'Union Européenne a mis au jour le nombre élevé de classifications nationales des interventions de santé. Cela a conduit l'OMS à lancer les travaux de construction d'ICHI[^2]. Les données exploitées dans le cadre du projet *Hospital Data* sont similaires à celles qui pourront utiliser ICHI à l'avenir : il s'agit des bases de données nationales d'activité hospitalière (collectées dans un format standardisé dans le cadre du projet)
       - **Type de terminologie** : Ontologie
       - **Type de granularité** :
           - Les codes ICHI (codes racine ou *stem code*[^9]) sont des **codes alphanumériques** de 2 ou 7 caractères sous la forme XX ou XXX.XX.XX (voir Figure 2). Les codes avec 2 caractères correspondent à des « regroupements d’interventions » (*exemple : KA désigne la bouche et le pharynx et KAA.AD.AA désigne la biopsie de la lèvre*). Pour les codes à 7 caractères, les 3 premiers identifient la cible, les 2 suivants identifient l’action réalisée et les 2 derniers identifient la méthode utilisée
@@ -107,7 +107,7 @@
 
 
 
- - **Disponibilité de la documentation d'implémentation** :
+ ### Disponibilité de la documentation d'implémentation :
 Un guide de référence ICHI a été publié à la sortie de la version Beta-3 en octobre 2020[^2].
 
 
@@ -116,43 +116,46 @@ Un guide de référence ICHI a été publié à la sortie de la version Beta-3 e
 
 
 ## 2.Gouvernance
-- **Modalités d'accès et distribution des solutions basées sur ce standard** :
+### Modalités d'accès et distribution des solutions basées sur ce standard :
    - ICHI est accessible en ligne gratuitement[^1]
    - Sous la même licence que la CIM-11 : Creative Commons Attribution-NoDerivs 3.0 IGO[^12]
 
 
-- **Processus de prise de décision sur le standard** :
-    - Il est possible de faire **des commentaires** ou des **propositions** directement via la **plateforme ICHI Beta-3**. Pour cela, il faut **créer un compte** sur la plateforme[^2,13].
+### Processus de prise de décision sur le standard :
+  - Il est possible de faire **des commentaires** ou des **propositions** directement via la **plateforme ICHI Beta-3**. Pour cela, il faut **créer un compte** sur la plateforme[^2] [^13].
     - Toute autre demande ou retour sur la nomenclature peut être envoyé par **mail** à l’adresse ichi@who.int11
-- **Maturité du standard** :
-    - **Fréquence de mise à jour** :
-        - La version de travail **Beta-3** sortie en octobre 2020 contenait environ 7 000 interventions2. Il s’agissait d’une version ayant vocation à recueillir les retours des utilisateurs.
-        - ICHI est **encore en développement**[^14], **le portail ICHI de l’OMS affiche des mises à jour régulières**.  
-        - La version précédente est la version **Alpha** sortie en 2015. Cette version contenait 5 800 interventions[^7] (Voir l'élément dans « *Illustration concrète : exemple d’utilisation sur un cas simple* » en partie 1. Général).
-    - **Niveau de maturité** :
-        - **Note : 0,2 / 1**
-        - Cette note s’explique par le fait que la version stable n’ayant pas encore été publiée, le standard n’est pas utilisé en production dans le monde, ni a fortiori adopté officiellement.
-- **Existence de financements pour standardisation** : *La classification étant encore en développement, elle n'a pas encore fait l'objet de financement pour la standardisation.*
-- **Ressources d’accès à la terminologie et liens associés** :
-         - Moteur de recherche pour parcourir le contenu[^4]
-         - Guide d’utilisation du moteur de recherche[^11]
-         - Guide de référence[^2]
+### Maturité du standard :
+  - **Fréquence de mise à jour** :
+      - La version de travail **Beta-3** sortie en octobre 2020 contenait environ 7 000 interventions2. Il s’agissait d’une version ayant vocation à recueillir les retours des utilisateurs.
+      - ICHI est **encore en développement**[^14], **le portail ICHI de l’OMS affiche des mises à jour régulières**.  
+      - La version précédente est la version **Alpha** sortie en 2015. Cette version contenait 5 800 interventions[^7] (Voir l'élément dans « *Illustration concrète : exemple d’utilisation sur un cas simple* » en partie 1. Général).
+  - **Niveau de maturité** : 
+      - **Note : 0,2 / 1**
+      - Cette note s’explique par le fait que la version stable n’ayant pas encore été publiée, le standard n’est pas utilisé en production dans le monde, ni a fortiori adopté officiellement.
+### Existence de financements pour standardisation :
+ *La classification étant encore en développement, elle n'a pas encore fait l'objet de financement pour la standardisation.*
+### Ressources d’accès à la terminologie et liens associés :
+   - Moteur de recherche pour parcourir le contenu[^4]
+   - Guide d’utilisation du moteur de recherche[^11]
+   - Guide de référence[^2]
 
 
   ## 3.Technique
 
 
-- **Capacité de traduction vers un autre standard (intra types de standards)** :
-    - En tant que classification de référence de la famille des classifications internationales de l'OMS (WHO-FIC), ICHI a été conçue pour s'aligner sur la **CIM** et la CIF et pour être utilisée en parallèle avec celles-ci :
-        - Les catégories CIF pour les fonctions corporelles, les activités, les domaines de participation et les facteurs environnementaux sont utilisés comme cibles dans ICHI[^2] ;
-        - Plusieurs codes d'extension ICHI sont des codes d'extension CIM-11 ;
-        - Les trois classifications WHO-FIC sont conçues pour être **appliquées indépendamment** de la façon suivante :
+### Capacité de traduction vers un autre standard (intra types de standards) :
+  - En tant que classification de référence de la famille des classifications internationales de l'OMS (WHO-FIC), ICHI a été conçue pour s'aligner sur la **CIM** et la CIF et pour être utilisée en parallèle avec celles-ci :
+      - Les catégories CIF pour les fonctions corporelles, les activités, les domaines de participation et les facteurs environnementaux sont utilisés comme cibles dans ICHI[^2] ;
+      - Plusieurs codes d'extension ICHI sont des codes d'extension CIM-11 ;
+      - Les trois classifications WHO-FIC sont conçues pour être **appliquées indépendamment** de la façon suivante :
            - ICHI permet de décrire des interventions (chirurgicales, préventives, thérapeutiques, de support)
            - La CIF permet de décrire le fonctionnement de la personne (fonctions corporelles, structurelles, activités et domaines de participation, facteurs environnementaux)
            - La CIM-11 permet de décrire l'état de santé de la personne
-        - Elles peuvent également être utilisées de la **manière combinée** suivante : dans une première étape, la CIF décrit les besoins d'assistance d'une personne liée à son fonctionnement ; dans une deuxième étape, ICHI décrit les interventions prévues ou réalisées pour répondre à ce besoin d'assistance ; dans une troisième étape, le fonctionnement de la personne après l'intervention est enregistré en utilisant la CIF, et permet d'évaluer si les objectifs ont été atteints (voir Figure 4).  
+      - Elles peuvent également être utilisées de la **manière combinée** suivante : dans une première étape, la CIF décrit les besoins d'assistance d'une personne liée à son fonctionnement ; dans une deuxième étape, ICHI décrit les interventions prévues ou réalisées pour répondre à ce besoin d'assistance ; dans une troisième étape, le fonctionnement de la personne après l'intervention est enregistré en utilisant la CIF, et permet d'évaluer si les objectifs ont été atteints (voir Figure 4).  
 
-
+- Rodrigues et al. (2017)[^16] décrivent les **difficultés de mapping** entre **ICHI** et **SNOMED-CT** :
+    - Il n'y a pas d'équivalent ICHI du lien sémantique SNOMED-CT « *hasSubsurgicaldeed* », ce qui empêche de coder avec ICHI deux actions lors d'une même intervention, ce qui est pourtant possible avec SNOMED-CT
+    - Il n'y a pas de liaison sémantique équivalente au « *Procedure site indirect* » de SNOMED-CT permettant de lier les catégories « *lesion* » et « *interventional equipment* » au « *anatomical entity* »
 
 
 
@@ -166,9 +169,7 @@ Un guide de référence ICHI a été publié à la sortie de la version Beta-3 e
  **Figure 4 : Exemple d'utilisation combinée des classifications de la famille de l'OMS (WHO-FIC : ICHI, CIF et CIM-11)**, Source : [Fortune et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/29342077/)[^15]
    </p> 
 
- - Rodrigues et al. (2017)[^16] décrivent les **difficultés de mapping** entre **ICHI** et **SNOMED-CT** :
-    - Il n'y a pas d'équivalent ICHI du lien sémantique SNOMED-CT « *hasSubsurgicaldeed* », ce qui empêche de coder avec ICHI deux actions lors d'une même intervention, ce qui est pourtant possible avec SNOMED-CT
-    - Il n'y a pas de liaison sémantique équivalente au « *Procedure site indirect* » de SNOMED-CT permettant de lier les catégories « *lesion* » et « *interventional equipment* » au « *anatomical entity* »
+ 
        
 
 
@@ -183,37 +184,33 @@ encore en développement, nous n'avons pas identifié de communication avec d'au
    - Les codes ICHI peuvent **être associés entre eux** :
       - En cas de **combinaison d'un code racine et d'un ou plusieurs codes extension** (à l'aide de « & » et de parenthèses pour grouper plusieurs codes extension ensemble) : ICHI code racine&(extension code&extension code)&(extension code&extension code)
       - En cas **d’interventions réalisées en même temps** (avec un « / », voir Figure 5) : les codes extension peuvent également être utilisés si nécessaire 
+     - En cas d'interventions combinées (avec un « + », voir Figure 6) : les codes extension peuvent également être utilisés si nécessaire 
+   - Les codes ICHI peuvent également être combinés à des codes issus d'autres classifications pour ajouter des précisions (avec un « # », ex : LOINC, International Standard Classification of Occupations pour décrire le prestataire de l'intervention, etc.)
 
-
-<p align="center">
+ <p align="center">
    <img src="../files_and_images/ichi/ichi_fig_5.png" width="700px"/>    
-
-
-
 
  **Figure 5 : Exemple de codes ICHI 
 pour des interventions réalisées en même temps**, Source : [Guide de référence version Beta-3](https://www.who.int/standards/classifications/international-classification-of-health-interventions)
    </p> 
   
- - En cas d'interventions combinées (avec un « + », voir Figure 6) : les codes extension peuvent également être utilisés si nécessaire 
+ 
     <p align="center">
    <img src="../files_and_images/ichi/ichi_fig_6.png" width="700px"/>    
-
-
-
 
  **Figure 6 :Exemple de codes ICHI 
 pour des interventions combinées**, Source : [Guide de référence version Beta-3](https://www.who.int/standards/classifications/international-classification-of-health-interventions)
    </p> 
                                                        
            
- - Les codes ICHI peuvent également être combinés à des codes issus d'autres classifications pour ajouter des précisions (avec un « # », ex : LOINC, International Standard Classification of Occupations pour décrire le prestataire de l'intervention, etc.)
+ 
 
 
-- **Contraintes d'implémentation** : *ICHI ne présente pas de contrainte d'implémentation.*
+### Contraintes d'implémentation : 
+*ICHI ne présente pas de contrainte d'implémentation.*
 
 
-- **Intensité de la perte de données au mapping** :
+### Intensité de la perte de données au mapping :
  La perte de données au *mapping* est encore peu documentée, quelques articles abordent cependant le sujet :  
     - L'article de Fortune et al. (2017)[^7] (voir l'élément *« Illustration concrète : exemple d’utilisation sur un cas simple »* en partie 1. Général) nous renseigne sur la perte d'informations lors du mapping de codes d'interventions infirmières portugais à la version Alpha de 2015. D'après cette analyse, 20 % des codes source ne sont pas associés à un code ICHI. Parmi les 80 % de codes source traduits dans un code ICHI, 64 % des codes ICHI décrivent une cible plus large que le code d'origine, dont 12 % décrivent également une action plus large. Cependant, 2 % des codes sont plus précis sur la cible. Cette évaluation de la perte de données au mapping ne peut toutefois pas être généralisée. Elle est valable uniquement dans le cas de la traduction de codes nationaux (portugais, en l'occurrence) concernant le domaine précis des interventions infirmières. Elle n'est pas représentative de l'ensemble des interventions contenues dans ICHI.
 

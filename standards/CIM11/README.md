@@ -20,37 +20,36 @@
 
 
 ## 1.Général
-- **Présentation** :
-     - **Pays d’origine** : International
-     - **Consortium d’origine** : Organisation Mondiale de la Santé (OMS)[^2]
-     - **Type de standard** : Nomenclature
+### Présentation :
+- **Pays d’origine** : International
+- **Consortium d’origine** : Organisation Mondiale de la Santé (OMS)[^2]
+- **Type de standard** : Nomenclature
+ - **Description** :
+      - La CIM-11 est la **11ème version** de la CIM (Classification Internationale des Maladies et des problèmes de santé connexes), adoptée par l'Assemblée mondiale de la Santé en **2019**[^1]. Sa dernière mise à jour date de janvier 2024[^3]. La CIM-11 est une classification de référence de la famille des classifications de l'OMS (**WHO-FIC Network**)[^4], au même titre que la CIF[^5] (Classification Internationale du Fonctionnement) et ICHI (*International Classification of Health Interventions*)[^6]. Dans ce cadre, la CIM-11 est donc conçue pour être utilisée en alignement avec ces nomenclatures et complétées par celles-ci sur leurs domaines respectifs du fonctionnement et des interventions[^7]. La CIM-11 succède à la CIM-10[^8], entrée en vigueur en 1995 et mise en place en France à partir de 2000 pour le PMSI et les Causes médicales de Décès.
 
 
-     - **Description** :
-          - La CIM-11 est la **11ème version** de la CIM (Classification Internationale des Maladies et des problèmes de santé connexes), adoptée par l'Assemblée mondiale de la Santé en **2019**[^1]. Sa dernière mise à jour date de janvier 2024[^3]. La CIM-11 est une classification de référence de la famille des classifications de l'OMS (**WHO-FIC Network**)[^4], au même titre que la CIF[^5] (Classification Internationale du Fonctionnement) et ICHI (*International Classification of Health Interventions*)[^6]. Dans ce cadre, la CIM-11 est donc conçue pour être utilisée en alignement avec ces nomenclatures et complétées par celles-ci sur leurs domaines respectifs du fonctionnement et des interventions[^7]. La CIM-11 succède à la CIM-10[^8], entrée en vigueur en 1995 et mise en place en France à partir de 2000 pour le PMSI et les Causes médicales de Décès.
+      - La Classification Internationale des Maladies et des problèmes de santé connexes (CIM) est la **norme de référence international** pour l'enregistrement, la notification, l'analyse, l'interprétation et la comparaison systématiques des **données de mortalité et de morbidité**. Elle permet aux pays de recenser les problèmes de santé et d'établir des statistiques au moyen d'un système de classification actualisé et cliniquement pertinent.
 
 
-          - La Classification Internationale des Maladies et des problèmes de santé connexes (CIM) est la **norme de référence international** pour l'enregistrement, la notification, l'analyse, l'interprétation et la comparaison systématiques des **données de mortalité et de morbidité**. Elle permet aux pays de recenser les problèmes de santé et d'établir des statistiques au moyen d'un système de classification actualisé et cliniquement pertinent.
+      - En France, on distingue la version CIM-10 de l’OMS, utilisée par la CNAM et le CépiDC pour décrire respectivement les affections de longue durée, et les causes médicales de décès, et la version CIM-10 FR maintenue par l’ATIH. Celle-ci est principalement la même que la CIM-10 OMS, mais contient quelques spécificités françaises.
+    - Pour la première fois, dans sa 11e version, la CIM est **totalement numérique**[^9] : elle comporte des outils (interface de navigation, outil de codage, outil de traduction) et un logiciel (API[^10]) en ligne et hors ligne pour faciliter le codage et décrire précisément les événements de santé[^1]. Néanmoins, il existe d’ores et déjà des logiciels permettant de coder automatiquement en CIM-10, tel que le logiciel IRIS /MUSE maintenu par l’Iris Core group utilisé pour coder automatiquement les causes de décès, qui pourront être réutilisés pour la CIM-11.
+    - La CIM-11 contient **17 000** codes uniques, voir l'élément « Flexibilité du standard, personnalisation » dans la partie 3. Technique). L'algorithme de recherche de l'outil de codage, fondé sur les termes contenus dans l'index français, interprète plus de 1,6 million de termes français[^11]
+   - La CIM-11 comprend **26 chapitres + 2 sections** supplémentaires (voir Figure 1)[^12] :     
+      - Les 26 chapitres et la section supplémentaire « V » comportent les codes racine (stem code) décrivant **les maladies, leurs manifestations et symptômes**, reflétant l'état actuel des connaissances scientifiques
+      - La section « X » est celui des **codes extensions**, permettant d'apporter des détails et de qualifier le diagnostic pour un codage de précision
+      - Le nœud « *Health Devices, Equipment and Supplies* » de la section « X » contient **ICMD**[^13] (*International Classification of Medical Devices*) et la section « V » contient le **WHODAS 2.0**[^14] (*WHO Disability Assessment Schedule 2.0*) qui repose sur la CIF au niveau des concepts[^15]. En effet, Il couvre les 6 domaines suivants issus de la CIF : les fonctions cognitives, la mobilité, les soins personnels, les interactions avec d’autres personnes, les activités de la vie quotidienne et la participation
 
 
-          - En France, on distingue la version CIM-10 de l’OMS, utilisée par la CNAM et le CépiDC pour décrire respectivement les affections de longue durée, et les causes médicales de décès, et la version CIM-10 FR maintenue par l’ATIH. Celle-ci est principalement la même que la CIM-10 OMS, mais contient quelques spécificités françaises.
-
-
-          - Pour la première fois, dans sa 11e version, la CIM est **totalement numérique**[^9] : elle comporte des outils (interface de navigation, outil de codage, outil de traduction) et un logiciel (API[^10]) en ligne et hors ligne pour faciliter le codage et décrire précisément les événements de santé[^1]. Néanmoins, il existe d’ores et déjà des logiciels permettant de coder automatiquement en CIM-10, tel que le logiciel IRIS /MUSE maintenu par l’Iris Core group utilisé pour coder automatiquement les causes de décès, qui pourront être réutilisés pour la CIM-11.
-
-
-          - La CIM-11 contient **17 000** codes uniques, voir l'élément « Flexibilité du standard, personnalisation » dans la partie 3. Technique). L'algorithme de recherche de l'outil de codage, fondé sur les termes contenus dans l'index français, interprète plus de 1,6 million de termes français[^11]
-
-
-          - La CIM-11 comprend **26 chapitres + 2 sections** supplémentaires (voir Figure 1)[^12] :
-             - Les 26 chapitres et la section supplémentaire « V » comportent les codes racine (stem code) décrivant **les maladies, leurs manifestations et symptômes**, reflétant l'état actuel des connaissances scientifiques
-             - La section « X » est celui des **codes extensions**, permettant d'apporter des détails et de qualifier le diagnostic pour un codage de précision
-             - Le nœud « *Health Devices, Equipment and Supplies* » de la section « X » contient **ICMD**[^13] (*International Classification of Medical Devices*) et la section « V » contient le **WHODAS 2.0**[^14] (*WHO Disability Assessment Schedule 2.0*) qui repose sur la CIF au niveau des concepts[^15]. En effet, Il couvre les 6 domaines suivants issus de la CIF : les fonctions cognitives, la mobilité, les soins personnels, les interactions avec d’autres personnes, les activités de la vie quotidienne et la participation
-
-
-             - Les chapitres et sections suivants n'étaient pas inclus dans les précédentes versions de la CIM[^16].
+   - Les chapitres et sections suivants n'étaient pas inclus dans les précédentes versions de la CIM[^16].
         - Certains chapitres ont été nouvellement individualisés en CIM-11, mais contiennent des codes d’ores et déjà écrits en CIM-10 : chapitre 4 (Maladies du système immunitaire), Chapitre 7 (Troubles du cycle veille-sommeil), Chapitre 17 (Affections liées à la santé sexuelle) ;
         - D’autres en revanche sont entièrement innovants, contenant des codes qui n'étaient pas dans le périmètre CIM-10 : chapitre 26 (Affections de médecine traditionnelle – Module I), Section « V »  (Section supplémentaire pour l'évaluation du fonctionnement), Section « X » (Codes d'extension).
+     - La CIM-11 est constituée de 3 composantes[^15] (innovation structurelle principale de la CIM-11) : (1) la « **fondation** » est l'ensemble structuré et hiérarchisé (réseau relationnel) de termes (« vocabulaire ») ; (2) le **modèle conceptuel** organise ces termes ; (3) les **linéarisations** (ou *tabular lists*) sont des extraits de données (jeux de valeurs) issues de la « fondation » organisés pour décrire spécifiquement un domaine.
+Par exemple, dans la fondation, l'infection par le VIH est à la fois une maladie du système immunitaire, une maladie infectieuse, une maladie sexuellement transmissible. Dans la linéarisation de morbi-mortalité[^18], le VIH est prioritairement et uniquement classée dans les maladies infectieuses
+
+
+**Organisme en charge** : OMS
+
+
 
 
 <p align="center">
@@ -64,16 +63,9 @@
 
 
 
- - La CIM-11 est constituée de 3 composantes[^15] (innovation structurelle principale de la CIM-11) : (1) la « **fondation** » est l'ensemble structuré et hiérarchisé (réseau relationnel) de termes (« vocabulaire ») ; (2) le **modèle conceptuel** organise ces termes ; (3) les **linéarisations** (ou *tabular lists*) sont des extraits de données (jeux de valeurs) issues de la « fondation » organisés pour décrire spécifiquement un domaine.
-Par exemple, dans la fondation, l'infection par le VIH est à la fois une maladie du système immunitaire, une maladie infectieuse, une maladie sexuellement transmissible. Dans la linéarisation de morbi-mortalité[^18], le VIH est prioritairement et uniquement classée dans les maladies infectieuses
+ 
 
-
-**Organisme en charge** : OMS
-
-
-
-
-- **Application** :
+### Application :
    - **Domaine d'application en santé** : La CIM-11 permet la collecte et l'étude des statistiques sanitaires liées à la morbidité et à la mortalité ainsi que leur comparabilité internationale. Elle trouve ainsi  de nombreuses applications : recherche épidémiologique, analyse de la performance des systèmes de santé, amélioration de la qualité et de la sécurité des soins, étude des soins de santé primaires, études pour le regroupement des cas (casemix) pour déterminer le financement des établissements de santé, etc.[^8]
 
 
@@ -105,7 +97,7 @@ Dans l'ensemble, environ **83% des médecins ont par conséquent une expérience
 
 
 
-- **Données** :
+### Données :
    - **Type de terminologie** : Ontologie
    - **Type de granularité** :
        - **Les codes de la CIM-11 sont des codes alphanumériques organisés selon une arborescence à plusieurs niveaux, allant du niveau d’information le plus général au plus précis.**
@@ -159,7 +151,7 @@ Dans l'ensemble, environ **83% des médecins ont par conséquent une expérience
 
 
 
-- **Disponibilité de la documentation d'implémentation** :
+### Disponibilité de la documentation d'implémentation :
   - Guide de référence[^27] - dont la traduction française a été envoyée, et reçue par l’OMS
   - Guide de mise en œuvre ou de transition[^8]
   - Aide-mémoire[^28]
@@ -169,15 +161,15 @@ Dans l'ensemble, environ **83% des médecins ont par conséquent une expérience
 
 
   ## 2.Gouvernance
-- **Modalités d'accès et distribution des solutions basées sur ce standard** :
-    - La CIM-11 est accessible à tous, via un accès gratuit en ligne ou en téléchargement[^19]
-    - Elle est distribuée sous la licence « ***Creative Commons Attribution-NoDerivs 3.0 IGO*** »[^1]. Il n'est pas autorisé d'apporter des modifications à la classification[^30] :  
-      - Les mappings entre la CIM-11 (et/ou ses traductions) et d’autres terminologies ne sont pas couverts par cette licence et doivent faire l’objet d’une autorisation distincte de l’OMS
-L'ajout de champs à la CIM-11 n'est autorisé que dans le cas où ces ajouts sont clairement identifiés comme ne provenant pas de l'OMS
+### Modalités d'accès et distribution des solutions basées sur ce standard :
+- La CIM-11 est accessible à tous, via un accès gratuit en ligne ou en téléchargement[^19]
+- Elle est distribuée sous la licence « ***Creative Commons Attribution-NoDerivs 3.0 IGO*** »[^1]. Il n'est pas autorisé d'apporter des modifications à la classification[^30] :       
+   - Les mappings entre la CIM-11 (et/ou ses traductions) et d’autres terminologies ne sont pas couverts par cette licence et doivent faire l’objet d’une autorisation distincte de l’OMS
+   - L'ajout de champs à la CIM-11 n'est autorisé que dans le cas où ces ajouts sont clairement identifiés comme ne provenant pas de l'OMS
 L'API (en ligne et en local) et l'outil de codage sont également distribués sous la même licence.
 
 
-- **Processus de prise de décision sur le standard** :
+### Processus de prise de décision sur le standard :
    - Les mises à jour sont entreprises par l'OMS en collaboration avec le Réseau de la famille des classifications internationales de l'OMS. Ses membres sont principalement des représentants des pays qui supervisent les activités de classification dans leur propre pays[^8].
    - Les utilisateurs peuvent également soumettre des propositions de mise à jour :
        - Soit par une plateforme Web accessible en créant un compte sur le site[^31]
@@ -185,32 +177,33 @@ L'API (en ligne et en local) et l'outil de codage sont également distribués so
    - Une procédure spécifique de collecte de propositions pour assurer la maintenance de la CIM-11 en France est conduite par le Mortality Reference group de l’OMS pour les données de mortalité, au sein duquel la France est représentée par le CépiDc (référent mortalité du centre collaborateur de l’OMS)
 
 
-- **Maturité du standard** :
-  - **Fréquence de mise à jour** :
-     - La révision actuelle est la **CIM-11**, adoptée en 2019 par l'Assemblée mondiale de la Santé et entrée en vigueur le **1er janvier 2022**.
-     - La révision précédente, la **CIM-10**, **est entrée en vigueur en 1995** (elle demeure en mai 2023 la plus utilisée mais la transition vers la CIM-11 a commencé, voir l'élément « Adoption du standard » en partie 4. Valorisation).
-     - La première version de la CIM révisée par l'OMS est la CIM-6 en 1948[^19]
-     - L'OMS publie des modifications mineures **tous les ans** et majeures **tous les trois ans**[^15]
+### Maturité du standard :
+- **Fréquence de mise à jour** :
+   - La révision actuelle est la **CIM-11**, adoptée en 2019 par l'Assemblée mondiale de la Santé et entrée en vigueur le **1er janvier 2022**.
+   - La révision précédente, la **CIM-10**, **est entrée en vigueur en 1995** (elle demeure en mai 2023 la plus utilisée mais la transition vers la CIM-11 a commencé, voir l'élément « Adoption du standard » en partie 4. Valorisation).
+   - La première version de la CIM révisée par l'OMS est la CIM-6 en 1948[^19]
+   - L'OMS publie des modifications mineures **tous les ans** et majeures **tous les trois ans**[^15]
      - La révision actuelle de la CIM-11 a été mise à jour en janvier 2024[^2]
      - L’OMS publie la version actuelle en janvier de chaque année
 
 
-- **Existence de financements pour standardisation** : L'entrée en vigueur étant encore récente, et le planning d'implémentation prévu variant selon les contextes nationaux, il n'y a pas de financements OMS pour la transition vers la CIM-11.
+### Existence de financements pour standardisation :
+ L'entrée en vigueur étant encore récente, et le planning d'implémentation prévu variant selon les contextes nationaux, il n'y a pas de financements OMS pour la transition vers la CIM-11.
 
 
-- **Ressources d’accès à la terminologie et liens associés** :
+### Ressources d’accès à la terminologie et liens associés :
    - Interface de navigation (en français) pour parcourir le contenu de la classification[^12]
    - API de la CIM-11 offre un accès programmatique à la classification (hors ligne et en ligne) et s'intègre aisément dans les logiciels sanitaires locaux[^10]
    - Outil d'aide au codage[^11]
 
 
 ## 3.Technique
-- **En France, utilisation depuis 2015 de deux versions de la CIM-10 :**
+### En France, utilisation depuis 2015 de deux versions de la CIM-10 :
   - **CIM-10 OMS pour les causes médicales de décès et ALD**
   - **CIM-10 française pour le PMSI : [version 2015](https://www.atih.sante.fr/cim-10-fr-2015-usage-pmsi) et [version 2023](https://www.atih.sante.fr/cim-10-fr-2023-usage-pmsi)**
 
 
-- **Capacité de traduction vers un autre standard (intra types de standards)** :
+### Capacité de traduction vers un autre standard (intra types de standards) :
    - Sur la CIM-10 OMS (version utilisée par la CNAM et par le CépiDC, mais non par l’ATIH qui utilise la CIM-10 FR) :
       - La CIM-11 est **partiellement alignée avec la CIM-10** : elle contient la **CIM-O** (extension **oncologie**) dans le nœud « CIM-O » du chapitre « extensions » de la version accessible via les API de juin 2018 ou dans le nœud « Histopathologie » de la version en ligne d'avril 2019  
       - Par ailleurs, un **mapping entre la CIM-10 et la CIM-11** a été réalisé par l'OMS  
@@ -242,14 +235,14 @@ L'API (en ligne et en local) et l'outil de codage sont également distribués so
 Un outil de mapping entre **SNOMED-CT** et la **CIM-11** est en cours de développement (ICD-11 *Mapping Tool Page*[^36]) mais il n’y a pas encore d’accès public à cette ressource car elle est en cours de finalisation avant la publication.
 
 
-- **Communication avec d'autres standards (inter typologies de standards)** :
+### Communication avec d'autres standards (inter typologies de standards) :
   - Les codes CIM-11 peuvent être transférés par **FHIR**[^37]
   - Les codes CIM-11 sont acceptés par le ***Sentinel Common Data Model***[^38]
   - La CIM-11 n'est **pas encore considérée comme un concept standard accepté dans OMOP-CDM** (à la différence de la CIM-10).
   - **OSIRIS**[^39] et **i2b2**[^40] n'utilisent pas encore la CIM-11 (mais la CIM-10).
 
 
-- **Flexibilité du standard, personnalisation** :
+### Flexibilité du standard, personnalisation :
    - La possibilité d'utiliser des **codes extensions** permet d’apporter des précisions supplémentaires à l'information contenue dans les codes racine (*stem code*[^41]). Les codes extension ne peuvent pas être utilisés de manière indépendante sans code racine. Il existe deux types de codes extension :
       - Type 1 : Les codes extension qui permettent **d'ajouter des détails** à un code racine (en termes de sévérité, temporalité, anatomie, histopathologie, médicaments, dispositifs médicaux, etc.).
       - Type 2 : les codes extension qui indiquent **comment le diagnostic doit être interprété / utilisé** (timing du diagnostic, certitude, méthode, contexte, etc.)
@@ -265,11 +258,11 @@ Un outil de mapping entre **SNOMED-CT** et la **CIM-11** est en cours de dévelo
    - La CIM-11 n'est pas personnalisable (voir l'élément « *Modalités d'accès et distribution des solutions basées sur ce standard* » en partie 2. Gouvernance).
 
 
-- **Contraintes d'implémentation** :
+### Contraintes d'implémentation :
 La CIM-11 ne présente pas de contrainte d'implémentation.
 
 
-- **Intensité de la perte de données au mapping** :
+### Intensité de la perte de données au mapping :
   - Barke et al. (2018)[^43] ont réalisé une expérience pilote permettant de tester une nouvelle manière de classifier les douleurs chroniques dans la CIM-11 (1 groupe de symptômes associés à des douleurs chroniques primaires et 6 groupes associés à des douleurs secondaires). Les axes de l'évaluation sont les suivants : exhaustivité, exclusivité mutuelle des catégories, pertinence des catégories, confiance des médecins dans le codage. Les 5 centres indépendants participants répartis sur 3 continents ont dû attribuer un code CIM-11 à 507 patients de manière consécutive :
     - Seulement 3% des diagnostics de douleur chronique ne correspondent à aucune des catégories proposées : l'exhaustivité est donc de 97%.
     - 98% des diagnostics sont classifiés dans une catégorie unique, notamment grâce à l'utilisation de codes extension
@@ -311,7 +304,7 @@ La CIM-11 ne présente pas de contrainte d'implémentation.
 
 
 
-- **Existence d’un historique et accessibilité à l’historique**
+### Existence d’un historique et accessibilité à l’historique
   - L'historique des mises à jour de la CIM-10[^48] et la version des anciennes interfaces de navigation de la CIM-10 (pour les versions des années 2008, 2010, 2014, 2015, 2016 et 2019) sont disponibles[^19]
   - L’ATIH a utilisé la version CIM-10 OMS jusqu’à 2014 pour le codage PMSI ; puis la CIM-10 FR à partir de 2015. Au début de chaque année, l’ATIH publie une version mise à jour de la CIM-10, la version actuelle date de décembre 2023 (en mars 2024).
 
@@ -321,12 +314,12 @@ La CIM-11 ne présente pas de contrainte d'implémentation.
   ## 4.Valorisation
 
 
-- **Accessibilité à des ressources de formation** :
+### Accessibilité à des ressources de formation :
   - Des ateliers de formation pour l’utilisation de la CIM-11 ont été organisés dans toutes les régions de l’OMS et un soutien individuel sera régulièrement fourni[^49] pour faciliter l'implémentation de la classification dans les pays membres[^8]
   - Des ressources de formation sur la CIM-11 sont disponibles en libre d’accès (12 cours accessibles)[^50]
 
 
-- **Disponibilité de la documentation scientifique démontrant l'intérêt** :
+### Disponibilité de la documentation scientifique démontrant l'intérêt :
   - Gaebel et al. (2018)[^51] **comparent l'utilisation de la CIM-10 et de la version bêta (draft) de la CIM-11** pour une sélection de troubles mentaux. L'étude, réalisée dans 4 établissements de santé allemands, donne les résultats suivants :
      - Dans le cas de cas **cliniques complexes**, les auteurs mettent en lumière les avantages de l'utilisation de la CIM-11 par rapport à la CIM-10 :
         - Le temps de recherche du diagnostic est plus court
@@ -339,8 +332,8 @@ La CIM-11 ne présente pas de contrainte d'implémentation.
  - Des **exemples de transition de la CIM-10 à la CIM-11 au Koweït[^20] et au Kenya[^52]** mettent en lumière la **simplification** du codage et une amélioration de la **fiabilité** des données apportées par l'utilisation de la CIM-11.
 
 
-- **Adoption du standard** :  
-Adoption officielle :
+### Adoption du standard :  
+- Adoption officielle :
   - Depuis l'entrée en vigueur de la CIM-11 en 2022, les pays sont encouragés à initier son implémentation.
   - Cependant, l'OMS anticipe que la **transition** pourra prendre du temps[^53] :
       - Environ **1-2 ans** pour un pays qui n'a jamais implémenté la CIM et dispose d'un système d'information simple
@@ -361,6 +354,20 @@ Adoption officielle :
  - Utilisation sur le marché :
     - L'implémentation de la CIM-11 parmi les pays membres de l'OMS progresse : en février 2022, l'OMS indique que la CIM-11 est utilisée par **35 pays**[^1] ; en février 2023, **64 pays** sont engagés dans le processus d’implémentation de la CIM-11[^56].
     - L'OMS ne fournit pas la liste des pays utilisant la CIM-11 mais publie une carte d'évolution de l'implémentation précoce (dès 2019)[^19]. Ainsi, à fin 2019, les pays dans lesquels les implémentations sont les plus nombreuses sont les suivants : Chine, Inde, Égypte, Tanzanie, Uganda, Kenya, Etats-Unis, Mexique, Colombie, France, Allemagne, Pologne, Russie (voir Carte 1).
+   - Eurostat a lancé en 2023 une *Task Force ICD 11* for mortality coding afin d’établir les marges de diffusion des données européennes de mortalité en lien avec le passage à la CIM-11 et suivre l’avancée des implémentations.
+      - Chaque année, Eurostat demande aux États membres leurs perspectives d’implémentation de la CIM-11 pour le codage de la mortalité
+      - Sur les répondants à l’enquête, seulement 3 pays prévoient d’implémenter la CIM-11 avant 2027, 8 en 2027, 5 en 2028 et 7 après
+
+
+   - Lorsque la CIM-11 sera adoptée **en France de manière officielle**, les utilisateurs cibles seront les suivants[^15] :
+     - L'**Assurance maladie** pour qualifier les affections de longues durées
+     - L'**ATIH** et les **établissements de santé** pour coder les diagnostics dans les recueils d’information des différents champs PMSI (Programme de Médicalisation des Systèmes d’Information)
+     - Le **CépiDC** de l'INSERM pour le codage et la production annuelle des statistiques des causes médicales des décès en France
+         - NB : Le CépiDc ne pourra passer à la CIM-11 pour coder les causes de décès que lorsqu'un taux de codage automatique d'au moins 80% des certificats sera atteint par les outils de codage automatique (IRIS/MUSE, Doris) ; ceci afin que les certificats restant à coder manuellement puissent être codés dans les délais requis. Une première version IRIS/MUSE 11 codant en CIM-11 a été mise à disposition pour des tests en octobre 2023.
+       - **La DREES** pour le rapport sur « L'État de santé de la population en France » et l'enquête « Santé mentale en population générale »
+       - **L'IRDES** pour l'enquête « Santé et protection sociale »
+       - **L'OCDE** pour ses profils de santé par pays
+   - **Au niveau mondial, l'OMS recense 10 millions** d’accès à l’API de la CIM-11 par mois, 100 000 utilisations hors-ligne (via Docker) et **33 000** sessions mensuelles sur le navigateur[^57].
 
 
 
@@ -381,55 +388,41 @@ Adoption officielle :
 
 
 
-- Eurostat a lancé en 2023 une *Task Force ICD 11* for mortality coding afin d’établir les marges de diffusion des données européennes de mortalité en lien avec le passage à la CIM-11 et suivre l’avancée des implémentations.
-- Chaque année, Eurostat demande aux États membres leurs perspectives d’implémentation de la CIM-11 pour le codage de la mortalité
-- Sur les répondants à l’enquête, seulement 3 pays prévoient d’implémenter la CIM-11 avant 2027, 8 en 2027, 5 en 2028 et 7 après
 
 
-  - Lorsque la CIM-11 sera adoptée **en France de manière officielle**, les utilisateurs cibles seront les suivants[^15] :
-     - L'**Assurance maladie** pour qualifier les affections de longues durées
-     - L'**ATIH** et les **établissements de santé** pour coder les diagnostics dans les recueils d’information des différents champs PMSI (Programme de Médicalisation des Systèmes d’Information)
-     - Le **CépiDC** de l'INSERM pour le codage et la production annuelle des statistiques des causes médicales des décès en France
-         - NB : Le CépiDc ne pourra passer à la CIM-11 pour coder les causes de décès que lorsqu'un taux de codage automatique d'au moins 80% des certificats sera atteint par les outils de codage automatique (IRIS/MUSE, Doris) ; ceci afin que les certificats restant à coder manuellement puissent être codés dans les délais requis. Une première version IRIS/MUSE 11 codant en CIM-11 a été mise à disposition pour des tests en octobre 2023.
-   - **La DREES** pour le rapport sur « L'État de santé de la population en France » et l'enquête « Santé mentale en population générale »
-   - **L'IRDES** pour l'enquête « Santé et protection sociale »
-   - **L'OCDE** pour ses profils de santé par pays
-      - **Au niveau mondial, l'OMS recense 10 millions** d’accès à l’API de la CIM-11 par mois, 100 000 utilisations hors-ligne (via Docker) et **33 000** sessions mensuelles sur le navigateur[^57].
 
-
-- **Fournisseurs de service ayant l'expertise en France** :
+### Fournisseurs de service ayant l'expertise en France :
 En mai 2023, nous n'avons pas identifié de fournisseurs de service[^58] ayant l'expertise. Seules les instances publiques participant à la traduction et à la préparation de l'implémentation de la classification en sont expertes : l'ATIH, l'ANS et le CépiDc (dans le cadre de sa participation pour la mortalité au CC OMS français) ; ces structures ont ainsi été sollicitées par l'OMS pour participer à la traduction de la classification en français.
 
 
 
 
 ## 5.Utilisation
-- **Simplicité d'usage** :
-   - **Complexité d’utilisation liée au mélange entre une classification statistique et un langage international, en revanche les outils sont simple à installer et consulter**
-   - Le guide d'implémentation[^8] décrit la CIM-11 comme : « **facile à installer et à utiliser en ligne et hors-ligne** car elle utilise un logiciel hôte gratuit », notamment en raison du fait qu'elle est à présent entièrement numérique
-   - Dans l'étude d'Ibrahim et al. (2022)[^20], **la simplicité d'usage** fait partie des trois critères utilisés pour évaluer l'expérience utilisateur des 241 médecins ayant participé au projet pilote. La simplicité d'usage a été estimée par les médecins comme étant « assez facile » dans 47,1% des cas, « modéré » dans 36,3% des cas et « difficile » dans 16,5% des cas.
+### Simplicité d'usage :
+- **Complexité d’utilisation liée au mélange entre une classification statistique et un langage international, en revanche les outils sont simple à installer et consulter**
+- Le guide d'implémentation[^8] décrit la CIM-11 comme : « **facile à installer et à utiliser en ligne et hors-ligne** car elle utilise un logiciel hôte gratuit », notamment en raison du fait qu'elle est à présent entièrement numérique
+- Dans l'étude d'Ibrahim et al. (2022)[^20], **la simplicité d'usage** fait partie des trois critères utilisés pour évaluer l'expérience utilisateur des 241 médecins ayant participé au projet pilote. La simplicité d'usage a été estimée par les médecins comme étant « assez facile » dans 47,1% des cas, « modéré » dans 36,3% des cas et « difficile » dans 16,5% des cas.
 
 
+### Existence d'une communauté en ligne et degré d'activité:
+Compte tenu de sa récente entrée en vigueur, la communauté en ligne relative à la CIM-11 est encore relativement petite :  
+   - Forums de discussion[^59].
+   - Vidéos de présentation de la CIM (ses révisions, questions / réponses, etc.) sur la chaîne YouTube de l'OMS[^60].
 
 
-- **Existence d'une communauté en ligne et degré d'activité**:
-Compte tenu de sa récente entrée en vigueur, la communauté en ligne relative à la CIM-11 est encore relativement petite :
-    - Forums de discussion[^59].
-    - Vidéos de présentation de la CIM (ses révisions, questions / réponses, etc.) sur la chaîne YouTube de l'OMS[^60].
+### Outils d’implémentation / aide au codage:
+- **Outil d’aide au codage** CIM-11[^11] (aide en français pour faciliter son utilisation[^61])  
+- **CoDEdit** : outil créé par l’OMS en 2014 permettant de faire des contrôles de routine pour les statistiques sur les causes de décès, codées avec la nomenclature CIM-11. Il peut signaler une mauvaise utilisation des codes, alerter sur des utilisations abusives et faire un résumé des données[^62,63].
+- ***ICD Field Implementation Tool (ICD-FIT)*** : outil de formation au codage et d'auto-évaluation en ligne pour la CIM-11 créé par l’OMS en 2019. L'utilisateur s'exerce à coder avec la nomenclature CIM-11 et obtient un retour sur la précision de son codage[^64].
+- **IRIS**[^65] : logiciel développé par Iris Institute qui permet d’identifier la cause sous-jacente de la mort parmi les maladies et affections renseignées sur le certificat de décès.
+   - L’IRIS code l’ensemble des causes de décès et le module MUSE détermine la cause initiale.
 
 
-- **Outils d’implémentation / aide au codage**:
-     - **Outil d’aide au codage** CIM-11[^11] (aide en français pour faciliter son utilisation[^61])  
-     - **CoDEdit** : outil créé par l’OMS en 2014 permettant de faire des contrôles de routine pour les statistiques sur les causes de décès, codées avec la nomenclature CIM-11. Il peut signaler une mauvaise utilisation des codes, alerter sur des utilisations abusives et faire un résumé des données[^62,63].
-     - ***ICD Field Implementation Tool (ICD-FIT)*** : outil de formation au codage et d'auto-évaluation en ligne pour la CIM-11 créé par l’OMS en 2019. L'utilisateur s'exerce à coder avec la nomenclature CIM-11 et obtient un retour sur la précision de son codage[^64].
-     - **IRIS**[^65] : logiciel développé par Iris Institute qui permet d’identifier la cause sous-jacente de la mort parmi les maladies et affections renseignées sur le certificat de décès.
-        - L’IRIS code l’ensemble des causes de décès et le module MUSE détermine la cause initiale.
-
-
-- **Outils compatibles** :
+### Outils compatibles :
 3 outils sont compatibles avec la CIM-11 :
-    - **ANACoD 3**[^66] (voir Figure 6) : outil en ligne mis à disposition par l'OMS permettant d’analyser des données sur la mortalité et les causes de décès (l'utilisateur peut utiliser des données d'échantillon ou ses propres données). Il génère des indicateurs qui révèlent les  
+   - **ANACoD 3**[^66] (voir Figure 6) : outil en ligne mis à disposition par l'OMS permettant d’analyser des données sur la mortalité et les causes de décès (l'utilisateur peut utiliser des données d'échantillon ou ses propres données). Il génère des indicateurs qui révèlent les  
      problèmes potentiels de qualité des données et des indicateurs comme le taux de mortalité par sexe et par âge, l'espérance de vie à la naissance, etc.  
+   - **DORIS**[^67] (voir Figure 7) : logiciel en ligne développé par l'OMS qui aide à trouver la cause sous-jacente du décès à partir des certificats de décès. Il se présente sous la forme d’un formulaire à remplir.
 
 
 <p align="center">
@@ -446,8 +439,6 @@ Compte tenu de sa récente entrée en vigueur, la communauté en ligne relative 
 
 
 
-  
-- **DORIS**[^67] (voir Figure 7) : logiciel en ligne développé par l'OMS qui aide à trouver la cause sous-jacente du décès à partir des certificats de décès. Il se présente sous la forme d’un formulaire à remplir.
 
 
 <p align="center">
@@ -460,12 +451,16 @@ Compte tenu de sa récente entrée en vigueur, la communauté en ligne relative 
    </p>  
 
 
+### Existence d'extensions certifiées :
+La CIM-11 permet de combiner plusieurs codes racines et également d'ajouter des codes extension (voir l'élément « Flexibilité du standard, personnalisation » dans la partie 3. Technique).
 
 
-- **Bibliothèque de requêtes types** : Le guide de référence[^30] donne plusieurs exemples de codes CIM-11 et en détaille la composition.
+
+### Bibliothèque de requêtes types : 
+Le guide de référence[^30] donne plusieurs exemples de codes CIM-11 et en détaille la composition.
 
 
-- **Lisible par un humain : Oui**
+### Lisible par un humain : Oui
    - Les codes de la CIM-11 ne sont pas directement compréhensibles par un être humain, mais il est possible de retrouver la signification du code en utilisant le navigateur de la CIM-11.
 
 
