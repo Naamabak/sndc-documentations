@@ -279,10 +279,10 @@ la version portugaise : https://confluence.ihtsdotools.org/display/DOCSTARTPT?pr
 
 
  <p align="center">
-   <img src="../files_and_images/snomed_ct/snomed_Fig_5.png" width="700px"/>    
+   <img src="../files_and_images/snomed_ct/snomed_Fig_4.png" width="700px"/>    
 
 
-   **Carte 1 :Membres et affiliés de SNOMED International en 2023**, Source : [Our Members | SNOMED International](https://www.snomed.org/members?lang=fr)
+   **Figure 5 : Alignement entre SNOMED CT et la CIM-11**, Source : [Source : Rodrigues et al. (2015)]()
    </p>  
 
    - Le double mapping consistant au mapping de SNOMED CT à la CIM-10 (1) puis de la CIM-10 à la CIM-11 (2) permet de relier SNOMED CT à la CIM-11.
