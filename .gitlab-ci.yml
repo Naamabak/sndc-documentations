@@ -3,7 +3,7 @@ stages:
 
 test-licence:
   stage: test
-  image: node:16
+  image: node:18
   before_script:
   - yarn install
   script:
@@ -12,7 +12,7 @@ test-licence:
 
 test-internal-link-and-build:
   stage: test
-  image: node:16
+  image: node:18
   before_script:
     - yarn install
     - yarn upgrade
@@ -23,7 +23,7 @@ test-internal-link-and-build:
 
 test-external-link:
   stage: test
-  image: node:16
+  image: node:18
   before_script:
     - yarn install
   script:
