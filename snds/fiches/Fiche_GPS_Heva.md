@@ -23,7 +23,9 @@ Cette fiche a été rédigée en collaboration entre le Health Data Hub et la so
 
 Le Graphique pour Parcourir le SNDS (GPS) est un outil de visualisation développé par la société [Heva](https://hevaweb.com/fr). Il a pour objectif d’aider à appréhender la complexité de structure du SNDS (cf. [schéma relationnel du SNDS](../formation_snds/initiation/schema_relationnel_snds.md) et d’aider à localiser les informations d’un parcours de soins bénéficiaires. Cet outil permet d’identifier les différentes sources de données ([DCIR](../glossaire/DCIR.md)  et [PMSI](../glossaire/PMSI.md)) et les tables à utiliser dans la confection des requêtes pour travailler sur le SNDS.
 
-Il est disponible ici : [GPS SNDS HEVA](https://gps.hevaweb.com/snds/roue)
+::: warning Lien du GPS SNDS  
+Voici les liens du [site d'Heva](https://gps.hevaweb.com/) et du [GPS SNDS](https://gps.hevaweb.com/snds/roue).  
+:::  
 
 ## 4 niveaux 
 
