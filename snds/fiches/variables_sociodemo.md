@@ -190,7 +190,7 @@ L'analyse de la précarité peut se faire par le repérage des publics ayant acc
 * les bénéficiaires de l'ACS, 
 * les bénéficiaires de l'AME. 
 
-Il est également possible de repérer les [détenus](detenus.md) dans le SNDS.
+Il est également possible de repérer les [détenus](../fiches/detenus.md) dans le SNDS.
 
 ::: tip Attention 
 Depuis le 1er novembre 2019, la [Complémentaire santé solidaire](complementaire_sante_solidaire.md) remplace la CMU-C et l’ACS. Pour en savoir plus sur la [Complémentaire santé solidaire](https://www.ameli.fr/paris/assure/droits-demarches/difficultes-acces-droits-soins/complementaire-sante).

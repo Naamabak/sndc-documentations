@@ -15,26 +15,27 @@ tags:
 
 Cette fiche a été initialement rédigée par Céline Leroy, ARS Normandie.
 
-MAJ: 08/2020, 01/2024  
+MAJ:  10/2024  
 
 *À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
 
-Lorsque l'on parle de détenus, on considère l'ensemble des individus mis sous main de justice et non seulement les individus sous écrou. 
+Lorsque l'on parle de détenus, on considère l'ensemble des individus mis sous main de justice et non seulement les individus sous main de justice. 
 
 Il s'agit des individus:
 - incarcérés (condamnés ou en détention provisoire) 
 - en aménagement de peine (semi-liberté, placement à l'extérieur ou sous surveillance électronique) dès lors qu'ils n'exercent pas d'activité professionnelle rémunérée.
 
-Cette population est rattachée au régime général d'assurance maladie et affiliée auprès du Centre national de la protection sociale des personnes écrouées (CNPE).
+Cette population est rattachée au régime général d'assurance maladie. les individus incarcérés et ceux en aménagement de peine sans activité sont affiliés auprès du Centre national de la protection sociale des personnes écrouées (CNPE) géré par les CPAM de l'Oise et du Lot.
 
 ## Repérage des détenus
 
 ### Dans le DCIR 
 
 Dans le SNDS et plus praticulièrement dans les bases du DCIR, la population des détenus se repère avec la variable `RGM_COD`, lorsque le code de gestion vaut 65 (cf ci-dessous).
-On trouve cette variable dans la table prestation (`ER_PRS_F` dans le DCIR ou [NS_PRS_F](../tables/DCIRS/NS_PRS_F.md) dans le DCIRS). 
-Les detenus sous écrous sont rattachés à 2 CPAM spécifiques :  les CPAM du Lot (01C46) et de l'Oise (01C60). 
+On trouve cette variable dans la table prestation (`ER_PRS_F` dans le DCIR) ou encore dans le référentiel des bénéficaires (`IR_BEN_R`), il s'agit dans ce dernier cas de la dernière situation connue. 
+
+
 
 
 | Code gestion  | libellé  |
@@ -53,8 +54,7 @@ Les detenus sous écrous sont rattachés à 2 CPAM spécifiques :  les CPAM du L
 | 89  | Assurés bénéficiaires de la CMU Couverture Maladie Universelle  |
 | 90  | Praticiens et auxilliaires médicaux sauf biologistes  |
 
-Les codes petits régimes ne sont renseignés que lorsqu'il y a une consommation de soin. 
-Conséquence : on ne récupère ainsi que les consommants.
+
 
 ::: warning 
 Certaines années, le code gestion 65 a été maintenu alors même que les bénéficaires n'etaient plus detenus. 
@@ -62,7 +62,7 @@ On ne peut donc pas utiliser cette méthode pour un dénombrement des detenus.
 Les ayants-droits des détenus sont affiliés au régime des détenus.
 :::
 
-**Requête SAS pour le repérage des detenus**
+**Requête SAS pour le repérage des detenus sur une période particulière **
 
 ```sql
 
@@ -84,28 +84,43 @@ disconnect from oracle;
 quit;
 
 ```
+
+Les detenus sous écrous sont rattachés à 2 CPAM spécifiques :  les CPAM du Lot (01C46) et de l'Oise (01C60). 
+
+** si on ne souhaite que les personnes sous écrous, il faudra ajouter le filtre sur les CPAM suivante **
+...sql 
+
+AND ORG_AFF_BEN in ('01C461465','01C601465','01C601849','01C461882','01C601882','01C461849','01C601405')
+
+...
+
+
 ### Dans le PMSI 
 
 De manière générale dans le PMSI, la variable `COD_ GES` qui indique le code du regime du patient n'est pas toujours bien renseignée. 
  Pour cibler les personnes détenus notamment dans le MCO, il vaut mieux partir de la variable `VALO` contenue dans la table `VALO` ou `VALO_ACE`. 
  Les détenus correspondent à la modalité  5 dans la table `VALO` et 3 dans la table `VALO_ACE`.
 
-## Les soins dispensés aux detenus  
+## L'organisation des soins 
 
-Dans le cas des personnes incarcérées (condamnées ou en détention provisoire), les soins sont organisés par l'administration pénitentiaire et dispensés au sein d'une unité de soins:
-- d'une unité de soins unité de consultation et de soins ambulatoires (UCSA),
-- unité hospitalière spécialement aménagée (UHSA), 
-- service médico-psychologique régional (SMPR), 
-- unité hospitalière sécurisée interrégionale (UHSI),
+L’organisation des soins repose sur deux dispositifs, l’un pour les soins somatiques, l’autre pour les soins psychiatriques. Chacun est décliné en trois niveaux de prise en charge. Certaines missions sont toutefois communes, notamment les actions d’éducation et de prévention et la continuité des soins à la sortie.
+Cette organisation comprend trois niveaux :
+
+• Le niveau 1 est réalisé au sein des unités sanitaires en milieu pénitentiaire (USMP) et regroupe des soins ambulatoires sous la forme de consultations, prestations et activités, y compris dans les centres d’accueil thérapeutique à temps partiel (CATTP).
+
+• Le niveau 2 regroupe les soins nécessitant une prise en charge à temps partiel (hôpital de jour en psychiatrie et chambres sécurisées). Les soins somatiques de niveau 2 sont réalisés au sein de l’établissement hospitalier de rattachement. Les soins psychiatriques sont réalisés principalement au sein des USMP porteuses de services médico-psychologiques régionaux (26 SMPR). Les USMP non dotées de SMPR sont aussi incitées à développer ces prises en charge.
+
+• Le niveau 3 regroupe les soins nécessitant une hospitalisation à temps complet. Les soins somatiques sont réalisés dans les établissements de santé (chambres sécurisées, unités hospitalières sécurisées interrégionales (UHSI) – et établissement public de santé national de Fresnes – EPSNF). 
+Quant aux soins psychiatriques, ils sont assurés par les unités hospitalières spécialement aménagées (UHSA) et les établissements de santé autorisés en psychiatrie
 
 
-Ces établissements peuvent être repérés dans le SNDS. 
 
-### Les unités de consultations et de soins aux detenus (UCSA).
+### Les unités sanitaires en milieu pénitentiaire (USMP)
 
-Ces unités aujourd'hui appelées USMP (unité sanitaire en milieu pénitentier) sont situées dans un établissement pénitentiaire mais adossées à un établissement de santé. 
+Ces unités aujourd'hui appelées USMP (unité sanitaire en milieu pénitentier) sont situées dans un établissement pénitentiaire mais adossées à un établissement de santé. Avant les USMP, il y avait des unités de consultations et de soins ambulatoires (UCSA) e
+
 Les consultations qui y sont dispensées font l'objet d'un financement spécifique.
-Elles peuvent être repérées dans les table `T_MCOaaFCSTC` à partir de la variable `CONSULT_MIG`, l'UCSA correspond à la modalité 10. 
+Elles peuvent être repérées dans les table `T_MCOaaFCSTC` à partir de la variable `CONSULT_MIG`, l'ex UCSA correspond à la modalité 10. 
 
 ```sql
 proc sql;
@@ -179,7 +194,7 @@ quit;
 
 ### les soins psychiatriques 
 
-Pour chaque région pénitentaire, il existe un Services Médico-Psychologiques Régionaux (SMPR) implanté dans un établissement pénitentiaire et rattaché à un établissement public hospitalier de santé mentale.
+Pour chaque région pénitentaire, il existe undes USMP avec un Services Médico-Psychologiques Régionaux (SMPR) implanté dans un établissement pénitentiaire et rattaché à un établissement public hospitalier de santé mentale.
 
 Pour les prisons ne disposant pas d’un SMPR, le dispositif de soins psychiatrique implique des personnels soignants issus d’un établissement psychiatrique qui assurent des vacations et sont intégrés dans les UHSA (Unités d’Hospitalisation Spécialement Aménagées), visant à accueillir les détenus ayant besoin de soins en milieu hospitalier.
 
@@ -274,11 +289,11 @@ Les soins sans consentement correspondent à la modalité `6 - Soins psychiatriq
 ### Les détenus et le médicament. 
  
 Les médicaments peuvent être dispensés : 
- - dans les UCSA
+ - dans les USMP
  - en officine de ville 
- - pendant séjours hospitaliers
+ - pendant un séjour hospitalier
 
-Pour précision, les médicaments délivrés dans les UCSA donne lieu à un recueil dans le PMSI depuis 1 Janvier 2016 (base `T_MCO18SUP_USMP`  unité sanitaire en milieu pénitencier). Ce recueil se fait par établissement et n'est donc pas chainable sur les bénéficaires. 
+Pour précision, les médicaments délivrés dans les USMP donne lieu à un recueil dans le PMSI depuis 1 Janvier 2016 (base `T_MCO18SUP_USMP`  unité sanitaire en milieu pénitencier). Ce recueil se fait par établissement et n'est donc pas chainable sur les bénéficaires. 
 
 exemple d'extraction des médicaments de ville chez les détenus (pour illustration données Normandes) : 
 

@@ -15,7 +15,7 @@ tags:
 
 
 ::: tip Crédits
-Cette fiche a été rédigée par Catherine BISQUAY (ARS Ile-de-France) & Céline LEROY (ARS Normandie)
+Cette fiche a été rédigée par Catherine BISQUAY (ARS Ile-de-France) & Céline LEROY (ARS Normandie)  MAJ : 10/2024
 
 *A savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
@@ -38,8 +38,7 @@ On prends les modalités :
 - 96 : aide médicale hospitalière gratuite 100 % état
 - 652: détenu en situation irrégulière
 
-Seul souci : on ne considère que les consommants puisque on a l'information uniquement dans la table des prestations. 
-Il faut donc que l'individu ait au moins une prestation, ce qui est souvent le cas pour les AME. 
+L'information existe au niveau de la table des prestations mais aussi dans le référentiel des bénéficaires. Selon l'interet de l'étude, on peut considérer l'un ou l'autre.
 
 On peut aussi utiliser la variable `BEN_CMU_CAT` (catégorie d’organisme complémentaire) dont la modalité 5 correspond à l’AME.
 
@@ -75,7 +74,7 @@ quit;
 
 ## AME et PMSI 
 
-Dans le PMSI, on peut cibler les AME à partir de la table VALO dont la variable VALO à une modalité égale à 3 si le séjour concerne un patient AME. 
+Dans le PMSI, on peut cibler les AME à partir de la table VALO (pour les établissements publics) dont la variable VALO à une modalité égale à 3 si le séjour concerne un patient AME. 
 On peut également le faire à partir de la variable `NON_SEJ_FAC_AM`, la modalité 1 correspond aux AME.
 De manière globale, ces séjours ne sont pas valorisés directement par l'assurance maladie obligatoire (AMO) car ils sont payés sur des fonds complémentaires (fond AME).
 
