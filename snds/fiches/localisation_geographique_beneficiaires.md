@@ -161,6 +161,11 @@ ELSE IF (regime='02A' and substr(ben_res_dpt,1,2)='97')
 /*DOM pour RSI*/
 ELSE IF (regime='03A' and substr(ben_res_dpt,1,2)='97') 
 	THEN depcom=compress(ben_res_dpt)||substr(ben_res_com,2,2); 
+/*DOM pour autre que MSA ou RSI*/
+ELSE IF (substr(ben_res_dpt,1,2)='97')
+THEN depcom=compress(substr(ben_res_dpt,1,2)||ben_res_com); 
+    
+
 ```
 #### Obtention du code INSEE en 2A et 2B pour la Corse en partant du code INSEE commencant par 20
 Lorsque le code INSEE est obtenu à partir des variables `BEN_RES_DPT` et `BEN_RES_COM` il est possible d'obtenir le code INSEE actuel pour la Corse (commençant par 2A ou 2B) pour tous les bénéficiaires. Pour obtenir le nouveau code INSEE (l’ancien code INSEE était valable avant 1976) il faut utiliser le fichier des événements sur les communes de l'INSEE, disponible à cette [page](https://www.insee.fr/fr/information/3720946) pour l'année 2019. 
