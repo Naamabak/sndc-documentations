@@ -8,5 +8,5 @@ La cartographie des pathologies et des dépenses est une base produite par la Cn
 > Plus d'informations dans la fiche dédiée : [Cartographie des pathologies](../../../fiches/cartographie_pathologies.md).
 
 <!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessous -->
-#include "snds/tables/.schemas/CARTOGRAPHIE_PATHOLOGIES/CT_IDE_GN_AAAA.md"
+<!-- #include "snds/tables/.schemas/CARTOGRAPHIE_PATHOLOGIES/CT_IDE_GN_AAAA.md" -->
 <!-- ATTENTION : Ne pas supprimer ou modifier la ligne ci-dessus -->
