@@ -1,40 +1,68 @@
 ## Schéma
 
-- Titre : Table des données de codage de la Liste des Produits et Prestations
-<br />
-- Clé(s) étrangère(s) : <br />
-`DCT_ORD_NUM`, `FLX_DIS_DTD`, `FLX_EMT_NUM`, `FLX_EMT_ORD`, `FLX_EMT_TYP`, `FLX_TRT_DTD`, `ORG_CLE_NUM`, `PRS_ORD_NUM`, `REM_TYP_AFF` => table [ER_PRS_F](/tables/ER_PRS_F) [ `DCT_ORD_NUM`, `FLX_DIS_DTD`, `FLX_EMT_NUM`, `FLX_EMT_ORD`, `FLX_EMT_TYP`, `FLX_TRT_DTD`, `ORG_CLE_NUM`, `PRS_ORD_NUM`, `REM_TYP_AFF` ]<br />
 
+- Titre : Prestations affinées DISPOSITIF MEDICAL
+<br />
+
+
+
+- Clé(s) étrangère(s) : <br />
+
+- **Champ(s) :** `DCT_ORD_NUM, FLX_DIS_DTD, FLX_EMT_NUM, FLX_EMT_ORD, FLX_EMT_TYP, FLX_TRT_DTD, ORG_CLE_NUM, PRS_ORD_NUM, REM_TYP_AFF`
+  => table `[ER_PRS_F](tables/ER_PRS_F)` [ `DCT_ORD_NUM`, `FLX_DIS_DTD`, `FLX_EMT_NUM`, `FLX_EMT_ORD`, `FLX_EMT_TYP`, `FLX_TRT_DTD`, `ORG_CLE_NUM`, `PRS_ORD_NUM`, `REM_TYP_AFF` ]<br />
+
+ 
 ### Liste des variables
 <br />
 <div>
-    <a href="https://gitlab.com/healthdatahub/schema-snds/edit/master/schemas/DCIR/ER_TIP_F.json"  
-    arget="_blank" rel="noopener noreferrer">> Éditer le schéma</a>
-    <OutboundLink />
+    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/ER_TIP_F/ER_TIP_F.json"
+       target="_blank" rel="noopener noreferrer">> Éditer le schéma</a>
 </div>
 <br />
 
-Nom|Type|Description|Propriétés
+Nom | Type | Description | Règle de gestion
 -|-|-|-
-`LPP_ECT_MNT`|nombre réel|Montant total de l&#x27;écart indemnisable LPP||
-`LPP_ECU_MNT`|nombre réel|Montant unitaire de l&#x27;écart indemnisable LPP||
-`ORG_CLE_NEW`|chaîne de caractères|Code de l&#x27;organisme de liquidation||
-`TIP_ACL_DTD`|date|Date de début de location ou d&#x27;achat||
-`TIP_ACL_DTF`|date|Date de fin de location ou d&#x27;achat||
-`TIP_ACT_PRU`|nombre réel|Prix unitaire LPP du produit ou de la Prestations||
-`TIP_ACT_QSN`|nombre entier|Quantité d&#x27;actes LPP||
-`TIP_ORD_NUM`|nombre entier|N° Ordre Prestation Affinee LPP||
-`TIP_PRS_IDE`|nombre entier|Code LPP du produit ou de la Prestations||
-`TIP_PRS_TYP`|nombre entier|Type de Prestations fournie||
-`TIP_PUB_PRX`|nombre réel|Prix unitaire public||
-`TIP_SIR_NUM`|chaîne de caractères|N° SIRET Fabriquant-Importateur||
-`DCT_ORD_NUM`|nombre entier|numéro d&#x27;ordre du décompte dans l&#x27;organisme||
-`FLX_DIS_DTD`|date|Date de mise à disposition des données||
-`FLX_EMT_NUM`|nombre entier|numéro d&#x27;émetteur du flux||
-`FLX_EMT_ORD`|nombre entier|numéro de séquence du flux||
-`FLX_EMT_TYP`|nombre entier|Type d&#x27;émetteur||
-`FLX_TRT_DTD`|date|Date d&#x27;entrée des données dans le système d&#x27;information||
-`ORG_CLE_NUM`|chaîne de caractères|organisme de liquidation des prestations (avant fusion des caisses)||
-`PRS_ORD_NUM`|nombre entier|Numéro d&#x27;ordre de la prestation dans le décompte||
-`REM_TYP_AFF`|nombre entier|type de remboursement affiné||
 
+
+
+`DCT_ORD_NUM`| nombre entier |Numéro d'ordre du décompte dans l'organisme||
+
+`FLX_DIS_DTD`| date |Date de mise à disposition des données||
+
+`FLX_EMT_NUM`| nombre entier |Numéro d'émetteur du flux||
+
+`FLX_EMT_ORD`| nombre entier |Numéro de séquence du flux||
+
+`FLX_EMT_TYP`| nombre entier |Type d'émetteur||
+
+`FLX_TRT_DTD`| date |Date d'entrée des données dans le système d'information||
+
+`LPP_ECT_MNT`| nombre entier |Montant Total de l'écart Indemnisable||
+
+`LPP_ECU_MNT`| nombre entier |Montant Unitaire de l'écart Indemnisable||
+
+`ORG_CLE_NEW`| chaîne de caractères |Organisme de liquidation des prestations (après fusion)||
+
+`ORG_CLE_NUM`| chaîne de caractères |Ancien organisme avant fusion (jusqu’au jour J de la fusion)||
+
+`PRS_ORD_NUM`| nombre entier |Numéro d'ordre de la prestation dans le décompte||
+
+`REM_TYP_AFF`| nombre entier |Type de remboursement affiné||
+
+`TIP_ACL_DTD`| date |Date Debt Location ou Achat||
+
+`TIP_ACL_DTF`| date |Date Fin Location||
+
+`TIP_ACT_PRU`| nombre entier |PU de la Prs Affinee LPP||
+
+`TIP_ACT_QSN`| nombre entier |Quantité Signée Affinée LPP||
+
+`TIP_ORD_NUM`| nombre entier |N° Ordre Prs Affinee LPP||
+
+`TIP_PRS_IDE`| nombre entier |Code Affine Dispositif Medical LPP||
+
+`TIP_PRS_TYP`| nombre entier |Type de Prs Fournie LPP||
+
+`TIP_PUB_PRX`| nombre entier |PU Public||
+
+`TIP_SIR_NUM`| chaîne de caractères |N° SIRET Fabriquant/Importateur||
