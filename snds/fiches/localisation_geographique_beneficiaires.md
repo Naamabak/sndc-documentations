@@ -69,10 +69,10 @@ Une deuxième option consiste à faire recours à des fichiers mis à dispositio
 
 | **UNIVERS**| **TABLE**| **VARIABLE DÉPARTEMENT** (str(3)) | **VARIABLE COMMUNE** (str(3)) | **REMARQUES** |
 |------------|----------|----------|----------|----------|
-| **SNIIRAM  DCIR** | **Référentiel des bénéficiaires** [IR_BEN_R](../tables/BENEFICIAIRE/IR_BEN_R.md) | BEN_RES_DPT | BEN_RES_COM | Dernière information disponible (table des prestations ou données administratives des caisses de sécurité sociale) |
+| **SNIIRAM  DCIR** | **Référentiel des bénéficiaires** [IR_BEN_R](../tables/REFERENTIELS/IR_BEN_R.md) | BEN_RES_DPT | BEN_RES_COM | Dernière information disponible (table des prestations ou données administratives des caisses de sécurité sociale) |
 | | **Table prestations** [ER_PRS_F](../tables/DCIR/ER_PRS_F.md)| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
-| **SNIIRAM DCIRS** | **Référentiel des bénéficiaires** [IR_IBA_R](../tables/BENEFICIAIRE/IR_IBA_R.md) | BEN_RES_DPT | BEN_RES_COM | Dernière information disponible (table des prestations ou données administratives des caisses de sécurité sociale) |
-| | **Table prestations** [NS_PRS_F](../tables/DCIRS/NS_PRS_F.md)| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
+| **SNIIRAM DCIRS** | **Référentiel des bénéficiaires** [IR_IBA_R](../tables/REFERENTIELS/IR_IBA_R.md) | BEN_RES_DPT | BEN_RES_COM | Dernière information disponible (table des prestations ou données administratives des caisses de sécurité sociale) |
+| | **Table prestations** 'NS_PRS_F'| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
 | | **Tables affinées** [NS_XXX_F](../tables/DCIRS)| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
 | **PMSI MCO/SSR/HAD** | **Table séjour B**  [T_MCOaa_B](../tables/PMSI/PMSI%20MCO/T_MCOaaB.md) / [T_SSRaa_B](../tables/PMSI/PMSI%20SSR/T_SSRaaB.md) / [T_HADaa_B](../tables/PMSI/PMSI%20HAD/T_HADaaB.md) | BDI_DEP | BDI_COD (str(5))| |
 | | **Table actes et consultations externes des établissements publics**  [T_MCOaa_FASTC](../tables/PMSI/PMSI%20MCO/T_MCOaaFASTC.md) / [T_SSRaa_FASTC](../tables/PMSI/PMSI%20SSR/T_SSRaaFASTC.md) | BDI_DEP | BDI_COD (str(5))| |

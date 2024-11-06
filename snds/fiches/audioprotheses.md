@@ -67,7 +67,7 @@ des [audioprothèses](http://www.codage.ext.cnamts.fr/codif/tips//chapitre/index
 il convient de regarder la variable `TIP_PRS_IDE` dans la table de prestation affinée des dispositifs médicaux : [ER_TIP_F](../tables/DCIR/ER_TIP_F.md). 
 Il faut donc effectuer une jointure dans le DCIR entre la table prestations [ER_PRS_F](../tables/DCIR/ER_PRS_F.md) et `ER_TIP_F`, par les neuf
 clefs de jointure techniques.  
-Dans le DCIRS, il faut joindre les tables [NS_PRS_F](../tables/DCIRS/NS_PRS_F.md) et [NS_TIP_F](../tables/DCIRS/NS_TIP_F.md) par la clef de 
+Dans le DCIRS, il faut joindre les tables 'NS_PRS_F' et 'NS_TIP_F' par la clef de 
 jointure unique `CLE_DCI_JNT`.  
 La correspondance entre les codes LPP et les codes prestations est donnée dans 
 la table de nomenclature `NT_HIS`, où `LPH_PRS_NAT` représente le code prestation en norme B2 (`PRS_NAT_CB2`)

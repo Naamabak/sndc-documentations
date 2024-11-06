@@ -31,7 +31,7 @@ les [dépenses des établissements de santé publics dans le PMSI](depenses_hopi
 
 ## Sélectionner les prestations et délimiter le champ
 
-La première étape consiste à sélectionner tous les actes associés à un établissement de santé. Dans le DCIR, il faut joindre la table prestation (`ER_PRS_F`) avec la table affinée établissements (`ER_ETE_F`). Dans le DCIRS les informations sont présentes dans la table prestation [NS_PRS_F](../tables/DCIRS/NS_PRS_F.md). Il s'agit des actes pour lesquels le finess de l'établissement exécutant est renseigné (la variable `ETB_EXE_FIN` contient un code à 8 chiffres, il s'agit du FINESS sans clef). 
+La première étape consiste à sélectionner tous les actes associés à un établissement de santé. Dans le DCIR, il faut joindre la table prestation (`ER_PRS_F`) avec la table affinée établissements (`ER_ETE_F`). Dans le DCIRS les informations sont présentes dans la table prestation 'NS_PRS_F'. Il s'agit des actes pour lesquels le finess de l'établissement exécutant est renseigné (la variable `ETB_EXE_FIN` contient un code à 8 chiffres, il s'agit du FINESS sans clef). 
 
 Afin de se concentrer sur le champ des établissements privés, les filtres à poser sont les suivants : 
 
