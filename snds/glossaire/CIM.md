@@ -12,6 +12,6 @@ Elle est publiée par l'Organisation mondiale de la santé ([OMS](OMS.md)) et es
 - [Section ICD10](https://icd.who.int/browse10/2019/en) du site de l'OMS (en anglais)
 - [Définition](https://www.cepidc.inserm.fr/causes-medicales-de-deces/classification-internationale-des-maladies-cim) sur le site du CépiDC-Inserm
 - [Page wikipedia](https://fr.wikipedia.org/wiki/Classification_internationale_des_maladies)
-- [Fiche](https://solidarites-sante.gouv.fr/professionnels/gerer-un-etablissement-de-sante-medico-social/financement/financement-des-etablissements-de-sante-10795/financement-des-etablissements-de-sante-glossaire/article/classification-internationale-des-maladies-cim) sur le site internet du ministère
+- [Fiche](https://solidarites-sante.gouv.fr/professionnels/gerer-un-etablissement-de-sante-medico-social/financement/financement-des-etablissements-de-sante-10795/financement-des-etablissements-de-sante-glossaire/article/classification-internationale-des-maladies-cim) sur le site internet du ministère de la santé
 - [Le codage CIM10 dans le PMSI](https://www.atih.sante.fr/cim-10-fr-2022-usage-pmsi) sur le site de l'ATIH et leur version [pdf](https://www.atih.sante.fr/sites/default/files/public/content/4216/cim-10-fr_2022_a_usage_pmsi.pdf)
 - [Site](https://www.aideaucodage.fr/cim) d'aide au codage
