@@ -7,7 +7,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`ETA_NUM, RHA_NUM`=> table `[T_SSRaaB](/tables/T_SSRaaB)` [ `ETA_NUM`, `RHA_NUM` ]<br />
+`ETA_NUM, RHA_NUM`=> table [T_SSRaaB](/tables/T_SSRaaB)[ `ETA_NUM`, `RHA_NUM` ]<br />
 
  
 ### Liste des variables

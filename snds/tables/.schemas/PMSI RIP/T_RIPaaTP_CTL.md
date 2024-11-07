@@ -7,7 +7,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`ETA_NUM_EPMSI, RIP_NUM, SEQ_SEQ_NUM`=> table `[T_RIPaaRSA](/tables/T_RIPaaRSA)` [ `ETA_NUM_EPMSI`, `RIP_NUM`, `SEQ_SEQ_NUM` ]<br />
+`ETA_NUM_EPMSI, RIP_NUM, SEQ_SEQ_NUM`=> table [T_RIPaaRSA](/tables/T_RIPaaRSA)[ `ETA_NUM_EPMSI`, `RIP_NUM`, `SEQ_SEQ_NUM` ]<br />
 
  
 ### Liste des variables

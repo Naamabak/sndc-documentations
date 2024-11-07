@@ -7,7 +7,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`B, E, N, _, I, D, T, _, A, N, O`=> table `[CT_IDE_GN_AAAA](/tables/CT_IDE_GN_AAAA)` [ `B`, `E`, `N`, `_`, `I`, `D`, `T`, `_`, `A`, `N`, `O` ]<br />
+`B, E, N, _, I, D, T, _, A, N, O`=> table [CT_IDE_GN_AAAA](/tables/CT_IDE_GN_AAAA)[ `B`, `E`, `N`, `_`, `I`, `D`, `T`, `_`, `A`, `N`, `O` ]<br />
 
  
 ### Liste des variables

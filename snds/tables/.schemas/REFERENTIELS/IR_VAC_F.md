@@ -7,7 +7,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`BEN_NIR_PSA`=> table `[IR_BEN_R](/tables/IR_BEN_R)` [ `BEN_NIR_PSA` ]<br />
+`BEN_NIR_PSA`=> table [IR_BEN_R](/tables/IR_BEN_R)[ `BEN_NIR_PSA` ]<br />
 
  
 ### Liste des variables
