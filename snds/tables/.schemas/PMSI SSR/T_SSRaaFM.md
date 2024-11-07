@@ -1,0 +1,104 @@
+## Schéma
+
+
+- Titre : OQN actes CCAM
+<br />
+
+
+
+- Clé(s) étrangère(s) : <br />
+
+- **Champ(s) :** `ETA_NUM, RHA_NUM`
+  => table `[T_SSRaaB](tables/T_SSRaaB)` [ `ETA_NUM`, `RHA_NUM` ]<br />
+
+ 
+### Liste des variables
+<br />
+<div>
+    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/PMSI SSR/T_SSRaaFM.json"
+       target="_blank" rel="noopener noreferrer">> Éditer le schéma</a>
+</div>
+<br />
+
+Nom | Type | Description | Règle de gestion
+-|-|-|-
+
+
+
+`RHA_NUM`| chaîne de caractères |N° Séquentiel du séjour||
+
+`TYP_ART`| chaîne de caractères |Type d'enregistrement (M)||
+
+`NUM_FAC`| chaîne de caractères |N° Facture séquentiel||
+
+`DEL_DAT_ENT`| nombre entier |Délai par rapport à la date d'entrée||
+
+`ETA_NUM`| chaîne de caractères |N° FINESS||
+
+`PSH_MDT`| chaîne de caractères |Mode de traitement||
+
+`PSH_DMT`| chaîne de caractères |DMT||
+
+`EXE_SOI_DTD`| date |Date de l'acte||
+
+`CCAM_COD`| chaîne de caractères |Code CCAM||
+
+`DOC_ACT`| chaîne de caractères |Extension documentaire||
+
+`ACV_ACT`| chaîne de caractères |Activité||
+
+`PHA_ACT`| chaîne de caractères |Phase||
+
+`MOD_ACT1`| chaîne de caractères |Modificateur 1||
+
+`MOD_ACT2`| chaîne de caractères |Modificateur 2||
+
+`MOD_ACT3`| chaîne de caractères |Modificateur 3||
+
+`MOD_ACT4`| chaîne de caractères |Modificateur 4||
+
+`ANP_ACT`| chaîne de caractères |Association non prévue||
+
+`REM_EXP_ACT`| chaîne de caractères |Code remb exceptionnel||
+
+`DENT_NUM_1`| chaîne de caractères |N° dent 1||
+
+`DENT_NUM_2`| chaîne de caractères |N° dent 2||
+
+`DENT_NUM_3`| chaîne de caractères |N° dent 3||
+
+`DENT_NUM_4`| chaîne de caractères |N° dent 4||
+
+`DENT_NUM_5`| chaîne de caractères |N° dent 5||
+
+`DENT_NUM_6`| chaîne de caractères |N° dent 6||
+
+`DENT_NUM_7`| chaîne de caractères |N° dent 7||
+
+`DENT_NUM_8`| chaîne de caractères |N° dent 8||
+
+`DENT_NUM_9`| chaîne de caractères |N° dent 9||
+
+`DENT_NUM_10`| chaîne de caractères |N° dent 10||
+
+`DENT_NUM_11`| chaîne de caractères |N° dent 11||
+
+`DENT_NUM_12`| chaîne de caractères |N° dent 12||
+
+`DENT_NUM_13`| chaîne de caractères |N° dent 13||
+
+`DENT_NUM_14`| chaîne de caractères |N° dent 14||
+
+`DENT_NUM_15`| chaîne de caractères |N° dent 15||
+
+`DENT_NUM_16`| chaîne de caractères |N° dent 16||
+
+`EXE_SOI_AMD`| date |Date d'entrée du séjour||
+
+`ACT_DEL`| nombre entier |Délai de l'acte||
+
+`RSF_TYP`| chaîne de caractères |Type de format RSF (1=Ancien/2=Nouveau)||
+
+`SOR_ANN`| année |Année de sortie||
+
+`SOR_MOI`| date |Mois de sortie||

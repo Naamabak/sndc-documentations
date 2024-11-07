@@ -62,8 +62,7 @@ function compileDocumentation(files, path, dir) {
             compileDocumentation(filesList, path + '/' + dir, filename);
         } else {
             var fullDir = dir;
-            //fix directory path for PMSI subdirectories
-            if (dir.includes("PMSI")) fullDir = 'PMSI/' + fullDir;
+            // Remove the PMSI special case
             //write compilation parameters in json file
             var jsonPath = writeJsonFile(filename, fullDir);
             //execute compilation
@@ -72,7 +71,6 @@ function compileDocumentation(files, path, dir) {
                 fs.unlinkSync(jsonPath);
                 console.info(markdownInclude.options.build + ' has been built successfully');
             });
-
         }
     });
 }

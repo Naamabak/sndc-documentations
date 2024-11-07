@@ -25,7 +25,7 @@ Les IVG **hospitalières** sont comptabilisées dans le [PMSI](../glossaire/PMSI
 Les IVG en établissement hospitalier s'identifient grâce au [GHM](../glossaire/GHM.md) calculé par le générateur de [RSA](../glossaire/RSA.md)  dans la base [T_MCOaaB](/tables/T_MCOaaB).  
 Il faut retenir le code `GRG_GHM`=14Z08Z.  
 
-Dans la table des actes ([T_MCOaaA](../tables/PMSI/PMSI MCO/T_MCOaaA.md)) la variable `CDC_ACT` donne le type de l'IVG : 
+Dans la table des actes ([T_MCOaaA](../tables/PMSI MCO/T_MCOaaA.md)) la variable `CDC_ACT` donne le type de l'IVG : 
 *  les IVG *médicamenteuses* correspondent au code **JNJP001** 
 *  les IVG *instrumentales* correspondent au code **JNJD002**.
 

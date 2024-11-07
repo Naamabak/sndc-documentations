@@ -261,9 +261,9 @@ Maladies, signes, symptômes, circonstances sociales et causes externes de malad
 #### 2.2.5.2 Référentiels
 
 Les principaux référentiels du SNDS sont énumérés ici et les liens renvoient vers des fiches présentant leurs caractéristiques. 
-* [Référentiel bénéficiaires](../../tables/.sources/BENEFICIAIRE/IR_BEN_R.md) **`IR_BEN_R`** : contient des informations socio-démographiques des bénéficiaires. Ce référentiel dispose d’une version actuelle (`IR_BEN_R`) portant sur les bénéficiaires ayant eu au moins une consommation depuis le 01/01/2013 et une version archivée (`IR_BEN_R_ARC`) portant sur les bénéficiaires ayant eu au moins une consommation avant le 01/01/2013.  
+* [Référentiel bénéficiaires](../../tables/.sources/REFERENTIELS/IR_BEN_R.md) **`IR_BEN_R`** : contient des informations socio-démographiques des bénéficiaires. Ce référentiel dispose d’une version actuelle (`IR_BEN_R`) portant sur les bénéficiaires ayant eu au moins une consommation depuis le 01/01/2013 et une version archivée (`IR_BEN_R_ARC`) portant sur les bénéficiaires ayant eu au moins une consommation avant le 01/01/2013.  
 
-* [Référentiel médicalisé](../../tables/.sources/DCIR_DCIRS/IR_IMB_R.md) des bénéficiaires **`IR_IMB_R`** : contient des informations médicalisées (exonération pour [ALD](../../glossaire/ALD.md), maladie professionnelle, etc.).  
+* [Référentiel médicalisé](../../tables/.sources/REFERENTIELS/IR_IMB_R.md) des bénéficiaires **`IR_IMB_R`** : contient des informations médicalisées (exonération pour [ALD](../../glossaire/ALD.md), maladie professionnelle, etc.).  
 
 * [Référentiel des médicaments](../../fiches/medicament.md) **`IR_PHA_R`** : permet d'avoir des informations sur les médicaments délivrés en officine (identification via les classifications ATC, [CIP](../../glossaire/CIP.md) et [UCD](../../glossaire/UCD.md), la composition, la date de mise sur le marché, le nom du laboratoire, etc.).  
 *La mise à jour mensuelle à partir des parutions au Journal Officiel est effectuée par le « département d’Etudes sur les pathologies & les patients » de la [Cnam](../../glossaire/Cnam.md). Une description détaillée du référentiel est disponible dans le communiqué du 24/01/2012.*  

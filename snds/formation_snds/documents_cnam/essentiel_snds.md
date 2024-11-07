@@ -49,7 +49,7 @@ Cas particulier des extractions de données ‘demex’ :
 Cette table contient des informations sur le bénéficiaire ayant eu de la consommation de soins en ville ou en clinique privée (aucune information si le bénéficiaire a recours à l’hôpital public uniquement car informations présentes dans le PMSI). Les informations sont les caractéristiques administratives les plus récentes, correspondant à la dernière mise à jour de la base.
 La table contient également des informations sur les non-consommants.
 
-[Lien](../../tables/BENEFICIAIRE/IR_BEN_R.md) vers la description de la table.
+[Lien](../../tables/REFERENTIELS/IR_BEN_R.md) vers la description de la table.
 
 ### Variables du référentiel bénéficiaires IR\_BEN\_R
 * **Pour voir si l’information concerne un consommant ou un non consommant** : Variable « TOP consommant / non consommant » `BEN_TOP_CSN` ou variable « date maximale de traitement » `MAX_TRT_DTD` (date la plus récente des prestations perçues par un bénéficiaire), renseignée à ‘01/01/1600’ pour les non-consommants (aucune prestation perçue).
@@ -103,7 +103,7 @@ Le DCIR contient également l’information sur la période des soins :
     * Elles peuvent être découpées en acte de base (`BSE_PRS_NAT`) associé à un complément d’acte (`CPL_PRS_NAT` et `CPL_MAJ_TOP=1`) ou une majoration (`CPL_PRS_NAT` et `CPL_MAJ_TOP=2`) et une participation forfaitaire (en fonction de la prestation) (`CPL_PRS_NAT` et `CPL_MAJ_TOP=2` ; Modalités à ajuster via `CPL_AFF_COD`). 
     * **Attention** : pour une unique prestation, les majorations peuvent multiplier le nombre de ligne.
 * **Le qualificatif de la dépense** `DPN_QLF` permet de distinguer les dépassements s’il y a lieu (permanent, maitrisé, autorisé, justifié…). La variable permet également de distinguer l’activité (ACE et séjours) des établissements publics qui ne pratiquent pas de facturation directe, transmise pour information à l’Assurance Maladie (mais activité non exhaustive). Il faut exclure ces cas avec le filtre `DPN_QLF <> 71`.
-* **La commune de résidence du bénéficiaire** `BEN_RES_COM` est un numéro Insee sur 3 positions et doit toujours être positionnée avec le code du département de résidence `BEN_RES_DPT`. C’est la commune de résidence au moment du remboursement (même principe que dans [IR_BEN_R](../../tables/BENEFICIAIRE/IR_BEN_R.md) mais à la date du soin alors que dans [IR_BEN_R](../../tables/BENEFICIAIRE/IR_BEN_R.md), il s’agit de la dernière situation connue).
+* **La commune de résidence du bénéficiaire** `BEN_RES_COM` est un numéro Insee sur 3 positions et doit toujours être positionnée avec le code du département de résidence `BEN_RES_DPT`. C’est la commune de résidence au moment du remboursement (même principe que dans [IR_BEN_R](../../tables/REFERENTIELS/IR_BEN_R.md) mais à la date du soin alors que dans [IR_BEN_R](../../tables/REFERENTIELS/IR_BEN_R.md), il s’agit de la dernière situation connue).
 * **L’âge du bénéficiaire à la date des soins** : `BEN_AMA_COD` (calculé à partir de l’année et du mois de la date de début des soins (`EXE_SOI_DTD`) et exprimé en mois / année révolu(e) :
     * Si âge >= 2 ans alors `BEN_AMA_COD = AAA` avec AAA : l’âge en année révolue
     * Si âge < 2 ans alors `BEN_AMA_COD = 10MM` avec MM appartenant à 00-23 inclus : l’âge en mois révolu
@@ -157,7 +157,7 @@ Il en est de même pour les indicateurs affinés de la table ER_ARO_F selon le t
 
 Cette table contient plusieurs lignes par bénéficiaire et conserve l’historique à chaque mise à jour.
 
-[Lien](../../tables/DCIR_DCIRS/IR_IMB_R.md) vers la description de la table.
+[Lien](../../tables/REFERENTIELS/IR_IMB_R.md) vers la description de la table.
 
 * Pour sélectionner des patients qui ont une ALD active sur une période :
 
