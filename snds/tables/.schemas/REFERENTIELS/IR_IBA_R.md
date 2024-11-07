@@ -1,4 +1,4 @@
-## Schéma
+### Schéma
 
 
 - Titre : Table du Référentiel des bénéficiaires du DCIRS
@@ -9,54 +9,27 @@
 
 
 - Clé(s) étrangère(s) : <br />
-
-- **Champ(s) :** `BEN_IDT_ANO`
-  => table `[IR_BEN_R](tables/IR_BEN_R)` [ `BEN_IDT_ANO` ]<br />
+`BEN_IDT_ANO`=> table `[IR_BEN_R](/tables/IR_BEN_R)` [ `BEN_IDT_ANO` ]<br />
 
  
 ### Liste des variables
-<br />
-<div>
-    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/REFERENTIELS/IR_IBA_R.json"
-       target="_blank" rel="noopener noreferrer">> Éditer le schéma</a>
-</div>
-<br />
 
 Nom | Type | Description | Règle de gestion
 -|-|-|-
-
-
-
 `ASS_NIR_ANO`| chaîne de caractères |Matricule anonymisé de l'ouvreur de droits||
-
 `BEN_CDI_NIR`| chaîne de caractères |Code d'identification du NIR||
-
 `BEN_DCD_AME`| année et mois |Année et mois de décès du bénéficiaire||
-
 `BEN_DCD_DTE`| date |Date de décès du bénéficiaire||
-
 `BEN_DTE_INS`| date |Date d'insertion dans le référentiel||
-
 `BEN_DTE_MAJ`| date |Date de mise à jour||
-
 `BEN_IDT_ANO`| chaîne de caractères |Identifiant bénéficiaire anonymisé||
-
 `BEN_IDT_TOP`| nombre entier |Top identifiant bénéficiaire Anonymisé||
-
 `BEN_NAI_ANN`| année |Année de naissance du bénéficiaire||
-
 `BEN_NAI_MOI`| date |Mois de naissance du bénéficiaire||
-
 `BEN_RES_COM`| chaîne de caractères |Commune de résidence du destinataire du règlement||
-
 `BEN_RES_DPT`| chaîne de caractères |Département de résidence du bénéficiaire||
-
 `BEN_SEX_COD`| nombre entier |Code sexe du bénéficiaire||
-
 `BEN_TOP_CNS`| nombre entier |top consommant - non consommant||
-
 `MAX_TRT_DTD`| date |Date maximale de traitement d'une Prestations||
-
 `ORG_AFF_BEN`| chaîne de caractères |Code de l'organisme d'affiliation||
-
 `ORG_CLE_NEW`| chaîne de caractères |Code de l'organisme de liquidation||
