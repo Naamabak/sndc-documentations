@@ -9,7 +9,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`ETA_NUM, RSA_NUM`=> table `[T_MCOaaC](/tables/T_MCOaaC)` [ `ETA_NUM`, `RSA_NUM` ]<br />
+`ETA_NUM, RSA_NUM`=> table [T_MCOaaC](/tables/T_MCOaaC)[ `ETA_NUM`, `RSA_NUM` ]<br />
 
  
 ### Liste des variables

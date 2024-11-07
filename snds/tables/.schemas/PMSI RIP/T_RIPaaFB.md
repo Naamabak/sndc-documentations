@@ -9,7 +9,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`ETA_NUM_EPMSI, RIP_NUM`=> table `[T_RIPaaC](/tables/T_RIPaaC)` [ `ETA_NUM_EPMSI`, `RIP_NUM` ]<br />
+`ETA_NUM_EPMSI, RIP_NUM`=> table [T_RIPaaC](/tables/T_RIPaaC)[ `ETA_NUM_EPMSI`, `RIP_NUM` ]<br />
 
  
 ### Liste des variables

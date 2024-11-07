@@ -9,7 +9,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`ETA_NUM_EPMSI, RHAD_NUM`=> table `[T_HADaaC](/tables/T_HADaaC)` [ `ETA_NUM_EPMSI`, `RHAD_NUM` ]<br />
+`ETA_NUM_EPMSI, RHAD_NUM`=> table [T_HADaaC](/tables/T_HADaaC)[ `ETA_NUM_EPMSI`, `RHAD_NUM` ]<br />
 
  
 ### Liste des variables

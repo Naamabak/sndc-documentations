@@ -7,7 +7,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`BEN_IDT_ANO`=> table `[CT_IDE_GN_AAAA](/tables/CT_IDE_GN_AAAA)` [ `BEN_IDT_ANO` ]<br />
+`BEN_IDT_ANO`=> table [CT_IDE_GN_AAAA](/tables/CT_IDE_GN_AAAA)[ `BEN_IDT_ANO` ]<br />
 
  
 ### Liste des variables
