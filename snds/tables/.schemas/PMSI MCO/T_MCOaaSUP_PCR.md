@@ -15,7 +15,7 @@
 ### Liste des variables
 <br />
 <div>
-    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/T_MCOaaSUP_PCR/T_MCOaaSUP_PCR.json"
+    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/PMSI MCO/T_MCOaaSUP_PCR.json"
        target="_blank" rel="noopener noreferrer">> Éditer le schéma</a>
 </div>
 <br />

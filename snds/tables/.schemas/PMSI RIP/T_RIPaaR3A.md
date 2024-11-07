@@ -17,7 +17,7 @@
 ### Liste des variables
 <br />
 <div>
-    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/T_RIPaaR3A/T_RIPaaR3A.json"
+    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/PMSI RIP/T_RIPaaR3A.json"
        target="_blank" rel="noopener noreferrer">> Éditer le schéma</a>
 </div>
 <br />

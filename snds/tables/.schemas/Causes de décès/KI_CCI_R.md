@@ -15,7 +15,7 @@
 ### Liste des variables
 <br />
 <div>
-    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/KI_CCI_R/KI_CCI_R.json"
+    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/Causes de décès/KI_CCI_R.json"
        target="_blank" rel="noopener noreferrer">> Éditer le schéma</a>
 </div>
 <br />

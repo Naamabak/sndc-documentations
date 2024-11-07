@@ -15,7 +15,7 @@
 ### Liste des variables
 <br />
 <div>
-    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/T_SSRaaSUP_TIE/T_SSRaaSUP_TIE.json"
+    <a href="https://gitlab.com/healthdatahub/applications-du-hdh/schema-snds/-/tree/master/schemas/PMSI SSR/T_SSRaaSUP_TIE.json"
        target="_blank" rel="noopener noreferrer">> Éditer le schéma</a>
 </div>
 <br />

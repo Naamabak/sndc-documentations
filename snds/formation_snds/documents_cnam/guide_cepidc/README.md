@@ -1,7 +1,7 @@
 # Guide causes médicales de décès
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 
-Cette section renvoie vers la documentation du [CépiDC](../../glossaire/CepiDC.md) à l’attention des utilisateurs concernant l’intégration des causes médicales de décès dans le Système National des Données de Santé (SNDS).
+Cette section renvoie vers la documentation du [CépiDC](../../../glossaire/CepiDC.md) à l’attention des utilisateurs concernant l’intégration des causes médicales de décès dans le Système National des Données de Santé (SNDS).
 
 ### Téléchargement
 
@@ -14,7 +14,7 @@ Cette section renvoie vers la documentation du [CépiDC](../../glossaire/CepiDC.
 ### Citation
 
 Ce document a été initialement publié sur le portail SNDS de la Cnam en date du 3 septembre 2020.
-Il a été rédigé par la [Cnam](../../glossaire/Cnam.md) (Laurence De Roquefeuil et départements DEMSI, DATAD et DFID), avec l’aide de Grégoire Rey, Karim Bounebache et Claire Imbaud (INSERM – CépiDc).
+Il a été rédigé par la [Cnam](../../../glossaire/Cnam.md) (Laurence De Roquefeuil et départements DEMSI, DATAD et DFID), avec l’aide de Grégoire Rey, Karim Bounebache et Claire Imbaud (INSERM – CépiDc).
 
 La version actuellement disponible en téléchargement a été communiquée le 8 mars 2024 aux utilisateurs. En plus d'un guide, elle contient une document listant l'ensemble des variables disponibles.
 Elle a rédigée par :
