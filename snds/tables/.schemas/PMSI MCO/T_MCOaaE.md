@@ -9,7 +9,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`E, T, A, _, N, U, M`=> table `[T_MCOaaB](/tables/T_MCOaaB)` [ `E`, `T`, `A`, `_`, `N`, `U`, `M` ]<br />
+`E, T, A, _, N, U, M`=> table [T_MCOaaB](/tables/T_MCOaaB)[ `E`, `T`, `A`, `_`, `N`, `U`, `M` ]<br />
 
  
 ### Liste des variables

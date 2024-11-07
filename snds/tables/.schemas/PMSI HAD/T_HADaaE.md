@@ -7,7 +7,7 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`ETA_NUM`=> table `[T_HADaaB](/tables/T_HADaaB)` [ `ETA_NUM_EPMSI` ]<br />
+`ETA_NUM`=> table [T_HADaaB](/tables/T_HADaaB)[ `ETA_NUM_EPMSI` ]<br />
 
  
 ### Liste des variables

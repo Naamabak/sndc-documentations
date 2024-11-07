@@ -9,9 +9,9 @@
 
 
 - Clé(s) étrangère(s) : <br />
-`ETA_NUM, SEQ_NUM`=> table `[T_MCOaaFASTC](/tables/T_MCOaaFASTC)` [ `ETA_NUM`, `SEQ_NUM` ]<br />
+`ETA_NUM, SEQ_NUM`=> table [T_MCOaaFASTC](/tables/T_MCOaaFASTC)[ `ETA_NUM`, `SEQ_NUM` ]<br />
 
-`N, I, R, _, A, N, O, _, 1, 7`=> table `[IR_BEN_R](/tables/IR_BEN_R)` [ `B`, `E`, `N`, `_`, `N`, `I`, `R`, `_`, `P`, `S`, `A` ]<br />
+`N, I, R, _, A, N, O, _, 1, 7`=> table [IR_BEN_R](/tables/IR_BEN_R)[ `B`, `E`, `N`, `_`, `N`, `I`, `R`, `_`, `P`, `S`, `A` ]<br />
 
  
 ### Liste des variables
