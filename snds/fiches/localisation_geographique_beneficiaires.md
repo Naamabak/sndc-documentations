@@ -73,10 +73,10 @@ Une deuxième option consiste à faire recours à des fichiers mis à dispositio
 | | **Table prestations** [ER_PRS_F](../tables/DCIR/ER_PRS_F.md)| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
 | **SNIIRAM DCIRS** | **Référentiel des bénéficiaires** [IR_IBA_R](../tables/REFERENTIELS/IR_IBA_R.md) | BEN_RES_DPT | BEN_RES_COM | Dernière information disponible (table des prestations ou données administratives des caisses de sécurité sociale) |
 | | **Table prestations** 'NS_PRS_F'| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
-| | **Tables affinées** [NS_XXX_F](../tables/DCIRS)| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
+| | **Tables affinées** 'NS_XXX_F]'| BEN_RES_DPT | BEN_RES_COM | Information remontée au moment de la prestation |
 | **PMSI MCO/SSR/HAD** | **Table séjour B**  [T_MCOaa_B](../tables/PMSI%20MCO/T_MCOaaB.md) / [T_SSRaa_B](../tables/PMSI%20SSR/T_SSRaaB.md) / [T_HADaa_B](../tables/PMSI%20HAD/T_HADaaB.md) | BDI_DEP | BDI_COD (str(5))| |
 | | **Table actes et consultations externes des établissements publics**  [T_MCOaa_FASTC](../tables/PMSI%20MCO/T_MCOaaFASTC.md) / [T_SSRaa_FASTC](../tables/PMSI%20SSR/T_SSRaaFASTC.md) | BDI_DEP | BDI_COD (str(5))| |
-| **Cartographie des pathologies** | **Table des individus**  Versions de la G4 à la G7:  [CT_IND_20aa_Gn](../tables/CARTOGRAPHIE_PATHOLOGIES/CT_IND_AAAA_GN.md) / Versions à partir de la G8:  CRTO_CT_IND_Gn_20aa | DPT | Non disponible | Code reconstitué à partir des informations du DCIR et du PMSI et corrigé si besoin |
+| **Cartographie des pathologies** | **Table des individus**  Versions de la G4 à la G7:  [CT_IND_20aa_Gn](../tables/CARTOGRAPHIE_PATHOLOGIES/CT_IND_GN_AAAA.md) / Versions à partir de la G8:  CRTO_CT_IND_Gn_20aa | DPT | Non disponible | Code reconstitué à partir des informations du DCIR et du PMSI et corrigé si besoin |
 | | **Table de résidence**  Versions à partir de la G8: CRTO_CT_RES_Gn_20aa | CODE_DEPARTEMENT_INSEE | CODE_COMMUNE_INSEE (str(5)) | Il y a également les codes CANTON et REGION |
 | **Causes de décès** | **Table cause initiale de décès** [KI_CCI_R](../tables/Causes%20de%20décès/KI_CCI_R.md) | BEN_RES_DPT | BEN_RES_COM | Les codes ont été transformés pour coller aux référentiels du SNIIRAM IR_DPT_V et IR_GEO_V |
 
