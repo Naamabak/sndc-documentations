@@ -19,6 +19,9 @@ MAJ Septembre 2020
 
 Contribution Sarah Benmarhnia (ORS Bretagne) - novembre 2024 - Code : correction sur les clefs de chainages incorrects du PMSI + ajout d'un nir fictif
 
+Contribution Sarah Benmarhnia (ORS Bretagne) - novembre 2024 - Correction sur les clefs de chainages incorrects du PMSI + ajout d'un nir fictif
+
+
 *À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
 
