@@ -166,6 +166,6 @@ Par exemple :
 
 ## Programme type
 
-Le programme SAS est accessible dans le dépôt **programme-snds**, dossier [**Sante_publique_France**](https://gitlab.com/healthdatahub/programmes-snds/-/tree/master/Sante_publique_France)
+Le programme SAS est accessible dans le dépôt **programme-snds**, dossier [**Sante_publique_France**](https://gitlab.com/healthdatahub/boas/sant-publique-france)
 * pmsi_mco_select_sejours_par_diag.sas
 
