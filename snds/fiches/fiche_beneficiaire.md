@@ -15,7 +15,9 @@ tags:
 ::: tip Crédits
 
 Le contenu original de cette fiche provient du document [Fiche bénéficiaires](/files/Cnam/2019-06_CNAM-INDS_SNDS_Fiches_Thematiques_BENEF_MAJ-2020-09_MPL-2.0.pdf) rédigé par la [CNAM](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php)  
-MAJ Septembre 2020
+MAJ Septembre 2020  
+
+Contribution Sarah Benmarhnia (ORS Bretagne) - novembre 2024 - Code : correction sur les clefs de chainages incorrects du PMSI + ajout d'un nir fictif
 
 *À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
