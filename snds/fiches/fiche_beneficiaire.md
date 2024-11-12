@@ -17,6 +17,9 @@ tags:
 Le contenu original de cette fiche provient du document [Fiche bénéficiaires](/files/Cnam/2019-06_CNAM-INDS_SNDS_Fiches_Thematiques_BENEF_MAJ-2020-09_MPL-2.0.pdf) rédigé par la [CNAM](https://www.ameli.fr/l-assurance-maladie/statistiques-et-publications/index.php)  
 MAJ Septembre 2020
 
+Contribution Sarah Benmarhnia (ORS Bretagne) - novembre 2024 - Correction sur les clefs de chainages incorrects du PMSI + ajout d'un nir fictif
+
+
 *À savoir : Des références peuvent être données à la fin de la fiche. La dernière date de modification se situe tout en bas à droite.*
 :::
 
@@ -79,7 +82,7 @@ Where NIR_RET<>'0' and NAI_RET <>'0' and SEX_RET <>'0' and SEJ_RET<>'0' and FHO_
 
 Le NIR est certifié lorsque l’identité de la personne a été validée par l’Insee.
 
-Les NIR certifiés sont identifiés avec la variable BEN_CDI_NIR renseignée à 00 : NIR Normal (ni fictif ni provisoire). Cette variable est présente dans la table centrale des prestations [ER_PRS_F](../tables/DCIR/ER_PRS_F.md) et dans le référentiel des bénéficiaires [IR_BEN_R](../tables/BENEFICIAIRE/IR_BEN_R.md).
+Les NIR certifiés sont identifiés avec la variable BEN_CDI_NIR renseignée à 00 : NIR Normal (ni fictif ni provisoire). Cette variable est présente dans la table centrale des prestations [ER_PRS_F](../tables/DCIR/ER_PRS_F.md) et dans le référentiel des bénéficiaires [IR_BEN_R](../tables/REFERENTIELS/IR_BEN_R.md).
 
 Il existe des NIR provisoires qui sont, par exemple, attribués par un régime d’assurance maladie à un travailleur ou un étudiant étranger en attendant le contrôle des documents permettant la vérification de son identité.
 Les NIR provisoires sont identifiés avec la variable BEN_CDI_NIR renseignée à 03 ou 04.
